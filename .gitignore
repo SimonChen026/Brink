@@ -1,0 +1,17 @@
+.build/
+build/
+dist/
+*.xcuserstate
+xcuserdata/
+.build2/
+.buildtmp/
+.work/
+.swiftpm/
+DerivedData/
+.DS_Store
+*.bak
+*.o
+*.dmg
+# kept locally, not published: design notes, dev log, generated docs
+docs/
+scripts/gen_scenarios_doc.py

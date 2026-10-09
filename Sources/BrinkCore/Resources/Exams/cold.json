@@ -1,0 +1,974 @@
+{
+  "id": "cold",
+  "skill": "survival",
+  "bonus": 1,
+  "perk": "warm",
+  "requires": [],
+  "minLevel": 2,
+  "count": 10,
+  "pass": 8,
+  "icon": "snowflake",
+  "color": "#79C0FF",
+  "zh": {
+    "name": "寒区与高山求生",
+    "full": "寒区与高山求生资格",
+    "desc": "失温的分级与复温、冻伤处理、雪崩、雪洞、高原反应、分层保暖。",
+    "realWorld": "相当于高山向导协会的寒区和高海拔安全培训。"
+  },
+  "en": {
+    "name": "Cold & Mountain Survival",
+    "full": "Cold & Mountain Survival Certificate",
+    "desc": "Hypothermia stages and rewarming, frostbite care, avalanches, snow caves, altitude sickness, layering.",
+    "realWorld": "Comparable to mountain guide associations' cold and altitude safety training."
+  },
+  "questions": [
+    {
+      "id": "cold-01",
+      "answer": 1,
+      "hard": true,
+      "source": "WMS Hypothermia 2019",
+      "zh": {
+        "q": "你在雪地里发现一名坠机幸存者。他已经不再发抖，昏昏欲睡，说话含糊，摸上去冰凉。怎么做？",
+        "options": [
+          "扶着他快走几圈，让血液流动起来、身子暖和起来",
+          "轻柔搬动，让他平躺，与雪地隔开保温，加热躯干",
+          "用力搓揉他的胳膊和腿，让冰凉的四肢赶快暖和起来",
+          "给他喝口烈酒，从里往外暖身子"
+        ],
+        "explain": "这至少是中度失温。粗暴搬动、让他走路或搓四肢，都可能诱发致命的心律失常，还会把四肢的冷血推向心脏。让他保持平躺、少动，身下和四周用保温材料垫好裹好，外加一层防风或防潮的隔绝层，在胸口、腋下和后背加热，不要喂食喂水，轻柔地后送。"
+      },
+      "en": {
+        "q": "You find a crash survivor lying in the snow. He has stopped shivering, is drowsy and slurring his words, and feels ice-cold. What do you do?",
+        "options": [
+          "Walk him around briskly to get his blood flowing and warm him up",
+          "Handle gently, keep him flat, insulate him, warm his trunk",
+          "Rub his cold arms and legs hard to warm them up quickly",
+          "Give him a shot of spirits to warm him from the inside"
+        ],
+        "explain": "This is moderate hypothermia or worse. Rough handling, walking or rubbing the limbs can trigger a fatal heart rhythm and send cold blood to the core. Keep him horizontal and still, get insulation under and around him plus a windproof or vapour-barrier layer, put heat on the chest, armpits and back, give nothing by mouth, and evacuate gently."
+      }
+    },
+    {
+      "id": "cold-02",
+      "answer": 3,
+      "hard": true,
+      "source": "WMS Hypothermia 2019",
+      "zh": {
+        "q": "一名徒步者在冻雨中剧烈发抖了一个小时。现在他不抖了，但身体仍然冰凉，而且开始意识模糊、动作笨拙。这说明什么？",
+        "options": [
+          "他正在回暖，不发抖了是好兆头",
+          "他只是累坏了，让他睡一觉，明早再看看",
+          "他已经适应了寒冷，不用再加衣服",
+          "失温在加重，要按中度失温立即处理"
+        ],
+        "explain": "发抖是身体产热的主要方式。仍然冰冷的人停止发抖，同时出现意识模糊、嗜睡或动作笨拙，往往说明核心体温已降到约32 °C或更低，属于中度失温。要轻柔搬动、保温隔离、加热躯干并尽快后送。"
+      },
+      "en": {
+        "q": "A hiker in freezing rain has been shivering hard for an hour. Now the shivering stops, though he's still cold, and he's becoming confused and clumsy. What does this mean?",
+        "options": [
+          "He's rewarming; stopping shivering is a good sign",
+          "He's just tired out; let him sleep and check on him again in the morning",
+          "He has adapted to the cold and no longer needs extra layers",
+          "His hypothermia is getting worse—treat it as moderate and act now"
+        ],
+        "explain": "Shivering is the body's main source of heat. When someone who is still cold stops shivering and becomes confused, drowsy or clumsy, core temperature has usually dropped to around 32 °C or below—moderate hypothermia. Handle gently, insulate, warm the trunk and evacuate."
+      }
+    },
+    {
+      "id": "cold-03",
+      "answer": 0,
+      "hard": false,
+      "source": "WMS Hypothermia 2019",
+      "zh": {
+        "q": "你正在给裹在睡袋里的失温同伴复温，手头有两个热水袋。放在哪里最有用？",
+        "options": [
+          "胸口、腋下和后背，隔一层布",
+          "手和脚上，因为那里最冷",
+          "直接贴在大腿裸露的皮肤上",
+          "放在睡袋外面，从外往里焐"
+        ],
+        "explain": "先暖核心，不要先暖四肢：把热源放在胸口、腋下和后背，热水袋和皮肤之间隔一层布。冰冷的皮肤很容易烫伤，每20～30分钟要检查一次。"
+      },
+      "en": {
+        "q": "You're rewarming a hypothermic companion in a sleeping bag and have two hot-water bottles. Where do they help most?",
+        "options": [
+          "Against his chest, armpits and back, wrapped in cloth",
+          "On his hands and feet, which are the coldest",
+          "Directly against the bare skin of his thighs",
+          "On the outside of the sleeping bag to warm it"
+        ],
+        "explain": "Warm the core first, not the limbs: put heat sources on the chest, in the armpits and on the back, with a layer of cloth between bottle and skin. Cold skin burns easily, so check it every 20–30 minutes."
+      }
+    },
+    {
+      "id": "cold-04",
+      "answer": 2,
+      "hard": true,
+      "source": "WMS Hypothermia 2019; ERC 2021",
+      "zh": {
+        "q": "失温救援有句话：“没有复温，就不能宣布死亡。”面对一名看上去已经冻僵的伤者，下面哪一种情况才是不开始心肺复苏的合理理由？",
+        "options": [
+          "摸了几秒钟颈动脉，都没摸到脉搏",
+          "他的瞳孔已经散大、固定",
+          "胸廓冻得僵硬，根本按不下去",
+          "他全身冰冷，脸色灰白发青"
+        ],
+        "explain": "深度失温可能酷似死亡——摸不到脉搏、瞳孔散大固定、身体僵硬、皮肤冰冷发灰——但经过长时间心肺复苏和复温仍有人被救活，所以摸脉搏要摸足一分钟。合理的例外包括：全身冻硬、有明显的致命伤、雪崩掩埋超过60分钟且气道被雪堵死，或者施救会危及救援者。"
+      },
+      "en": {
+        "q": "'Nobody is dead until warm and dead.' Which of these IS a valid reason not to start CPR on a frozen-looking casualty?",
+        "options": [
+          "You couldn't feel a neck pulse after checking for a few seconds",
+          "His pupils are fixed and dilated",
+          "His chest is frozen so solid that it can't be compressed",
+          "His skin is ice-cold and grey"
+        ],
+        "explain": "Deep hypothermia can mimic death—no palpable pulse, fixed dilated pupils, stiffness, icy grey skin—yet people have recovered after prolonged CPR and rewarming, so check for a pulse for up to a minute. Valid exceptions include a body frozen solid, injuries incompatible with life, an avalanche victim buried over 60 minutes with a snow-packed airway, or danger to rescuers."
+      }
+    },
+    {
+      "id": "cold-05",
+      "answer": 0,
+      "hard": false,
+      "source": "WMS Hypothermia 2019",
+      "zh": {
+        "q": "回到营地，一个冷得发抖的队友被递来一口白酒“暖暖身子”。正确做法是？",
+        "options": [
+          "不行，酒精加快散热，改喝热甜饮料",
+          "好主意，喝口烈酒能从里往外暖和身子",
+          "可以，只要同时吃点东西就行",
+          "可以，只要兑进一杯热茶里喝"
+        ],
+        "explain": "酒精让皮肤血管扩张，人觉得暖和，实际上散热更快，还会抑制发抖、影响判断。温热的含糖饮料和食物，才能给身体提供发抖产热、恢复体温的“燃料”。"
+      },
+      "en": {
+        "q": "Back at camp, a chilled, shivering teammate is offered a swig of whisky 'to warm up'. What's right?",
+        "options": [
+          "No—alcohol speeds heat loss; give a warm, sweet drink",
+          "Good idea—alcohol warms the body from the inside out",
+          "Fine, as long as he eats something along with it",
+          "Fine, as long as it's mixed into a mug of hot tea"
+        ],
+        "explain": "Alcohol makes you feel warm by opening the blood vessels in your skin, which actually increases heat loss, and it weakens shivering and judgement. Warm, sweet, non-alcoholic drinks and food give the body fuel to shiver and rewarm."
+      }
+    },
+    {
+      "id": "cold-06",
+      "answer": 2,
+      "hard": true,
+      "source": "WMS Frostbite 2024",
+      "zh": {
+        "q": "在坠机现场，一名乘客的手指发白、发硬、没有知觉。你们还要在深雪里走两天才能出去。现在该怎么处理这些手指？",
+        "options": [
+          "出发前先用雪使劲搓一搓，让手指的血液恢复循环",
+          "今晚扎营后，在火堆前把它们烤暖",
+          "先保持冻结并保护好，确定不会再冻时才复温",
+          "现在就用温水复温，让手指恢复功能，好走完这两天"
+        ],
+        "explain": "复温后再冻上，比多冻一段时间造成的伤害大得多。要保护好冻结的部位，防止进一步受冻和受伤，确定不会再冻时才复温。绝不能搓，也不能用火或炉子烤——没有知觉的组织极易烫伤。"
+      },
+      "en": {
+        "q": "At the crash site, a passenger's fingers are white, hard and numb. You still face a two-day walk out through deep snow. What should you do about the fingers now?",
+        "options": [
+          "Rub them hard with snow before you set off, to get the blood flowing again",
+          "Thaw them out in front of the camp fire tonight",
+          "Protect them but leave them frozen until there's no risk of refreezing",
+          "Thaw them in warm water now, so they work properly for the two-day walk"
+        ],
+        "explain": "Thawing and then refreezing does far more damage than staying frozen a little longer. Protect the frozen part from further cold and injury, and rewarm only when you're sure it won't freeze again. Never rub it, and never thaw it by a fire or stove—numb tissue burns easily."
+      }
+    },
+    {
+      "id": "cold-07",
+      "answer": 3,
+      "hard": true,
+      "source": "WMS Frostbite 2024",
+      "zh": {
+        "q": "条件允许、可以给冻伤的脚复温时，应该用什么样的水？",
+        "options": [
+          "能忍受的最烫的水，大约45～50 °C，化冻越快越好",
+          "先用冷水，再在几小时内慢慢加温",
+          "5 °C左右的雪水，避免突然刺激",
+          "37～39 °C的温水，保持水温，泡约30分钟"
+        ],
+        "explain": "在37～39 °C（未受伤的手感觉温暖舒适）的水中快速复温约30分钟，直到组织变红或变紫、变软，效果最好。水太烫会烫伤失去知觉的组织，慢慢复温或用冷水反而伤害更大。复温会非常痛，可以服用布洛芬等止痛药。"
+      },
+      "en": {
+        "q": "Once you can safely rewarm frostbitten feet, what water should you use?",
+        "options": [
+          "Water as hot as you can stand, around 45–50 °C, to thaw them as fast as possible",
+          "Cold water at first, warmed up gradually over several hours",
+          "Snowmelt at about 5 °C, to avoid a sudden shock",
+          "37–39 °C water, held at that temperature, for about 30 minutes"
+        ],
+        "explain": "Rapid rewarming in water at 37–39 °C (comfortably warm to an uninjured hand), for about 30 minutes or until the tissue turns red or purple and soft, gives the best results. Hotter water burns numb tissue, and slow or cold rewarming does more harm. It hurts a lot—give a painkiller such as ibuprofen."
+      }
+    },
+    {
+      "id": "cold-08",
+      "answer": 1,
+      "hard": false,
+      "source": "WMS Frostbite 2024",
+      "zh": {
+        "q": "冻伤的脚复温后第二天，起了深色的血疱。怎么处理？",
+        "options": [
+          "用消毒过的针把它们挑破，减轻压力、好得更快",
+          "保持完整，松松地盖上干敷料并保护",
+          "剪掉疱皮，再把创面擦洗干净",
+          "用雪敷在上面，帮助血疱消肿"
+        ],
+        "explain": "血疱说明损伤较深，应保持完整；清亮的水疱如果胀得厉害，可由医务人员抽液。脚趾之间垫上纱布，保持干燥、抬高、防护好，复温后的脚尽量不要再用来走路。"
+      },
+      "en": {
+        "q": "A day after rewarming a frostbitten foot, dark blood-filled blisters appear. What should you do?",
+        "options": [
+          "Pop them with a sterilised needle to relieve the pressure and speed healing",
+          "Leave them intact under loose, dry dressings and protect the foot",
+          "Cut off the blister roofs and scrub the area clean",
+          "Rub snow over them to bring the swelling down"
+        ],
+        "explain": "Blood-filled blisters signal deeper injury and should be left intact; clear blisters may be drained by medical staff if they're tense. Pad between the toes, keep the foot dry, raised and protected, and avoid walking on a thawed foot if you can."
+      }
+    },
+    {
+      "id": "cold-09",
+      "answer": 3,
+      "hard": true,
+      "source": "Tintinalli's EM: non-freezing cold injury",
+      "zh": {
+        "q": "在5 °C左右穿着湿靴子走了三天后，一名队友的脚发白、麻木、肿胀、起皱，但没有冻结。正确的处理是？",
+        "options": [
+          "完全像处理冻伤那样，用热水把双脚快速复温",
+          "用力按摩，恢复血液循环",
+          "穿着湿靴子继续走，保持血液流动",
+          "擦干，抬高，给全身保暖，让脚慢慢回暖"
+        ],
+        "explain": "这是战壕足（浸泡足），属于非冻结性冷伤。与冻伤不同，它不能用热水快速复温，也不能按摩：擦干双脚，保持清洁、干燥、抬高，给全身保暖，让脚慢慢自然回暖——回暖后常会发红、剧痛。预防的关键是每天擦干脚、换干袜子。"
+      },
+      "en": {
+        "q": "After three days in wet boots at around 5 °C, a teammate's feet are pale, numb, swollen and wrinkled, but not frozen. What's the right care?",
+        "options": [
+          "Rewarm them quickly in hot water, exactly the way you would for frostbite",
+          "Massage them hard to get the circulation going",
+          "Keep walking in the wet boots so the blood keeps moving",
+          "Dry them, raise them, warm the body and let the feet rewarm slowly"
+        ],
+        "explain": "This is trench (immersion) foot, a non-freezing cold injury. Unlike frostbite, it shouldn't be rapidly rewarmed or massaged: dry the feet, keep them clean, dry and elevated, warm the rest of the body and let them rewarm gently—they often turn red and painful. Prevent it by drying your feet and changing into dry socks every day."
+      }
+    },
+    {
+      "id": "cold-10",
+      "answer": 1,
+      "hard": false,
+      "source": "Mountaineering: The Freedom of the Hills",
+      "zh": {
+        "q": "在寒冷潮湿的山上，贴身那一层最不该穿哪种面料？",
+        "options": [
+          "美利奴羊毛",
+          "纯棉",
+          "涤纶（聚酯纤维）",
+          "丙纶（聚丙烯）"
+        ],
+        "explain": "棉吸汗吸水，湿了以后几乎完全失去保暖作用，而且干得很慢，所以户外圈有“棉衣致命”的说法。羊毛和化纤能把湿气导走，受潮后仍能保留一部分保暖性。"
+      },
+      "en": {
+        "q": "Which fabric is the worst choice for the layer next to your skin on a cold, wet mountain?",
+        "options": [
+          "Merino wool",
+          "Cotton",
+          "Polyester",
+          "Polypropylene"
+        ],
+        "explain": "Cotton soaks up sweat and rain, loses almost all its insulation when wet and dries very slowly—hence the saying 'cotton kills'. Wool and synthetics wick moisture away and keep some warmth even when damp."
+      }
+    },
+    {
+      "id": "cold-11",
+      "answer": 2,
+      "hard": false,
+      "source": "Mountaineering: The Freedom of the Hills",
+      "zh": {
+        "q": "气温零下15 °C，你要开始爬一段又长又陡的坡，身上穿着排汗内衣、抓绒、羽绒服和冲锋衣。该怎么做？",
+        "options": [
+          "全都穿着，冷天不怕穿得多",
+          "只拉开冲锋衣拉链，换衣服太费时间",
+          "出发前脱掉羽绒服，停下来时马上穿回去",
+          "快速冲上去，到了再穿着潮湿的衣服休息"
+        ],
+        "explain": "汗水会浸湿衣服，一停下来就冷。户外讲究“出发时宁可稍冷”：剧烈运动前先减掉保暖层，行进中注意通风散热，一停下来立刻把保暖层穿回去。"
+      },
+      "en": {
+        "q": "At −15 °C you're about to start a long, steep climb wearing a base layer, fleece, down jacket and shell. What should you do?",
+        "options": [
+          "Keep everything on—you can't be too warm in the cold",
+          "Just open the shell's zip; changing layers takes too long",
+          "Shed the down jacket before you start; put it back on when you stop",
+          "Climb fast to get it over with, then rest at the top in your damp layers"
+        ],
+        "explain": "Sweat soaks your clothing and chills you as soon as you stop. 'Be bold, start cold': shed insulation before hard work, vent as you go, and put warm layers back on the moment you stop."
+      }
+    },
+    {
+      "id": "cold-12",
+      "answer": 0,
+      "hard": true,
+      "source": "NWS / Environment Canada: wind chill",
+      "zh": {
+        "q": "天气预报说气温零下10 °C，风寒指数（体感温度）零下25 °C。哪种说法正确？",
+        "options": [
+          "裸露皮肤的散热速度，相当于无风时零下25 °C",
+          "放在外面的水壶和汽车发动机，都会冷到零下25 °C",
+          "实际气温是零下25 °C，温度计读数偏高",
+          "只有皮肤湿的时候，风寒才有影响"
+        ],
+        "explain": "风寒效应描述的是风把裸露皮肤的热量带走得有多快，所以冻伤和失温会来得更早。但它不会让物体比气温更冷：水壶最多冷到零下10 °C，只是冷得更快。"
+      },
+      "en": {
+        "q": "The forecast is −10 °C with a wind chill of −25 °C. Which statement is correct?",
+        "options": [
+          "Exposed skin loses heat about as fast as it would at −25 °C in calm air",
+          "A water bottle or car engine left outside will cool right down to −25 °C",
+          "The real air temperature is −25 °C; the thermometer reads too high",
+          "Wind chill only matters if your skin happens to be wet"
+        ],
+        "explain": "Wind chill describes how fast the wind strips heat from exposed skin, so frostbite and hypothermia come on sooner. It doesn't make objects colder than the air: the bottle still only cools to −10 °C, just faster."
+      }
+    },
+    {
+      "id": "cold-13",
+      "answer": 2,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "你要挖一个雪洞过夜，洞内该怎么布置？",
+        "options": [
+          "入口比睡台高，这样飘雪就吹不进洞里",
+          "地面和入口齐平，方便进出",
+          "睡台高于入口，让冷空气从低处流走",
+          "睡在入口通道里，那里空气最新鲜"
+        ],
+        "explain": "冷空气下沉、暖空气上升，低处的入口就像一个“冷气坑”，高处的睡台最暖和。洞顶要做成光滑的拱形，让融水顺着洞壁流下，洞壁至少30厘米厚，睡觉时不要直接躺在雪上。"
+      },
+      "en": {
+        "q": "You're digging a snow cave for the night. How should the inside be laid out?",
+        "options": [
+          "Entrance higher than the sleeping platform, so blowing snow can't drift inside",
+          "Floor level with the entrance, for easy getting in and out",
+          "Sleeping platform higher than the entrance, so cold air drains out low",
+          "Sleep in the entrance tunnel, where the air is freshest"
+        ],
+        "explain": "Cold air sinks and warm air rises, so a low entrance acts as a cold sink and the raised platform stays warmest. Keep the roof domed and smooth so drips run down the walls, make the walls at least 30 cm thick, and never lie directly on the snow."
+      }
+    },
+    {
+      "id": "cold-14",
+      "answer": 0,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "为什么要在雪洞顶上捅一个通气孔并保持畅通，哪怕会跑掉一些热量？",
+        "options": [
+          "防止二氧化碳和一氧化碳在洞里积聚",
+          "让洞里的融水从洞顶排出去",
+          "让外面的救援人员看见你的烛光",
+          "让风吹进洞里，一夜之间把湿衣服吹干"
+        ],
+        "explain": "体温和做饭会让洞壁结出一层冰壳，雪洞几乎变得密不透气。保持通气孔畅通（要经常检查，下雪时尤其如此），才能防止二氧化碳和一氧化碳积聚。洞里要放一把雪铲，以备需要挖出去。"
+      },
+      "en": {
+        "q": "Why poke a ventilation hole through the roof of a snow cave and keep it clear, even though some heat escapes?",
+        "options": [
+          "To stop carbon dioxide and carbon monoxide building up inside",
+          "So that meltwater can drain out through the roof",
+          "So that rescuers can see the glow of your candle",
+          "So that the wind can blow through and dry out your damp clothes overnight"
+        ],
+        "explain": "Body heat and cooking glaze the inside with ice, making the cave nearly airtight. A clear vent—check it often, especially while snow is falling—stops carbon dioxide and carbon monoxide building up. Keep a shovel inside in case you need to dig out."
+      }
+    },
+    {
+      "id": "cold-15",
+      "answer": 1,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "你在冰川上口渴了，炉子燃料又不多。从雪里取水，最好的办法是？",
+        "options": [
+          "边走边抓雪吃，又省燃料又省时间，效果一样",
+          "化开再喝：锅底先放点水，或揣在怀里焐化",
+          "只在晚上不怎么出汗的时候含冰块",
+          "不用多管，冷天身体不怎么需要水"
+        ],
+        "explain": "直接吃雪要消耗体热去融化和加温，会降低核心体温，还可能冻伤口腔，得到的水却很少。应该把雪化开：锅底先放一点水，雪才不会烧焦；也可以把装雪的水壶放在衣服夹层里焐化。寒冷干燥的空气加上劳累照样会让人脱水，而且冷天人不容易觉得渴。"
+      },
+      "en": {
+        "q": "You're thirsty on a glacier and short of stove fuel. What's the best way to get water from snow?",
+        "options": [
+          "Eat handfuls of snow as you go; it saves fuel and time and does the same job",
+          "Melt it: in a pot with a little water in it, or in a bottle in your jacket",
+          "Suck on ice only at night, when you're no longer sweating",
+          "Don't bother much; in the cold your body needs very little water anyway"
+        ],
+        "explain": "Eating snow costs body heat to melt and warm it, chills your core and can injure your mouth, while giving very little water. Melt it instead: a little water in the bottom of the pot stops the snow scorching, or melt snow in a bottle between your clothing layers. Cold, dry air and hard work still dehydrate you, and you feel less thirsty in the cold."
+      }
+    },
+    {
+      "id": "cold-16",
+      "answer": 3,
+      "hard": true,
+      "source": "Avalanche Canada / AAA",
+      "zh": {
+        "q": "大多数板状雪崩发生在多陡的坡上？",
+        "options": [
+          "约15～25°",
+          "约50～60°",
+          "70°以上",
+          "约30～45°"
+        ],
+        "explain": "大多数板状雪崩在约30～45°的坡上释放，约38°最常见。更缓的坡很少滑塌，太陡的坡积不住雪，会不断发生小规模的松雪滑落。但你在坡下或坡旁也可能触发雪崩，雪崩体还能冲出很远，一直冲到平地上。"
+      },
+      "en": {
+        "q": "On what steepness of slope do most slab avalanches start?",
+        "options": [
+          "About 15–25°",
+          "About 50–60°",
+          "Steeper than 70°",
+          "About 30–45°"
+        ],
+        "explain": "Most slab avalanches release on slopes of about 30–45°, most often around 38°. Gentler slopes rarely slide, and very steep ones shed snow constantly in small sluffs. But you can trigger a slope from below or beside it, and the debris can run far out onto flat ground."
+      }
+    },
+    {
+      "id": "cold-17",
+      "answer": 1,
+      "hard": false,
+      "source": "Avalanche Canada / AAA",
+      "zh": {
+        "q": "横穿一段雪坡时，你听到一声沉闷的“噗”，看到裂缝从脚下向四周的雪面迅速延伸。这意味着什么？",
+        "options": [
+          "雪层正在沉降，会变得更稳定",
+          "雪层不稳定，立即撤离，远离陡坡和坡下",
+          "这只是低温雪层发出的正常声音",
+          "已经安全了：薄弱层已经塌过，不会再滑了"
+        ],
+        "explain": "雪层塌陷的闷响和迅速延伸的裂缝，是雪层不稳定最明确的信号之一；近期发生过雪崩、刚下过大雪或有风积雪、气温骤升也是。沿最安全的路线撤离，不要上陡坡（约30°以上），也不要待在陡坡下方。"
+      },
+      "en": {
+        "q": "Crossing a snowy slope, you hear a deep 'whumpf' and see cracks shoot out across the snow from your feet. What does it mean?",
+        "options": [
+          "The snow is just settling and becoming more stable now",
+          "Unstable snowpack—retreat; keep off and out from under steep slopes",
+          "It's only the normal sound that very cold snow makes",
+          "It's safe now: the weak layer has already collapsed, so it can't slide again"
+        ],
+        "explain": "Collapsing ('whumpfs') and shooting cracks are among the clearest signs of an unstable snowpack, along with recent avalanches, heavy new snow or wind-loading, and rapid warming. Retreat by the safest route and avoid steep slopes (over about 30°) and the ground beneath them."
+      }
+    },
+    {
+      "id": "cold-18",
+      "answer": 3,
+      "hard": true,
+      "source": "ICAR; Brugger et al. avalanche survival curve",
+      "zh": {
+        "q": "你的同伴刚刚在你眼前被雪崩埋住。每个人都带着雪崩信标、探杆和雪铲，最近的救援队两小时后才能到。怎么办？",
+        "options": [
+          "马上去求援，带搜救犬和专业装备的救援队找得更快",
+          "等半小时，让雪崩体稳定了再上去",
+          "在你觉得他在的位置直接挖，不用信标",
+          "确认无二次危险，立即用信标、探杆、雪铲搜救"
+        ],
+        "explain": "被埋者大多死于窒息，埋压约15分钟后生存率急剧下降，所以同伴自救是被埋者最大的希望，专业救援通常赶不及。标记最后看到他的位置，所有信标切换到搜索模式，用探杆精确定位，再高效挖掘；只有在不耽误搜救的前提下才同时呼救。"
+      },
+      "en": {
+        "q": "Your partner has just been buried by an avalanche in front of you. Everyone carries a beacon, probe and shovel; the nearest rescue team is two hours away. What do you do?",
+        "options": [
+          "Go for help at once—trained rescuers with dogs and better equipment will find him faster",
+          "Wait half an hour for the debris to settle before going onto it",
+          "Dig where you think he is, without bothering with the beacons",
+          "Check for further danger, then search now with beacons, probes and shovels"
+        ],
+        "explain": "Most buried victims die of suffocation, and survival falls steeply after about 15 minutes, so companion rescue is their best chance—organised teams usually arrive too late. Mark the last-seen point, switch every beacon to search, pinpoint with the probe and dig efficiently; call for help only if it doesn't delay the search."
+      }
+    },
+    {
+      "id": "cold-19",
+      "answer": 0,
+      "hard": false,
+      "source": "Avalanche Canada / AAA",
+      "zh": {
+        "q": "你被雪崩卷着冲下山坡。雪流开始减速时，应该怎么做？",
+        "options": [
+          "一手伸向雪面，一臂护脸撑出空间",
+          "一直张着嘴不停地大声呼救",
+          "全身彻底放松，任由雪带着走",
+          "双臂抱紧膝盖，缩成一团保护好身体"
+        ],
+        "explain": "雪还在流动时要拼命挣扎，尽量留在表层并往侧面脱离（有雪崩气囊就拉开）。快停下时，把一只手伸向上方——它可能会露出雪面——另一只手臂挡在脸前撑出呼吸空间，深吸一口气，然后保持冷静、节省空气，等待救援。"
+      },
+      "en": {
+        "q": "You're caught in an avalanche and swept downhill. As the snow begins to slow, what should you do?",
+        "options": [
+          "Thrust a hand towards the surface; cup an arm in front of your face",
+          "Keep your mouth open and shout for help the whole time",
+          "Go completely limp and just let the snow carry you along",
+          "Hug your knees to your chest and curl up into a tight ball to protect yourself"
+        ],
+        "explain": "While the snow is moving, fight to stay near the surface and get to the side (pull your airbag if you have one). As it slows, thrust a hand up—it may stick out of the snow—and cup an arm in front of your face to make an air pocket, take a deep breath, then stay calm to save air until rescuers reach you."
+      }
+    },
+    {
+      "id": "cold-20",
+      "answer": 2,
+      "hard": false,
+      "source": "WMS Altitude 2024",
+      "zh": {
+        "q": "刚到海拔3800米，一个同伴头痛、恶心、没胃口，但走路正常，思维清楚。正确的安排是？",
+        "options": [
+          "继续往上爬，高原头痛很正常，会过去的",
+          "给他吃一片强效安眠药，好让他今晚睡好、明早恢复",
+          "停止上升，在这个高度休息，症状加重就下撤",
+          "马上下撤2000米，哪怕是夜里刮着暴风雪"
+        ],
+        "explain": "上升后出现头痛加恶心，就是急性高山病。高原的黄金法则：在高原出现症状先当高原病处理，有症状绝不继续上升，症状加重就下撤。轻度高山病休息后通常会好转（乙酰唑胺有帮助）；镇静类安眠药在高原可能抑制呼吸。"
+      },
+      "en": {
+        "q": "On arrival at 3,800 m, a companion has a headache, nausea and no appetite, but walks normally and thinks clearly. What's the right plan?",
+        "options": [
+          "Keep climbing—headaches at altitude are normal and pass",
+          "Give him a strong sleeping pill so he sleeps well and recovers by morning",
+          "Stop ascending and rest at this altitude; descend if it gets worse",
+          "Descend 2,000 m at once, even at night in a storm"
+        ],
+        "explain": "Headache plus nausea after an ascent is acute mountain sickness. The golden rules: assume symptoms at altitude are altitude illness, never go higher with symptoms, and descend if they get worse. Mild AMS usually settles with rest (acetazolamide helps); sedative sleeping pills can suppress breathing at altitude."
+      }
+    },
+    {
+      "id": "cold-21",
+      "answer": 0,
+      "hard": true,
+      "source": "WMS Altitude 2024",
+      "zh": {
+        "q": "在海拔4100米，一名登山者头痛越来越重，已经无法沿直线脚跟贴脚尖地走，而且神志不清。这是什么情况，怎么办？",
+        "options": [
+          "高原脑水肿：立即下撤，可给氧或地塞米松",
+          "轻度高原反应：在这里休息一天再看",
+          "累坏了：让他今晚好好睡一觉，明早再看情况",
+          "脱水了：让他喝三升水后继续上升"
+        ],
+        "explain": "上升后出现共济失调（走不了直线）和神志改变，在排除之前都要按高原脑水肿处理，它可能在几小时内致命。立即有人陪同下撤，有氧气和地塞米松就用上；实在无法下撤时可以用便携式加压舱。千万不能让他“睡一觉就好”。"
+      },
+      "en": {
+        "q": "At 4,100 m, a climber whose headache has been getting worse can no longer walk heel-to-toe in a straight line and is confused. What's happening and what do you do?",
+        "options": [
+          "Cerebral oedema (HACE)—descend now; oxygen or dexamethasone if available",
+          "Mild altitude sickness—rest here for a day and see",
+          "Exhaustion—let him sleep it off tonight and reassess his condition in the morning",
+          "Dehydration—have him drink three litres and carry on up"
+        ],
+        "explain": "Loss of coordination (ataxia) and confusion after an ascent mean high-altitude cerebral oedema until proven otherwise, and it can kill within hours. Descend immediately with a companion, give oxygen and dexamethasone if you have them, or use a portable hyperbaric bag if descent is impossible. Never leave him to 'sleep it off'."
+      }
+    },
+    {
+      "id": "cold-22",
+      "answer": 2,
+      "hard": true,
+      "source": "WMS Altitude 2024",
+      "zh": {
+        "q": "到达海拔4100米的第二天，一个身体很好的年轻人静息时也气短，干咳，跟不上队伍，但没有头痛。最可能是什么？",
+        "options": [
+          "只是体能差：帮他背包，慢慢往上走",
+          "不是高原病：高原病一定先头痛",
+          "高原肺水肿：让他休息保暖，给氧，下撤",
+          "干冷空气刺激：边爬边做深呼吸就好"
+        ],
+        "explain": "静息时气短、运动耐力下降、咳嗽是典型的高原肺水肿，它可以在完全没有头痛等高山病症状的情况下发生。尽量减少他的体力消耗，注意保暖，有氧气就给氧，尽快带他下到低处——高原肺水肿可能很快致命。"
+      },
+      "en": {
+        "q": "On day two at 4,100 m, a fit young man is breathless even at rest, has a dry cough and can't keep up. He has no headache. What's most likely?",
+        "options": [
+          "He's just unfit—carry his pack and keep going up slowly",
+          "Not altitude illness—altitude sickness always starts with a headache",
+          "Pulmonary oedema (HAPE)—rest him, keep him warm, give oxygen, descend",
+          "Irritation from cold, dry air—deep breathing while climbing will clear it"
+        ],
+        "explain": "Breathlessness at rest, poor exercise tolerance and a cough are classic high-altitude pulmonary oedema, and it can occur without any headache or other AMS symptoms. Keep his exertion to a minimum, keep him warm, give oxygen if you have it and get him lower—HAPE can kill quickly."
+      }
+    },
+    {
+      "id": "cold-23",
+      "answer": 3,
+      "hard": true,
+      "source": "WMS Altitude 2024",
+      "zh": {
+        "q": "一名有高山病症状的队员昨晚吃了地塞米松，今早醒来感觉很好。队伍想今天继续往上冲。正确做法是？",
+        "options": [
+          "可以上，药已经把高原反应治好了，他能继续爬",
+          "可以上，但为保险起见把剂量加倍",
+          "可以上，只要他今天喝够五升水",
+          "别再上升：药只掩盖症状，不能帮助适应"
+        ],
+        "explain": "地塞米松能缓解急性高山病和高原脑水肿的症状，但对适应海拔毫无帮助，停药后症状可能反弹。要等他停药后也没有症状了，才能继续上升。真正能加快适应的药是乙酰唑胺。"
+      },
+      "en": {
+        "q": "A climber with AMS took dexamethasone last night and wakes up feeling fine. The team wants to push higher today. What's right?",
+        "options": [
+          "Go up—the medicine has cured his altitude sickness, so he's fit to climb",
+          "Go up, but double the dose just to be on the safe side",
+          "Go up, as long as he drinks at least five litres of water",
+          "Don't go higher—dexamethasone hides symptoms but won't acclimatise you"
+        ],
+        "explain": "Dexamethasone relieves AMS and HACE symptoms but does nothing for acclimatisation, and symptoms can rebound when it's stopped. He shouldn't go higher until he's free of symptoms off the drug. Acetazolamide is the drug that actually speeds acclimatisation."
+      }
+    },
+    {
+      "id": "cold-24",
+      "answer": 1,
+      "hard": true,
+      "source": "WMS Altitude 2024",
+      "zh": {
+        "q": "海拔3000米以上，每天最多把睡觉的高度提高多少？",
+        "options": [
+          "约1000米，不需要休整",
+          "约500米，每3～4天休整一天",
+          "约1500米，每周休整一天",
+          "约2000米，只要感觉良好"
+        ],
+        "explain": "海拔3000米以上，每天睡觉的高度最多提高约500米，每3～4天安排一个不上升的休整日。白天可以爬得更高，晚上回到低处睡（“爬高睡低”）——最关键的是睡觉的高度。"
+      },
+      "en": {
+        "q": "Above 3,000 m, by how much at most should you raise your sleeping altitude each day?",
+        "options": [
+          "About 1,000 m, with no rest days needed",
+          "About 500 m, with a rest day every 3–4 days",
+          "About 1,500 m, with a rest day each week",
+          "About 2,000 m, as long as you feel fine"
+        ],
+        "explain": "Above 3,000 m, raise the altitude you sleep at by no more than about 500 m a day, and take a rest day every 3–4 days. You can climb higher during the day and come back down to sleep ('climb high, sleep low')—sleeping altitude is what matters most."
+      }
+    },
+    {
+      "id": "cold-x01",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "Gordon, Paal, Ellerton et al., Resuscitation 2015 (ICAR MedCom: delayed and intermittent CPR); WMS Hypothermia 2019; ERC 2021",
+      "zh": {
+        "q": "在海拔4100米的坠机现场，一名在雪地里躺了几个小时的乘客在你们搬动时心脏骤停；核心体温不详，但显然是重度失温。去直升机只有一条300米长的陡峭冲沟，必须用雪橇把他吊放下去，没法持续做心肺复苏。现行指南怎么建议？",
+        "options": [
+          "交替进行：至少按压5分钟，再停下转运不超过5分钟；一有条件就恢复持续按压",
+          "整个下撤过程都停止心肺复苏：失温引起的心脏骤停，按压一旦中断超过1分钟就救不活了",
+          "按压1分钟、转运10分钟交替进行，这样能最快把他送上直升机，尽早开始复温",
+          "完全不搬动，就地一直按压，等直升机能降落到坠机地点为止，不管要等多久都等"
+        ],
+        "explain": "大脑在心脏停跳前已经深度降温，能耐受循环中断，所以原发性失温心脏骤停确实无法持续按压时，ICAR和欧洲复苏委员会认可间断复苏：核心体温低于28 °C或不详时，至少按压5分钟、中断不超过5分钟交替进行（WMS也是这一规则）；低于20 °C时，中断可达10分钟。完全放弃会葬送一次完全康复的机会，原地不动又让他得不到必需的复温（最好是体外生命支持）。"
+      },
+      "en": {
+        "q": "At the 4,100 m crash site, a passenger who has lain in the snow for hours goes into cardiac arrest as you move him; his core temperature is unknown, but he's clearly severely hypothermic. The only way to the helicopter is a steep 300 m gully where he must be lowered on a sled, so continuous CPR is impossible. What do current guidelines advise?",
+        "options": [
+          "Alternate at least 5 minutes of CPR with no more than 5 minutes moving him without it; resume continuous CPR as soon as you can",
+          "Stop CPR for the whole descent: once compressions pause for more than a minute, a hypothermic cardiac arrest can't be survived",
+          "Alternate 1 minute of CPR with 10 minutes of lowering, which gets him to the helicopter and to rewarming as fast as possible",
+          "Don't move him at all; keep CPR going right where he lies until the helicopter can land at the crash site, however long that takes"
+        ],
+        "explain": "A brain that was already deeply cold before the heart stopped tolerates gaps in circulation, so when continuous CPR is impossible in primary hypothermic arrest, ICAR and the European Resuscitation Council accept alternating at least 5 minutes of CPR with no more than 5 minutes without it (core below 28 °C or unknown; the WMS gives the same rule), or up to 10 minutes without it below 20 °C. Stopping altogether throws away a real chance of full recovery, and staying put denies him the rewarming (ideally ECLS) he needs."
+      }
+    },
+    {
+      "id": "cold-x02",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Hypothermia 2019 (staging and treatment table, AFP 2020 summary)",
+      "zh": {
+        "q": "顶着冻雨下撤时，一名队友剧烈发抖，神志完全清醒、说话有条理，但已经开始脚步踉跄，系冰爪带子也笨手笨脚。离小屋还有3公里，你们有天幕、泡沫垫、睡袋、暖宝宝和一壶热甜茶。WMS指南建议怎么做？",
+        "options": [
+          "马上加快速度赶到小屋——走路能产热，他现在还清醒，没有任何理由停下来",
+          "按中度失温处理：什么都不给吃喝，让他严格平躺，由大家轮流把他一路抬下山去",
+          "停下避风，隔热保暖，胸背加热，喝热甜茶；坐或躺约30分钟，好转了才继续走",
+          "就在冻雨里脱掉他的湿衣服，让他光着身子钻进干睡袋，然后再继续往下撤"
+        ],
+        "explain": "发抖、清醒但动作笨拙属于轻度失温：WMS 2019建议避风，用隔热层加防潮层保温，在上半身加热，给温热的高热量饮食，并让他坐或躺至少30分钟；有好转再慢慢走动产热，没有好转就要后送。马上让他赶路有虚脱的风险，湿衣服也要等到了温暖的地方再脱。"
+      },
+      "en": {
+        "q": "Descending in sleet, a teammate is shivering hard and is fully alert and talking sense, but he has started stumbling and fumbling his crampon straps. The hut is 3 km away, and you have a tarp, a foam mat, a sleeping bag, heat packs and a flask of hot sweet tea. What does WMS guidance recommend?",
+        "options": [
+          "Push on briskly to the hut right away—walking makes heat, and while he's still alert there's no reason at all to stop",
+          "Treat it as moderate hypothermia: give him nothing by mouth, keep him strictly flat and take turns carrying him all the way down",
+          "Stop and shelter, insulate him, heat his chest and back, give the tea; rest him ~30 minutes, walking on only if he improves",
+          "Strip off his wet clothes right there in the sleet and zip him naked into the dry sleeping bag before going any further"
+        ],
+        "explain": "Shivering and alert but with clumsy movement is mild hypothermia: WMS 2019 advises shelter, insulation with a vapour barrier, heat to the upper trunk and warm high-calorie food or drink, with the casualty seated or lying for at least 30 minutes; if he's improving he may then walk to make heat, and if not, evacuate. Exercising him at once risks collapse, and wet clothes should stay on until he's somewhere warm."
+      }
+    },
+    {
+      "id": "cold-x03",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Hypothermia 2019; hypothermia-wrap studies (Scand J Trauma Resusc Emerg Med 2024)",
+      "zh": {
+        "q": "海啸过后，在一处落雪的山坡上，你们把一名在海水里泡了约40分钟的男子拉了上来。他浑身湿透，抖得厉害，站都站不稳。附近没有安全的建筑，大风夹着雪。你们有一张泡沫垫、一个睡袋、两个大垃圾袋、一块天幕和几个暖宝宝。怎样把他包起来？",
+        "options": [
+          "就在山坡上剪掉他的湿衣服，用毛巾擦干全身，然后直接把他放进铺在雪地上的睡袋里",
+          "身下垫好；湿衣服不脱，外面包垃圾袋防潮，再套睡袋，暖宝宝放躯干，最外层裹天幕",
+          "把睡袋直接套在湿衣服外面帮他吸干水分，垃圾袋和天幕再紧紧地裹在最外面",
+          "只用垃圾袋和天幕把他裹紧，然后扶着他在山坡上快步走，靠他自己的肌肉产热"
+        ],
+        "explain": "WMS建议湿衣服等到了温暖的地方再脱，先用防潮层阻止蒸发散热：“失温包裹”由里到外是防潮层、保暖层（身下要垫隔热垫）、防风防水外层，热源放在胸口、腋下和后背。睡袋直接套在湿衣服外会吸水、失去蓬松度，在大风雪里扒光他只会冷得更快。他在冷水里泡了很久、站都站不稳，不能让他走动，要让他躺着、轻柔搬动。"
+      },
+      "en": {
+        "q": "On a snowy hillside after the tsunami, you've pulled a man out of the sea after about 40 minutes in the water. He's soaked, shivering violently and too unsteady to stand. There's no safe building nearby, and wind-driven snow is falling. You have a foam pad, a sleeping bag, two big bin bags, a tarp and some heat packs. How do you wrap him?",
+        "options": [
+          "Cut off his wet clothes out on the hillside, towel him dry and then put him straight into the sleeping bag laid out on the snow",
+          "Pad under him; wet clothes stay on; bin bags round him as a vapour barrier, then the bag, heat packs on his trunk, tarp outside",
+          "Pull the sleeping bag straight over his wet clothes to soak up the water, then wrap the bin bags and tarp tightly around the outside",
+          "Wrap him tightly in just the bin bags and the tarp, then walk him briskly up and down the slope so his own muscles warm him"
+        ],
+        "explain": "WMS advises leaving wet clothes on until the casualty is somewhere warm and stopping evaporation with a vapour barrier: from the inside out, the 'hypothermia wrap' is vapour barrier, insulation (with a pad underneath), then a wind- and waterproof cover, with heat sources on the chest, armpits and back. A sleeping bag pulled straight over wet clothing soaks up water and loses its loft, and stripping him in driving snow only speeds his cooling. After a long immersion, and unable to stand, he shouldn't be walked: keep him lying down and handle him gently."
+      }
+    },
+    {
+      "id": "cold-x04",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Frostbite 2019 & 2024 updates (field rewarming only if definitive care is more than 2 h away)",
+      "zh": {
+        "q": "坠机现场，一名乘客的手指冻得硬邦邦的。天刚放晴，直升机机组用无线电通知，大约90分钟后就能把他送进有冻伤专科的医院。你们有炉子、锅和温度计。他的手指该怎么处理？",
+        "options": [
+          "现在就用37～39 °C的温水复温约30分钟——手指多冻一分钟，就多损失一些组织",
+          "用雪把手指埋起来，让它一路保持冻结，免得在直升机上开始化冻、再冻上",
+          "用45 °C左右的水快速复温，赶在直升机到达之前就把手指完全化冻",
+          "垫好、护住，不要揉搓，给他保暖，有布洛芬就让他吃，把复温留给医院"
+        ],
+        "explain": "WMS建议只有在距确定性治疗超过约2小时、且能保证不再冻结时，才在现场用37～39 °C温水快速复温；医院只有90分钟路程，就保护好手指，让专科医生来复温，他们能随即使用tPA或伊洛前列素。冻结的组织绝不能埋在雪里或揉搓，水温明显高于39 °C会烫伤失去知觉的皮肤。"
+      },
+      "en": {
+        "q": "At the crash site, a passenger's fingers are frozen hard. The weather has just cleared, and the helicopter crew radio that he'll be in a hospital with a frostbite unit in about 90 minutes. You have a stove, a pot and a thermometer. What should you do about the fingers?",
+        "options": [
+          "Rewarm them now in water at 37–39 °C for about 30 minutes—every extra minute they stay frozen costs more tissue",
+          "Pack them in snow so they stay frozen solid all the way to hospital and can't start to thaw and refreeze in the helicopter",
+          "Rewarm them quickly in water at about 45 °C, so that the thaw is finished before the helicopter arrives",
+          "Pad and protect them, don't rub them, keep him warm, give ibuprofen if you have it, and leave rewarming to the hospital"
+        ],
+        "explain": "WMS advises rapid field rewarming in 37–39 °C water only when definitive care is more than about 2 hours away and refreezing can be prevented; with a hospital 90 minutes off, protect the fingers and let the specialists rewarm them, as they can start tPA or iloprost straight after. Never pack frozen tissue in snow or rub it, and water much above 39 °C burns numb skin."
+      }
+    },
+    {
+      "id": "cold-x05",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Frostbite 2019/2024 (treat moderate and severe hypothermia before frostbite); WMS Hypothermia 2019",
+      "zh": {
+        "q": "南极考察站失火后（室外零下60 °C），一名丢了手套的技术员被抬进备用舱。他昏昏欲睡、意识模糊，已经不再发抖，手指发白发硬。你们有热水和温度计。先处理什么？",
+        "options": [
+          "马上用37～39 °C的温水给手指复温，因为冻伤的手指每多冻一分钟就更严重一分",
+          "先处理失温：让他平躺，轻柔搬动，隔热保暖，加热躯干；失温处理好了再给手指复温",
+          "把他整个放进40 °C的热水浴里，身体和冻僵的手指同时复温，节省宝贵的时间",
+          "先给他喝热甜茶，再扶着他在舱里慢慢走动暖身，然后把双手泡进温水里复温"
+        ],
+        "explain": "嗜睡、意识模糊、不再发抖说明是中度失温，可能引发致命的心律失常：WMS指出，中度和重度失温要先有效处理，再处理冻伤（轻度失温可以同时处理）。此时泡热水、扶着走动或喂饮料都不对——要让他保持水平、隔热保暖，在胸口和后背加热，不经口进食。"
+      },
+      "en": {
+        "q": "After the fire at the Antarctic station (−60 °C outside), a technician who lost his mitts is carried into the backup module. He's drowsy and confused, has stopped shivering, and his fingers are white and hard. You have hot water and a thermometer. What comes first?",
+        "options": [
+          "Rewarm his fingers in 37–39 °C water straight away, because frostbite gets worse with every single minute the tissue stays frozen",
+          "His hypothermia: keep him flat, handle him gently, insulate him and heat his trunk; rewarm the fingers once that's been treated",
+          "Lower him into a 40 °C bath, which rewarms his body and his frozen fingers together and saves precious time",
+          "Give him hot sweet tea and walk him gently round the module to warm him up, then put his hands in warm water"
+        ],
+        "explain": "Drowsy, confused and no longer shivering means moderate hypothermia, which can trigger a fatal arrhythmia: WMS says moderate and severe hypothermia must be treated effectively before frostbite (mild hypothermia can be treated alongside it). Immersing him, walking him or giving him drinks is wrong at this stage—keep him horizontal and insulated, with heat on the chest and back and nothing by mouth."
+      }
+    },
+    {
+      "id": "cold-x06",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Altitude Illness 2024 (HAPE treatment: oxygen, descent; nifedipine only without oxygen; no diuretics or acetazolamide)",
+      "zh": {
+        "q": "暴风雪把你们困在海拔4100米的坠机现场，至少还要一天。一名乘客患了高原肺水肿：静息时也气短，咳嗽带痰，血氧饱和度70%。飞机急救箱里有一瓶氧气（约够用两天）、硝苯地平、乙酰唑胺和呋塞米（利尿剂）。在能下撤之前，最好的治疗是？",
+        "options": [
+          "用利尿剂呋塞米把他肺里的积液排出去，氧气先留着，等他病情恶化了再拿出来用",
+          "马上让他服硝苯地平，氧气先省着，等血氧饱和度降得更低一些时再用",
+          "吸氧使血氧升到90%以上，休息保暖；尽快下撤，硝苯地平留到氧气用完再用",
+          "按治疗剂量服乙酰唑胺，它能加快高原习服，从而把肺里的积液清除掉"
+        ],
+        "explain": "WMS 2024：下撤是根本治疗；在此之前吸氧，使血氧饱和度保持在90%以上；只有在无法下撤、又没有氧气或高压袋时才用硝苯地平——在吸氧的基础上加用它并无额外好处。不建议用利尿剂和乙酰唑胺治疗高原肺水肿：患者往往本来就缺水，利尿会让血压下降，却清除不了肺里的积液。"
+      },
+      "en": {
+        "q": "A storm traps you at the 4,100 m crash site for at least another day. A passenger has HAPE: he's breathless at rest, has a wet cough and his oxygen saturation is 70 %. The aircraft's medical kit holds an oxygen cylinder (enough for about two days), nifedipine, acetazolamide and furosemide, a diuretic. What's the best treatment until you can descend?",
+        "options": [
+          "Furosemide, the diuretic, to drain the fluid out of his lungs quickly, while saving the oxygen in case he gets any worse",
+          "Nifedipine straight away, keeping the oxygen in reserve until his saturation falls even lower than it is now",
+          "Oxygen to get his saturation above 90 %, rest and warmth; descend as soon as you can, keeping nifedipine for if oxygen runs out",
+          "Acetazolamide at the full treatment dose, because by speeding up acclimatisation it will also clear the fluid from his lungs"
+        ],
+        "explain": "WMS 2024: descent is the definitive treatment; until then give oxygen to keep saturation above 90 %, and use nifedipine only when descent is impossible and oxygen or a hyperbaric bag isn't available—it adds nothing on top of oxygen. Diuretics and acetazolamide are not recommended for HAPE: patients are often already dry, and draining fluid can drop the blood pressure without clearing the lungs."
+      }
+    },
+    {
+      "id": "cold-x07",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Altitude Illness 2024 (prevention: acetazolamide 125 mg q12h from the day before ascent; paracetamol and budesonide not recommended)",
+      "zh": {
+        "q": "明天，你们的后援队要从格尔木（海拔约2800米）直接开车上到海拔4100米的坠机地点，并在那里过夜。为预防急性高山病，哪种用药方案符合现行WMS指南对这种高风险上升的建议？",
+        "options": [
+          "乙酰唑胺每次125毫克、每天两次，上升前一天（今天）开始，到高处后续服两天",
+          "到达以后开始服对乙酰氨基酚，每次1克、每天三次，赶在高原头痛出现之前就把它压住",
+          "乙酰唑胺每次250毫克、每天两次，但要等到有人在坠机地点真的头痛了才开始服",
+          "从今天开始吸入激素布地奈德，每天两次，让呼吸道在寒冷稀薄的空气里保持通畅"
+        ],
+        "explain": "一天之内上到3500米以上过夜属于高风险上升，WMS 2024建议从上升前一天开始服乙酰唑胺，每12小时125毫克（每次250毫克、每天两次是治疗剂量）。2024年更新明确指出，对乙酰氨基酚和吸入布地奈德都不应用于预防；止痛药只能缓解头痛，不能预防高原病。"
+      },
+      "en": {
+        "q": "Tomorrow your support team will drive from Golmud (about 2,800 m) straight up to the 4,100 m crash site and sleep there. To prevent acute mountain sickness, which medication plan fits current WMS guidance for this high-risk ascent?",
+        "options": [
+          "Acetazolamide 125 mg twice a day, starting today—the day before the ascent—and for the first couple of days up high",
+          "Paracetamol 1 g three times a day from arrival onwards, which heads off the altitude headache before it can even get started",
+          "Acetazolamide 250 mg twice a day, but started only once someone has actually developed a headache at the crash site",
+          "An inhaled steroid (budesonide) twice a day, starting today, to keep the airways open in the thin, cold mountain air"
+        ],
+        "explain": "Going up to sleep above 3,500 m in a single day is a high-risk ascent, and WMS 2024 recommends acetazolamide 125 mg every 12 hours from the day before ascent (250 mg twice daily is the treatment dose). The 2024 update specifically says paracetamol and inhaled budesonide should not be used for prevention; painkillers only ease the headache."
+      }
+    },
+    {
+      "id": "cold-x08",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "Avalanche Canada / American Avalanche Association: strategic shovelling (Atkins & Edgerly; Genswein's V-shaped snow conveyor)",
+      "zh": {
+        "q": "在一处缓坡上，你的探杆在1.5米深处碰到了被埋的同伴；你们三人都有雪铲。怎样开始挖？",
+        "options": [
+          "把探杆拔出来免得碍事，在原处插一根雪板做标记，三个人围着标记一起垂直往下挖",
+          "紧贴着探杆垂直往下挖——这是通到他身边最短的路线，而每一秒钟都很关键",
+          "从探杆的上坡一侧开始挖，这样扔出去的松雪会自己顺着坡往下滑走",
+          "探杆留着；从坡下约埋深1.5倍处开始，朝探杆挖出一个宽平台，大家轮换着挖"
+        ],
+        "explain": "这是“策略性挖掘”：探杆留在原处作引导，从它的下坡方向开始（缓坡上约为埋深的1.5倍），朝探杆挖出一个宽而呈台阶状的坑，把雪抛向两侧和坡下，挖掘者像传送带一样轮换。紧贴探杆往下挖的窄坑很快就挤得没法施展，每一铲都得高高举起，人还可能踩在被埋者身上，压垮他的呼吸腔。"
+      },
+      "en": {
+        "q": "On a gentle slope, your probe strikes your buried partner at a depth of 1.5 m. Three of you have shovels. How do you start digging?",
+        "options": [
+          "Pull the probe out so it isn't in the way, mark the spot with a ski, and all three of you dig straight down around the mark",
+          "Dig straight down right beside the probe—it's the shortest possible distance to him, and every single second counts",
+          "Start on the uphill side of the probe, so the loose snow you throw out will slide away downhill all by itself",
+          "Leave the probe in; start about 1.5 times the burial depth downhill and dig a wide platform in towards it, rotating diggers"
+        ],
+        "explain": "Strategic shovelling: keep the probe in place as your guide, start downhill of it (about 1.5 times the burial depth on gentle ground) and work in towards it in a wide, stepped hole, throwing snow to the sides and downhill, with diggers rotating like a conveyor belt. A narrow hole dug straight down beside the probe soon becomes too cramped to work in, forces you to lift every shovelful high and risks someone standing on the victim and crushing his air pocket."
+      }
+    },
+    {
+      "id": "cold-x09",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "ICAR / Avalanche Canada transceiver-interference guidance (20/50 rule)",
+      "zh": {
+        "q": "你已把雪崩信标切换到搜索模式，开始信号搜索。同伴紧挨着你走，一边用手机给救援中心打电话，一边拿着手持对讲机，两样东西都离你的信标很近。应该怎么做？",
+        "options": [
+          "不用改变——手机和对讲机只在信标发射信号时才会产生干扰，在搜索模式下完全没有影响",
+          "手机、对讲机离搜索中的信标至少50厘米（发射中的至少20厘米），让他走远几米打电话",
+          "让他把手机调成飞行模式，塞进你胸前装信标的那个口袋里，这样就不会弄丢了",
+          "把手机紧贴在你的信标上，手机的天线更强，能把被埋者微弱的信号放大一些"
+        ],
+        "explain": "电子设备和金属离信标太近会干扰读数，所以ICAR和各雪崩中心都教“20/50规则”：离发射中的信标至少20厘米，离搜索中的信标至少50厘米。手机贴在信标旁边，开了飞行模式也不够；负责呼救的人应当离开搜索者。"
+      },
+      "en": {
+        "q": "You've switched your avalanche beacon to search and started the signal search. Your partner is walking right beside you, phoning the rescue centre on his mobile and holding his handheld radio, both close to your beacon. What should happen?",
+        "options": [
+          "Nothing needs to change—phones and radios only interfere with a beacon while it is transmitting, never in search mode",
+          "Keep phones and radios at least 50 cm from a searching beacon (20 cm from a transmitting one)—he should call from a few metres off",
+          "He should switch his phone to airplane mode and slip it into your chest pocket, next to the beacon, where it can't get lost",
+          "Hold the phone right up against your beacon, because its stronger antenna will boost the weak signal coming from the buried beacon"
+        ],
+        "explain": "Electronic devices and metal close to a beacon distort its readings, which is why ICAR and avalanche centres teach the 20/50 rule: at least 20 cm from a transmitting beacon and 50 cm from one in search mode. Airplane mode isn't enough if the phone sits right next to the beacon; whoever is calling for help should step away from the searchers."
+      }
+    },
+    {
+      "id": "cold-x10",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "Polar expedition practice (vapour-barrier liners); dew-point condensation in insulation",
+      "zh": {
+        "q": "内陆南极考察站失火后（零下60 °C），你们要在没有暖气的应急舱里住一个星期。每天早上，羽绒睡袋都更重、更扁，外壳里面还结了霜。这是怎么回事，最好的对策是？",
+        "options": [
+          "身体散发的水汽冻在了保暖层里；睡袋里加防潮内衬，有机会就晾干睡袋，别往里面呼气",
+          "外面冰冷空气里的水汽钻进了睡袋；在每个睡袋外面都紧紧地裹上一层塑料布，把水汽挡住",
+          "晚上把潮湿的袜子和手套放进睡袋里焐干，睡前再往睡袋里呵几口气，让它暖和起来",
+          "把所有衣服都穿着睡，包括白天汗湿的那几层，既多一层保暖，又能顺便把它们焐干"
+        ],
+        "explain": "皮肤散发的水汽穿过睡袋向外走，在保暖层里温度降到露点的地方凝结成冰，几天下来羽绒里全是冰，蓬松度大减。在温暖的一侧加一层防潮内衬，能从源头挡住水汽；在外面裹塑料布则正好相反，会把水汽锁在保暖层里，往睡袋里放湿衣物、呵气也是一样。"
+      },
+      "en": {
+        "q": "After the fire at the inland Antarctic station (−60 °C), you'll have to live for a week in an unheated emergency module. Every morning the down sleeping bags are heavier and flatter, with frost inside the shell. What's happening, and what's the best response?",
+        "options": [
+          "Your body's moisture is freezing in the insulation: use a vapour-barrier liner inside the bag, air the bags, don't breathe into them",
+          "Moisture from the frozen air outside is getting into the bags, so wrap a plastic sheet tightly around the outside of each one",
+          "Dry your damp socks and gloves inside the bag overnight, and breathe into it before you sleep to warm it up for the night",
+          "Sleep in all your clothes, including your sweaty daytime layers, to add insulation and to dry those damp layers out at the same time"
+        ],
+        "explain": "Water vapour from your skin moves out through the bag and condenses and freezes where the insulation reaches its dew point, so over days a down bag fills with ice and loses its loft. A vapour-barrier liner on the warm side stops the vapour at its source; a plastic cover on the outside does the opposite, trapping the moisture inside the insulation, as do damp clothes and breath inside the bag."
+      }
+    },
+    {
+      "id": "cold-x11",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "US Army cold-weather injury guidance (supercooled POL, fuel and alcohol; contact with cold-soaked metal)",
+      "zh": {
+        "q": "南极考察站失火后，你们躲在备用舱里，室外零下60 °C。有人要出去取放在外面金属罐里的酒精炉燃料，想摘掉笨重的手套一分钟，方便拧开盖子倒燃料。为什么不行？",
+        "options": [
+          "其实没什么危险：即使在零下60 °C，皮肤也至少要暴露10分钟以上才会开始冻伤",
+          "唯一的危险是着火，而零下60 °C时酒精冷得根本不会挥发，所以拿着很安全",
+          "零下60 °C时罐里的酒精早就冻成了固体，根本不会有液体溅到他的手上",
+          "酒精在零下60 °C仍是液体，溅上皮肤几乎瞬间冻伤；裸手碰冰冷的金属罐也会粘住"
+        ],
+        "explain": "燃油、酒精和防冻液远低于0 °C也不结冰，温度和环境一样是零下60 °C，蒸发时还会继续带走皮肤的热量——军队的寒区防护指南警告，接触它们几乎会瞬间冻伤，裸手碰到冻透的金属也一样（乙醇要到约零下114 °C才结冰）。至少要戴着薄内手套，倒的时候要小心，洒到衣服上马上擦掉。"
+      },
+      "en": {
+        "q": "In the backup module after the Antarctic station fire, it's −60 °C outside. Someone has to fetch the alcohol stove fuel, kept outside in a metal can, and he wants to take off his bulky mitts for a minute to unscrew the cap and pour. Why not?",
+        "options": [
+          "There's no real danger: even at −60 °C, bare skin needs at least ten minutes of exposure before it starts to freeze",
+          "The only risk is fire, and at −60 °C the alcohol is far too cold to give off any vapour, so handling it bare-handed is quite safe",
+          "The alcohol will have frozen solid in the can at −60 °C, so there's no liquid at all that could splash onto his hands",
+          "Alcohol stays liquid at −60 °C: a splash freezes skin almost instantly, and bare skin also sticks to the frozen metal can"
+        ],
+        "explain": "Fuels, alcohol and antifreeze stay liquid far below 0 °C, so they sit at −60 °C and also chill skin as they evaporate—military cold-weather guidance warns that contact causes near-instant frostbite, as does bare skin on cold-soaked metal (ethanol doesn't freeze until about −114 °C). Keep at least thin liner gloves on, pour carefully and wipe any spill off clothing at once."
+      }
+    },
+    {
+      "id": "cold-x12",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "Giesbrecht (1-10-1, University of Manitoba); Canadian Red Cross ice-safety guidance",
+      "zh": {
+        "q": "从坠机地点徒步下撤时，你们横穿一片结冰的湖去找公路，你在离岸30米处踩破冰面掉了下去。你已经控制住了急促的喘气。最好的自救方法是？",
+        "options": [
+          "继续朝对岸前进，用手臂砸开前面的薄冰，一直砸到能撑住你体重的厚冰为止",
+          "先蹬掉沉重的靴子、脱掉吸水的外套，身体轻了才能爬上冰沿，爬上去后再穿",
+          "转身面向来路，双臂搭上冰面，踢腿放平身体，边踢边拉爬出后滚开；爬不出就搭着冰别动",
+          "手肘撑上最近的冰沿，一出水就马上站起来，快步走回岸边，越早离开这片冰面越好"
+        ],
+        "explain": "你刚走过的冰面撑得住你，所以要转身面向来路，前臂搭上冰面，用力踢腿使身体放平，趴着滑出来，再滚开、爬行——一站起来体重集中，马上又会掉下去。如果在四肢失去力气前的大约10分钟里爬不出来，就把手臂搭在冰上保持不动：袖子可能冻在冰上，即使昏迷也能让头留在水面上。衣服能存住空气、保暖，不要脱。"
+      },
+      "en": {
+        "q": "Walking out from the crash site, you cross a frozen lake to reach a road and break through the ice 30 m from shore. You've got your gasping under control. What's the best way to save yourself?",
+        "options": [
+          "Keep heading for the far shore, breaking the thin ice ahead of you with your arms until you reach ice thick enough to hold you",
+          "Pull off your heavy boots and your waterlogged jacket first, so you're light enough to haul yourself up onto the ice edge",
+          "Turn back the way you came, arms on the ice, kick your legs up level and kick-pull out, then roll away; if you can't, keep your arms on the ice and stay still",
+          "Get your elbows onto the nearest edge and stand up the moment you're out of the water, then walk quickly back to shore"
+        ],
+        "explain": "The ice you just walked over held your weight, so face back that way, get your forearms onto it, kick until your body is horizontal and slide out on your belly, then roll away and crawl—standing up concentrates your weight and you'll go straight back in. If you can't get out in the ten minutes or so before your limbs fail, keep your arms on the ice and stay still: your sleeves may freeze to it and keep your head up even if you lose consciousness. Clothing traps air and insulates—keep it on."
+      }
+    }
+  ]
+}

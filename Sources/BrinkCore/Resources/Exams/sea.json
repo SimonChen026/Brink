@@ -1,0 +1,974 @@
+{
+  "id": "sea",
+  "skill": "survival",
+  "bonus": 1,
+  "perk": "wet",
+  "requires": [],
+  "minLevel": 2,
+  "count": 10,
+  "pass": 8,
+  "icon": "lifepreserver.fill",
+  "color": "#3FB4C9",
+  "zh": {
+    "name": "海上求生",
+    "full": "海上求生资格",
+    "desc": "弃船、救生筏、冷水休克与 1-10-1 法则、HELP 姿势、淡水配给、海上求救信号。",
+    "realWorld": "相当于海员 STCW 基本安全培训里的“个人求生技能”。"
+  },
+  "en": {
+    "name": "Sea Survival",
+    "full": "Sea Survival Certificate",
+    "desc": "Abandoning ship, life rafts, cold shock and the 1-10-1 rule, the HELP position, rationing water, signals at sea.",
+    "realWorld": "Comparable to the Personal Survival Techniques module of STCW basic safety training."
+  },
+  "questions": [
+    {
+      "id": "sea-01",
+      "answer": 2,
+      "hard": false,
+      "source": "RNLI / RYA; 1979 Fastnet Race Inquiry",
+      "zh": {
+        "q": "你的帆船在风暴中受损，正在缓慢进水，但水泵抽得过来，船还浮得很好，救生筏已经备好。该怎么做？",
+        "options": [
+          "马上弃船，救生筏比受损的船安全",
+          "穿着救生衣跳进海里，游到救生筏上",
+          "船上安全就留在船上，船真要沉了才上救生筏",
+          "现在就坐进救生筏，割断缆绳，趁船还没沉赶紧远离"
+        ],
+        "explain": "漂浮着的船比救生筏大、显眼、物资多。1979年法斯特耐特帆船赛中，被弃的24艘帆船里有19艘后来被发现仍漂浮着，却有7名船员是在弃船上筏后遇难的。准备好救生筏和应急包，继续排水堵漏，只有船在下沉或着火时才离开——航海界的说法是：要“往上跨”进救生筏，也就是船已经沉得比筏子还低。"
+      },
+      "en": {
+        "q": "Your yacht has been damaged in a storm and is slowly taking on water, but the pumps are coping and she's still floating well. The life raft is ready. What should you do?",
+        "options": [
+          "Abandon ship now—a raft is safer than a damaged boat",
+          "Jump into the sea in lifejackets and swim over to the raft",
+          "Stay aboard while it's safe; take to the raft only if she's sinking",
+          "Get into the raft and cut it free now, to get well clear before she goes down"
+        ],
+        "explain": "A floating vessel is bigger, easier to spot and better stocked than a raft. In the 1979 Fastnet race, 19 of the 24 yachts that were abandoned were later found still afloat, while seven sailors were lost after taking to life rafts. Prepare the raft and grab bag, keep fighting the flooding, and leave only when the boat is sinking or on fire—'step up into the raft'."
+      }
+    },
+    {
+      "id": "sea-02",
+      "answer": 0,
+      "hard": false,
+      "source": "STCW A-VI/1-1 (PST)",
+      "zh": {
+        "q": "船严重倾斜，你还在甲板下的通道里，身上穿着没充气的充气式救生衣。什么时候给它充气？",
+        "options": [
+          "到了甲板上或进入水中之后",
+          "现在就充，万一进水好有准备",
+          "永远不充，充气式救生衣不充气才有用",
+          "先用嘴吹到一半，然后再爬楼梯"
+        ],
+        "explain": "在正在进水的舱室里，充好气的救生衣会把你顶在天花板上，让你没法潜下去从门或舱口逃出。先出去，到甲板上或下水后再拉充气拉环。坐飞机也一样：离开机舱后才能给救生衣充气。"
+      },
+      "en": {
+        "q": "The ship is listing badly and you're still below deck in the corridors, wearing an uninflated inflatable lifejacket. When should you inflate it?",
+        "options": [
+          "Only once you're out on deck or in the water",
+          "Right now, so it's ready in case water floods in suddenly",
+          "Never—an inflatable only works if it's left flat",
+          "Halfway, by mouth, before climbing the stairs"
+        ],
+        "explain": "An inflated lifejacket inside a flooding compartment can pin you against the ceiling and stop you swimming down and out through a door or hatch. Get out first, then pull the toggle on deck or in the water. The same goes for aircraft: inflate only after you've left the cabin."
+      }
+    },
+    {
+      "id": "sea-03",
+      "answer": 3,
+      "hard": false,
+      "source": "STCW A-VI/1-1 (PST)",
+      "zh": {
+        "q": "你必须穿着救生衣从甲板跳进海里。正确的跳法是？",
+        "options": [
+          "双臂前伸，头朝下跳水，像跳水运动员一样利落入水",
+          "先把救生衣扔下去，再跳下去游过去穿",
+          "找能到达的最高处往下跳，这样一定能远离船体",
+          "看清下方，压住救生衣，捂住口鼻，脚先入水"
+        ],
+        "explain": "先看准下方没有人和杂物的水面，尽量从低处跳。双臂交叉压住救生衣（防止入水时救生衣上冲撞到下巴），一只手捂住口鼻，双腿并拢，眼睛平视前方，迈步跳下，脚先入水。"
+      },
+      "en": {
+        "q": "You have to jump from the deck into the sea wearing a lifejacket. What's the correct technique?",
+        "options": [
+          "Dive in head-first, arms out in front, so you slice into the water cleanly",
+          "Throw the lifejacket in first, then jump in and swim over to it",
+          "Jump from the highest point you can reach, so you're sure to clear the hull",
+          "Check below, hold jacket down, cover nose and mouth, step off feet-first"
+        ],
+        "explain": "Pick a clear patch of water and jump from as low as possible. Cross your arms to hold the lifejacket down so it doesn't ride up into your chin, cover your nose and mouth with one hand, keep your legs together and look straight ahead as you step off feet-first."
+      }
+    },
+    {
+      "id": "sea-04",
+      "answer": 1,
+      "hard": true,
+      "source": "RNLI: Float to Live",
+      "zh": {
+        "q": "你落水掉进8 °C的海水里，开始不受控制地大口喘气。首先该做什么？",
+        "options": [
+          "趁冰冷的海水还没耗光体力，马上拼命游向船",
+          "仰面漂浮，让口鼻露出水面，先控制住呼吸",
+          "立即脱掉厚外套和靴子",
+          "一遍又一遍地大声呼救"
+        ],
+        "explain": "冷休克——大口喘气、呼吸急促——在落水后第一分钟最强烈，可能让人呛水溺亡。忍住乱扑腾、急着游的冲动：仰面漂浮，让脸露出水面，控制呼吸。这种反应会在60～90秒内过去，然后再决定下一步（英国皇家救生艇协会称之为“漂浮求生”）。"
+      },
+      "en": {
+        "q": "You fall overboard into 8 °C water and start gasping uncontrollably. What should you do first?",
+        "options": [
+          "Swim hard for the boat right away, before the cold water saps your strength",
+          "Lie back, keep your face clear and get your breathing under control",
+          "Pull off your heavy jacket and boots immediately",
+          "Shout for help as loudly as you can, again and again"
+        ],
+        "explain": "Cold shock—gasping and rapid breathing—is worst in the first minute and can make you inhale water and drown. Fight the urge to thrash or swim: float on your back, keep your face clear and control your breathing. It passes within 60–90 seconds; then plan your next move ('Float to Live')."
+      }
+    },
+    {
+      "id": "sea-05",
+      "answer": 3,
+      "hard": true,
+      "source": "Giesbrecht (1-10-1); RNLI",
+      "zh": {
+        "q": "突然落入冷水时的“1-10-1”法则说的是什么？",
+        "options": [
+          "1分钟内就会失去意识，约10分钟死于失温，穿救生衣也只能活约1小时",
+          "1分钟有效活动时间，约10分钟冷休克，约1小时后才能安全复温",
+          "1分钟穿好救生衣，10分钟内必须获救，总共能活约1小时",
+          "约1分钟冷休克，约10分钟有效活动时间，约1小时后才会因失温昏迷"
+        ],
+        "explain": "大致是：约1分钟的冷休克（要控制呼吸）；约10分钟后手臂和手会冷得游不动、抓不住，要趁这段时间脱离水面或把自己固定好；大约1小时甚至更久，失温才会让人昏迷。很多人落水后最初几分钟就溺亡了，根本等不到失温。"
+      },
+      "en": {
+        "q": "What does the '1-10-1' rule for sudden immersion in cold water describe?",
+        "options": [
+          "1 minute before you lose consciousness, 10 minutes to fatal hypothermia, 1 hour of survival in a lifejacket",
+          "1 minute of useful movement, 10 minutes of cold shock, 1 hour before you can safely be rewarmed",
+          "1 minute to put on a lifejacket, 10 minutes for rescue to arrive, 1 hour of total survival time",
+          "About 1 minute of cold shock, 10 minutes of useful movement, 1 hour before hypothermia knocks you out"
+        ],
+        "explain": "Roughly: about a minute of cold shock (control your breathing); about 10 minutes before your arms and hands get too cold to swim or grip, so use them to get out or secure yourself; and an hour or more before hypothermia makes you unconscious. Many people who die in cold water drown in the first few minutes, long before hypothermia sets in."
+      }
+    },
+    {
+      "id": "sea-06",
+      "answer": 1,
+      "hard": true,
+      "source": "STCW A-VI/1-1 (PST); Hayward et al. (HELP)",
+      "zh": {
+        "q": "你独自泡在10 °C的海水里，穿着救生衣。离岸1公里，救援艇已经看到你，正在赶来。该怎么做？",
+        "options": [
+          "游向岸边，运动能让身体保持暖和",
+          "保持不动，屈膝抱紧，采取HELP姿势",
+          "一直不停地踩水，让身体产生热量",
+          "脸朝下漂着节省体力，只在换气时才把头抬起来"
+        ],
+        "explain": "在冷水里，游泳或踩水会让冷水不断冲刷身体，散热更快；把头埋进水里（所谓“防溺漂浮法”）降温更快。保持不动，采取“减少热量流失姿势”（HELP），护住腋下、胸部和腹股沟，让救生衣帮你浮着。"
+      },
+      "en": {
+        "q": "You're alone in 10 °C water wearing a lifejacket. The shore is 1 km away, and a rescue boat has seen you and is on its way. What should you do?",
+        "options": [
+          "Swim for the shore—the exercise will keep your body warm",
+          "Keep still in the HELP position: knees up, arms clamped to chest",
+          "Tread water steadily the whole time to generate body heat",
+          "Float face-down to save your energy, lifting your head only to breathe"
+        ],
+        "explain": "In cold water, swimming or treading water flushes cold water past your body and speeds heat loss, and putting your head in the water ('drown-proofing') cools you even faster. Hold still in the Heat Escape Lessening Posture to protect your armpits, chest and groin, and let the lifejacket keep you up."
+      }
+    },
+    {
+      "id": "sea-07",
+      "answer": 0,
+      "hard": false,
+      "source": "STCW A-VI/1-1 (PST)",
+      "zh": {
+        "q": "你们五个人穿着救生衣泡在冷水里等待救援。作为一个团队，最好怎么做？",
+        "options": [
+          "抱团：面朝内，胸贴胸，挽紧手臂，弱者居中",
+          "大范围分散开，好让救援人员看到更多人",
+          "排成一列，一起朝陆地游",
+          "围成一个大圈、面朝外，好观察各个方向的船只"
+        ],
+        "explain": "抱团可以减少散热，让大家不被冲散，照顾到伤员和体弱者，目标也更大，更容易被搜救人员发现。身体侧面和胸部贴紧，手臂相挽，把儿童或伤员围在中间。"
+      },
+      "en": {
+        "q": "Five of you are in cold water in lifejackets, waiting for rescue. What's the best thing to do as a group?",
+        "options": [
+          "Huddle: face inwards, chests close, arms linked, weakest in the middle",
+          "Spread out widely so that rescuers can see more people",
+          "Form a line and swim together towards the land",
+          "Form a wide circle facing outwards, so you can watch every direction for ships"
+        ],
+        "explain": "The huddle cuts heat loss, keeps the group together, supports injured or weak people and makes a bigger target for searchers. Press the sides of your chests together, link arms and put children or the injured in the middle."
+      }
+    },
+    {
+      "id": "sea-08",
+      "answer": 2,
+      "hard": true,
+      "source": "IMO Res. A.657(16)",
+      "zh": {
+        "q": "你刚登上一艘正在迅速下沉的大船旁的救生筏。按照国际海事组织（IMO）的“立即行动”说明，正确的顺序是？",
+        "options": [
+          "先关闭出入口 → 抛海锚 → 等大船完全沉下去 → 最后再割断首缆",
+          "抛海锚 → 关闭出入口 → 割断首缆 → 寻找落水者",
+          "割断首缆、驶离大船 → 救起落水者 → 抛海锚 → 关闭出入口",
+          "吃晕船药 → 关闭出入口 → 割断首缆 → 抛海锚"
+        ],
+        "explain": "IMO 规定的立即行动是：割断首缆、驶离大船（下沉的船可能把筏子拖下去），寻找并救起其他落水者，离开大船后抛出海锚，关闭出入口；然后阅读求生须知、安排瞭望、分发晕船药。"
+      },
+      "en": {
+        "q": "You've just boarded a life raft beside a ship that's sinking fast. Following IMO's instructions for immediate action, what's the right order?",
+        "options": [
+          "Close the entrances → stream the sea anchor → wait for the ship to go down → cut the painter last",
+          "Stream the sea anchor → close the entrances → cut the painter → look for survivors",
+          "Cut the painter and get clear → pick up survivors → stream the sea anchor → close the entrances",
+          "Take seasickness pills → close the entrances → cut the painter → stream the sea anchor"
+        ],
+        "explain": "IMO's immediate actions: cut the painter and get clear of the ship (it could drag the raft down), look for and pick up other survivors, stream the sea anchor once clear, close up the entrances—then read the survival instructions, post a lookout and hand out seasickness pills."
+      }
+    },
+    {
+      "id": "sea-09",
+      "answer": 0,
+      "hard": false,
+      "source": "STCW A-VI/1-1 (PST); FM 3-05.70",
+      "zh": {
+        "q": "离开下沉的大船后，为什么要抛出救生筏的海锚？",
+        "options": [
+          "减缓漂移，让你留在搜救起点附近，同时稳住筏子",
+          "它像真正的锚一样钩住海底，把你固定在原地",
+          "它能调转筏子方向，让你更快地漂向陆地",
+          "它拖在筏子后面，是个大目标，能在救援方的雷达上清楚显示"
+        ],
+        "explain": "海锚在水里起刹车作用：减少漂移，让你更靠近最后报告的位置——搜救人员会先从那里找起；还能让筏子顶住风浪保持稳定，减少倾覆的危险。"
+      },
+      "en": {
+        "q": "Once you're clear of the sinking ship, why stream the raft's sea anchor (drogue)?",
+        "options": [
+          "It cuts your drift, keeps you near the search area and steadies the raft",
+          "It grips the seabed like a real anchor and holds you in one spot",
+          "It swings the raft round so that it sails faster towards land",
+          "It trails behind the raft as a large target that shows up clearly on rescuers' radar"
+        ],
+        "explain": "The drogue acts as a brake in the water: it cuts your drift, keeps you nearer the last reported position where searchers will look first, and holds the raft steady against the waves, reducing the risk of capsizing."
+      }
+    },
+    {
+      "id": "sea-10",
+      "answer": 2,
+      "hard": false,
+      "source": "IMO Res. A.657(16); STCW A-VI/1-1 (PST)",
+      "zh": {
+        "q": "夜里，海水冰冷，救生筏底是湿的，所有人都在发抖。怎样最有效？",
+        "options": [
+          "打开两边的出入口，让风把筏底吹干",
+          "筏底留一些水当压舱物，让筏子在大浪里更稳当",
+          "舀干积水，筏底充气，关好出入口，挤在一起",
+          "让每个人都不停地做运动来产生热量"
+        ],
+        "explain": "冰冷的海水会通过筏底带走热量，坐在水里人很快就会冻透。把水舀干吸干，给筏底充气隔热，关闭出入口（留一点通风），分享干衣服，大家挤在一起。做运动会浪费体力和水分；筏子靠底下的平衡水袋保持稳定，筏里的积水只会让人受冻。"
+      },
+      "en": {
+        "q": "It's night on a cold sea. The raft floor is wet and everyone is shivering. What helps most?",
+        "options": [
+          "Open both entrances so that the wind dries out the floor",
+          "Leave some water sloshing inside as ballast, to keep the raft stable in the waves",
+          "Bail and sponge it dry, inflate the floor, close up and huddle together",
+          "Have everyone do exercises to generate body heat"
+        ],
+        "explain": "The cold sea draws heat out through the floor, and sitting in water chills you fast. Bail and sponge, inflate the insulating floor, close the canopy (leaving a little ventilation), share dry clothing and huddle. Exercise wastes energy and water; the ballast pockets under the raft keep it stable—water inside only chills you."
+      }
+    },
+    {
+      "id": "sea-11",
+      "answer": 1,
+      "hard": false,
+      "source": "IMO Res. A.657(16); STCW A-VI/1-1 (PST)",
+      "zh": {
+        "q": "救生筏里的晕船药应该什么时候吃？",
+        "options": [
+          "只给已经开始呕吐的人吃",
+          "一上筏就吃，在任何人感到不适之前",
+          "过了头24小时，和头一份水一起吃",
+          "不要吃，会让人犯困、反应变慢"
+        ],
+        "explain": "在颠簸的救生筏上几乎人人都会晕船，呕吐会浪费宝贵的水分、打击士气，还会引得别人也吐。一上筏就吃药；已经吐起来再吃，药片往往会被吐出来。"
+      },
+      "en": {
+        "q": "When should the seasickness pills in the raft's kit be taken?",
+        "options": [
+          "Only by people who have already started vomiting",
+          "Straight away on boarding, before anyone starts to feel sick",
+          "After the first 24 hours, with the first water ration",
+          "Never—they cause drowsiness and dull your alertness"
+        ],
+        "explain": "Almost everyone gets seasick in a pitching raft, and vomiting wastes precious water, saps morale and sets others off. Take the pills as soon as you board—once someone is vomiting, tablets often come straight back up."
+      }
+    },
+    {
+      "id": "sea-12",
+      "answer": 3,
+      "hard": true,
+      "source": "STCW A-VI/1-1 (PST); Tipton (Univ. of Portsmouth)",
+      "zh": {
+        "q": "在救生筏上的第一天，没有人受伤或晕船，淡水有限。标准的救生筏求生建议对喝水是怎么说的？",
+        "options": [
+          "趁现在还有水，能喝多少就喝多少",
+          "趁身体还不缺水，先喝一点海水，把淡水留到以后再喝",
+          "先喝自己的尿，把淡水省下来以后喝",
+          "头24小时不喝（伤病员除外），之后定量喝"
+        ],
+        "explain": "刚开始时身体水分充足，第一天喝下的水大多会变成尿排掉。头24小时不喝，能促使身体分泌保水的激素（抗利尿激素），之后配给的水更经用。伤员、烧伤者、晕船呕吐的人和已经脱水的人则要喝水。绝不能喝海水和尿。"
+      },
+      "en": {
+        "q": "On your first day in the raft, nobody is injured or seasick and fresh water is limited. What does standard life-raft advice say about drinking?",
+        "options": [
+          "Drink as much as you can now, while there's still water",
+          "Drink a little seawater now, while you're still hydrated, to save fresh water for later",
+          "Drink your own urine first and save the fresh water",
+          "No water for the first 24 hours unless sick or injured, then ration it"
+        ],
+        "explain": "You start the ordeal fully hydrated, so water drunk on day one is largely passed as urine. Going without for the first 24 hours lets the body's water-saving hormone kick in, so later rations go further. Anyone injured, burned, seasick or already dehydrated should drink. Never drink seawater or urine."
+      }
+    },
+    {
+      "id": "sea-13",
+      "answer": 1,
+      "hard": true,
+      "source": "IMO LSA Code; STCW A-VI/1-1 (PST)",
+      "zh": {
+        "q": "第二天，你们六个人共有9升淡水，也没有下雨。按标准的救生筏配给，每天发多少，能撑几天？",
+        "options": [
+          "每人每天约1.5升，一天共9升，能撑1天",
+          "每人每天约0.5升，一天共3升，能撑3天",
+          "每人每天约2升，和在岸上一样，撑不到一天",
+          "每人每天约100毫升，能撑15天"
+        ],
+        "explain": "标准的救生筏配给是从第二天起每人每天约半升（SOLAS 救生筏按每人1.5升配备淡水）。6人×0.5升=每天3升，9升能撑3天——下雨时每一滴都要接住，延长供应。配给比这少得多，很快就会严重脱水。"
+      },
+      "en": {
+        "q": "Day two: six of you share 9 litres of fresh water and there's no rain. Under standard raft rationing, what's the daily issue and how long will it last?",
+        "options": [
+          "About 1.5 L each a day—9 L in all—so it lasts 1 day",
+          "About 0.5 L each a day—3 L in all—so it lasts 3 days",
+          "About 2 L each a day, as ashore—it won't last a day",
+          "About 100 mL each a day—so it lasts 15 days"
+        ],
+        "explain": "The standard life-raft ration is about half a litre per person per day after the first day (SOLAS rafts carry 1.5 L of water per person). Six people × 0.5 L = 3 L a day, so 9 L lasts three days—catch every drop of rain to stretch it. Much less than this soon leads to serious dehydration."
+      }
+    },
+    {
+      "id": "sea-14",
+      "answer": 3,
+      "hard": true,
+      "source": "STCW A-VI/1-1 (PST); McCance (MRC) castaway data",
+      "zh": {
+        "q": "一起漂流的人说，只要趁还没脱水时开始喝，少量海水没问题。他说得对吗？",
+        "options": [
+          "对，在海上的头几天，每天喝半升以内都很安全",
+          "对，只要分成小口全天慢慢喝",
+          "对，只要先煮沸杀菌",
+          "不对，排出其中的盐分要耗掉比它更多的水"
+        ],
+        "explain": "海水比血液咸好几倍，肾脏排出这些盐分所需的水，比海水本身提供的还多，结果脱水更快，接着出现谵妄直至死亡。煮沸也去不掉盐。二战海难幸存者的记录显示，喝海水的人死亡率高得多。"
+      },
+      "en": {
+        "q": "A fellow survivor says small amounts of seawater are fine as long as you start before you're dehydrated. Is he right?",
+        "options": [
+          "Yes—up to half a litre a day is safe for the first few days at sea",
+          "Yes—if you take it in small sips through the day",
+          "Yes—if you boil it first to kill the germs",
+          "No—flushing out its salt takes more water than it supplies"
+        ],
+        "explain": "Seawater is several times saltier than blood. Your kidneys need more water to get rid of the salt than the seawater provided, so dehydration speeds up, followed by delirium and death. Boiling doesn't remove salt. Records of wartime castaways showed that those who drank seawater were far more likely to die."
+      }
+    },
+    {
+      "id": "sea-15",
+      "answer": 2,
+      "hard": false,
+      "source": "FM 3-05.70; STCW A-VI/1-1 (PST)",
+      "zh": {
+        "q": "一场热带暴雨就要来了。怎样收集雨水？",
+        "options": [
+          "一下雨马上就接，每一滴雨水都很宝贵，不能浪费",
+          "只接够当天的定量，其余让它流走",
+          "先冲掉篷顶的盐再接，喝个够，装满所有容器",
+          "等雨停了以后，再舀起积在筏底的水"
+        ],
+        "explain": "篷顶上干结的海盐会让最初接到的水变咸，要先让雨水冲掉盐分（或先冲洗集水面）再接。然后尽量多喝——身体就是最好的储水容器——再把所有袋子、瓶子和备用容器装满。"
+      },
+      "en": {
+        "q": "A heavy tropical shower is on its way. How should you collect the rain?",
+        "options": [
+          "Start collecting the instant it begins, because every single drop of rain counts",
+          "Collect only your normal daily ration and let all the rest run off",
+          "Rinse salt off the canopy first; then drink your fill and fill every container",
+          "Wait until it stops, then scoop up whatever has pooled on the floor"
+        ],
+        "explain": "Dried salt spray on the canopy spoils the first water, so let it wash off (or rinse the catchment) before collecting. Then drink as much as you can—your body is the best container—and fill every bag, bottle and spare container."
+      }
+    },
+    {
+      "id": "sea-16",
+      "answer": 0,
+      "hard": true,
+      "source": "FM 3-05.70; STCW A-VI/1-1 (PST)",
+      "zh": {
+        "q": "淡水只剩每天几口了。你钓到一条鱼，救生包里还有一包葡萄糖糖块。该吃什么？",
+        "options": [
+          "吃糖块，鱼留到水多了再吃",
+          "吃鱼，鱼肉里的蛋白质最能保持体力",
+          "两样一起吃，营养才均衡全面",
+          "吃鱼的内脏和血，补充水分和盐"
+        ],
+        "explain": "消化蛋白质、排出它的代谢废物（尿素）都要额外耗水，所以缺水时不要吃鱼、鸟和肉。救生筏里的葡萄糖糖块这类碳水化合物能“省水”，分解时还会产生一点水——这就是救生口粮以碳水化合物为主的原因。"
+      },
+      "en": {
+        "q": "Water is down to a few sips a day. You catch a fish, and there's still a pack of glucose sweets in the kit. What should you eat?",
+        "options": [
+          "The sweets, and save the fish until there's more water",
+          "The fish—its protein keeps your strength up best of all",
+          "The two together, so your body gets everything it needs",
+          "The fish's guts and blood, for the moisture and salt they hold"
+        ],
+        "explain": "Digesting protein and getting rid of its waste (urea) takes extra water, so when water is short avoid fish, birds and meat. Carbohydrates such as the raft's glucose sweets spare water and even release a little as they're burned—which is why survival rations are mostly carbohydrate."
+      }
+    },
+    {
+      "id": "sea-17",
+      "answer": 2,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "在热带海上漂流，中午太阳毒辣。怎样保护自己最好？",
+        "options": [
+          "脱掉衣服，让汗水蒸发散热",
+          "下水在筏子旁游一会儿，降降温",
+          "躲在篷下，遮住皮肤，保持不动，保护眼睛",
+          "坐到浮胎上吹吹海风，别闷在不透气的篷子里"
+        ],
+        "explain": "晒伤和炎热会加重脱水，海面的反光还会晒伤平时晒不到的地方——下巴底下、鼻子、耳朵。待在通风的篷下，用轻薄衣物遮住皮肤，一天中最热的时候多休息，保护好眼睛。下水游泳有体力透支、遭遇鲨鱼和与筏子失散的危险。"
+      },
+      "en": {
+        "q": "Adrift in the tropics, the midday sun is fierce. What's the best way to protect yourselves?",
+        "options": [
+          "Strip off so that your sweat can evaporate and cool you",
+          "Swim beside the raft for a while to cool off",
+          "Stay under the canopy, keep skin covered, keep still, shade your eyes",
+          "Sit up on the tubes in the sea breeze, out of the stuffy, airless canopy"
+        ],
+        "explain": "Sunburn and heat add to dehydration, and glare off the water burns places you wouldn't expect—under the chin, the nose, the ears. Shelter under a ventilated canopy, keep covered with light clothing, rest through the heat of the day and protect your eyes. Swimming risks exhaustion, sharks and losing the raft."
+      }
+    },
+    {
+      "id": "sea-18",
+      "answer": 0,
+      "hard": false,
+      "source": "STCW A-VI/1-1 (PST); hand-flare maker instructions",
+      "zh": {
+        "q": "一艘船正朝你们的救生筏驶来，你点燃一支红色手持火焰信号来指示位置。应该怎么拿？",
+        "options": [
+          "伸直手臂举到筏外下风侧，朝上朝外，别看火焰",
+          "就在篷子里面点，让整个筏子都映成红色",
+          "伸到筏外上风一侧，让烟飘向那艘船",
+          "举在头顶正上方，抬头盯着它，好把火光对准那艘船"
+        ],
+        "explain": "手持火焰信号燃烧时温度极高，还会滴下燃烧的残渣，可能烧穿筏子或烫伤人。要握紧它，伸直手臂举到筏外的下风一侧，让烟和残渣被风吹离筏子，火焰朝上、朝外，眼睛不要盯着火焰，否则会丧失夜视能力。等船或飞机近到能看见时再用；白天用橙色烟雾信号、信号镜或海水染色剂效果更好。"
+      },
+      "en": {
+        "q": "A ship is approaching your raft and you light a red hand flare to pinpoint your position. How should you hold it?",
+        "options": [
+          "Arm's length over the downwind side, pointing up and away; don't look at it",
+          "Inside the raft under the canopy, so the whole raft glows red",
+          "Out over the upwind side, so the smoke drifts towards the ship",
+          "Straight above your head, looking up at it so you can aim it right at the ship"
+        ],
+        "explain": "Hand flares burn intensely hot and drip burning residue that can hole the raft or burn you. Hold it firmly at arm's length, out over the side on the downwind side so smoke and drips blow away from the raft, pointing up and away, and don't look at the flame—it ruins your night vision. Save flares until a ship or aircraft is close enough to see them; by day, orange smoke, a signal mirror or sea-dye work better."
+      }
+    },
+    {
+      "id": "sea-19",
+      "answer": 3,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "在热带海上漂流，哪种迹象最能说明附近有岛屿或礁盘？",
+        "options": [
+          "筏子周围的海水变得比之前更深、更蓝，也更清澈",
+          "筏子周围突然出现了大群的飞鱼和成群的海豚",
+          "傍晚风停了，海面变得像镜子一样平静",
+          "别的云在飘，一朵积云却停着不动，或云底泛绿"
+        ],
+        "explain": "在晴空或流动的云层中，一朵停着不动的积云往往就悬在岛屿上空或岛的下风方向；浅水潟湖和珊瑚礁还会把天空或云底映出淡淡的绿色。海水颜色变浅、闻到陆地的气味、听到浪拍礁石的轰响、海鸟的叫声总从同一方向传来，也都是线索；深蓝色的海水说明是远洋深水。"
+      },
+      "en": {
+        "q": "Adrift in the tropics, which sign most suggests an island or reef nearby?",
+        "options": [
+          "The water around the raft turning a deeper, darker, clearer blue than before",
+          "Flying fish and dolphins suddenly appearing around the raft in large numbers",
+          "The wind dropping and the sea going calm and glassy at dusk",
+          "A cumulus cloud staying put while others drift, or a green tint under clouds"
+        ],
+        "explain": "A cumulus cloud that sits still in an otherwise clear or moving sky often hangs over, or just downwind of, an island, and shallow lagoons and reefs can cast a greenish tint on the sky or cloud bases. Lighter-coloured water, the smell of land, the roar of surf and seabirds calling from one direction are other clues; deep, dark-blue water means open ocean."
+      }
+    },
+    {
+      "id": "sea-20",
+      "answer": 1,
+      "hard": false,
+      "source": "IMO Res. A.657(16); FM 3-05.70",
+      "zh": {
+        "q": "暴晒了一整天后，到了凉爽的夜里，救生筏的浮胎变软了。该怎么办？",
+        "options": [
+          "别管它，现在打气，白天会把浮胎胀破",
+          "用筏上的手动充气泵补气，空气遇冷收缩了",
+          "打开安全阀，让浮胎里的压力平衡一下",
+          "不用处理，软一点的浮胎随浪起伏更舒服"
+        ],
+        "explain": "空气遇冷收缩、遇热膨胀，所以浮胎夜里变软、白天发硬——天热时多余的气会从安全阀放掉。浮胎软了，筏子会松垮、不稳，要用风箱或手动泵补气；IMO 的救生筏求生须知把给浮胎补气列为日常维护。如果总是很快又变软，就要找漏气点，用修补包里的堵漏塞或夹子补上。"
+      },
+      "en": {
+        "q": "After a scorching day, the raft's buoyancy tubes go soft in the cool of the night. What should you do?",
+        "options": [
+          "Leave them; pumping now will burst them when the sun comes up",
+          "Top them up with the raft's hand pump—the air has shrunk as it cooled",
+          "Open the relief valves so that the pressure in the tubes evens out",
+          "Do nothing—soft tubes ride the waves more comfortably"
+        ],
+        "explain": "Air contracts as it cools and expands in the heat, so the tubes go soft at night and tight by day—the relief valves let excess pressure out in the heat. Soft tubes make the raft floppy and unstable, so top them up with the bellows or hand pump; IMO's raft instructions list topping up the buoyancy tubes as routine maintenance. If they keep going soft, look for a leak and use the plugs or clamps in the repair kit."
+      }
+    },
+    {
+      "id": "sea-21",
+      "answer": 3,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "几条鲨鱼开始绕着你们的救生筏打转。该怎么做？",
+        "options": [
+          "下到水里一动不动地漂着，它们就会失去兴趣游走",
+          "把钓到的鱼扔到远处，把它们引开",
+          "大声喊叫、拍打浮胎，把它们吓走",
+          "手脚收进筏内，停止钓鱼，不往外扔血水残渣"
+        ],
+        "explain": "血腥味、鱼的残渣和挣扎扑腾的动静会吸引鲨鱼。在筏上：停止钓鱼（已经上钩的鱼放掉），不要在水里洗鱼、不要往外扔垃圾，手脚和物品都收进筏内，保持安静、不乱动。如果遭到攻击，用桨打它，不要用手。"
+      },
+      "en": {
+        "q": "Several sharks have started circling your raft. What should you do?",
+        "options": [
+          "Get into the water and float motionless, so they lose interest and swim off",
+          "Throw your catch far away from the raft to lure them off",
+          "Shout and bang on the tubes to scare them away",
+          "Keep limbs inside, stop fishing, and throw no blood or scraps overboard"
+        ],
+        "explain": "Sharks are drawn by blood, fish scraps and struggling movements. In a raft: stop fishing (let a hooked fish go), don't clean fish in the water or throw waste overboard, keep limbs and gear inboard, and stay quiet and still. If one attacks, hit it with a paddle, not your hands."
+      }
+    },
+    {
+      "id": "sea-22",
+      "answer": 1,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "漂流几天后，被又湿又咸的衣服磨着的手腕和腰部长出了疼痛的疮。怎么处理？",
+        "options": [
+          "每天用海水冲洗，海水里的盐能消毒，还能让疮变干",
+          "不要弄破；有淡水就冲洗，晾干，涂抗菌药",
+          "把疮挤破、把脓排干净，好得更快",
+          "把痂抠掉，让下面的皮肤透气"
+        ],
+        "explain": "海水疮是皮肤长期被海水浸泡、又被衣服摩擦造成的，弄破了容易感染。有淡水（雨水）时冲洗一下，晾干，盖上敷料或涂抗菌药，尽量让皮肤少泡海水。"
+      },
+      "en": {
+        "q": "After several days adrift, painful sores have formed where wet, salty clothing rubs your wrists and waist. What should you do?",
+        "options": [
+          "Wash them in seawater every day, because the salt disinfects and dries them out",
+          "Leave them unopened; rinse in fresh water, let them dry, use antiseptic",
+          "Squeeze them and drain the pus so that they heal faster",
+          "Pick off the scabs so that the skin underneath can breathe"
+        ],
+        "explain": "Salt-water sores come from skin soaked in seawater and rubbed by clothing; opening them invites infection. Rinse with fresh (rain) water when you have it, let them dry, cover them or apply antiseptic, and keep skin out of seawater as much as possible."
+      }
+    },
+    {
+      "id": "sea-23",
+      "answer": 0,
+      "hard": true,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "你在救生筏上钓到一条鱼，它把自己鼓成一个带刺的球。怎么办？",
+        "options": [
+          "扔回去，河鲀含神经毒素，煮熟也破坏不了",
+          "可以吃，只要先彻底煮熟，高温会把毒素破坏掉",
+          "只吃它的肝，那是油脂和营养最多的地方",
+          "先吃一小块，等一小时看有没有事"
+        ],
+        "explain": "河鲀（河豚）和刺鲀含有河鲀毒素，集中在肝脏、性腺、皮肤和血液里，加热煮熟也破坏不了，几小时内就能让人麻痹致死。会鼓气、长着鹦鹉嘴、或身体带刺呈箱形的鱼都不要吃。梭鱼等大型珊瑚礁掠食鱼还可能带有雪卡毒素。"
+      },
+      "en": {
+        "q": "Fishing from the raft, you land a fish that puffs itself up into a spiny ball. What do you do?",
+        "options": [
+          "Throw it back—puffers carry a nerve poison that cooking doesn't destroy",
+          "Eat it, as long as you cook it thoroughly first, which destroys the poison",
+          "Eat only the liver, the part with the most fat and nourishment",
+          "Eat a small piece first and wait an hour to see if it's safe"
+        ],
+        "explain": "Pufferfish and porcupinefish contain tetrodotoxin, concentrated in the liver, gonads, skin and blood; it isn't destroyed by cooking and can paralyse and kill within hours. Avoid any fish that inflates, has a parrot-like beak or a spiny, boxy body. Large predatory reef fish such as barracuda can also carry ciguatera toxin."
+      }
+    },
+    {
+      "id": "sea-24",
+      "answer": 2,
+      "hard": true,
+      "source": "IMO MSC.1/Circ.1182; IAMSAR Vol. III",
+      "zh": {
+        "q": "一名在10 °C海水里泡了一个多小时的幸存者正被救上救援艇。应该怎样把他弄出水？",
+        "options": [
+          "抓住胳膊竖直往上拽，越快越好",
+          "让他自己爬软梯上来，活动一下手脚，促进血液循环",
+          "尽量保持水平姿势，轻柔地抬上来，然后让他平躺",
+          "拉上甲板后扶他站起来走动，好暖和身子"
+        ],
+        "explain": "在水里时，水压一直在帮他维持血压。竖直把他提起来，血液可能淤积在双腿，导致血压骤降甚至心脏骤停（“获救后虚脱”）。IMO 的救助指南要求：在水里泡过一段时间的人，要以水平或接近水平的姿势救上来，之后保持平躺、轻柔搬动，并按失温处理。"
+      },
+      "en": {
+        "q": "A survivor who has spent over an hour in 10 °C water is being recovered into a rescue boat. How should he be lifted out?",
+        "options": [
+          "Hauled straight up by the arms, as fast as possible",
+          "Left to climb the boarding ladder himself, to get his blood moving",
+          "As horizontally and gently as possible, then kept lying down",
+          "Stood up on deck and walked about to warm him up"
+        ],
+        "explain": "In the water, its pressure has been helping to hold up his blood pressure. Lifting him upright can let blood pool in his legs and cause a sudden collapse or cardiac arrest ('post-rescue collapse'). IMO recovery guidance says to lift people who have been in the water horizontally or nearly so, then keep them flat, handle them gently and treat them for hypothermia."
+      }
+    },
+    {
+      "id": "sea-x01",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "IMO LSA Code 4.1.6 (MSC.48(66): HRU releases at no more than 4 m; weak link 2.2 ± 0.4 kN); SOLAS liferaft manuals",
+      "zh": {
+        "q": "南海上，你们的渔船遇上飑线翻覆，几秒钟就沉了下去。驾驶室顶上那个装有静水压力释放器（HRU）的救生筏筒，谁都没来得及去碰。救生筏会怎样？",
+        "options": [
+          "不会自己出来：筏筒一直绑在支架上，除非有人把绑带割断，否则就随船一起沉下去",
+          "释放器要等沉到20～30米深、水压足够大时才动作，所以救生筏会在远离幸存者的地方浮上来",
+          "沉到不超过4米深时，释放器松开筏筒；筏筒上浮，首缆拉动气瓶充气，弱连接断开，筏子脱离",
+          "浪花或雨水一打湿释放器，救生筏就在甲板上自动充气，船一沉它就从驾驶室顶上漂走"
+        ],
+        "explain": "按《国际救生设备规则》（LSA规则），静水压力释放器必须在水深不超过4米时自动释放救生筏，但海浪冲刷时不能误动作。船下沉时，浮力很大的筏筒把仍系在船上的首缆拉出，直到拉动气瓶给救生筏充气；随后弱连接（约2.2千牛时断开）断裂，下沉的船就不会把救生筏拖下去。要留意船沉没处附近，筏子会在那里浮上来。"
+      },
+      "en": {
+        "q": "Your fishing boat capsizes in a squall in the South China Sea and goes down within seconds. Nobody reaches the life-raft canister on the wheelhouse roof, which is fitted with a hydrostatic release unit (HRU). What happens to the raft?",
+        "options": [
+          "Nothing on its own: the canister stays lashed to its cradle unless someone cuts it free, so the raft goes down with the boat",
+          "The HRU waits until about 20–30 m down, where the water pressure is high enough to fire it, so the raft surfaces far from the survivors",
+          "At no more than 4 m the HRU frees the canister; it floats up, the painter fires the gas bottle, and a weak link snaps to free the raft",
+          "The raft inflates on deck as soon as spray or rain soaks the HRU, then simply floats off the roof as the boat goes under"
+        ],
+        "explain": "Under the LSA Code an HRU must release the raft automatically at a depth of no more than 4 m, but not when seas merely wash over it. As the boat sinks, the buoyant canister pulls out its painter, still tied to the boat, until the gas bottle fires and the raft inflates; then a weak link (breaking at about 2.2 kN) parts so the sinking boat can't drag the raft under. Watch for it surfacing near where she went down."
+      }
+    },
+    {
+      "id": "sea-x02",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "STCW A-VI/1-1 (Personal Survival Techniques); US Navy abandon-ship guidance (burning oil)",
+      "zh": {
+        "q": "两艘油轮在南海相撞。燃烧的油正从下风舷的船体向外蔓延，随风往下风方向漂。你只能下水。从哪里下、怎么做？",
+        "options": [
+          "从上风舷下水避开油火，逆风游；非穿过火焰不可就潜游，露头前拨开火焰再换气",
+          "从下风舷下水，高大的船体能替你挡风挡浪——平时放救生筏，往往也是选在这一舷",
+          "从下风舷下水，然后顺着风和漂流的方向游，这样离开大船的速度最快",
+          "守在下风舷的栏杆边，不管火离得多近，都要等燃烧的油漂走以后再跳"
+        ],
+        "explain": "燃烧的油会顺风漂，所以要从上风舷离船，逆风游出去，更快离开油面；如果非穿过火焰不可，就尽量潜游，浮出时双臂划动拨出一块没有火的水面再换气。下风舷虽然避风，平时也常在这一舷放筏，但此刻那里正是火焰——以及漂移的大船——所在的地方。"
+      },
+      "en": {
+        "q": "Two tankers have collided in the South China Sea. Burning oil is spreading from the hull on the leeward side and drifting downwind, and you have no choice but to go into the water. Where and how?",
+        "options": [
+          "Over the windward side, clear of the slick, then swim into the wind; if you must cross flames, swim under them and splash a gap to breathe",
+          "Over the leeward side, where the hull shelters you from the wind and waves—the side you'd usually launch a life raft from",
+          "Over the leeward side, then swim downwind along with the drift, which carries you away from the ship the fastest",
+          "Stay at the rail on the leeward side until the burning oil has drifted clear, however close the fire gets, and only then jump into the sea"
+        ],
+        "explain": "Burning oil drifts downwind, so leave by the windward side and swim upwind to get clear of the slick sooner; if you must cross flames, swim underwater as far as you can and, as you surface, sweep your arms to splash a clear space before breathing. The lee side may be sheltered and is often used for launching rafts, but here it's where the fire—and the drifting ship—will be."
+      }
+    },
+    {
+      "id": "sea-x03",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "IMO LSA Code 4.8–4.9 (MSC.48(66): air support at least 10 min; fire protection at least 8 min)",
+      "zh": {
+        "q": "还是这次碰撞：你在大船的全封闭耐火救生艇里，艇刚放到燃烧的油面上。怎么做？",
+        "options": [
+          "关掉发动机，紧闭舱口在艇里等着，直到外面的火自己烧完——这种救生艇是耐火的",
+          "把通风口打开一条缝，让发动机和艇员都有新鲜空气，同时慢慢小心地穿过火焰",
+          "顺着风和燃烧的油一起往下风方向开，火焰就会被吹离救生艇，而不是扑向它",
+          "关紧所有舱口和通风口，打开喷水系统和艇内供气，马上走最短的路线冲出火区"
+        ],
+        "explain": "按LSA规则，耐火救生艇只需经受油火包围8分钟的试验，自带供气系统也只要求维持10分钟，所以要关紧舱口、启动喷淋和供气，全速走最短路线冲出去，能逆风离开油面最好。在里面等火烧完或打开通风口，会让烟和火进来；往下风开则一直待在燃烧区里。"
+      },
+      "en": {
+        "q": "Same collision: you're inside the ship's totally enclosed, fire-protected lifeboat, which has just been launched into a sea of burning oil. What do you do?",
+        "options": [
+          "Shut down the engine and wait inside with the hatches closed until the fire burns itself out—the boat is built to be completely fireproof",
+          "Open the vents a crack so the engine and the crew get fresh air, while you motor slowly and carefully through the flames",
+          "Steer downwind along with the burning oil, so that the flames are blown away from the boat instead of onto it",
+          "Seal every hatch and vent, start the water spray and internal air supply, and drive out of the fire at once by the shortest way"
+        ],
+        "explain": "The LSA Code tests fire-protected lifeboats for only 8 minutes enveloped in burning oil, and their self-contained air supply need last only 10 minutes, so seal up, start the sprinklers and air, and drive out at full power by the shortest route, upwind of the slick if you can. Waiting out the fire or opening vents lets smoke and flames in, and heading downwind keeps you inside the burning area."
+      }
+    },
+    {
+      "id": "sea-x04",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "SOLAS III/8 & LSA Code 7.2.1 (general emergency alarm: seven or more short blasts and one long blast)",
+      "zh": {
+        "q": "乘夜班客轮横渡琼州海峡时，你被汽笛的七短一长声和响个不停的警铃惊醒。这代表什么，该怎么做？",
+        "options": [
+          "这是弃船命令：马上穿上救生衣，趁大家还没挤到船边，赶紧从船舷跳进海里逃生",
+          "这是通用紧急报警：穿上保暖衣物和救生衣去集合站；弃船命令由船长口头下达",
+          "这是火警：回到自己的舱室，把门关紧，安安静静地等船员来接你出去",
+          "这是专门给船员的人员落水信号，乘客可以继续躺着，等广播通知就行"
+        ],
+        "explain": "七短声或更多短声加一长声，是《国际海上人命安全公约》（SOLAS）规定的通用紧急报警：所有人要穿好救生衣和保暖衣物到集合站，等候指令。它本身并不是弃船命令，弃船由船长口头下令——过早跳海，你会落在既没有救生筏、也没有人清点人数的水里。"
+      },
+      "en": {
+        "q": "On an overnight ferry across the Qiongzhou Strait, you're woken by seven short blasts followed by one long blast on the ship's whistle, with the alarm bells ringing. What does it mean, and what do you do?",
+        "options": [
+          "It's the order to abandon ship: put on a lifejacket and jump over the side immediately, before the rush starts",
+          "General emergency alarm: put on warm clothes and a lifejacket and go to your muster station; the master gives the order to abandon",
+          "It's the fire alarm: go back to your cabin, shut the door tightly and wait there quietly until the crew come to fetch you",
+          "It's a man-overboard signal meant for the crew alone; passengers can stay in their bunks and wait for an announcement on the speakers"
+        ],
+        "explain": "Seven or more short blasts and one long blast is SOLAS's general emergency alarm: it calls everyone to their muster stations, wearing lifejackets and warm clothing, to await instructions. It isn't itself the order to abandon ship, which the master gives verbally—jumping early puts you in the water with no raft and nobody counting heads."
+      }
+    },
+    {
+      "id": "sea-x05",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "SOLAS liferaft manufacturers' instructions (righting from the cylinder side, wind assisting); STCW A-VI/1-1 (PST) training",
+      "zh": {
+        "q": "你们的救生筏在中等风力下充气后底朝天了。你穿着救生衣在水里。怎样把它翻过来？",
+        "options": [
+          "游到气瓶一侧，让筏子在你上风；踩住气瓶拉扶正带后仰，筏子扣下来时顶出空间游出",
+          "爬到筏子的上风一侧，背对着风，一边用力拉扶正带，一边借着风力把筏子推翻过去",
+          "从气瓶的对侧往回拉，这样筏子翻过来时，沉重的气瓶会甩向远离你头部的那一边",
+          "不用翻：篷子朝下，大家坐在平整的筏底上一样安全，就这样等待救援好了"
+        ],
+        "explain": "要从气瓶一侧扶正，脚踩在气瓶上，免得筏子翻转时被它砸到；筏子要位于你的上风方向——你向后仰拉扶正带时，风会钻到抬起的远侧底下，帮它翻过来。筏子通常会扣到你身上，它很轻，向上顶出一块空间就能从下面游出来。"
+      },
+      "en": {
+        "q": "Your life raft has inflated upside down in a moderate breeze. You're in the water in your lifejacket. How do you right it?",
+        "options": [
+          "From the gas-cylinder side, raft upwind of you: stand on the cylinder, lean back on the righting strap, then push up and swim out",
+          "Climb onto the upwind side, so the wind at your back helps push the raft over as you haul hard on the righting strap",
+          "Pull from the side opposite the gas cylinder, so the heavy cylinder swings up and away from your head as the whole raft turns over",
+          "Leave it upside down: with the canopy underneath, everyone can sit safely on the flat floor and simply wait for rescue"
+        ],
+        "explain": "Right the raft from the side with the gas cylinder, standing on it so that it can't hit you as the raft flips, and with the raft upwind of you: as you lean back on the righting strap, the wind gets under the rising far side and helps it over. The raft usually comes down on top of you; it's light, so push up to make an air space and swim out from under it."
+      }
+    },
+    {
+      "id": "sea-x06",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "IMO MSC.1/Circ.1185/Rev.1 (Guide for cold water survival: swim downwind of a floating object); IMO MSC.1/Circ.1182/Rev.1",
+      "zh": {
+        "q": "你穿着救生衣泡在12 °C的海水里，看到大船的救生筏在约40米外自由漂荡，正被大风吹着横越浪头。应该怎样设法够到它？",
+        "options": [
+          "沿最短的直线全速游过去，一定要赶在寒冷耗尽手臂的力气之前游到",
+          "游到救生筏的上风方向，到了那里以后，风就会把你吹到筏子上去",
+          "游到救生筏的下风方向，让风把筏子送到你身边；仰泳，主要靠双腿",
+          "保持HELP姿势不动地等待——不管风往哪边吹，筏子迟早都会漂过来"
+        ],
+        "explain": "救生筏顺风漂得比人游得还快，所以要游到它的下风方向，等它漂过来——国际海事组织的冷水求生指南提醒，一旦处在筏子的上风方向，就很难追上它了。尽量仰泳、只用双腿，双臂抱在胸前减少散热，并随时判断能否游到；游不到就停下来，保持HELP姿势。"
+      },
+      "en": {
+        "q": "In 12 °C water in your lifejacket, you see your ship's life raft drifting freely about 40 m away, being blown across the waves by a fresh wind. How should you try to reach it?",
+        "options": [
+          "Swim straight at it along the shortest line, as fast as you can, before the cold takes the strength from your arms",
+          "Swim to a spot upwind of the raft, so that once you get there the wind will carry you down onto it",
+          "Swim to a point downwind of the raft and let the wind bring it to you, on your back, using mainly your legs",
+          "Stay still in the HELP position and wait—the raft will drift over to you sooner or later, whichever way the wind blows"
+        ],
+        "explain": "A raft blows downwind faster than you can swim, so aim for a spot downwind of it and let it come to you—the IMO cold-water guide warns that once you're upwind of a raft you're unlikely to reach it. Swim on your back with your legs if you can, keeping your arms folded to save heat, and keep checking your progress; if you can't make it, stop and adopt HELP."
+      }
+    },
+    {
+      "id": "sea-x07",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "IMO MSC.1/Circ.1185/Rev.1 (spray hood; back-to-wave position); RNLI lifejacket guidance",
+      "zh": {
+        "q": "夜里风浪很大，你穿着救生衣漂在水中。打碎的浪头不停地拍到脸上，你开始呛进飞沫。该怎么办？",
+        "options": [
+          "转身面向来浪，看清每一个浪头，在它打下来之前把头埋进水里躲过去",
+          "拉出救生衣的防溅罩罩住头部，轻轻划水，保持背对来浪",
+          "放掉救生衣里的一部分气，让身体在水里浮得低一点、稳一点，避开风",
+          "顺着风使劲游，离开碎浪区，游向海面可能比较平静的地方"
+        ],
+        "explain": "漂浮的人体往往会转向迎着来浪的方向，双腿像海锚一样，所以在大浪里很容易呛水；国际海事组织的冷水求生指南要求戴上防溅罩，并轻轻划水保持背对来浪。给救生衣放气只会让口鼻更贴近水面，游泳则白白消耗体温和体力。"
+      },
+      "en": {
+        "q": "It's night in a rough sea and you're floating in your lifejacket. Breaking waves keep slapping you in the face, and you're starting to inhale spray. What should you do?",
+        "options": [
+          "Turn to face the waves so you can see each crest coming, and duck your head under it just before it breaks",
+          "Pull the lifejacket's spray hood over your head and paddle gently to keep your back to the waves",
+          "Let some air out of the lifejacket so that you ride lower and steadier in the water, out of the wind",
+          "Swim hard downwind, away from the breaking waves, towards where the sea is likely to be calmer"
+        ],
+        "explain": "A floating body tends to swing round to face oncoming waves, its legs acting as a sea anchor, so in rough water you inhale spray; the IMO cold-water guide says to put on the spray hood and paddle gently to keep your back to the waves. Deflating the jacket brings your mouth closer to the water, and swimming wastes heat and strength."
+      }
+    },
+    {
+      "id": "sea-x08",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "IMO MSC.1/Circ.1185/Rev.1 (actions prior to abandoning ship)",
+      "zh": {
+        "q": "你们的船在南海慢慢下沉（水温26 °C，气温30 °C），大约15分钟后就要弃船。你只穿着T恤和短裤。除了穿上救生衣，还应该做什么？",
+        "options": [
+          "就穿着单薄的衣服——这是热带海域，厚衣服只会吸饱了水，把人往下拽",
+          "喝一大杯烈酒，下水时能暖和些，再趁离船之前多吃点东西，储备体力",
+          "现在什么都别喝；每一滴淡水都留到救生筏上，因为从第一天起就要定量",
+          "穿上几层衣服、戴上帽子，系紧救生衣裆带，多喝水，再吃晕船药"
+        ],
+        "explain": "国际海事组织的冷水求生指南要求：尽量多穿几层衣服——即使在热带——因为在水里泡上很多小时，衣服能减缓散热；趁手指还灵活，下水前就系紧裆带；离船前尽量多喝水（不能喝酒）；并服用防晕船药。“头24小时不喝水”说的是救生筏上配给的淡水，不是让你在大船上忍着不喝。"
+      },
+      "en": {
+        "q": "Your ship is sinking slowly in the South China Sea (water 26 °C, air 30 °C) and will be abandoned in about 15 minutes. You're in a T-shirt and shorts. Besides putting on your lifejacket, what should you do?",
+        "options": [
+          "Stay in light clothing—it's the tropics, and heavy clothes would only soak up water and drag you down",
+          "Drink a large glass of spirits to warm you for the water, and eat as much as you can before going over the side",
+          "Don't drink anything now; save every drop of fresh water for the raft, since water is strictly rationed from the very first day",
+          "Put on several layers and a hat, tighten the lifejacket's crotch strap, drink plenty of water, and take seasickness tablets"
+        ],
+        "explain": "The IMO cold-water guide says to put on as many layers as possible—even in the tropics—because clothing slows heat loss over long hours in the water; to tighten crotch straps before entering the water, while your fingers still work; to drink a lot before leaving the ship (no alcohol); and to take anti-seasickness medicine. The 'no water for the first 24 hours' rule applies to the raft's own rations, not to drinking your fill aboard ship."
+      }
+    },
+    {
+      "id": "sea-x09",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "IMO MSC.1/Circ.1182/Rev.1 & MSC.1/Circ.1185/Rev.1 (horizontal lift, except when the airway is threatened by side-splash)",
+      "zh": {
+        "q": "你们的船正在救一名在14 °C海水里泡了两个小时的落水者。他已经靠到船边，但从船体反弹回来的浪不停地打在他脸上。用于水平吊升的救援吊篮还要10分钟才能装好。怎么做才对？",
+        "options": [
+          "等吊篮装好：在冷水里泡了两个小时的人如果被竖直吊起来，可能引发致命的救后虚脱",
+          "现在就用最快的办法救上来，比如吊带——呼吸道的直接威胁大于竖直吊升的风险",
+          "让他自己爬引航梯上来：活动活动肌肉能促进血液循环，让他尽快暖和起来",
+          "让他举起手臂去抓撇缆，这样船员就能更快地把他沿着船舷拉上甲板"
+        ],
+        "explain": "在冷水里泡过的人通常应水平吊升，但国际海事组织的指南有个例外：如果船舷反弹的浪正在威胁他的呼吸道，就要用最快的办法救上来，因为溺水是更迫在眉睫的危险。不要让落水者自己爬或帮忙——浮力不足的人一举手臂就可能下沉，用力还会诱发虚脱。"
+      },
+      "en": {
+        "q": "Your ship is recovering a survivor who has spent two hours in 14 °C water. He's alongside, and waves bouncing off the hull keep breaking over his face. The rescue basket for a horizontal lift will take another 10 minutes to rig. What's right?",
+        "options": [
+          "Wait for the basket: lifting him upright after two hours in the water could trigger a fatal post-rescue collapse",
+          "Get him out now by the quickest method, such as a strop—a direct threat to his airway outweighs the risk of a vertical lift",
+          "Tell him to climb the pilot ladder himself: using his muscles will get his circulation going and warm him up faster",
+          "Have him raise his arms to grab a heaving line, so that the crew can haul him up the ship's side to the deck much more quickly"
+        ],
+        "explain": "People who have been in cold water should normally be lifted horizontally, but the IMO guides make an exception: if side-splash is threatening the survivor's airway, recover him by the quickest method possible, because drowning is the more immediate danger. Survivors shouldn't be asked to climb or help—lifting an arm can make someone without much buoyancy sink, and the effort itself risks collapse."
+      }
+    },
+    {
+      "id": "sea-x10",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "IMO MSC.1/Circ.1185/Rev.1 (treatment of people recovered from cold water)",
+      "zh": {
+        "q": "你们救上来两个人。A十分钟前落水，抖得很厉害，但神志完全清醒，说话清楚。B在10 °C的水里泡了两个小时，昏昏欲睡，已经不再发抖。船上有热水淋浴。该怎样给他们复温？",
+        "options": [
+          "两人马上都去冲热水澡——复温越快越好，失温造成的伤害就会越小",
+          "B最冷，先让他去冲热水澡，A裹着毯子等着，等B暖和过来再说",
+          "A脱掉湿衣后可在看护下冲39～41 °C热水澡；B躺着保暖，轻柔搬动",
+          "两人都不行——热水一定会引起危险的“后降”，还是用干毛巾使劲给他们搓身子就好"
+        ],
+        "explain": "国际海事组织的冷水求生指南允许落水时间短、神志完全清醒、还在发抖的人脱掉湿衣，在有人看护下用39～41 °C的热水泡浴或淋浴复温。泡水时间长或已不再发抖的人则要轻柔搬动，保持半卧位并隔热保暖，有条件就吸氧，不能泡热水，否则可能虚脱。搓揉皮肤任何时候都没有好处。"
+      },
+      "en": {
+        "q": "You've recovered two people. A fell overboard ten minutes ago and is shivering violently but fully alert and talking clearly. B was in 10 °C water for two hours, is drowsy and has stopped shivering. There's a hot shower aboard. How should they be rewarmed?",
+        "options": [
+          "Both under the hot shower straight away—the faster they're rewarmed, the less chance hypothermia has to do damage",
+          "B into the hot shower first, because he's the coldest, while A waits under blankets until B has warmed right up again",
+          "A may take a supervised 39–41 °C shower once his wet clothes are off; B stays lying down, insulated and handled gently",
+          "Neither—hot water always causes a dangerous afterdrop, so just rub them both down briskly with dry towels instead"
+        ],
+        "explain": "The IMO cold-water guide allows a short-exposure survivor who is fully alert and shivering to remove wet clothes and rewarm in a 39–41 °C bath or shower under supervision. Someone who was immersed for a long time or has stopped shivering must be handled gently, kept semi-horizontal and insulated, given oxygen if available and kept out of hot water, which could make him collapse. Rubbing the skin never helps."
+      }
+    },
+    {
+      "id": "sea-x11",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "RYA / HM Coastguard helicopter-rescue guidance (arms down in the strop); IMO MSC.1/Circ.1182/Rev.1",
+      "zh": {
+        "q": "漂流了几个小时后，直升机绞车手下到水里，把救援吊带从你头上套下、兜在腋下。开始吊升时，你该怎么做？",
+        "options": [
+          "双臂紧贴身体两侧往下压，一切交给机组——一抬手臂就可能从吊带里滑出去",
+          "伸出双手抓紧钢索或吊钩，这样吊带就不会滑脱，你的手还能替它分担一些体重",
+          "一到舱门口就抓住门框，自己爬进舱里，省得机组再费力把你拉进去",
+          "双臂向两侧平伸，好防止吊升时身体在直升机下方不停地打转"
+        ],
+        "explain": "吊带只是兜在你的腋下：一旦抬起手臂——去抓吊钩，或者想自己爬进舱里——人就可能从高空直接滑出吊带。要双臂下压，到了舱门口在机组发话之前什么都别做，由他们来处理你；对长时间泡在水里的人，机组可能改用双吊带或吊篮，让你接近水平。"
+      },
+      "en": {
+        "q": "After hours adrift, a helicopter winchman reaches you in the water and slips a rescue strop over your head and under your arms. As the lift begins, what should you do?",
+        "options": [
+          "Keep your arms pressed down at your sides and let the crew do everything—raising your arms can let you slide out of the strop",
+          "Reach up and grip the cable or hook firmly with both hands, so the strop can't slip and you take some weight off it",
+          "As soon as you reach the doorway, grab the edge and pull yourself in, to save the crew the effort of hauling you aboard",
+          "Hold your arms straight out to the sides, to stop yourself spinning round and round beneath the helicopter all through the lift"
+        ],
+        "explain": "A strop holds you only under the armpits: if you lift your arms—to grab the hook, or to haul yourself into the cabin—you can slide straight out of it, from a height. Keep your arms down, do nothing at the door until the crew tells you to, and let them handle you; after a long immersion they may use a double strop or a basket to keep you nearly horizontal."
+      }
+    },
+    {
+      "id": "sea-x12",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "FM 3-05.70 (rafting or beaching techniques)",
+      "zh": {
+        "q": "漂流九天后，黄昏时分你们的救生筏靠近一座珊瑚岛。迎风一侧的礁盘上巨浪轰鸣。你们有桨和海锚。怎样上岸？",
+        "options": [
+          "趁天还没黑，马上从迎风面的碎浪里冲进去——在海上多漂一个小时，就多耗一分水和体力",
+          "先把海锚收上来，免得它挂在珊瑚上，然后大家拼命划桨，直奔海滩",
+          "冲浪前先脱掉鞋子和厚衣服，万一筏子在礁盘上翻了，游起来会方便得多",
+          "先在外面过夜；再找背风面或礁盘缺口，穿着衣鞋和救生衣，海锚拖在艉后，乘浪背进去"
+        ],
+        "explain": "美军手册建议：不要在夜里登陆；选择背风面或碎浪带的缺口（淡水溪流的出海口附近没有珊瑚礁）；穿着衣服、鞋子和救生衣，防止被珊瑚割伤。把海锚拖在艉后，能让筏子正对浪头，艉部不会被浪甩横而翻筏；要乘着浪的背面（朝海一侧）进去，筏子搁浅之前别跳出去。"
+      },
+      "en": {
+        "q": "After nine days adrift, your raft nears a coral island at dusk. Heavy surf is thundering on the reef on the windward side. You have paddles and the sea anchor. How do you get ashore?",
+        "options": [
+          "Go straight in through the windward surf now, before dark—every extra hour adrift costs you water and strength",
+          "Haul the sea anchor aboard so that it can't snag on the coral, then all paddle as hard as you can straight in for the beach",
+          "Take off shoes and heavy clothing before going in, so that you can swim freely if the raft flips over on the reef",
+          "Stand off overnight; then try the lee side or a reef gap, clothes and lifejackets on, sea anchor astern, riding in on a wave's back"
+        ],
+        "explain": "The US Army manual advises not landing at night, choosing the lee side or a gap in the surf (there are no reefs off the mouths of freshwater streams), and keeping clothes, shoes and lifejackets on against coral cuts. Trailing the sea anchor astern keeps the raft square to the waves so the stern can't be thrown round to capsize you; ride in on the seaward (back) side of a wave and stay in the raft until it grounds."
+      }
+    }
+  ]
+}

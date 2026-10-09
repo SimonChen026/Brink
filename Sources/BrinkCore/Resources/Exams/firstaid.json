@@ -1,0 +1,974 @@
+{
+  "id": "firstaid",
+  "skill": "medical",
+  "bonus": 1,
+  "perk": null,
+  "requires": [],
+  "minLevel": 1,
+  "count": 10,
+  "pass": 8,
+  "icon": "cross.case.fill",
+  "color": "#E5534B",
+  "zh": {
+    "name": "急救员",
+    "full": "急救员资格",
+    "desc": "心肺复苏、止血包扎、骨折固定、烧烫伤、气道异物、休克。",
+    "realWorld": "相当于红十字会救护员培训、AHA 心肺复苏课程。"
+  },
+  "en": {
+    "name": "First Aider",
+    "full": "First Aider Certificate",
+    "desc": "CPR, bleeding control, dressings and splints, burns, choking, shock.",
+    "realWorld": "Comparable to a Red Cross first aid course or AHA CPR training."
+  },
+  "questions": [
+    {
+      "id": "firstaid-01",
+      "answer": 0,
+      "hard": false,
+      "source": "AHA 2025 / ERC 2025",
+      "zh": {
+        "q": "给成人做胸外按压，正确的按压深度和频率是？",
+        "options": [
+          "深度 5–6 厘米，每分钟 100–120 次",
+          "深度 2–3 厘米即可，每分钟 60–80 次",
+          "深度 7–8 厘米，每分钟 140–160 次",
+          "深度 3–4 厘米即可，每分钟 80–100 次"
+        ],
+        "explain": "成人胸外按压深度至少 5 厘米、但不超过 6 厘米，频率每分钟 100–120 次；每次按压后让胸廓完全回弹，尽量减少中断。按得太浅、太慢都不能产生足够的血流。"
+      },
+      "en": {
+        "q": "When giving chest compressions to an adult, what are the correct depth and rate?",
+        "options": [
+          "5–6 cm deep, 100–120 per minute",
+          "Only 2–3 cm deep, 60–80 per minute",
+          "7–8 cm deep, 140–160 per minute",
+          "Only 3–4 cm deep, 80–100 per minute"
+        ],
+        "explain": "Push at least 5 cm but no more than 6 cm deep, at 100–120 compressions a minute, let the chest recoil fully after each one, and keep pauses to a minimum. Compressions that are too shallow or too slow don't move enough blood."
+      }
+    },
+    {
+      "id": "firstaid-02",
+      "answer": 2,
+      "hard": true,
+      "source": "AHA 2025 / ERC 2025",
+      "zh": {
+        "q": "地震后大家撤到了楼前的空地上。一位同事突然倒下，拍他、喊他都没有反应，只是隔一会儿像叹气一样猛吸一口气。你应该怎么做？",
+        "options": [
+          "他还有呼吸，把他摆成侧卧位，守在旁边等他慢慢醒过来",
+          "先观察几分钟，看看他的呼吸会不会变得规律",
+          "按心脏骤停处理：呼救、取 AED，立即开始胸外按压",
+          "先摸颈动脉一整分钟，确认没有脉搏再说"
+        ],
+        "explain": "没有反应、只有偶尔叹息样的喘气（濒死呼吸），不是正常呼吸，应立即按心脏骤停处理，开始心肺复苏。把这种喘气误当成“还有呼吸”而等待，是心肺复苏被延误的最常见原因之一。"
+      },
+      "en": {
+        "q": "After the earthquake everyone has gathered in the open space outside the building. A coworker suddenly collapses. He doesn't respond when you tap him and shout, and every so often he gives a single gasp, like a sigh. What do you do?",
+        "options": [
+          "He's still breathing: roll him onto his side and wait for him to come round",
+          "Watch him for a few minutes to see whether his breathing settles down",
+          "Treat it as cardiac arrest: call for help and an AED, start compressions",
+          "Feel for a neck pulse for a full minute before doing anything"
+        ],
+        "explain": "Unresponsive with only occasional sighing gasps (agonal breathing) is not normal breathing: treat it as cardiac arrest and start CPR at once. Mistaking these gasps for breathing is one of the most common reasons CPR is delayed."
+      }
+    },
+    {
+      "id": "firstaid-03",
+      "answer": 1,
+      "hard": true,
+      "source": "AHA 2025 / ERC 2025",
+      "zh": {
+        "q": "车站里一名男子突然倒地，没有反应，也没有正常呼吸。你独自一人，带着手机，但从没学过人工呼吸。最好的做法是？",
+        "options": [
+          "不会人工呼吸就别做心肺复苏，免得帮倒忙，等专业人员来",
+          "拨打急救电话并开免提，按调度员指导立即持续胸外按压",
+          "先跑出去找医生，找到以后再一起回来抢救",
+          "先做 5 分钟心肺复苏，然后再停下来打电话"
+        ],
+        "explain": "独自一人且有手机时，先拨打急救电话并开免提，一边听调度员指导一边按压。没学过或不愿意做人工呼吸，也应该做“单纯胸外按压”——对突然倒下的成人，持续按压远比什么都不做好。"
+      },
+      "en": {
+        "q": "At a station a man suddenly collapses. He's unresponsive and not breathing normally. You're alone with a phone, and you've never learned rescue breaths. What's best?",
+        "options": [
+          "Don't do CPR if you can't give breaths; wait for the professionals to take over",
+          "Call emergency services on speaker and give nonstop chest compressions as guided",
+          "Run off to find a doctor first, then come back together to help him",
+          "Do five minutes of CPR first, and only then stop to make the emergency call"
+        ],
+        "explain": "If you're alone with a phone, call first and put it on speaker so the dispatcher can coach you while you push. If you can't or won't give breaths, do compression-only CPR: for an adult who suddenly collapses, continuous compressions are far better than nothing."
+      }
+    },
+    {
+      "id": "firstaid-04",
+      "answer": 3,
+      "hard": false,
+      "source": "AHA 2025",
+      "zh": {
+        "q": "一名男子被从洪水里救上岸后心脏骤停，全身湿透，躺在湿地上。救援队带来了一台 AED。贴电极片之前应该？",
+        "options": [
+          "人身上湿就绝不能用 AED，会连你一起电到，只做按压",
+          "隔着湿衣服直接把电极片贴上去，节省时间",
+          "先等他身体完全晾干、暖和过来以后再使用",
+          "迅速擦干胸部再贴电极片，电击时让所有人离开他"
+        ],
+        "explain": "AED 在潮湿环境中也能使用：迅速把胸部皮肤擦干，贴好电极片，分析心律和电击时所有人都不要接触患者。胸口有水会让电流沿皮肤表面流走、削弱电击效果；等他晾干则白白耽误除颤。"
+      },
+      "en": {
+        "q": "A man pulled out of floodwater is in cardiac arrest, soaking wet and lying on wet ground. The rescue team has brought an AED. Before you attach the pads, you should…",
+        "options": [
+          "Never use an AED on a wet person; it could shock you too, so just do compressions",
+          "Stick the pads straight on over his wet shirt to save precious seconds",
+          "Wait until he is completely dry and warmed up before switching it on",
+          "Quickly wipe his chest dry, attach the pads, keep everyone clear for the shock"
+        ],
+        "explain": "An AED can be used in wet conditions: quickly wipe the chest dry, attach the pads, and make sure nobody touches the patient during analysis and shock. Water on the chest lets the current run across the skin and weakens the shock; waiting for him to dry just delays defibrillation."
+      }
+    },
+    {
+      "id": "firstaid-05",
+      "answer": 0,
+      "hard": true,
+      "source": "ERC 2025 / AHA 2025",
+      "zh": {
+        "q": "你把一个溺水的孩子从洪水里拖上屋顶。他没有反应，也没有正常呼吸。旁边有人喊：“快把他倒过来控水！”你应该？",
+        "options": [
+          "不要控水，立即心肺复苏，包括人工呼吸",
+          "把他倒提起来抖动，先把肺里的水全部控出来",
+          "让他趴在你膝盖上，反复用力压背，把水压出来",
+          "用毯子把他裹好，等他自己把水咳出来"
+        ],
+        "explain": "溺水致命的关键是缺氧。倒提、压腹或压背“控水”控不出多少水，却会耽误通气，还会增加呕吐和误吸的风险。应立即开始心肺复苏，溺水者尤其需要人工呼吸。"
+      },
+      "en": {
+        "q": "You've dragged a drowning child out of the floodwater onto a roof. He's unresponsive and not breathing normally. Someone shouts, 'Turn him upside down and get the water out!' What do you do?",
+        "options": [
+          "Don't drain water; start CPR now, including rescue breaths",
+          "Hold him upside down and shake him to drain his lungs first",
+          "Lay him face down over your knee and press on his back to squeeze the water out",
+          "Wrap him in a blanket and wait for him to cough the water up"
+        ],
+        "explain": "What kills in drowning is lack of oxygen. Hanging him upside down or pressing on his belly or back gets very little water out, delays breathing for him, and raises the risk of vomiting and aspiration. Start CPR immediately; rescue breaths matter especially in drowning."
+      }
+    },
+    {
+      "id": "firstaid-06",
+      "answer": 2,
+      "hard": false,
+      "source": "AHA 2025 / ERC 2025",
+      "zh": {
+        "q": "吃压缩饼干时，一名同伴突然被呛住，满脸通红，但还在用力咳嗽，能说出几个字。你应该？",
+        "options": [
+          "立刻在他两肩胛骨之间用力拍打，把异物拍出来",
+          "马上从背后抱住他做腹部冲击，免得情况恶化",
+          "鼓励他继续咳嗽，在旁边随时准备施救",
+          "让他赶紧大口喝水，把卡住的东西冲下去"
+        ],
+        "explain": "能咳嗽、能说话说明气道只是部分阻塞，自己用力咳嗽是排出异物最有效的方式，此时拍背或冲击反而可能让异物移位、加重阻塞。一旦咳不出声、说不出话或无法呼吸，立即进行背部叩击和腹部冲击。"
+      },
+      "en": {
+        "q": "Eating a ration biscuit, a companion suddenly chokes. He's red in the face but coughing hard and can get a few words out. What do you do?",
+        "options": [
+          "Slap him hard between the shoulder blades straight away to dislodge it",
+          "Grab him from behind and start abdominal thrusts before it gets worse",
+          "Encourage him to keep coughing and stay ready to help",
+          "Have him gulp down water to wash it through"
+        ],
+        "explain": "If he can cough and speak, the airway is only partly blocked and his own cough is the most effective way to clear it; back blows or thrusts now could shift the object and make things worse. Once he can't cough, speak or breathe, start back blows and abdominal thrusts."
+      }
+    },
+    {
+      "id": "firstaid-07",
+      "answer": 1,
+      "hard": true,
+      "source": "AHA 2025 / ERC 2025",
+      "zh": {
+        "q": "你正在给一名严重噎住的人做背部叩击和腹部冲击，他突然全身瘫软、失去反应。接下来应该？",
+        "options": [
+          "继续从背后抱住他做腹部冲击，直到东西出来",
+          "放倒在地，呼叫急救，立即开始心肺复苏",
+          "把手指伸进他喉咙深处，盲目把异物抠出来",
+          "扶他坐起来，喂几口水帮他把东西顺下去"
+        ],
+        "explain": "噎住的人一旦失去反应，就按心脏骤停处理：放平、呼救、开始胸外按压——按压本身也能产生把异物推出的压力。每次人工呼吸前先看一眼口腔，只取出看得见的异物；盲目用手指抠，可能把异物推得更深。"
+      },
+      "en": {
+        "q": "You're giving back blows and abdominal thrusts to someone who is badly choking when he suddenly goes limp and unresponsive. What next?",
+        "options": [
+          "Keep holding him up from behind and doing abdominal thrusts until it comes out",
+          "Lower him to the ground, call for help and start CPR",
+          "Sweep blindly deep in his throat with your fingers",
+          "Sit him up and give him sips of water to wash it down"
+        ],
+        "explain": "Once a choking person becomes unresponsive, treat it as cardiac arrest: lay him down, call for help and start chest compressions; compressions also push on the obstruction. Look in the mouth before each rescue breath and remove only an object you can see; blind finger sweeps can push it deeper."
+      }
+    },
+    {
+      "id": "firstaid-08",
+      "answer": 3,
+      "hard": false,
+      "source": "AHA 2025 / ERC 2025",
+      "zh": {
+        "q": "不满 1 岁的婴儿被异物噎住，哭不出声，也咳不出来。正确的急救方法是？",
+        "options": [
+          "像对成人那样，从背后抱住婴儿，用力做几次腹部冲击",
+          "抓住婴儿的双脚倒提起来，用力上下摇晃",
+          "把手指伸进婴儿嘴里，盲目地把异物抠出来",
+          "头低位，背部叩击 5 次与胸部冲击 5 次交替进行"
+        ],
+        "explain": "让婴儿脸朝下趴在你的前臂上、头低于躯干，用掌根在两肩胛骨之间叩背 5 次；再翻成仰卧，在胸骨下半段做 5 次胸部冲击，交替进行。婴儿不做腹部冲击，以免伤及腹部脏器；倒提摇晃和盲目抠挖都很危险。"
+      },
+      "en": {
+        "q": "A baby under 1 year old is choking and can't cry or cough. What is the correct first aid?",
+        "options": [
+          "Give abdominal thrusts from behind, the same as for an adult",
+          "Hold the baby upside down by the feet and shake hard",
+          "Sweep blindly inside the baby's mouth with a finger",
+          "Head lower than the body: alternate 5 back blows with 5 chest thrusts"
+        ],
+        "explain": "Lay the baby face down along your forearm, head lower than the body, and give 5 back blows between the shoulder blades with the heel of your hand; then turn the baby face up and give 5 chest thrusts on the lower half of the breastbone, and keep alternating. Babies don't get abdominal thrusts because of the risk to their abdominal organs; dangling and blind sweeps are dangerous."
+      }
+    },
+    {
+      "id": "firstaid-09",
+      "answer": 2,
+      "hard": true,
+      "source": "WMS Wound 2014 / ERC 2025",
+      "zh": {
+        "q": "飞机迫降后，一名乘客的大腿被金属豁开，鲜红的血一股股往外喷，用力按压伤口也止不住。你手边有一条止血带。应该？",
+        "options": [
+          "先按压腹股沟的“压迫点”，同时把腿抬高，直到出血停下",
+          "只松松地扎一圈，留点血流，免得腿坏死",
+          "扎在伤口上方的肢体上（避开关节），拧紧到出血停止",
+          "揭掉浸透的纱布，换上干净的再接着按压"
+        ],
+        "explain": "四肢危及生命的大出血、直接压迫无效时，应立即使用止血带：扎在伤口上方的肢体上（不要扎在关节处），拧紧直到出血停止。“压迫点”止血已被证实无效；止血带扎得太松只阻断静脉回流，反而让出血更多。"
+      },
+      "en": {
+        "q": "After the crash landing, a passenger's thigh has been ripped open by metal. Bright red blood is spurting out and firm pressure isn't stopping it. You have a tourniquet. What do you do?",
+        "options": [
+          "Press on the 'pressure point' in the groin and raise the leg until it stops",
+          "Put it on loosely so some blood still flows and the leg doesn't die",
+          "Apply it above the wound (not on a joint) and tighten until bleeding stops",
+          "Peel off the soaked gauze and keep pressing with fresh gauze"
+        ],
+        "explain": "For life-threatening limb bleeding that direct pressure can't control, use a tourniquet at once: on the limb above the wound (not on a joint), tightened until the bleeding stops. Pressure points don't work, and a loose tourniquet only blocks the veins, which makes the bleeding worse."
+      }
+    },
+    {
+      "id": "firstaid-10",
+      "answer": 0,
+      "hard": true,
+      "source": "WMS Wound 2014",
+      "zh": {
+        "q": "你给伤员扎上止血带后，出血停止了。救援估计还要两三个小时才能到。有人说：“每隔 15 分钟要松一次，不然腿会坏死。”你应该？",
+        "options": [
+          "不要松开，记下扎止血带的时间，交给医护人员处理",
+          "每隔 15 分钟松开一次，让血流过去再重新扎紧",
+          "扎满一个小时后，不管出血是否停止都取下来",
+          "伤员喊疼得厉害时，就把它稍微放松一点"
+        ],
+        "explain": "止血带扎上后不要为了“让肢体透透气”而定时放松——每松开一次都会重新出血，而失血是更致命的威胁。记下扎上的时间（可写在止血带或伤员额头上），由医护人员决定何时取下。止血带本来就很疼，疼痛不是放松的理由。"
+      },
+      "en": {
+        "q": "You've applied a tourniquet and the bleeding has stopped. Rescue is two to three hours away. Someone says, 'Loosen it every 15 minutes or the leg will die.' What do you do?",
+        "options": [
+          "Leave it tight, note the time it went on, and hand over to medical staff",
+          "Loosen it every 15 minutes to let some blood through, then tighten it again",
+          "Take it off once an hour has passed, no matter what",
+          "Ease it off a little whenever the casualty says it hurts"
+        ],
+        "explain": "Don't loosen a tourniquet to 'rest' the limb: every release restarts the bleeding, and blood loss is the bigger threat. Write down the time it went on (on the tourniquet or the casualty's forehead) and let medical staff decide when it comes off. Tourniquets hurt; pain is not a reason to loosen one."
+      }
+    },
+    {
+      "id": "firstaid-11",
+      "answer": 3,
+      "hard": false,
+      "source": "Red Cross First Aid Manual",
+      "zh": {
+        "q": "地震中，一截钢筋扎进了伤员的小腿，外面露出二十多厘米，出血不多。你该怎么处理？",
+        "options": [
+          "立刻把它拔出来，再用力压住伤口止血",
+          "把钢筋往里推，让它从另一侧穿出来再拔",
+          "拔出后用白酒冲洗伤口，彻底消毒再包扎",
+          "不要拔出，用厚敷料在周围垫稳固定，再包扎"
+        ],
+        "explain": "扎入体内的异物可能正压着破损的血管，拔出会引发大出血，还可能造成二次损伤。应保持原位，在异物两侧用厚敷料或卷起的布垫稳，再包扎固定、尽量减少晃动，然后送医。"
+      },
+      "en": {
+        "q": "In the earthquake a length of steel rebar has gone into a casualty's calf, with about 20 cm sticking out. It isn't bleeding much. How do you deal with it?",
+        "options": [
+          "Pull it out at once, then press hard on the wound",
+          "Push it on through so it comes out the other side, then pull it out",
+          "Pull it out and pour strong liquor into the wound so it doesn't get infected",
+          "Leave it in, pad bulky dressings around it to hold it still, then bandage"
+        ],
+        "explain": "An embedded object may be plugging a damaged blood vessel; pulling it out can cause heavy bleeding and further damage. Leave it in place, pad around it with bulky dressings or rolled cloth so it can't move, bandage over them, and get the casualty to medical care."
+      }
+    },
+    {
+      "id": "firstaid-12",
+      "answer": 1,
+      "hard": false,
+      "source": "Red Cross First Aid Manual",
+      "zh": {
+        "q": "伤员的一根手指被完全切断了。断指应该怎样保存？",
+        "options": [
+          "直接埋进冰块里保存，越冷越不容易坏",
+          "用干净纱布包好装进密封袋，再放在冰上",
+          "泡在白酒或医用酒精里，防止细菌感染腐烂",
+          "泡在一碗干净的清水里，防止断指干掉坏死"
+        ],
+        "explain": "断指用干净的纱布或布包好，装进密封袋，再把袋子放在冰块或冰水中低温保存，随伤员一起送医。断指不能直接接触冰（会冻伤组织），也不能泡在水、酒精或其他任何液体里。"
+      },
+      "en": {
+        "q": "A casualty's finger has been cut off completely. How should you keep the finger?",
+        "options": [
+          "Bury it directly in ice: the colder it is, the better it will keep",
+          "Wrap in clean gauze, seal in a plastic bag, put the bag on ice",
+          "Soak it in strong liquor or rubbing alcohol to keep germs away",
+          "Keep it soaking in a bowl of clean water so that it doesn't dry out"
+        ],
+        "explain": "Wrap the part in clean gauze or cloth, seal it in a bag, and keep the bag cold on ice or in iced water; send it with the casualty. Don't let it touch ice directly (that causes frostbite), and don't soak it in water, alcohol or any other liquid."
+      }
+    },
+    {
+      "id": "firstaid-13",
+      "answer": 0,
+      "hard": false,
+      "source": "ERC 2025",
+      "zh": {
+        "q": "被开水烫伤后，第一步应该怎么做？",
+        "options": [
+          "立即用流动的凉水冲洗烫伤处约 20 分钟",
+          "马上用冰块敷，一直敷到不疼为止，越冰越好",
+          "赶紧涂上牙膏或酱油，防止起泡、减轻疼痛",
+          "把水泡挑破，让里面的液体流出来"
+        ],
+        "explain": "烧烫伤后应尽快用凉的流动清水冲洗约 20 分钟，能减轻损伤和疼痛。冰块会造成冻伤；牙膏、酱油、黄油等会污染创面、妨碍散热；水泡不要挑破，它能保护下面的皮肤。"
+      },
+      "en": {
+        "q": "Someone is scalded by boiling water. What is the first thing to do?",
+        "options": [
+          "Cool the burn under cool running water for about 20 minutes",
+          "Put ice on it right away until it stops hurting; the colder the better",
+          "Smear on toothpaste or soy sauce to stop blisters forming and ease pain",
+          "Pop the blisters so the fluid inside can drain out"
+        ],
+        "explain": "Cool the burn under cool running water as soon as possible, for about 20 minutes: it limits the damage and eases the pain. Ice causes cold injury; toothpaste, soy sauce or butter contaminate the burn and hold the heat in; leave blisters intact, because they protect the skin underneath."
+      }
+    },
+    {
+      "id": "firstaid-14",
+      "answer": 2,
+      "hard": true,
+      "source": "ERC 2025 / WMS Wound 2014",
+      "zh": {
+        "q": "南极考察站失火，外面是 −60 °C 的极夜。一名队员整只手和前臂被烧伤，大家撤进了一间很冷的备用舱。正确的处理是？",
+        "options": [
+          "环境已经够冷了，不必再冷却，直接包扎就行",
+          "把烧伤的手直接插进外面的雪里，快速降温",
+          "只用凉水冲洗烧伤处约 20 分钟，其余部位注意保暖",
+          "涂上厚厚一层油脂，再用绷带紧紧缠起来"
+        ],
+        "explain": "冷却仍是烧伤急救的关键，但在寒冷环境中只冷却烧伤部位，用凉水而不是冰雪，同时把伤员身体其他部位盖好保暖，防止失温。冰雪会造成冻伤；油脂会封住热量、污染创面；缠得太紧，肿胀后会阻断血流。"
+      },
+      "en": {
+        "q": "Fire breaks out at the Antarctic station; outside it's −60 °C and polar night. A team member has burned his whole hand and forearm, and everyone has retreated into a cold backup module. What is the right care?",
+        "options": [
+          "It's cold enough in here already, so skip the cooling and just bandage it up",
+          "Push the burned hand into the snow outside to cool it down quickly",
+          "Cool only the burn with cool water for 20 minutes; keep the rest of him warm",
+          "Coat it thickly in grease to seal it, then bind it up tightly"
+        ],
+        "explain": "Cooling is still the key burn treatment, but in the cold you cool only the burned area, with cool water rather than snow or ice, while keeping the rest of the body covered to prevent hypothermia. Snow causes frostbite; grease holds heat in and contaminates the burn; a tight wrap cuts off blood flow as the limb swells."
+      }
+    },
+    {
+      "id": "firstaid-15",
+      "answer": 3,
+      "hard": false,
+      "source": "Red Cross First Aid Manual",
+      "zh": {
+        "q": "坠机后，一名乘客前臂明显畸形，一动就剧痛，但手指颜色和感觉都正常，救援预计一小时内赶到。应该怎样固定？",
+        "options": [
+          "先用力把骨头拉直复位，免得以后长歪",
+          "让他活动一下手腕，确认到底是不是骨折",
+          "用绳子把夹板捆得越紧越好，防止肿胀",
+          "按原样用夹板固定，跨过腕和肘，再查手指血运"
+        ],
+        "explain": "疑似骨折应按发现时的位置固定，夹板要超过骨折处上下两个关节（前臂就是腕和肘），空隙用衣物填好。固定前后都要检查伤处以下的血运、感觉和活动（手指颜色、温度、触觉）；捆得太紧会阻断血流。"
+      },
+      "en": {
+        "q": "After the crash, a passenger's forearm is clearly deformed and agonizing to move, but his fingers have normal colour and feeling. Rescuers are expected within the hour. How do you immobilize it?",
+        "options": [
+          "Pull the bone straight first so that it won't heal crooked",
+          "Have him move his wrist to check whether it's really broken",
+          "Tie the splint on as tight as you can to stop it swelling",
+          "Splint it as found, spanning wrist and elbow, then check the fingers"
+        ],
+        "explain": "Splint a suspected fracture in the position you find it, with the splint spanning the joints above and below (for the forearm, wrist and elbow) and the gaps padded. Check circulation, sensation and movement beyond the injury before and after (colour, warmth and feeling in the fingers), because a splint that's too tight can cut off blood flow."
+      }
+    },
+    {
+      "id": "firstaid-16",
+      "answer": 1,
+      "hard": false,
+      "source": "Red Cross First Aid Manual",
+      "zh": {
+        "q": "开放性骨折（断骨刺破皮肤露在外面）应该怎样处理？",
+        "options": [
+          "先把露出的骨头推回皮肤里，再包扎固定",
+          "干净敷料盖住伤口，骨头周围加压止血，再固定",
+          "直接压住露出的骨头用力按，这样止血最快",
+          "让伤口敞着晾干，上面不要盖任何东西"
+        ],
+        "explain": "开放性骨折先用干净（最好是无菌）的敷料覆盖伤口，止血时在骨头两侧加压，而不是压在骨头上，然后像普通骨折一样固定，尽快送医。不要把骨头推回去——会把污物带进深处，增加感染风险。"
+      },
+      "en": {
+        "q": "How should you deal with an open fracture, where broken bone has come through the skin?",
+        "options": [
+          "Push the bone back in under the skin first, then bandage it",
+          "Cover with a clean dressing, press around the bone, then splint",
+          "Press down hard right on the exposed bone, which stops the bleeding fastest",
+          "Leave the wound open to the air to dry, with nothing on it"
+        ],
+        "explain": "Cover an open fracture with a clean (ideally sterile) dressing, control bleeding by pressing beside the bone rather than on it, then splint as for any fracture and get help. Never push the bone back in: that drags dirt deep inside and raises the infection risk."
+      }
+    },
+    {
+      "id": "firstaid-17",
+      "answer": 2,
+      "hard": false,
+      "source": "ERC 2025",
+      "zh": {
+        "q": "一名腿部大出血的伤员，止血后脸色苍白、皮肤湿冷，脉搏又快又弱，烦躁不安。这时应该？",
+        "options": [
+          "扶他坐起来，喂几口白酒暖暖身子，好让他提起精神",
+          "让他起来走动走动，促进全身的血液循环，暖和起来",
+          "让他平躺，继续止血，隔开冰冷的地面并盖好保暖",
+          "把他的头和肩膀垫高，脱掉外衣帮他散热"
+        ],
+        "explain": "这些是休克的表现。让伤员平躺，持续控制出血，用衣物隔开冰冷的地面并盖好保暖，安慰他，尽快呼救送医。酒精会扩张血管、加重休克；坐起或走动会让本已不足的血液更难供应到大脑。"
+      },
+      "en": {
+        "q": "A casualty who bled heavily from the leg is now, with the bleeding controlled, pale, cold and clammy, with a fast, weak pulse, and restless. What should you do?",
+        "options": [
+          "Sit him up and give him a few sips of spirits to warm him and perk him up",
+          "Get him up and walking around to keep his blood circulating and warm him up",
+          "Lay him flat, keep the bleeding controlled, insulate and cover him",
+          "Prop up his head and shoulders and take off his jacket so he doesn't overheat"
+        ],
+        "explain": "These are signs of shock. Lay him flat, keep the bleeding controlled, insulate him from the cold ground and cover him, reassure him and get help fast. Alcohol widens blood vessels and worsens shock; sitting up or walking makes it even harder for the reduced blood volume to reach the brain."
+      }
+    },
+    {
+      "id": "firstaid-18",
+      "answer": 0,
+      "hard": false,
+      "source": "ERC 2025",
+      "zh": {
+        "q": "避难所里，一名同伴躺在地铺上叫不醒，身上没有外伤，呼吸正常。你要离开几分钟去求援。应该让他保持什么姿势？",
+        "options": [
+          "摆成侧卧的复原体位，让口中的液体能流出来",
+          "仰卧，头下垫一个高枕头，让他睡得舒服些",
+          "扶他起来靠墙坐好，方便别人观察他",
+          "让他脸朝下趴着，防止舌头后坠堵住喉咙"
+        ],
+        "explain": "没有反应但呼吸正常、没有怀疑脊柱损伤的人，应摆成复原（稳定侧卧）体位：既能保持气道通畅，又能让呕吐物和分泌物从口中流出，防止误吸。离开前和回来后都要检查呼吸，一旦呼吸不正常就开始心肺复苏。"
+      },
+      "en": {
+        "q": "In the shelter, a companion lying on his bedding can't be woken. He has no injuries and is breathing normally. You must leave for a few minutes to get help. How should you position him?",
+        "options": [
+          "The recovery position, on his side so fluids can drain from his mouth",
+          "On his back with a thick pillow under his head so that he's comfortable",
+          "Propped sitting up against the wall so others can watch him",
+          "Face down on his front so his tongue can't block his throat"
+        ],
+        "explain": "An unresponsive person who is breathing normally, with no suspected spinal injury, goes in the recovery position: it keeps the airway open and lets vomit and fluids drain from the mouth instead of being inhaled. Check his breathing before you go and when you return, and start CPR if it stops being normal."
+      }
+    },
+    {
+      "id": "firstaid-19",
+      "answer": 3,
+      "hard": false,
+      "source": "ERC 2025",
+      "zh": {
+        "q": "流鼻血止不住时，正确的处理方法是？",
+        "options": [
+          "把头仰起来，让血不再从鼻孔里往外流，止得更快",
+          "平躺下来，在额头上敷一块凉的湿毛巾",
+          "用卫生纸卷紧紧塞住鼻孔，不时换上新的纸卷",
+          "坐下前倾，捏住鼻翼软处压迫 10–15 分钟"
+        ],
+        "explain": "流鼻血时应坐下、身体前倾，用手指捏住鼻翼柔软部分（鼻梁骨下方），持续压迫 10–15 分钟，中途不要松开查看，用嘴呼吸。仰头或平躺会让血流进咽喉，引起呛咳和呕吐；持续压迫仍止不住应就医。"
+      },
+      "en": {
+        "q": "What is the right way to handle a nosebleed that won't stop?",
+        "options": [
+          "Tilt the head back so the blood stops running out and the bleeding stops faster",
+          "Lie flat with a cold, wet towel across the forehead",
+          "Pack the nostrils tightly with rolled tissue, changing it often",
+          "Sit, lean forward, and pinch the soft part of the nose for 10–15 minutes"
+        ],
+        "explain": "Sit down leaning forward and pinch the soft part of the nose (just below the bony bridge) firmly for 10–15 minutes without letting go to check, breathing through the mouth. Tilting back or lying down sends blood down the throat, causing choking and vomiting; get medical help if steady pressure doesn't stop it."
+      }
+    },
+    {
+      "id": "firstaid-20",
+      "answer": 1,
+      "hard": false,
+      "source": "Epilepsy Foundation",
+      "zh": {
+        "q": "有人癫痫发作、全身抽搐时，下列哪种做法正确？",
+        "options": [
+          "往他嘴里塞块毛巾或勺子，防止他抽搐时咬断舌头",
+          "移开硬物，护住头部，记下时间，嘴里不塞东西",
+          "用力按住他的四肢，让抽搐尽快停下来",
+          "用力掐人中，往他脸上泼凉水把他弄醒"
+        ],
+        "explain": "抽搐时要防止他受伤：移开周围硬物，头下垫软物，不要强行按压肢体，也不要往嘴里塞任何东西（可能造成牙齿断裂或窒息）。记下抽搐开始的时间，抽搐停止后摆成复原体位。抽搐超过 5 分钟、反复发作、首次发作或受了伤，要立即呼救。"
+      },
+      "en": {
+        "q": "When someone is having a seizure with whole-body jerking, which of these is right?",
+        "options": [
+          "Wedge a towel or spoon between the teeth so he can't bite his tongue off",
+          "Clear hard objects, protect the head, time it, put nothing in the mouth",
+          "Hold his arms and legs down hard to make the jerking stop sooner",
+          "Press hard under his nose and splash cold water on his face to wake him"
+        ],
+        "explain": "During a seizure, protect him from injury: clear away hard objects, cushion his head, don't restrain him, and never put anything in his mouth (it can break teeth or block the airway). Note when it started; once the jerking stops, put him in the recovery position. Call for help if it lasts more than 5 minutes, repeats, is a first seizure, or he's injured."
+      }
+    },
+    {
+      "id": "firstaid-21",
+      "answer": 2,
+      "hard": false,
+      "source": "AAPCC / WHO",
+      "zh": {
+        "q": "洪水退后清理房屋时，一个孩子误喝了几口管道疏通剂（强碱）。你应该？",
+        "options": [
+          "用手指抠他的喉咙，趁还没造成伤害让他全吐出来",
+          "灌他喝一大碗浓盐水，催他把东西吐出来",
+          "不要催吐，尽快联系急救或中毒咨询，带上瓶子",
+          "喂他喝几口醋，把喝下去的强碱中和掉"
+        ],
+        "explain": "误服强酸、强碱等腐蚀性物品绝不能催吐——吐出来时会再次灼伤食道和口腔，还可能吸入肺里。也不要用醋或果汁去“中和”，反应会放热、加重损伤。尽快联系急救或中毒咨询机构，带上容器，便于判断是什么毒物。"
+      },
+      "en": {
+        "q": "Cleaning out the house after the flood, a child swallows a few mouthfuls of drain cleaner (a strong alkali). What do you do?",
+        "options": [
+          "Stick your fingers down his throat so he throws it all up before it does harm",
+          "Make him drink a big bowl of salt water to bring it back up",
+          "Don't induce vomiting; get emergency or poison help fast, keep the bottle",
+          "Give him some vinegar to drink so it neutralizes the alkali"
+        ],
+        "explain": "Never induce vomiting after swallowing a corrosive such as a strong acid or alkali: bringing it back up burns the gullet and mouth a second time and risks inhaling it. Don't try to 'neutralize' it with vinegar or juice either; the reaction gives off heat and adds to the damage. Get emergency or poison help fast and keep the container so they know what it was."
+      }
+    },
+    {
+      "id": "firstaid-22",
+      "answer": 3,
+      "hard": true,
+      "source": "ERC 2025 / AHA 2025",
+      "zh": {
+        "q": "被困等待救援时，一位 60 岁的同伴突然胸口压榨样剧痛，疼痛放射到左臂和下巴，大汗淋漓，已经持续了 10 多分钟。他对阿司匹林不过敏。你应该？",
+        "options": [
+          "让他起来走动走动，活动开了胸口自然就不闷了",
+          "给他喝几口白酒，扩张一下血管，缓解胸口疼痛",
+          "先让他睡一觉，如果明天还疼再想别的办法",
+          "怀疑心梗：立即呼救，让他静养，嚼服一片阿司匹林"
+        ],
+        "explain": "持续的压榨样胸痛并向手臂、下巴放射，伴有大汗，要高度怀疑心脏病发作（急性心肌梗死）。应立即呼救，让他以舒适的姿势（通常是半坐位）安静休息；如果他不过敏、也没有其他禁忌，可以让他嚼服一片阿司匹林。一旦失去反应、没有正常呼吸，立即开始心肺复苏。走动会加重心脏负担，饮酒和拖延都很危险。"
+      },
+      "en": {
+        "q": "While you wait to be rescued, a 60-year-old companion suddenly has crushing chest pain spreading to his left arm and jaw, and he's drenched in sweat. It has lasted more than 10 minutes. He isn't allergic to aspirin. What do you do?",
+        "options": [
+          "Get him up and walking about; once he loosens up, the tightness will ease",
+          "Give him some spirits to open up his blood vessels and ease the pain",
+          "Let him sleep it off, and if it still hurts tomorrow, think again",
+          "Suspect a heart attack: call for help, keep him resting, have him chew an aspirin"
+        ],
+        "explain": "Persistent crushing chest pain spreading to the arm or jaw, with sweating, is a heart attack until proven otherwise. Call for help at once and keep him resting in a comfortable position (often half-sitting); if he isn't allergic and has no other reason to avoid it, have him chew an aspirin. If he becomes unresponsive and isn't breathing normally, start CPR. Walking strains the heart, and alcohol and delay are dangerous."
+      }
+    },
+    {
+      "id": "firstaid-23",
+      "answer": 0,
+      "hard": true,
+      "source": "WHO Snakebite Guidelines 2016",
+      "zh": {
+        "q": "在洪水中蹚水转移时，一名同伴的小腿被蛇咬了，看不出蛇有没有毒。下列哪种做法正确？",
+        "options": [
+          "保持安静少动，固定伤肢，摘掉戒指手表，尽快送医",
+          "用刀在伤口上划个十字，再用嘴把毒液吸出来",
+          "在伤口上方用绳子死死勒紧，彻底阻断血流",
+          "立刻用冰块敷住伤口，让毒液冻住不再扩散"
+        ],
+        "explain": "被蛇咬后让伤员保持安静、尽量不动（活动会加快毒液吸收），把伤肢像骨折一样固定，在肿胀前摘掉戒指、手表等，尽快送到有抗蛇毒血清的医院。切开、口吸、把肢体勒到不过血和冰敷都没有作用，还可能造成伤害。"
+      },
+      "en": {
+        "q": "Wading through floodwater during an evacuation, a companion is bitten on the calf by a snake. You can't tell whether it's venomous. Which is the right thing to do?",
+        "options": [
+          "Keep him calm and still, splint the limb, remove rings and watches, get to hospital",
+          "Cut a cross over the bite and suck the venom out with your mouth",
+          "Tie a cord around the leg above the bite as tight as you can to trap the venom",
+          "Pack ice on the bite right away to freeze the venom in place"
+        ],
+        "explain": "Keep the casualty calm and as still as possible (movement speeds the spread of venom), splint the limb as for a fracture, remove rings, watches and anything tight before swelling starts, and get him quickly to a hospital with antivenom. Cutting, sucking, tying the limb off and icing don't work and can cause harm."
+      }
+    },
+    {
+      "id": "firstaid-24",
+      "answer": 1,
+      "hard": false,
+      "source": "AHA/ASA BE-FAST",
+      "zh": {
+        "q": "困在屋顶上等待救援时，奶奶突然一侧嘴角歪斜，右手抬不起来，说话含糊不清。你应该？",
+        "options": [
+          "扎破她十个手指尖放血，帮她“醒脑降压”，越快越好",
+          "考虑中风：记下发病时间，立即呼救、尽快送医",
+          "给她嚼一片阿司匹林化开血栓，再让她躺下睡一觉",
+          "扶她起来走一走，看手脚能不能慢慢恢复"
+        ],
+        "explain": "突然出现面部歪斜、一侧手臂无力、言语不清，要高度怀疑中风（脑卒中），治疗越早越好。记下症状开始的时间（关系到能否溶栓），立即呼救、尽快送医。手指放血毫无作用；中风也可能是脑出血，急救者不应自行给阿司匹林。"
+      },
+      "en": {
+        "q": "While you wait on the roof for rescue, grandma suddenly has one side of her mouth drooping, can't lift her right arm, and her speech is slurred. What do you do?",
+        "options": [
+          "Prick all ten fingertips to let blood out and 'clear her head' quickly",
+          "Suspect a stroke: note the time it began and call for help now",
+          "Have her chew an aspirin to dissolve the clot, then let her sleep it off",
+          "Help her up and walk her around to see if her arm recovers"
+        ],
+        "explain": "Sudden facial droop, one-sided arm weakness and slurred speech mean a stroke until proven otherwise, and treatment is time-critical. Note when the symptoms began (it decides whether clot-busting treatment is possible), call for help and get her to hospital fast. Fingertip bleeding does nothing, and first aiders shouldn't give aspirin because the stroke may be a bleed."
+      }
+    },
+    {
+      "id": "firstaid-x01",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "ERC 2025 First Aid / TCCC (MARCH)",
+      "zh": {
+        "q": "坠机现场，一名乘客仰面躺在雪地上，叫不醒，喉咙里发出打鼾样的呼吸声；他大腿中段的伤口正一股股喷出鲜红的血，身下的雪迅速被染红。只有你一个人，手边有一条止血带。第一步应该做什么？",
+        "options": [
+          "先在伤口上方扎紧止血带止住喷射性出血，随后马上开放气道，必要时摆成侧卧位",
+          "先开放气道：急救永远按 A、B、C 的顺序来，气道必须排在第一位，止血只能往后放",
+          "他已经没有反应，立即开始胸外按压和人工呼吸，同时大声呼喊附近的人来帮忙",
+          "一只手按压腹股沟的“压迫点”止血，另一只手托起下颌打开气道，两件事同时进行"
+        ],
+        "explain": "危及生命的大出血几分钟内就能致死，所以现行急救流程把“控制致命性大出血”放在气道之前（ERC 2025 急救指南的 ABCDE 评估、战术战伤救护的 MARCH 原则）：先上止血带，几十秒就能完成，再马上开放气道，必要时摆成侧卧位。他有鼾声呼吸，说明并非心脏骤停，不该先做按压；“压迫点”止血已被证实无效。"
+      },
+      "en": {
+        "q": "At the crash site a passenger lies on his back in the snow. He doesn't respond and is making loud snoring sounds as he breathes. A wound in the middle of his thigh is pumping out bright red blood, and the snow beneath him is turning red fast. You're alone and have one tourniquet. What do you do first?",
+        "options": [
+          "Tourniquet above the wound to stop the spurting first, then open his airway, rolling him onto his side if needed",
+          "Open his airway first: first aid always goes A-B-C, so the airway must come before any bleeding",
+          "He's unresponsive, so start chest compressions and rescue breaths at once while shouting for help",
+          "Press the pressure point in his groin with one hand and lift his jaw with the other hand, doing the two together"
+        ],
+        "explain": "Bleeding like this can kill within minutes, so current first-aid sequences put life-threatening bleeding before the airway (the ERC 2025 ABCDE approach, MARCH in tactical casualty care): the tourniquet takes seconds, then open his airway straight away, turning him onto his side if needed. Snoring breaths mean he isn't in cardiac arrest, so compressions aren't the first step, and pressure points don't work."
+      }
+    },
+    {
+      "id": "firstaid-x02",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "ERC 2025 First Aid / ACS Stop the Bleed",
+      "zh": {
+        "q": "楼房倒塌时，一名同事的腹股沟（大腿根与小腹交界处）被钢筋撕开一个深洞，血不断往外涌。伤口位置太高，止血带根本扎不到伤口上方。你有几卷纱布，其中有止血纱布。最有效的做法是？",
+        "options": [
+          "把止血带尽量往上勒在大腿根部最高处，即使勒在伤口下方，也能挡住一部分血流，总比不扎强",
+          "用纱布（最好是止血纱布）紧紧填满伤口直到出血点，再全身用力持续按压，不中途松手查看",
+          "只在伤口表面轻轻盖一块纱布并把腿抬高，往伤口里塞东西会把细菌带进深处",
+          "往伤口里撒一层止血粉后敞开不压，这样可以随时观察血是不是已经凝住了"
+        ],
+        "explain": "腹股沟、腋窝、颈根部这类“交界部位”扎不了止血带。ERC 2025 指南建议：把普通纱布或止血纱布直接塞进出血的伤口，再在上面用力持续按压（止血纱布一般至少按 3 分钟），止住后加压包扎。扎在伤口下方的止血带挡不住从上方来的动脉血；只盖不压、撒粉不压都止不住这种出血。"
+      },
+      "en": {
+        "q": "In the building collapse a coworker's groin, where the thigh meets the lower belly, has been torn open by rebar into a deep hole, and blood keeps welling out. The wound is too high for a tourniquet to go above it. You have rolls of gauze, some of it haemostatic. What works best?",
+        "options": [
+          "Cinch the tourniquet as high on the thigh as it will go; even below the wound it will block some of the flow",
+          "Pack the hole tightly with gauze, ideally haemostatic, down to the bleeding point, then press hard without letting up",
+          "Lay gauze lightly over the surface and raise the leg, because stuffing anything into a wound drives germs deep inside",
+          "Sprinkle haemostatic powder into the wound and leave it uncovered without pressure, so that you can watch whether the blood is clotting"
+        ],
+        "explain": "Junctional areas such as the groin, armpit and base of the neck can't take a tourniquet. ERC 2025 advises pushing standard or haemostatic gauze into the bleeding wound and pressing firmly on top (with haemostatic gauze, usually for at least 3 minutes), then applying a pressure dressing. A tourniquet below the wound can't stop arterial blood arriving from above, and covering or powdering without pressure won't control this bleeding."
+      }
+    },
+    {
+      "id": "firstaid-x03",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "ERC 2025 First Aid",
+      "zh": {
+        "q": "海啸过后，一名男子大腿中段被铁皮深深割开。你在伤口上方 5–7 厘米处扎上止血带，把绞棒拧到拧不动为止，伤口却仍在喷出鲜红的血。下一步应该？",
+        "options": [
+          "先把止血带松开，挪到紧贴伤口的位置重新扎，越靠近伤口压力就越集中",
+          "止血带已经失效，把它解下来，改为用力按压腹股沟的压迫点，同时把伤腿抬高过心脏",
+          "保留第一条，在它的正上方紧挨着再扎第二条止血带拧紧，并记下两条扎上的时间",
+          "在伤口下方再扎一条止血带，把伤口两头都封住，切断往回流的血"
+        ],
+        "explain": "大腿肌肉粗厚，一条止血带往往压不住股动脉。ERC 2025 指南明确：必要时在第一条止血带的上方再加一条。第一条不要松开或挪动——一松就会重新大出血；压迫点止血无效；伤口下方的止血带挡不住从上方来的动脉血。两条都要记录扎上的时间。"
+      },
+      "en": {
+        "q": "After the tsunami a man's thigh has been sliced deep by sheet metal at mid-thigh. You put a tourniquet on 5–7 cm above the wound and turn the windlass until it won't go any further, but bright red blood is still spurting. What next?",
+        "options": [
+          "Loosen the tourniquet and move it right next to the wound, where the pressure will be more concentrated",
+          "The tourniquet has failed: take it off and switch to the groin pressure point while raising the leg",
+          "Leave the first one on and put a second tourniquet just above it, tighten it, and write down both times",
+          "Put a second tourniquet below the wound so that both ends are sealed off and the backflow is stopped"
+        ],
+        "explain": "The thigh is thick and muscular, and one tourniquet often can't compress the femoral artery. ERC 2025 says that if needed a second tourniquet goes above the first. Don't loosen or move the first one, since that restarts the bleeding; pressure points don't work, and a tourniquet below the wound can't stop arterial blood coming from above. Record the time of both."
+      }
+    },
+    {
+      "id": "firstaid-x04",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "ERC 2025 First Aid / AHA–Red Cross First Aid 2024",
+      "zh": {
+        "q": "办公楼倒塌后，一名同事胸部被尖锐的金属刺穿，伤口随呼吸冒血泡。旁人用保鲜膜四边贴死，把伤口完全封住。二十分钟后，他越来越喘、烦躁不安，脉搏越来越快，脖子上的静脉鼓了起来。你应该？",
+        "options": [
+          "再多缠几圈胶带，把保鲜膜封得更严实，绝不能让空气从伤口进入胸腔里",
+          "让他平躺，用两只手掌在伤侧胸壁上用力往下压，把胸腔里多余的空气挤出去",
+          "把纱布卷紧紧塞进伤口深处，把漏气的洞口彻底堵死，再用胶带封好，然后继续观察他的情况",
+          "立即揭开或掀起一边保鲜膜放出积气，此后伤口敞开或盖不密封的敷料，只在周围压迫止血"
+        ],
+        "explain": "完全密封胸部开放伤，可能让空气只进不出、在胸腔里越积越多，形成张力性气胸：越来越喘、心率加快、颈静脉怒张就是危险信号。ERC 2025 和 AHA/美国红十字会 2024 急救指南都建议：胸部开放伤保持敞开，或只用不密封（或带排气阀）的敷料，出血用局部压迫控制。往伤口深处塞纱布或按压胸壁都会加重伤情。"
+      },
+      "en": {
+        "q": "After the office block collapses, a coworker's chest has been pierced by a sharp piece of metal, and the wound bubbles blood as he breathes. A bystander has sealed it airtight with cling film taped down on all four sides. Twenty minutes later he's increasingly breathless and agitated, his pulse keeps climbing, and the veins in his neck are bulging. What do you do?",
+        "options": [
+          "Add more tape so that the film is sealed even tighter: air must never be allowed to get into the chest through the wound",
+          "Lay him flat and push down hard on the injured side of his chest with both palms to squeeze the extra air out",
+          "Stuff rolled gauze deep into the wound to plug the leaking hole completely, and then keep a close eye on him",
+          "Peel the film off or lift one edge to let air out; then leave it open or loosely covered, pressing only to stop bleeding"
+        ],
+        "explain": "Sealing an open chest wound airtight can let air in without letting it out, so it builds up around the lung (tension pneumothorax): rising breathlessness, a racing pulse and bulging neck veins are the warning signs. ERC 2025 and the 2024 AHA/Red Cross first aid guidelines say to leave an open chest wound exposed, or use a non-occlusive or vented dressing, and control bleeding with local pressure. Packing the wound or pressing on the chest makes things worse."
+      }
+    },
+    {
+      "id": "firstaid-x05",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "ERC 2025 First Aid",
+      "zh": {
+        "q": "余震中，一名同事从 3 米高的夹层摔到地面。他清醒、能说话，说脖子疼，头歪向一侧，觉得这样最舒服。有人找来硬纸板，准备把他的头扳正，再用纸板做个颈托紧紧缠上。按现行急救指南，你应该？",
+        "options": [
+          "把他的头用力扳回正中位置，再把纸板颈托紧紧缠上，固定得越牢越好，以防二次损伤加重",
+          "鼓励他保持不动，头留在他觉得舒服的位置，必要时用手轻扶，不强行扳正，也不上颈托",
+          "先扶他坐起来，让他慢慢地左右转头，看看脖子到底是不是真的受了伤",
+          "在他头部两侧塞满沉重的书本，再用胶带把他的额头牢牢固定在地板上"
+        ],
+        "explain": "ERC 2025 急救指南：怀疑颈椎损伤、但伤员清醒配合时，尽量减少颈部活动，鼓励他自己把头保持在舒适、稳定的位置；绝不要强行把头扳到某个位置。不建议急救员常规使用颈托——颈托可能妨碍呼吸和吞咽、升高颅内压。伤员失去反应时，才由施救者用双手（头部挤压法或斜方肌挤压法）稳住头颈。"
+      },
+      "en": {
+        "q": "In an aftershock a coworker falls 3 m from a mezzanine. He's awake and talking, says his neck hurts, and is holding his head turned to one side because that feels most comfortable. Someone has found stiff cardboard and wants to force his head straight and tape a homemade collar tightly round his neck. Under current first aid guidance, what do you do?",
+        "options": [
+          "Push his head firmly back to the midline, then tape the cardboard collar on tight; the firmer the better",
+          "Encourage him to keep still with his head where it's comfortable, support it gently by hand if needed; no forcing, no collar",
+          "Help him sit up first, then have him slowly turn his head left and right, to find out whether his neck is really injured or not",
+          "Pack heavy books tightly against both sides of his head and tape his forehead firmly down to the floor"
+        ],
+        "explain": "ERC 2025: if a spinal injury is suspected in an alert, cooperative casualty, minimise neck movement and encourage them to hold their head in a comfortable, stable position; never force the head into any position. First aiders shouldn't routinely use collars: they can hamper breathing and swallowing and raise the pressure inside the skull. If the casualty becomes unresponsive, the rescuer holds the head steady with the hands (head squeeze or trapezius squeeze)."
+      }
+    },
+    {
+      "id": "firstaid-x06",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "ERC 2025 First Aid",
+      "zh": {
+        "q": "南极科考站火灾疏散时，一位用胰岛素治疗的糖尿病队员错过了晚饭，现在大汗淋漓、手发抖、说话颠三倒四，但还能听懂指令、自己吞咽。急救箱里有每片 4 克的葡萄糖片，另外还有一块巧克力和一盒橙汁。最恰当的处理是？",
+        "options": [
+          "给他整块巧克力：里面的脂肪和蛋白质能提供比纯葡萄糖更持久、更平稳的能量，不会忽高忽低",
+          "帮他注射随身带的胰岛素：糖尿病人行为反常，就说明该打胰岛素了",
+          "嚼服 4–5 片葡萄糖片（15–20 克），15 分钟后不见好转再给一次，好转后吃点主食",
+          "只给 1 片葡萄糖片，然后等一个小时再看，免得一下子把血糖升得太高"
+        ],
+        "explain": "糖尿病人突然出汗、发抖、意识或行为异常，要首先怀疑低血糖。ERC 2025 指南：人清醒、能吞咽时，口服 15–20 克葡萄糖或右旋糖片；15 分钟后症状仍在就再给一次；没有糖片时可用一把含糖糖果或 50–100 毫升果汁。巧克力里的脂肪会减慢糖的吸收，起效慢；注射胰岛素会让血糖更低，可能致命。"
+      },
+      "en": {
+        "q": "During the evacuation from the Antarctic station fire, a team member with insulin-treated diabetes has missed dinner. He's now drenched in sweat, shaky and muddled in his speech, but he can follow instructions and swallow. The first aid kit has 4 g glucose tablets, and there's also a chocolate bar and a carton of orange juice. What's best?",
+        "options": [
+          "Give him the whole chocolate bar: its fat and protein give steadier, longer-lasting energy than pure glucose does",
+          "Help him inject his own insulin: when someone with diabetes acts oddly, it means his insulin is due",
+          "Have him chew 4–5 glucose tablets (15–20 g); repeat after 15 minutes if he isn't better, then give a starchy snack",
+          "Give just one glucose tablet and then wait an hour, so that his blood sugar doesn't shoot up too high"
+        ],
+        "explain": "Sudden sweating, shaking and confusion in someone with diabetes means low blood sugar until proven otherwise. ERC 2025: if they're awake and can swallow, give 15–20 g of glucose or dextrose tablets, and repeat if symptoms persist after 15 minutes; without tablets, use a handful of sugary sweets or 50–100 ml of fruit juice. The fat in chocolate slows sugar absorption, and insulin would drive the sugar lower still, which can kill."
+      }
+    },
+    {
+      "id": "firstaid-x07",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "ERC 2025 First Aid / WAO Anaphylaxis",
+      "zh": {
+        "q": "珊瑚岛上，一名对胡蜂过敏的同伴被蛰后嘴唇肿胀、喘鸣、头晕。你已在他大腿外侧打了一支肾上腺素自动注射笔。5 分钟过去了，他仍然喘、发晕，急救包里还有第二支。他想站起来自己走到船边。你应该？",
+        "options": [
+          "扶他站起来慢慢走到船边，活动一下有助于肾上腺素在全身起效",
+          "至少再等 30 分钟才能打第二支，肾上腺素用多了会诱发心脏问题",
+          "改给他吃一片抗组胺药就行了，第一支肾上腺素已经打过，用不着再打第二支了",
+          "让他躺下抬高双腿（呼吸困难就坐着伸直腿），马上打第二支，并尽快撤离送医"
+        ],
+        "explain": "ERC 2025 指南：过敏性休克的人应保持躺卧或坐着——平躺抬腿，或呼吸困难时坐着伸直双腿；突然站立行走可能引发循环崩溃。注射肾上腺素 5 分钟后症状仍未缓解，就打第二针。抗组胺药起效太慢，不能代替肾上腺素。即使好转也必须送医，因为症状可能再次发作。"
+      },
+      "en": {
+        "q": "On the coral island a companion with a wasp allergy is stung: his lips swell, he's wheezing and dizzy. You've already given an adrenaline auto-injector into his outer thigh. Five minutes later he's still wheezy and faint, and there's a second injector in the kit. He wants to stand up and walk to the boat. What do you do?",
+        "options": [
+          "Help him up and let him walk slowly to the boat; moving about helps the adrenaline work through his body",
+          "Wait at least another 30 minutes before giving a second dose, since too much adrenaline can bring on heart trouble",
+          "Give him an antihistamine tablet instead; he has already had his adrenaline, so another dose isn't needed",
+          "Lay him down with legs raised (sitting with legs out if breathing is hard), give the second dose now, and evacuate"
+        ],
+        "explain": "ERC 2025: keep a person with anaphylaxis lying down or sitting (flat with legs raised, or sitting with legs out if breathing is difficult); standing up and walking can trigger circulatory collapse. If symptoms persist 5 minutes after adrenaline, give a second dose. Antihistamines act too slowly to replace adrenaline, and he still needs hospital even if he improves, because symptoms can return."
+      }
+    },
+    {
+      "id": "firstaid-x08",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "AHA 2025",
+      "zh": {
+        "q": "洪水安置点里，一位怀孕约 8 个月的孕妇吃饭时突然被噎住，双手掐着脖子，说不出话，也咳不出声，脸色开始发紫。你应该？",
+        "options": [
+          "先拍背最多 5 次，无效就从背后在胸骨下半段做 5 次胸部冲击，交替进行；失去反应即做心肺复苏",
+          "照常从背后做腹部冲击，子宫和羊水会把冲击力缓冲掉，伤不到腹中的胎儿",
+          "只鼓励她继续用力咳嗽，背部和胸部都不要拍压，免得用力过猛伤到胎儿",
+          "让她仰面躺平，你跨跪在她身旁，用掌根向上猛推她的上腹部帮她排出异物"
+        ],
+        "explain": "AHA 2025 指南：成人严重气道梗阻采用 5 次拍背加 5 次腹部冲击交替进行；但孕晚期孕妇（或施救者双臂抱不拢腹部时）要用胸部冲击代替腹部冲击——双手放在胸骨下半段向后冲击。她已不能咳嗽、说话，只鼓励咳嗽会错过时机；一旦失去反应，立即放平做心肺复苏，按压同样有助于排出异物。"
+      },
+      "en": {
+        "q": "At the flood shelter a woman about eight months pregnant chokes while eating. She clutches her throat, can't speak or cough, and her face is turning blue. What do you do?",
+        "options": [
+          "Up to 5 back blows, then 5 chest thrusts from behind on the lower breastbone, alternating; CPR if she goes unresponsive",
+          "Give abdominal thrusts from behind as usual; the womb and the fluid around the baby will cushion the force",
+          "Only encourage her to keep coughing hard, and don't strike or press her back or chest in case it harms the baby",
+          "Lay her flat on her back, kneel astride her and push up hard into her upper belly with the heel of your hand"
+        ],
+        "explain": "AHA 2025: severe choking in adults is treated with cycles of 5 back blows and 5 abdominal thrusts, but in late pregnancy (or when you can't get your arms around the abdomen) chest thrusts replace abdominal thrusts, with your hands on the lower half of the breastbone. She can no longer cough or speak, so just encouraging coughing wastes time; if she becomes unresponsive, lay her down and start CPR, which also helps dislodge the object."
+      }
+    },
+    {
+      "id": "firstaid-x09",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "AHA 2025 / ERC 2025",
+      "zh": {
+        "q": "暴雨中被困屋顶，一个 8 个月大的婴儿从积水里被抱上来，没有反应、没有正常呼吸。现场有两个大人，一人负责人工呼吸。按现行指南，另一人应该怎样做胸外按压？",
+        "options": [
+          "两根手指按在两乳头连线下方的胸骨上，按下约 1.5–2 厘米，每分钟 100–120 次",
+          "用一只手的掌根压在胸骨下半段，照成人标准按下 5–6 厘米，每分钟 100–120 次，并让胸廓充分回弹",
+          "双手环抱胸廓、两拇指压胸骨下半段，按下胸廓厚度的三分之一（约 4 厘米），每分钟 100–120 次",
+          "两根手指并拢按在胸骨下半段，按下约 4 厘米，每分钟 100–120 次"
+        ],
+        "explain": "AHA 2025 和 ERC 2025 指南都已不再推荐婴儿按压的双指法——它常常按不到足够的深度。现在推荐双手环抱、双拇指按压胸骨下半段；手小抱不拢时可用单手掌根。深度为胸廓前后径的三分之一（婴儿约 4 厘米），频率每分钟 100–120 次，任何年龄都不超过 6 厘米。"
+      },
+      "en": {
+        "q": "Stranded on a roof in the storm, an 8-month-old baby is lifted out of the floodwater unresponsive and not breathing normally. Two adults are there, and one is giving the breaths. Under current guidance, how should the other give chest compressions?",
+        "options": [
+          "Two fingers on the breastbone just below the nipple line, pressing about 1.5–2 cm deep, 100–120 a minute",
+          "The heel of one hand on the lower breastbone, at the adult depth of 5–6 cm, 100–120 a minute, letting the chest recoil fully",
+          "Hands encircling the chest, both thumbs on the lower breastbone, a third of the chest depth (about 4 cm), 100–120 a minute",
+          "Two fingers together on the lower half of the breastbone, pressing about 4 cm deep, 100–120 a minute"
+        ],
+        "explain": "AHA 2025 and ERC 2025 no longer recommend the two-finger technique for infants, because it often fails to reach enough depth. Use the two-thumb encircling technique on the lower half of the breastbone (or the heel of one hand if you can't encircle the chest), pressing a third of the chest depth, about 4 cm in an infant, at 100–120 a minute and never more than 6 cm at any age."
+      }
+    },
+    {
+      "id": "firstaid-x10",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "ERC 2025 Paediatric Life Support / AHA 2025",
+      "zh": {
+        "q": "海啸避难所里，一个约 5 岁、18 公斤左右的孩子心脏骤停，已有人在做心肺复苏。送来的 AED 没有儿童电极片，也没有儿童模式；成人电极片按成人位置贴在他胸前一左一右会互相碰到。你应该？",
+        "options": [
+          "不要用这台 AED：成人的电击能量对孩子来说太大，会烧伤并电死他，只能继续单纯做心肺复苏",
+          "把成人电极片剪成两半，贴在孩子胸前一左一右，让尺寸更适合孩子的胸廓",
+          "照成人的位置贴在胸前一左一右，即使两片重叠在一起，也照样可以放电",
+          "一片成人电极片贴在胸前正中偏左，另一片贴在背部两肩胛骨之间，按 AED 提示放电"
+        ],
+        "explain": "ERC 2025 儿科指南：25 公斤以下（约 8 岁以下）的儿童优先用儿童模式或衰减电极；没有时就用成人模式和成人电极片——尽早除颤的益处大于能量偏高的风险。小孩用前后位：一片贴胸前正中偏左，一片贴背部两肩胛之间，保证两片不接触。电极片不能剪；两片重叠会让电流短路、除颤无效。"
+      },
+      "en": {
+        "q": "In the tsunami shelter a child of about 5 (around 18 kg) is in cardiac arrest, and someone is already doing CPR. The AED that arrives has no child pads and no child mode, and the adult pads would touch each other if placed on his chest in the usual adult positions. What do you do?",
+        "options": [
+          "Don't use this AED: an adult-strength shock will burn and kill a child, so carry on with CPR alone",
+          "Cut the adult pads in half and stick them on either side of his chest so they're a better size for a child",
+          "Place them in the usual adult positions on the front of the chest; even if they overlap, the shock will still work fine",
+          "Adult pads front and back: one on his chest just left of centre, one between his shoulder blades; follow the prompts"
+        ],
+        "explain": "ERC 2025: for children under 25 kg (about 8 years), use a child mode or attenuated pads if available; if not, use the AED in adult mode with adult pads, since early defibrillation outweighs the risk of a higher dose. In small children place the pads front and back, one mid-chest just left of the breastbone and one between the shoulder blades, so they don't touch. Never cut pads, and overlapping pads short-circuit the shock."
+      }
+    },
+    {
+      "id": "firstaid-x11",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "ERC 2025 Basic Life Support / AHA 2025",
+      "zh": {
+        "q": "南极站里，一名队员心脏骤停。AED 分析后提示“建议电击”，你按下按钮，语音说“电击已完成”。他仍然一动不动。旁边的同事说先停下来摸摸颈动脉，看电击有没有起作用。你应该？",
+        "options": [
+          "不检查脉搏，立即恢复胸外按压，按 AED 指示做约 2 分钟，再由它重新分析",
+          "停下来用 10 秒钟摸颈动脉、看呼吸，先确认电击是否已经让心跳恢复，再决定下一步",
+          "马上再按一次电击按钮，连续电击三次，以提高恢复心跳的成功率",
+          "电击通常能让心跳恢复，把他摆成侧卧位，观察他会不会醒过来"
+        ],
+        "explain": "电击后即使心律恢复，心脏在头一两分钟里也往往泵不出足够的血，摸不到脉搏很常见。ERC 2025 和 AHA 2025 指南都要求：电击后立即恢复胸外按压，约 2 分钟后由 AED 再次分析，中间不要停下来检查。停顿越长，存活率越低；连续三次电击是早已淘汰的做法。"
+      },
+      "en": {
+        "q": "At the Antarctic station a team member is in cardiac arrest. The AED analyses, says 'shock advised', you press the button and it announces 'shock delivered'. He's still motionless. A colleague says to stop and feel for a neck pulse to see whether the shock worked. What do you do?",
+        "options": [
+          "No pulse check: resume chest compressions at once and keep going for about 2 minutes until the AED analyses again",
+          "Stop for 10 seconds to feel the neck pulse and check breathing, to confirm whether the shock has restarted the heart",
+          "Press the shock button again straight away and give three shocks in a row to raise the chance of success",
+          "A shock usually restarts the heart, so put him in the recovery position and watch to see if he wakes up"
+        ],
+        "explain": "Even when a shock restores a rhythm, the heart usually pumps poorly for the first minute or two, so a pulse is often hard to feel. ERC 2025 and AHA 2025 say to restart compressions immediately after the shock and continue until the AED reanalyses (about 2 minutes), without stopping to check. Every pause lowers survival, and stacked triple shocks were abandoned long ago."
+      }
+    },
+    {
+      "id": "firstaid-x12",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "NHS / ILCOR First Aid (chemical eye injury)",
+      "zh": {
+        "q": "在倒塌的楼房里搬运时，一团湿水泥浆溅进了一名救援者的左眼，眼睛通红，疼得睁不开。你手边有几大桶干净的饮用水，最近的医疗点要 1 小时才能到。正确的做法是？",
+        "options": [
+          "先别冲，等找到无菌生理盐水再冲，自来水或桶装水不是无菌的，冲进去会让受伤的眼睛发生感染",
+          "马上用大量清水持续冲洗至少 20 分钟，撑开眼睑、伤眼朝下、摘掉隐形眼镜，边冲边送医",
+          "用稀释的白醋冲洗眼睛，把碱性的水泥中和掉，然后再用清水冲一下",
+          "用清水简单冲 1 分钟左右，然后用纱布把眼睛紧紧包住，让眼睛好好休息"
+        ],
+        "explain": "水泥、石灰是强碱，会持续渗入眼组织，伤害程度取决于冲洗得多快、多久。应立即用大量干净的水（自来水、瓶装水都行）持续冲洗至少 20 分钟，撑开眼睑，让伤眼在下方以免冲进另一只眼，摘掉隐形眼镜，尽快送医，路上继续冲。为找生理盐水而耽误是最常见的错误；用醋“中和”会产热、加重损伤。"
+      },
+      "en": {
+        "q": "Shifting rubble in the collapsed building, a rescuer gets a splash of wet cement slurry in his left eye. It's red and so painful he can't open it. You have several big jugs of clean drinking water, and the nearest medical post is an hour away. What's right?",
+        "options": [
+          "Don't rinse until you find sterile saline: tap or bottled water could infect the injured eye",
+          "Rinse at once with plenty of clean water for 20+ minutes, lids held open, injured eye lower, contacts out",
+          "Rinse the eye with diluted white vinegar to neutralise the alkaline cement, then wash it out with plain water",
+          "Rinse briefly for about a minute, then bandage the eye firmly shut with gauze so that it can rest"
+        ],
+        "explain": "Cement and lime are strong alkalis that keep penetrating the eye, and the damage depends on how fast and how long you rinse. Flush immediately with plenty of clean water (tap or bottled is fine) for at least 20 minutes, holding the lids open with the injured eye lower so the water doesn't run into the other eye, remove contact lenses, and keep rinsing on the way to care. Delaying to find saline is the classic mistake, and 'neutralising' with vinegar produces heat and adds damage."
+      }
+    }
+  ]
+}

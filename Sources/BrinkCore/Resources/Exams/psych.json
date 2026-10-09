@@ -1,0 +1,974 @@
+{
+  "id": "psych",
+  "skill": "social",
+  "bonus": 1,
+  "perk": "calm",
+  "requires": [],
+  "minLevel": 1,
+  "count": 10,
+  "pass": 8,
+  "icon": "person.2.fill",
+  "color": "#E3B341",
+  "zh": {
+    "name": "心理急救与危机领导",
+    "full": "心理急救与危机领导资格",
+    "desc": "心理急救（看、听、联结）、恐慌和谣言、群体决策、化解冲突、哀伤。",
+    "realWorld": "相当于按 WHO《心理急救：现场工作者指南》开设的培训。"
+  },
+  "en": {
+    "name": "Psychological First Aid & Crisis Leadership",
+    "full": "Psychological First Aid & Crisis Leadership Certificate",
+    "desc": "Psychological first aid (look, listen, link), panic and rumors, group decisions, defusing conflict, grief.",
+    "realWorld": "Comparable to training based on the WHO's Psychological First Aid: Guide for Field Workers."
+  },
+  "questions": [
+    {
+      "id": "psych-01",
+      "answer": 1,
+      "hard": false,
+      "source": "WHO PFA 2011",
+      "zh": {
+        "q": "世界卫生组织《心理急救：现场工作者指南》提出的三条行动原则是？",
+        "options": [
+          "问、劝、开导",
+          "看、听、联结",
+          "评估、晤谈、转介",
+          "倾诉、宣泄、释怀"
+        ],
+        "explain": "“看”：查看环境是否安全，谁有明显的紧急基本需求，谁有严重的应激反应；“听”：主动接触可能需要帮助的人，询问他们的需要和担忧，倾听并帮助他们平静下来；“联结”：帮助他们满足基本需求、获得服务、联系亲友、获取信息，应对眼前的问题。"
+      },
+      "en": {
+        "q": "What are the three action principles in the WHO guide Psychological First Aid: Guide for Field Workers?",
+        "options": [
+          "Ask, advise, counsel",
+          "Look, listen, link",
+          "Assess, debrief, refer",
+          "Vent, release, let go"
+        ],
+        "explain": "Look: check for safety, people with obvious urgent basic needs, and people with serious distress reactions. Listen: approach people who may need support, ask about their needs and concerns, and listen to help them feel calm. Link: help people meet basic needs and access services, contact loved ones, get information and deal with immediate problems."
+      }
+    },
+    {
+      "id": "psych-02",
+      "answer": 3,
+      "hard": false,
+      "source": "WHO PFA 2011",
+      "zh": {
+        "q": "地震后你赶到一处临时安置点，现场一片混乱。按照心理急救的做法，你首先应该做什么？",
+        "options": [
+          "先把所有人召集起来，请大家轮流详细讲述自己的经历",
+          "先去安慰哭得最大声的那个人，让他安静下来",
+          "先给情绪激动的人发安眠药，让大家尽快平静",
+          "先观察：是否安全，谁有紧急需求，谁反应特别强烈"
+        ],
+        "explain": "心理急救的第一步是“看”：先确认自己和他人的安全，找出有紧急基本需求（受伤、缺水少衣、走失的孩子）和严重应激反应的人。哭得最响的人不一定最需要帮助——安静、呆滞、退缩的人同样可能处于危机之中。"
+      },
+      "en": {
+        "q": "After the earthquake you arrive at a makeshift shelter where everything is chaotic. Following psychological first aid, what do you do first?",
+        "options": [
+          "Gather everyone together and have them take turns telling their stories in detail",
+          "Go first to comfort whoever is crying the loudest and calm them down",
+          "Hand out sleeping pills to the most upset people so everyone calms down",
+          "Look: check safety, who has urgent needs, who is reacting most severely"
+        ],
+        "explain": "The first step of PFA is Look: make sure you and others are safe, and find people with urgent basic needs (injuries, no water or warm clothes, lost children) and people with severe distress reactions. The loudest person isn't necessarily the one in greatest need: quiet, frozen or withdrawn people may be in crisis too."
+      }
+    },
+    {
+      "id": "psych-03",
+      "answer": 0,
+      "hard": true,
+      "source": "WHO mhGAP 2012 / WHO PFA 2011",
+      "zh": {
+        "q": "获救当晚，有人提议把幸存者都召集起来，要求每个人详细讲出最恐怖的经历，说这样能“把创伤倒出来”，预防以后出心理问题。你怎么回应？",
+        "options": [
+          "不强迫任何人讲，提供陪伴和帮助，愿意说的人再说",
+          "支持，每个人都必须讲出来，而且讲得越详细效果越好",
+          "支持，但重点让最痛苦的那几个人多讲一些",
+          "支持，只是推迟到明天早上大家睡醒后再讲"
+        ],
+        "explain": "研究表明，事件后不久进行一次性的强制“心理晤谈”不能预防创伤后应激障碍，有些人反而更糟，世界卫生组织不推荐这种做法。心理急救不强迫人讲述经历：提供安全感、陪伴、基本需求和信息，让人在自己愿意的时候、以自己的方式倾诉。"
+      },
+      "en": {
+        "q": "The night after the rescue, someone proposes gathering the survivors and having each one describe their most terrifying moments in detail, to 'get the trauma out' and prevent problems later. How do you respond?",
+        "options": [
+          "Don't make anyone talk; offer company and help, and let people share if they wish",
+          "Agree: everyone must take part, and the more detail they give, the better it works",
+          "Agree, but have the few who seem most distressed do most of the talking tonight",
+          "Agree, but put it off until tomorrow morning, once everyone has had some sleep"
+        ],
+        "explain": "Research shows that a single compulsory 'debriefing' session soon after a traumatic event doesn't prevent PTSD and can leave some people worse off, and WHO advises against it. PFA never pressures people to tell their story: provide safety, company, basic needs and information, and let people talk when and how they choose."
+      }
+    },
+    {
+      "id": "psych-04",
+      "answer": 2,
+      "hard": false,
+      "source": "WHO PFA 2011",
+      "zh": {
+        "q": "一位母亲抓住你的手问：“我儿子还活着吗？”你并不知道。你应该怎么回答？",
+        "options": [
+          "“放心吧，他肯定没事。”先让她安下心来",
+          "“这么久没消息，恐怕凶多吉少。”让她早点有个心理准备",
+          "如实说不知道，告诉她正在做什么，帮她登记寻人",
+          "找个借口走开，免得说错话让她更难过"
+        ],
+        "explain": "心理急救要求诚实，不做虚假承诺：不知道就说不知道，不编造好消息，也不作坏的猜测。可以告诉她搜救正在做什么，帮她登记失踪的亲人、找到获取消息的渠道，并陪伴她。虚假的安慰一旦落空，会彻底摧毁信任。"
+      },
+      "en": {
+        "q": "A mother grabs your hand and asks, 'Is my son alive?' You don't know. What do you say?",
+        "options": [
+          "'Don't worry, I'm sure he's fine,' so that she can calm down for now",
+          "'It's been so long, I'm afraid it doesn't look good,' so she can prepare for the worst",
+          "Say you don't know, tell her what's being done, and help her register him as missing",
+          "Make an excuse and slip away, so you don't say the wrong thing"
+        ],
+        "explain": "PFA means being honest and making no false promises: if you don't know, say so; don't invent good news or speculate about bad news. Tell her what the search is doing, help her register her missing son and find out where news will come from, and stay with her. False reassurance that turns out wrong destroys trust."
+      }
+    },
+    {
+      "id": "psych-05",
+      "answer": 1,
+      "hard": false,
+      "source": "WHO PFA 2011",
+      "zh": {
+        "q": "一名幸存者坐在角落里，不想说话，拒绝你的帮助：“让我一个人待着。”他没有受伤，也没有伤害自己的迹象。你应该？",
+        "options": [
+          "一直陪在他身边，耐心地劝，劝到他愿意开口说话为止",
+          "尊重他的意愿，告诉他随时能来找你，并留意他的安全",
+          "告诉他现在不说出来，以后会得心理疾病",
+          "叫大家都过来围着他，一起帮他振作起来"
+        ],
+        "explain": "心理急救尊重当事人自己做决定的权利，不强迫帮助，也不纠缠。可以告诉他你在哪里、需要时随时能来找你，同时从旁留意他的安全和基本需求。许多人在灾后需要独处和时间，这本身并不是问题。"
+      },
+      "en": {
+        "q": "A survivor sits in a corner, doesn't want to talk and refuses your help: 'Just leave me alone.' He isn't injured and shows no sign of harming himself. What do you do?",
+        "options": [
+          "Stay right beside him and keep persuading until he finally opens up",
+          "Respect his wishes, tell him he can come to you any time, and watch his safety",
+          "Tell him that if he doesn't talk about it now, he'll develop a mental illness later",
+          "Call everyone over to gather round him and cheer him up together"
+        ],
+        "explain": "PFA respects people's right to make their own decisions: don't force help on anyone or be pushy. Tell him where you'll be and that he can come to you any time, while quietly keeping an eye on his safety and basic needs. Many people need time alone after a disaster, and that in itself isn't a problem."
+      }
+    },
+    {
+      "id": "psych-06",
+      "answer": 3,
+      "hard": false,
+      "source": "WHO PFA 2011",
+      "zh": {
+        "q": "按照心理急救指南，下列哪种人需要立即获得更专业的帮助，而不能只靠一般的陪伴支持？",
+        "options": [
+          "因为失去房子而一直反复哭泣的人",
+          "灾后接连几个晚上都睡不好、总做噩梦的人",
+          "手一直发抖，一遍又一遍地向别人讲述经过的人",
+          "说想结束自己生命、并开始准备方法的人"
+        ],
+        "explain": "按 WHO 心理急救指南，需要立即获得进一步专业帮助的包括：有生命危险的伤员、极度痛苦到无法照顾自己或孩子的人、可能伤害自己的人、可能伤害他人的人。哭泣、失眠、噩梦、发抖、反复讲述，在灾后最初几天都是常见的正常反应。"
+      },
+      "en": {
+        "q": "Under the PFA guide, which of these people needs more advanced help right away, beyond general support?",
+        "options": [
+          "Someone who keeps crying over and over about losing their home",
+          "Someone who has slept badly with nightmares for a few nights since the disaster",
+          "Someone whose hands keep shaking and who retells what happened again and again",
+          "Someone who says they want to end their life and is getting the means ready"
+        ],
+        "explain": "The WHO PFA guide lists people who need immediate advanced support: those with life-threatening injuries, those so upset they can't care for themselves or their children, those who may hurt themselves, and those who may hurt others. Crying, poor sleep, nightmares, trembling and retelling the story are common, normal reactions in the first days after a disaster."
+      }
+    },
+    {
+      "id": "psych-07",
+      "answer": 0,
+      "hard": true,
+      "source": "WHO Preventing Suicide 2014",
+      "zh": {
+        "q": "一名失去了全家的幸存者低声说：“要是明天醒不过来就好了。”你应该？",
+        "options": [
+          "直接问他是否想自杀，陪着他，移开危险物品并找人帮忙",
+          "避开这个话题，免得一问反而让他产生自杀的念头",
+          "劝他“别想太多了，比你惨的人多的是，要知足”",
+          "答应替他保守秘密，不把这件事告诉任何人"
+        ],
+        "explain": "直接询问是否有自杀念头不会“提醒”或诱发自杀，反而能让人感到被理解，也是判断风险的唯一办法。若有风险，不要让他独处，移开刀具、药物等危险物品，尽快联系专业人员或可靠的人。不要轻描淡写或比较谁更苦，也不要承诺为这类事保密。"
+      },
+      "en": {
+        "q": "A survivor who has lost his whole family murmurs, 'It'd be better if I didn't wake up tomorrow.' What do you do?",
+        "options": [
+          "Ask him directly about suicide, stay with him, remove dangers, and get help",
+          "Steer clear of the subject so that asking doesn't put the idea of suicide in his head",
+          "Tell him, 'Don't dwell on it; plenty of people have it worse than you'",
+          "Promise to keep it a secret and not tell anyone about it"
+        ],
+        "explain": "Asking directly about suicidal thoughts does not plant the idea or make suicide more likely; it helps people feel understood and is the only way to judge the risk. If there is a risk, don't leave him alone, remove means such as knives or medicines, and get professional or trusted help quickly. Don't minimize or compare suffering, and don't promise to keep this kind of secret."
+      }
+    },
+    {
+      "id": "psych-08",
+      "answer": 2,
+      "hard": true,
+      "source": "CDC CERC",
+      "zh": {
+        "q": "关于人在灾难中的表现，几十年的灾害研究得出的结论是？",
+        "options": [
+          "大多数人会陷入失控的恐慌，所以必须对他们隐瞒坏消息",
+          "人们通常会哄抢物资，社会秩序几个小时内就会彻底崩溃",
+          "真正的集体恐慌很少见，多数人会冷静行动并互相帮助",
+          "只有受过专门训练的人，才能在灾难中做出理性行动"
+        ],
+        "explain": "几十年的灾害研究表明，失控的集体恐慌其实很少见；大多数人即使非常害怕，也会做出合理的反应，并主动帮助身边的人。以“防止恐慌”为由隐瞒信息往往适得其反——缺少信息时，人们更容易听信谣言、做出错误决定。"
+      },
+      "en": {
+        "q": "What have decades of disaster research concluded about how people behave in disasters?",
+        "options": [
+          "Most people fall into uncontrolled panic, so bad news must be kept from them",
+          "People usually loot supplies, and order collapses completely within a few hours",
+          "True mass panic is rare; most people act sensibly and help each other",
+          "Only specially trained people are able to act rationally in a disaster"
+        ],
+        "explain": "Decades of disaster research show that uncontrolled mass panic is rare; even when very frightened, most people respond reasonably and help those around them. Withholding information 'to prevent panic' usually backfires: without information, people are more likely to believe rumours and make bad decisions."
+      }
+    },
+    {
+      "id": "psych-09",
+      "answer": 3,
+      "hard": false,
+      "source": "CDC CERC / WHO Risk Communication 2017",
+      "zh": {
+        "q": "安置点里流传着一个谣言：“救援物资里的饮用水被下了毒。”很多人开始不敢喝水。作为负责人，你应该？",
+        "options": [
+          "不去理会，这种谣言过几天自然就会消失",
+          "严厉警告传谣的人，禁止大家再私下议论这件事",
+          "只私下告诉几个骨干真相，其他人不必知道",
+          "尽快核实，当众说明已知和未知的情况，定时通报"
+        ],
+        "explain": "谣言在信息空白和不确定中滋长。应尽快核实，然后面向所有人公开、清楚地说明你知道什么、不知道什么、正在做什么，并约定固定时间更新消息。置之不理会让谣言扩散；只靠压制和禁止讨论，反而让人更不信任。"
+      },
+      "en": {
+        "q": "A rumour is spreading through the shelter: 'The relief drinking water has been poisoned.' Many people are now afraid to drink. As the person in charge, what do you do?",
+        "options": [
+          "Ignore it; rumours like this die out on their own within a few days",
+          "Sternly warn whoever spread it and ban any further talk about it",
+          "Quietly tell a few key people the truth; the rest don't need to know anything",
+          "Check it fast, then tell everyone what's known and unknown, with regular updates"
+        ],
+        "explain": "Rumours thrive on an information vacuum and uncertainty. Check the facts quickly, then tell everyone openly and clearly what you know, what you don't know and what is being done, and set regular times for updates. Ignoring a rumour lets it spread; suppressing talk only breeds distrust."
+      }
+    },
+    {
+      "id": "psych-10",
+      "answer": 1,
+      "hard": false,
+      "source": "CDC CERC",
+      "zh": {
+        "q": "淡水只够再撑两天，你必须把这个情况告诉大家。最好的方式是？",
+        "options": [
+          "先瞒着大家，等水真的快喝完了再告诉他们",
+          "如实说明存量，公布配给计划，给每人派任务",
+          "只告诉几个身强力壮的人，免得其他人知道了引起恐慌",
+          "轻描淡写地说“水还多着呢，大家别担心”"
+        ],
+        "explain": "坏消息要尽早、如实地告诉所有人，同时给出具体可做的事——配给方案、集雨计划、每个人的分工。让人有事可做，能把恐惧转化为行动、增强掌控感；隐瞒或淡化风险，一旦被发现，信任就会崩溃。"
+      },
+      "en": {
+        "q": "Fresh water will last only two more days, and you have to tell the group. What's the best way?",
+        "options": [
+          "Keep it quiet for now and only tell them when the water is almost gone",
+          "State how much is left, with a rationing plan and a job for everyone",
+          "Tell only a few of the strongest people, so that the others don't panic",
+          "Play it down and say, 'There's still plenty of water, don't worry'"
+        ],
+        "explain": "Give bad news early and honestly to everyone, together with concrete things to do: a rationing scheme, a rain-catching plan, a job for each person. Giving people actions turns fear into effort and restores a sense of control; hiding or downplaying a risk destroys trust once it's discovered."
+      }
+    },
+    {
+      "id": "psych-11",
+      "answer": 0,
+      "hard": true,
+      "source": "Janis (Groupthink) / CRM",
+      "zh": {
+        "q": "被困在坠机残骸旁，大家要决定是留下等待救援还是徒步下山。作为领队，你想听到最真实的意见，应该怎么做？",
+        "options": [
+          "先不表态，请每个人（尤其话少的人）先说看法和顾虑",
+          "先宣布你自己倾向的方案，再问问大家有没有什么不同意见",
+          "让最有经验的那个人直接拍板，其他人照做就行",
+          "为了团结，要求大家尽快达成一致，不要再争论了"
+        ],
+        "explain": "压力下的群体容易出现“群体思维”：领导者一表态，其他人就倾向附和，不同意见和关键信息被压下去。领导者先不亮明立场，让每个人（尤其是资历浅、话少的人）先发言，必要时指定一人专门唱反调，决策才能把更多风险考虑进去。"
+      },
+      "en": {
+        "q": "Stranded by the crash wreckage, the group must decide whether to wait for rescue or walk down the mountain. As leader, you want honest opinions. What should you do?",
+        "options": [
+          "Hold back your view and hear everyone first, especially the quiet ones",
+          "Announce the option you favour first, then ask whether anyone disagrees",
+          "Let the most experienced person decide, and everyone else just follows",
+          "For the sake of unity, push for quick agreement and no arguing at all"
+        ],
+        "explain": "Groups under pressure easily fall into groupthink: once the leader states a view, others tend to go along, and dissent and key information get buried. A leader who holds back their own position, lets everyone speak first (especially junior or quiet members) and, if needed, appoints someone to argue the other side gets a decision that weighs more of the risks."
+      }
+    },
+    {
+      "id": "psych-12",
+      "answer": 2,
+      "hard": true,
+      "source": "IASC MHPSS 2007",
+      "zh": {
+        "q": "按照 IASC《紧急情况下精神卫生和心理社会支持指南》，灾后初期，对大多数幸存者心理健康帮助最大的是？",
+        "options": [
+          "给每一位幸存者都安排一对一的专业心理治疗",
+          "给所有情绪激动的人普遍使用镇静药物，稳定局面",
+          "有尊严地满足安全、饮水、食物、住所等需求，帮家人团聚",
+          "集中组织大规模的讲述会，让每个人都详细回忆自己的创伤经历"
+        ],
+        "explain": "IASC 的“干预金字塔”最底层是基本服务和安全：以有尊严、让当事人参与的方式提供安全、饮水、食物和住所，本身就是重要的心理社会支持；往上是家庭和社区支持、非专科的针对性支持，只有少数人需要专科精神卫生服务。大多数人在获得这些支持后会自然恢复。"
+      },
+      "en": {
+        "q": "According to the IASC Guidelines on Mental Health and Psychosocial Support in Emergency Settings, what helps most survivors' mental health most in the early phase?",
+        "options": [
+          "Arranging one-to-one psychotherapy sessions for every single survivor",
+          "Giving sedatives to everyone who is upset, so the camp stays calm",
+          "Meeting basic needs (safety, water, food, shelter) with dignity; reuniting families",
+          "Organizing large group sessions where everyone recounts their trauma in full detail"
+        ],
+        "explain": "The base of the IASC intervention pyramid is basic services and security: providing safety, water, food and shelter in a dignified, participatory way is itself important psychosocial support. Above that come family and community support and focused non-specialist support; only a minority need specialist mental health care. Most people recover naturally once these supports are in place."
+      }
+    },
+    {
+      "id": "psych-13",
+      "answer": 3,
+      "hard": false,
+      "source": "NICE NG10",
+      "zh": {
+        "q": "两名幸存者为分水大声争吵，其中一人攥紧拳头，眼看就要动手。你应该？",
+        "options": [
+          "比他们更大声地吼一嗓子，先把场面镇住，再来讲道理",
+          "开个玩笑缓和一下气氛，别让大家太当回事",
+          "当场判断谁更有理，并且明确地站在他那一边支持他",
+          "保持冷静，低声慢语，把两人隔开些，先认可其情绪"
+        ],
+        "explain": "化解冲突的要点：自己先冷静，用平和、缓慢、低沉的声音说话；给双方留出空间，不要逼近或抓扯对方；先认可情绪（“我看得出你很着急”），再把注意力转到具体问题和可选方案上。大吼、嘲笑或当众偏袒，都会让冲突升级。"
+      },
+      "en": {
+        "q": "Two survivors are shouting at each other over water. One has clenched his fists and looks about to throw a punch. What do you do?",
+        "options": [
+          "Shout louder than both of them so you take control of the situation",
+          "Crack a joke to lighten the mood, so that nobody takes the quarrel too seriously",
+          "Decide on the spot who's in the right, and openly take his side",
+          "Stay calm, speak low and slow, separate them a bit, acknowledge their anger"
+        ],
+        "explain": "To de-escalate: stay calm yourself and speak in a calm, slow, low voice; give both people space and don't crowd or grab them; acknowledge the emotion first ('I can see you're really worried'), then turn to the concrete problem and the options. Shouting, mockery or taking sides in public all escalate conflict."
+      }
+    },
+    {
+      "id": "psych-14",
+      "answer": 1,
+      "hard": true,
+      "source": "Procedural justice (Tyler)",
+      "zh": {
+        "q": "被困第四天，食物只剩一点，大家开始互相猜疑。怎样分配最能维持团队的团结？",
+        "options": [
+          "由领导者私下保管和分配，免得大家当面争吵",
+          "规则当众商定、当众分发，人人平等，伤病者适当多分",
+          "谁干活多谁就多吃，由领导者自己私下决定每个人的份额",
+          "谁找到的食物就归谁，从现在起大家各管各的"
+        ],
+        "explain": "研究表明，人们对分配过程是否公平、透明的感受，往往比分到多少更影响信任与合作。规则要公开商定、人人适用（包括领导者），当众分发；特殊照顾要有大家认可的理由（如伤员、儿童）。暗箱操作和“各顾各”最容易引发猜疑和分裂。"
+      },
+      "en": {
+        "q": "On day four trapped, food is nearly gone and people are starting to eye each other with suspicion. How should food be shared to best keep the group together?",
+        "options": [
+          "The leader keeps the food and quietly hands it out in private, so there are no arguments",
+          "Agree rules openly (equal shares, extra for the sick), share in public, leaders included",
+          "Whoever works hardest eats more, with the leader deciding the shares privately",
+          "Whoever finds food keeps it, and everyone fends for themselves from now on"
+        ],
+        "explain": "Research shows that whether people see the sharing process as fair and transparent often matters more to trust and cooperation than how much each person gets. Agree the rules openly, apply them to everyone including the leaders, and hand out food where all can see; base any extra share on reasons the group accepts (the injured, children). Secret dealings and 'every man for himself' breed suspicion and splits."
+      }
+    },
+    {
+      "id": "psych-15",
+      "answer": 0,
+      "hard": false,
+      "source": "WHO PFA 2011 / IASC MHPSS 2007",
+      "zh": {
+        "q": "一名志愿者想拍下灾民痛哭的特写发到网上，说是“为了让更多人关注”。按照心理急救的“不伤害”原则，应该怎么做？",
+        "options": [
+          "先征得本人同意，尊重隐私和尊严，不公开身份信息",
+          "只要出于好意，拍了直接发出去也没什么问题",
+          "偷偷地拍，只要不让当事人发现，就不会对他们造成伤害",
+          "画面越悲惨越好，这样能募集到更多的捐款"
+        ],
+        "explain": "心理急救强调尊重人的尊严、隐私和自主权，“不伤害”是首要原则。未经同意拍摄、传播受灾者最脆弱时的画面，可能让他们感到羞辱、遭受二次伤害，甚至因暴露身份而面临风险。确需记录时，要说明用途、征得同意，并保护可识别的信息。"
+      },
+      "en": {
+        "q": "A volunteer wants to film close-ups of survivors sobbing and post them online 'to raise awareness'. Under the do-no-harm principle of psychological first aid, what's right?",
+        "options": [
+          "Get their consent first, respect privacy and dignity, and hide identifying details",
+          "If the intention is good, filming and posting it straight away is perfectly fine",
+          "Film secretly; if they never find out, it can't hurt them",
+          "The more harrowing the footage the better, since it brings in more donations"
+        ],
+        "explain": "PFA puts people's dignity, privacy and right to decide first, and 'do no harm' is the core principle. Filming and spreading images of people at their most vulnerable without consent can humiliate them, retraumatize them, or expose them to risk if they're identified. If recording is truly needed, explain the purpose, get consent and protect identifying information."
+      }
+    },
+    {
+      "id": "psych-16",
+      "answer": 2,
+      "hard": false,
+      "source": "WHO PFA 2011",
+      "zh": {
+        "q": "一名幸存者的丈夫在坍塌中遇难。她反复说：“都怪我，是我让他回去拿电脑的。”你怎样回应最有帮助？",
+        "options": [
+          "告诉她必须坚强，千万别在孩子面前哭，要替孩子撑住这个家",
+          "劝她“这都是命，一切自有安排，他去了更好的地方”",
+          "陪着她耐心倾听，接纳她的悲伤和自责，帮她处理眼前的事",
+          "赶紧转移话题，给她找点事做，忙起来就不会多想"
+        ],
+        "explain": "哀伤中的自责、愤怒、麻木都是常见反应。最有帮助的是陪伴和倾听：不评判，不催促她“走出来”，接纳她此刻的感受，并在吃住、联系亲属、料理后事等实际问题上提供帮助。要求她压抑情绪、套用宿命论或回避话题，只会让人觉得不被理解。"
+      },
+      "en": {
+        "q": "A survivor's husband died in the collapse. She keeps saying, 'It's my fault. I told him to go back for the laptop.' What response helps most?",
+        "options": [
+          "Tell her she must be strong, never cry in front of the children, and hold the family together",
+          "Tell her 'It was fate; everything happens for a reason, and he's in a better place'",
+          "Stay with her, listen, accept her grief and guilt, and help with practical needs",
+          "Quickly change the subject and keep her busy so she won't dwell on it"
+        ],
+        "explain": "Guilt, anger and numbness are common in grief. What helps most is being there and listening: don't judge her or hurry her to 'move on', accept what she feels right now, and help with practical matters like food, shelter, contacting family and arrangements for the dead. Telling her to bottle it up, offering fatalistic clichés or avoiding the subject leaves people feeling misunderstood."
+      }
+    },
+    {
+      "id": "psych-17",
+      "answer": 1,
+      "hard": false,
+      "source": "IASC MHPSS 2007",
+      "zh": {
+        "q": "在临时营地里，幸存者们想为遇难的同伴举行一个简单的告别仪式。作为负责人，你应该？",
+        "options": [
+          "禁止举行，免得勾起大家的伤心事，影响士气",
+          "安全允许就支持，哀悼仪式有助哀伤，也能凝聚人心",
+          "等获救以后再说，现在只谈怎么活下去，别分心",
+          "只允许遇难者的亲属私下进行，其他人最好不要参加"
+        ],
+        "explain": "符合当地文化和信仰的哀悼、告别仪式，能帮助人们接受丧失、表达哀伤，也能增强群体的凝聚力。IASC 指南建议，灾后要为恰当的文化、宗教和社区仪式创造条件。压抑悲伤并不会让它消失。"
+      },
+      "en": {
+        "q": "At the temporary camp, survivors want to hold a simple farewell ceremony for companions who died. As the person in charge, you…",
+        "options": [
+          "Ban it, so that it won't stir up everyone's grief and hurt morale",
+          "Support it if it's safe: mourning rituals help grief and bring people together",
+          "Put it off until after the rescue; for now only survival matters",
+          "Allow only the families of the dead to hold it privately, without the others"
+        ],
+        "explain": "Mourning and farewell rituals that fit people's culture and beliefs help them accept the loss and express grief, and they strengthen group cohesion. The IASC guidelines advise creating the conditions for appropriate cultural, religious and community practices after a disaster. Suppressing grief doesn't make it go away."
+      }
+    },
+    {
+      "id": "psych-18",
+      "answer": 3,
+      "hard": false,
+      "source": "WHO PFA 2011 / NCTSN",
+      "zh": {
+        "q": "洪水中困在屋顶上，一个 7 岁的孩子一直问：“我们会死吗？”你应该怎么回答？",
+        "options": [
+          "什么都别说，孩子不懂这些，越解释他越害怕",
+          "骗他说“直升机十分钟就到”，先把他哄住、不哭了再说",
+          "严肃地让他别哭，要像个大人一样勇敢起来",
+          "陪在他身边，用简单诚实的话说明大人正在怎样保护他"
+        ],
+        "explain": "孩子需要贴近、可信赖的大人和与年龄相称的诚实解释：说清楚现在发生了什么、大人在做什么来保证大家安全、他自己可以做什么（比如紧紧拉住你的手）。回避或欺骗一旦被识破，孩子会更不安；斥责哭泣会让孩子把恐惧藏起来。"
+      },
+      "en": {
+        "q": "Stranded on a roof in the flood, a 7-year-old keeps asking, 'Are we going to die?' How do you answer?",
+        "options": [
+          "Say nothing; children don't understand this, and any explanation only scares them more",
+          "Tell him 'A helicopter will be here in ten minutes' to settle him for now",
+          "Tell him sternly to stop crying and be brave like a grown-up",
+          "Stay close and tell him simply and honestly what the adults are doing to keep him safe"
+        ],
+        "explain": "Children need a close, trusted adult and honest explanations suited to their age: what's happening, what the adults are doing to keep everyone safe, and something they can do themselves (like holding your hand tight). Avoidance or lies make children more anxious once they see through them; scolding them for crying teaches them to hide their fear."
+      }
+    },
+    {
+      "id": "psych-19",
+      "answer": 2,
+      "hard": true,
+      "source": "WHO PFA 2011",
+      "zh": {
+        "q": "在撤离的人群中，你发现一个独自哭泣、找不到父母的 5 岁孩子。正确的做法是？",
+        "options": [
+          "先把他带回自己的帐篷照顾，等找到他父母再说也不迟",
+          "交给任何一个愿意照顾他的热心路人带走",
+          "陪他待在显眼的安全处，尽快报告负责登记寻亲的人员",
+          "让他在原地别动，你自己去人群里找他父母"
+        ],
+        "explain": "与家人失散的孩子特别容易受到伤害。不要把孩子单独留下，也不要私自带走或随意交给陌生人；应陪着他待在安全、显眼的地方，尽快报告负责登记、儿童保护或寻亲的工作人员，记下孩子的情况和失散地点，帮助家人尽快找到他。"
+      },
+      "en": {
+        "q": "In the evacuating crowd you find a 5-year-old crying alone, unable to find his parents. What's the right thing to do?",
+        "options": [
+          "Take him back to your own tent and look after him until his parents turn up",
+          "Hand him over to any kind passer-by who offers to look after him",
+          "Stay with him somewhere safe and visible, and report him to family-tracing staff",
+          "Tell him to wait right there while you go and search the crowd for his parents"
+        ],
+        "explain": "Children separated from their families are especially vulnerable. Don't leave the child alone, take him away yourself, or hand him to a stranger; stay with him in a safe, visible place, report him quickly to the staff responsible for registration, child protection or family tracing, and record details about him and where he was found so his family can find him."
+      }
+    },
+    {
+      "id": "psych-20",
+      "answer": 0,
+      "hard": false,
+      "source": "NCTSN / WHO PFA 2011",
+      "zh": {
+        "q": "地震后，一个 6 岁的孩子开始尿床、黏人，不敢一个人睡。这通常说明什么，该怎么办？",
+        "options": [
+          "这是常见的应激反应：保持作息，多陪伴安抚，不责骂",
+          "这是坏习惯，要严厉批评，趁早纠正过来",
+          "说明孩子得了严重的精神疾病，必须马上带他去吃药治疗",
+          "别理他，让他自己学会独立，过阵子就好了"
+        ],
+        "explain": "灾后儿童出现尿床、吮手指、黏人、怕黑等“退行”表现很常见，是正常的应激反应。尽量恢复规律的作息，让孩子和熟悉的照顾者在一起，多陪伴、多安抚，允许他通过游戏和画画表达感受，多数会逐渐好转；如果持续很久或越来越严重，再寻求专业帮助。"
+      },
+      "en": {
+        "q": "After the earthquake a 6-year-old has started wetting the bed and clinging to adults, and won't sleep alone. What does this usually mean, and what should you do?",
+        "options": [
+          "A common stress reaction: keep routines, give comfort and company, don't scold",
+          "It's a bad habit that must be sharply criticized and corrected now",
+          "It means the child has a serious mental illness and needs medication right away",
+          "Ignore it so he learns to be independent; it'll pass on its own"
+        ],
+        "explain": "Regression after a disaster, such as bedwetting, thumb-sucking, clinging or fear of the dark, is common and a normal stress reaction. Restore regular routines, keep the child with familiar carers, give plenty of comfort and company, and let them express feelings through play and drawing; most children improve gradually. Seek professional help if it persists for a long time or gets worse."
+      }
+    },
+    {
+      "id": "psych-21",
+      "answer": 3,
+      "hard": false,
+      "source": "WHO PFA 2011",
+      "zh": {
+        "q": "你连续三天组织救援，几乎没合眼。现在你动不动就发火，感觉麻木，注意力很难集中。你应该？",
+        "options": [
+          "咬牙坚持下去，领导者这时候休息就是对大家不负责",
+          "喝点酒放松一下，帮助自己尽快睡着",
+          "把感受藏起来，绝不能让别人看出你的软弱",
+          "把任务交给可靠的人，吃饭睡觉，和信任的人聊一聊"
+        ],
+        "explain": "救助者同样会出现应激和耗竭。长时间不休息会让判断力和情绪控制明显下降，反而危及整个团队。轮班交接、保证基本的睡眠和饮食、和同伴交流感受，是照顾自己，也是对团队负责。酒精会干扰睡眠、损害判断。"
+      },
+      "en": {
+        "q": "You've been running the rescue effort for three days with almost no sleep. Now you're snapping at people, feeling numb and can't concentrate. What should you do?",
+        "options": [
+          "Grit your teeth and carry on, because a leader who rests is letting everyone down",
+          "Have a few drinks to unwind and help yourself get to sleep",
+          "Hide what you feel and never let anyone see any weakness",
+          "Hand over to someone reliable, then rest, eat, sleep and talk to someone you trust"
+        ],
+        "explain": "Helpers suffer stress and exhaustion too. Going without rest steadily degrades judgment and emotional control, which endangers the whole group. Handing over in shifts, getting basic sleep and food, and talking with peers is how you look after yourself and your team. Alcohol disrupts sleep and impairs judgment."
+      }
+    },
+    {
+      "id": "psych-22",
+      "answer": 2,
+      "hard": false,
+      "source": "Hobfoll et al. 2007",
+      "zh": {
+        "q": "救生筏漂流的第五天，大家整天躺着发呆、不说话，士气越来越低落。作为领导者，最有效的做法是？",
+        "options": [
+          "让大家想睡就睡，什么事都不用安排，尽量节省体力",
+          "所有决定由你一个人做，计划不必告诉别人",
+          "给每人分派具体任务，排好值班作息，定下小目标",
+          "跟大家讲明获救的希望已经很渺茫，让大家都面对现实"
+        ],
+        "explain": "让每个人都有具体的角色（瞭望、舀水、集雨、记录），建立值班轮换和规律作息，设定当天就能完成的小目标，能恢复人们的掌控感和效能感，对抗无助和消沉。这些任务大多不费力，不会明显增加体力和水分的消耗。"
+      },
+      "en": {
+        "q": "Day five adrift on the life raft: people lie around staring into space, barely speaking, and morale keeps sinking. As leader, what's most effective?",
+        "options": [
+          "Let everyone sleep whenever they like, with nothing organized, to save energy",
+          "Make every decision yourself and keep the plans to yourself",
+          "Give everyone a job, set up watches and a routine, and set small daily goals",
+          "Tell everyone plainly that the chance of rescue is tiny, so they face reality"
+        ],
+        "explain": "Giving each person a specific role (lookout, bailing, catching rain, keeping the log), setting up watch rotas and a daily routine, and setting small goals that can be met today restores a sense of control and usefulness and fights helplessness and apathy. Most of these jobs take little effort, so they don't noticeably increase energy or water use."
+      }
+    },
+    {
+      "id": "psych-23",
+      "answer": 1,
+      "hard": true,
+      "source": "Leach 2018 / Hobfoll et al. 2007",
+      "zh": {
+        "q": "一名幸存者几天来越来越孤僻：不吃东西、不说话，整天一动不动地躺着，说“什么都无所谓了”。他没有受伤，也没有生病。最可能帮到他的是？",
+        "options": [
+          "别打扰他，让他好好静一静，等他自己慢慢想通",
+          "温和地坚持让他做些小事和选择，找回掌控感",
+          "严厉地批评他，用激将法逼他振作起来",
+          "把他的那份食物分给更有希望活下来的人"
+        ],
+        "explain": "在极端环境中，有人会从退缩、冷漠逐渐发展到彻底放弃（有研究称之为“放弃症”），严重时即使没有致命伤病也可能危及生命。帮助的关键是让他重新获得掌控感和目标：从很小的事做起（帮忙照看火堆、自己决定吃什么），并有人持续陪伴。放任不管只会让情况恶化。"
+      },
+      "en": {
+        "q": "Over several days a survivor has become withdrawn: he won't eat or talk, lies motionless all day and says 'nothing matters any more.' He isn't injured or ill. What is most likely to help?",
+        "options": [
+          "Leave him in peace and wait until he snaps out of it by himself, in his own time",
+          "Gently but persistently draw him into small tasks and choices that restore control",
+          "Criticize him harshly to provoke him into fighting back for his life",
+          "Give his share of food to people who have a better chance of surviving"
+        ],
+        "explain": "In extreme situations some people slide from withdrawal and apathy into giving up completely ('give-up-itis'), which can become life-threatening even without serious illness or injury. The key is to restore a sense of control and purpose: start with very small things (helping tend the fire, choosing what to eat) and keep someone with him. Leaving him alone lets it get worse."
+      }
+    },
+    {
+      "id": "psych-24",
+      "answer": 0,
+      "hard": true,
+      "source": "WHO PFA 2011",
+      "zh": {
+        "q": "在矿井避难硐室里，一名工友突然惊恐发作：呼吸急促、手脚发麻，说自己“快要死了”。你应该？",
+        "options": [
+          "陪着他，引导他慢慢呼吸、延长呼气",
+          "让他对着纸袋反复呼吸，把二氧化碳吸回来",
+          "扇他一巴掌，让他马上清醒过来，免得吓着别人",
+          "给他喝几口酒压压惊，帮他尽快镇定下来"
+        ],
+        "explain": "惊恐发作时，用平稳的语气陪着他，引导他放慢呼吸、让呼气比吸气更长，让他说出周围能看到、摸到的东西，帮助他回到当下。对着纸袋呼吸已不再推荐——可能导致缺氧，在空气有限的避难硐室里更危险，而且症状也可能来自其他疾病。扇耳光和喝酒只会让情况更糟。"
+      },
+      "en": {
+        "q": "In the mine refuge chamber, a coworker suddenly has a panic attack: breathing fast, tingling hands and feet, saying he's 'about to die'. What do you do?",
+        "options": [
+          "Stay calm beside him and coach slow breaths with long out-breaths",
+          "Have him breathe in and out of a paper bag to get his carbon dioxide back up",
+          "Slap him across the face to snap him out of it before he frightens the others",
+          "Give him a few swigs of alcohol to calm his nerves and slow his breathing"
+        ],
+        "explain": "During a panic attack, stay with him and speak steadily, guide him to slow his breathing with out-breaths longer than in-breaths, and have him name things he can see and touch to bring him back to the present. Breathing into a paper bag is no longer recommended: it can lower oxygen, which is even more dangerous in a refuge chamber with limited air, and the symptoms may have another cause. Slapping and alcohol only make things worse."
+      }
+    },
+    {
+      "id": "psych-x01",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "WHO 2013 Guidelines on conditions specifically related to stress",
+      "zh": {
+        "q": "地震后第 4 天，安置点里一名男子（以前没有精神疾病）夜夜做噩梦，一有响动就惊跳，几乎睡不着。一位志愿医生打算每晚给他一片地西泮（安定），连吃一个月，说这样能“预防他以后得创伤后应激障碍”。按 WHO 的建议，你怎么看？",
+        "options": [
+          "赞成：现在先用药保证睡眠，就能阻止急性应激反应发展成创伤后应激障碍，而且越早用越好",
+          "不赞成：头一个月不宜用这类药缓解应激症状或失眠，可能拖慢恢复；改用心理急救、睡眠与放松指导并随访",
+          "马上诊断他得了创伤后应激障碍，给所有做噩梦、容易受惊的人都安排高强度的创伤治疗",
+          "今晚召集大家开会，请每个人轮流详细讲述地震经过，把恐惧说出来自然就能睡着了"
+        ],
+        "explain": "WHO 2013 年《应激相关问题管理指南》：创伤事件后头一个月内，不应使用苯二氮䓬类药物缓解急性创伤应激症状或失眠——没有证据显示有益，还可能拖慢恢复、导致依赖。应提供心理急救、心理教育、睡眠卫生和放松训练，帮助解决现实困难并随访；症状严重影响功能时可考虑以创伤为中心的认知行为治疗。创伤后应激障碍要在症状持续一个月以上才能诊断。"
+      },
+      "en": {
+        "q": "Four days after the earthquake, a man at the shelter with no history of mental illness has nightmares every night, jumps at every noise and barely sleeps. A volunteer doctor plans to give him a diazepam tablet every night for a month 'to stop him getting PTSD later'. What does WHO advise?",
+        "options": [
+          "Agree: securing his sleep with medication now will stop acute stress turning into PTSD, and the sooner the better",
+          "Don't: benzodiazepines aren't advised for stress symptoms or poor sleep in the first month; offer PFA, sleep and relaxation advice, follow-up",
+          "Diagnose PTSD now and book intensive trauma therapy for everyone at the shelter who has nightmares or a jumpy startle",
+          "Hold a meeting tonight where everyone describes the quake in detail in turn; once the fear is out, they'll all sleep"
+        ],
+        "explain": "WHO's 2013 stress guidelines: benzodiazepines should not be offered for acute traumatic stress symptoms or sleep problems in the first month after a traumatic event; there's no evidence of benefit, and they may slow recovery and cause dependence. Offer PFA, psychoeducation, sleep hygiene and relaxation, help with practical problems and follow up; trauma-focused CBT can be considered if symptoms seriously impair functioning. PTSD can't be diagnosed until symptoms have lasted over a month."
+      }
+    },
+    {
+      "id": "psych-x02",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "ICD-11 prolonged grief disorder / Stroebe & Schut dual process model",
+      "zh": {
+        "q": "海啸过去三周，一位失去丈夫的妇女有时抱着照片痛哭，有时又忙着张罗安置点的厨房，偶尔想起往事还会笑出声。一名志愿者说她“卡在否认阶段，没按顺序走完哀伤五阶段”，要每天让她看照片“直面现实”。你怎么看？",
+        "options": [
+          "志愿者说得对：哀伤必须按否认、愤怒、讨价还价、抑郁、接受的顺序走完，得推她一把才行",
+          "她还笑得出来，说明对丈夫感情不深或已情感麻木，应该马上转介精神科医生诊治",
+          "最好让她整天忙个不停，完全不去想丈夫，不给悲伤留空隙，哀伤自然就会过去",
+          "在悲伤和投入生活之间来回摆动是健康的哀伤；哀伤没有固定阶段，头几个月强烈悲伤不是病"
+        ],
+        "explain": "研究不支持哀伤要按固定的“五阶段”依次走完。“双过程模型”认为，在面对丧失（哭泣、怀念）和重建生活（做事、偶尔放松）之间来回摆动，正是健康的哀伤方式。头几个月的强烈悲伤属于正常；ICD-11 的“延长哀伤障碍”要求丧亲至少 6 个月后仍持续强烈哀伤并明显损害功能。强迫直面或刻意回避都无益，陪伴、倾听和实际帮助即可。"
+      },
+      "en": {
+        "q": "Three weeks after the tsunami, a woman who lost her husband sometimes weeps over his photo, at other times busily runs the shelter kitchen, and now and then laughs at a memory. A volunteer says she's 'stuck in denial and hasn't gone through the five stages in order', and wants her to look at photos every day to 'face reality'. Your view?",
+        "options": [
+          "The volunteer is right: grief must pass through denial, anger, bargaining, depression and acceptance, in that order",
+          "Her laughter shows she didn't love him deeply or has gone emotionally numb, so refer her to a psychiatrist for treatment right away",
+          "Best to keep her busy all day so she never has a moment to think about him; then the grief will simply pass",
+          "Swinging between grief and getting on with life is healthy; grief has no fixed stages, and intense grief early on isn't illness"
+        ],
+        "explain": "Research doesn't support grief moving through five fixed stages in order. The dual process model sees swinging between facing the loss (crying, remembering) and rebuilding life (working, moments of relief) as healthy grieving. Intense grief in the first months is normal; ICD-11 prolonged grief disorder requires intense grief persisting at least 6 months after the death with marked impairment. Forcing confrontation or enforced avoidance doesn't help; offer company, listening and practical help."
+      }
+    },
+    {
+      "id": "psych-x03",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "Psychological First Aid Field Operations Guide (NCTSN/NCPTSD)",
+      "zh": {
+        "q": "地震后，一个 5 岁的男孩反复问：“奶奶去哪儿了？她什么时候回来？”奶奶已在房屋倒塌中去世。家人不知道该怎么开口，请你帮忙。下列哪种说法最恰当？",
+        "options": [
+          "用简单的话说清“奶奶死了，身体不工作了，不会再回来”，说明不是他的错，耐心回答追问",
+          "“奶奶只是睡着了，睡得很香很沉，我们都别去吵醒她，让她好好休息吧，你也乖乖地去睡觉。”",
+          "“奶奶出远门了，要过很久很久才能回来，你要乖乖听话，等她回来时会给你带礼物。”",
+          "先什么都别说，岔开话题，等救援结束、孩子情绪稳定下来以后再慢慢找机会告诉他"
+        ],
+        "explain": "美国《心理急救现场操作指南》建议：用孩子听得懂的简单、明确的词，如“死了”“去世了”，说明死亡是永久的、身体不再工作、人不会回来；告诉他这不是任何人的错，并耐心回答他一遍遍的提问。说“睡着了”可能让孩子害怕睡觉，说“出远门”会让他一直等待；隐瞒拖延会让孩子在猜测中更困惑、更不安。"
+      },
+      "en": {
+        "q": "After the earthquake a 5-year-old boy keeps asking, 'Where's Grandma? When is she coming back?' His grandmother died when the house collapsed. The family doesn't know how to tell him and asks for your help. Which is most appropriate?",
+        "options": [
+          "In simple words: 'Grandma died; her body stopped working and she can't come back.' Say it's not his fault; answer repeat questions patiently",
+          "'Grandma has gone to sleep, a deep, peaceful sleep, so we mustn't wake her; let her rest, and you go to sleep too.'",
+          "'Grandma has gone on a long journey and won't be back for a long time; be good, and she'll bring you a present.'",
+          "Say nothing for now and change the subject; find a moment to tell him later, after the rescue, once he's calmer"
+        ],
+        "explain": "The PFA Field Operations Guide (NCTSN/National Center for PTSD) advises simple, clear words children understand, such as 'died' and 'dead', explaining that death is permanent, the body has stopped working and the person can't come back; tell them it isn't anyone's fault and answer repeated questions patiently. 'Gone to sleep' can make a child afraid to sleep, 'gone on a journey' leaves him waiting, and hiding it leaves him guessing, confused and anxious."
+      }
+    },
+    {
+      "id": "psych-x04",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "Inter-agency Guiding Principles on Unaccompanied and Separated Children / UNICEF",
+      "zh": {
+        "q": "地震安置点里有个 4 岁的女孩，说家里人都“不见了”，两天来没人来找她。一对好心的夫妇想马上收养她，说“孤儿最需要的是尽快有个稳定的家”。负责人应该怎么做？",
+        "options": [
+          "同意由这对夫妇当场收养：越早给孩子一个稳定的新家，对她的心理创伤恢复就越有利",
+          "让她住进你自己的帐篷长期照顾，先不去正式登记，免得办各种繁琐手续反而耽误了照顾孩子的时间",
+          "交官方儿童保护机构登记寻亲，安排临时照料（尽量与熟人、兄弟姐妹一起），紧急期间不办收养",
+          "把她的照片、全名和所在安置点发到网上寻亲，谁先来认领，就把孩子交给谁带回家"
+        ],
+        "explain": "UNICEF、红十字国际委员会等机构的《无人陪伴和失散儿童跨机构指导原则》：失散儿童不能被当作孤儿，在弄清下落前都应视为有在世的亲属；紧急状态期间及其后不久不应进行收养，首先要登记、寻亲、团聚，期间安排临时照料，兄弟姐妹不分开。私自收留会让家人找不到她；公开孩子的详细信息并交给第一个认领的人，可能让她落入人贩子之手。"
+      },
+      "en": {
+        "q": "At the earthquake shelter there's a 4-year-old girl who says her family have all 'gone'; nobody has come for her in two days. A kind couple want to adopt her straight away, saying 'what an orphan needs most is a stable home, fast'. What should the person in charge do?",
+        "options": [
+          "Let the couple adopt her on the spot: the sooner she has a stable new home and loving parents, the better she'll recover from the trauma",
+          "Take her into your own tent and care for her long-term without registering her, so red tape doesn't get in the way",
+          "Register her with official child protection for tracing and arrange interim care, ideally with people she knows; no adoption now",
+          "Post her photo, full name and shelter online to find her family, and hand her to whoever comes to claim her first"
+        ],
+        "explain": "Under the Inter-agency Guiding Principles on Unaccompanied and Separated Children (UNICEF, ICRC and others), separated children must not be presumed orphans: until proven otherwise each is assumed to have living relatives. Adoption should not happen during or soon after an emergency; registration, tracing and reunification come first, with interim care meanwhile and siblings kept together. Keeping her privately stops her family finding her, and broadcasting her details and handing her to the first claimant can deliver her to traffickers."
+      }
+    },
+    {
+      "id": "psych-x05",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "ICRC/WHO/PAHO/IFRC Management of Dead Bodies after Disasters / WHO–ICRC 2023",
+      "zh": {
+        "q": "海啸后，学校体育馆里停放着 40 具遇难者遗体。当地一名官员下令：今天就挖大坑集体掩埋，撒上石灰，“免得爆发瘟疫”。许多家属哭着要求先找找自己的亲人。作为危机负责人，你应该主张？",
+        "options": [
+          "立即把全部遗体集中焚烧：火是阻止尸体传播瘟疫唯一可靠的办法，动作越快越好，以绝后患",
+          "先按官员说的集体掩埋、撒石灰，事后允许家属到坑边祭拜，这样防疫和情感都能兼顾",
+          "给所有遗体和整个体育馆喷洒消毒剂，并禁止家属辨认遗体，免得他们看了受到刺激",
+          "外伤、溺水遇难者的遗体几乎不会引发疫情：逐一拍照编号登记，冷藏或单独标记埋葬"
+        ],
+        "explain": "红十字国际委员会、WHO 等机构的《灾后遗体管理》手册和 2023 年联合声明指出：死于创伤、溺水、火灾的遗体几乎不会对社区构成健康威胁；仓促集体掩埋或火化毫无公共卫生益处，却让辨认和通知家属变得困难甚至不可能，给家属留下长久的心理创伤。应逐一拍照、编号、记录，冷藏或单独标记掩埋；撒石灰无效，只有死于传染病的遗体才需消毒。处理者戴手套、勤洗手，遗体远离饮用水源。"
+      },
+      "en": {
+        "q": "After the tsunami, 40 bodies lie in the school gym. A local official orders a mass grave dug today and the bodies covered with lime 'before an epidemic breaks out'. Many families are pleading to search for their relatives first. As crisis leader, what do you argue for?",
+        "options": [
+          "Cremate all the bodies together at once: fire is the only sure way to stop corpses spreading disease, so act fast",
+          "Do the lime-covered mass burial as ordered, then let families pray at the graveside, balancing health and feelings",
+          "Spray all the bodies and the whole gym with disinfectant, and keep the families from viewing them, to spare their feelings",
+          "Trauma and drowning deaths almost never cause epidemics: photograph, number and record each, store cold or bury singly"
+        ],
+        "explain": "The ICRC/WHO manual on managing dead bodies after disasters and their 2023 joint statement: people who die of trauma, drowning or fire almost never pose a health risk to communities, and hasty mass burial or cremation brings no public-health benefit but makes identification and notifying families difficult or impossible, leaving lasting harm. Photograph, number and record each body, and store them cold or bury them individually in marked graves; lime doesn't help, and disinfection is only for deaths from infectious disease. Handlers wear gloves and wash their hands, and bodies are kept away from drinking water."
+      }
+    },
+    {
+      "id": "psych-x06",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "NCTSN / AAP (children and disaster media coverage)",
+      "zh": {
+        "q": "海啸后的避难所里，电视整天循环播放巨浪冲毁城镇的画面，几个四五岁的孩子一看就是几个小时，晚上开始做噩梦。一名志愿者说：“让他们看吧，直面了才能走出来。”你应该？",
+        "options": [
+          "关掉电视或带开孩子，限制看灾难画面，安排游戏和作息；大孩子可陪看片刻再聊聊",
+          "让他们想看多久就看多久，反复观看就相当于暴露疗法，看得多了自然也就不怕了",
+          "禁止任何人在孩子面前提起海啸，孩子一问起来就马上岔开话题，让他们尽快忘掉",
+          "把最震撼的片段剪出来集中给孩子们看一遍，再让每个孩子轮流说说自己最害怕的那个画面"
+        ],
+        "explain": "美国国家儿童创伤应激网络和美国儿科学会都建议限制儿童接触灾难画面：反复观看会加重恐惧、焦虑和噩梦；年幼的孩子还分不清重播和现实，会以为灾难又发生了一次。孩子越小越应少看甚至不看；大一点的孩子可以由大人陪着看一会儿，谈谈感受、纠正误解。完全回避话题同样无益；无准备的“暴露”不是治疗。"
+      },
+      "en": {
+        "q": "At the tsunami shelter the TV loops footage of the wave smashing the town all day. Several 4- and 5-year-olds watch for hours and have started having nightmares. A volunteer says, 'Let them watch; facing it is how they'll get over it.' What do you do?",
+        "options": [
+          "Turn it off or move the children away, limit what they see, give play and routine; older kids may watch briefly with you",
+          "Let them watch for as long as they like; repeated viewing works like exposure therapy, so the fear will fade away on its own",
+          "Forbid anyone to mention the tsunami in front of the children, and change the subject whenever they ask about it",
+          "Edit together the most dramatic clips, show them all at once, then ask each child to describe the scariest image"
+        ],
+        "explain": "The NCTSN and the American Academy of Pediatrics both advise limiting children's exposure to disaster images: repeated viewing increases fear, anxiety and nightmares, and young children may not realise a replay is a replay and think the disaster is happening again. The younger the child, the less (or no) viewing; older children can watch a little with an adult and talk it through so misunderstandings can be corrected. Avoiding the subject entirely doesn't help either, and unprepared 'exposure' isn't therapy."
+      }
+    },
+    {
+      "id": "psych-x07",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "Leach 2004 (cognitive paralysis) / aircraft evacuation research",
+      "zh": {
+        "q": "台风中，渡轮突然剧烈倾斜，海水开始涌进船舱。许多乘客坐在原位一动不动，呆呆地盯着前方，连救生衣都没穿。你正站在出口旁。最有效的做法是？",
+        "options": [
+          "用平缓的语气把船况、风险和逃生路线完整详细地解释一遍，让他们理解了危险后自己决定怎么做",
+          "大声下达简短具体的指令并指明方向：“穿救生衣！往这边走！快！”必要时上前拉起来带走",
+          "反复大喊“大家不要慌！不要乱！”，先防止人群因恐慌乱跑踩踏，然后再考虑怎么撤离",
+          "他们一动不动就是自己选择了留下，强拉只会耽误你逃生，你应该先顾好自己离开"
+        ],
+        "explain": "灾难中真正的恐慌很少见，更常见的是“认知瘫痪”式的呆滞不动：大脑来不及处理突发情况，人会僵在原地（Leach 的研究）。这时最有效的是权威、简短、具体、正面的指令并指明方向——航空客舱撤离研究表明，乘务员果断大声地指挥能明显加快撤离。长篇解释会让人更加无所适从；只喊“别慌”并没有告诉人该做什么。"
+      },
+      "en": {
+        "q": "In the typhoon the ferry suddenly lurches into a steep list and seawater starts pouring into the cabin. Many passengers stay in their seats, motionless and staring ahead, not even putting on lifejackets. You're standing by the exit. What works best?",
+        "options": [
+          "Calmly explain the ship's state, the risks and the escape routes in full, so they understand and decide for themselves",
+          "Shout short, specific commands and point the way, 'Lifejackets on! This way! Move!', pulling people up if needed",
+          "Keep shouting 'Don't panic! Stay calm!' so that the crowd doesn't stampede, and only then think about evacuating",
+          "If they're not moving they've chosen to stay; dragging them will only delay your own escape, so save yourself"
+        ],
+        "explain": "Real panic is rare in disasters; much more common is frozen inaction, 'cognitive paralysis', as the brain can't process the sudden situation (Leach's research). What works is authoritative, short, specific, positive commands with a direction: aircraft evacuation studies show assertive, shouted cabin-crew commands speed evacuation markedly. Long explanations leave people more lost, and 'don't panic' doesn't tell anyone what to do."
+      }
+    },
+    {
+      "id": "psych-x08",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "Mileti & Sorensen (warning response) / CDC CERC",
+      "zh": {
+        "q": "M9 地震刚停，预计 25 分钟后海啸到达。你是镇上的疏散协调员，开着广播车沿街喊话。下面哪段话最可能让居民立刻行动？",
+        "options": [
+          "“请大家保持冷静，不要惊慌，目前情况在控制之中，进一步消息请留意后续通知。”",
+          "“可能会有海啸，请居民注意安全，如果觉得有必要，可以考虑往附近的高处疏散。”",
+          "“海啸约 25 分钟后到！马上步行去后山神社或学校四楼以上，走主街，别回家，别去海边！”",
+          "先详细介绍这次地震的震级、海啸是怎么形成的以及各个海滩可能的浪高，最后才说明具体的疏散安排"
+        ],
+        "explain": "预警研究（Mileti 等）发现，人们听到警报后会先四处“打听确认”，模糊的警报会大大延长这个过程。最能促使人行动的警报要具体：什么危险、何时到达、去哪里、怎么走、不要做什么，并由可信的来源反复播报；在高压下人只能记住少数几条简短信息。为“防止恐慌”而说得含糊或一味安抚，恰恰会让人拖延；长篇科普会淹没关键指令。"
+      },
+      "en": {
+        "q": "The M9 earthquake has just stopped and the tsunami is expected in 25 minutes. You're the town's evacuation coordinator, driving a loudspeaker van through the streets. Which message is most likely to get residents moving at once?",
+        "options": [
+          "'Please stay calm and don't be alarmed; the situation is under control. Listen out for further announcements.'",
+          "'A tsunami is possible. Please take care, and if you feel it's necessary, consider moving to higher ground nearby.'",
+          "'Tsunami in about 25 minutes! Walk now to the shrine hill or the school's 4th floor or higher. Don't go home or to the shore!'",
+          "First explain the quake's magnitude, how tsunamis form and the likely wave height at each beach, and only then the evacuation plan"
+        ],
+        "explain": "Warning research (Mileti and colleagues) shows people first seek confirmation before acting, and vague warnings stretch that delay. The warnings that move people are specific: what the hazard is, when it arrives, where to go, how, and what not to do, repeated by a credible source; under stress people retain only a few short messages. Vague or soothing wording meant to 'prevent panic' causes delay, and long explanations bury the key instructions."
+      }
+    },
+    {
+      "id": "psych-x09",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "IASC MHPSS Guidelines 2007 / WHO mhGAP Humanitarian Intervention Guide",
+      "zh": {
+        "q": "洪灾安置点里，一名已知患有双相情感障碍的男子，四天前在洪水中丢了药。这几天他每晚只睡两小时，说话又快又多，把自己的物资全部送人，还说自己“能指挥整个救灾”。他姐姐很担心。你应该？",
+        "options": [
+          "这是灾后常见的急性应激反应，给予心理急救、耐心陪伴就够了，一周左右他的情绪自然就会平复下来",
+          "尽快联系医生恢复他的用药，保证重性精神障碍的持续治疗；让姐姐陪他在安静处，不与他争辩",
+          "先向邻居借几片安眠药或安定让他好好睡上一觉，等外面的救援队伍来了以后再说",
+          "把他单独锁进一个帐篷里看管起来，防止他扰乱安置点的秩序或伤害到其他人"
+        ],
+        "explain": "灾难中，原有重性精神障碍的人停药后极易复发；他睡眠骤减、言语增多、夸大、把物资送光，是躁狂复发的表现，已超出心理急救的范围。IASC 指南和 WHO《人道主义情境 mhGAP 干预指南》都强调保障这类患者的持续治疗：尽快联系医生恢复规范用药，同时保证安全、减少刺激。随意借用他人的镇静药有风险；把人锁起来侵犯人权，也是 IASC 明确反对的。"
+      },
+      "en": {
+        "q": "At a flood shelter, a man known to have bipolar disorder lost his medication in the water four days ago. Since then he's slept two hours a night, talks fast and nonstop, has given away all his supplies and says he 'could run the whole relief effort'. His sister is worried. What do you do?",
+        "options": [
+          "It's a common acute stress reaction after disasters: PFA and patient company are enough, and it will settle down by itself within a week",
+          "Get a doctor to restart his medication fast, since severe mental illness needs continuing care; keep him calm with his sister",
+          "Borrow a few sleeping pills or diazepam from a neighbour to get him a good night's sleep until outside help arrives",
+          "Lock him in a tent on his own and keep him there, so that he can't disrupt the shelter or hurt anyone else"
+        ],
+        "explain": "In disasters, people with pre-existing severe mental disorders relapse easily when medication stops; his sudden loss of sleep, pressured talk, grandiosity and giving everything away point to a manic relapse, beyond what PFA can handle. The IASC guidelines and WHO's mhGAP Humanitarian Intervention Guide stress continuity of care: get a doctor to restart proper treatment quickly, while keeping him safe and reducing stimulation. Borrowed sedatives are risky, and locking people up violates their rights, which IASC explicitly opposes."
+      }
+    },
+    {
+      "id": "psych-x10",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "WHO mhGAP (PTSD) / WHO 2013 stress guidelines",
+      "zh": {
+        "q": "地震过去 6 周，安置点的志愿者想把最需要专业创伤治疗的人转介给前来支援的心理医生。下面四个人中，最该优先转介的是？",
+        "options": [
+          "她刚失去房子时整整哭了好几天，现在能睡着、能干活了，只是说起这件事仍然会难过落泪",
+          "他头一周几乎每晚做噩梦、一有响动就惊跳，从第三周开始这些症状已经慢慢减轻消退",
+          "她至今每天被闪回画面折磨，回避靠近废墟，时刻高度警觉，无法工作，也照顾不了孩子",
+          "他很想念去世的妻子，常常梦见她、心情低落，但能照常吃饭、干活，也愿意和人来往"
+        ],
+        "explain": "灾后多数人的应激反应会在几周内逐渐减轻。若闪回（再体验）、回避和过度警觉持续超过一个月，并明显损害工作和照顾家人的能力，就提示可能是创伤后应激障碍，应转介接受以创伤为中心的认知行为治疗或眼动脱敏再加工（EMDR）等专业治疗（WHO mhGAP）。头几周的噩梦和惊跳、能维持生活的悲伤与思念，都属于常见反应。"
+      },
+      "en": {
+        "q": "Six weeks after the earthquake, shelter volunteers want to refer the people who most need specialist trauma treatment to visiting psychologists. Which of these four should be referred first?",
+        "options": [
+          "She cried for days on end after losing her home; now she sleeps and works again, though talking about it still makes her tearful",
+          "He had nightmares and a jumpy startle almost every night in the first week; since the third week they have faded",
+          "She still has daily flashbacks, avoids going near the ruins, is constantly on edge, and can't work or care for her children",
+          "He misses his late wife, often dreams of her and feels low, but he eats, works and sees other people as usual"
+        ],
+        "explain": "Most people's stress reactions fade over the first weeks after a disaster. When re-experiencing (flashbacks), avoidance and hyperarousal persist beyond a month and clearly impair work or care for family, PTSD is likely, and the person should be referred for specialist treatment such as trauma-focused CBT or EMDR (WHO mhGAP). Nightmares and startle in the first weeks, and sadness and longing that still allow normal life, are common reactions."
+      }
+    },
+    {
+      "id": "psych-x11",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "Crowd safety science (G. Keith Still)",
+      "zh": {
+        "q": "海啸疏散中，上百人挤上通往后山的狭窄石阶，顶端的铁门却锁着。前排的人被挤压在门上喘不过气，后面的人看不见前方，还在不停往上涌。你站在石阶旁的高墙上，手里有扩音器。最该做什么？",
+        "options": [
+          "朝后面的人喊停并引导他们改走另一条路，同时叫人打开铁门：压力来自后方不断涌入的人流",
+          "朝前排的人大喊：“一起用力推！把铁门撞开！”让被挤在门口的人合力把铁门冲开",
+          "反复广播“大家冷静！不要恐慌！”，等人们的情绪都平复下来以后，人群自然就会慢慢地散开",
+          "跳进人群里，从人缝中挤到最前面去，把被压在门上的人一个一个地往外拉出来"
+        ],
+        "explain": "人群挤压踩踏的根本原因是密度过高（每平方米超过约 5–6 人时，人已无法自主移动），而不是恐慌；致命的推力来自后方看不到前面情况、仍在往前挤的人。所以要从源头截停、分流后方人流，打开出口，并把前方的情况告诉后面的人（人群安全研究，如 G. Keith Still）。让前排“用力推”只会加重挤压；跳进人群只会多一个受害者。"
+      },
+      "en": {
+        "q": "During the tsunami evacuation, over a hundred people crowd up a narrow stone stairway to the hill, but the iron gate at the top is locked. People at the front are crushed against it and can't breathe, while those behind can't see what's happening and keep pushing up. You're on a high wall beside the steps with a loudhailer. What should you do?",
+        "options": [
+          "Stop the people at the back and divert them, and get the gate opened: the pressure comes from the inflow behind",
+          "Shout to the front, 'Push together! Break the gate down!', so that the people pinned there force it open",
+          "Keep broadcasting 'Stay calm! Don't panic!' until people's feelings settle, and the crowd will then thin out on its own",
+          "Jump into the crowd, squeeze your way through to the front and pull the pinned people out one at a time"
+        ],
+        "explain": "Crowd crushes are caused by excessive density (above about 5–6 people per square metre people can no longer move by themselves), not panic; the deadly force comes from people at the back who can't see the front and keep pressing forward. So stop and divert the inflow at its source, open the exit, and tell those at the back what's happening (crowd-safety research such as G. Keith Still's). Telling the front to push adds to the crush, and jumping in just adds a victim."
+      }
+    },
+    {
+      "id": "psych-x12",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "The Debunking Handbook 2020 / CDC CERC",
+      "zh": {
+        "q": "洪灾安置点里流传一条谣言：“上游大坝已经裂了，今晚就要垮。”你已核实：下午 3 点工程师刚检查过，大坝完好，水位正在下降；谣言源自一张别处大坝的旧照片。你要在公告栏和广播里辟谣，哪种写法最好？",
+        "options": [
+          "用醒目的大字标题写“大坝不会垮！”，正文再详细列出工程师的检查结果和各种理由",
+          "干脆不提这条谣言，照常贴出今天的水位表，免得越辟谣就越多人知道、越传越广",
+          "宣布谁再传播这条谣言就扣掉他的口粮，用严明的纪律让这条谣言马上停止传播",
+          "先讲事实（3 点检查大坝完好、水位在降），再提一次谣言并说明错在哪（照片是别处旧坝），最后重申事实"
+        ],
+        "explain": "《辟谣手册》（2020）推荐“事实—谣言—谬误—事实”的结构：先用简洁有力的事实开头，只提一次谣言并明确标为错误，说明它错在哪里，最后再强调一遍事实；CDC 危机沟通原则还要求说明下一步怎么做、下次通报在什么时候。把谣言本身做成标题容易让人记住谣言；不回应会留下信息真空；靠惩罚压制只会削弱信任。"
+      },
+      "en": {
+        "q": "A rumour is spreading through the flood camp: 'The dam upstream has cracked and will collapse tonight.' You've checked: engineers inspected it at 3 pm, it's sound, and the water is falling; the rumour comes from an old photo of a different dam. You're putting out a notice and a broadcast. Which approach is best?",
+        "options": [
+          "Lead with a big headline, 'THE DAM WILL NOT COLLAPSE!', then list the engineers' findings and all the reasons below it",
+          "Don't mention the rumour at all; just post today's water-level table as usual, so that the debunking doesn't spread it any further than it has gone",
+          "Announce that anyone who repeats the rumour will lose their food ration, using strict discipline to stop it at once",
+          "Fact first (3 pm inspection: dam sound, water falling), mention the rumour once and why it's wrong (old photo), then repeat the fact"
+        ],
+        "explain": "The Debunking Handbook (2020) recommends fact–myth–fallacy–fact: open with a clear, punchy fact, mention the myth once and flag it as false, explain why it's wrong, then repeat the fact; CDC crisis communication principles add what to do next and when the next update comes. Making the myth the headline helps people remember the myth, silence leaves an information vacuum, and punishment erodes trust."
+      }
+    }
+  ]
+}

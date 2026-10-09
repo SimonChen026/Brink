@@ -1,0 +1,7674 @@
+{
+  "id": "icebound",
+  "hardship": 1.5,
+  "rescues": ["army_arrives", "road_opens", "xie_village"],
+  "rescueAfter": 14,
+  "version": 1,
+  "title": "冰封",
+  "subtitle": "高速雪困",
+  "tagline": "春运路上，冻雨把京珠高速封成了一面冰。车里有暖风，也有看不见的一氧化碳。",
+  "inspiration": "原型：2008 年 1 月中旬到 2 月初的南方低温雨雪冰冻灾害。正赶上春运，连日的冻雨把京珠高速湖南郴州段封成了冰道，上万辆车在路上一困就是好几天；郴州一带的输电铁塔被冰压塌，城里停电停水十来天。解放军、武警、交警和养路工人用钢钎、十字镐一寸一寸地凿冰，撒盐撒沙；沿线的村民挑着担子爬上路堑送饭送水，也有人把一碗泡面卖到十几二十块。场景里的人物和他们的遭遇都是虚构的。",
+  "modelNotes": [
+    "冻雨：0°C 上下的雨，落到哪里就冻在哪里。衣服湿了体感要低 6°C；湿着坐进不开暖风的车里，体温会一点点往下掉，饿着、累着的人掉得更快。",
+    "怠速开暖风：大巴一小时烧两三升柴油，小车一小时一升多汽油。几辆车轮流开，12 个小时大约烧掉 12 升。开着暖风，车里能比外面暖和十度以上，湿衣服也干得快。",
+    "一氧化碳：排气管口被冰糊住、车窗关得死死的，尾气就会倒灌进车里。一氧化碳没有颜色也没有气味，和血红蛋白结合的能力是氧气的两百多倍：先是头疼、恶心，睡着的人可能再也醒不过来，老人、孩子和心脏不好的人最危险。开窗缝、清排气管、有人值守，能把风险压下去一大截。",
+    "冰面：路面、护栏和路堑上全是冰。在外面干活随时可能摔伤；冻雨里断枝会从坡上砸下来；坡上的车刹不住，会往下溜。",
+    "抢通：武警赶到之前，只有零星的养路工人在凿冰；武警到了以后，凿冰撒盐快得多。可冻雨一下，路面又会结上一层。",
+    "砂糖橘：一公斤大约 360 千卡、六百多毫升水分。能顶饿、能解渴，可一个人一顿吃不了太多，冰凉的水果吃下去，身上也更冷。"
+  ],
+  "difficulty": 3,
+  "accent": "#9FC3D6",
+  "icon": "car.fill",
+  "briefing": [
+    "2008 年 1 月 26 日，腊月十九，傍晚六点。京珠高速湖南郴州段，往北的车流在一段山区上坡上彻底停住了。冻雨已经下了好几天，路面结着一层透明的冰，前面的车打着双闪，一辆挨一辆，一直排到弯道那头看不见的地方。",
+    "停在一起的是一辆开往湖北的卧铺大巴、一辆拉砂糖橘的半挂车、一辆黑色帕萨特和一辆银色小轿车。大巴司机下午说去前面收费站问情况，带走了一半乘客，再也没回来。留下来的六个大人、一个四岁的孩子、一位心脏不好的老人，还有半挂车驾驶室里的一条狗，现在只能靠彼此。",
+    "车里有暖风，可大巴油箱里的柴油只剩小半箱；吃的只有各人包里带的年货和零食。手机信号时有时无。收音机里说，湖南境内的京珠高速已经全线封闭。离除夕还有十一天。"
+  ],
+  "setting": {
+    "location": "京珠高速湖南郴州段，一段山区上坡（具体地点是虚构的）",
+    "altitude": 650,
+    "date": "2008 年 1 月 26 日（腊月十九）傍晚",
+    "description": "往北的两条车道和应急车道全堵死了。右边是挂满冰凌的护栏，护栏外是十几米高的路堑，路堑底下是坳上村；左边隔着中央隔离带，南行的车道也一样堵着。"
+  },
+  "clock": {
+    "roundHours": 12,
+    "startHour": 18,
+    "maxRounds": 16,
+    "workHours": 4,
+    "roundLabel": "被困第{day}天"
+  },
+  "climate": {
+    "tempHigh": -0.5,
+    "tempLow": -7,
+    "drift": 0.15,
+    "noise": 1.0,
+    "solar": 3,
+    "initialWeather": "freezing_rain",
+    "weather": {
+      "freezing_rain": {
+        "name": "冻雨",
+        "icon": "cloud.sleet",
+        "temp": 0,
+        "ampScale": 0.35,
+        "wind": 15,
+        "visibility": 0.5,
+        "precip": 1,
+        "sun": 0.05,
+        "wet": true,
+        "outdoorRisk": 0.09,
+        "desc": "雨落在哪儿就冻在哪儿：车窗、电线、树枝、路面。每个人的头发上都挂着冰碴。",
+        "next": {
+          "freezing_rain": 0.5,
+          "heavy_ice": 0.16,
+          "fog": 0.12,
+          "overcast": 0.18,
+          "thaw": 0.04
+        }
+      },
+      "heavy_ice": {
+        "name": "大冻雨",
+        "icon": "cloud.hail",
+        "temp": -1,
+        "ampScale": 0.3,
+        "wind": 25,
+        "visibility": 0.3,
+        "precip": 2,
+        "sun": 0,
+        "wet": true,
+        "outdoorRisk": 0.15,
+        "desc": "冻雨又密又急。坡上不时传来咔嚓咔嚓的声音，是竹子和树枝被冰压断了。",
+        "next": {
+          "heavy_ice": 0.32,
+          "freezing_rain": 0.48,
+          "fog": 0.1,
+          "overcast": 0.1
+        }
+      },
+      "fog": {
+        "name": "冻雾",
+        "icon": "cloud.fog",
+        "temp": -0.5,
+        "ampScale": 0.4,
+        "wind": 4,
+        "visibility": 0.2,
+        "precip": 0,
+        "sun": 0.1,
+        "wet": false,
+        "outdoorRisk": 0.06,
+        "desc": "雾浓得看不清十米外的车，树枝和护栏上结满了雾凇。",
+        "next": {
+          "fog": 0.32,
+          "freezing_rain": 0.3,
+          "overcast": 0.3,
+          "thaw": 0.08
+        }
+      },
+      "overcast": {
+        "name": "阴冷",
+        "icon": "cloud",
+        "temp": 0,
+        "ampScale": 0.5,
+        "wind": 10,
+        "visibility": 0.7,
+        "precip": 0,
+        "sun": 0.2,
+        "wet": false,
+        "outdoorRisk": 0.05,
+        "desc": "雨停了，天还是铅灰色的。冰一点也没有要化的意思。",
+        "next": {
+          "overcast": 0.4,
+          "freezing_rain": 0.33,
+          "fog": 0.1,
+          "thaw": 0.17
+        }
+      },
+      "thaw": {
+        "name": "转晴",
+        "icon": "sun.haze",
+        "temp": 3,
+        "ampScale": 1.0,
+        "wind": 6,
+        "visibility": 1.0,
+        "precip": 0,
+        "sun": 0.7,
+        "wet": false,
+        "outdoorRisk": 0.04,
+        "desc": "云缝里漏下一点太阳。路面上的冰开始发白、发软，护栏上的冰溜子往下滴水。",
+        "next": {
+          "thaw": 0.45,
+          "overcast": 0.4,
+          "freezing_rain": 0.15
+        }
+      }
+    }
+  },
+  "shelter": {
+    "name": "大巴和小车",
+    "insulation": 2.5,
+    "windProof": 0.9,
+    "integrity": 85,
+    "decay": 0.9,
+    "stormDecay": 3,
+    "bedding": 0.25,
+    "shade": true,
+    "wet": false,
+    "fire": {
+      "resource": "fuel",
+      "perRound": 24,
+      "heat": 11,
+      "label": "火（发动机暖风）"
+    }
+  },
+  "rations": {
+    "food": [
+      0,
+      400,
+      800,
+      1200,
+      1600,
+      2000
+    ],
+    "water": [
+      0.5,
+      1,
+      1.5,
+      2,
+      2.5
+    ],
+    "defaultFood": 3,
+    "defaultWater": 3
+  },
+  "physiology": {
+    "infectionRisk": 1.0,
+    "altitude": 650
+  },
+  "resources": [
+    {
+      "id": "food",
+      "name": "吃的",
+      "unit": "千卡",
+      "initial": 4500,
+      "kind": "food",
+      "desc": "各人包里的饼干、方便面、卤蛋，还有带回家过年的腊肠和年糕。"
+    },
+    {
+      "id": "water",
+      "name": "饮用水",
+      "unit": "升",
+      "initial": 8,
+      "kind": "water",
+      "decimals": 1,
+      "desc": "几瓶矿泉水、两个保温杯，还有化开的冰水。"
+    },
+    {
+      "id": "oranges",
+      "name": "砂糖橘",
+      "unit": "公斤",
+      "initial": 0,
+      "kind": "food",
+      "decimals": 0,
+      "desc": "从半挂车上搬下来的砂糖橘。每人每回合大约吃一公斤：约 360 千卡、六百多毫升水分，吃下去身上发凉。"
+    },
+    {
+      "id": "fuel",
+      "name": "车里的油",
+      "unit": "升",
+      "initial": 62,
+      "kind": "fuel",
+      "decimals": 1,
+      "desc": "大巴油箱里剩下的柴油，加上小车里的汽油。怠速开暖风，12 个小时大约要烧掉 12 升。"
+    },
+    {
+      "id": "wood",
+      "name": "柴火",
+      "unit": "捆",
+      "initial": 0,
+      "kind": "material",
+      "decimals": 1,
+      "desc": "被冰压断的树枝和竹子、拆开的木货板。湿的，得靠火桶慢慢烧。"
+    },
+    {
+      "id": "cash",
+      "name": "公用的钱",
+      "unit": "元",
+      "initial": 200,
+      "kind": "material",
+      "desc": "大家凑出来的零钱，下路堑跟村民买东西用。"
+    },
+    {
+      "id": "battery",
+      "name": "手机电量",
+      "unit": "格",
+      "initial": 5,
+      "kind": "material",
+      "desc": "几部手机加起来还剩的电。开着发动机的时候能用车充充一点。"
+    },
+    {
+      "id": "medkit",
+      "name": "急救用品",
+      "unit": "份",
+      "initial": 2,
+      "kind": "medical",
+      "desc": "大巴上的急救箱和曾丽娟随身带的小药包：纱布、碘伏、创可贴、弹力绷带。"
+    },
+    {
+      "id": "antibiotics",
+      "name": "抗生素",
+      "unit": "剂",
+      "initial": 0,
+      "kind": "medical"
+    }
+  ],
+  "vars": [
+    {
+      "id": "ice",
+      "name": "路面冰层",
+      "initial": 70,
+      "min": 0,
+      "max": 100,
+      "show": true,
+      "format": "level",
+      "levels": [
+        "只剩冰碴",
+        "一层薄冰",
+        "结实的冰面",
+        "厚厚的冰壳"
+      ],
+      "desc": "冻雨一下就厚一层。抢修队凿冰、撒盐，出太阳的时候才会变薄。"
+    },
+    {
+      "id": "clear",
+      "name": "抢通进度",
+      "initial": 0,
+      "min": 0,
+      "max": 100,
+      "show": true,
+      "format": "percent",
+      "desc": "前面的抢修队一路凿冰过来，离这里还有多远。到 100%，车就能动了。"
+    },
+    {
+      "id": "co",
+      "name": "车里的一氧化碳",
+      "initial": 8,
+      "min": 0,
+      "max": 100,
+      "show": false,
+      "desc": "开着暖风、排气管口结冰、车窗关死的时候，会一夜一夜地积起来。"
+    },
+    {
+      "id": "relief",
+      "name": "外面的救援",
+      "initial": 0,
+      "min": 0,
+      "max": 100,
+      "show": false,
+      "desc": "部队和抢险队伍往这一段赶的进度。到 100，武警就到了。"
+    },
+    {
+      "id": "news",
+      "name": "外界关注",
+      "initial": 0,
+      "min": 0,
+      "max": 100,
+      "show": false,
+      "desc": "外面有多少人知道这一段路上的情形。"
+    },
+    {
+      "id": "price",
+      "name": "泡面的价钱",
+      "initial": 0,
+      "min": 0,
+      "max": 30,
+      "unit": " 元",
+      "show": false,
+      "desc": "路堑底下的村民卖一碗泡面要多少钱。"
+    }
+  ],
+  "pools": {
+    "jam": {
+      "name": "前前后后堵着的车",
+      "items": [
+        {
+          "res": "food",
+          "amount": [
+            300,
+            800
+          ],
+          "weight": 6,
+          "stock": 9,
+          "text": "一个湖北老乡从车窗里塞出来几包饼干和两桶泡面"
+        },
+        {
+          "res": "water",
+          "amount": [
+            1,
+            2.5
+          ],
+          "weight": 5,
+          "stock": 7,
+          "text": "一辆私家车的后备箱里有半箱矿泉水，车主匀了几瓶"
+        },
+        {
+          "res": "fuel",
+          "amount": [
+            4,
+            8
+          ],
+          "weight": 3,
+          "stock": 4,
+          "text": "一个大货司机答应匀几升柴油，用水管吸出来装了一桶"
+        },
+        {
+          "res": "wood",
+          "amount": [
+            1,
+            2
+          ],
+          "weight": 3,
+          "stock": 6,
+          "text": "一辆拉家具的货车上拆下来几块木货板"
+        },
+        {
+          "res": "medkit",
+          "amount": [
+            1,
+            1
+          ],
+          "weight": 1,
+          "stock": 1,
+          "text": "后面一辆大巴上有个乡村医生，给了一卷纱布和一瓶碘伏"
+        },
+        {
+          "res": "antibiotics",
+          "amount": [
+            2,
+            3
+          ],
+          "weight": 1,
+          "stock": 1,
+          "text": "一个跑医药的业务员送了两盒阿莫西林"
+        },
+        {
+          "weight": 2,
+          "stock": 4,
+          "text": "一件别人多带的旧毛衣，当场就套上了",
+          "effects": [
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "clo",
+              "add": 0.3
+            }
+          ]
+        },
+        {
+          "weight": 2,
+          "stock": 3,
+          "text": "前面车上的人说，收费站那边已经开来了铲车",
+          "effects": [
+            {
+              "e": "var",
+              "id": "relief",
+              "add": 5
+            }
+          ]
+        },
+        {
+          "weight": 4,
+          "text": "问了一圈，大家都缺吃少喝，没人有多余的"
+        },
+        {
+          "weight": 1,
+          "stock": 2,
+          "text": "在两辆车中间的冰面上滑了一跤",
+          "effects": [
+            {
+              "e": "injure",
+              "who": "actor",
+              "kind": "sprain",
+              "severity": "randRange(18, 32)",
+              "part": "手腕"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "projects": [
+    {
+      "id": "fire_barrel",
+      "name": "火桶",
+      "desc": "把路边施工队丢下的一只空油桶劈开、打眼，在大巴背风的一侧架起来烧断枝。有了它能烘衣服、化冰烧水，人也能凑过去暖一暖。一夜要烧 2 捆柴。",
+      "work": 10,
+      "onComplete": [
+        {
+          "e": "flag",
+          "id": "barrel"
+        },
+        {
+          "e": "stat",
+          "who": "all",
+          "stat": "morale",
+          "add": 4
+        },
+        {
+          "e": "log",
+          "text": "火桶立起来了。第一把湿树枝冒了半天白烟，浇上一点柴油，呼的一声着了。几个人伸着手围过去，谁也没说话。"
+        }
+      ]
+    },
+    {
+      "id": "tire_ropes",
+      "name": "草绳防滑",
+      "desc": "学着别的司机，用草绳和铁丝把大巴和小车的驱动轮一圈圈缠上。路一通，车才爬得上这段冰坡，不会往下溜。",
+      "work": 18,
+      "onComplete": [
+        {
+          "e": "flag",
+          "id": "ropes"
+        },
+        {
+          "e": "stat",
+          "who": "all",
+          "stat": "morale",
+          "add": 3
+        },
+        {
+          "e": "log",
+          "text": "几辆车的驱动轮都缠上了草绳和铁丝。有人踢了踢轮胎：“这下行了，路一通就能走。”"
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "niu",
+      "name": "牛长海",
+      "gender": "男",
+      "age": 47,
+      "role": "跑长途的半挂车司机",
+      "bio": "河南周口人，开了二十年长途。车上是十五吨广东四会的砂糖橘，一半是赊来的货，要赶在年前拉到郑州的批发市场。驾驶室里养着一条叫虎子的土狗，油箱里是满满一箱柴油。",
+      "personality": "精明、讲义气，可更讲钱；认死理，脾气上来谁也劝不住。心疼他的货，也心疼人，只是嘴上从来不认。",
+      "voice": "河南话，“中不中”“俺”“咋弄嘞”，急了就拍方向盘。",
+      "secret": "车厢最里头、橘子筐后面压着二十箱烟花爆竹，是帮老乡捎的私货，一箱能挣一百块。你没有危险品运输证，被查到要罚款扣车；离火太近，还可能出大事。",
+      "secretReveal": [
+        {
+          "e": "trust",
+          "from": "others",
+          "to": "actor",
+          "add": -12
+        },
+        {
+          "e": "flag",
+          "id": "fireworks_known"
+        }
+      ],
+      "goal": {
+        "text": "这车橘子不能让人白拿",
+        "check": "self.alive && !flag.oranges_taken && !flag.oranges_given"
+      },
+      "weight": 78,
+      "fat": 0.25,
+      "clo": 1.6,
+      "skills": {
+        "medical": 0,
+        "survival": 2,
+        "strength": 2,
+        "technical": 3,
+        "navigation": 2,
+        "social": 1
+      },
+      "items": {
+        "cargo": 1500,
+        "diesel": 160,
+        "fireworks": 20
+      },
+      "stash": {
+        "food": 1500
+      },
+      "traits": {
+        "selfish": 0.6,
+        "brave": 0.55,
+        "trusting": 0.35,
+        "ambition": 0.5,
+        "temper": 0.65
+      },
+      "relations": {
+        "huzi": 60,
+        "luo": -10
+      },
+      "epilogues": [
+        {
+          "when": "self.dead",
+          "text": "牛长海没能把那车橘子拉到郑州。半挂车后来被拖车拖走了，车厢里的橘子冻成了一块一块的，倒在了郴州郊外的垃圾场。老家的人说，他本来打算跑完这一趟就不跑了。"
+        },
+        {
+          "when": "self.alive && flag.oranges_given",
+          "text": "那车橘子，牛长海最后一箱一箱地分给了路上的人。回到周口，赊的货款他还了两年。有人问他亏不亏，他说：“亏是亏，可那几天，整条路上的人都管俺叫‘橘子哥’。”"
+        },
+        {
+          "when": "self.alive && flag.oranges_taken",
+          "text": "车厢是被人撬开的，橘子一筐一筐被搬走。牛长海后来逢人就讲那几天的事，讲到撬车厢那一下，总要停下来抽口烟。他再也没跑过京珠线。"
+        },
+        {
+          "when": "self.alive && self.revealed",
+          "text": "烟花爆竹的事传到了交警那里。牛长海挨了罚款，二十箱货全被没收。那年的年三十，村里放的鞭炮，没有一挂是他拉回来的。"
+        },
+        {
+          "when": "self.alive",
+          "text": "腊月二十八，牛长海的半挂车开进了郑州的批发市场。橘子冻坏了三成，剩下的一斤少卖了五毛，他年三十晚上才进家门，进门先喝了一大碗热汤。"
+        },
+        {
+          "when": "true",
+          "text": "牛长海被赶下了大巴，回到自己的驾驶室里，抱着虎子过了几夜。路通的那天，他一个人把半挂车开了出去，没有回头。"
+        }
+      ]
+    },
+    {
+      "id": "luo",
+      "name": "罗振华",
+      "gender": "男",
+      "age": 41,
+      "role": "在东莞开五金厂的老板",
+      "bio": "湖南湘潭人，在东莞开了八年五金厂。一个人开着黑色帕萨特回湘潭过年，油箱是满的，后备箱里有好烟好酒，还有一只从不离手的黑色密码箱。",
+      "personality": "能说会道，爱面子，习惯拿钱摆平事情；骨子里怕吃亏，也怕死。对谁都客客气气，可自己的东西寸步不让。",
+      "voice": "湘潭口音的普通话，开口就是“兄弟”“这样子咯”“钱不是问题”。",
+      "secret": "厂子年前就撑不下去了。你把账上最后的十八万取成现金锁在密码箱里，三十多个工人的工钱一分没发，手机一关就上了路。",
+      "secretReveal": [
+        {
+          "e": "trust",
+          "from": "others",
+          "to": "actor",
+          "add": -18
+        },
+        {
+          "e": "trust",
+          "from": "tian",
+          "to": "actor",
+          "add": -15
+        },
+        {
+          "e": "trust",
+          "from": "dajun",
+          "to": "actor",
+          "add": -25
+        },
+        {
+          "e": "flag",
+          "id": "boss_exposed"
+        }
+      ],
+      "goal": {
+        "text": "带着密码箱，开着自己的车回家",
+        "check": "self.alive && self.item.case >= 1 && !flag.car_abandoned"
+      },
+      "weight": 82,
+      "fat": 0.27,
+      "clo": 1.3,
+      "skills": {
+        "medical": 0,
+        "survival": 0,
+        "strength": 1,
+        "technical": 1,
+        "navigation": 1,
+        "social": 3
+      },
+      "items": {
+        "case": 1,
+        "cash": 18,
+        "tank": 45
+      },
+      "stash": {
+        "food": 1200
+      },
+      "traits": {
+        "selfish": 0.75,
+        "brave": 0.3,
+        "trusting": 0.3,
+        "ambition": 0.7,
+        "temper": 0.4
+      },
+      "relations": {
+        "niu": -5
+      },
+      "epilogues": [
+        {
+          "when": "self.dead",
+          "text": "罗振华没能回到湘潭。交警清点滞留车辆的时候打开了那只密码箱，里面的十八万后来被法院判给了他厂里的三十多个工人。工钱晚了一年，一分不少。"
+        },
+        {
+          "when": "self.alive && flag.wages_paid",
+          "text": "罗振华在路上就给厂里的工人打了电话。回到东莞，他照着工资条，一个一个把密码箱里的钱发了下去。剩下的，刚够把厂门锁上。"
+        },
+        {
+          "when": "self.alive && self.revealed",
+          "text": "欠薪的事传开了。过完年，三十多个工人拿着欠条在湘潭找到了他家。罗振华把帕萨特卖了，钱还是不够，又写了一张新的欠条。"
+        },
+        {
+          "when": "self.alive && self.goal",
+          "text": "罗振华开着帕萨特回到湘潭，正赶上年三十。他给每个亲戚都包了红包，酒桌上讲起高速上的那几天，讲到谁谁谁问他借过油。密码箱里的钱是哪来的，他一直没跟人说。"
+        },
+        {
+          "when": "self.alive",
+          "text": "罗振华回了湘潭，再也没回东莞。他在县城开了一家小小的五金店，自己守店，一个工人也不请。"
+        },
+        {
+          "when": "true",
+          "text": "被赶下车以后，罗振华在帕萨特里坐了很久，后来沿着应急车道往前走了。有人在收费站的临时安置点见过他，怀里抱着一只黑色的密码箱。"
+        }
+      ]
+    },
+    {
+      "id": "tian",
+      "name": "田秀芬",
+      "gender": "女",
+      "age": 34,
+      "role": "东莞电子厂的流水线女工",
+      "bio": "湖北孝感人，在东莞的电子厂做了九年流水线。跟丈夫胡大军带着四岁的女儿丫丫，坐卧铺大巴回孝感过年。儿子在老家跟着爷爷奶奶，两年没见了。",
+      "personality": "能吃苦，精打细算，平时不爱出头；可一碰到孩子的事，什么都豁得出去。对有钱人有一种说不出的提防。",
+      "voice": "孝感话，“搞么事”“冇得”“伢”，说话快，嗓门不大。",
+      "secret": "你棉袄的夹层里缝着两万六千块钱，是两口子一年的积蓄，回去要给儿子交学费、给公公治腿。你跟所有人都说，身上只剩几十块了。",
+      "secretReveal": [
+        {
+          "e": "trust",
+          "from": "others",
+          "to": "actor",
+          "add": -4
+        },
+        {
+          "e": "flag",
+          "id": "savings_known"
+        }
+      ],
+      "goal": {
+        "text": "把丫丫平平安安带回家，攒下的钱不能丢",
+        "check": "self.alive && alive.yaya && self.item.savings >= 20"
+      },
+      "weight": 50,
+      "fat": 0.27,
+      "clo": 1.1,
+      "skills": {
+        "medical": 0,
+        "survival": 2,
+        "strength": 1,
+        "technical": 1,
+        "navigation": 0,
+        "social": 1
+      },
+      "items": {
+        "savings": 26
+      },
+      "stash": {
+        "food": 600,
+        "water": 1
+      },
+      "traits": {
+        "selfish": 0.5,
+        "brave": 0.45,
+        "trusting": 0.4,
+        "ambition": 0.3,
+        "temper": 0.5
+      },
+      "relations": {
+        "yaya": 80,
+        "dajun": 40,
+        "luo": -5
+      },
+      "epilogues": [
+        {
+          "when": "self.dead && alive.dajun",
+          "text": "田秀芬没能回到孝感。胡大军回了老家，那件缝着钱的棉袄，他一直没舍得拆。儿子问妈妈去哪了，他说：“妈妈还在路上。”"
+        },
+        {
+          "when": "self.dead",
+          "text": "田秀芬没能回到孝感。老家的人后来收到了她的棉袄，夹层里的钱一张不少，针脚密密的。"
+        },
+        {
+          "when": "self.alive && self.goal",
+          "text": "腊月二十九，一家人进了孝感老家的门。儿子躲在奶奶身后，不肯叫妈。田秀芬从棉袄里拆出那两万多块钱，一张一张摊在床上，数了三遍。"
+        },
+        {
+          "when": "self.alive && !alive.yaya",
+          "text": "丫丫没能跟着她回家。田秀芬过完年没有回东莞，在镇上的鞋厂找了份工，一天十二个小时，晚上回家陪儿子写作业。"
+        },
+        {
+          "when": "self.alive",
+          "text": "攒的钱花掉了一截，田秀芬心疼了很久。可年三十晚上，一家人围着火盆，丫丫在她怀里睡着了，她觉得这个年还是值的。"
+        },
+        {
+          "when": "true",
+          "text": "田秀芬被赶下了车。她在后面一辆大巴的过道里蹲了几夜，天天顺着车流走回来，隔着车窗看一眼丫丫。"
+        }
+      ]
+    },
+    {
+      "id": "yi",
+      "name": "易凡",
+      "gender": "男",
+      "age": 20,
+      "role": "新闻系大三学生",
+      "bio": "湖南益阳人，在中山大学读新闻系大三。寒假在广州一家报社实习，搭上这趟回乡的卧铺大巴，说是顺路回家，其实是想写一篇春运的稿子。手机还剩两格电。",
+      "personality": "热心，话多，好奇，什么都想记下来；有点书生气，看不惯不公平的事，爱讲道理，真要动手就发慌。",
+      "voice": "带益阳口音的普通话，爱说“我查过”“按道理讲”“这个要记下来”。",
+      "secret": "你一路都在用 MP3 的录音功能偷偷录大家说的话，还偷拍了不少照片。编辑说过：写得够惨，就上头版。",
+      "secretReveal": [
+        {
+          "e": "trust",
+          "from": "others",
+          "to": "actor",
+          "add": -10
+        },
+        {
+          "e": "stat",
+          "who": "actor",
+          "stat": "morale",
+          "add": -6
+        },
+        {
+          "e": "flag",
+          "id": "recorder_known"
+        }
+      ],
+      "goal": {
+        "text": "把这里的事写成稿子发出去",
+        "check": "self.alive && flag.story_filed"
+      },
+      "weight": 61,
+      "fat": 0.14,
+      "clo": 1.1,
+      "skills": {
+        "medical": 1,
+        "survival": 0,
+        "strength": 1,
+        "technical": 2,
+        "navigation": 1,
+        "social": 2
+      },
+      "items": {
+        "phone": 1,
+        "recorder": 1
+      },
+      "traits": {
+        "selfish": 0.3,
+        "brave": 0.55,
+        "trusting": 0.6,
+        "ambition": 0.65,
+        "temper": 0.45
+      },
+      "relations": {
+        "tian": 10,
+        "luo": -5
+      },
+      "epilogues": [
+        {
+          "when": "self.dead",
+          "text": "易凡没能回到益阳。报社在他的 MP3 里找到几十段录音，最后一段是半夜录的，只有风声、发动机的声音和几个人睡着时的呼吸。那篇稿子，后来是他的编辑替他写完的。"
+        },
+        {
+          "when": "self.exiled",
+          "text": "易凡被赶下了车，一个人顺着车流往收费站走。他一路走一路问，一路记，走到收费站的时候，本子已经写满了。"
+        },
+        {
+          "when": "self.alive && self.goal",
+          "text": "易凡的稿子登在了报纸的第七版，标题是《冰道上的六天》。他把每个人的名字都改了，可车上的人一看就知道写的是谁。后来有几个人给报社写信，想要他的电话。"
+        },
+        {
+          "when": "self.alive && self.revealed",
+          "text": "录音的事让易凡很长时间都抬不起头。他把 MP3 里的东西全删了，稿子也没写。毕业以后他没进报社，去了一个给农民工做法律援助的公益机构。"
+        },
+        {
+          "when": "self.alive",
+          "text": "易凡回到益阳，那篇稿子写了改、改了写，最后没有发出去。他把录音存进一个文件夹，起名叫“腊月十九”。"
+        },
+        {
+          "when": "true",
+          "text": "易凡后来很少说起那几天。"
+        }
+      ]
+    },
+    {
+      "id": "zeng",
+      "name": "曾丽娟",
+      "gender": "女",
+      "age": 31,
+      "role": "广州一家医院的急诊科护士",
+      "bio": "长沙人，在广州一家医院的急诊科做了八年护士。开着自己的银色小车，带退休的父亲回长沙过年。父亲有冠心病，前年装过支架。小车的油不多了。",
+      "personality": "冷静，手脚利落，说话直；在急诊科见惯了生死，可一碰到父亲的事就乱了方寸。",
+      "voice": "长沙话，“咯是”“冇得事”“莫慌咯”；说起医学上的事又快又准。",
+      "secret": "你的双肩包里有一小袋从科里带出来的药：阿司匹林、两盒头孢、几支氨茶碱，还有一板备用的硝酸甘油。你打算全都留给父亲，没告诉任何人。",
+      "secretReveal": [
+        {
+          "e": "trust",
+          "from": "others",
+          "to": "actor",
+          "add": -6
+        },
+        {
+          "e": "flag",
+          "id": "drugs_known"
+        },
+        {
+          "e": "if",
+          "when": "actor.item.drugs >= 1",
+          "then": [
+            {
+              "e": "item",
+              "who": "actor",
+              "id": "drugs",
+              "add": -1
+            },
+            {
+              "e": "res",
+              "id": "antibiotics",
+              "add": 3
+            },
+            {
+              "e": "res",
+              "id": "medkit",
+              "add": 1
+            }
+          ]
+        }
+      ],
+      "goal": {
+        "text": "让父亲活着回长沙过年",
+        "check": "self.alive && alive.deming"
+      },
+      "weight": 54,
+      "fat": 0.26,
+      "clo": 1.2,
+      "skills": {
+        "medical": 3,
+        "survival": 0,
+        "strength": 0,
+        "technical": 1,
+        "navigation": 1,
+        "social": 1
+      },
+      "items": {
+        "drugs": 1
+      },
+      "traits": {
+        "selfish": 0.45,
+        "brave": 0.6,
+        "trusting": 0.45,
+        "ambition": 0.4,
+        "temper": 0.4
+      },
+      "relations": {
+        "deming": 70
+      },
+      "epilogues": [
+        {
+          "when": "self.dead",
+          "text": "曾丽娟没能把父亲送回长沙。医院的同事来郴州接她，在她的双肩包里找到一个小本子，一行一行记着车上每个人的血压、体温和用过的药。"
+        },
+        {
+          "when": "self.exiled",
+          "text": "曾丽娟被赶下了车。她在后面的车上给人看了三天病，没人知道她叫什么，只知道是个长沙口音的护士。"
+        },
+        {
+          "when": "self.alive && self.goal",
+          "text": "正月初一，曾老师在长沙的家里给女儿量了一回血压，说：“你看，比我的还高。”过完年，曾丽娟申请去了医院的灾害救援队。"
+        },
+        {
+          "when": "self.alive && !alive.deming",
+          "text": "父亲是在高速上走的。曾丽娟把他的老花镜和那板没吃完的硝酸甘油放进一个铁盒子里。回到急诊科，再遇到胸痛的老人，她总要多守一会儿。"
+        },
+        {
+          "when": "true",
+          "text": "曾丽娟后来考了急救培训师的证，每年冬天都去高速公路的服务区，给司机们讲一氧化碳。"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "id": "dajun",
+      "name": "胡大军",
+      "gender": "男",
+      "age": 36,
+      "role": "田秀芬的丈夫，钢筋工",
+      "bio": "在东莞的工地上扎了十年钢筋，手上全是老茧。话不多，力气大，喝了酒脾气就上来。",
+      "personality": "闷头干活，护着老婆孩子，看不惯有钱人摆谱。",
+      "voice": "孝感话，“搞么事”“我去”，一句话能少说就少说。",
+      "weight": 72,
+      "fat": 0.15,
+      "clo": 1.1,
+      "skills": {
+        "medical": 0,
+        "survival": 1,
+        "strength": 3,
+        "technical": 1,
+        "navigation": 0,
+        "social": 0
+      },
+      "relations": {
+        "tian": 40,
+        "yaya": 80,
+        "luo": -10
+      },
+      "autoTask": "firewood",
+      "lines": [
+        "柴我去捡，你们歇着。",
+        "丫丫，爸爸给你焐焐手。",
+        "工地上零下也干过活，这不算么事。",
+        "等回了孝感，先睡它三天。",
+        "（往手上哈了口气，又去敲冰）"
+      ],
+      "epilogues": [
+        {
+          "when": "self.alive && alive.yaya",
+          "text": "胡大军过完年没再去东莞，在孝感的工地上接着扎钢筋，骑摩托离家半个钟头。丫丫上幼儿园那天，是他用摩托送去的。"
+        },
+        {
+          "when": "self.alive",
+          "text": "胡大军回到孝感，在村口的小卖部里坐了一整个正月，一句话也不说，一瓶接一瓶地喝。"
+        },
+        {
+          "when": "true",
+          "text": "胡大军没能回家。工地上的工友凑了钱，把他送回了孝感。"
+        }
+      ]
+    },
+    {
+      "id": "yaya",
+      "name": "丫丫",
+      "gender": "女",
+      "age": 4,
+      "role": "田秀芬和胡大军的女儿",
+      "bio": "四岁，在东莞出生，还没回过老家。穿一件粉红色的棉袄，揣着一个要送给哥哥的变形金刚。",
+      "personality": "爱说话，怕黑，困了就哭。",
+      "voice": "小孩子说话，夹着几句在东莞学来的粤语。",
+      "weight": 16,
+      "fat": 0.2,
+      "clo": 1.8,
+      "skills": {
+        "medical": 0,
+        "survival": 0,
+        "strength": 0,
+        "technical": 0,
+        "navigation": 0,
+        "social": 0
+      },
+      "tags": [
+        "child"
+      ],
+      "relations": {
+        "tian": 80,
+        "dajun": 70,
+        "huzi": 30
+      },
+      "lines": [
+        "妈妈，哥哥认得我吗？",
+        "冰冰好亮，像玻璃一样。",
+        "我不冷，我把手放在虎子身上了。",
+        "爷爷，你的药是糖吗？",
+        "什么时候到家呀？"
+      ],
+      "epilogues": [
+        {
+          "when": "self.alive",
+          "text": "丫丫第一次回到孝感老家。哥哥把她领到田埂上，指着结了冰的水塘说：“比高速上的冰好看吧？”她摇摇头，说高速上的冰更亮。"
+        },
+        {
+          "when": "true",
+          "text": "丫丫没能见到哥哥。那个变形金刚，后来一直摆在老家堂屋的桌子上。"
+        }
+      ]
+    },
+    {
+      "id": "deming",
+      "name": "曾德明",
+      "gender": "男",
+      "age": 68,
+      "role": "退休的中学物理老师，曾丽娟的父亲",
+      "bio": "教了三十多年物理。冠心病，前年装过支架，口袋里总揣着一小瓶硝酸甘油。耳朵有点背，脑子比谁都清楚。",
+      "personality": "爱讲道理，脾气倔，不愿给女儿添麻烦，胸口疼也忍着不说。",
+      "voice": "长沙话，讲起物理来一套一套的。",
+      "weight": 63,
+      "fat": 0.2,
+      "clo": 1.6,
+      "skills": {
+        "medical": 0,
+        "survival": 0,
+        "strength": 0,
+        "technical": 2,
+        "navigation": 1,
+        "social": 2
+      },
+      "items": {
+        "nitro": 6
+      },
+      "relations": {
+        "zeng": 70,
+        "yaya": 20
+      },
+      "lines": [
+        "一氧化碳没颜色、没气味，比空气还轻一点点。窗子要留条缝，莫怕冷。",
+        "冻雨是过冷的雨滴，零度以下还是水，一碰到东西就结冰。",
+        "丽娟，我冇事，你去忙你的。",
+        "盐撒在冰上，冰点就降下去了，所以他们要撒盐。",
+        "（悄悄把手按在胸口上，过了一会儿又放下）"
+      ],
+      "epilogues": [
+        {
+          "when": "self.alive",
+          "text": "曾老师在长沙过了年。正月里他给邻居家的孩子讲冻雨是怎么回事，讲着讲着就讲到了高速上的那几天，讲到一半，停下来喝了口茶。"
+        },
+        {
+          "when": "true",
+          "text": "曾老师没能回到长沙。他教过的学生凑钱，在学校的物理实验室门口挂了一块小牌子：曾德明老师，1962—2000 年在此任教。"
+        }
+      ]
+    },
+    {
+      "id": "huzi",
+      "name": "虎子",
+      "gender": "公",
+      "age": 3,
+      "role": "牛长海养的狗",
+      "bio": "黄黑花的土狗，三岁，跟着牛长海跑了两年长途。夜里睡在驾驶座底下，有人靠近车厢就叫。",
+      "personality": "护主，机灵，见了孩子就摇尾巴。",
+      "voice": "不会说话。冷了就往人怀里钻。",
+      "weight": 18,
+      "fat": 0.18,
+      "clo": 2.2,
+      "skills": {
+        "medical": 0,
+        "survival": 0,
+        "strength": 0,
+        "technical": 0,
+        "navigation": 0,
+        "social": 0
+      },
+      "tags": [
+        "animal"
+      ],
+      "relations": {
+        "niu": 60,
+        "yaya": 30
+      },
+      "lines": [
+        "（趴在半挂车的轮子边上，冲着黑处低低地叫了两声）",
+        "（叼回来一只不知道是谁的手套，放在丫丫脚边）",
+        "（舔着护栏上化下来的冰水）",
+        "（缩成一团挤在火桶边上，毛上的冰碴慢慢化开）"
+      ],
+      "epilogues": [
+        {
+          "when": "self.alive",
+          "text": "虎子跟着回了周口。后来每次出车，它都先跳上驾驶座，坐着等。"
+        },
+        {
+          "when": "true",
+          "text": "虎子没能下高速。有人把它埋在了路堑上面的竹林里，插了一根树枝当记号。"
+        }
+      ]
+    },
+    {
+      "id": "xie",
+      "name": "谢满仓",
+      "gender": "男",
+      "age": 61,
+      "role": "路堑底下坳上村的村民",
+      "bio": "在坳上村种了一辈子田，高速修过来那年，家里的两亩地被征了。这几天他天天挑着担子爬上路堑，卖煮红薯、送开水，一个红薯只要两块钱。",
+      "personality": "实在，热心，看不惯村里那些趁机抬价的人；认得这一带的每一条小路。",
+      "voice": "郴州宜章的土话，外地人听不大懂，就连说带比划。",
+      "weight": 58,
+      "fat": 0.15,
+      "clo": 1.8,
+      "skills": {
+        "medical": 0,
+        "survival": 3,
+        "strength": 1,
+        "technical": 1,
+        "navigation": 3,
+        "social": 1
+      },
+      "joinsLater": true,
+      "autoTask": "melt_ice",
+      "relations": {
+        "yaya": 20
+      },
+      "lines": [
+        "这样的冰，三十年冇见过。",
+        "红薯是自家地里的，钱给不给都要得。",
+        "村里也停电了，水泵抽不上水，都是从井里挑的。",
+        "从这里下去有条小路，冰少一些，跟着我的脚印走。",
+        "（把一捆干稻草塞进火桶底下）"
+      ],
+      "epilogues": [
+        {
+          "when": "self.dead",
+          "text": "谢满仓没能再挑着担子回村。出殡那天，坳上村的人在路堑底下放了一挂鞭炮，高速上的车按了很久的喇叭。"
+        },
+        {
+          "when": "self.alive",
+          "text": "路通以后，谢满仓的担子又挑了好几天，帮着收费站给还没走的人送饭。年后有一辆湖北牌照的大巴特意在坳上村口停了一下，车上的人给他留下一箱孝感麻糖和一面锦旗。"
+        },
+        {
+          "when": "true",
+          "text": "谢满仓后来每天还是挑着担子上路堑，一直挑到最后一辆车开走。"
+        }
+      ]
+    },
+    {
+      "id": "xiang",
+      "name": "向阳",
+      "gender": "男",
+      "age": 19,
+      "role": "武警新兵",
+      "bio": "湘西人，入伍刚一年。这是他第一次出这么远的任务：跟着中队从郴州城边一路凿冰凿上来，手套早就磨破了。",
+      "personality": "腼腆，能扛，见了男的叫“师傅”，见了女的叫“阿姨”。",
+      "voice": "湘西口音，开口之前先立正。",
+      "weight": 66,
+      "fat": 0.13,
+      "clo": 2.0,
+      "skills": {
+        "medical": 1,
+        "survival": 2,
+        "strength": 3,
+        "technical": 0,
+        "navigation": 1,
+        "social": 0
+      },
+      "joinsLater": true,
+      "autoTask": "chip_ice",
+      "relations": {
+        "yaya": 10
+      },
+      "lines": [
+        "师傅，再撑两天，前面已经凿到隧道口了。",
+        "我们中队昨天夜里就在路上睡的，冇事。",
+        "阿姨，这个馒头还是热的，给伢吃。",
+        "（甩了甩冻僵的手，又抡起了十字镐）"
+      ],
+      "epilogues": [
+        {
+          "when": "self.alive",
+          "text": "向阳在京珠高速上凿了十一天冰。归队那天，他把磨破的手套留在了收费站，跟中队一起坐上卡车回了郴州。那年他没回家过年。"
+        },
+        {
+          "when": "true",
+          "text": "向阳没能归队。中队的战友把他的十字镐带回了营房，挂在荣誉室的墙上。"
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "melt_ice",
+      "name": "化冰烧水",
+      "desc": "敲下护栏和车顶上的冰，装进锅和瓶子里化开。火桶烧着的时候能烧开一大锅；只开着暖风，就只能把瓶子塞在出风口和仪表台上慢慢化；两样都没有，只能接一点滴下来的水，手冻得生疼。",
+      "exertion": "light",
+      "outdoor": true,
+      "hours": 3,
+      "max": 3,
+      "effects": [
+        {
+          "e": "if",
+          "when": "flag.bonfire",
+          "then": [
+            {
+              "e": "yield",
+              "id": "water",
+              "base": 6,
+              "skill": "survival",
+              "per": 0.15
+            }
+          ],
+          "else": [
+            {
+              "e": "if",
+              "when": "fire && res.fuel >= 12",
+              "then": [
+                {
+                  "e": "yield",
+                  "id": "water",
+                  "base": 2.5,
+                  "skill": "survival",
+                  "per": 0.1
+                }
+              ],
+              "else": [
+                {
+                  "e": "yield",
+                  "id": "water",
+                  "base": 1.2,
+                  "per": 0
+                },
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "core",
+                  "add": -0.2,
+                  "hidden": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "firewood",
+      "name": "捡断枝",
+      "desc": "爬上路堑，把被冰压断的树枝和竹子拖下来，砍成段。柴是湿的，得靠火桶慢慢烤干。坡上又陡又滑，头顶挂着冰的树枝随时会断。",
+      "exertion": "heavy",
+      "outdoor": true,
+      "hours": 4,
+      "max": 3,
+      "effects": [
+        {
+          "e": "yield",
+          "id": "wood",
+          "base": 1.5,
+          "skill": "survival",
+          "per": 0.25,
+          "weather": {
+            "freezing_rain": 0.85,
+            "heavy_ice": 0.6,
+            "fog": 1.0,
+            "overcast": 1.1,
+            "thaw": 1.2
+          }
+        },
+        {
+          "e": "chance",
+          "p": "0.05 + 0.05 * precip",
+          "then": [
+            {
+              "e": "log",
+              "text": "{actor} 正拖着一根竹子往下走，头顶咔嚓一声，一根挂满冰的树枝砸了下来。"
+            },
+            {
+              "e": "chance",
+              "p": 0.15,
+              "then": [
+                {
+                  "e": "kill",
+                  "who": "actor",
+                  "cause": "被冰压断的树枝砸中"
+                }
+              ],
+              "else": [
+                {
+                  "e": "chance",
+                  "p": 0.5,
+                  "then": [
+                    {
+                      "e": "injure",
+                      "who": "actor",
+                      "kind": "trauma",
+                      "severity": "randRange(30, 55)",
+                      "label": "被树枝砸伤"
+                    }
+                  ],
+                  "else": [
+                    {
+                      "e": "injure",
+                      "who": "actor",
+                      "kind": "laceration",
+                      "severity": "randRange(20, 38)",
+                      "part": "肩膀"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "build_barrel",
+      "name": "做火桶",
+      "desc": "把施工队丢在路边的空油桶劈开、打眼，垫上砖头，在大巴背风的一侧架起来。要一点手艺。火桶立起来以后，一夜要烧掉 2 捆柴。",
+      "exertion": "light",
+      "outdoor": true,
+      "hours": 4,
+      "max": 2,
+      "when": "!done.fire_barrel",
+      "effects": [
+        {
+          "e": "work",
+          "project": "fire_barrel",
+          "base": 4,
+          "skill": "technical",
+          "per": 0.4
+        }
+      ]
+    },
+    {
+      "id": "chip_ice",
+      "name": "帮着凿冰",
+      "desc": "拿扳手、撬棍和捡来的石头，帮养路工人把车轮底下和前面的冰凿开。武警到了以后有十字镐和盐，凿得快得多。在冰面上抡家伙，很容易滑倒。",
+      "exertion": "heavy",
+      "outdoor": true,
+      "hours": 4,
+      "max": 3,
+      "when": "round >= 2",
+      "effects": [
+        {
+          "e": "var",
+          "id": "clear",
+          "add": "(0.8 + 1.7 * flag.army) * actor.efficiency"
+        },
+        {
+          "e": "var",
+          "id": "ice",
+          "add": -2
+        },
+        {
+          "e": "chance",
+          "p": "0.06 + 0.04 * precip",
+          "then": [
+            {
+              "e": "log",
+              "text": "{actor} 一镐抡空，脚下一滑，重重地摔在冰面上。"
+            },
+            {
+              "e": "chance",
+              "p": 0.5,
+              "then": [
+                {
+                  "e": "injure",
+                  "who": "actor",
+                  "kind": "sprain",
+                  "severity": "randRange(20, 35)",
+                  "part": "脚踝"
+                }
+              ],
+              "else": [
+                {
+                  "e": "chance",
+                  "p": 0.6,
+                  "then": [
+                    {
+                      "e": "injure",
+                      "who": "actor",
+                      "kind": "fracture",
+                      "severity": "randRange(28, 48)",
+                      "part": "手腕"
+                    }
+                  ],
+                  "else": [
+                    {
+                      "e": "injure",
+                      "who": "actor",
+                      "kind": "trauma",
+                      "severity": "randRange(30, 55)",
+                      "label": "摔伤"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clear_exhaust",
+      "name": "清排气管、开窗缝",
+      "desc": "把几辆车排气管口的冰碴敲掉、车尾的积冰铲开，再把每扇车窗摇下一指宽的缝。一氧化碳没颜色没气味，等闻到就晚了。只要一个钟头，可得趴在冰水里。",
+      "exertion": "light",
+      "outdoor": true,
+      "hours": 1,
+      "max": 2,
+      "effects": [
+        {
+          "e": "var",
+          "id": "co",
+          "add": -22
+        },
+        {
+          "e": "log",
+          "text": "{actor} 趴在冰水里，把排气管口的冰碴一点点敲掉，又把车窗一扇一扇摇下一条缝。",
+          "vis": "actor"
+        }
+      ]
+    },
+    {
+      "id": "market_buy",
+      "name": "下路堑买吃的",
+      "desc": "顺着结冰的路堑爬下去，跟坳上村的村民买泡面、煮鸡蛋、红薯和开水。一趟大约能买回 1600 千卡吃的和两升多热水，要花五碗泡面的钱（现在一碗 {var.price}）。路堑上全是冰。",
+      "exertion": "light",
+      "outdoor": true,
+      "hours": 3,
+      "max": 2,
+      "when": "flag.market && res.cash >= 5 * var.price",
+      "effects": [
+        {
+          "e": "res",
+          "id": "cash",
+          "add": "-5 * var.price"
+        },
+        {
+          "e": "res",
+          "id": "food",
+          "add": 1600
+        },
+        {
+          "e": "res",
+          "id": "water",
+          "add": 2.5
+        },
+        {
+          "e": "chance",
+          "p": "0.05 + 0.03 * precip",
+          "then": [
+            {
+              "e": "chance",
+              "p": 0.12,
+              "then": [
+                {
+                  "e": "log",
+                  "text": "{actor} 在路堑的冰坡上脚下一滑，一路滑下去十几米，头撞在了坡底的石头上。"
+                },
+                {
+                  "e": "kill",
+                  "who": "actor",
+                  "cause": "从路堑上滑下摔伤"
+                }
+              ],
+              "else": [
+                {
+                  "e": "log",
+                  "text": "回来的路上，{actor} 在路堑的冰坡上一屁股滑了下去，好在开水瓶没碎。"
+                },
+                {
+                  "e": "injure",
+                  "who": "actor",
+                  "kind": "sprain",
+                  "severity": "randRange(18, 34)",
+                  "part": "脚踝"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scrounge",
+      "name": "去前后的车上问问",
+      "desc": "顺着车流往前往后走，挨个敲车窗：打听消息，讨点吃的喝的，用东西换柴油和木头。越往后，能匀出来的越少。",
+      "exertion": "light",
+      "outdoor": true,
+      "hours": 3,
+      "max": 2,
+      "effects": [
+        {
+          "e": "loot",
+          "pool": "jam",
+          "rolls": 1
+        }
+      ]
+    },
+    {
+      "id": "call_out",
+      "name": "爬上路堑找信号",
+      "desc": "爬到路堑顶上的竹林边，那里手机偶尔有一格信号：给 122 和家里打电话、发短信，告诉外面这一段还困着人。每次用掉 1 格电；开着发动机的时候，车充能充回来一点。易凡打出去的电话，还能变成报社的稿子。",
+      "exertion": "light",
+      "outdoor": true,
+      "hours": 2,
+      "max": 2,
+      "when": "res.battery >= 1",
+      "effects": [
+        {
+          "e": "res",
+          "id": "battery",
+          "add": -1
+        },
+        {
+          "e": "var",
+          "id": "relief",
+          "add": 3
+        },
+        {
+          "e": "var",
+          "id": "news",
+          "add": "5 + 7 * actor.is.yi"
+        },
+        {
+          "e": "stat",
+          "who": "actor",
+          "stat": "morale",
+          "add": 3
+        },
+        {
+          "e": "if",
+          "when": "actor.is.yi && var.news >= 24 && !flag.story_filed",
+          "then": [
+            {
+              "e": "flag",
+              "id": "story_filed"
+            },
+            {
+              "e": "var",
+              "id": "relief",
+              "add": 10
+            },
+            {
+              "e": "log",
+              "text": "{actor} 举着手机，对着话筒念完了最后一段。编辑在那头说：“收到。明天见报。”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rope_tires",
+      "name": "给车轮绑草绳",
+      "desc": "跟村民换来草绳，再拆些铁丝，跪在冰水里一圈一圈缠在大巴和小车的驱动轮上。路一通，有了它车才爬得上这段冰坡。",
+      "exertion": "heavy",
+      "outdoor": true,
+      "hours": 4,
+      "max": 2,
+      "when": "!done.tire_ropes && round >= 3",
+      "effects": [
+        {
+          "e": "work",
+          "project": "tire_ropes",
+          "base": 4,
+          "skill": "technical",
+          "per": 0.35
+        },
+        {
+          "e": "stat",
+          "who": "actor",
+          "stat": "wet",
+          "add": 4,
+          "hidden": true
+        }
+      ]
+    }
+  ],
+  "onStart": [],
+  "rules": [
+    {
+      "e": "each",
+      "who": "all",
+      "do": [
+        {
+          "e": "if",
+          "when": "!actor.animal && precip >= 1 && (actor.task.firewood || actor.task.chip_ice || actor.task.rope_tires || actor.task.market_buy || actor.task.scrounge || actor.task.melt_ice || actor.task.call_out || actor.task.clear_exhaust || actor.task.build_barrel)",
+          "then": [
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "wet",
+              "set": "6 + 4 * precip",
+              "hidden": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "res.oranges >= 1",
+      "then": [
+        {
+          "e": "each",
+          "who": "all",
+          "do": [
+            {
+              "e": "if",
+              "when": "!actor.animal && res.oranges >= 1",
+              "then": [
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "energy",
+                  "add": 360,
+                  "hidden": true
+                },
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "thirst",
+                  "add": -0.6,
+                  "hidden": true
+                },
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "core",
+                  "add": -0.1,
+                  "hidden": true
+                },
+                {
+                  "e": "res",
+                  "id": "oranges",
+                  "add": -1,
+                  "hidden": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "done.fire_barrel",
+      "then": [
+        {
+          "e": "if",
+          "when": "res.wood >= 2",
+          "then": [
+            {
+              "e": "res",
+              "id": "wood",
+              "add": -2,
+              "hidden": true
+            },
+            {
+              "e": "flag",
+              "id": "bonfire"
+            },
+            {
+              "e": "buff",
+              "who": "all",
+              "id": "warmed",
+              "rounds": 2
+            },
+            {
+              "e": "each",
+              "who": "all",
+              "do": [
+                {
+                  "e": "if",
+                  "when": "!actor.animal",
+                  "then": [
+                    {
+                      "e": "stat",
+                      "who": "actor",
+                      "stat": "wet",
+                      "add": -8,
+                      "hidden": true
+                    },
+                    {
+                      "e": "stat",
+                      "who": "actor",
+                      "stat": "core",
+                      "add": 0.2,
+                      "hidden": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "else": [
+            {
+              "e": "if",
+              "when": "flag.bonfire",
+              "then": [
+                {
+                  "e": "flag",
+                  "id": "bonfire",
+                  "on": false
+                },
+                {
+                  "e": "log",
+                  "text": "火桶里的柴烧光了，火灭了。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "flag.split && fireLit",
+      "then": [
+        {
+          "e": "res",
+          "id": "fuel",
+          "add": -3,
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "e": "each",
+      "who": "away",
+      "do": [
+        {
+          "e": "if",
+          "when": "actor.item.walker >= 1",
+          "then": [
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "core",
+              "add": "-0.8 - 0.8 * precip",
+              "hidden": true
+            },
+            {
+              "e": "chance",
+              "p": "0.12 + 0.06 * precip",
+              "then": [
+                {
+                  "e": "injure",
+                  "who": "actor",
+                  "kind": "trauma",
+                  "severity": "randRange(20, 40)",
+                  "label": "摔伤"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "hour == 18 && !fireLit && !flag.bonfire",
+      "then": [
+        {
+          "e": "each",
+          "who": "all",
+          "do": [
+            {
+              "e": "if",
+              "when": "!actor.animal",
+              "then": [
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "core",
+                  "add": "-(0.5 + 1.3 * actor.wet + 1.1 * actor.hunger + 0.3 * (actor.clo < 1.2) + 0.3 * (actor.age >= 60))",
+                  "hidden": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "fireLit && res.battery < 6",
+      "then": [
+        {
+          "e": "res",
+          "id": "battery",
+          "add": 1,
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "fireLit",
+      "then": [
+        {
+          "e": "var",
+          "id": "co",
+          "add": "(14 + 8 * precip + 10 * flag.one_bus) * (1 - 0.65 * flag.co_rule)"
+        }
+      ],
+      "else": [
+        {
+          "e": "var",
+          "id": "co",
+          "add": -35
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "flag.charcoal",
+      "then": [
+        {
+          "e": "var",
+          "id": "co",
+          "add": 40
+        },
+        {
+          "e": "flag",
+          "id": "charcoal",
+          "on": false
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "flag.charcoal_crack",
+      "then": [
+        {
+          "e": "var",
+          "id": "co",
+          "add": 15
+        },
+        {
+          "e": "flag",
+          "id": "charcoal_crack",
+          "on": false
+        }
+      ]
+    },
+    {
+      "e": "var",
+      "id": "co",
+      "add": -4
+    },
+    {
+      "e": "if",
+      "when": "hour == 18 && var.co >= 30 && !flag.co_warned",
+      "then": [
+        {
+          "e": "chance",
+          "p": 0.35,
+          "then": [
+            {
+              "e": "flag",
+              "id": "co_warned"
+            },
+            {
+              "e": "schedule",
+              "event": "co_headache",
+              "in": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "hour == 18 && var.co >= 45 && !flag.co_bad",
+      "then": [
+        {
+          "e": "chance",
+          "p": "(var.co - 48) / 45",
+          "then": [
+            {
+              "e": "flag",
+              "id": "co_bad"
+            },
+            {
+              "e": "each",
+              "who": "all",
+              "do": [
+                {
+                  "e": "chance",
+                  "p": "if(flag.one_bus, 0.95, 0.5) - 0.25 * flag.co_rule",
+                  "then": [
+                    {
+                      "e": "injure",
+                      "who": "actor",
+                      "kind": "poisoning",
+                      "severity": "var.co * 0.9 + randRange(-8, 12) + 8 * (actor.age >= 60 || actor.tag.child || actor.animal)",
+                      "label": "一氧化碳中毒"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "e": "each",
+              "who": "all",
+              "do": [
+                {
+                  "e": "if",
+                  "when": "actor.injury.poisoning >= 55",
+                  "then": [
+                    {
+                      "e": "chance",
+                      "p": "clamp((actor.injury.poisoning - 50) / 35, 0, 0.95) + 0.2 * (actor.age >= 60 || actor.tag.child || actor.animal)",
+                      "then": [
+                        {
+                          "e": "kill",
+                          "who": "actor",
+                          "cause": "一氧化碳中毒"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "e": "buff",
+              "who": "all",
+              "id": "shaken",
+              "rounds": 3
+            },
+            {
+              "e": "schedule",
+              "event": "co_night",
+              "in": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "present.deming && !flag.angina_coming",
+      "then": [
+        {
+          "e": "chance",
+          "p": "0.025 + 0.06 * (deming.core < 36.4) + 0.06 * (var.co >= 40) + 0.04 * (1 - fireLit) + 0.05 * deming.hunger + 0.06 * (deming.injury.poisoning > 0)",
+          "then": [
+            {
+              "e": "flag",
+              "id": "angina_coming"
+            },
+            {
+              "e": "schedule",
+              "event": "dad_angina",
+              "in": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "present.yaya && round >= 3 && !flag.yaya_sick",
+      "then": [
+        {
+          "e": "chance",
+          "p": "0.03 + 0.07 * (1 - fireLit) + 0.06 * (yaya.core < 36.4) + 0.04 * yaya.hunger",
+          "then": [
+            {
+              "e": "flag",
+              "id": "yaya_sick"
+            },
+            {
+              "e": "schedule",
+              "event": "yaya_fever",
+              "in": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "round >= 3 && !flag.pylon_down && !flag.pylon_coming",
+      "then": [
+        {
+          "e": "chance",
+          "p": "0.15 + 0.12 * precip",
+          "then": [
+            {
+              "e": "flag",
+              "id": "pylon_coming"
+            },
+            {
+              "e": "schedule",
+              "event": "pylon_collapse",
+              "in": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "flag.market && !flag.price_fixed",
+      "then": [
+        {
+          "e": "var",
+          "id": "price",
+          "add": 3
+        }
+      ]
+    },
+    {
+      "e": "var",
+      "id": "ice",
+      "add": "5 * precip + 1.5 * (low < -3) - 1.5 - 9 * flag.army * (1 - 0.3 * precip) - 6 * weather.thaw"
+    },
+    {
+      "e": "var",
+      "id": "clear",
+      "add": "if(flag.army, 22, 2.5) * (1 - 0.25 * precip) * (1.25 - var.ice / 200) + 1.5 * flag.story_filed"
+    },
+    {
+      "e": "var",
+      "id": "relief",
+      "add": "7 + 3 * (round >= 5) + 4 * flag.story_filed"
+    },
+    {
+      "e": "if",
+      "when": "var.relief >= 100 && !flag.army_coming && !flag.army",
+      "then": [
+        {
+          "e": "flag",
+          "id": "army_coming"
+        },
+        {
+          "e": "schedule",
+          "event": "army_arrives",
+          "in": 1
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "var.clear >= 100 && !flag.road_coming",
+      "then": [
+        {
+          "e": "flag",
+          "id": "road_coming"
+        },
+        {
+          "e": "schedule",
+          "event": "road_opens",
+          "in": 1
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "present.yaya && yaya.injury.illness > 20 && !fireLit && !flag.bonfire",
+      "then": [
+        {
+          "e": "injure",
+          "who": "yaya",
+          "kind": "illness",
+          "severity": 4,
+          "label": "肺炎"
+        },
+        {
+          "e": "stat",
+          "who": "yaya",
+          "stat": "health",
+          "add": "-(yaya.injury.illness - 15) * 0.25",
+          "hidden": true,
+          "cause": "肺炎"
+        }
+      ]
+    },
+    {
+      "e": "if",
+      "when": "round >= 16 && participants > 0",
+      "then": [
+        {
+          "e": "flag",
+          "id": "final_day"
+        },
+        {
+          "e": "end",
+          "ending": "auto"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "jam_night",
+      "kind": "group",
+      "text": "天黑透了。冻雨打在车顶上沙沙地响，车窗上的冰一层压着一层。大巴司机没有回来。这一夜怎么过？",
+      "atRound": 1,
+      "priority": 50,
+      "major": true,
+      "options": [
+        {
+          "id": "huddle",
+          "label": "都挤到大巴上，只开大巴的暖风",
+          "hint": "人挤在一起暖和，一台发动机也省油；可要是大巴的排气管堵了，所有人都在一个车厢里",
+          "tags": [
+            "cooperative",
+            "fair",
+            "warmth"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "one_bus"
+            },
+            {
+              "e": "shelter",
+              "add": 6
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 2
+            }
+          ],
+          "result": "被子、大衣都搬上了大巴的卧铺。罗振华犹豫了一下，还是锁上帕萨特，上了大巴。"
+        },
+        {
+          "id": "own_cars",
+          "label": "各回各的车，各开各的暖风",
+          "hint": "谁也不欠谁；几台发动机一起烧，油下去得快",
+          "tags": [
+            "selfish",
+            "warmth"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "split"
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -1
+            }
+          ],
+          "result": "各人回了各人的车。半夜里，几辆车的尾灯在冰雨里亮成一排。"
+        },
+        {
+          "id": "scout",
+          "label": "先派人往前走一段，看看到底堵了多远",
+          "hint": "知道前面的情况，心里有底；冰面上走夜路，要摔跤",
+          "tags": [
+            "explore",
+            "risky"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "scouted"
+            },
+            {
+              "e": "var",
+              "id": "relief",
+              "add": 5
+            },
+            {
+              "e": "stat",
+              "who": "best:navigation",
+              "stat": "fatigue",
+              "add": 12
+            },
+            {
+              "e": "stat",
+              "who": "best:navigation",
+              "stat": "wet",
+              "add": 6,
+              "hidden": true
+            },
+            {
+              "e": "chance",
+              "p": 0.3,
+              "then": [
+                {
+                  "e": "injure",
+                  "who": "best:navigation",
+                  "kind": "sprain",
+                  "severity": "randRange(18, 30)",
+                  "part": "脚踝"
+                }
+              ]
+            }
+          ],
+          "result": "打着手电走了一个多钟头，回来的时候裤腿上全是冰：前面一直堵到隧道口，再往前的收费站也封了，路上到处是凿冰的养路工人。"
+        }
+      ]
+    },
+    {
+      "id": "market_opens",
+      "kind": "group",
+      "text": "天亮以后，路堑底下爬上来几个坳上村的村民，挑着箩筐、提着暖水瓶，沿着车流一路吆喝：泡面、煮鸡蛋、红薯、开水。泡面十块钱一碗，开水两块钱一杯。",
+      "atRound": 2,
+      "priority": 45,
+      "when": "!flag.market",
+      "pre": [
+        {
+          "e": "flag",
+          "id": "market"
+        },
+        {
+          "e": "var",
+          "id": "price",
+          "set": 10
+        }
+      ],
+      "options": [
+        {
+          "id": "buy",
+          "label": "按他们的价买，先让大家吃口热的",
+          "hint": "公用的钱花掉一截，吃的和热水都有了",
+          "tags": [
+            "food",
+            "water",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "cash",
+              "add": -60
+            },
+            {
+              "e": "res",
+              "id": "food",
+              "add": 1800
+            },
+            {
+              "e": "res",
+              "id": "water",
+              "add": 3
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 2
+            }
+          ],
+          "result": "几碗泡面传进了车里，热气把车窗蒙得一片白。丫丫捧着碗，烫得直吹。"
+        },
+        {
+          "id": "haggle",
+          "label": "跟他们讲价",
+          "hint": "能便宜一点，也可能把人得罪了",
+          "tags": [
+            "selfish",
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "check",
+              "skill": "social",
+              "dc": 50,
+              "then": [
+                {
+                  "e": "var",
+                  "id": "price",
+                  "set": 7
+                },
+                {
+                  "e": "res",
+                  "id": "cash",
+                  "add": -35
+                },
+                {
+                  "e": "res",
+                  "id": "food",
+                  "add": 1800
+                },
+                {
+                  "e": "res",
+                  "id": "water",
+                  "add": 3
+                },
+                {
+                  "e": "log",
+                  "text": "讲到最后，一碗泡面让到了七块。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "var",
+                  "id": "price",
+                  "set": 13
+                },
+                {
+                  "e": "log",
+                  "text": "卖鸡蛋的大嫂翻了个白眼：“爱买不买，后头的车多得很。”价钱反倒涨了。"
+                }
+              ],
+              "who": "best:social"
+            }
+          ],
+          "result": "有人蹲在路堑边上，跟挑担子的人讲起了价。"
+        },
+        {
+          "id": "refuse",
+          "label": "这是发国难财，不买",
+          "hint": "省下钱，挨着饿；村民里也有实在人，这话不好听",
+          "tags": [
+            "aggressive",
+            "fair"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "boycott"
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -2
+            }
+          ],
+          "result": "车门关上了。挑担子的人愣了一下，挑着箩筐去了后面的车。"
+        },
+        {
+          "id": "xie",
+          "label": "只跟那个卖红薯的老汉买",
+          "hint": "红薯两块钱一个，管饱不贵；他一个人挑不了多少",
+          "tags": [
+            "fair",
+            "food"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "cash",
+              "add": -20
+            },
+            {
+              "e": "res",
+              "id": "food",
+              "add": 1000
+            },
+            {
+              "e": "res",
+              "id": "water",
+              "add": 1
+            },
+            {
+              "e": "flag",
+              "id": "met_xie"
+            }
+          ],
+          "result": "卖红薯的老汉姓谢，看见车里有孩子，又多塞了两个，没要钱。"
+        }
+      ]
+    },
+    {
+      "id": "co_headache",
+      "kind": "group",
+      "text": "早上醒来，车里好几个人头疼得像要裂开，恶心，眼前发花，有人怎么叫都迷迷糊糊的。排气管口糊着一层冰，车窗关得死死的——是一氧化碳。",
+      "priority": 60,
+      "major": true,
+      "pre": [
+        {
+          "e": "each",
+          "who": "all",
+          "do": [
+            {
+              "e": "chance",
+              "p": 0.5,
+              "then": [
+                {
+                  "e": "injure",
+                  "who": "actor",
+                  "kind": "poisoning",
+                  "severity": "randRange(12, 26)",
+                  "label": "一氧化碳中毒"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "rule",
+          "label": "定规矩：开暖风就留窗缝，排气管一夜清两回，轮流有人醒着",
+          "hint": "以后安全得多；车里会冷一些，守着的人睡不好",
+          "tags": [
+            "safe",
+            "cautious",
+            "fair"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "co_rule"
+            },
+            {
+              "e": "shelter",
+              "add": -8
+            },
+            {
+              "e": "var",
+              "id": "co",
+              "add": -25
+            },
+            {
+              "e": "heal",
+              "who": "all",
+              "kind": "poisoning",
+              "amount": 8
+            }
+          ],
+          "result": "每扇车窗都摇下一指宽的缝，用胶带贴了个记号。冷风一进来，头疼慢慢轻了。"
+        },
+        {
+          "id": "outside",
+          "label": "先把人都扶到外面透气",
+          "hint": "好得快；可外面是零下，衣服又潮",
+          "tags": [
+            "altruistic",
+            "medical"
+          ],
+          "effects": [
+            {
+              "e": "heal",
+              "who": "all",
+              "kind": "poisoning",
+              "amount": 18
+            },
+            {
+              "e": "each",
+              "who": "all",
+              "do": [
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "core",
+                  "add": -0.4,
+                  "hidden": true
+                }
+              ]
+            },
+            {
+              "e": "var",
+              "id": "co",
+              "add": -35
+            }
+          ],
+          "result": "几个人被扶到护栏边上，裹着被子大口喘气，脸上慢慢有了血色。"
+        },
+        {
+          "id": "ignore",
+          "label": "是冻的、饿的，跟暖风没关系",
+          "hint": "什么都不用改；要真是一氧化碳，今晚会更重",
+          "tags": [
+            "selfish",
+            "warmth"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -1
+            }
+          ],
+          "result": "有人说就是冻的。车窗又关上了。"
+        }
+      ]
+    },
+    {
+      "id": "co_night",
+      "kind": "group",
+      "text": "凌晨四点，有人迷迷糊糊推开车门，一头栽在冰面上。车里的人一个个叫不醒，嘴唇红得不正常。发动机还在突突地响，排气管口糊着厚厚的冰——一氧化碳。",
+      "priority": 70,
+      "major": true,
+      "once": false,
+      "options": [
+        {
+          "id": "rule",
+          "label": "从今往后：窗缝、清排气管、轮流守夜，一样不能少",
+          "hint": "车里会冷一些，可再也不能出这种事了",
+          "tags": [
+            "safe",
+            "cautious",
+            "fair"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "co_rule"
+            },
+            {
+              "e": "flag",
+              "id": "co_bad",
+              "on": false
+            },
+            {
+              "e": "var",
+              "id": "co",
+              "set": 0
+            },
+            {
+              "e": "shelter",
+              "add": -8
+            },
+            {
+              "e": "heal",
+              "who": "all",
+              "kind": "poisoning",
+              "amount": 10
+            }
+          ],
+          "result": "天亮以后，所有车的排气管都被凿开了，窗缝上贴了胶带。没有人再说冷。"
+        },
+        {
+          "id": "carry_out",
+          "label": "把中毒最重的人抬到外面，掐人中、灌热水",
+          "hint": "人醒得快；外面零下好几度",
+          "tags": [
+            "altruistic",
+            "medical"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "co_bad",
+              "on": false
+            },
+            {
+              "e": "var",
+              "id": "co",
+              "set": 5
+            },
+            {
+              "e": "heal",
+              "who": "all",
+              "kind": "poisoning",
+              "amount": 20
+            },
+            {
+              "e": "each",
+              "who": "all",
+              "do": [
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "core",
+                  "add": -0.3,
+                  "hidden": true
+                }
+              ]
+            }
+          ],
+          "result": "几个人被抬到护栏外面，冻得直哆嗦，总算睁开了眼睛。"
+        },
+        {
+          "id": "ambulance",
+          "label": "让武警把中毒最重的人抬到收费站的救护车上",
+          "hint": "救护车上有氧气；走了的人，就不跟大家在一起了",
+          "tags": [
+            "altruistic",
+            "rescue"
+          ],
+          "when": "flag.army",
+          "effects": [
+            {
+              "e": "flag",
+              "id": "co_bad",
+              "on": false
+            },
+            {
+              "e": "var",
+              "id": "co",
+              "set": 5
+            },
+            {
+              "e": "evacuate",
+              "who": "weakest",
+              "text": "{actor} 被抬上担架，顺着冰面送去了收费站。"
+            }
+          ],
+          "result": "两副担架顺着冰面往下滑，战士们在两边扶着。"
+        }
+      ]
+    },
+    {
+      "id": "pylon_collapse",
+      "kind": "group",
+      "text": "半夜里，对面山梁上传来一串闷响，像打雷。天亮一看，一座输电铁塔被冰压得拦腰折断，粗电线耷拉下来，一直拖进路堑底下的田里。坳上村和整条路都没电了。",
+      "priority": 30,
+      "pre": [
+        {
+          "e": "flag",
+          "id": "pylon_down"
+        },
+        {
+          "e": "flag",
+          "id": "pylon_coming",
+          "on": false
+        },
+        {
+          "e": "var",
+          "id": "clear",
+          "add": -4
+        },
+        {
+          "e": "var",
+          "id": "relief",
+          "add": -6
+        }
+      ],
+      "options": [
+        {
+          "id": "warn",
+          "label": "在断线周围插上树枝、拴上布条，谁也不许靠近",
+          "hint": "费点工夫，以后下路堑的人心里有数",
+          "tags": [
+            "safe",
+            "cautious",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "lines_marked"
+            },
+            {
+              "e": "stat",
+              "who": "best:survival",
+              "stat": "wet",
+              "add": 4,
+              "hidden": true
+            }
+          ],
+          "result": "几根树枝插在断线周围，上面拴着红色的塑料袋，老远就能看见。"
+        },
+        {
+          "id": "shortcut",
+          "label": "线都断了，哪还有电？下村子照旧走近路",
+          "hint": "省事；万一线上还有电呢",
+          "tags": [
+            "risky",
+            "selfish"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "shortcut"
+            }
+          ],
+          "result": "有人说，线都断了，哪还有电。"
+        },
+        {
+          "id": "report",
+          "label": "打电话给供电局，报告断线的位置",
+          "hint": "用掉 1 格手机电",
+          "tags": [
+            "cooperative",
+            "fair"
+          ],
+          "when": "res.battery >= 1",
+          "effects": [
+            {
+              "e": "res",
+              "id": "battery",
+              "add": -1
+            },
+            {
+              "e": "flag",
+              "id": "lines_marked"
+            },
+            {
+              "e": "var",
+              "id": "relief",
+              "add": 2
+            }
+          ],
+          "result": "电话打了七八遍才通。那头的人说，全市的线都断了，抢修的人手根本不够。"
+        }
+      ]
+    },
+    {
+      "id": "army_arrives",
+      "kind": "group",
+      "text": "中午，坡下传来整齐的号子声。一队穿迷彩的武警战士扛着十字镐、钢钎和铁锹，一边凿冰一边往上走，后面跟着一辆撒盐的车。一个十九岁的新兵敲了敲大巴的车窗，递进来一箱馒头和矿泉水：“师傅，你们这一段归我们中队了。”",
+      "priority": 80,
+      "major": true,
+      "pre": [
+        {
+          "e": "join",
+          "id": "xiang"
+        },
+        {
+          "e": "flag",
+          "id": "army"
+        },
+        {
+          "e": "flag",
+          "id": "army_coming",
+          "on": false
+        },
+        {
+          "e": "res",
+          "id": "food",
+          "add": 3000
+        },
+        {
+          "e": "res",
+          "id": "water",
+          "add": 8
+        },
+        {
+          "e": "var",
+          "id": "price",
+          "set": 5
+        },
+        {
+          "e": "flag",
+          "id": "price_fixed"
+        },
+        {
+          "e": "stat",
+          "who": "all",
+          "stat": "morale",
+          "add": 6
+        },
+        {
+          "e": "buff",
+          "who": "all",
+          "id": "hope",
+          "rounds": 3
+        }
+      ],
+      "options": [
+        {
+          "id": "send_weak",
+          "label": "请战士先把老人和孩子背到收费站的救护车上",
+          "hint": "老人和孩子能先离开冰道，孩子的爸爸跟着走；剩下的人接着等",
+          "tags": [
+            "altruistic",
+            "fair",
+            "rescue"
+          ],
+          "when": "present.deming || present.yaya",
+          "effects": [
+            {
+              "e": "if",
+              "when": "present.deming",
+              "then": [
+                {
+                  "e": "evacuate",
+                  "who": "deming",
+                  "text": "{actor} 被两个战士用担架抬着，顺着冰面一点一点往坡下挪。"
+                },
+                {
+                  "e": "if",
+                  "when": "present.zeng",
+                  "then": [
+                    {
+                      "e": "schedule",
+                      "event": "zeng_follow",
+                      "in": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "e": "if",
+              "when": "present.yaya",
+              "then": [
+                {
+                  "e": "evacuate",
+                  "who": "yaya",
+                  "text": "{actor} 被裹在一件军大衣里，趴在一个战士背上走了。"
+                },
+                {
+                  "e": "if",
+                  "when": "present.dajun",
+                  "then": [
+                    {
+                      "e": "evacuate",
+                      "who": "dajun",
+                      "text": "{actor} 跟在背着女儿的战士后面，一步一回头。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "result": "战士们轮流背着人，顺着刚凿出来的台阶往坡下走。"
+        },
+        {
+          "id": "stay",
+          "label": "大家都不走，跟着部队一起凿冰，等路通",
+          "hint": "人都在一起；路通还要几天，谁也说不准",
+          "tags": [
+            "cooperative",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "var",
+              "id": "clear",
+              "add": 6
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 3
+            }
+          ],
+          "result": "车上能动的人都拿起了家伙，跟着战士们一起凿。"
+        },
+        {
+          "id": "walk_all",
+          "label": "跟着战士，所有人一起走到八公里外的收费站",
+          "hint": "今天就能离开这里；冰面上走八公里，老人、孩子和伤员都得有人扶着",
+          "tags": [
+            "risky",
+            "rescue"
+          ],
+          "when": "precip == 0",
+          "effects": [
+            {
+              "e": "flag",
+              "id": "carried_out"
+            },
+            {
+              "e": "flag",
+              "id": "car_abandoned"
+            },
+            {
+              "e": "each",
+              "who": "all",
+              "do": [
+                {
+                  "e": "chance",
+                  "p": "0.2 + 0.2 * (actor.injured > 40) + 0.1 * (actor.age >= 60)",
+                  "then": [
+                    {
+                      "e": "injure",
+                      "who": "actor",
+                      "kind": "fracture",
+                      "severity": "randRange(25, 45)",
+                      "part": "手腕"
+                    }
+                  ]
+                },
+                {
+                  "e": "if",
+                  "when": "!actor.animal && (actor.health < 45 || actor.core < 35.5)",
+                  "then": [
+                    {
+                      "e": "chance",
+                      "p": 0.35,
+                      "then": [
+                        {
+                          "e": "kill",
+                          "who": "actor",
+                          "cause": "失温（走冰路时）"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "e": "if",
+              "when": "present.deming",
+              "then": [
+                {
+                  "e": "chance",
+                  "p": 0.2,
+                  "then": [
+                    {
+                      "e": "kill",
+                      "who": "deming",
+                      "cause": "心梗（走冰路时）"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "e": "evacuate",
+              "who": "npcs",
+              "text": "{actor} 跟着队伍走到了收费站。"
+            },
+            {
+              "e": "evacuate",
+              "who": "players",
+              "text": "{actor} 扶着护栏，一步一步走到了收费站。"
+            }
+          ],
+          "result": "长长的一队人扶着护栏，踩着战士们凿出来的台阶，一步一步往坡下挪。"
+        }
+      ]
+    },
+    {
+      "id": "zeng_follow",
+      "kind": "solo",
+      "text": "父亲被抬去了收费站。救护车上缺一个能照看他的人，可车上的人也离不开你。",
+      "who": "zeng",
+      "priority": 40,
+      "options": [
+        {
+          "id": "go",
+          "label": "跟下去，守着父亲",
+          "hint": "你会离开这里；车上就没有懂医的人了",
+          "tags": [
+            "selfish",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "evacuate",
+              "who": "actor",
+              "text": "{actor} 顺着战士们凿出的台阶追了下去。"
+            }
+          ],
+          "result": "{actor} 把药包里的东西倒出来一半，留在了卧铺上。"
+        },
+        {
+          "id": "stay",
+          "label": "留下来，父亲有战士和医生管着",
+          "hint": "车上的人还用得着你",
+          "tags": [
+            "altruistic",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "morale",
+              "add": -4
+            },
+            {
+              "e": "trust",
+              "from": "others",
+              "to": "actor",
+              "add": 6
+            }
+          ],
+          "result": "{actor} 站在护栏边，一直看到担架拐过了弯。"
+        }
+      ]
+    },
+    {
+      "id": "road_opens",
+      "kind": "group",
+      "text": "下午三点，前面的车尾灯一盏接一盏地亮了，喇叭声从坡顶一路传下来。车流动了！冰面上撒了盐和沙，战士们站在两边打着手势：一辆一辆，慢慢走。",
+      "priority": 95,
+      "pre": [
+        {
+          "e": "flag",
+          "id": "road_open"
+        }
+      ],
+      "options": [
+        {
+          "id": "drive",
+          "label": "跟着车流，一辆一辆慢慢开出去",
+          "hint": "没绑草绳的车，在冰坡上可能打滑",
+          "tags": [
+            "safe",
+            "hope"
+          ],
+          "effects": [
+            {
+              "e": "if",
+              "when": "!done.tire_ropes",
+              "then": [
+                {
+                  "e": "chance",
+                  "p": 0.35,
+                  "then": [
+                    {
+                      "e": "log",
+                      "text": "大巴在冰坡上打了个滑，横着往下溜了好几米，撞在护栏上才停住。车里的人摔成了一团。"
+                    },
+                    {
+                      "e": "each",
+                      "who": "all",
+                      "do": [
+                        {
+                          "e": "chance",
+                          "p": 0.25,
+                          "then": [
+                            {
+                              "e": "injure",
+                              "who": "actor",
+                              "kind": "sprain",
+                              "severity": "randRange(15, 30)",
+                              "part": "膝盖"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "e": "if",
+              "when": "present.xiang",
+              "then": [
+                {
+                  "e": "evacuate",
+                  "who": "xiang",
+                  "text": "{actor} 冲大巴敬了个礼，扛起十字镐，跟着中队往下一段去了。"
+                }
+              ]
+            },
+            {
+              "e": "evacuate",
+              "who": "npcs",
+              "text": "{actor} 跟着车流离开了冰道。"
+            },
+            {
+              "e": "evacuate",
+              "who": "players",
+              "text": "{actor} 跟着车流离开了冰道。"
+            }
+          ],
+          "result": "大巴的轮子碾着盐粒，一点一点爬上了坡顶。"
+        },
+        {
+          "id": "help_first",
+          "label": "先帮着把前面一辆打不着火的大客车推上坡",
+          "hint": "多耽误一会儿，可那一车人也在等",
+          "tags": [
+            "altruistic",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 4
+            },
+            {
+              "e": "each",
+              "who": "players",
+              "do": [
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "fatigue",
+                  "add": 10,
+                  "hidden": true
+                }
+              ]
+            },
+            {
+              "e": "if",
+              "when": "present.xiang",
+              "then": [
+                {
+                  "e": "evacuate",
+                  "who": "xiang",
+                  "text": "{actor} 冲大巴敬了个礼，扛起十字镐，跟着中队往下一段去了。"
+                }
+              ]
+            },
+            {
+              "e": "evacuate",
+              "who": "npcs",
+              "text": "{actor} 跟着车流离开了冰道。"
+            },
+            {
+              "e": "evacuate",
+              "who": "players",
+              "text": "{actor} 跟着车流离开了冰道。"
+            }
+          ],
+          "result": "十几个人喊着号子推，那辆大客车终于打着了火。车上的人从车窗里伸出手来，一个劲地拍。"
+        }
+      ]
+    },
+    {
+      "id": "dad_angina",
+      "kind": "group",
+      "text": "后半夜，曾老师捂着胸口蜷在卧铺上，额头上全是冷汗，嘴唇发紫。他摆摆手说没事，可那只手在发抖。",
+      "priority": 40,
+      "once": false,
+      "when": "present.deming",
+      "pre": [
+        {
+          "e": "flag",
+          "id": "angina_coming",
+          "on": false
+        },
+        {
+          "e": "injure",
+          "who": "deming",
+          "kind": "illness",
+          "severity": 22,
+          "label": "心绞痛"
+        }
+      ],
+      "options": [
+        {
+          "id": "nitro",
+          "label": "给他含一片硝酸甘油，扶他半躺着，别让他动",
+          "hint": "用掉一片药",
+          "tags": [
+            "medical",
+            "safe"
+          ],
+          "when": "deming.item.nitro >= 1",
+          "effects": [
+            {
+              "e": "item",
+              "who": "deming",
+              "id": "nitro",
+              "add": -1
+            },
+            {
+              "e": "heal",
+              "who": "deming",
+              "kind": "illness",
+              "amount": 12
+            },
+            {
+              "e": "chance",
+              "p": 0.12,
+              "then": [
+                {
+                  "e": "schedule",
+                  "event": "dad_mi",
+                  "in": 1
+                }
+              ]
+            }
+          ],
+          "result": "药片含下去十来分钟，曾老师的呼吸慢慢匀了。"
+        },
+        {
+          "id": "warm_car",
+          "label": "把他抱进罗振华的帕萨特，开足暖风守着他",
+          "hint": "烧掉帕萨特里六升汽油",
+          "tags": [
+            "altruistic",
+            "warmth"
+          ],
+          "when": "present.luo && luo.item.tank >= 6",
+          "effects": [
+            {
+              "e": "item",
+              "who": "luo",
+              "id": "tank",
+              "add": -6
+            },
+            {
+              "e": "heal",
+              "who": "deming",
+              "kind": "illness",
+              "amount": 10
+            },
+            {
+              "e": "stat",
+              "who": "deming",
+              "stat": "core",
+              "add": 0.6,
+              "hidden": true
+            },
+            {
+              "e": "trust",
+              "from": "deming",
+              "to": "luo",
+              "add": 10
+            },
+            {
+              "e": "trust",
+              "from": "zeng",
+              "to": "luo",
+              "add": 12
+            },
+            {
+              "e": "chance",
+              "p": 0.1,
+              "then": [
+                {
+                  "e": "schedule",
+                  "event": "dad_mi",
+                  "in": 1
+                }
+              ]
+            }
+          ],
+          "result": "罗振华犹豫了一下，还是把车钥匙递了过来：“开吧开吧，油不够再说。”"
+        },
+        {
+          "id": "aspirin",
+          "label": "让曾丽娟从包里拿药",
+          "hint": "她的包里好像不止一瓶药",
+          "tags": [
+            "medical"
+          ],
+          "when": "present.zeng && zeng.item.drugs >= 1 && !zeng.revealed",
+          "effects": [
+            {
+              "e": "heal",
+              "who": "deming",
+              "kind": "illness",
+              "amount": 15
+            },
+            {
+              "e": "reveal",
+              "who": "zeng"
+            },
+            {
+              "e": "chance",
+              "p": 0.06,
+              "then": [
+                {
+                  "e": "schedule",
+                  "event": "dad_mi",
+                  "in": 1
+                }
+              ]
+            }
+          ],
+          "result": "曾丽娟从双肩包的夹层里摸出一个小药瓶。旁边的人都看见了：那个夹层里，一板一板全是药。"
+        },
+        {
+          "id": "wait",
+          "label": "让他自己缓一缓",
+          "hint": "什么也不用；心绞痛有时候会变成心梗",
+          "tags": [
+            "safe",
+            "selfish"
+          ],
+          "effects": [
+            {
+              "e": "chance",
+              "p": 0.4,
+              "then": [
+                {
+                  "e": "schedule",
+                  "event": "dad_mi",
+                  "in": 1
+                }
+              ]
+            }
+          ],
+          "result": "曾老师靠着车窗坐了一夜，谁跟他说话，他都说没事。"
+        }
+      ]
+    },
+    {
+      "id": "dad_mi",
+      "kind": "group",
+      "text": "曾老师突然从座位上滑了下来，脸色青灰，满头冷汗，硝酸甘油含下去也不管用了。有人跪在过道里摸他的脉，又快又乱——是心梗。",
+      "priority": 75,
+      "major": true,
+      "once": false,
+      "when": "present.deming",
+      "pre": [
+        {
+          "e": "injure",
+          "who": "deming",
+          "kind": "illness",
+          "severity": 40,
+          "label": "急性心梗"
+        }
+      ],
+      "options": [
+        {
+          "id": "carry",
+          "label": "不等了，几个人轮流背他走到收费站",
+          "hint": "八公里冰路，路上随时可能出事，背的人也可能摔",
+          "tags": [
+            "risky",
+            "altruistic"
+          ],
+          "when": "!flag.army",
+          "effects": [
+            {
+              "e": "each",
+              "who": "players",
+              "do": [
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "fatigue",
+                  "add": 15,
+                  "hidden": true
+                }
+              ]
+            },
+            {
+              "e": "chance",
+              "p": 0.25,
+              "then": [
+                {
+                  "e": "injure",
+                  "who": "strongest",
+                  "kind": "sprain",
+                  "severity": "randRange(20, 35)",
+                  "part": "膝盖"
+                }
+              ]
+            },
+            {
+              "e": "chance",
+              "p": 0.5,
+              "then": [
+                {
+                  "e": "evacuate",
+                  "who": "deming",
+                  "text": "{actor} 被人背着，在天黑前送上了收费站的救护车。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "kill",
+                  "who": "deming",
+                  "cause": "急性心梗（送医途中）"
+                }
+              ]
+            }
+          ],
+          "result": "几个人轮流背着他，踩着冰往坡下走。"
+        },
+        {
+          "id": "soldiers",
+          "label": "叫武警用担架抬下去",
+          "hint": "战士们有担架和对讲机，收费站有救护车",
+          "tags": [
+            "rescue",
+            "altruistic"
+          ],
+          "when": "flag.army",
+          "effects": [
+            {
+              "e": "chance",
+              "p": 0.75,
+              "then": [
+                {
+                  "e": "evacuate",
+                  "who": "deming",
+                  "text": "{actor} 被担架抬下了冰坡，救护车一路拉着警报开走了。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "kill",
+                  "who": "deming",
+                  "cause": "急性心梗"
+                }
+              ]
+            }
+          ],
+          "result": "两个战士抬起担架，一路小跑。"
+        },
+        {
+          "id": "treat",
+          "label": "就地抢救：躺平、保暖，守着他",
+          "hint": "要看守着他的人懂不懂",
+          "tags": [
+            "cautious",
+            "medical"
+          ],
+          "effects": [
+            {
+              "e": "check",
+              "skill": "medical",
+              "dc": 65,
+              "then": [
+                {
+                  "e": "heal",
+                  "who": "deming",
+                  "kind": "illness",
+                  "amount": 20
+                },
+                {
+                  "e": "log",
+                  "text": "天亮的时候，曾老师的脉慢慢稳住了。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "chance",
+                  "p": 0.6,
+                  "then": [
+                    {
+                      "e": "kill",
+                      "who": "deming",
+                      "cause": "急性心梗"
+                    }
+                  ]
+                }
+              ],
+              "who": "best:medical"
+            }
+          ],
+          "result": "大家把他放平在卧铺上，盖上所有的被子，轮流守着。"
+        }
+      ]
+    },
+    {
+      "id": "yaya_fever",
+      "kind": "group",
+      "text": "丫丫烧起来了，小脸通红，咳一下就哭，呼吸又快又浅。",
+      "priority": 35,
+      "major": true,
+      "once": false,
+      "when": "present.yaya",
+      "pre": [
+        {
+          "e": "flag",
+          "id": "yaya_sick",
+          "on": false
+        },
+        {
+          "e": "injure",
+          "who": "yaya",
+          "kind": "illness",
+          "severity": "randRange(30, 42)",
+          "label": "肺炎"
+        }
+      ],
+      "options": [
+        {
+          "id": "antibiotics",
+          "label": "用抗生素",
+          "hint": "抗生素就这么一点",
+          "tags": [
+            "medical",
+            "altruistic",
+            "costly"
+          ],
+          "when": "res.antibiotics >= 1",
+          "effects": [
+            {
+              "e": "res",
+              "id": "antibiotics",
+              "add": -1
+            },
+            {
+              "e": "heal",
+              "who": "yaya",
+              "kind": "illness",
+              "amount": 22,
+              "treated": true
+            }
+          ],
+          "result": "药片碾碎了拌在糖水里，一勺一勺喂了下去。"
+        },
+        {
+          "id": "heater",
+          "label": "今晚专门为她多开几个钟头暖风",
+          "hint": "多烧 6 升油",
+          "tags": [
+            "altruistic",
+            "warmth"
+          ],
+          "when": "res.fuel >= 6",
+          "effects": [
+            {
+              "e": "res",
+              "id": "fuel",
+              "add": -6
+            },
+            {
+              "e": "heal",
+              "who": "yaya",
+              "kind": "illness",
+              "amount": 10
+            },
+            {
+              "e": "stat",
+              "who": "yaya",
+              "stat": "core",
+              "add": 0.5,
+              "hidden": true
+            }
+          ],
+          "result": "大巴的发动机多响了大半夜，丫丫在暖风口睡着了。"
+        },
+        {
+          "id": "ambulance",
+          "label": "请战士把她背到收费站的救护车上",
+          "hint": "她爸爸跟着去",
+          "tags": [
+            "rescue",
+            "altruistic"
+          ],
+          "when": "flag.army",
+          "effects": [
+            {
+              "e": "evacuate",
+              "who": "yaya",
+              "text": "{actor} 被裹在军大衣里，趴在战士背上走了。"
+            },
+            {
+              "e": "if",
+              "when": "present.dajun",
+              "then": [
+                {
+                  "e": "evacuate",
+                  "who": "dajun",
+                  "text": "{actor} 一路跟在后面，攥着女儿的一只鞋。"
+                }
+              ]
+            }
+          ],
+          "result": "战士把丫丫往背上一托，顺着台阶往下走。"
+        },
+        {
+          "id": "wait",
+          "label": "捂着被子，喂点热水，熬过去",
+          "hint": "什么也不用花；孩子的肺炎拖不得",
+          "tags": [
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "injure",
+              "who": "yaya",
+              "kind": "illness",
+              "severity": 8,
+              "label": "肺炎"
+            }
+          ],
+          "result": "大人们轮流抱着她，坐了一夜。"
+        }
+      ]
+    },
+    {
+      "id": "oranges_ask",
+      "kind": "solo",
+      "text": "吃的快见底了，大家的眼睛都往半挂车上瞟：车厢里是十五吨砂糖橘。有人清了清嗓子：“牛师傅，能不能……”",
+      "who": "niu",
+      "weight": 40,
+      "minRound": 2,
+      "when": "present.niu && niu.item.cargo >= 10 && foodDays < 0.8 && !flag.oranges_deal",
+      "major": false,
+      "options": [
+        {
+          "id": "sell",
+          "label": "按批发价卖给大家，一公斤三块",
+          "hint": "公用的钱换五十公斤橘子，你的货也算卖出去一点",
+          "tags": [
+            "fair",
+            "cooperative",
+            "food"
+          ],
+          "when": "res.cash >= 150",
+          "effects": [
+            {
+              "e": "res",
+              "id": "cash",
+              "add": -150
+            },
+            {
+              "e": "res",
+              "id": "oranges",
+              "add": 50
+            },
+            {
+              "e": "item",
+              "who": "actor",
+              "id": "cargo",
+              "add": -5
+            },
+            {
+              "e": "flag",
+              "id": "oranges_deal"
+            },
+            {
+              "e": "flag",
+              "id": "oranges_sold"
+            },
+            {
+              "e": "trust",
+              "from": "others",
+              "to": "actor",
+              "add": 6
+            }
+          ],
+          "result": "{actor} 爬上车厢，搬下来五箱橘子，一箱一箱过了秤。"
+        },
+        {
+          "id": "sell_dear",
+          "label": "现在什么都涨价，一公斤十块",
+          "hint": "钱是你的，橘子只有十五公斤，大家会记着",
+          "tags": [
+            "selfish"
+          ],
+          "when": "res.cash >= 150",
+          "effects": [
+            {
+              "e": "res",
+              "id": "cash",
+              "add": -150
+            },
+            {
+              "e": "res",
+              "id": "oranges",
+              "add": 15
+            },
+            {
+              "e": "item",
+              "who": "actor",
+              "id": "cargo",
+              "add": -1
+            },
+            {
+              "e": "flag",
+              "id": "oranges_deal"
+            },
+            {
+              "e": "flag",
+              "id": "oranges_sold"
+            },
+            {
+              "e": "trust",
+              "from": "others",
+              "to": "actor",
+              "add": -10
+            }
+          ],
+          "result": "{actor} 说，路上一碗泡面都卖十块了，他的橘子凭啥便宜。"
+        },
+        {
+          "id": "give",
+          "label": "拿出来分了，钱不钱的以后再说",
+          "hint": "够大家吃好几天；可这车货有一半是赊来的",
+          "tags": [
+            "altruistic"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "oranges",
+              "add": 80
+            },
+            {
+              "e": "item",
+              "who": "actor",
+              "id": "cargo",
+              "add": -8
+            },
+            {
+              "e": "flag",
+              "id": "oranges_deal"
+            },
+            {
+              "e": "flag",
+              "id": "oranges_given"
+            },
+            {
+              "e": "trust",
+              "from": "others",
+              "to": "actor",
+              "add": 15
+            },
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "morale",
+              "add": -4
+            }
+          ],
+          "result": "{actor} 骂了一句，跳上车厢，一箱一箱往下递：“吃吧吃吧，冻坏了也是白瞎。”"
+        },
+        {
+          "id": "refuse",
+          "label": "不行，这是俺的全部身家",
+          "hint": "货保住了，人心就不好说了",
+          "tags": [
+            "selfish",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "oranges_refused"
+            },
+            {
+              "e": "flag",
+              "id": "oranges_deal"
+            },
+            {
+              "e": "trust",
+              "from": "others",
+              "to": "actor",
+              "add": -10
+            }
+          ],
+          "result": "{actor} 把车厢门上的锁又检查了一遍，回了驾驶室。"
+        }
+      ]
+    },
+    {
+      "id": "oranges_seize",
+      "kind": "leader",
+      "text": "吃的彻底没了，孩子饿得直哭，半挂车的车厢就在旁边。有人拎起撬棍，看着 {leader}。",
+      "weight": 40,
+      "major": true,
+      "when": "flag.oranges_refused && present.niu && niu.item.cargo >= 10 && foodDays < 0.4 && !flag.oranges_taken && !flag.oranges_iou && hasLeader && !leader.niu",
+      "options": [
+        {
+          "id": "force",
+          "label": "撬开车厢，搬几箱下来",
+          "hint": "大家能吃上；牛长海会恨死你",
+          "tags": [
+            "aggressive",
+            "selfish",
+            "food"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "oranges",
+              "add": 60
+            },
+            {
+              "e": "item",
+              "who": "niu",
+              "id": "cargo",
+              "add": -6
+            },
+            {
+              "e": "flag",
+              "id": "oranges_taken"
+            },
+            {
+              "e": "trust",
+              "from": "niu",
+              "to": "leader",
+              "add": -40
+            },
+            {
+              "e": "trust",
+              "from": "niu",
+              "to": "others",
+              "add": -10
+            },
+            {
+              "e": "stat",
+              "who": "niu",
+              "stat": "morale",
+              "add": -12
+            },
+            {
+              "e": "if",
+              "when": "!niu.revealed",
+              "then": [
+                {
+                  "e": "chance",
+                  "p": 0.5,
+                  "then": [
+                    {
+                      "e": "reveal",
+                      "who": "niu"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "result": "锁被撬开了。牛长海冲过来，被两个人拦住，眼看着橘子一箱一箱被搬走，一句话也没说。"
+        },
+        {
+          "id": "iou",
+          "label": "写欠条，按批发价算，回去一定还",
+          "hint": "他不情愿，可总算不是白拿",
+          "tags": [
+            "fair",
+            "food"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "oranges",
+              "add": 50
+            },
+            {
+              "e": "item",
+              "who": "niu",
+              "id": "cargo",
+              "add": -5
+            },
+            {
+              "e": "flag",
+              "id": "oranges_iou"
+            },
+            {
+              "e": "trust",
+              "from": "niu",
+              "to": "leader",
+              "add": -10
+            }
+          ],
+          "result": "有人撕下一页笔记本，一笔一笔写下欠条，每个大人都签了名。"
+        },
+        {
+          "id": "leave",
+          "label": "那是他的东西，不动",
+          "hint": "大家接着饿着",
+          "tags": [
+            "fair",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -4
+            },
+            {
+              "e": "trust",
+              "from": "niu",
+              "to": "others",
+              "add": 8
+            }
+          ],
+          "result": "撬棍又被放下了。那一夜，橘子的香味飘得满车都是。"
+        }
+      ]
+    },
+    {
+      "id": "diesel_ask",
+      "kind": "solo",
+      "text": "大巴的油表指针快贴到底了。你的半挂车油箱里还有一百多升柴油，可你到郑州还有一千多公里。车里的人都看着你。",
+      "who": "niu",
+      "weight": 30,
+      "when": "res.fuel < 20 && present.niu && niu.item.diesel >= 40 && !flag.diesel_deal",
+      "options": [
+        {
+          "id": "sell",
+          "label": "按加油站的价钱，卖给大家四十升",
+          "hint": "公用的钱花掉一大截；你的油还够跑到长沙",
+          "tags": [
+            "fair",
+            "cooperative"
+          ],
+          "when": "res.cash >= 150",
+          "effects": [
+            {
+              "e": "res",
+              "id": "cash",
+              "add": -150
+            },
+            {
+              "e": "res",
+              "id": "fuel",
+              "add": 40
+            },
+            {
+              "e": "item",
+              "who": "actor",
+              "id": "diesel",
+              "add": -40
+            },
+            {
+              "e": "flag",
+              "id": "diesel_deal"
+            },
+            {
+              "e": "trust",
+              "from": "others",
+              "to": "actor",
+              "add": 4
+            }
+          ],
+          "result": "一根水管从半挂车的油箱牵到了大巴的油箱。"
+        },
+        {
+          "id": "give",
+          "label": "抽吧，留够俺到长沙的就中",
+          "hint": "大家会记着你的好；路上你得省着开",
+          "tags": [
+            "altruistic",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "fuel",
+              "add": 30
+            },
+            {
+              "e": "item",
+              "who": "actor",
+              "id": "diesel",
+              "add": -30
+            },
+            {
+              "e": "flag",
+              "id": "diesel_deal"
+            },
+            {
+              "e": "trust",
+              "from": "others",
+              "to": "actor",
+              "add": 10
+            }
+          ],
+          "result": "{actor} 闷着头抽完一根烟，自己把水管插进了油箱。"
+        },
+        {
+          "id": "refuse",
+          "label": "不行，俺这一路还得跑一千多公里",
+          "hint": "油保住了，人心就难说了",
+          "tags": [
+            "selfish",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "diesel_deal"
+            },
+            {
+              "e": "flag",
+              "id": "diesel_refused"
+            },
+            {
+              "e": "trust",
+              "from": "others",
+              "to": "actor",
+              "add": -8
+            }
+          ],
+          "result": "{actor} 摇摇头，回了驾驶室。"
+        }
+      ]
+    },
+    {
+      "id": "diesel_siphon",
+      "kind": "leader",
+      "text": "大巴里的人冻得睡不着。半挂车就停在旁边，油箱里还有一百多升柴油。有人凑到 {leader} 耳边：“等他睡着了，抽他三十升，他也发现不了。”",
+      "weight": 25,
+      "when": "flag.diesel_refused && res.fuel < 12 && present.niu && niu.item.diesel >= 40 && hasLeader && !leader.niu && !flag.diesel_taken",
+      "options": [
+        {
+          "id": "siphon",
+          "label": "抽",
+          "hint": "能多开两夜暖风；被他撞见就是仇",
+          "tags": [
+            "selfish",
+            "aggressive",
+            "warmth"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "diesel_taken"
+            },
+            {
+              "e": "res",
+              "id": "fuel",
+              "add": 30
+            },
+            {
+              "e": "item",
+              "who": "niu",
+              "id": "diesel",
+              "add": -30
+            },
+            {
+              "e": "chance",
+              "p": 0.5,
+              "then": [
+                {
+                  "e": "trust",
+                  "from": "niu",
+                  "to": "leader",
+                  "add": -35
+                },
+                {
+                  "e": "log",
+                  "text": "牛长海半夜醒来，正看见有人蹲在他的油箱边上。"
+                }
+              ]
+            }
+          ],
+          "result": "半夜，一根水管插进了半挂车的油箱。"
+        },
+        {
+          "id": "no",
+          "label": "不行，那是偷",
+          "hint": "夜里还是冷",
+          "tags": [
+            "fair",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "diesel_taken"
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -2
+            }
+          ],
+          "result": "{leader} 摇了摇头。没人再提这件事。"
+        }
+      ]
+    },
+    {
+      "id": "luo_car",
+      "kind": "solo",
+      "text": "大巴的油快烧干了。你的帕萨特里还有大半箱汽油，暖风开起来呼呼的。大家都看着你。",
+      "who": "luo",
+      "weight": 25,
+      "when": "present.luo && luo.item.tank >= 20 && res.fuel < 14 && !flag.luo_car_asked",
+      "options": [
+        {
+          "id": "share",
+          "label": "让老人和孩子晚上睡到我车里来，暖风开着",
+          "hint": "你的油要少一大截",
+          "tags": [
+            "altruistic",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "luo_car_asked"
+            },
+            {
+              "e": "item",
+              "who": "actor",
+              "id": "tank",
+              "add": -25
+            },
+            {
+              "e": "res",
+              "id": "fuel",
+              "add": 25
+            },
+            {
+              "e": "trust",
+              "from": "others",
+              "to": "actor",
+              "add": 12
+            },
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "morale",
+              "add": 3
+            }
+          ],
+          "result": "{actor} 把后座放平，铺上了大衣。"
+        },
+        {
+          "id": "sell",
+          "label": "油可以给，三十块一升",
+          "hint": "做生意就是做生意",
+          "tags": [
+            "selfish"
+          ],
+          "when": "res.cash >= 150",
+          "effects": [
+            {
+              "e": "flag",
+              "id": "luo_car_asked"
+            },
+            {
+              "e": "res",
+              "id": "cash",
+              "add": -150
+            },
+            {
+              "e": "item",
+              "who": "actor",
+              "id": "tank",
+              "add": -5
+            },
+            {
+              "e": "res",
+              "id": "fuel",
+              "add": 5
+            },
+            {
+              "e": "trust",
+              "from": "others",
+              "to": "actor",
+              "add": -8
+            }
+          ],
+          "result": "{actor} 拿出几个矿泉水瓶，灌了满满五瓶汽油。"
+        },
+        {
+          "id": "refuse",
+          "label": "我的油还要留着开回湘潭",
+          "hint": "大家会记着",
+          "tags": [
+            "selfish",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "luo_car_asked"
+            },
+            {
+              "e": "trust",
+              "from": "others",
+              "to": "actor",
+              "add": -12
+            }
+          ],
+          "result": "{actor} 锁上车门，一个人坐在帕萨特里开着暖风。"
+        }
+      ]
+    },
+    {
+      "id": "luo_flee",
+      "kind": "solo",
+      "text": "后半夜，你看见应急车道上的车挪开了一截，一直空到前面的弯道。你的帕萨特离那个口子只有十几米。要是沿着应急车道往前开，也许能挤到下一个出口。",
+      "who": "luo",
+      "weight": 6,
+      "minRound": 4,
+      "when": "present.luo && luo.item.tank >= 15 && !flag.army && !flag.luo_fled_try",
+      "options": [
+        {
+          "id": "go",
+          "label": "一个人悄悄开走",
+          "hint": "也许今晚就能睡在宾馆里；冰面上开车，一打滑就进沟",
+          "tags": [
+            "selfish",
+            "risky"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "luo_fled_try"
+            },
+            {
+              "e": "chance",
+              "p": 0.45,
+              "then": [
+                {
+                  "e": "flag",
+                  "id": "boss_fled"
+                },
+                {
+                  "e": "item",
+                  "who": "actor",
+                  "id": "fled",
+                  "add": 1
+                },
+                {
+                  "e": "trust",
+                  "from": "others",
+                  "to": "actor",
+                  "add": -30
+                },
+                {
+                  "e": "evacuate",
+                  "who": "actor",
+                  "text": "{actor} 的帕萨特关着大灯，贴着护栏开进了黑暗里。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "flag",
+                  "id": "car_abandoned"
+                },
+                {
+                  "e": "item",
+                  "who": "actor",
+                  "id": "tank",
+                  "add": "-actor.item.tank"
+                },
+                {
+                  "e": "injure",
+                  "who": "actor",
+                  "kind": "crush",
+                  "severity": "randRange(30, 52)",
+                  "part": "胸口"
+                },
+                {
+                  "e": "log",
+                  "text": "帕萨特在弯道上打了个滑，一头扎进了护栏外的排水沟。{actor} 是被人从变形的车门里拖出来的。"
+                }
+              ]
+            }
+          ],
+          "result": "发动机的声音很轻。"
+        },
+        {
+          "id": "take_weak",
+          "label": "带上老人和孩子一起走",
+          "hint": "他们能早点离开冰道；要是翻了车，车上就不止你一个",
+          "tags": [
+            "altruistic",
+            "risky"
+          ],
+          "when": "present.deming || present.yaya",
+          "effects": [
+            {
+              "e": "flag",
+              "id": "luo_fled_try"
+            },
+            {
+              "e": "chance",
+              "p": 0.45,
+              "then": [
+                {
+                  "e": "flag",
+                  "id": "boss_fled"
+                },
+                {
+                  "e": "item",
+                  "who": "actor",
+                  "id": "fled",
+                  "add": 1
+                },
+                {
+                  "e": "trust",
+                  "from": "others",
+                  "to": "actor",
+                  "add": 10
+                },
+                {
+                  "e": "if",
+                  "when": "present.deming",
+                  "then": [
+                    {
+                      "e": "evacuate",
+                      "who": "deming",
+                      "text": "{actor} 坐在帕萨特的副驾驶上，系好了安全带。"
+                    }
+                  ]
+                },
+                {
+                  "e": "if",
+                  "when": "present.yaya",
+                  "then": [
+                    {
+                      "e": "evacuate",
+                      "who": "yaya",
+                      "text": "{actor} 裹着被子躺在帕萨特的后座上。"
+                    },
+                    {
+                      "e": "if",
+                      "when": "present.dajun",
+                      "then": [
+                        {
+                          "e": "evacuate",
+                          "who": "dajun",
+                          "text": "{actor} 挤在后座上，抱着女儿。"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "e": "evacuate",
+                  "who": "actor",
+                  "text": "{actor} 开着帕萨特，贴着护栏慢慢挤出了车流。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "flag",
+                  "id": "car_abandoned"
+                },
+                {
+                  "e": "item",
+                  "who": "actor",
+                  "id": "tank",
+                  "add": "-actor.item.tank"
+                },
+                {
+                  "e": "injure",
+                  "who": "actor",
+                  "kind": "crush",
+                  "severity": "randRange(25, 45)",
+                  "part": "胸口"
+                },
+                {
+                  "e": "if",
+                  "when": "present.deming",
+                  "then": [
+                    {
+                      "e": "injure",
+                      "who": "deming",
+                      "kind": "laceration",
+                      "severity": "randRange(20, 35)",
+                      "part": "额头"
+                    }
+                  ]
+                },
+                {
+                  "e": "if",
+                  "when": "present.yaya",
+                  "then": [
+                    {
+                      "e": "injure",
+                      "who": "yaya",
+                      "kind": "laceration",
+                      "severity": "randRange(15, 30)",
+                      "part": "胳膊"
+                    }
+                  ]
+                },
+                {
+                  "e": "log",
+                  "text": "帕萨特在弯道上打了个滑，一头扎进了排水沟。车上的人是被拖出来的。"
+                }
+              ]
+            }
+          ],
+          "result": "{actor} 悄悄把老人和孩子叫醒，扶上了帕萨特。"
+        },
+        {
+          "id": "stay",
+          "label": "算了，一个人跑了，算怎么回事",
+          "hint": "接着在这里熬",
+          "tags": [
+            "fair",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "luo_fled_try"
+            },
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "morale",
+              "add": 2
+            }
+          ],
+          "result": "{actor} 盯着那个口子看了很久，把车钥匙揣回了兜里。"
+        }
+      ]
+    },
+    {
+      "id": "xie_returns",
+      "kind": "group",
+      "text": "那个卖红薯的谢老汉又上来了。这回他背着一口铁锅、一捆干稻草，扁担上还挑着一桶热水。他说村里也停了电，家里就他一个人，干脆上来帮帮忙。",
+      "weight": 20,
+      "minRound": 4,
+      "when": "!xie.joined && flag.market && !flag.xie_gone && (flag.met_xie || round >= 6)",
+      "options": [
+        {
+          "id": "welcome",
+          "label": "留他在大巴上，一起过",
+          "hint": "多一张嘴，也多一个认得路、会生火的人",
+          "tags": [
+            "cooperative",
+            "altruistic",
+            "water"
+          ],
+          "effects": [
+            {
+              "e": "join",
+              "id": "xie"
+            },
+            {
+              "e": "res",
+              "id": "water",
+              "add": 5
+            },
+            {
+              "e": "res",
+              "id": "wood",
+              "add": 2
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 3
+            }
+          ],
+          "result": "谢老汉把铁锅往车门边一放，蹲下来就开始敲冰。"
+        },
+        {
+          "id": "thanks",
+          "label": "谢谢他，给他钱，让他回村里去",
+          "hint": "他留下了吃的和水",
+          "tags": [
+            "fair",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "cash",
+              "add": -30
+            },
+            {
+              "e": "res",
+              "id": "water",
+              "add": 5
+            },
+            {
+              "e": "res",
+              "id": "food",
+              "add": 600
+            },
+            {
+              "e": "flag",
+              "id": "xie_gone"
+            }
+          ],
+          "result": "谢老汉推了半天钱，最后收下十块，挑着空担子下去了。"
+        }
+      ]
+    },
+    {
+      "id": "xie_village",
+      "kind": "group",
+      "text": "谢满仓蹲在车门边抽完一袋烟，说：“莫在这里冻着了。跟我下去，村里家家有柴火灶，挤一挤住得下。小路我熟，冰少。”可那是一段陡坡，车和东西都得丢在这里。",
+      "weight": 10,
+      "minRound": 6,
+      "major": true,
+      "when": "present.xie && !flag.army && !flag.village_asked",
+      "options": [
+        {
+          "id": "go_all",
+          "label": "所有人跟他下去",
+          "hint": "有火有饭；下坡的时候可能有人摔伤，车和货就扔在路上了",
+          "tags": [
+            "risky",
+            "hope",
+            "warmth"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "village_asked"
+            },
+            {
+              "e": "flag",
+              "id": "village"
+            },
+            {
+              "e": "flag",
+              "id": "car_abandoned"
+            },
+            {
+              "e": "evacuate",
+              "who": "xie",
+              "text": "{actor} 走在最前面，一步一个脚印地踩出路来。"
+            },
+            {
+              "e": "each",
+              "who": "all",
+              "do": [
+                {
+                  "e": "chance",
+                  "p": "0.1 + 0.15 * (actor.injured > 40) + 0.1 * (actor.age >= 60)",
+                  "then": [
+                    {
+                      "e": "injure",
+                      "who": "actor",
+                      "kind": "fracture",
+                      "severity": "randRange(22, 40)",
+                      "part": "小腿"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "e": "evacuate",
+              "who": "npcs",
+              "text": "{actor} 跟着谢满仓的脚印，下到了坳上村。"
+            },
+            {
+              "e": "evacuate",
+              "who": "players",
+              "text": "{actor} 跟着谢满仓的脚印，下到了坳上村。"
+            }
+          ],
+          "result": "一行人扶着护栏、拽着竹子，从路堑上一点一点挪了下去。"
+        },
+        {
+          "id": "weak_only",
+          "label": "只让老人和孩子跟他下去",
+          "hint": "他们能睡上热炕；剩下的人守着车",
+          "tags": [
+            "altruistic",
+            "cautious"
+          ],
+          "when": "present.deming || present.yaya",
+          "effects": [
+            {
+              "e": "flag",
+              "id": "village_asked"
+            },
+            {
+              "e": "if",
+              "when": "present.deming",
+              "then": [
+                {
+                  "e": "evacuate",
+                  "who": "deming",
+                  "text": "{actor} 被谢满仓扶着，一步一步下了坡。"
+                }
+              ]
+            },
+            {
+              "e": "if",
+              "when": "present.yaya",
+              "then": [
+                {
+                  "e": "evacuate",
+                  "who": "yaya",
+                  "text": "{actor} 趴在爸爸背上下了坡。"
+                },
+                {
+                  "e": "if",
+                  "when": "present.dajun",
+                  "then": [
+                    {
+                      "e": "evacuate",
+                      "who": "dajun",
+                      "text": "{actor} 背着女儿，跟着谢满仓下了坡。"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "e": "leave",
+              "who": "xie",
+              "text": "谢满仓领着他们下了坡，说明天再上来送水。"
+            }
+          ],
+          "result": "谢满仓在前面踩出一串脚印。"
+        },
+        {
+          "id": "stay",
+          "label": "谢谢他，大家守着车",
+          "hint": "车在，东西在，路一通就能走",
+          "tags": [
+            "safe",
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "village_asked"
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -1
+            }
+          ],
+          "result": "谢满仓点点头，没再劝。"
+        }
+      ]
+    },
+    {
+      "id": "walk_proposal",
+      "kind": "group",
+      "text": "第{day}天了，前面还是一动不动。有人摊开一张皱巴巴的地图：往前八公里是收费站和服务区，那里有吃的、有电话，听说还有政府的人在发棉被。可那是八公里的冰路。",
+      "weight": 30,
+      "minRound": 3,
+      "cooldown": 4,
+      "once": false,
+      "major": true,
+      "when": "!flag.walked && !flag.army && (foodDays < 0.6 || res.fuel < 15 || waterDays < 0.6)",
+      "options": [
+        {
+          "id": "send",
+          "label": "推选一个人走过去，带吃的回来，把这里的情况报上去",
+          "hint": "明天推选人选。路上可能摔伤、冻伤，一来一回要一整天",
+          "tags": [
+            "risky",
+            "hope"
+          ],
+          "effects": [
+            {
+              "e": "schedule",
+              "event": "walk_pick",
+              "in": 1
+            }
+          ],
+          "result": "大家说定了：明天一早推一个人去。"
+        },
+        {
+          "id": "wait",
+          "label": "再等等，部队总会来的",
+          "hint": "收音机里说，不要弃车步行",
+          "tags": [
+            "safe",
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -2
+            }
+          ],
+          "result": "地图又被折起来，塞回了座位底下。"
+        }
+      ]
+    },
+    {
+      "id": "walk_pick",
+      "kind": "nominate",
+      "text": "推选一个人，走八公里冰路去收费站。",
+      "major": true,
+      "when": "!flag.walked",
+      "effects": [
+        {
+          "e": "flag",
+          "id": "walked"
+        },
+        {
+          "e": "item",
+          "who": "target",
+          "id": "walker",
+          "add": 1
+        },
+        {
+          "e": "away",
+          "who": "target",
+          "rounds": 2,
+          "amount": 6,
+          "onReturn": [
+            {
+              "e": "check",
+              "skill": "navigation",
+              "dc": 48,
+              "then": [
+                {
+                  "e": "res",
+                  "id": "food",
+                  "add": 3500
+                },
+                {
+                  "e": "res",
+                  "id": "water",
+                  "add": 6
+                },
+                {
+                  "e": "var",
+                  "id": "relief",
+                  "add": 25
+                },
+                {
+                  "e": "flag",
+                  "id": "walk_reported"
+                },
+                {
+                  "e": "buff",
+                  "who": "all",
+                  "id": "hope",
+                  "rounds": 3
+                },
+                {
+                  "e": "log",
+                  "text": "{actor} 背着一袋馒头和几瓶水回来了，脸冻得发紫：“收费站那边知道我们这一段了，说部队这两天就上来。”"
+                }
+              ],
+              "else": [
+                {
+                  "e": "res",
+                  "id": "food",
+                  "add": 800
+                },
+                {
+                  "e": "chance",
+                  "p": 0.5,
+                  "then": [
+                    {
+                      "e": "injure",
+                      "who": "actor",
+                      "kind": "fracture",
+                      "severity": "randRange(30, 50)",
+                      "part": "小腿"
+                    }
+                  ],
+                  "else": [
+                    {
+                      "e": "injure",
+                      "who": "actor",
+                      "kind": "frostbite",
+                      "severity": "randRange(20, 35)",
+                      "part": "脚趾"
+                    }
+                  ]
+                },
+                {
+                  "e": "log",
+                  "text": "{actor} 在冰上摔了不知道多少跤，走到一半就折了回来，只在路边一辆货车上讨到几个馒头。"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "result": "{target} 把毛巾缠在鞋上，拄着一根竹子，顺着护栏往前走了。"
+    },
+    {
+      "id": "story_call",
+      "kind": "solo",
+      "text": "手机突然跳出两格信号，编辑的短信一条接一条地进来：“人怎么样？稿子呢？今晚能不能口述过来？版面给你留着。”车里的人都看着你。",
+      "who": "yi",
+      "weight": 12,
+      "minRound": 4,
+      "when": "present.yi && !flag.story_filed && res.battery >= 1",
+      "options": [
+        {
+          "id": "file",
+          "label": "对着手机，一段一段把稿子念过去",
+          "hint": "用掉 1 格电；外面会知道这一段困着人",
+          "tags": [
+            "hope",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "battery",
+              "add": -1
+            },
+            {
+              "e": "flag",
+              "id": "story_filed"
+            },
+            {
+              "e": "var",
+              "id": "news",
+              "add": 20
+            },
+            {
+              "e": "var",
+              "id": "relief",
+              "add": 10
+            }
+          ],
+          "result": "{actor} 缩在车门边，捂着话筒念了二十分钟。编辑在那头说：“收到。明天见报。”"
+        },
+        {
+          "id": "ask_first",
+          "label": "先问问大家，愿不愿意被写进稿子里",
+          "hint": "大家会更信你；也许有人不愿意",
+          "tags": [
+            "fair",
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "trust",
+              "from": "others",
+              "to": "actor",
+              "add": 6
+            },
+            {
+              "e": "chance",
+              "p": 0.6,
+              "then": [
+                {
+                  "e": "res",
+                  "id": "battery",
+                  "add": -1
+                },
+                {
+                  "e": "flag",
+                  "id": "story_filed"
+                },
+                {
+                  "e": "var",
+                  "id": "news",
+                  "add": 20
+                },
+                {
+                  "e": "var",
+                  "id": "relief",
+                  "add": 10
+                },
+                {
+                  "e": "log",
+                  "text": "大家你一言我一语，凑了一段。{actor} 把这段也念了进去。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "log",
+                  "text": "有人摇头：“别写我。”{actor} 把手机收了起来。"
+                }
+              ]
+            }
+          ],
+          "result": "{actor} 把手机举起来，问了一圈。"
+        },
+        {
+          "id": "later",
+          "label": "再等等，还没写完",
+          "tags": [
+            "safe"
+          ],
+          "effects": [],
+          "result": "{actor} 回了一条：“再等等。”"
+        }
+      ]
+    },
+    {
+      "id": "boss_call",
+      "kind": "solo",
+      "text": "你的手机一开机就响了，是厂里的老工人。你手一抖，按成了免提：“罗老板，你在哪？三十多个人的工钱，你说年前发的——”车里一下子安静了。",
+      "who": "luo",
+      "weight": 7,
+      "minRound": 3,
+      "when": "present.luo && !luo.revealed",
+      "options": [
+        {
+          "id": "admit",
+          "label": "认了：厂子垮了，钱在箱子里，回去就发",
+          "hint": "秘密保不住了，可话说出去就得算数",
+          "tags": [
+            "fair",
+            "risky"
+          ],
+          "effects": [
+            {
+              "e": "reveal",
+              "who": "actor"
+            },
+            {
+              "e": "flag",
+              "id": "wages_paid"
+            },
+            {
+              "e": "trust",
+              "from": "tian",
+              "to": "actor",
+              "add": 15
+            },
+            {
+              "e": "trust",
+              "from": "dajun",
+              "to": "actor",
+              "add": 15
+            }
+          ],
+          "result": "{actor} 对着电话说了很久。挂掉以后，他点了根烟，手还在抖。"
+        },
+        {
+          "id": "lie",
+          "label": "说对方打错了，挂掉",
+          "hint": "也许没人听清",
+          "tags": [
+            "selfish",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "chance",
+              "p": 0.5,
+              "then": [
+                {
+                  "e": "reveal",
+                  "who": "actor"
+                },
+                {
+                  "e": "log",
+                  "text": "车里不止一个人听清了“工钱”两个字。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "trust",
+                  "from": "others",
+                  "to": "actor",
+                  "add": -5
+                }
+              ]
+            }
+          ],
+          "result": "“打错了。”{actor} 把手机关了机。"
+        },
+        {
+          "id": "silent",
+          "label": "一句话不说，直接挂断",
+          "hint": "大家只会更好奇",
+          "tags": [
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "trust",
+              "from": "others",
+              "to": "actor",
+              "add": -8
+            }
+          ],
+          "result": "{actor} 挂了电话，转过脸去看着窗外的冰。"
+        }
+      ]
+    },
+    {
+      "id": "savings_seen",
+      "kind": "solo",
+      "text": "后半夜，{actor} 看见田秀芬背过身去，用一根针挑开棉袄的线，抽出一张红票子，又飞快地缝上。那夹层鼓鼓囊囊的。",
+      "weight": 6,
+      "minRound": 3,
+      "whoWhen": "!actor.is.tian && !actor.is.dajun",
+      "when": "present.tian && !tian.revealed",
+      "options": [
+        {
+          "id": "expose",
+          "label": "当着大家说出来：“她身上有钱。”",
+          "hint": "公用的钱快没了；她会恨你",
+          "tags": [
+            "aggressive",
+            "suspicious"
+          ],
+          "effects": [
+            {
+              "e": "reveal",
+              "who": "tian"
+            },
+            {
+              "e": "trust",
+              "from": "tian",
+              "to": "actor",
+              "add": -30
+            }
+          ],
+          "result": "车里的人都转过头来。田秀芬下意识地捂住了棉袄的衣襟。"
+        },
+        {
+          "id": "ask",
+          "label": "私下跟她说：买吃的的钱快没了，能不能匀一点",
+          "hint": "她也许肯，也许不肯",
+          "tags": [
+            "cooperative",
+            "fair"
+          ],
+          "effects": [
+            {
+              "e": "chance",
+              "p": 0.6,
+              "then": [
+                {
+                  "e": "item",
+                  "who": "tian",
+                  "id": "savings",
+                  "add": -1
+                },
+                {
+                  "e": "res",
+                  "id": "cash",
+                  "add": 1000
+                },
+                {
+                  "e": "trust",
+                  "from": "tian",
+                  "to": "actor",
+                  "add": 4
+                },
+                {
+                  "e": "log",
+                  "text": "田秀芬犹豫了很久，拆开线，数出十张递了过来：“就这些，别跟别人说。”"
+                }
+              ],
+              "else": [
+                {
+                  "e": "trust",
+                  "from": "tian",
+                  "to": "actor",
+                  "add": -10
+                },
+                {
+                  "e": "log",
+                  "text": "田秀芬瞪着你：“你看错了。”",
+                  "vis": "actor"
+                }
+              ]
+            }
+          ],
+          "result": "{actor} 挪到她旁边，压低了声音。"
+        },
+        {
+          "id": "keep",
+          "label": "装作没看见",
+          "hint": "那是人家一年的血汗钱",
+          "tags": [
+            "safe",
+            "altruistic"
+          ],
+          "effects": [
+            {
+              "e": "log",
+              "text": "{actor} 翻了个身，假装睡着了。",
+              "vis": "actor"
+            }
+          ],
+          "result": "什么也没发生。"
+        }
+      ]
+    },
+    {
+      "id": "recorder_found",
+      "kind": "solo",
+      "text": "{actor} 借易凡的 MP3 想听两首歌，一按开关，屏幕上亮着一行字：录音中 03:12:44。文件夹里是几十段录音，日期从上车那天开始。",
+      "weight": 6,
+      "minRound": 2,
+      "whoWhen": "!actor.is.yi",
+      "when": "present.yi && !yi.revealed",
+      "options": [
+        {
+          "id": "expose",
+          "label": "举起来给大家看",
+          "hint": "大家有权知道；他会恨你",
+          "tags": [
+            "aggressive",
+            "fair"
+          ],
+          "effects": [
+            {
+              "e": "reveal",
+              "who": "yi"
+            },
+            {
+              "e": "trust",
+              "from": "yi",
+              "to": "actor",
+              "add": -20
+            }
+          ],
+          "result": "MP3 在车里传了一圈，最后被扔回了易凡怀里。"
+        },
+        {
+          "id": "ask",
+          "label": "私下问他录这些干什么",
+          "hint": "听听他怎么说",
+          "tags": [
+            "cautious",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "trust",
+              "from": "yi",
+              "to": "actor",
+              "add": 6
+            },
+            {
+              "e": "var",
+              "id": "news",
+              "add": 4
+            }
+          ],
+          "result": "易凡红着脸说，他想让外面的人知道这条路上是什么样子。"
+        },
+        {
+          "id": "delete",
+          "label": "偷偷全删了",
+          "hint": "一了百了；他的稿子就悬了",
+          "tags": [
+            "aggressive",
+            "selfish"
+          ],
+          "effects": [
+            {
+              "e": "var",
+              "id": "news",
+              "add": -12
+            },
+            {
+              "e": "stat",
+              "who": "yi",
+              "stat": "morale",
+              "add": -8,
+              "hidden": true
+            },
+            {
+              "e": "log",
+              "text": "{actor} 把录音一段一段删了个干净。",
+              "vis": "actor"
+            }
+          ],
+          "result": "{actor} 把 MP3 还了回去，什么也没说。"
+        }
+      ]
+    },
+    {
+      "id": "drugs_seen",
+      "kind": "solo",
+      "text": "{actor} 看见曾丽娟背过身，从双肩包的夹层里摸出一个小药瓶，倒了一片塞给她父亲。夹层里鼓鼓的，一板一板全是药。车上明明还有人伤着、病着。",
+      "weight": 8,
+      "minRound": 2,
+      "whoWhen": "!actor.is.zeng",
+      "when": "present.zeng && present.deming && !zeng.revealed && zeng.item.drugs >= 1 && (injuredCount >= 1 || flag.yaya_sick)",
+      "options": [
+        {
+          "id": "expose",
+          "label": "当着大家问她：包里还有什么药？",
+          "hint": "药能拿出来用；她会难堪",
+          "tags": [
+            "aggressive",
+            "fair",
+            "medical"
+          ],
+          "effects": [
+            {
+              "e": "reveal",
+              "who": "zeng"
+            },
+            {
+              "e": "trust",
+              "from": "zeng",
+              "to": "actor",
+              "add": -15
+            }
+          ],
+          "result": "曾丽娟沉默了一会儿，把药包倒在了卧铺上。"
+        },
+        {
+          "id": "ask",
+          "label": "私下求她匀一点给伤病的人",
+          "hint": "她也许会给",
+          "tags": [
+            "cooperative",
+            "medical"
+          ],
+          "effects": [
+            {
+              "e": "chance",
+              "p": 0.6,
+              "then": [
+                {
+                  "e": "res",
+                  "id": "antibiotics",
+                  "add": 1
+                },
+                {
+                  "e": "trust",
+                  "from": "zeng",
+                  "to": "actor",
+                  "add": 4
+                },
+                {
+                  "e": "log",
+                  "text": "曾丽娟塞给 {actor} 一板头孢：“只有这些了。”"
+                }
+              ],
+              "else": [
+                {
+                  "e": "trust",
+                  "from": "zeng",
+                  "to": "actor",
+                  "add": -6
+                }
+              ]
+            }
+          ],
+          "result": "{actor} 等她父亲睡着了，才开了口。"
+        },
+        {
+          "id": "keep",
+          "label": "那是给她父亲的，不说",
+          "hint": "各人有各人的难处",
+          "tags": [
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "log",
+              "text": "{actor} 把头转了过去。",
+              "vis": "actor"
+            }
+          ],
+          "result": "什么也没发生。"
+        }
+      ]
+    },
+    {
+      "id": "fireworks",
+      "kind": "solo",
+      "text": "火桶摆在了半挂车车尾避风的地方，火星子被风一卷，直往车厢底下飘。你知道车厢最里头压着什么。",
+      "who": "niu",
+      "weight": 25,
+      "when": "present.niu && !niu.revealed && flag.bonfire && !flag.barrel_moved",
+      "options": [
+        {
+          "id": "confess",
+          "label": "跟大家说实话，把火桶挪走",
+          "hint": "秘密保不住了，可不会出事",
+          "tags": [
+            "fair",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "reveal",
+              "who": "actor"
+            },
+            {
+              "e": "flag",
+              "id": "barrel_moved"
+            }
+          ],
+          "result": "{actor} 打开车厢门，指着最里头那几十个纸箱。大家一声不吭地把火桶抬到了护栏边上。"
+        },
+        {
+          "id": "excuse",
+          "label": "找个理由，非让大家把火桶挪开",
+          "hint": "也许有人会起疑",
+          "tags": [
+            "cautious",
+            "selfish"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "barrel_moved"
+            },
+            {
+              "e": "chance",
+              "p": 0.35,
+              "then": [
+                {
+                  "e": "reveal",
+                  "who": "actor"
+                },
+                {
+                  "e": "log",
+                  "text": "有人帮着挪火桶的时候，看见车厢缝里纸箱上印着“烟花爆竹”四个大字。"
+                }
+              ]
+            }
+          ],
+          "result": "{actor} 说柴油味太冲，非把火桶挪到了护栏边上。"
+        },
+        {
+          "id": "ignore",
+          "label": "离得够远，没事",
+          "hint": "什么都不用说",
+          "tags": [
+            "risky",
+            "selfish"
+          ],
+          "effects": [
+            {
+              "e": "chance",
+              "p": 0.5,
+              "then": [
+                {
+                  "e": "schedule",
+                  "event": "fireworks_fire",
+                  "in": 1
+                }
+              ]
+            }
+          ],
+          "result": "{actor} 把烟头扔进火桶，回了驾驶室。"
+        }
+      ]
+    },
+    {
+      "id": "fireworks_fire",
+      "kind": "group",
+      "text": "半夜里，半挂车车厢底下冒起了烟。先是噼里啪啦几声，接着一串炮仗在车厢里炸开了，火光从门缝里往外喷。车厢最里头还有十几箱。",
+      "priority": 85,
+      "major": true,
+      "pre": [
+        {
+          "e": "reveal",
+          "who": "niu"
+        }
+      ],
+      "options": [
+        {
+          "id": "fight",
+          "label": "拿灭火器、铲冰往上压",
+          "hint": "也许能保住车和橘子；离得太近会被炸伤",
+          "tags": [
+            "risky",
+            "altruistic"
+          ],
+          "effects": [
+            {
+              "e": "chance",
+              "p": 0.55,
+              "then": [
+                {
+                  "e": "item",
+                  "who": "niu",
+                  "id": "cargo",
+                  "add": -150
+                },
+                {
+                  "e": "log",
+                  "text": "几个灭火器喷空了，又铲了几十锹冰，火总算压了下去。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "item",
+                  "who": "niu",
+                  "id": "cargo",
+                  "add": "-niu.item.cargo"
+                },
+                {
+                  "e": "each",
+                  "who": "players",
+                  "do": [
+                    {
+                      "e": "chance",
+                      "p": 0.3,
+                      "then": [
+                        {
+                          "e": "injure",
+                          "who": "actor",
+                          "kind": "burn",
+                          "severity": "randRange(20, 45)",
+                          "part": "手和脸"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "e": "log",
+                  "text": "车厢里一声闷响，最里头那几箱一起炸了。冲上去的人被气浪掀翻在冰上。"
+                }
+              ]
+            }
+          ],
+          "result": "几个人抄起灭火器冲了上去。"
+        },
+        {
+          "id": "run",
+          "label": "所有人往后撤五十米，让它烧",
+          "hint": "人没事，车和橘子就没了",
+          "tags": [
+            "safe",
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "item",
+              "who": "niu",
+              "id": "cargo",
+              "add": "-niu.item.cargo"
+            },
+            {
+              "e": "shelter",
+              "add": -12
+            },
+            {
+              "e": "each",
+              "who": "all",
+              "do": [
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "wet",
+                  "add": 6,
+                  "hidden": true
+                },
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "core",
+                  "add": -0.3,
+                  "hidden": true
+                }
+              ]
+            }
+          ],
+          "result": "整整一个钟头，半挂车在冰雨里烧成了一个火球，烟花一阵一阵地往天上蹿。"
+        }
+      ]
+    },
+    {
+      "id": "barrel_found",
+      "kind": "group",
+      "text": "路边的施工围挡后面扔着一只空油桶，还有半捆生锈的钢筋。有人敲了敲桶壁：“劈开、打几个眼，就是个火桶。烤衣服、化冰都用得上。”问题是架在哪儿：半挂车车尾那里背风，护栏边上风大，可离车远。",
+      "weight": 30,
+      "minRound": 2,
+      "when": "!done.fire_barrel && !flag.barrel_decided",
+      "options": [
+        {
+          "id": "truck",
+          "label": "就架在半挂车车尾，背风",
+          "hint": "火旺，人也能凑在车边取暖",
+          "tags": [
+            "warmth",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "barrel_decided"
+            },
+            {
+              "e": "work",
+              "project": "fire_barrel",
+              "base": 12,
+              "who": "best:technical"
+            },
+            {
+              "e": "res",
+              "id": "wood",
+              "add": 2
+            }
+          ],
+          "result": "油桶劈开了，垫上几块砖，架在了半挂车的车尾下面。"
+        },
+        {
+          "id": "rail",
+          "label": "架在护栏边上，离车远一点",
+          "hint": "风大，烧得费柴；可车边上不会有火星",
+          "tags": [
+            "safe",
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "barrel_decided"
+            },
+            {
+              "e": "flag",
+              "id": "barrel_moved"
+            },
+            {
+              "e": "work",
+              "project": "fire_barrel",
+              "base": 12,
+              "who": "best:technical"
+            },
+            {
+              "e": "res",
+              "id": "wood",
+              "add": 1
+            }
+          ],
+          "result": "火桶架在了护栏边上，离大巴有十几步远。"
+        },
+        {
+          "id": "skip",
+          "label": "车边上烧火太危险，算了",
+          "hint": "什么都不用干",
+          "tags": [
+            "safe",
+            "selfish"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "barrel_decided"
+            }
+          ],
+          "result": "油桶又被扔回了围挡后面。"
+        }
+      ]
+    },
+    {
+      "id": "r_charcoal",
+      "kind": "group",
+      "text": "有人从后面的车上换来半袋木炭，在一个旧脸盆里点着了，端上了大巴：“烤一烤，比开暖风省油。”",
+      "weight": 6,
+      "minRound": 2,
+      "options": [
+        {
+          "id": "forbid",
+          "label": "马上端出去，车里不能烧炭",
+          "hint": "车里照样冷；木炭可以拿去火桶里烧",
+          "tags": [
+            "safe",
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "wood",
+              "add": 1
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -1
+            }
+          ],
+          "result": "炭盆被端到了外面。"
+        },
+        {
+          "id": "crack",
+          "label": "放在车门口，车门开一条缝",
+          "hint": "暖和一些；炭火一样出一氧化碳",
+          "tags": [
+            "warmth",
+            "risky"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "charcoal_crack"
+            },
+            {
+              "e": "each",
+              "who": "all",
+              "do": [
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "core",
+                  "add": 0.3,
+                  "hidden": true
+                }
+              ]
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 2
+            }
+          ],
+          "result": "炭盆搁在了车门边，门缝里呼呼地往里灌风。"
+        },
+        {
+          "id": "keep",
+          "label": "车里冷死了，就放在中间",
+          "hint": "一下子就暖和了；门窗关着烧炭，是在拿命赌",
+          "tags": [
+            "warmth",
+            "selfish"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "charcoal"
+            },
+            {
+              "e": "each",
+              "who": "all",
+              "do": [
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "core",
+                  "add": 0.5,
+                  "hidden": true
+                }
+              ]
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 3
+            }
+          ],
+          "result": "炭盆红红的，车里一下子暖和起来，大家围着它烤手。"
+        }
+      ]
+    },
+    {
+      "id": "r_baijiu",
+      "kind": "group",
+      "text": "有人从后备箱里翻出两瓶白酒，拧开盖子：“喝两口，身上就暖和了。”",
+      "weight": 5,
+      "minRound": 2,
+      "options": [
+        {
+          "id": "drink",
+          "label": "大家都喝两口",
+          "hint": "心里一热；喝了酒，身上的热气散得更快",
+          "tags": [
+            "selfish",
+            "warmth"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 4
+            },
+            {
+              "e": "each",
+              "who": "all",
+              "do": [
+                {
+                  "e": "if",
+                  "when": "!actor.animal && !actor.tag.child",
+                  "then": [
+                    {
+                      "e": "stat",
+                      "who": "actor",
+                      "stat": "core",
+                      "add": -0.4,
+                      "hidden": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "result": "一瓶酒传了一圈，一股热流从嗓子眼烧到胃里。可没过多久，身上反倒更冷了。"
+        },
+        {
+          "id": "disinfect",
+          "label": "留着，给伤口消毒",
+          "hint": "喝酒驱寒是假的：酒让人觉得暖和，身上的热气反倒散得更快",
+          "tags": [
+            "cautious",
+            "medical"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "medkit",
+              "add": 1
+            }
+          ],
+          "result": "两瓶酒被塞进了急救箱。"
+        },
+        {
+          "id": "trade",
+          "label": "拿去跟村民换吃的",
+          "hint": "两瓶好酒能换不少东西",
+          "tags": [
+            "food",
+            "fair"
+          ],
+          "when": "flag.market",
+          "effects": [
+            {
+              "e": "res",
+              "id": "food",
+              "add": 900
+            }
+          ],
+          "result": "两瓶酒换回来一篮红薯和十个煮鸡蛋。"
+        }
+      ]
+    },
+    {
+      "id": "r_toilet_slip",
+      "kind": "solo",
+      "text": "半夜，{actor} 下车去护栏外面方便。脚刚落地，冰面就滑了一下。",
+      "weight": 6,
+      "once": false,
+      "cooldown": 4,
+      "whoWhen": "actor.mobile",
+      "options": [
+        {
+          "id": "grab",
+          "label": "一把抓住护栏",
+          "hint": "抓住了就没事，抓不住摔得更重",
+          "tags": [
+            "risky"
+          ],
+          "effects": [
+            {
+              "e": "check",
+              "skill": "strength",
+              "dc": 45,
+              "then": [
+                {
+                  "e": "log",
+                  "text": "{actor} 一把抓住护栏上的冰溜子，硬是撑住了。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "chance",
+                  "p": 0.15,
+                  "then": [
+                    {
+                      "e": "log",
+                      "text": "{actor} 没抓住，仰面摔了下去，后脑重重磕在冰面上，再也没有醒过来。"
+                    },
+                    {
+                      "e": "kill",
+                      "who": "actor",
+                      "cause": "摔倒时后脑磕在冰上"
+                    }
+                  ],
+                  "else": [
+                    {
+                      "e": "injure",
+                      "who": "actor",
+                      "kind": "fracture",
+                      "severity": "randRange(30, 45)",
+                      "part": "手腕"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "result": "{actor} 伸手去够护栏。"
+        },
+        {
+          "id": "sit",
+          "label": "顺势往后坐，护住头",
+          "hint": "摔是肯定要摔，摔得轻一些",
+          "tags": [
+            "safe",
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "injure",
+              "who": "actor",
+              "kind": "sprain",
+              "severity": "randRange(12, 24)",
+              "part": "尾骨"
+            },
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "wet",
+              "add": 6,
+              "hidden": true
+            }
+          ],
+          "result": "{actor} 一屁股坐在冰水里，半天没爬起来。"
+        }
+      ]
+    },
+    {
+      "id": "r_branch",
+      "kind": "solo",
+      "text": "{actor} 在路堑上拖竹子，头顶的竹林里咔嚓一声，一大丛挂满冰的竹子压了下来。",
+      "weight": 5,
+      "minRound": 2,
+      "whoWhen": "actor.mobile",
+      "when": "precip >= 1",
+      "options": [
+        {
+          "id": "dodge",
+          "label": "往旁边扑",
+          "hint": "看反应",
+          "tags": [
+            "risky"
+          ],
+          "effects": [
+            {
+              "e": "check",
+              "skill": "survival",
+              "dc": 50,
+              "then": [
+                {
+                  "e": "log",
+                  "text": "{actor} 扑倒在冰上，竹子砸在身后半米的地方。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "injure",
+                  "who": "actor",
+                  "kind": "concussion",
+                  "severity": "randRange(30, 55)",
+                  "part": "头部"
+                }
+              ]
+            }
+          ],
+          "result": "{actor} 往旁边一扑。"
+        },
+        {
+          "id": "cover",
+          "label": "抱住头，原地蹲下",
+          "hint": "胳膊上肯定要挨几下",
+          "tags": [
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "injure",
+              "who": "actor",
+              "kind": "laceration",
+              "severity": "randRange(15, 30)",
+              "part": "胳膊"
+            }
+          ],
+          "result": "竹子砸在{actor}的背上和胳膊上，冰碴溅了一身。"
+        }
+      ]
+    },
+    {
+      "id": "r_truck_slide",
+      "kind": "group",
+      "text": "上坡那头一辆拉钢材的重型货车突然刹不住了，车轮在冰面上空转，车身一点一点往下溜，司机在驾驶室里拼命按喇叭。正对着的，就是大巴的车头。",
+      "weight": 9,
+      "minRound": 2,
+      "major": true,
+      "when": "precip >= 1",
+      "options": [
+        {
+          "id": "run",
+          "label": "所有人马上下车，往护栏外面跑",
+          "hint": "人跑得掉，车就顾不上了",
+          "tags": [
+            "safe",
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "each",
+              "who": "all",
+              "do": [
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "wet",
+                  "add": 6,
+                  "hidden": true
+                },
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "core",
+                  "add": -0.3,
+                  "hidden": true
+                }
+              ]
+            },
+            {
+              "e": "chance",
+              "p": 0.5,
+              "then": [
+                {
+                  "e": "shelter",
+                  "add": -25
+                },
+                {
+                  "e": "log",
+                  "text": "货车的车尾撞进了大巴的车头，挡风玻璃碎了一地。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "log",
+                  "text": "货车溜了十几米，横在了大巴前面两米的地方。"
+                }
+              ]
+            },
+            {
+              "e": "chance",
+              "p": 0.3,
+              "then": [
+                {
+                  "e": "injure",
+                  "who": "random",
+                  "kind": "sprain",
+                  "severity": "randRange(18, 32)",
+                  "part": "脚踝"
+                }
+              ]
+            }
+          ],
+          "result": "大家连滚带爬地翻过护栏，趴在路堑边的冰上。"
+        },
+        {
+          "id": "wedge",
+          "label": "冲上去往它轮子底下塞石头、垫木头",
+          "hint": "也许能把它卡住；卡不住，人就在车轮前面",
+          "tags": [
+            "risky",
+            "altruistic"
+          ],
+          "effects": [
+            {
+              "e": "check",
+              "skill": "strength",
+              "dc": 55,
+              "then": [
+                {
+                  "e": "stat",
+                  "who": "all",
+                  "stat": "morale",
+                  "add": 4
+                },
+                {
+                  "e": "log",
+                  "text": "货车的后轮卡在了石头上，停住了。司机跳下来，腿还在抖。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "injure",
+                  "who": "strongest",
+                  "kind": "crush",
+                  "severity": "randRange(40, 70)",
+                  "part": "腿"
+                },
+                {
+                  "e": "shelter",
+                  "add": -15
+                },
+                {
+                  "e": "log",
+                  "text": "货车没停住。冲在最前面的人被车尾扫倒在冰上。"
+                }
+              ],
+              "who": "strongest"
+            }
+          ],
+          "result": "最壮的几个人抱着石头冲了上去。"
+        },
+        {
+          "id": "stay",
+          "label": "坐在车里别动，它也许会停",
+          "hint": "不用出去淋雨；赌它会停",
+          "tags": [
+            "cautious",
+            "selfish"
+          ],
+          "effects": [
+            {
+              "e": "chance",
+              "p": 0.45,
+              "then": [
+                {
+                  "e": "log",
+                  "text": "货车溜了十几米，在离大巴两米的地方停住了。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "shelter",
+                  "add": -30
+                },
+                {
+                  "e": "buff",
+                  "who": "all",
+                  "id": "shaken",
+                  "rounds": 2
+                },
+                {
+                  "e": "log",
+                  "text": "货车撞进了大巴的车头，车里的人被甩得东倒西歪。"
+                },
+                {
+                  "e": "each",
+                  "who": "all",
+                  "do": [
+                    {
+                      "e": "chance",
+                      "p": 0.3,
+                      "then": [
+                        {
+                          "e": "injure",
+                          "who": "actor",
+                          "kind": "crush",
+                          "severity": "randRange(30, 60)",
+                          "part": "胸口"
+                        },
+                        {
+                          "e": "chance",
+                          "p": 0.2,
+                          "then": [
+                            {
+                              "e": "kill",
+                              "who": "actor",
+                              "cause": "被溜坡的货车撞伤"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "result": "大家抓着卧铺的栏杆，屏住了呼吸。"
+        }
+      ]
+    },
+    {
+      "id": "r_siphon_thief",
+      "kind": "group",
+      "text": "早上一看，大巴的油箱盖被撬开了，地上一摊柴油冻成了油冰——夜里有人偷油。",
+      "weight": 5,
+      "minRound": 2,
+      "when": "res.fuel >= 15",
+      "pre": [
+        {
+          "e": "res",
+          "id": "fuel",
+          "add": -10
+        }
+      ],
+      "options": [
+        {
+          "id": "guard",
+          "label": "以后夜里轮流守着油箱",
+          "hint": "守夜的人睡不好",
+          "tags": [
+            "cautious",
+            "fair"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "fuel_guard"
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -1
+            }
+          ],
+          "result": "油箱盖用铁丝缠上了，旁边放了一根撬棍。"
+        },
+        {
+          "id": "chase",
+          "label": "顺着油迹去后面的车找",
+          "hint": "也许能要回来；也可能打起来",
+          "tags": [
+            "aggressive",
+            "risky"
+          ],
+          "effects": [
+            {
+              "e": "chance",
+              "p": 0.45,
+              "then": [
+                {
+                  "e": "res",
+                  "id": "fuel",
+                  "add": 8
+                },
+                {
+                  "e": "log",
+                  "text": "油迹一直通到后面一辆面包车。车主红着脸把半桶油还了回来。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "injure",
+                  "who": "strongest",
+                  "kind": "laceration",
+                  "severity": "randRange(15, 30)",
+                  "part": "嘴角"
+                },
+                {
+                  "e": "log",
+                  "text": "后面那辆车的人不认账，推搡起来，有人挨了一拳。"
+                }
+              ]
+            }
+          ],
+          "result": "几个人顺着冰上的油迹往后走。"
+        },
+        {
+          "id": "let",
+          "label": "算了，大家都难",
+          "hint": "油就这么少了",
+          "tags": [
+            "safe",
+            "altruistic"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -2
+            }
+          ],
+          "result": "没人再提这件事。"
+        }
+      ]
+    },
+    {
+      "id": "r_gas_seller",
+      "kind": "leader",
+      "text": "一个面包车司机拎着两个塑料桶挨个车窗敲：“汽油、柴油，三十块一升，要不要？”平时一升才五块多。",
+      "weight": 6,
+      "minRound": 3,
+      "when": "res.fuel < 30 && res.cash >= 90",
+      "options": [
+        {
+          "id": "buy",
+          "label": "买三升",
+          "hint": "九十块，能多开几个钟头暖风",
+          "tags": [
+            "warmth"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "cash",
+              "add": -90
+            },
+            {
+              "e": "res",
+              "id": "fuel",
+              "add": 3
+            }
+          ],
+          "result": "三升油倒进了大巴的油箱，咕嘟咕嘟几声就没了。"
+        },
+        {
+          "id": "haggle",
+          "label": "跟他讲价",
+          "hint": "看口才",
+          "tags": [
+            "selfish",
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "check",
+              "skill": "social",
+              "dc": 55,
+              "then": [
+                {
+                  "e": "res",
+                  "id": "cash",
+                  "add": -90
+                },
+                {
+                  "e": "res",
+                  "id": "fuel",
+                  "add": 6
+                },
+                {
+                  "e": "log",
+                  "text": "讲到最后，六升油九十块。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "log",
+                  "text": "面包车司机拎着桶走了：“后面有的是人要。”"
+                }
+              ]
+            }
+          ],
+          "result": "{leader} 跟他磨起了嘴皮子。"
+        },
+        {
+          "id": "report",
+          "label": "记下车牌，等交警来了举报他",
+          "hint": "一滴油也拿不到",
+          "tags": [
+            "fair",
+            "aggressive"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 1
+            },
+            {
+              "e": "var",
+              "id": "news",
+              "add": 2
+            }
+          ],
+          "result": "有人把车牌号抄在了本子上。"
+        },
+        {
+          "id": "no",
+          "label": "不买",
+          "tags": [
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -1
+            }
+          ],
+          "result": "面包车司机去敲了下一辆车的窗。"
+        }
+      ]
+    },
+    {
+      "id": "r_motorbike",
+      "kind": "group",
+      "text": "一个骑摩托车回湖北老家的年轻人在应急车道上摔倒了，连人带车滑出去十几米，抱着腿在冰上打滚。他的摩托车后座上捆着一床被子和两箱牛奶。",
+      "weight": 5,
+      "minRound": 2,
+      "options": [
+        {
+          "id": "help",
+          "label": "把他扶上大巴，给他处理伤口",
+          "hint": "用掉 1 份急救用品",
+          "tags": [
+            "altruistic",
+            "medical"
+          ],
+          "when": "res.medkit >= 1",
+          "effects": [
+            {
+              "e": "res",
+              "id": "medkit",
+              "add": -1
+            },
+            {
+              "e": "res",
+              "id": "food",
+              "add": 900
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 3
+            }
+          ],
+          "result": "他的小腿划开了一道口子。包扎好以后，他非要把两箱牛奶留下。"
+        },
+        {
+          "id": "lift",
+          "label": "帮他把车扶起来，他给什么都收着",
+          "hint": "举手之劳",
+          "tags": [
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "food",
+              "add": 450
+            },
+            {
+              "e": "stat",
+              "who": "weakest",
+              "stat": "clo",
+              "add": 0.4
+            }
+          ],
+          "result": "他把被子硬塞给了车里最虚弱的人，又推着摩托一瘸一拐地往前走了。"
+        },
+        {
+          "id": "ignore",
+          "label": "自己都顾不过来",
+          "hint": "什么也不用管",
+          "tags": [
+            "selfish",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -2
+            }
+          ],
+          "result": "他自己爬了起来，推着摩托往前走了，走几步就回头看一眼。"
+        }
+      ]
+    },
+    {
+      "id": "r_ambulance",
+      "kind": "group",
+      "text": "一辆救护车拉着警报，想从应急车道往上挤，可应急车道上停满了车，黑色的帕萨特就横在最前头。",
+      "weight": 4,
+      "minRound": 3,
+      "when": "!flag.boss_fled",
+      "options": [
+        {
+          "id": "push",
+          "label": "大家一起把车推开，给救护车让道",
+          "hint": "冰上推车很费劲，也可能摔",
+          "tags": [
+            "altruistic",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "each",
+              "who": "players",
+              "do": [
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "fatigue",
+                  "add": 10,
+                  "hidden": true
+                }
+              ]
+            },
+            {
+              "e": "chance",
+              "p": 0.25,
+              "then": [
+                {
+                  "e": "injure",
+                  "who": "random",
+                  "kind": "sprain",
+                  "severity": "randRange(15, 28)",
+                  "part": "手腕"
+                }
+              ]
+            },
+            {
+              "e": "var",
+              "id": "relief",
+              "add": 6
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 3
+            },
+            {
+              "e": "if",
+              "when": "present.luo",
+              "then": [
+                {
+                  "e": "trust",
+                  "from": "luo",
+                  "to": "voters",
+                  "add": -4
+                }
+              ]
+            }
+          ],
+          "result": "十几个人在冰上推着车，一寸一寸地挪。救护车从缝里钻了过去，车上的医生冲大家挥了挥手。"
+        },
+        {
+          "id": "ignore",
+          "label": "推不动的，冰上推车只会出事",
+          "hint": "救护车只能等",
+          "tags": [
+            "safe",
+            "selfish"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -3
+            }
+          ],
+          "result": "救护车在后面按了很久的喇叭，最后倒了回去。"
+        }
+      ]
+    },
+    {
+      "id": "r_radio",
+      "kind": "individual",
+      "text": "车载收音机里断断续续：“……国务院紧急部署……湖南全省电网……部队正连夜赶往京珠高速……请滞留司乘人员不要弃车步行……”",
+      "weight": 4,
+      "once": false,
+      "cooldown": 4,
+      "options": [
+        {
+          "id": "hope",
+          "label": "听着，心里有了点底",
+          "hint": "士气 +",
+          "tags": [
+            "hope",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "morale",
+              "add": 4
+            }
+          ],
+          "result": "{actor} 把收音机的音量调大了一点。"
+        },
+        {
+          "id": "phone",
+          "label": "打电话把消息告诉家里",
+          "hint": "用掉 1 格手机电",
+          "tags": [
+            "hope",
+            "cooperative"
+          ],
+          "when": "res.battery >= 1",
+          "effects": [
+            {
+              "e": "res",
+              "id": "battery",
+              "add": -1
+            },
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "morale",
+              "add": 6
+            }
+          ],
+          "result": "{actor} 对着电话说：“部队要来了，莫担心。”"
+        },
+        {
+          "id": "doubt",
+          "label": "说得好听，人在哪呢",
+          "tags": [
+            "suspicious"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "morale",
+              "add": -2
+            }
+          ],
+          "result": "{actor} 关掉了收音机。"
+        }
+      ]
+    },
+    {
+      "id": "r_homecall",
+      "kind": "solo",
+      "text": "{actor} 的手机在兜里震了一下，是家里打来的。信号只有一格，那头的声音断断续续：“……到哪了？年夜饭等不等你？”",
+      "weight": 5,
+      "once": false,
+      "cooldown": 4,
+      "when": "res.battery >= 1",
+      "options": [
+        {
+          "id": "truth",
+          "label": "说实话：困在高速上，不知道哪天能走",
+          "hint": "家里会急；可他们有权知道",
+          "tags": [
+            "fair"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "battery",
+              "add": -1
+            },
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "morale",
+              "add": -3
+            },
+            {
+              "e": "var",
+              "id": "news",
+              "add": 2
+            }
+          ],
+          "result": "电话那头沉默了很久，然后说：“我们等你。”"
+        },
+        {
+          "id": "soothe",
+          "label": "说快到了，别担心",
+          "hint": "说完自己心里也好受些",
+          "tags": [
+            "altruistic",
+            "hope"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "battery",
+              "add": -1
+            },
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "morale",
+              "add": 3
+            }
+          ],
+          "result": "{actor} 笑着说快了快了，挂了电话，半天没说话。"
+        },
+        {
+          "id": "save",
+          "label": "挂掉，省电",
+          "tags": [
+            "safe",
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "morale",
+              "add": -2
+            }
+          ],
+          "result": "{actor} 按掉了电话，把手机塞回了贴身的兜里。"
+        }
+      ]
+    },
+    {
+      "id": "r_window",
+      "kind": "group",
+      "text": "一声脆响，路堑上一根挂满冰的树枝砸下来，大巴侧面的两块车窗玻璃碎了，冷风和冻雨一下子灌了进来。",
+      "weight": 5,
+      "minRound": 2,
+      "when": "precip >= 1",
+      "pre": [
+        {
+          "e": "shelter",
+          "add": -15
+        }
+      ],
+      "options": [
+        {
+          "id": "patch",
+          "label": "拆纸箱、拿被子把破窗堵上",
+          "hint": "堵得住风，少了两床被子",
+          "tags": [
+            "cooperative",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "shelter",
+              "add": 10
+            }
+          ],
+          "result": "纸箱板用胶带一层层粘上，外面再压一床被子。"
+        },
+        {
+          "id": "tarp",
+          "label": "跟别的车换一块塑料布钉上",
+          "hint": "花二十块，封得严实",
+          "tags": [
+            "fair",
+            "warmth"
+          ],
+          "when": "res.cash >= 20",
+          "effects": [
+            {
+              "e": "res",
+              "id": "cash",
+              "add": -20
+            },
+            {
+              "e": "shelter",
+              "add": 14
+            }
+          ],
+          "result": "塑料布绷在窗框上，被风吹得啪啪响。"
+        },
+        {
+          "id": "move",
+          "label": "都挤到车厢另一头去",
+          "hint": "什么也不用花，就是冷",
+          "tags": [
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -2
+            }
+          ],
+          "result": "破窗那头的卧铺空了出来，冻雨在上面结了一层冰。"
+        }
+      ]
+    },
+    {
+      "id": "r_shovel_crew",
+      "kind": "group",
+      "text": "几个穿橙色背心的养路工人一路凿上来，满脸冰碴。领头的说：人手太少，一天只能凿开几百米。有没有能干活的，搭把手？",
+      "weight": 6,
+      "minRound": 2,
+      "when": "!flag.army",
+      "options": [
+        {
+          "id": "help",
+          "label": "能动的人都去",
+          "hint": "抢通快一点；人会累，会淋湿，也可能摔",
+          "tags": [
+            "cooperative",
+            "altruistic"
+          ],
+          "effects": [
+            {
+              "e": "var",
+              "id": "clear",
+              "add": 6
+            },
+            {
+              "e": "each",
+              "who": "players",
+              "do": [
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "fatigue",
+                  "add": 12,
+                  "hidden": true
+                },
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "wet",
+                  "add": 4,
+                  "hidden": true
+                }
+              ]
+            },
+            {
+              "e": "chance",
+              "p": 0.3,
+              "then": [
+                {
+                  "e": "injure",
+                  "who": "randomPlayer",
+                  "kind": "sprain",
+                  "severity": "randRange(18, 30)",
+                  "part": "脚踝"
+                }
+              ]
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 2
+            }
+          ],
+          "result": "铁锹、扳手、撬棍，能用的全用上了。"
+        },
+        {
+          "id": "feed",
+          "label": "给他们送口热水和吃的",
+          "hint": "自己的口粮少一点",
+          "tags": [
+            "altruistic",
+            "fair"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "food",
+              "add": -400
+            },
+            {
+              "e": "res",
+              "id": "water",
+              "add": -2
+            },
+            {
+              "e": "var",
+              "id": "relief",
+              "add": 4
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 2
+            }
+          ],
+          "result": "几个养路工人蹲在大巴门口，捧着保温杯喝热水，手抖得厉害。"
+        },
+        {
+          "id": "no",
+          "label": "自己都顾不过来",
+          "tags": [
+            "selfish",
+            "safe"
+          ],
+          "effects": [],
+          "result": "养路工人点点头，接着往上凿去了。"
+        }
+      ]
+    },
+    {
+      "id": "r_dog_food",
+      "kind": "group",
+      "text": "虎子趴在车门口，眼巴巴地看着大家手里的吃的，肚子瘪下去一大块。",
+      "weight": 6,
+      "minRound": 3,
+      "when": "present.huzi && foodDays < 0.5",
+      "options": [
+        {
+          "id": "feed",
+          "label": "人吃什么它吃什么，分它一口",
+          "hint": "吃的少一点",
+          "tags": [
+            "altruistic",
+            "fair"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "food",
+              "add": -300
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 2
+            },
+            {
+              "e": "if",
+              "when": "present.niu",
+              "then": [
+                {
+                  "e": "trust",
+                  "from": "niu",
+                  "to": "voters",
+                  "add": 5
+                }
+              ]
+            }
+          ],
+          "result": "虎子叼着半个馒头，跑到车门边趴下吃了。"
+        },
+        {
+          "id": "forage",
+          "label": "放它自己去找吃的",
+          "hint": "它也许就跑远了",
+          "tags": [
+            "selfish"
+          ],
+          "effects": [
+            {
+              "e": "chance",
+              "p": 0.35,
+              "then": [
+                {
+                  "e": "leave",
+                  "who": "huzi",
+                  "text": "虎子顺着车流跑远了，再也没回来。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "log",
+                  "text": "天黑的时候，虎子回来了，嘴边沾着一点不知道什么东西的血。"
+                }
+              ]
+            }
+          ],
+          "result": "虎子在路堑边上嗅了嗅，钻进了竹林。"
+        },
+        {
+          "id": "no",
+          "label": "人都吃不饱，顾不上狗",
+          "tags": [
+            "selfish",
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "if",
+              "when": "present.niu",
+              "then": [
+                {
+                  "e": "trust",
+                  "from": "niu",
+                  "to": "voters",
+                  "add": -6
+                }
+              ]
+            }
+          ],
+          "result": "虎子在门口趴了一夜。"
+        }
+      ]
+    },
+    {
+      "id": "r_dog_guard",
+      "kind": "group",
+      "text": "半夜虎子突然狂叫起来，冲着半挂车后面扑。手电一照，两个人影拎着塑料桶正往黑暗里跑。",
+      "weight": 4,
+      "minRound": 2,
+      "when": "present.huzi",
+      "options": [
+        {
+          "id": "chase",
+          "label": "追上去",
+          "hint": "也许能拿回点东西；冰上追人容易摔",
+          "tags": [
+            "aggressive",
+            "risky"
+          ],
+          "effects": [
+            {
+              "e": "chance",
+              "p": 0.4,
+              "then": [
+                {
+                  "e": "res",
+                  "id": "fuel",
+                  "add": 6
+                },
+                {
+                  "e": "log",
+                  "text": "一个桶被扔在了路边，里面还有大半桶柴油。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "injure",
+                  "who": "strongest",
+                  "kind": "sprain",
+                  "severity": "randRange(18, 32)",
+                  "part": "膝盖"
+                }
+              ]
+            }
+          ],
+          "result": "几个人打着手电追了出去。"
+        },
+        {
+          "id": "praise",
+          "label": "把狗叫回来，夸它一顿",
+          "tags": [
+            "safe",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "food",
+              "add": -100
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 2
+            }
+          ],
+          "result": "虎子摇着尾巴，叼走了半块饼干。"
+        }
+      ]
+    },
+    {
+      "id": "r_price_hike",
+      "kind": "group",
+      "text": "泡面涨到了 {var.price} 一碗，一个煮鸡蛋要五块。卖东西的人说，村里也断了电，水是从井里挑上来的，柴也是一捆一捆背上来的。",
+      "weight": 8,
+      "minRound": 3,
+      "when": "flag.market && !flag.price_fixed && var.price >= 16",
+      "options": [
+        {
+          "id": "pay",
+          "label": "认了，人家也不容易",
+          "tags": [
+            "fair",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -1
+            }
+          ],
+          "result": "钱一张一张递了下去。"
+        },
+        {
+          "id": "report",
+          "label": "打 12315 举报哄抬物价",
+          "hint": "用掉 1 格手机电",
+          "tags": [
+            "fair",
+            "aggressive"
+          ],
+          "when": "res.battery >= 1",
+          "effects": [
+            {
+              "e": "res",
+              "id": "battery",
+              "add": -1
+            },
+            {
+              "e": "chance",
+              "p": 0.5,
+              "then": [
+                {
+                  "e": "var",
+                  "id": "price",
+                  "add": -8
+                },
+                {
+                  "e": "log",
+                  "text": "下午来了两个物价局的人，在路堑底下贴了一张告示。泡面又降回了十块。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "log",
+                  "text": "电话那头说，会尽快派人。"
+                }
+              ]
+            }
+          ],
+          "result": "电话拨了好几遍才通。"
+        },
+        {
+          "id": "confront",
+          "label": "跟他们吵",
+          "hint": "出口气；价钱只会更贵",
+          "tags": [
+            "aggressive"
+          ],
+          "effects": [
+            {
+              "e": "var",
+              "id": "price",
+              "add": 3
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -1
+            }
+          ],
+          "result": "吵到最后，卖东西的人挑着担子走了，第二天价钱又涨了。"
+        }
+      ]
+    },
+    {
+      "id": "r_kitty_empty",
+      "kind": "group",
+      "text": "公用的钱花光了。路堑底下吃的有的是，可没钱，谁也不会白给。",
+      "weight": 12,
+      "minRound": 3,
+      "once": false,
+      "cooldown": 3,
+      "major": true,
+      "when": "flag.market && res.cash < 50 && foodDays < 0.6",
+      "options": [
+        {
+          "id": "everyone",
+          "label": "每个大人再掏一些",
+          "hint": "大家都没多少了",
+          "tags": [
+            "fair",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "cash",
+              "add": 250
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -1
+            }
+          ],
+          "result": "皱巴巴的票子凑了一小沓。"
+        },
+        {
+          "id": "luo",
+          "label": "让罗老板出这个钱",
+          "hint": "他有的是钱；他会记恨",
+          "tags": [
+            "fair",
+            "aggressive"
+          ],
+          "when": "present.luo",
+          "effects": [
+            {
+              "e": "res",
+              "id": "cash",
+              "add": 600
+            },
+            {
+              "e": "trust",
+              "from": "luo",
+              "to": "voters",
+              "add": -10
+            }
+          ],
+          "result": "罗振华沉着脸，从钱包里抽出一沓钱拍在了卧铺上。"
+        },
+        {
+          "id": "tian",
+          "label": "让田秀芬从棉袄里拿一千出来",
+          "hint": "大家都知道她身上有钱了",
+          "tags": [
+            "selfish",
+            "aggressive"
+          ],
+          "when": "present.tian && tian.revealed && tian.item.savings >= 1",
+          "effects": [
+            {
+              "e": "item",
+              "who": "tian",
+              "id": "savings",
+              "add": -1
+            },
+            {
+              "e": "res",
+              "id": "cash",
+              "add": 1000
+            },
+            {
+              "e": "trust",
+              "from": "tian",
+              "to": "voters",
+              "add": -12
+            }
+          ],
+          "result": "田秀芬咬着嘴唇拆开了线。"
+        },
+        {
+          "id": "sell",
+          "label": "把手机、手表卖给村民",
+          "hint": "钱有了，手机少了",
+          "tags": [
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "cash",
+              "add": 200
+            },
+            {
+              "e": "res",
+              "id": "battery",
+              "add": -2
+            }
+          ],
+          "result": "两部手机和一块手表换了两百块。"
+        },
+        {
+          "id": "starve",
+          "label": "不买了，饿着",
+          "tags": [
+            "safe",
+            "selfish"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": -3
+            }
+          ],
+          "result": "车里没人说话。"
+        }
+      ]
+    },
+    {
+      "id": "r_cards",
+      "kind": "group",
+      "text": "实在闷得慌，几个男人在卧铺上打起了扑克，有人提议赌点小钱。",
+      "weight": 4,
+      "minRound": 3,
+      "options": [
+        {
+          "id": "bet",
+          "label": "赌就赌，小打小闹",
+          "hint": "热闹；有人会输",
+          "tags": [
+            "selfish",
+            "risky"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 4
+            },
+            {
+              "e": "if",
+              "when": "present.dajun && present.tian",
+              "then": [
+                {
+                  "e": "trust",
+                  "from": "tian",
+                  "to": "dajun",
+                  "add": -10
+                },
+                {
+                  "e": "log",
+                  "text": "胡大军一晚上输了两百块，田秀芬气得一夜没理他。"
+                }
+              ]
+            }
+          ],
+          "result": "卧铺上吵吵嚷嚷，到半夜才散。"
+        },
+        {
+          "id": "no_bet",
+          "label": "不赌钱，输了的去凿冰",
+          "tags": [
+            "fair",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 3
+            },
+            {
+              "e": "var",
+              "id": "clear",
+              "add": 1
+            }
+          ],
+          "result": "输了的人骂骂咧咧地扛着扳手下了车。"
+        },
+        {
+          "id": "sleep",
+          "label": "都早点睡，省点力气",
+          "tags": [
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "each",
+              "who": "all",
+              "do": [
+                {
+                  "e": "stat",
+                  "who": "actor",
+                  "stat": "fatigue",
+                  "add": -6,
+                  "hidden": true
+                }
+              ]
+            }
+          ],
+          "result": "车里早早熄了灯。"
+        }
+      ]
+    },
+    {
+      "id": "r_child_cry",
+      "kind": "individual",
+      "text": "丫丫哭着要回家，哭累了就抽抽搭搭地问：“哥哥是不是不要我了？”",
+      "weight": 4,
+      "once": false,
+      "cooldown": 5,
+      "minRound": 2,
+      "when": "present.yaya",
+      "options": [
+        {
+          "id": "story",
+          "label": "讲个故事哄她",
+          "tags": [
+            "altruistic"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "morale",
+              "add": 2
+            },
+            {
+              "e": "stat",
+              "who": "yaya",
+              "stat": "morale",
+              "add": 6
+            }
+          ],
+          "result": "{actor} 讲了一个很长很长的故事，丫丫听着听着就睡着了。"
+        },
+        {
+          "id": "sing",
+          "label": "一起唱首歌",
+          "tags": [
+            "cooperative",
+            "hope"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "morale",
+              "add": 3
+            }
+          ],
+          "result": "{actor} 起了个头，车里有好几个人跟着哼了起来。"
+        },
+        {
+          "id": "leave",
+          "label": "让她爸妈去哄",
+          "tags": [
+            "selfish",
+            "safe"
+          ],
+          "effects": [],
+          "result": "{actor} 把头埋进了大衣里。"
+        }
+      ]
+    },
+    {
+      "id": "r_chilblains",
+      "kind": "individual",
+      "text": "脚趾头又痒又疼，肿得发亮。鞋袜从上车起就没干过。",
+      "weight": 4,
+      "minRound": 4,
+      "options": [
+        {
+          "id": "dry",
+          "label": "脱下鞋袜，在暖风口或火桶边慢慢烘干",
+          "hint": "慢慢烘，别烫着",
+          "tags": [
+            "safe",
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "wet",
+              "set": 0,
+              "hidden": true
+            },
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "fatigue",
+              "add": -3
+            }
+          ],
+          "result": "{actor} 把袜子搭在出风口上，一股酸臭味。"
+        },
+        {
+          "id": "rub",
+          "label": "用冰搓一搓，老辈人说这样好得快",
+          "hint": "老辈人的说法",
+          "tags": [
+            "risky"
+          ],
+          "effects": [
+            {
+              "e": "injure",
+              "who": "actor",
+              "kind": "frostbite",
+              "severity": "randRange(15, 25)",
+              "part": "脚趾"
+            }
+          ],
+          "result": "{actor} 抓起一把冰碴使劲搓，脚趾头从红变紫。"
+        },
+        {
+          "id": "ignore",
+          "label": "忍着",
+          "tags": [
+            "safe"
+          ],
+          "effects": [
+            {
+              "e": "chance",
+              "p": 0.4,
+              "then": [
+                {
+                  "e": "injure",
+                  "who": "actor",
+                  "kind": "frostbite",
+                  "severity": "randRange(12, 22)",
+                  "part": "脚趾"
+                }
+              ]
+            }
+          ],
+          "result": "{actor} 把脚缩进了被子里。"
+        }
+      ]
+    },
+    {
+      "id": "r_reporter",
+      "kind": "group",
+      "text": "一辆电视台的采访车跟在撒盐车后面开了上来。扛摄像机的记者踩着冰一路拍过来，举着话筒问车里的人：“你们被困几天了？”",
+      "weight": 15,
+      "when": "flag.story_filed && !flag.reporter_came",
+      "options": [
+        {
+          "id": "talk",
+          "label": "对着镜头说说这几天的事",
+          "hint": "外面的人会知道这一段的情况",
+          "tags": [
+            "hope",
+            "cooperative"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "reporter_came"
+            },
+            {
+              "e": "var",
+              "id": "relief",
+              "add": 8
+            },
+            {
+              "e": "var",
+              "id": "price",
+              "add": -5
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 3
+            },
+            {
+              "e": "buff",
+              "who": "all",
+              "id": "hope",
+              "rounds": 2
+            }
+          ],
+          "result": "当天晚上，有人在收音机里听到了自己的声音。"
+        },
+        {
+          "id": "decline",
+          "label": "不想上电视",
+          "tags": [
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "reporter_came"
+            }
+          ],
+          "result": "记者拍了几个车窗，去了下一辆车。"
+        }
+      ]
+    },
+    {
+      "id": "r_free_food",
+      "kind": "group",
+      "text": "一个裹着头巾的老婆婆提着一桶姜汤、一篮热红薯，一辆车一辆车地送，不收钱。她说：“我儿子也在外面打工，今年也回不来。”",
+      "weight": 5,
+      "minRound": 3,
+      "when": "flag.market",
+      "options": [
+        {
+          "id": "accept",
+          "label": "谢谢她，收下",
+          "tags": [
+            "cooperative",
+            "food"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "food",
+              "add": 1200
+            },
+            {
+              "e": "res",
+              "id": "water",
+              "add": 3
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 4
+            }
+          ],
+          "result": "姜汤还冒着热气，辣得人直吸气。"
+        },
+        {
+          "id": "pay",
+          "label": "硬塞给她二十块",
+          "tags": [
+            "fair",
+            "food"
+          ],
+          "effects": [
+            {
+              "e": "res",
+              "id": "cash",
+              "add": -20
+            },
+            {
+              "e": "res",
+              "id": "food",
+              "add": 1200
+            },
+            {
+              "e": "res",
+              "id": "water",
+              "add": 3
+            },
+            {
+              "e": "stat",
+              "who": "all",
+              "stat": "morale",
+              "add": 5
+            }
+          ],
+          "result": "老婆婆把钱塞回来，又被塞回去，最后揣进了围裙兜里。"
+        },
+        {
+          "id": "kids",
+          "label": "求她把丫丫和曾老师带到村里家里烤火",
+          "hint": "他们能睡上热炕；家里人得跟着去",
+          "tags": [
+            "altruistic",
+            "cautious"
+          ],
+          "when": "present.yaya || present.deming",
+          "effects": [
+            {
+              "e": "if",
+              "when": "present.yaya",
+              "then": [
+                {
+                  "e": "evacuate",
+                  "who": "yaya",
+                  "text": "{actor} 被老婆婆牵着手，下到了村里。"
+                },
+                {
+                  "e": "if",
+                  "when": "present.dajun",
+                  "then": [
+                    {
+                      "e": "evacuate",
+                      "who": "dajun",
+                      "text": "{actor} 背着女儿跟了下去。"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "e": "if",
+              "when": "present.deming",
+              "then": [
+                {
+                  "e": "evacuate",
+                  "who": "deming",
+                  "text": "{actor} 拄着一根竹子，跟着下到了村里。"
+                }
+              ]
+            }
+          ],
+          "result": "老婆婆连声说要得要得，回头就去喊了两个后生来背人。"
+        }
+      ]
+    },
+    {
+      "id": "r_live_wire",
+      "kind": "solo",
+      "text": "{actor} 要下路堑去买吃的。近路的田埂上横着一根从铁塔上掉下来的电线，一半埋在冰里。绕远路，要多走半个钟头的冰坡。",
+      "weight": 6,
+      "minRound": 3,
+      "whoWhen": "actor.mobile",
+      "when": "flag.pylon_down && flag.market && !flag.wire_done",
+      "options": [
+        {
+          "id": "detour",
+          "label": "绕远路",
+          "hint": "多受半个钟头的冻，可能摔",
+          "tags": [
+            "safe",
+            "cautious"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "wire_done"
+            },
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "fatigue",
+              "add": 10
+            },
+            {
+              "e": "stat",
+              "who": "actor",
+              "stat": "wet",
+              "add": 4,
+              "hidden": true
+            },
+            {
+              "e": "chance",
+              "p": 0.2,
+              "then": [
+                {
+                  "e": "injure",
+                  "who": "actor",
+                  "kind": "sprain",
+                  "severity": "randRange(15, 28)",
+                  "part": "膝盖"
+                }
+              ]
+            }
+          ],
+          "result": "{actor} 绕着路堑走了一大圈，回来的时候裤腿上全是冰。"
+        },
+        {
+          "id": "step",
+          "label": "跨过去，线都断了，哪来的电",
+          "hint": "近；万一线上还有电呢",
+          "tags": [
+            "risky",
+            "selfish"
+          ],
+          "effects": [
+            {
+              "e": "flag",
+              "id": "wire_done"
+            },
+            {
+              "e": "chance",
+              "p": "if(flag.lines_marked, 0.05, 0.14)",
+              "then": [
+                {
+                  "e": "kill",
+                  "who": "actor",
+                  "cause": "触电"
+                },
+                {
+                  "e": "log",
+                  "text": "田埂上闪过一道蓝光。"
+                }
+              ],
+              "else": [
+                {
+                  "e": "log",
+                  "text": "{actor} 屏住气跨了过去，什么事也没有。"
+                }
+              ]
+            }
+          ],
+          "result": "{actor} 盯着那根电线看了一会儿，抬起了脚。"
+        }
+      ]
+    }
+  ],
+  "endings": [
+    {
+      "id": "home_all",
+      "title": "回家过年",
+      "when": "flag.road_open && dead == 0 && exiled == 0",
+      "tone": "good",
+      "text": "第{day}天下午，车流终于动了。大巴碾着盐粒爬上了坡顶，后视镜里，那段冰道越来越远。{aliveCount} 个人，一个不少。到了收费站，有人下车给家里打电话，说着说着就蹲在地上哭了。离除夕，还有几天。"
+    },
+    {
+      "id": "road_open",
+      "title": "冰化路通",
+      "when": "flag.road_open && dead <= 1",
+      "tone": "good",
+      "text": "第{day}天，路通了。武警战士站在冰坡两边，一辆一辆地放车。活着离开这段路的人：{survivors}。留在这里的：{dead}。车开过那个弯道的时候，谁也没有说话。"
+    },
+    {
+      "id": "last_one",
+      "title": "最后一个人",
+      "when": "alive == 1",
+      "tone": "bitter",
+      "text": "后来交警清点滞留车辆的时候，那辆卧铺大巴边上，只有一个人活了下来：{survivors}。没能离开冰道的人：{dead}。很多年以后，这个人每次在电视上看到冻雨的消息，都会把电视关掉。"
+    },
+    {
+      "id": "road_open_cost",
+      "title": "年关",
+      "when": "flag.road_open",
+      "tone": "bitter",
+      "text": "第{day}天，冰终于被凿开了。活着离开的人：{survivors}。没能等到这一天的：{dead}。那年春节，好几户人家的年夜饭桌上，多摆了一副碗筷。"
+    },
+    {
+      "id": "carried_out",
+      "title": "冰坡上的台阶",
+      "when": "flag.carried_out",
+      "tone": "bitter",
+      "text": "战士们在冰坡上凿出一级一级的台阶，一路扶着、背着，把车上剩下的人带到了八公里外收费站的临时安置点。那里有热饭、棉被，还有电。走到的人：{survivors}。留在冰道上的：{dead}。那几辆车在路上又停了好几天，才被拖车拖走。"
+    },
+    {
+      "id": "village",
+      "title": "坳上村",
+      "when": "flag.village",
+      "tone": "good",
+      "text": "谢满仓在前面踩着脚印，一行人扶着护栏、拽着竹子，从路堑上一点一点挪了下去。村里没有电，可家家的柴火灶都烧得通红，灶台上头挂着腊肉。下来的人：{survivors}。没能下来的：{dead}。路通以后，他们才回到车上，车顶上的冰已经化了一半。"
+    },
+    {
+      "id": "scattered",
+      "title": "各自离开",
+      "when": "!flag.final_day && rescued >= 1",
+      "tone": "bitter",
+      "text": "这段冰道上的人，最后是一个一个、一拨一拨离开的：有的被抬走，有的自己走，有的开着车挤出了车流。离开的人：{survivors}。没能离开的：{dead}。路通的那天，大巴还停在原地，车窗上的胶带被风吹得啪啪响。"
+    },
+    {
+      "id": "stuck_all",
+      "title": "车里的年",
+      "when": "flag.final_day && dead == 0",
+      "tone": "good",
+      "text": "第九天傍晚，路还没有通。可武警送来了棉被和热饭，收费站那边也派了大客车来接人。{aliveCount} 个人一个不少，坐上了接人的车。那年除夕，他们中有的人是在路上过的，有的人赶上了年夜饭。"
+    },
+    {
+      "id": "stuck",
+      "title": "第九天",
+      "tone": "bitter",
+      "text": "第九天傍晚，前面的车还是没动。收费站派来的大客车停在八公里外，战士们一趟一趟地把人接过去。活着坐上车的人：{survivors}。没能等到的：{dead}。这段路，又过了两天才通。"
+    },
+    {
+      "id": "ice_tomb",
+      "title": "冰封",
+      "tone": "bad",
+      "text": "抢修的武警凿到这一段的时候，大巴的车窗上结着厚厚的冰，里面没有一点动静。交警在登记表上写下了几辆车的车牌号，又在后面添了一行字：留在车内的人员，无一生还。"
+    }
+  ],
+  "defaultEnding": "stuck",
+  "wipeEnding": "ice_tomb",
+  "exileText": "{actor} 被赶下了车，一个人顺着冰面往前面的车流走去，很快就看不见了。",
+  "itemNames": {
+    "cargo": "一车砂糖橘（箱）",
+    "diesel": "卡车油箱里的柴油（升）",
+    "fireworks": "",
+    "case": "黑色密码箱",
+    "cash": "",
+    "tank": "帕萨特油箱里的汽油（升）",
+    "savings": "",
+    "phone": "手机",
+    "recorder": "MP3",
+    "drugs": "",
+    "nitro": "硝酸甘油（片）",
+    "walker": "",
+    "fled": ""
+  }
+}

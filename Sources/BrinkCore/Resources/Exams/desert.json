@@ -1,0 +1,974 @@
+{
+  "id": "desert",
+  "skill": "navigation",
+  "bonus": 1,
+  "perk": "water",
+  "requires": [],
+  "minLevel": 2,
+  "count": 10,
+  "pass": 8,
+  "icon": "sun.max.fill",
+  "color": "#D29922",
+  "zh": {
+    "name": "沙漠求生",
+    "full": "沙漠求生资格",
+    "desc": "热射病与热衰竭、真实的饮水需求、昼伏夜行、留在车旁、沙漠里认方向。",
+    "realWorld": "相当于沙漠穿越俱乐部和军队的沙漠生存课程。"
+  },
+  "en": {
+    "name": "Desert Survival",
+    "full": "Desert Survival Certificate",
+    "desc": "Heat stroke and heat exhaustion, how much water you really need, resting by day and moving by night, staying with the vehicle, finding your way in the desert.",
+    "realWorld": "Comparable to desert expedition and military desert survival courses."
+  },
+  "questions": [
+    {
+      "id": "desert-01",
+      "answer": 3,
+      "hard": true,
+      "source": "WMS Heat Illness 2024; WMS Heat Illness 2024",
+      "zh": {
+        "q": "在45 °C的高温下，一个一直在挖车的人开始神志不清、走路摇晃。他皮肤发烫，但仍在出汗。怎么办？",
+        "options": [
+          "他还在出汗，说明不是热射病，让他休息、多喝点水",
+          "给他吃对乙酰氨基酚（扑热息痛）退烧",
+          "等傍晚凉快了，再扶他走到公路上",
+          "按热射病处理：脱衣、浇水、扇风，迅速降温"
+        ],
+        "explain": "高温下出现神志改变或晕倒，在排除之前都要当作热射病——劳力性热射病的人往往还在出汗。“先降温，后转运”：能浸泡冷水最好；否则移到阴凉处，脱掉衣服，用任何水（脏水也行）浇湿全身并用力扇风；有冰袋就放在脸颊、手掌和脚底，这几处降温效果最好。退烧药对热射病无效。"
+      },
+      "en": {
+        "q": "In 45 °C heat, a man who has been digging the car out becomes confused and staggers. His skin is hot, but he is still sweating. What do you do?",
+        "options": [
+          "It can't be heat stroke while he's sweating—rest him and give water",
+          "Give him paracetamol to bring his high temperature down",
+          "Walk him to the road in the evening, once it's cooler",
+          "Treat it as heat stroke: strip, soak and fan him to cool him fast"
+        ],
+        "explain": "Confusion or collapse in the heat means heat stroke until proven otherwise—and people with exertional heat stroke often still sweat. Cool first, transport second: cold-water immersion if possible; otherwise shade, strip, soak him with any water (even dirty) and fan hard; if you have cold packs, put them on the cheeks, palms and soles, where they cool best. Fever medicines don't work."
+      }
+    },
+    {
+      "id": "desert-02",
+      "answer": 1,
+      "hard": false,
+      "source": "WMS Heat Illness 2024",
+      "zh": {
+        "q": "区分热射病和热衰竭，最关键的一点是什么？",
+        "options": [
+          "热射病的皮肤一定是干的，热衰竭的皮肤才是湿的",
+          "热射病会影响大脑：神志不清、晕倒或抽搐",
+          "热衰竭的核心体温一定在41 °C以上",
+          "热射病只会发生在老人和病人身上"
+        ],
+        "explain": "热衰竭表现为乏力、头晕、头痛、恶心、大量出汗，但神志清楚。热射病是核心体温超过约40 °C并伴有神经系统功能障碍——神志不清、烦躁、步态不稳、抽搐甚至昏迷——年轻力壮、高强度劳作的人同样会得。皮肤不一定干燥。"
+      },
+      "en": {
+        "q": "What most clearly separates heat stroke from heat exhaustion?",
+        "options": [
+          "Heat stroke skin is always dry; heat exhaustion skin is wet",
+          "Heat stroke affects the brain: confusion, collapse or seizures",
+          "Heat exhaustion means a body temperature above 41 °C",
+          "Heat stroke only ever happens to elderly or sick people"
+        ],
+        "explain": "Heat exhaustion brings weakness, dizziness, headache, nausea and heavy sweating, with clear thinking. Heat stroke is a core temperature above about 40 °C plus nervous-system dysfunction—confusion, irritability, staggering, seizures or coma—and it can strike fit young people working hard. Dry skin is not required."
+      }
+    },
+    {
+      "id": "desert-03",
+      "answer": 2,
+      "hard": false,
+      "source": "WMS Heat Illness 2024",
+      "zh": {
+        "q": "在高温中徒步后，一名队友头晕、恶心、脸色苍白、大量出汗，但神志清楚、说话有条理。最好的处理是？",
+        "options": [
+          "让他继续慢慢走，别凉得太快",
+          "给他吃盐片但不喝水，好让身体留住水分",
+          "阴凉处躺下抬腿，松衣降温，小口喝含盐的水",
+          "把所有饮用水都浇在他身上降温，但一口也不给他喝"
+        ],
+        "explain": "这是热衰竭。停止活动，移到阴凉处，躺下抬高双腿，脱去多余衣物，用湿布擦拭加扇风降温，补充含盐的液体（口服补液盐，或喝水的同时吃点咸的）。如果出现神志改变或不见好转，要按热射病处理。"
+      },
+      "en": {
+        "q": "After hiking in the heat, a teammate is dizzy, nauseous, pale and sweating heavily, but alert and making sense. What's the best care?",
+        "options": [
+          "Keep him walking slowly so that he doesn't cool down too fast",
+          "Give him salt tablets but no water, so his body holds on to fluid",
+          "Shade, legs up, loosen clothes, cool him, give sips of salty fluid",
+          "Pour all your drinking water over him to cool him, but give him none to drink"
+        ],
+        "explain": "This is heat exhaustion. Stop, get into shade, lie down with legs raised, remove excess clothing, cool with wet cloths and fanning, and give fluids with some salt (oral rehydration solution, or water with salty snacks). If he becomes confused or doesn't improve, treat it as heat stroke."
+      }
+    },
+    {
+      "id": "desert-04",
+      "answer": 0,
+      "hard": true,
+      "source": "FM 3-05.70; Adolph, Physiology of Man in the Desert",
+      "zh": {
+        "q": "在45 °C的烈日下行走，一个成年人一小时大约会出多少汗？",
+        "options": [
+          "约1升甚至更多",
+          "约100毫升（半杯）",
+          "约250毫升（一杯）",
+          "约400毫升（一小瓶）"
+        ],
+        "explain": "在沙漠高温中行走，每小时出汗1升以上很常见——就连坐在酷热的阴凉处不动，每小时也要出汗约0.4升。所以美军建议气温超过38 °C时每小时喝约1升水，这也是正午赶路耗水如此之快的原因。"
+      },
+      "en": {
+        "q": "Walking in the sun at 45 °C, roughly how much sweat can an adult lose in an hour?",
+        "options": [
+          "About 1 litre or more",
+          "About 100 mL (half a cup)",
+          "About 250 mL (one cup)",
+          "About 400 mL (a small bottle)"
+        ],
+        "explain": "Walking in desert heat, sweat losses of a litre an hour or more are normal—even sitting still in hot shade costs around 0.4 L an hour. That's why the US Army advises drinking about 1 L an hour above 38 °C, and why moving in the midday heat burns through water so fast."
+      }
+    },
+    {
+      "id": "desert-05",
+      "answer": 1,
+      "hard": true,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "你们三个人困在45 °C的沙漠里，只有6升水。有人提议每人每天只喝几小口，让水撑得久一点。更好的做法是？",
+        "options": [
+          "同意，大家每天喝得越少，这点水就能撑得越久",
+          "该喝就喝，靠躲阴凉、少动、夜里走来少出汗",
+          "每天都比前一天少喝一点，让身体慢慢适应缺水",
+          "只在晚上天凉、出汗少的时候才喝水"
+        ],
+        "explain": "“要节约的是汗水，不是饮水。”水喝进肚子里比留在瓶子里更有用——有人脱水而死时，水壶里还有水。身体是练不成少喝水的，要减少的是消耗：待在阴凉处、少动、衣服穿好、闭上嘴、只在凉快时活动。"
+      },
+      "en": {
+        "q": "Three of you are stranded at 45 °C with 6 litres of water. Someone proposes allowing only a few sips each per day to make it last. What's better?",
+        "options": [
+          "Agree—the less you drink each day, the longer the supply will last",
+          "Drink as needed; cut sweat instead—shade, rest, travel only at night",
+          "Drink a little less each day so that your body gradually gets used to it",
+          "Drink only at night, when it's cool and you sweat less"
+        ],
+        "explain": "'Ration your sweat, not your water.' Water does more good inside you than in the bottle—people have died of dehydration with water still in their canteens. You can't train your body to need less, so cut your losses: shade, stillness, clothes on, mouth closed, activity only in the cool hours."
+      }
+    },
+    {
+      "id": "desert-06",
+      "answer": 3,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "在沙漠里，判断自己喝水够不够，最实用的方法是什么？",
+        "options": [
+          "等嘴里干得完全没有口水了，再一口气喝个够",
+          "只要身上还在出汗，就说明没问题",
+          "只要嘴唇还没干裂，就说明没问题",
+          "尿量足、颜色淡黄，就说明喝得够"
+        ],
+        "explain": "尿量足、颜色淡，说明喝得够；尿少色深，就要多喝。又热又忙的时候，口渴是个迟到的信号；脱水时人照样会出汗，所以这两样都说明不了什么。"
+      },
+      "en": {
+        "q": "In the desert, what's the most practical way to check you're drinking enough?",
+        "options": [
+          "Wait until your mouth is completely dry, then drink as much as you can",
+          "As long as you're still sweating, you're fine",
+          "If your lips aren't cracked yet, you're fine",
+          "Plenty of pale-yellow urine means you're drinking enough"
+        ],
+        "explain": "Plenty of pale urine means you're keeping up; dark, scanty urine means drink more. Thirst is a late signal when you're hot and busy, and you keep sweating even while dehydrated, so neither is reassuring on its own."
+      }
+    },
+    {
+      "id": "desert-07",
+      "answer": 0,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "你决定必须穿过开阔的沙漠，步行30公里到公路。什么时候走？",
+        "options": [
+          "夜里和清晨走，白天在阴凉处休息",
+          "正午走，那时光线最足、视野也最好",
+          "日夜不停地赶路，越早到越好",
+          "下午走，有风吹着比较凉快"
+        ],
+        "explain": "正午赶路会大大增加失水，还容易中暑。要在夜里、黎明和黄昏行进（有月光的夜晚最好），白天最热的时候在阴凉处休息；还要带上保暖衣物，沙漠的夜晚可能冷得出乎意料。"
+      },
+      "en": {
+        "q": "You've decided you must walk 30 km across open desert to a road. When should you walk?",
+        "options": [
+          "In the cool of the night and early morning, resting in shade by day",
+          "Through the middle of the day, when the light and visibility are at their best",
+          "Non-stop, day and night, to get there as fast as possible",
+          "In the afternoon, when the wind helps to cool you down"
+        ],
+        "explain": "Walking in the midday heat greatly increases water loss and invites heat illness. Move at night, dawn and dusk (a moonlit night is ideal), rest in shade through the heat of the day, and take warm clothing—desert nights can be surprisingly cold."
+      }
+    },
+    {
+      "id": "desert-08",
+      "answer": 2,
+      "hard": false,
+      "source": "Desert SAR guidance: stay with the vehicle",
+      "zh": {
+        "q": "你的四驱车在沙漠里彻底陷住了。有人知道你的路线和预定返回时间。公路“大概在40公里外”。该怎么做？",
+        "options": [
+          "趁人还有力气、手里还有水，白天马上走向公路",
+          "分头行动：一半人留在车旁，一半人白天去公路",
+          "留在车旁：车好找、能遮阴，还有求救用品",
+          "弃车，朝能看到的最高处走"
+        ],
+        "explain": "搜救人员找的是车，从空中看车比看徒步的人容易得多。车能遮阴，后视镜、喇叭、车灯、轮胎和机油都能用来发信号。沙漠里很多遇难者都是离车出走的人。只有在没人会来找、而且确定路线时才离开——离开前留下字条，在夜间行进。"
+      },
+      "en": {
+        "q": "Your 4×4 is hopelessly stuck in the desert. People know your route and when you were due back. A road is 'maybe 40 km' away. What should you do?",
+        "options": [
+          "Walk to the road right away, by day, while you're still strong and have water",
+          "Split up: half stay with the car, half walk to the road by day",
+          "Stay with the vehicle: easy to spot, gives shade, has signalling gear",
+          "Leave the car and head for the highest ground you can see"
+        ],
+        "explain": "Searchers look for vehicles, which are much easier to see from the air than people on foot. The car gives shade, and its mirrors, horn, lights, tyres and oil can all be used to signal. Many desert deaths are people who walked away. Leave only if nobody will look for you and you're sure of the way—then leave a note and travel at night."
+      }
+    },
+    {
+      "id": "desert-09",
+      "answer": 2,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "中午，气温45 °C。在哪里躲过最热的时段最好？",
+        "options": [
+          "关好门窗的车里，既晒不到太阳，也吹不到热风",
+          "脱掉衣服躺在空地上，让汗水蒸发",
+          "留有空气层的篷布阴影下，身体离开滚烫地面",
+          "坐到车顶上，好吹到一点风"
+        ],
+        "explain": "关闭的车内温度很快会超过60 °C，地表温度往往比气温高约20 °C。搭个遮阳篷——双层篷布中间留30～45厘米空隙效果最好——坐在垫高的东西上，不要直接接触地面，衣服要穿好。"
+      },
+      "en": {
+        "q": "It's midday and 45 °C. Where's the best place to wait out the heat?",
+        "options": [
+          "Inside the closed car, out of the sun and the hot wind",
+          "On the open sand with your clothes off, letting the sweat evaporate freely",
+          "In shade under a tarp with an air gap, raised off the hot ground",
+          "Up on the car roof, where you can catch any breeze"
+        ],
+        "explain": "A closed car can quickly pass 60 °C, and the ground surface is often around 20 °C hotter than the air. Rig shade—a doubled tarp with a 30–45 cm air gap works best—sit on something off the ground, and keep your clothes on."
+      }
+    },
+    {
+      "id": "desert-10",
+      "answer": 0,
+      "hard": true,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "一名队友为了凉快，脱得只剩一条短裤。你该怎么跟他说？",
+        "options": [
+          "穿上宽松浅色的衣服、戴帽子，能减少失水",
+          "好主意，皮肤露得越多，散热就越好",
+          "可以，只要全身涂够了防晒霜就行",
+          "最好换成紧身的深色衣服，挡太阳的效果更好"
+        ],
+        "explain": "在沙漠高温里，裸露的皮肤会吸收阳光和热风的热量，汗水白白蒸发得太快。宽松的浅色衣服能给皮肤遮阴，让汗水留在皮肤附近更有效地降温，既减少失水，又防止晒伤。"
+      },
+      "en": {
+        "q": "A teammate strips to his shorts to cope with the 45 °C heat. What do you tell him?",
+        "options": [
+          "Cover up: loose, light clothes and a hat cut sweat loss",
+          "Good idea—more bare skin means much better cooling",
+          "Fine, as long as he's wearing plenty of sunscreen",
+          "Better still, wear tight dark clothing to block the sun"
+        ],
+        "explain": "In desert heat, bare skin soaks up sun and hot wind, and sweat evaporates uselessly fast. Loose, light-coloured clothing shades the skin and keeps sweat close to it so it cools you more efficiently, cutting water loss and preventing sunburn."
+      }
+    },
+    {
+      "id": "desert-11",
+      "answer": 3,
+      "hard": true,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "中午，45 °C，水不够了。一个队友想马上挖几个太阳能蒸馏坑。这个计划好吗？",
+        "options": [
+          "好，每个蒸馏坑每天都能稳定出4～5升水",
+          "好，挖的时候天越热，收集到的水越多",
+          "好，在干透的沙子里和在潮湿的地里效果一样好",
+          "现在不行：正午挖坑出的汗比它能收的水还多"
+        ],
+        "explain": "求生用的太阳能蒸馏坑一天通常只能收集不到1升水（美军手册的数字是24小时约0.5～1升，实地测试往往更少），而正午挖坑出的汗可能比它产出的水还多。真要挖，也要在傍晚凉快时，选潮湿、有绿色植物的地方。"
+      },
+      "en": {
+        "q": "It's noon, 45 °C, and water is short. A teammate wants to dig several solar stills right away. Good plan?",
+        "options": [
+          "Yes—each solar still reliably yields about 4–5 litres of water a day",
+          "Yes—the hotter it is when you dig, the more water you'll get",
+          "Yes—stills work as well in bone-dry sand as in damp ground",
+          "Not now—digging at noon sweats out more water than a still yields"
+        ],
+        "explain": "A survival solar still usually yields well under a litre a day (the US Army manual says about 0.5–1 L in 24 hours; field tests often get less), and digging one at noon can cost more water in sweat than it returns. If you build one at all, do it in the cool of evening, in damp ground with green plants."
+      }
+    },
+    {
+      "id": "desert-12",
+      "answer": 1,
+      "hard": true,
+      "source": "Poison centres: ethylene glycol",
+      "zh": {
+        "q": "水喝光了。车的水箱里有大约8升绿色的冷却液。一个队友想喝。正确的是？",
+        "options": [
+          "可以，大火煮开一阵，防冻成分就都跑掉了",
+          "不行，里面有乙二醇，少量就能致命",
+          "可以，小口喝，它大部分是水",
+          "可以，用布和沙子过滤一下再喝"
+        ],
+        "explain": "大多数冷却液（防冻液）以乙二醇为主要成分，味道发甜，成人喝下约一小杯（100毫升）就可能导致肾衰竭死亡。煮沸只会让它更浓，因为乙二醇的沸点约197 °C，远高于水；过滤也毫无作用。玻璃水（挡风玻璃清洗液）常含甲醇，会致盲。"
+      },
+      "en": {
+        "q": "Your water is gone. The car radiator holds about 8 litres of green coolant. A teammate wants to drink it. What's right?",
+        "options": [
+          "Yes, after boiling it hard for a while to drive off the antifreeze",
+          "No—it contains ethylene glycol, deadly in small amounts",
+          "Yes, in small sips—it's mostly water anyway",
+          "Yes, after filtering it through cloth and sand"
+        ],
+        "explain": "Most coolant is based on ethylene glycol, which tastes sweet; about a cupful (100 mL) can cause kidney failure and death in an adult. Boiling only concentrates it, because glycol boils at about 197 °C, far above water, and filtering does nothing. Windscreen washer fluid often contains methanol, which causes blindness."
+      }
+    },
+    {
+      "id": "desert-13",
+      "answer": 0,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "你困在一片白色盐壳地上的车旁，听到远处有飞机的声音。哪种烟最显眼？",
+        "options": [
+          "黑烟：烧备胎或浸了机油的破布",
+          "白烟：烧绿色的红柳枝",
+          "淡烟：烧干柴，燃烧最干净",
+          "不用烟，沙漠里烟贴地看不见"
+        ],
+        "explain": "烟的颜色要和背景形成反差：浅色沙地或盐壳上用黑烟（橡胶、机油），深色地面或树林上用白烟（青绿植物、加点水）。无风晴朗的天气烟的效果最好——一听到飞机声就点起来，同时用车上的后视镜向飞机反光。"
+      },
+      "en": {
+        "q": "You're stranded by your car on a white salt flat and hear an aircraft in the distance. Which smoke will show up best?",
+        "options": [
+          "Black smoke—burn a spare tyre or oil-soaked rags",
+          "White smoke—burn green tamarisk branches",
+          "Pale smoke from dry wood, the cleanest fuel",
+          "None—in the desert, smoke stays too low to see"
+        ],
+        "explain": "Choose smoke that contrasts with the background: black smoke (rubber, oil) against pale sand or salt crust, white smoke (green plants, a little water) against dark ground or forest. Smoke works best on calm, clear days—get it going as soon as you hear the aircraft, and flash the car's mirrors at it too."
+      }
+    },
+    {
+      "id": "desert-14",
+      "answer": 2,
+      "hard": true,
+      "source": "Celestial navigation basics",
+      "zh": {
+        "q": "夜里在平坦的沙漠中向东北方向走，你以那个方向低空的一颗亮星为目标。必须记住什么？",
+        "options": [
+          "星星整夜不动，一颗星就能把你领到终点",
+          "星星只在夏天移动，冬天不动",
+          "星星每小时转动约15°，要经常校对、及时换星",
+          "低空的星不可靠，要始终以头顶正上方最亮的那颗为准"
+        ],
+        "explain": "由于地球自转，除北极星外，所有星星每小时在天空中转过约15°。每隔15分钟左右用指北针或北极星校对一次目标星，换成方位合适的另一颗星，否则你会走成一条弧线。"
+      },
+      "en": {
+        "q": "Walking north-east at night across flat desert, you steer by a bright star low in that direction. What must you remember?",
+        "options": [
+          "Stars stay put all night, so one star will lead you all the way",
+          "Stars only move in summer; in winter they stay fixed in place",
+          "Stars wheel across the sky about 15° an hour—check often and switch stars",
+          "Low stars are unreliable—always steer by the brightest one straight overhead"
+        ],
+        "explain": "As the Earth turns, every star except the Pole Star moves across the sky at about 15° an hour. Check your guide star against a compass or the Pole Star every 15 minutes or so and switch to another star on your bearing, or you'll curve off course."
+      }
+    },
+    {
+      "id": "desert-15",
+      "answer": 1,
+      "hard": false,
+      "source": "Desert geomorphology (dune form); FM 3-05.70",
+      "zh": {
+        "q": "你必须翻过一座大沙丘。通常从哪一面往上爬更省力？",
+        "options": [
+          "背风的落沙坡：虽然陡，但沙子更结实",
+          "迎风坡：坡度缓，沙子也压得更实",
+          "两面都一样，沙丘两侧形状相同",
+          "朝太阳的一面，表层被晒得发硬"
+        ],
+        "explain": "风把沙子沿迎风坡推上去，形成一道又长又缓、相对结实的斜坡，越过沙脊后沙子滑落，堆成背风的落沙坡——松散的沙子堆成约30～35°的陡坡，爬起来非常吃力，还可能在脚下滑塌。要从迎风坡上去，尽量沿沙脊或丘间的硬地走，并在凉快的时候行进。"
+      },
+      "en": {
+        "q": "You have to climb over a big sand dune. Which side is usually easier to go up?",
+        "options": [
+          "The slip face: it's steeper, but the sand there is firmer",
+          "The windward side: it's gentler and the sand is packed firmer",
+          "Either side—dunes are the same shape on both sides",
+          "Whichever side faces the sun, where the surface crust is baked hard"
+        ],
+        "explain": "Wind pushes sand up the windward slope into a long, gentle, relatively firm ramp, then drops it over the crest to form the slip face—loose sand at about 30–35° that is exhausting to climb and can slide under you. Go up the windward side, follow crests or firm ground between dunes where you can, and cross in the cool hours."
+      }
+    },
+    {
+      "id": "desert-16",
+      "answer": 3,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "在开阔的沙漠里，一处岩丘看上去大约1公里远。实际情况最可能是？",
+        "options": [
+          "更近，热浪让东西看起来比实际远",
+          "差不多，空气清澈，距离很好判断",
+          "只有一半远，平地会把距离拉长",
+          "远得多，沙漠里的距离常被低估两三倍"
+        ],
+        "explain": "空气清澈、地面平坦、又没有熟悉的参照物，会让人误判距离——美军手册指出，人们通常会把沙漠里的距离低估约三倍。要按更远的距离来准备水和时间。"
+      },
+      "en": {
+        "q": "In open desert, a rock outcrop looks about 1 km away. What's most likely?",
+        "options": [
+          "It's closer—shimmering heat haze makes things look farther away than they are",
+          "It's about right—clear desert air makes distance easy to judge",
+          "It's about half that—flat, open ground stretches distances",
+          "It's much farther—desert distances are often underestimated two- or threefold"
+        ],
+        "explain": "Clear air, flat ground and the lack of familiar objects make distances deceptive—the US Army notes that people commonly underestimate them by a factor of about three. Plan water and time for the longer distance."
+      }
+    },
+    {
+      "id": "desert-17",
+      "answer": 3,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "你正徒步穿越开阔的沙漠，一堵沙墙朝你压过来。该怎么做？",
+        "options": [
+          "加快脚步，赶在它到来之前穿过去",
+          "顺着风向拼命跑，赶在它前面避开",
+          "闭着眼睛继续往前走，靠指北针保持原来的方向",
+          "标记方向，躲到背风处，捂住口鼻眼睛等待"
+        ],
+        "explain": "最大的危险是在漫天黄沙中迷失方向。沙尘暴到来前，先标记前进方向（用石头摆个箭头，或把背包朝前进方向放好），躲到岩石、车辆或沙丘的背风面，背对风坐下或趴下，遮住口鼻和眼睛，等它过去。"
+      },
+      "en": {
+        "q": "A wall of blowing sand is heading your way as you walk across open desert. What should you do?",
+        "options": [
+          "Walk faster so you get through it before it hits you",
+          "Run downwind ahead of it so that it can't catch up with you",
+          "Keep walking with your eyes shut, holding your compass bearing steady",
+          "Mark your direction, shelter in the lee, cover face and eyes, wait"
+        ],
+        "explain": "The greatest danger is getting lost in the swirling sand. Before it hits, mark your direction of travel (an arrow of stones, or your pack pointing the way), get to the downwind side of a rock, vehicle or dune, sit or lie with your back to the wind, cover your nose, mouth and eyes, and wait it out."
+      }
+    },
+    {
+      "id": "desert-18",
+      "answer": 1,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "白天45 °C，晚上你们要在沙漠里露宿。需要做什么准备？",
+        "options": [
+          "不用准备什么，沙地吸足了热，整夜都是热的",
+          "气温会骤降：备好保暖衣物，身下要隔热",
+          "尽量少穿衣服，直接在露天睡，好凉快些",
+          "睡前往身上浇点水，好保持凉快"
+        ],
+        "explain": "沙漠空气干燥、天空晴朗，日落后热量散失很快，气温可能下降20 °C以上。疲惫、汗湿又脱水的人很容易受冻，所以要为夜里留好保暖衣物和隔热垫——凉快的时段也正好用来赶路或干活。"
+      },
+      "en": {
+        "q": "After a 45 °C day, you'll spend the night out in the desert. What should you plan for?",
+        "options": [
+          "Nothing special—the sand has soaked up heat and stays warm all night long",
+          "A sharp temperature drop: keep warm layers and insulation ready",
+          "Sleeping in the open wearing as few clothes as possible, to stay cool",
+          "Pouring water over yourself before bed so you stay cool"
+        ],
+        "explain": "Dry, clear desert air lets heat radiate away quickly after sunset, and temperatures can fall by 20 °C or more. Tired, sweat-damp, dehydrated people chill easily, so keep warm clothes and insulation for the night—and use the cool hours to travel or work."
+      }
+    },
+    {
+      "id": "desert-19",
+      "answer": 2,
+      "hard": true,
+      "source": "WMS Exercise-Associated Hyponatremia 2019",
+      "zh": {
+        "q": "炎热的一天，一名队友一直在阴凉处休息，喝了大约8升白开水，几乎没吃东西。现在他呕吐、神志不清、双手浮肿，尿多而清，皮肤摸着并不烫。最可能是什么？",
+        "options": [
+          "严重脱水：赶快再给他灌下两升水，越快越好",
+          "热射病：马上把他整个泡进冷水里",
+          "饮水过量致低钠：停水，吃咸的，后送",
+          "热衰竭：让他继续多喝白开水就行"
+        ],
+        "explain": "大量出汗丢盐，又不吃东西，却猛喝白开水，会把血液里的钠稀释（运动相关性低钠血症）：恶心、呕吐、头痛、神志不清、浮肿、大量排清亮的尿。再喝水只会更糟。要限制饮水，能安全进食就吃些咸的，出现神志不清要紧急后送。平时喝水不要远超失水量，喝水时也要吃点咸的。"
+      },
+      "en": {
+        "q": "After a long hot day resting in the shade, a teammate who drank about 8 litres of plain water and ate almost nothing is vomiting, confused and has puffy hands. He's passing a lot of clear urine and his skin feels cool. What's most likely?",
+        "options": [
+          "Severe dehydration—get him to drink two more litres of water as fast as possible",
+          "Heat stroke—immerse him in cold water straight away",
+          "Low sodium from too much plain water—stop water, give salt, evacuate",
+          "Heat exhaustion—he just needs to keep drinking plain water"
+        ],
+        "explain": "Drinking large amounts of plain water while losing salt in sweat, without eating, can dilute the blood's sodium (exercise-associated hyponatraemia): nausea, vomiting, headache, confusion, swelling and lots of clear urine. More water makes it worse. Restrict fluids, give salty snacks if he can eat safely, and evacuate urgently if he's confused. Don't drink far beyond your losses, and eat salty food with your water."
+      }
+    },
+    {
+      "id": "desert-20",
+      "answer": 0,
+      "hard": false,
+      "source": "4×4 sand recovery practice",
+      "zh": {
+        "q": "你的四驱车陷在松软的沙子里。最好的脱困办法是？",
+        "options": [
+          "挖开车轮前的沙，放气，垫防滑物，慢慢开",
+          "一脚油门踩到底，靠冲劲冲出去",
+          "把轮胎的气打得更足，抓地力更强",
+          "让车轮一直空转，直到挖穿浮沙、碰到下面的硬地"
+        ],
+        "explain": "车轮空转只会越陷越深。清掉车轮前方和底盘下的沙子，给轮胎适当放气、增大接地面积，在车轮下垫脱困板、树枝或脚垫，挂低速挡缓缓起步。费力的活放在凉快时做，开到硬地后再把胎压打回去。"
+      },
+      "en": {
+        "q": "Your 4×4 is bogged in soft sand. What's the best way to get it out?",
+        "options": [
+          "Dig out the wheels, let some air out, add traction, ease off slowly",
+          "Floor the accelerator and power your way straight through",
+          "Pump the tyres up harder to give them more grip in sand",
+          "Keep spinning the wheels until they dig down through to the firm ground below"
+        ],
+        "explain": "Spinning wheels just dig you in deeper. Clear sand from in front of the wheels and under the chassis, let some air out of the tyres to lengthen their footprint, put sand mats, branches or floor mats under the wheels, and pull away gently in a low gear. Do the heavy work in the cool hours and re-inflate on firm ground."
+      }
+    },
+    {
+      "id": "desert-21",
+      "answer": 1,
+      "hard": true,
+      "source": "WMS Heat Illness 2024; FM 3-05.70",
+      "zh": {
+        "q": "沙漠远征出发前，关于适应高温，哪种说法正确？",
+        "options": [
+          "出发前练习少喝水，能让身体适应、需要的水变少",
+          "在高温里逐步练1～2周有用，但需水更多",
+          "只要练得够狠，一天之内就能适应",
+          "适应以后，就不再需要补盐和遮阴"
+        ],
+        "explain": "热适应大约需要10～14天，在高温中逐渐延长锻炼时间：出汗更早、更多，汗里丢的盐更少，心脏也更能承受——所以需要的水反而更多。美军曾试行“饮水纪律”（训练时少喝水），结果造成数百人热伤病。"
+      },
+      "en": {
+        "q": "Before a desert expedition, which statement about adapting to heat is true?",
+        "options": [
+          "Practising on less water before you go trains your body to need less of it",
+          "1–2 weeks of gradual heat training helps—but you'll need more water",
+          "You can acclimatise in a single day if you push hard enough",
+          "Once you're acclimatised, you no longer need salt or shade"
+        ],
+        "explain": "Heat acclimatisation takes roughly 10–14 days of gradually longer exercise in the heat: you start sweating sooner and more, lose less salt, and your heart copes better—so your water needs actually rise. The US Army once tried 'water discipline' (training on less water) and got hundreds of heat casualties."
+      }
+    },
+    {
+      "id": "desert-22",
+      "answer": 3,
+      "hard": false,
+      "source": "FM 3-05.70; NWS flash flood safety",
+      "zh": {
+        "q": "你们在沙漠里一条干河床的平底上宿营。远处山上正在积聚雷雨云，头顶却是晴天。该怎么办？",
+        "options": [
+          "不用动，这里又没下雨",
+          "在帐篷周围挖沟，把水引开",
+          "留在河床里，等着接洪水",
+          "马上把营地搬到远高于河床的地方"
+        ],
+        "explain": "几十公里外山上的降雨，可能在晴空之下毫无征兆地冲下一堵水墙，灌进干河床。绝不要在干河床或狭窄的谷底宿营，要搬到远高于洪水痕迹的地方。"
+      },
+      "en": {
+        "q": "You're camped on the flat floor of a dry desert wash. Thunderclouds are building over distant mountains, though the sky above you is clear. What should you do?",
+        "options": [
+          "Stay put—it isn't raining here",
+          "Dig a trench round the tent to divert water",
+          "Stay in the wash to collect the floodwater",
+          "Move camp now to ground well above the wash"
+        ],
+        "explain": "Rain falling on hills tens of kilometres away can send a wall of water down a dry channel with little warning, under a blue sky. Never camp in a wash or on a narrow valley floor; move to ground well above the high-water marks."
+      }
+    },
+    {
+      "id": "desert-23",
+      "answer": 0,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "下午最热的时候，你看到公路方向的地平线上有一片波光粼粼的“湖”。它最可能是什么？",
+        "options": [
+          "蜃景：近地热空气折射了天空的光",
+          "一个盐湖，湖边的水可以喝",
+          "前一晚的暴雨在盐碱地上留下的一片积水",
+          "远处的雨幕，从侧面看过去"
+        ],
+        "explain": "贴近地面的热空气会把来自天空的光线折弯，地平线看上去像一片水面，远处的东西像湖中的小岛。蜃景在午后最明显；可以登高观察，或在黎明、黄昏、月夜再看，不要改变路线去追“水”。"
+      },
+      "en": {
+        "q": "In the afternoon heat you see a shimmering lake on the horizon in the direction of the road. What is it most likely to be?",
+        "options": [
+          "A mirage—light from the sky bent by hot air near the ground",
+          "A salt lake with drinkable water around its edge",
+          "Floodwater left lying on the salt flat by a storm the night before",
+          "Rain falling in the distance, seen from the side"
+        ],
+        "explain": "Hot air just above the ground bends light from the sky, so the horizon looks like a sheet of water with distant objects standing out like islands. Mirages are strongest in the afternoon heat; check from higher ground, or at dawn, dusk or by moonlight, and don't change course to chase 'water'."
+      }
+    },
+    {
+      "id": "desert-24",
+      "answer": 2,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "你沿着一条干河床行进。在哪里挖，最有可能挖到水？",
+        "options": [
+          "河湾内侧地势最高的沙洲上",
+          "直河段中间沙子看起来最干、最松的地方",
+          "河湾外侧的岸脚，或沙子潮湿处",
+          "河岸顶上土质最结实的地方"
+        ],
+        "explain": "河道最低处的地下最可能留有水——通常是河湾外侧（凹岸）的坡脚，那里水流冲刷得最深——另外就是沙子潮湿或长着绿色植物的地方。挖坑要在凉快的时候进行。"
+      },
+      "en": {
+        "q": "You're following a dry riverbed. Where are you most likely to find water by digging?",
+        "options": [
+          "On the highest sandbar on the inside of a bend",
+          "Midway along a straight stretch, where the sand looks driest and loosest",
+          "At the foot of the outer bank of a bend, or where the sand is damp",
+          "On top of the bank, where the ground is firmest"
+        ],
+        "explain": "Water lingers longest beneath the lowest part of the channel—usually at the foot of the outer (concave) bank of a bend, where the flow cut deepest—and wherever you find damp sand or green plants. Dig in the cool of the day."
+      }
+    },
+    {
+      "id": "desert-x01",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Heat Illness 2024 (rectal temperature is the only accurate field measurement; treat on clinical suspicion)",
+      "zh": {
+        "q": "在罗布泊44 °C的高温下，一名队友挖了一个小时车后倒下了。他现在意识模糊，不知道自己在哪里。额温枪显示37.8 °C，有人说这就排除了热射病。你怎么做？",
+        "options": [
+          "同意，这个体温不可能是热射病；去找别的原因，比如低血糖，再让他在阴凉处躺着休息",
+          "按热射病处理，马上降温——高温下用力后，额温、耳温、口温、腋温都不可靠，只有肛温准",
+          "先夹在腋下量足整整十分钟，确认了真实体温以后，再决定要不要开始降温",
+          "先给他吃对乙酰氨基酚退烧、止头痛，半小时后再用额温枪量一次看看"
+        ],
+        "explain": "高温下用力后出现意识障碍，在排除之前都要当作热射病：WMS 2024指出，现场唯一准确的是肛温，额温、耳温、口温和腋温都可能偏低——所以要根据临床表现直接处理，不要等。每耽误一分钟，器官损伤的风险就更大，而退烧药对热射病无效。"
+      },
+      "en": {
+        "q": "At 44 °C in Lop Nur, a teammate collapses after an hour of digging out the 4×4. He's now confused and doesn't know where he is. A forehead (infrared) thermometer reads 37.8 °C, and someone says that rules out heat stroke. What do you do?",
+        "options": [
+          "Agree it can't be heat stroke at that temperature; look for another cause such as low blood sugar and let him lie in the shade",
+          "Treat it as heat stroke and cool him now—forehead, ear, mouth and armpit readings are unreliable here; only rectal is accurate",
+          "Take his temperature under the armpit for a full ten minutes to confirm it before deciding whether to start any cooling",
+          "Give him paracetamol for the fever and headache first, then check again with the forehead thermometer in half an hour"
+        ],
+        "explain": "Confusion after exertion in the heat is heat stroke until proven otherwise: WMS 2024 says rectal temperature is the only accurate field measurement, and forehead, ear, oral and armpit readings can be falsely low—so treat on clinical grounds without waiting. Every minute of delay raises the risk of organ damage, and antipyretics don't work in heat stroke."
+      }
+    },
+    {
+      "id": "desert-x02",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Heat Illness 2024 (cool to a target of no less than 39 °C; cool first, ideally within 30 min)",
+      "zh": {
+        "q": "你们在后援车旁挖了一条铺着防水布的沟，灌满冷水。一名劳力性热射病的队友躺在里面，水没到脖子，你在监测他的肛温。什么时候把他抬出来？",
+        "options": [
+          "等肛温降回37 °C——只要还高于正常体温，就说明热射病还没有解除，还很危险",
+          "固定泡5分钟就抬出来，在冷水里泡得再久，会引发危险的冷休克和心律失常",
+          "等到他完全清醒、能正常聊天为止，不管要泡多久，也不管体温降到多低",
+          "约39 °C时抬出，争取在他倒下后30分钟内降到这里，擦干后继续监测体温"
+        ],
+        "explain": "WMS 2024建议把热射病人降温到不低于39 °C（肛温）的目标就停下，因为离水后体温还会继续往下走，降过头会造成失温；目标是在约30分钟内降到这一水平。等到37 °C或完全清醒都会降过头，而对体温这么高的人，泡5分钟通常远远不够。"
+      },
+      "en": {
+        "q": "Your team has dug a tarp-lined trench beside the support truck and filled it with cold water. A teammate with exertional heat stroke is lying in it up to his neck while you monitor his rectal temperature. When should you take him out?",
+        "options": [
+          "When his temperature is back down to 37 °C—anything above normal body temperature means the heat stroke is still dangerous",
+          "After a fixed five minutes, because staying any longer in cold water risks dangerous cold shock and heart-rhythm problems",
+          "Only once he's fully alert and chatting normally again, however long that takes and however low his temperature falls",
+          "At about 39 °C, aiming to get there within 30 minutes of his collapse; then dry him and keep checking his temperature"
+        ],
+        "explain": "WMS 2024 recommends cooling heat-stroke patients to a target of no less than 39 °C (rectal) and stopping there, because the temperature keeps drifting down after removal and overcooling causes hypothermia; the goal is to get there within about 30 minutes. Waiting for 37 °C—or for full alertness—overshoots, and five minutes is rarely enough for someone this hot."
+      }
+    },
+    {
+      "id": "desert-x03",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Heat Illness 2024; MSD Manual: heatstroke (hospital observation for organ dysfunction)",
+      "zh": {
+        "q": "降温15分钟后，热射病的队友神志恢复了，说自己感觉没事了。他想休息到天黑，再继续夜行30公里走到公路。怎么做才对？",
+        "options": [
+          "仍要后送：热射病会在之后几天损伤肾、肝、肌肉和凝血，体温还可能反弹",
+          "让他继续走：神志一清醒，危险就已经过去了，夜里又凉快，走路不会让他再次过热",
+          "让他在阴凉处休息整整24小时，多喝水，之后还觉得好，就可以继续往前走",
+          "让他继续走，但每六小时给他吃一次对乙酰氨基酚，防止路上体温再升上去"
+        ],
+        "explain": "即使降温成功，热射病也可能出现迟发并发症——肾衰竭、肝损伤、横纹肌溶解和凝血障碍——体温还可能再次升高，所以每个热射病人都要后送到医院检查。感觉好转不代表没有损伤，退烧药也派不上用场。"
+      },
+      "en": {
+        "q": "After 15 minutes of cooling, your heat-stroke teammate is lucid again and says he feels fine. He wants to rest until dark and then carry on with the 30 km night walk to the road. What's right?",
+        "options": [
+          "Evacuate him anyway: heat stroke can harm kidneys, liver, muscle and clotting over the next days, and his temperature can rebound",
+          "Let him go on: once his thinking is clear the danger has passed, and walking in the cool of the night won't overheat him again",
+          "Let him rest in the shade for a full 24 hours, drinking plenty, and if he still feels well after that he can walk on to the road",
+          "Let him go on, but give him paracetamol every six hours so that his temperature can't climb again during the walk"
+        ],
+        "explain": "Even after successful cooling, heat stroke can cause delayed complications—kidney failure, liver injury, muscle breakdown and clotting disorders—and temperature can climb again, so every heat-stroke patient needs evacuation and hospital assessment. Feeling better isn't evidence of no injury, and antipyretics have no role."
+      }
+    },
+    {
+      "id": "desert-x04",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Exercise-Associated Hyponatremia guidelines (oral hypertonic saline: 3–4 bouillon cubes in 125 mL; avoid hypotonic and isotonic fluids)",
+      "zh": {
+        "q": "在罗布泊的第3天。一名队友每小时喝约一升白开水，却没怎么吃东西，现在头痛、恶心、手指浮肿，尿液清亮，但神志清醒、走路正常。你们有口服补液盐、运动饮料粉、浓汤块和咸饼干。最好的处理是？",
+        "options": [
+          "马上喝一升口服补液盐溶液，它能把丢掉的水分和盐分一起补回来",
+          "喝一升等渗盐水——一升水里加9克盐，咸度正好和血液完全一样",
+          "排尿前别再喝水；喝浓汤（3～4块浓汤块溶于半杯水）或吃咸饼干，意识模糊就后送",
+          "全天不停地小口喝运动饮料，里面的电解质能让血液里的钠一直保持在充足、正常的水平"
+        ],
+        "explain": "大量喝白开水之后出现头痛、恶心、浮肿和清亮的尿，提示运动相关性低钠血症。WMS指南：在开始排尿之前限制饮水；能进食的话，口服高渗盐液——3～4块浓汤块溶于125毫升水——或吃咸零食；出现意识模糊、呕吐或抽搐要紧急后送。补液盐和运动饮料都比血液稀，等渗液也只增加水量、提不高血钠，都会让病情加重。"
+      },
+      "en": {
+        "q": "Day 3 in Lop Nur. A teammate who has been drinking about a litre of plain water every hour while eating little now has a headache, nausea and puffy fingers and is passing clear urine, but he's alert and walking normally. You have oral rehydration sachets, sports-drink powder, bouillon cubes and salty crackers. What's best?",
+        "options": [
+          "A litre of oral rehydration solution straight away, because it replaces both the water and the salt that he has lost through sweating",
+          "A litre of isotonic saline—9 g of salt in a litre of water—which matches the saltiness of his blood exactly",
+          "No more fluid till he urinates; give strong broth (3–4 bouillon cubes in half a cup of water) or salty snacks; evacuate if confused",
+          "Sports drink, sipped steadily all through the day, because its electrolytes will keep his blood sodium topped up"
+        ],
+        "explain": "Headache, nausea, swelling and clear urine after heavy plain-water drinking suggest exercise-associated hyponatraemia. WMS guidance: restrict fluids until he passes urine and, if he can eat, give oral hypertonic saline—3–4 bouillon cubes in 125 mL of water—or salty snacks; confusion, vomiting or seizures mean urgent evacuation. Rehydration solutions and sports drinks are weaker than blood, and even isotonic fluid adds volume without raising sodium, so all of them make it worse."
+      }
+    },
+    {
+      "id": "desert-x05",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Heat Illness 2024 (acutely sunburned skin sweats poorly for about 7 days)",
+      "zh": {
+        "q": "进罗布泊的第一天，一名队友光着膀子晒了好几个小时；今天他的肩膀和后背又红又烫，还起了水疱。这次晒伤对接下来几天意味着什么？",
+        "options": [
+          "没什么大不了——晒伤只在皮肤表层，除了疼以外，不影响他耐热的能力",
+          "晒伤的皮肤约一周内出汗不畅，他更容易中暑：遮住晒伤处，减轻他的活，多留意他",
+          "他的身体已经开始适应阳光，耐热能力变强了，接下来可以让他干最重的活",
+          "把水疱都挑破，晒伤处敞开别盖，让干燥的空气尽快把皮肤吹干、变硬，这样就不疼了"
+        ],
+        "explain": "WMS 2024指出，急性晒伤的皮肤约七天内不能正常出汗，大面积晒伤会削弱蒸发散热，让他更容易得热病。要用宽松的衣服遮住晒伤处，让他待在阴凉里、减轻劳动，留意预警症状；水疱不要挑破。晒伤和热习服毫无关系。"
+      },
+      "en": {
+        "q": "On the first day in Lop Nur a teammate went shirtless for hours; today his shoulders and back are red, hot and blistering. What does the sunburn mean for the days ahead?",
+        "options": [
+          "Not much—sunburn is only skin-deep, so apart from the pain it doesn't affect his ability to cope with the heat",
+          "Burned skin sweats poorly for about a week, so his heat-illness risk is higher: keep it covered, lighten his work, watch him",
+          "His body has started adapting to the sun, so he's now better acclimatised and can take on the hardest of the work",
+          "Pop the blisters and leave the skin uncovered, so that the dry desert air can harden it up quickly and stop it hurting so much"
+        ],
+        "explain": "WMS 2024 notes that acutely sunburned skin can't sweat normally for about seven days, so a large burn cuts his evaporative cooling and raises his risk of heat illness. Cover the burn with loose clothing, keep him in shade, reduce his workload and watch for warning signs; leave blisters intact. Sunburn has nothing to do with heat acclimatisation."
+      }
+    },
+    {
+      "id": "desert-x06",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "CDC/NIOSH: rhabdomyolysis; WMS Heat Illness 2024 (differential diagnosis)",
+      "zh": {
+        "q": "在45 °C的高温下连续挖车、推车六个小时后，一名队友大腿和肩膀剧痛肿胀，浑身无力，只排出一点可乐色的尿。他神志清楚，体温正常。最可能是什么，怎么办？",
+        "options": [
+          "普通的脱水，所以尿色才这么深：让他马上喝两升水，休息一整夜，明天再接着挖",
+          "热痉挛：使劲按摩、拉伸那些肌肉，再给他吃盐片，然后让他继续干活",
+          "低钠血症：完全禁止喝水，只给他吃盐，一直到他的尿液重新变清为止",
+          "劳力性横纹肌溶解：停止用力，能喝就补液，紧急后送——肌肉分解会伤肾、伤心"
+        ],
+        "explain": "极度用力后出现可乐色或浓茶色的尿，伴有肌肉剧痛、肿胀和无力，提示肌肉分解（横纹肌溶解）：肌红蛋白会堵塞肾脏，释放出的钾会扰乱心律。他必须停止干活，能喝就喝，并尽快送医输液、抽血化验。单纯脱水只会让尿呈深黄色而不是褐色，也不会让肌肉肿痛。"
+      },
+      "en": {
+        "q": "After six hours of digging and pushing the bogged 4×4 in 45 °C heat, a teammate has severe pain and swelling in his thighs and shoulders, feels weak and passes a little urine the colour of cola. He's thinking clearly and his temperature is normal. What's most likely, and what do you do?",
+        "options": [
+          "Ordinary dehydration, which is why his urine is so dark: have him drink two litres quickly, rest overnight and get back to digging tomorrow",
+          "Heat cramps: massage the muscles hard and stretch them out, give him salt tablets, and let him carry on with the work",
+          "Hyponatraemia: stop all fluids completely and give him nothing but salt until his urine runs clear again",
+          "Exertional rhabdomyolysis: stop all exertion, give fluids if he can drink, evacuate urgently—muscle breakdown can wreck kidneys and heart"
+        ],
+        "explain": "Cola- or tea-coloured urine with severe muscle pain, swelling and weakness after extreme exertion signals muscle breakdown (rhabdomyolysis): myoglobin can block the kidneys and released potassium can upset the heart. He must stop working, drink if able and reach hospital for IV fluids and blood tests. Dehydration alone makes urine dark yellow, not brown, and doesn't cause swollen, painful muscles."
+      }
+    },
+    {
+      "id": "desert-x07",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "Solar-time navigation (watch method); FM 3-25.26",
+      "zh": {
+        "q": "罗布泊（约东经90°）一个晴朗的上午10点，你的指针手表显示的是北京时间（按东经120°计）。你想用手表法找南方，该怎么做？",
+        "options": [
+          "时针对准太阳，时针与12点之间的平分线就是南方，和标准方法完全一样",
+          "12点对准太阳，12点与时针之间（取较小的那个角）的平分线就是南方",
+          "时针对准太阳，时针与2点刻度之间的平分线就是南方",
+          "时针对准太阳，时针与10点刻度之间的平分线就是南方"
+        ],
+        "explain": "手表法假定太阳在12点位于正南，但罗布泊的地方正午约在北京时间14点（经度差30°＝2小时），所以要用2点刻度代替12点。照搬12点会有约30°的误差——走远路时足以让你和公路错开好几公里。12点对准太阳是南半球的用法。"
+      },
+      "en": {
+        "q": "At 10:00 on a sunny morning in Lop Nur (about 90° E), your analogue watch shows Beijing time, which is based on 120° E. You want to find south with the watch method. How?",
+        "options": [
+          "Point the hour hand at the sun; south lies halfway between the hour hand and 12, exactly as in the standard method",
+          "Point 12 o'clock at the sun; south lies halfway between 12 and the hour hand, measured the shorter way round",
+          "Point the hour hand at the sun; south lies halfway between the hour hand and the 2 o'clock mark",
+          "Point the hour hand at the sun; south lies halfway between the hour hand and the 10 o'clock mark"
+        ],
+        "explain": "The watch method assumes the sun is due south at 12:00, but in Lop Nur solar noon falls at about 14:00 Beijing time (30° of longitude = 2 hours), so the 2 o'clock mark plays the role of 12. Using 12 leaves an error of about 30°—enough to miss a road by kilometres over a long walk. Pointing 12 at the sun is the Southern Hemisphere version."
+      }
+    },
+    {
+      "id": "desert-x08",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "Celestial navigation (Mintaka, declination about −0.3°); FM 3-05.70 (using the stars)",
+      "zh": {
+        "q": "罗布泊的一个冬夜，你的指北针丢了，想找出一条准确的东西方向线。猎户座正从东方升起。哪颗星在地球上任何地方都几乎从正东方升起？",
+        "options": [
+          "参宿三，猎户座腰带三星中最先升起的那颗——它几乎正好位于天赤道上",
+          "参宿四，猎户座肩上那颗明亮的红星，因为它是那一片天空中最亮的星",
+          "天狼星，整个夜空中最亮的恒星，它紧跟在猎户座后面从东方升起来",
+          "参宿七，猎户座脚上那颗耀眼的蓝白色亮星，它升起的时候总是标示着正东方向"
+        ],
+        "explain": "位于天赤道上的恒星，在任何纬度都从正东升起、正西落下；参宿三的赤纬只有约-0.3°，升起方位与正东相差不到半度。参宿四（约+7°）从东偏北升起，参宿七（约-8°）和天狼星（约-17°）从东偏南升起——在北纬40°，离天赤道越远的星，偏差越大。"
+      },
+      "en": {
+        "q": "On a winter night in Lop Nur your compass is lost, and you want an exact east–west line. Orion is just rising in the east. Which star rises almost exactly due east from anywhere on Earth?",
+        "options": [
+          "Mintaka, the first of the three stars of Orion's Belt to rise—it sits almost exactly on the celestial equator",
+          "Betelgeuse, Orion's bright red shoulder star, because it's the brightest star in that part of the sky",
+          "Sirius, the brightest star in the whole night sky, which follows Orion up over the eastern horizon",
+          "Rigel, Orion's brilliant blue-white foot star, which always marks due east exactly as the constellation rises"
+        ],
+        "explain": "A star on the celestial equator rises due east and sets due west at every latitude; Mintaka's declination is only about −0.3°, so it rises within half a degree of due east. Betelgeuse (about +7°) rises north of east, while Rigel (about −8°) and Sirius (about −17°) rise south of east—and at 40° N the error grows the farther a star is from the equator."
+      }
+    },
+    {
+      "id": "desert-x09",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "Lunar phase astronomy; FM 3-05.70 (desert travel by night)",
+      "zh": {
+        "q": "今晚你们必须徒步穿越罗布泊30公里。今晚是上弦月——太阳落山时，半个亮月高挂在南方。什么时候有月光照路？",
+        "options": [
+          "整夜都有，因为上弦月在日落时升起，要到第二天日出时才落下",
+          "要到半夜前后，上弦月才从东方地平线升起，在那之后才有月光",
+          "几乎没有，上弦月实在太暗，根本看不清路——只有满月的光才真正有用",
+          "从日落到半夜前后，月亮在西方落下之前——所以要抓紧前半夜赶路"
+        ],
+        "explain": "上弦月在太阳以东90°：大约中午升起，日落时最高，半夜前后落下。整夜都在天上的是满月，下弦月则在半夜前后升起。半个月亮的光也足够看清地面，所以要在它落下之前尽量多走路程。"
+      },
+      "en": {
+        "q": "You must walk 30 km across Lop Nur tonight. Tonight's moon is at first quarter—half lit, and high in the south as the sun sets. When will you have moonlight to walk by?",
+        "options": [
+          "All night long, because a first-quarter moon rises at sunset and doesn't set again until sunrise",
+          "Only after about midnight, when the first-quarter moon finally rises above the eastern horizon",
+          "Hardly at all, since a quarter moon is far too faint to see by—only a full moon gives really useful light",
+          "From sunset until about midnight, when it sets in the west—so walk hard in the first half of the night"
+        ],
+        "explain": "A first-quarter moon is 90° east of the sun: it rises around noon, stands highest at sunset and sets around midnight. A full moon is the one that's up from dusk to dawn, and a last-quarter moon rises around midnight. Even a half moon gives enough light to see the ground, so cover as much distance as you can before it sets."
+      }
+    },
+    {
+      "id": "desert-x10",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "US Army FM 3-25.26 (bypassing obstacles: the 90° offset method); dead reckoning",
+      "zh": {
+        "q": "夜里在罗布泊沿60°方位角行进，前面挡着一片宽阔、过不去的盐沼。怎样绕过去而不偏离原来的路线？",
+        "options": [
+          "凭目测绕过去，到了对面再按60°继续走——反正要走40公里，绕这一点路没什么关系",
+          "转向150°数步走出盐沼，沿60°走过它，再转向330°走同样步数，恢复60°",
+          "转向150°一直走到能绕开盐沼为止，然后从所在的位置直接继续按60°走",
+          "沿反方位角240°往回走，直到看不见盐沼为止，再从那里重新按60°出发"
+        ],
+        "explain": "这是“直角绕行法”：先转90°（60°＋90°＝150°）并数步，走到能绕开障碍为止；再沿原方位角走过障碍；然后向另一侧转（60°－90°＝330°），走同样的步数回到原路线，再恢复60°。绕开后直接按60°走，会让你整体偏离一个绕行距离——横移了500米，就会偏离目标500米。"
+      },
+      "en": {
+        "q": "Walking on a bearing of 60° across Lop Nur at night, you come up against a broad salt marsh that you can't cross. How do you get round it without losing your line?",
+        "options": [
+          "Skirt round it by eye, then pick up 60° again on the far side—a detour that small won't matter over 40 km",
+          "Turn to 150° and count paces till clear, walk 60° past it, turn to 330° for the same count, then resume 60°",
+          "Turn to 150° and walk until you're clear of the marsh, then simply carry on at 60° from wherever you happen to be",
+          "Walk the back bearing of 240° until the marsh is out of sight behind you, then set off again on a fresh 60°"
+        ],
+        "explain": "The box (offset) method: turn 90° (60° + 90° = 150°) and count paces until clear, walk your original bearing until you're past the obstacle, turn the other way (60° − 90° = 330°) and walk the same number of paces back to your line, then resume 60°. Simply resuming 60° after sidestepping leaves you displaced by the whole offset—sidestep 500 m and you miss the target by 500 m."
+      }
+    },
+    {
+      "id": "desert-x11",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "Automobile-association advice on engine overheating (AAA / NAPA)",
+      "zh": {
+        "q": "在45 °C的罗布泊开着空调驾驶四驱车，你发现水温表的指针慢慢爬进了红区。该怎么办？",
+        "options": [
+          "关空调，暖风开到最热、风量最大；指针还不降就停车熄火，等凉了再碰水箱盖",
+          "马上停车，拧开水箱盖把里面的压力放掉，再加满冷水，让发动机尽快降下温来",
+          "开快一点，让更多的风吹过散热器，空调照样开着，让司机保持清醒",
+          "停车，把饮用水浇在滚烫的发动机缸体和散热器上，让温度快点降下来"
+        ],
+        "explain": "关掉空调能卸掉一大块负荷，把暖风开到最大则让暖风芯体变成第二个散热器。指针仍在红区就靠边停车熄火，等它冷却——打开滚烫的水箱盖会喷出灼热的冷却液，冷水浇在热缸体上可能把它激裂。你的饮用水太宝贵了，绝不能浇在发动机上。"
+      },
+      "en": {
+        "q": "Driving the 4×4 across Lop Nur at 45 °C with the air conditioning on, you see the temperature gauge creep into the red. What should you do?",
+        "options": [
+          "AC off and heater on full, fan at maximum; if the needle doesn't drop, stop, switch off and let it cool before touching the radiator cap",
+          "Stop at once and open the radiator cap to let the pressure out, then top it up with cold water so that the engine cools quickly",
+          "Drive faster to force more air through the radiator, and keep the AC running so that the driver stays alert and comfortable",
+          "Stop and pour your drinking water over the hot engine block and the radiator, to bring the temperature back down as fast as you possibly can"
+        ],
+        "explain": "Switching off the AC removes a big load, and running the heater flat out turns the heater core into a second radiator. If the gauge stays in the red, pull over, switch off and let it cool—opening a hot radiator cap can spray scalding coolant, and cold water on a hot block can crack it. Your drinking water is far too precious to pour on an engine."
+      }
+    },
+    {
+      "id": "desert-x12",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "US National Weather Service lightning safety; WMS Lightning guidelines 2014",
+      "zh": {
+        "q": "一场午后雷暴正横扫平坦的罗布泊荒原，朝你们压过来。你离硬顶四驱车50米；附近唯一的树是200米外一棵孤零零的胡杨。哪里最安全？",
+        "options": [
+          "远离汽车，因为金属会招雷——然后趴在沙地上，让自己尽量放低",
+          "躲到那棵胡杨下：它是周围最高的东西，雷会劈它，而不会劈你",
+          "坐进硬顶车里关好车窗，不碰金属部件，等最后一声雷过后30分钟再下车",
+          "躲到车旁搭的防水布棚子下面，既能挡住雨，布料又不导电，那里才是最安全的"
+        ],
+        "explain": "硬顶金属车身会把雷电流沿车壳导入地面，绕过车里的人（起保护作用的是金属外壳，不是轮胎），所以要上车、关窗、别碰金属。金属不会招雷；空旷地、孤树、帐篷和布棚都起不到保护作用，趴在地上还会增加受地面电流伤害的面积。最后一声雷过后至少等30分钟再下车。"
+      },
+      "en": {
+        "q": "An afternoon thunderstorm is sweeping across the flat Lop Nur plain towards you. You're 50 m from your hard-topped 4×4; the only tree is a lone desert poplar 200 m away. Where is safest?",
+        "options": [
+          "Well away from the car, because metal attracts lightning—then lie flat on the sand to make yourself as low as you can",
+          "Under the lone poplar: it's the tallest thing around, so lightning will strike the tree instead of you",
+          "Inside the hard-topped vehicle, windows closed and not touching metal parts, until 30 minutes after the last thunder",
+          "Under the tarp shelter rigged beside the car, which keeps the rain off and, being cloth, can't conduct electricity"
+        ],
+        "explain": "A hard-topped metal vehicle carries a strike around its occupants to the ground (it's the metal shell, not the tyres, that protects you), so get in, close the windows and avoid touching metal. Metal doesn't attract lightning; open ground, isolated trees, tents and tarps give no protection, and lying flat increases your exposure to ground current. Wait at least 30 minutes after the last thunder before getting out."
+      }
+    }
+  ]
+}

@@ -1,0 +1,974 @@
+{
+  "id": "radio",
+  "skill": "technical",
+  "bonus": 1,
+  "perk": null,
+  "requires": [],
+  "minLevel": 1,
+  "count": 10,
+  "pass": 8,
+  "icon": "antenna.radiowaves.left.and.right",
+  "color": "#DB61A2",
+  "zh": {
+    "name": "无线电与求救通信",
+    "full": "无线电与求救通信资格",
+    "desc": "遇险呼叫（MAYDAY）、国际遇险频率、示位标、地空联络信号、反光镜和信号弹、电池管理。",
+    "realWorld": "相当于业余无线电操作证和 GMDSS 基础知识。"
+  },
+  "en": {
+    "name": "Radio & Distress Signals",
+    "full": "Radio & Distress Signals Certificate",
+    "desc": "Distress calls (MAYDAY), international distress frequencies, emergency beacons, ground-to-air signals, signal mirrors and flares, battery management.",
+    "realWorld": "Comparable to an amateur radio license and GMDSS basics."
+  },
+  "questions": [
+    {
+      "id": "radio-01",
+      "answer": 1,
+      "hard": true,
+      "source": "ITU Radio Regulations",
+      "zh": {
+        "q": "你们的渔船发动机坏了，在离岸 10 海里处随风慢慢漂。天气平稳，船没进水，人都没事，但需要拖带。用 VHF 呼叫时应以什么开头？",
+        "options": [
+          "MAYDAY MAYDAY MAYDAY",
+          "PAN-PAN PAN-PAN PAN-PAN",
+          "SÉCURITÉ SÉCURITÉ SÉCURITÉ",
+          "SOS SOS SOS"
+        ],
+        "explain": "MAYDAY 用于船舶或人员面临严重而紧迫的危险、需要立即救助，比如沉船、起火、有人落水；PAN-PAN 是紧急信号，用于情况紧急但生命没有迫在眉睫的危险，比如天气平稳时失去动力。SÉCURITÉ 用于播发航行或气象安全信息；SOS 是莫尔斯电码信号，话音呼叫不用它。"
+      },
+      "en": {
+        "q": "Your fishing boat's engine has failed and you're drifting slowly 10 nautical miles offshore. The weather is calm, the boat isn't taking on water and everyone is fine, but you need a tow. How should your VHF call begin?",
+        "options": [
+          "MAYDAY MAYDAY MAYDAY",
+          "PAN-PAN PAN-PAN PAN-PAN",
+          "SÉCURITÉ SÉCURITÉ SÉCURITÉ",
+          "SOS SOS SOS"
+        ],
+        "explain": "MAYDAY is for grave and imminent danger needing immediate help — sinking, fire, someone overboard. PAN-PAN is the urgency signal: a serious situation without immediate danger to life, such as losing power in calm weather. SÉCURITÉ is for navigational or weather safety messages; SOS is a Morse signal and isn't used in voice calls."
+      }
+    },
+    {
+      "id": "radio-02",
+      "answer": 2,
+      "hard": false,
+      "source": "ITU Radio Regulations",
+      "zh": {
+        "q": "你在航行中发现一个集装箱半沉半浮地漂在航道上，可能撞坏过往船只。在 16 频道播发提醒时，应以什么信号开头？",
+        "options": [
+          "MAYDAY（连说三遍）",
+          "PAN-PAN（连说三遍）",
+          "SÉCURITÉ（连说三遍）",
+          "MAYDAY RELAY（连说三遍）"
+        ],
+        "explain": "SÉCURITÉ 是安全信号，用于播发航行危险（如漂浮物、灯标失灵）和气象警告等安全信息，一般在 16 频道作简短通告后，再转到工作频道播发正文。MAYDAY RELAY 是替其他遇险船转发遇险呼叫时用的。"
+      },
+      "en": {
+        "q": "Under way, you spot a half-submerged shipping container drifting in the fairway — a danger to passing ships. What signal should begin your broadcast on channel 16?",
+        "options": [
+          "MAYDAY (said three times)",
+          "PAN-PAN (said three times)",
+          "SÉCURITÉ (said three times)",
+          "MAYDAY RELAY (said three times)"
+        ],
+        "explain": "SÉCURITÉ is the safety signal, for navigational hazards (drifting objects, unlit buoys) and weather warnings; you normally announce it briefly on channel 16 and then switch to a working channel for the message itself. MAYDAY RELAY is for passing on another vessel's distress call."
+      }
+    },
+    {
+      "id": "radio-03",
+      "answer": 0,
+      "hard": false,
+      "source": "ITU Radio Regulations; IMO SMCP",
+      "zh": {
+        "q": "标准的 MAYDAY 话音遇险呼叫，正确的内容顺序是？",
+        "options": [
+          "MAYDAY×3 → 船名/呼号 → 位置 → 遇险性质 → 所需援助 → 人数 → 完毕",
+          "船名/呼号 → 人数 → 遇险性质 → 所需援助 → MAYDAY×3 → 位置 → 完毕",
+          "位置 → MAYDAY×3 → 所需援助 → 船名/呼号 → 遇险性质 → 人数 → 完毕",
+          "MAYDAY×3 → 人数 → 船长姓名 → 遇险性质 → 所需援助 → 位置 → 完毕"
+        ],
+        "explain": "国际通用格式可记作 MIPDANIO：Mayday（遇险信号，说三遍）、Identity（船名、呼号或 MMSI）、Position（位置）、Distress（遇险性质）、Assistance（所需援助）、Number（人数）、Information（其他信息）、Over（完毕）。位置紧跟在身份之后，是为了即使信号中断，救援方也已经知道去哪里找。"
+      },
+      "en": {
+        "q": "What is the correct order of a standard MAYDAY voice distress call?",
+        "options": [
+          "MAYDAY ×3 → name/call sign → position → distress → help needed → people → over",
+          "Name/call sign → people → distress → help needed → MAYDAY ×3 → position → over",
+          "Position → MAYDAY ×3 → help needed → name/call sign → distress → people → over",
+          "MAYDAY ×3 → people → skipper's name → distress → help needed → position → over"
+        ],
+        "explain": "The standard format is often remembered as MIPDANIO: Mayday ×3, Identity (name, call sign or MMSI), Position, Distress (what's wrong), Assistance needed, Number of people, other Information, Over. Position comes straight after identity so that even if the call is cut off, rescuers know where to look."
+      }
+    },
+    {
+      "id": "radio-04",
+      "answer": 3,
+      "hard": true,
+      "source": "ITU Radio Regulations; RYA",
+      "zh": {
+        "q": "救生筏上的手持电台电量快耗尽了。你刚喊完“MAYDAY MAYDAY MAYDAY，这里是某某轮救生筏”，估计只能再说几个字。接下来最该说什么？",
+        "options": [
+          "筏上一共有几个人",
+          "船出了什么事故",
+          "需要哪种援助",
+          "你们所在的位置"
+        ],
+        "explain": "救援的前提是知道去哪儿找。标准格式把位置放在身份之后、所有细节之前，就是因为呼叫随时可能中断。最好报经纬度；没有 GPS，就报相对已知地物的方位和距离，比如“某某灯塔 230 度方向 8 海里”。"
+      },
+      "en": {
+        "q": "The handheld radio in your life raft is almost dead. You've just said 'MAYDAY MAYDAY MAYDAY, this is the life raft of the ship …' and can probably get out only a few more words. What should they be?",
+        "options": [
+          "How many people are aboard the raft",
+          "What happened to the ship",
+          "What kind of help you need",
+          "Your position — where you are"
+        ],
+        "explain": "Rescue starts with knowing where to look. The standard format puts position straight after identity, before any detail, because the call may be cut off at any moment. Give latitude and longitude if you can; without GPS, give a bearing and distance from a known landmark, e.g. '230 degrees from X lighthouse, 8 miles'."
+      }
+    },
+    {
+      "id": "radio-05",
+      "answer": 1,
+      "hard": false,
+      "source": "ITU Radio Regulations; GMDSS",
+      "zh": {
+        "q": "船用 VHF 甚高频电台上，用话音发出遇险呼叫应使用哪个频道？",
+        "options": [
+          "70 频道（156.525 MHz）",
+          "16 频道（156.8 MHz）",
+          "9 频道（156.45 MHz）",
+          "13 频道（156.65 MHz）"
+        ],
+        "explain": "16 频道（156.8 MHz）是国际 VHF 遇险、安全和呼叫频道，海岸电台和船舶都会守听。70 频道专门传输数字选择性呼叫（DSC）数据，不能讲话：按下 DSC 电台的红色遇险键，会在 70 频道自动发出带船舶识别码和位置的遇险报警，之后再到 16 频道用话音呼叫 MAYDAY。"
+      },
+      "en": {
+        "q": "On a marine VHF radio, which channel do you use for a voice distress call?",
+        "options": [
+          "Channel 70 (156.525 MHz)",
+          "Channel 16 (156.8 MHz)",
+          "Channel 9 (156.45 MHz)",
+          "Channel 13 (156.65 MHz)"
+        ],
+        "explain": "Channel 16 (156.8 MHz) is the international VHF distress, safety and calling channel, monitored by coast stations and ships. Channel 70 carries only Digital Selective Calling data, never voice: the red distress button on a DSC radio sends an automatic alert with your MMSI and position on channel 70, after which you make the MAYDAY voice call on 16."
+      }
+    },
+    {
+      "id": "radio-06",
+      "answer": 0,
+      "hard": false,
+      "source": "ICAO Annex 10",
+      "zh": {
+        "q": "飞机迫降在雪山上，你们修好了驾驶舱里的一台甚高频航空电台。呼救应该调到哪个频率？",
+        "options": [
+          "121.5 MHz",
+          "156.8 MHz",
+          "406 MHz",
+          "2182 kHz"
+        ],
+        "explain": "121.5 MHz 是国际航空应急频率，空管单位和许多飞机（尤其是越洋和偏远航线上的）都会守听。156.8 MHz 是船用 16 频道，2182 kHz 是海上中频遇险频率，航空电台都调不到；406 MHz 是卫星示位标发送数字报警的频率，不能通话。军用飞机的 UHF 应急频率是 243 MHz，正好是 121.5 的两倍。"
+      },
+      "en": {
+        "q": "Your plane has come down in the snow mountains and you've got a VHF aviation radio in the cockpit working. Which frequency do you call on?",
+        "options": [
+          "121.5 MHz",
+          "156.8 MHz",
+          "406 MHz",
+          "2182 kHz"
+        ],
+        "explain": "121.5 MHz is the international aeronautical emergency frequency, monitored by air traffic control and many aircraft, especially on oceanic and remote routes. 156.8 MHz is marine channel 16 and 2182 kHz the maritime MF distress frequency — an aviation radio can't tune either; 406 MHz carries digital beacon alerts, not voice. The military UHF emergency frequency is 243 MHz, exactly twice 121.5."
+      }
+    },
+    {
+      "id": "radio-07",
+      "answer": 2,
+      "hard": true,
+      "source": "Cospas-Sarsat",
+      "zh": {
+        "q": "关于 406 MHz 卫星示位标（船用 EPIRB、个人 PLB、航空 ELT），下面哪种说法正确？",
+        "options": [
+          "它能让你和救援协调中心直接通话，报告伤情和所在位置",
+          "它只发 121.5 MHz 信号，得靠飞机飞到附近才收得到",
+          "卫星转发带识别码和位置的报警；121.5 MHz 只用来寻位",
+          "它只在购买国的海域和领空范围内有效，出了境就没用"
+        ],
+        "explain": "406 MHz 示位标发出的是数字报警，含有唯一识别码（登记后可查到船名和联系人），带 GPS 的还能给出约百米精度的位置，由 Cospas-Sarsat 卫星系统在全球范围接收。自 2009 年 2 月起，卫星已不再处理 121.5/243 MHz 报警；示位标同时发出的 121.5 MHz 信号，是供赶到附近的飞机和船只测向寻位的。"
+      },
+      "en": {
+        "q": "Which statement about 406 MHz satellite beacons (marine EPIRBs, personal PLBs, aviation ELTs) is correct?",
+        "options": [
+          "It lets you talk directly to the rescue centre and report injuries and position",
+          "It only transmits on 121.5 MHz, so only aircraft flying close by can hear it",
+          "Satellites relay its coded alert and position; 121.5 MHz is only for homing",
+          "It only works inside the waters and airspace of the country where it was bought"
+        ],
+        "explain": "A 406 MHz beacon sends a digital alert with a unique ID (registration links it to the vessel and emergency contacts) and, with GPS, a position good to about 100 m; the Cospas-Sarsat satellite system picks it up worldwide. Since February 2009, satellites no longer process 121.5/243 MHz alerts; the beacon's 121.5 MHz signal lets aircraft and boats home in once they're nearby."
+      }
+    },
+    {
+      "id": "radio-08",
+      "answer": 3,
+      "hard": false,
+      "source": "Cospas-Sarsat; NOAA SARSAT",
+      "zh": {
+        "q": "你在野外打开了个人示位标（PLB）求救。之后该怎么放置和使用它？",
+        "options": [
+          "每隔半小时就关掉它一会儿，这样能大大节省电池",
+          "揣进衣兜里保暖，天线朝哪个方向都无所谓",
+          "平放在地上，让天线贴着地面，这样最稳当",
+          "一直开着，天线竖直、头顶无遮挡，别用身体挡住"
+        ],
+        "explain": "示位标靠卫星接收，要看得见天空，天线竖直、没有遮挡时信号最好；放在衣兜里、压在身下，或躲在岩石、机身下面都会削弱信号。一旦开启就保持发射直到获救：按标准，PLB 电池至少能连续工作 24 小时（EPIRB 至少 48 小时），关关开开反而会让救援方难以定位和追踪。"
+      },
+      "en": {
+        "q": "You've activated your personal locator beacon (PLB) in the wilderness. How should you position and use it now?",
+        "options": [
+          "Turn it off for a while every half hour to save a lot of battery",
+          "Keep it warm in a pocket — the antenna direction doesn't matter",
+          "Lay it flat on the ground with the antenna along the surface, for stability",
+          "Leave it on, antenna upright under open sky, not blocked by your body"
+        ],
+        "explain": "Beacons need a clear view of the sky, with the antenna vertical and unobstructed; in a pocket, under your body, or beneath rocks or wreckage, the signal is weakened. Once activated, leave it transmitting until you're rescued — PLB batteries are built to run at least 24 hours (EPIRBs 48); switching it on and off makes it harder for rescuers to fix and track you."
+      }
+    },
+    {
+      "id": "radio-09",
+      "answer": 3,
+      "hard": true,
+      "source": "NTSB; Cospas-Sarsat",
+      "zh": {
+        "q": "飞机在雪山坠毁，机尾里的应急定位发射机（ELT）似乎没起作用。最值得先检查什么？",
+        "options": [
+          "什么都别做，等雪停了再说，雪花会干扰它的发射频率",
+          "不用查了，ELT 只在海上有用，在陆地上根本收不到信号",
+          "不用查了，电池肯定已经冻坏，直接扔掉另想办法",
+          "天线是否撞断脱开；接好天线，拨到 ON，放到开阔处"
+        ],
+        "explain": "ELT 一般在撞击时自动启动，但事故调查中常见的失效原因是外接天线或同轴电缆被扯断、脱开，或者设备被埋在残骸和积雪下，信号发不出去。检查天线接头，把开关拨到 ON，尽量把它或天线放到没有遮挡、看得见天空的高处。低温会削弱电池输出，但通常不会让它彻底报废。"
+      },
+      "en": {
+        "q": "After your plane crashes in the snow mountains, the emergency locator transmitter (ELT) in the tail doesn't seem to be working. What's most worth checking first?",
+        "options": [
+          "Nothing until the snow stops — falling snowflakes jam its transmitting frequency",
+          "Nothing at all — ELTs only work over water and are never picked up over land",
+          "Nothing — the battery is surely frozen dead, so throw it away and move on",
+          "A torn-off antenna cable — reconnect it, switch to ON, move it into the open"
+        ],
+        "explain": "An ELT normally switches on automatically on impact, but a common failure found in crash investigations is a torn or disconnected external antenna or coax cable, or the unit being buried under wreckage or snow. Check the antenna connection, set the switch to ON, and get the unit or its antenna high and in the open with a clear view of the sky. Cold weakens the battery but rarely kills it outright."
+      }
+    },
+    {
+      "id": "radio-10",
+      "answer": 2,
+      "hard": true,
+      "source": "IMO GMDSS (SART)",
+      "zh": {
+        "q": "救生筏上的搜救雷达应答器（SART）是做什么用的？",
+        "options": [
+          "通过卫星把带有你位置的遇险报警发给救援中心",
+          "让救生筏上的人可以和救援船的船员直接通话",
+          "被雷达扫到就应答，在对方屏幕上显示指向你的一串点",
+          "发出一闪一闪的强烈白光，好让夜里过往的船只看见你"
+        ],
+        "explain": "SART 工作在 9 GHz 的 X 波段雷达频段，平时待机，被雷达波扫到就发射应答，在对方雷达屏上画出一串 12 个点，最靠近屏幕中心的那个点就是你的位置；船靠近到约 1 海里时，点会变成弧线，最后成为同心圆。它要尽量举高：离水面 1 米时，船用雷达约在 5 海里外能发现，越高越远。"
+      },
+      "en": {
+        "q": "What does the search and rescue radar transponder (SART) in a life raft do?",
+        "options": [
+          "Sends a distress alert with your position to the rescue centre via satellite",
+          "Lets the people in the raft talk directly to the crew of a rescue ship",
+          "Answers radar with a line of dots on the searcher's screen, pointing to you",
+          "Flashes a powerful strobe light so that passing ships can see you at night"
+        ],
+        "explain": "A SART works on 9 GHz X-band radar. It waits in standby and, when swept by radar, replies with a line of 12 dots on the searcher's screen; the dot nearest the centre is your position. Within about a mile the dots become arcs and then circles. Hold it as high as possible: 1 m above the sea, a ship's radar should detect it at about 5 nautical miles, and higher means farther."
+      }
+    },
+    {
+      "id": "radio-11",
+      "answer": 0,
+      "hard": true,
+      "source": "ARRL Handbook (radio horizon)",
+      "zh": {
+        "q": "坠机点在山谷里，用手持电台怎么呼叫都没人回应。为什么值得爬到高出周围 300 米的山脊上再试？",
+        "options": [
+          "甚高频走直线，站得越高传得越远，还能越过山体",
+          "山上空气稀薄，电波在稀薄的空气里传得更快更远",
+          "山脊离天上的卫星更近一些，信号会因此强很多",
+          "山脊上积雪少，电波不会被厚厚的积雪吸收"
+        ],
+        "explain": "VHF 和 UHF 电波主要按视距传播，会被山体挡住，也受地球曲率限制。电波地平线约为 4.1 × √天线高度（米）公里：站在 2 米高处只有约 6 公里，到了高出周围 300 米的山脊就有约 70 公里。这也是为什么高空飞机能在几百公里外收到地面的 121.5 MHz 呼叫。"
+      },
+      "en": {
+        "q": "The crash site is in a valley and nobody answers your handheld radio. Why is it worth climbing to a ridge 300 m above the surroundings to try again?",
+        "options": [
+          "VHF is line-of-sight: the higher you are, the farther it reaches",
+          "Thin mountain air lets radio waves travel faster and much farther",
+          "The ridge is closer to the satellites, so the signal gets much stronger",
+          "There's less deep snow up on the ridge to absorb the radio signal"
+        ],
+        "explain": "VHF and UHF travel essentially by line of sight: hills block them and the Earth's curve limits them. The radio horizon is roughly 4.1 × √(antenna height in metres) km — about 6 km from 2 m up, but about 70 km from a ridge 300 m above the surroundings. That's also why high-flying aircraft can hear a 121.5 MHz call from the ground hundreds of kilometres away."
+      }
+    },
+    {
+      "id": "radio-12",
+      "answer": 1,
+      "hard": false,
+      "source": "USAF AFH 10-644 (SERE)",
+      "zh": {
+        "q": "你们只有一台手持电台，电池只剩一格，救援可能要几天才到。怎么用最合理？",
+        "options": [
+          "一直开机守听，免得漏掉救援方的呼叫",
+          "平时关机，只在约定时段和看见飞机、船时开机",
+          "每隔几分钟就用最大功率呼叫一次 MAYDAY",
+          "先把电用光，关机放一阵它自己会回电"
+        ],
+        "explain": "电台开着守听也耗电，发射更耗电，大功率发射最费电。约定在固定时段（比如每个整点开机几分钟）联络，再加上看见或听见飞机、船只时开机，就能把有限的电留给真正可能被听到的时刻；救援方知道这个规律，也会在那些时段呼叫你。"
+      },
+      "en": {
+        "q": "You have one handheld radio, the battery is down to one bar, and rescue may be days away. How should you use it?",
+        "options": [
+          "Leave it on and listening all the time so you never miss a call",
+          "Off except at agreed times, or when you see an aircraft or ship",
+          "Transmit MAYDAY at full power every few minutes until someone answers",
+          "Run it flat, then switch off and let the battery recover by itself"
+        ],
+        "explain": "Even listening drains the battery, transmitting drains it faster, and high power fastest of all. Fixed windows (say a few minutes on the hour), plus whenever you see or hear an aircraft or ship, save your power for the moments you might actually be heard — and rescuers who know your schedule will call at those times."
+      }
+    },
+    {
+      "id": "radio-13",
+      "answer": 1,
+      "hard": true,
+      "source": "Battery University BU-502",
+      "zh": {
+        "q": "零下 25 度，你刚用手持电台通话几分钟，电台就显示电量耗尽、自动关机了。最可能的情况和正确做法是？",
+        "options": [
+          "电池已经彻底坏了，扔掉它，赶紧另想办法",
+          "低温让电池暂时没劲了，揣进贴身衣服里捂热再用",
+          "把电池放到火堆旁边烤一烤，越快烤热越好",
+          "把电台埋进雪里冻上一会儿，电池就能“重启”了"
+        ],
+        "explain": "锂电池和碱性电池在严寒中内阻增大、放电能力大幅下降，看起来“没电”，捂热后大部分电量会回来。平时把电台或电池放在贴身的内层衣服里，通话时再拿出来。用火烤可能让电池鼓包、漏液，甚至起火爆炸。"
+      },
+      "en": {
+        "q": "At −25 °C, your handheld radio shows a flat battery and shuts down after only a few minutes of talking. What's most likely going on, and what should you do?",
+        "options": [
+          "The battery is finished — throw it away and try something else",
+          "Cold has sapped it — warm the battery inside your clothes and try again",
+          "Put the battery right next to the fire to heat it up as fast as possible",
+          "Bury the radio in the snow for a while so the battery can 'reset'"
+        ],
+        "explain": "In severe cold, lithium and alkaline batteries lose much of their output and look 'dead', but most of the charge comes back once they're warm. Carry the radio or battery in an inner layer next to your body and take it out only to transmit. Heating a battery by a fire can make it swell, leak or even catch fire and explode."
+      }
+    },
+    {
+      "id": "radio-14",
+      "answer": 0,
+      "hard": false,
+      "source": "ICAO Annex 10; ITU RR Appendix 14",
+      "zh": {
+        "q": "信号很差，你要在电台里拼出姓氏“CHEN”。按国际通用的字母解释法应该怎么念？",
+        "options": [
+          "Charlie Hotel Echo November",
+          "Charlie Hotel Easy Nancy",
+          "Charlie How Easy Nan",
+          "Canada Hotel England Norway"
+        ],
+        "explain": "国际民航组织（ICAO）和国际电信联盟（ITU）通用的字母解释法是：Alfa、Bravo、Charlie、Delta、Echo、Foxtrot、Golf、Hotel、India、Juliett、Kilo、Lima、Mike、November、Oscar、Papa、Quebec、Romeo、Sierra、Tango、Uniform、Victor、Whiskey、X-ray、Yankee、Zulu。“Charlie How Easy Nan”是二战时期用过、早已淘汰的旧拼法。"
+      },
+      "en": {
+        "q": "Reception is poor and you need to spell the surname 'CHEN' over the radio. Using the international spelling alphabet, how do you say it?",
+        "options": [
+          "Charlie Hotel Echo November",
+          "Charlie Hotel Easy Nancy",
+          "Charlie How Easy Nan",
+          "Canada Hotel England Norway"
+        ],
+        "explain": "The ICAO/ITU spelling alphabet is: Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu. 'Charlie How Easy Nan' is the long-obsolete WWII-era version."
+      }
+    },
+    {
+      "id": "radio-15",
+      "answer": 2,
+      "hard": false,
+      "source": "ITU Radio Regulations; COLREG Annex IV",
+      "zh": {
+        "q": "夜里用手电向远处的船发 SOS 求救，正确的闪法是？",
+        "options": [
+          "三长、三短、三长，停顿后重复",
+          "两短、两长、两短，停顿后重复",
+          "三短、三长、三短连成一组，停顿后重复",
+          "一直开着不关，让亮光一刻不断地照向船"
+        ],
+        "explain": "SOS 的莫尔斯电码是 ··· ––– ···（三短、三长、三短），作为一个整体连续发出，字母之间不停顿；长信号大约是短信号的三倍长。它可以用灯光、声音（哨子、汽笛）、敲击等任何方式发出，而持续不断的亮光不会被认作求救信号。"
+      },
+      "en": {
+        "q": "At night you want to signal SOS to a distant ship with a torch. How do you flash it?",
+        "options": [
+          "Three long, three short, three long; pause; repeat",
+          "Two short, two long, two short; pause; repeat",
+          "Three short, three long, three short in one group; pause; repeat",
+          "Keep the beam shining steadily at the ship, without any break at all"
+        ],
+        "explain": "SOS in Morse is ··· ––– ··· (three short, three long, three short), sent as one unbroken group with no gaps between the letters; a long signal is about three times a short one. It can be sent by light, sound (whistle, horn), tapping or any other means, whereas a steady light isn't recognised as a distress signal."
+      }
+    },
+    {
+      "id": "radio-16",
+      "answer": 3,
+      "hard": false,
+      "source": "COLREG Annex IV",
+      "zh": {
+        "q": "你们在救生筏上，没有电台也没有信号弹，远处有一艘船。按国际公认的遇险信号，应该怎样用手臂示意？",
+        "options": [
+          "单手举过头顶，快速地左右来回挥动",
+          "双臂在头顶交叉成“X”，一直保持不动",
+          "一只手臂笔直指向天空，一直保持不动",
+          "双臂向两侧平伸，缓慢地反复上下摆动"
+        ],
+        "explain": "《国际海上避碰规则》附录四列出的遇险信号之一，就是“将向两侧平伸的双臂缓慢地反复上举和放下”；单手挥动很容易被当成打招呼。附录四列出的其他遇险信号还有：红色火箭降落伞信号或手持红光火焰信号、橙色烟雾、话音 MAYDAY、SOS 信号、每隔约一分钟鸣枪一次等。"
+      },
+      "en": {
+        "q": "You're in a life raft with no radio and no flares, and there's a ship in the distance. What internationally recognised distress signal can you make with your arms?",
+        "options": [
+          "One hand raised above your head, waved quickly from side to side",
+          "Arms crossed in an X high above your head and held there without moving",
+          "One arm pointed straight up at the sky and held perfectly still",
+          "Arms stretched out sideways, slowly raised and lowered again and again"
+        ],
+        "explain": "COLREG Annex IV lists 'slowly and repeatedly raising and lowering arms outstretched to each side' as a distress signal; waving one hand just looks like a greeting. Other Annex IV signals include red parachute rockets or hand flares, orange smoke, MAYDAY by voice, SOS, and a gun fired at intervals of about a minute."
+      }
+    },
+    {
+      "id": "radio-17",
+      "answer": 2,
+      "hard": true,
+      "source": "IMO LSA Code; RNLI",
+      "zh": {
+        "q": "夜里，救生筏上的人看见远处海平线上有船灯，船似乎没发现你们。你们有 2 枚火箭降落伞信号、3 支手持红光火焰、1 个橙色烟雾信号。正确的用法是？",
+        "options": [
+          "先放橙色的烟雾信号，它燃烧的时间最长，也最显眼",
+          "把三支手持火焰同时点燃，越亮越容易被船看见",
+          "先打一枚火箭信号让远处看见，船近了再用手持火焰",
+          "趁船还看得见，立刻把所有信号一口气全放完"
+        ],
+        "explain": "火箭降落伞信号能升到约 300 米高、燃烧 40 秒以上，用来让远处的船看见；手持红光火焰低而亮，用于对方靠近后指示准确位置；橙色烟雾只在白天有用。信号弹数量有限，要在对方可能看得见时才用，打一枚后先观察反应；直升机在附近时不要打火箭信号。"
+      },
+      "en": {
+        "q": "At night, the people in your raft see a ship's lights on the horizon; it doesn't seem to have noticed you. You have 2 parachute rockets, 3 red hand flares and 1 orange smoke signal. What's the right way to use them?",
+        "options": [
+          "The orange smoke first — it burns the longest and is the most visible of all",
+          "Light all three hand flares together — the brighter, the easier to see",
+          "One rocket to be seen from afar; a hand flare to pinpoint you as it nears",
+          "While the ship is still in sight, fire off everything you have at once"
+        ],
+        "explain": "A parachute rocket climbs to about 300 m and burns for 40+ seconds, so ships far away can see it; a red hand flare is low and bright, for pinpointing you once they're close; orange smoke only works by day. Flares are few, so use them only when someone is likely to see, watch for a reaction after each one, and never fire rockets near a helicopter."
+      }
+    },
+    {
+      "id": "radio-18",
+      "answer": 0,
+      "hard": false,
+      "source": "ICAO Annex 12",
+      "zh": {
+        "q": "按照国际民航组织（ICAO）的地对空信号，在地面摆出一个大大的“X”，意思是？",
+        "options": [
+          "需要医疗援助",
+          "需要援助",
+          "否定（不）",
+          "正朝这个方向前进"
+        ],
+        "explain": "ICAO 附件 12 规定的幸存者地对空信号只有五个：V 需要援助，X 需要医疗援助，N 否定（不），Y 肯定（是），箭头表示正朝这个方向前进。符号要尽量醒目，每个至少 2.5 米长。"
+      },
+      "en": {
+        "q": "In the ICAO ground-to-air signal code, what does a large 'X' laid out on the ground mean?",
+        "options": [
+          "Require medical assistance",
+          "Require assistance",
+          "No (negative)",
+          "Proceeding in this direction"
+        ],
+        "explain": "ICAO Annex 12 gives survivors just five ground-to-air signals: V = require assistance, X = require medical assistance, N = no, Y = yes, and an arrow = proceeding in this direction. Make them as conspicuous as possible, each at least 2.5 m long."
+      }
+    },
+    {
+      "id": "radio-19",
+      "answer": 1,
+      "hard": false,
+      "source": "ICAO Annex 12",
+      "zh": {
+        "q": "你们要在雪地上做一个让搜救飞机看见的“V”字信号。怎样做效果最好？",
+        "options": [
+          "用树枝在雪地上画一个半米长的 V，线条细一点更清楚",
+          "至少 2.5 米长，用深色材料铺或踩出深沟，反差要强",
+          "用白色降落伞布铺成 V，跟雪地同色看着整齐",
+          "做得小一点没关系，关键是摆在帐篷正门口"
+        ],
+        "explain": "ICAO 要求地对空信号每个符号至少 2.5 米长，并尽可能醒目。在雪地上可用深色的树枝、衣物、机舱残骸铺成，或踩出深沟让阴影显形；笔直的线条和尖角在自然界很少见，从空中一眼就能认出是人做的。"
+      },
+      "en": {
+        "q": "You're making a 'V' signal in the snow for search aircraft to see. What works best?",
+        "options": [
+          "Scratch a half-metre V in the snow with a stick; thin lines look sharper",
+          "At least 2.5 m long, in dark material or deep trenches, high contrast",
+          "Lay it out in white parachute cloth so it matches the snow neatly",
+          "Size doesn't matter much — just put it right outside the tent door"
+        ],
+        "explain": "ICAO requires each ground-to-air symbol to be at least 2.5 m long and as conspicuous as possible. On snow, use dark branches, clothing or wreckage, or stamp deep trenches whose shadows show up; straight lines and sharp angles are rare in nature and read instantly as man-made from the air."
+      }
+    },
+    {
+      "id": "radio-20",
+      "answer": 3,
+      "hard": false,
+      "source": "ICAO Annex 12",
+      "zh": {
+        "q": "等了几天没人来，你们决定离开坠机点，沿山谷往下走。离开前应该给搜救人员留下什么？",
+        "options": [
+          "什么都不用留，搜救人员见到残骸自然会四处搜",
+          "在残骸旁边摆一个大大的 N 字，表示人已经离开了",
+          "什么也不留，还要把残骸上醒目的布料都拆下来路上用",
+          "指向去向的大箭头，外加写明人数、日期和路线的字条"
+        ],
+        "explain": "ICAO 地对空信号中，箭头表示“正朝这个方向前进”；N 的意思是“否定/不”，并不是“已离开”。残骸比人显眼得多，搜救人员往往先找到残骸，有了箭头和字条，他们才知道往哪儿追；路上也要每隔一段做记号。"
+      },
+      "en": {
+        "q": "After days with no rescue, you decide to leave the crash site and walk down the valley. What should you leave for searchers?",
+        "options": [
+          "Nothing — searchers who find the wreck will search all around it anyway",
+          "A big N laid out beside the wreck, to show that you've already left",
+          "Nothing — strip the bright fabric off the wreck to use along the way",
+          "A big arrow pointing your way, plus a note with numbers, date and route"
+        ],
+        "explain": "In the ICAO code an arrow means 'proceeding in this direction'; N means 'no', not 'we've left'. A wreck is far easier to spot than people, so searchers often find it first — an arrow and a note tell them where to follow; keep marking your route along the way."
+      }
+    },
+    {
+      "id": "radio-21",
+      "answer": 0,
+      "hard": true,
+      "source": "ICAO Annex 12",
+      "zh": {
+        "q": "搜救飞机从你们的地对空信号上方飞过。按照 ICAO 的规定，飞机表示“信号已看到并理解”的方式是？",
+        "options": [
+          "白天左右摇摆机翼；夜间把着陆灯开关两次",
+          "在你们头顶上空连续盘旋三圈之后再离开",
+          "俯冲到很低的高度，然后猛地急速拉起",
+          "白天发射一枚绿色信号弹；夜间用探照灯照你们"
+        ],
+        "explain": "ICAO 附件 12 规定：白天，飞机通过左右摇摆机翼表示收到并理解；夜间，把着陆灯（没有着陆灯就用航行灯）开关两次。没有这些动作，就表示地面信号没有被理解。看到飞机摇翼，说明你们已被发现，要继续保持信号、留在原地等待。"
+      },
+      "en": {
+        "q": "A search aircraft flies over your ground signal. Under ICAO rules, how does it show 'signal seen and understood'?",
+        "options": [
+          "By day, rocking its wings; at night, flashing its landing lights twice",
+          "Circling over you three times in a row before it flies away",
+          "Diving down very low over you, then pulling up sharply",
+          "By day firing a green flare; at night shining a searchlight down on you"
+        ],
+        "explain": "ICAO Annex 12: by day, an aircraft acknowledges by rocking its wings; at night, by flashing its landing lights (or navigation lights) on and off twice. Without these signals, the ground signal has not been understood. Once you see the wings rock, you've been found — keep your signals up and stay put."
+      }
+    },
+    {
+      "id": "radio-22",
+      "answer": 1,
+      "hard": false,
+      "source": "USAF AFH 10-644 (SERE)",
+      "zh": {
+        "q": "你手里只有一块没有瞄准孔的小镜子，远处有架搜救飞机。怎样把反光准确地打到飞机上？",
+        "options": [
+          "把镜面正对着太阳举着，等飞行员自己发现反光",
+          "手指比“V”框住飞机，光斑落在指间后扫过飞机",
+          "把镜子平放在地上，光自然会反射到天上去",
+          "朝飞机的大致方向不停地快速乱晃镜子"
+        ],
+        "explain": "镜子反光在晴天能在十几公里外被看到，但光束很窄，必须瞄准：伸直手臂，用两根手指比成“V”框住目标，调整镜子让光斑落在两指之间，光就打在目标上了。看不见飞机时也可以沿地平线慢慢扫。对方回应后，别一直照着驾驶舱，以免晃得飞行员睁不开眼。"
+      },
+      "en": {
+        "q": "You have a small mirror with no sighting hole, and a search aircraft is in the distance. How do you aim the flash at it?",
+        "options": [
+          "Point the mirror straight at the sun and wait for the pilot to notice the glint",
+          "Frame the plane in a V of your fingers and sweep the light spot across it",
+          "Lay the mirror flat on the ground so it bounces light up into the sky",
+          "Waggle the mirror wildly back and forth in the plane's general direction"
+        ],
+        "explain": "A mirror flash can be seen more than 10 km away on a sunny day, but the beam is narrow and must be aimed: stretch out your arm, frame the target in a V of two fingers and tilt the mirror until the light spot sits between them. Sweep the horizon even when you can't see anything. Once acknowledged, stop flashing the cockpit so you don't dazzle the pilot."
+      }
+    },
+    {
+      "id": "radio-23",
+      "answer": 2,
+      "hard": false,
+      "source": "FEMA; Ready.gov; FCC",
+      "zh": {
+        "q": "地震后，手机信号只有一格，电话一直打不通，总提示“网络忙”。想让家人和救援人员知道你还活着、在哪儿，最好的办法是？",
+        "options": [
+          "一遍遍不停地重拨，总有一次能接通",
+          "录一段长视频发到网上，让大家都看见",
+          "发一条简短短信，写清位置和身体情况",
+          "先关机，等信号完全恢复了再联系"
+        ],
+        "explain": "灾后通话量暴增，语音通话要一直占着信道，很容易“网络忙”；短信数据量小，会排队等待发送，往往比电话更容易发出去。反复重拨既耗电又加剧网络拥堵，长视频在拥堵时几乎传不出去。"
+      },
+      "en": {
+        "q": "After an earthquake your phone shows one bar and calls keep failing with 'network busy'. What's the best way to let family and rescuers know you're alive and where you are?",
+        "options": [
+          "Keep redialling over and over — eventually one will connect",
+          "Record a long video and post it online for everyone to see",
+          "Send a short text with your location and condition",
+          "Turn the phone off until the network has fully recovered"
+        ],
+        "explain": "After a disaster call volumes explode: a voice call needs a channel the whole time and gets 'network busy', while a text is tiny and queues until it can be delivered, so it often gets through when calls don't. Constant redialling drains your battery and adds to the congestion, and a long video will barely move on a jammed network."
+      }
+    },
+    {
+      "id": "radio-24",
+      "answer": 3,
+      "hard": true,
+      "source": "3GPP; FCC",
+      "zh": {
+        "q": "你手机卡所属的运营商在这里没有信号，屏幕上显示“仅限紧急呼叫”（或 SOS）。这时该怎么办？",
+        "options": [
+          "没有自己运营商的信号，什么电话都打不出去，关机省电",
+          "先把手机恢复出厂设置，然后再重新搜索网络",
+          "只能干等着，等自己运营商的信号恢复了再打",
+          "直接拨打紧急号码，手机能借用其他运营商的网络接通"
+        ],
+        "explain": "“仅限紧急呼叫”或 SOS 的意思是：你的运营商在这里没有覆盖，但手机找到了别的网络，紧急呼叫可以经由它接通，在大多数国家和地区都是如此（如 112、911、110、119、120）。一些新款手机还能在完全没有地面信号时通过卫星发送紧急求救信息，前提是看得见天空。"
+      },
+      "en": {
+        "q": "Your own carrier has no coverage here, and the phone shows 'Emergency calls only' (or 'SOS'). What should you do?",
+        "options": [
+          "No signal from your own carrier means no calls at all, so power off to save battery",
+          "Factory-reset the phone first, then search for networks again",
+          "Just wait until your own carrier's signal comes back, then call",
+          "Dial the emergency number anyway — it can go through on another network"
+        ],
+        "explain": "'Emergency calls only' or 'SOS' means your carrier has no coverage but the phone has found another network that can carry emergency calls — true in most countries (112, 911, 110 and the like). Some newer phones can also send emergency messages by satellite when there's no ground network at all, as long as they have a clear view of the sky."
+      }
+    },
+    {
+      "id": "radio-x01",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "ITU Radio Regulations Art. 32 (distress traffic)",
+      "zh": {
+        "q": "你们的渔船在 16 频道守听。附近一艘货船遇险后，海岸电台发出了 SEELONCE MAYDAY。两个小时后，你听到：“MAYDAY，ALL STATIONS ×3，这里是某某海岸电台……（时间、遇险船名和识别码）……SEELONCE FEENEE。”这表示什么？",
+        "options": [
+          "所有电台必须继续保持绝对静默，只有遇险船和控制电台可以发射",
+          "可以恢复有限度的通信，但只允许发送简短的紧急信息",
+          "遇险船已经沉没，附近所有船只都应立即赶往遇险位置搜寻",
+          "遇险通信已经结束，16 频道恢复正常使用，可以照常呼叫"
+        ],
+        "explain": "SEELONCE FEENEE 源自法语 silence fini，意为“静默结束”，由控制遇险通信的电台发出，表示遇险通信结束、频道恢复正常。要求无关电台全部静默的是 SEELONCE MAYDAY；“只许简短紧急通信”是另一个程序用语 PRUDONCE 的意思。在听到 SEELONCE FEENEE 之前，不应在该频道进行日常通信。"
+      },
+      "en": {
+        "q": "Your fishing boat is listening on channel 16. After a nearby cargo ship got into distress, the coast station imposed SEELONCE MAYDAY. Two hours later you hear: 'MAYDAY, ALL STATIONS ×3, this is … Coast Station … (time, distressed ship's name and identity) … SEELONCE FEENEE.' What does it mean?",
+        "options": [
+          "All stations must keep absolute silence; only the distressed ship and the controlling station may transmit",
+          "Restricted working may resume, but only short, urgent messages are allowed",
+          "The distressed ship has sunk, and every vessel nearby must head for the position to search",
+          "Distress traffic is over; channel 16 is back to normal use and routine calls may resume"
+        ],
+        "explain": "SEELONCE FEENEE, from the French silence fini ('silence finished'), is sent by the station that controlled the distress traffic to say the distress is over and the channel is back to normal. The order for all other stations to keep silent is SEELONCE MAYDAY; 'restricted working, brief urgent messages only' is what a different proword, PRUDONCE, means. Until SEELONCE FEENEE is heard, routine traffic must stay off that channel."
+      }
+    },
+    {
+      "id": "radio-x02",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "ITU-R M.493 (DSC); USCG safety alert on DSC position data",
+      "zh": {
+        "q": "你们的船舱起火了。你掀开 DSC 甚高频电台的红色盖子，按住 DISTRESS 键 5 秒，报警发了出去，可屏幕上一直显示“NO POSITION”——电台没有接 GPS。这次报警发出了什么？接下来该怎么做？",
+        "options": [
+          "发出了你的 MMSI，救援中心会按注册资料查到你的位置，不用再说话，等确认就行",
+          "只有你的 MMSI 和遇险性质，没有位置；马上在 16 频道用话音呼叫 MAYDAY，报出位置",
+          "什么都没发出去，没有 GPS 就发不了 DSC 报警；改到 70 频道用话音呼叫 MAYDAY",
+          "发出了 MMSI，岸台会根据信号方向测出你的位置；保持 16 频道安静，不要占用"
+        ],
+        "explain": "DSC 遇险报警里的位置只能来自所连的 GPS，或者手动输入、过一段时间就会作废的位置；没接 GPS，报警里就只有 MMSI 和遇险性质。美国海岸警卫队收到的 VHF DSC 遇险报警约九成没有位置信息。所以发出 DSC 报警后，应立即在 16 频道用话音呼叫 MAYDAY 并报出位置；70 频道只传 DSC 数据、不能通话，MMSI 注册资料里也没有你此刻的位置。"
+      },
+      "en": {
+        "q": "Fire has broken out below deck. You lift the red cover on the DSC VHF and hold DISTRESS for 5 seconds; the alert goes out, but the screen shows 'NO POSITION': the radio isn't connected to GPS. What did the alert send, and what do you do next?",
+        "options": [
+          "Your MMSI: the rescue centre will look up your position from your registration, so just wait for acknowledgement",
+          "Just your MMSI and nature of distress, no position: voice MAYDAY on channel 16 now, giving your position",
+          "Nothing: without GPS no DSC alert can go out, so switch to channel 70 and call MAYDAY by voice there",
+          "Your MMSI: coast stations will fix your position by direction-finding, so keep off channel 16"
+        ],
+        "explain": "A DSC distress alert can only include a position fed from a connected GPS, or a manually entered one that expires; without it, the alert carries just your MMSI and the nature of distress. About nine in ten VHF DSC distress alerts the US Coast Guard receives have no position. So follow up at once with a voice MAYDAY on channel 16 that gives your position; channel 70 carries DSC data only, never voice, and your MMSI registration doesn't know where you are now."
+      }
+    },
+    {
+      "id": "radio-x03",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "ITU Radio Regulations Art. 32 (distress relay); RYA SRC",
+      "zh": {
+        "q": "黄昏，16 频道很安静。你在自己船上看见西南方约 3 海里处一艘帆船升起两发红色降落伞火箭信号，之后既没有听到 MAYDAY，也没有任何人回应。你们自己并无危险。应该怎么做？",
+        "options": [
+          "立即在 16 频道发 MAYDAY RELAY，说明所见信号、对方方位距离、时间和本船名",
+          "先等 5 分钟，看看帆船自己会不会发 MAYDAY，一直没有人确认时再替它转发",
+          "用“MAYDAY MAYDAY MAYDAY，这里是”加你自己的船名呼叫，这样优先级最高",
+          "发 PAN-PAN 紧急呼叫就够了，因为真正遇到危险的并不是你们自己的船"
+        ],
+        "explain": "红色火箭信号就是遇险信号，而对方显然无法或没有用无线电求救，这时应立即代其发出 MAYDAY RELAY，并把对方的遇险信息和你自己的身份、位置区分清楚。“先等几分钟、无人确认再转发”适用于你听到了对方的 MAYDAY 却没有人应答的情形。用 MAYDAY 报自己的船名，会让救援方以为是你在遇险。"
+      },
+      "en": {
+        "q": "At dusk, with channel 16 quiet, you see two red parachute rockets go up from a yacht about 3 nautical miles to your south-west. You hear no MAYDAY afterwards, and nobody responds. You yourselves are in no danger. What should you do?",
+        "options": [
+          "Send a MAYDAY RELAY on channel 16 now: what you saw, where it is from you, the time, your identity",
+          "Wait five minutes in case the yacht sends its own MAYDAY, and relay it only if nobody acknowledges it",
+          "Call 'MAYDAY MAYDAY MAYDAY, this is' followed by your own boat's name, so it gets top priority",
+          "Send a PAN-PAN urgency call: it's not your own boat that is in grave danger, so MAYDAY is wrong"
+        ],
+        "explain": "Red rockets are a distress signal, and the yacht evidently can't or hasn't called by radio, so relay at once with a MAYDAY RELAY, keeping its distress details clearly separate from your own identity and position. 'Wait a few minutes and relay if unacknowledged' applies when you have heard a MAYDAY that nobody answers. A MAYDAY in your own name makes rescuers think you are the one in distress."
+      }
+    },
+    {
+      "id": "radio-x04",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "GMDSS MF/HF operating practice; ionospheric propagation (ITU-R)",
+      "zh": {
+        "q": "你们的渔船在离岸约 600 海里处失去动力，船上有中高频电台。白天你一直用 16 MHz 频段联系海岸电台，天黑后对方信号越来越弱，最后完全听不到了。最该怎么做？",
+        "options": [
+          "换到更高的频段，比如 22 MHz：夜里噪声小，高频率反而传得更远",
+          "改用甚高频 16 频道：它不靠电离层反射，到了晚上反而更稳定",
+          "换到较低频段，比如 4 或 6 MHz：夜间电离层反射不了较高的频率",
+          "守在 16 MHz 等天亮：夜里 D 层吸收最强，天一亮情况就会好转"
+        ],
+        "explain": "短波靠电离层反射传播。白天电离层电子密度高，能反射 12、16 MHz 等较高频率，较低的频率则被白天的 D 层吸收；入夜后最高可用频率下降、D 层消失，就该改用 4、6 MHz 等较低频段。甚高频是视距传播，600 海里外根本够不着。"
+      },
+      "en": {
+        "q": "Your fishing boat has lost power about 600 nautical miles offshore; it has an MF/HF radio. All day you've been working a coast station on the 16 MHz band, but after dark its signal fades and disappears. What should you try?",
+        "options": [
+          "A higher band such as 22 MHz: night-time noise is lower, so the higher frequencies reach farther",
+          "VHF channel 16: it doesn't depend on the ionosphere, so it's steadier at night",
+          "A lower band such as 4 or 6 MHz: at night the ionosphere stops returning the higher frequencies",
+          "Stay on 16 MHz until morning: D-layer absorption is strongest at night and eases at dawn"
+        ],
+        "explain": "HF travels by bouncing off the ionosphere. By day it is dense enough to return higher frequencies such as 12 and 16 MHz, while lower ones are soaked up by the daytime D layer; after dark the maximum usable frequency falls and the D layer vanishes, so move down to 4 or 6 MHz. VHF is line-of-sight and can't reach 600 nautical miles at all."
+      }
+    },
+    {
+      "id": "radio-x05",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "US Army FM 3-05.70 Survival, ch. 19 (radio procedures)",
+      "zh": {
+        "q": "飞机坠毁在雪山上。一架搜救飞机正在你们头顶约 1000 米高处盘旋，你拿着一台带鞭状天线的手持甚高频电台准备呼叫。电台和天线应该怎么拿？",
+        "options": [
+          "把天线尖端直直地指向飞机，就像用手电照它一样，让信号正对着它发出去",
+          "让天线与飞机方向成直角：飞机在头顶时把天线放平，别让天线碰到身体",
+          "天线始终保持竖直朝天，鞭状天线不论飞机在哪个方向，都是竖着效果最好",
+          "把电台揣在外套里贴着胸口发射，既能给电池保温，又能挡住风雪"
+        ],
+        "explain": "鞭状天线的辐射在它的侧面最强，沿天线尖端方向几乎为零。美军生存手册要求“天线与救援飞机方向保持直角”；飞机在正头顶时，竖直的天线恰好拿尖端对着它。天线碰到身体、衣服、树枝或地面，也会大大缩短通信距离。"
+      },
+      "en": {
+        "q": "Your plane has crashed in the snow mountains. A search aircraft is circling about 1,000 m directly overhead, and you're about to call it on a handheld VHF radio with a whip antenna. How should you hold the radio and antenna?",
+        "options": [
+          "Point the tip of the antenna straight at the aircraft, like a torch beam, so the signal goes right at it",
+          "Keep the antenna at right angles to the aircraft, fairly flat when it's overhead, and clear of your body",
+          "Keep the antenna pointing straight up: a whip works best upright, wherever the aircraft happens to be",
+          "Keep the radio inside your jacket against your chest while transmitting, to keep the battery warm"
+        ],
+        "explain": "A whip antenna radiates most strongly from its sides and almost nothing off its tip. US Army survival doctrine says to keep the antenna at right angles to the rescuing aircraft; with the plane directly overhead, a vertical antenna points its tip straight at it. Letting the antenna touch your body, clothing, branches or the ground also greatly reduces range."
+      }
+    },
+    {
+      "id": "radio-x06",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "SOLAS V/29 Life-Saving Signals; IAMSAR Vol. III",
+      "zh": {
+        "q": "夜里，你们的救生筏漂近一段海岸，你放了一枚红色降落伞火箭信号。不久，岸上先后打出三发白色星光信号，每发间隔约一分钟。这是什么意思？",
+        "options": [
+          "这里是最佳登陆点，朝信号发出的方向划过去",
+          "此处登陆非常危险，不要靠近岸边",
+          "他们看不见你，请再放一枚信号弹，好让他们测出你的位置",
+          "你们已被发现，救援将尽快到来"
+        ],
+        "explain": "按 SOLAS 公约第五章第 29 条要求船上必备的《救生信号表》，救生站或救援单位回复遇险者：夜间打三发白色星光信号或三发声光火箭，白天放橙色烟雾，间隔约一分钟，意思是“已看到你，将尽快救援”。“可在此登陆”是竖直挥动白旗、白光或白色火焰，“此处登陆危险”是水平挥动。"
+      },
+      "en": {
+        "q": "At night your life raft drifts toward a coast, and you fire a red parachute rocket. Soon three white star signals are fired from the shore, about a minute apart. What do they mean?",
+        "options": [
+          "This is the best place to land: paddle toward where they were fired",
+          "Landing here is highly dangerous: keep off the shore",
+          "They can't see you: fire another flare so they can fix your position",
+          "You have been seen; assistance will be given as soon as possible"
+        ],
+        "explain": "Under the Life-Saving Signals table that SOLAS Chapter V, Regulation 29 requires ships to carry, a rescue station replies to people in distress with three white star signals or three light-and-sound rockets at night, or orange smoke by day, about a minute apart. They mean 'You have been seen; assistance will be given as soon as possible'. 'Safe to land here' is vertical waving of a white flag, light or flare, and 'landing here is dangerous' is horizontal waving."
+      }
+    },
+    {
+      "id": "radio-x07",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "IMO SART performance standard; USCG Marine Safety Alert on SART detection",
+      "zh": {
+        "q": "你在一艘搜救船上值班，要找一只确知带着搜救雷达应答器（SART）的救生筏。按推算它应在 4 海里内，可雷达屏幕上始终看不到 SART 的一串亮点。你用的是 S 波段（10 厘米）雷达。最可能的原因和对策是？",
+        "options": [
+          "SART 只响应 X 波段（3 厘米）雷达：改用 X 波段雷达，并调小海浪抑制",
+          "SART 的亮点只在 5 海里以外才出现，把量程调大到 24 海里再看",
+          "SART 要靠 DSC 触发，先在 70 频道向它发一个个别呼叫",
+          "把海浪抑制和雨雪抑制都开到最大，SART 的亮点就会从杂波里清清楚楚地显现出来"
+        ],
+        "explain": "SART 工作在 9 GHz，只有 X 波段（3 厘米）雷达扫到它才会应答，在 S 波段雷达上根本不会出现。按 IMO 性能标准，SART 离水面 1 米时，天线高 15 米的船用雷达至少应在 5 海里外发现它。海浪抑制调得过大或雷达设在自动模式，都可能把 SART 的回波一起抹掉；距离很近时，亮点会变成弧线和同心圆，而不是消失。"
+      },
+      "en": {
+        "q": "You're on watch aboard a ship searching for a life raft known to carry a SART. By dead reckoning it should be within 4 nautical miles, yet the radar screen shows no SART line of dots. You're using the S-band (10 cm) radar. What's the most likely reason, and what do you do?",
+        "options": [
+          "A SART answers only X-band (3 cm, 9 GHz) radar: use the X-band set and turn sea clutter down",
+          "SART dots only appear beyond 5 nautical miles: switch to the 24-mile range and look again",
+          "A SART must be triggered by DSC: send it an individual call on channel 70 first",
+          "Turn sea and rain clutter suppression right up to maximum so the SART dots stand out from the clutter"
+        ],
+        "explain": "A SART works at 9 GHz and replies only when swept by an X-band (3 cm) radar; it never appears on S-band. Under IMO performance standards, a SART 1 m above the sea should be detected at 5 nautical miles or more by a ship's radar with its antenna 15 m up. Heavy sea-clutter suppression or a radar left in auto mode can wipe out its response, and at close range the dots turn into arcs and circles rather than vanishing."
+      }
+    },
+    {
+      "id": "radio-x08",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "ICAO Annex 12 / IAMSAR Vol. III; SOLAS V/29 Life-Saving Signals",
+      "zh": {
+        "q": "你们的渔船在海上作业。一架搜救飞机先绕着你们的船盘旋了一圈，接着低空从船头正前方横穿过去，同时左右摇摆机翼，然后朝东南方向平飞而去。它要表达什么？你们怎么回应？",
+        "options": [
+          "表示你们的援助已不再需要，可以继续作业，朝飞机挥手致意即可",
+          "是在警告你们前方航线上有危险，应立即转向，避开它飞去的方向",
+          "要你们跟它去救人：转向跟随，或升回答旗、用灯光闪 T 表示照办",
+          "表示它已看懂你们的信号，摇摆机翼就是“收到”，你们原地等待即可"
+        ],
+        "explain": "按 ICAO 和 IMO 的救生信号，飞机引导船只前往救援的动作依次是：绕船至少一圈；低空横穿船首前方并摇摆机翼；朝要你去的方向飞去。船表示照办可转向跟随、升起回答旗或用灯光闪 T，无法照办则升 N 旗或闪 N。若飞机低空横穿船尾并摇翼，才是“不再需要你的援助”；单独摇翼表示“收到”，而这里是一整套“跟我来”的动作。"
+      },
+      "en": {
+        "q": "Your fishing boat is at sea. A search aircraft circles your boat once, then crosses low just ahead of your bow, rocking its wings, and flies off steadily to the south-east. What is it telling you, and how do you respond?",
+        "options": [
+          "It's saying your help is no longer needed: carry on fishing and wave back to the aircraft",
+          "It's warning of danger ahead on your course: turn away from the direction it flew off in",
+          "Follow it to a casualty: turn after it, or hoist the answering pennant or flash T to say you will",
+          "It has understood your signal, since rocking wings means 'message received', so stay where you are"
+        ],
+        "explain": "In the ICAO/IMO life-saving signals, an aircraft directing a vessel to a casualty circles it at least once, crosses low just ahead of the bow rocking its wings, then heads off in the direction to follow. The vessel shows it will comply by turning to follow, hoisting the answering pennant close up or flashing T, and shows it can't with flag N or flashing N. Crossing low astern while rocking wings means 'assistance no longer required'; rocking wings on its own means 'understood', but here it is part of the full 'follow me' sequence."
+      }
+    },
+    {
+      "id": "radio-x09",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "NOAA SARSAT; Cospas-Sarsat (406 MHz beacons)",
+      "zh": {
+        "q": "去罗布泊之前，你要在两样设备中挑一样：406 MHz 个人示位标（PLB），或一台需要订阅服务、能双向发短信的卫星信使（如 inReach、SPOT 一类）。关于两者，哪种说法正确？",
+        "options": [
+          "卫星信使发射的 121.5 MHz 寻位信号比 PLB 强得多，救援飞机循着它能更快更容易地找到你",
+          "两者都通过 Cospas-Sarsat 搜救卫星报警，唯一的区别只是卫星信使还能发短信",
+          "PLB 每年要交订阅费才能用，卫星信使买来就能用、不用交任何费用",
+          "只有 PLB 直连 Cospas-Sarsat、发 121.5 MHz 寻位信号；信使走商业网络"
+        ],
+        "explain": "PLB 以约 5 瓦功率在 406 MHz 直接向政府运营的 Cospas-Sarsat 系统报警，不需订阅，还同时发 121.5 MHz 寻位信号，供救援飞机和船只最后找到你。卫星信使走铱星、全球星等商业网络，SOS 先到私营的响应中心，再转给当地救援机构；它需要订阅，但能双向通信。卫星信使没有 121.5 MHz 寻位信号。"
+      },
+      "en": {
+        "q": "Before heading into Lop Nur you must choose between a 406 MHz personal locator beacon (PLB) and a subscription satellite messenger with two-way texting (inReach, SPOT and the like). Which statement about them is correct?",
+        "options": [
+          "The messenger sends a far stronger 121.5 MHz homing signal than a PLB, so aircraft can home in on you faster",
+          "Both send their SOS through the Cospas-Sarsat satellites; the only difference is that the messenger can text",
+          "A PLB only works with a yearly subscription, whereas a messenger works straight out of the box for free",
+          "Only the PLB alerts Cospas-Sarsat directly and adds 121.5 MHz homing; a messenger uses a commercial network"
+        ],
+        "explain": "A PLB transmits about 5 W on 406 MHz straight to the government-run Cospas-Sarsat system, needs no subscription and also sends a 121.5 MHz homing signal that aircraft and boats use to close in on you. Satellite messengers use commercial networks such as Iridium or Globalstar: the SOS goes to a private response centre that passes it to local rescue services, and they need a subscription but allow two-way messages. Satellite messengers have no 121.5 MHz homing signal."
+      }
+    },
+    {
+      "id": "radio-x10",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "IMO Res. A.810(19) (float-free EPIRB, buoyant lanyard); eGMDSS EPIRB operation",
+      "zh": {
+        "q": "南海上，货船沉没前，你把船上的自浮式 406 MHz 应急示位标（EPIRB）带上了救生筏，并已打开。接下来把它放在哪里最好？",
+        "options": [
+          "把它的浮索系在救生筏上，让它竖直漂在筏旁的海面上，上方不要有遮挡",
+          "放在筏内的篷布下面抱好，免得被海浪打湿，更不会被海水泡坏",
+          "把浮索系在沉船的栏杆上，这样救援人员能找到沉船的准确位置",
+          "夜里关机、天亮再开：夜间很少有飞机搜索，这样能省下不少电池"
+        ],
+        "explain": "IMO 和设备说明都指出，EPIRB 漂浮在海面上时工作效果最好：把它的浮索解开系在救生筏上，让它竖直漂在筏旁，天线上方不要有篷布或人体遮挡。浮索只能系在救生筏或落水者身上，绝不能系在船上，否则会随沉船一起被拖下水。打开后就一直开着：EPIRB 设计可连续工作至少 48 小时，关关开开会妨碍卫星持续跟踪定位。"
+      },
+      "en": {
+        "q": "In the South China Sea, before the cargo ship sank, you brought its float-free 406 MHz EPIRB into the life raft and switched it on. Where is it best kept now?",
+        "options": [
+          "Tie its buoyant lanyard to the raft and let it float upright in the sea beside you, with nothing over it",
+          "Keep it inside under the canopy, held close, out of the waves so seawater can't get at it",
+          "Tie its lanyard to the sinking ship's rail so rescuers can find exactly where she went down",
+          "Switch it off at night and on again at dawn: few aircraft search at night, so this saves battery"
+        ],
+        "explain": "IMO guidance and the manufacturers agree that an EPIRB works best floating on the sea: uncoil its buoyant lanyard, tie it to the raft and let it float upright alongside, with no canopy or bodies over the antenna. The lanyard goes to the raft or a person in the water, never to the ship, which would drag it under as she sinks. Once on, leave it on: EPIRBs are built to transmit for at least 48 hours, and switching on and off disrupts satellite tracking."
+      }
+    },
+    {
+      "id": "radio-x11",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "Cospas-Sarsat system overview (GEOSAR, LEOSAR, MEOSAR)",
+      "zh": {
+        "q": "你带的是一台没有内置 GPS 的老款 406 MHz 示位标，已经在开阔处打开。关于 Cospas-Sarsat 卫星系统会怎样处理这次报警，哪种说法正确？",
+        "options": [
+          "地球静止轨道卫星定位最准，因为它一直盯着同一片区域不动",
+          "静止卫星几乎立即转发报警但算不出位置，位置要靠中低轨卫星测频移来算",
+          "没有 GPS，任何卫星都定不了位，只能靠飞机循 121.5 MHz 信号慢慢找",
+          "卫星按各自收到的信号强弱推算你的位置，精度可以达到几米以内"
+        ],
+        "explain": "静止轨道卫星相对地面不动，信号没有多普勒频移可用，只有示位标自带 GNSS 位置时才能给出坐标，它的长处是报警几乎即时。低轨卫星利用飞过时的多普勒频移计算位置，有时要第二次过顶才能排除镜像点；中轨卫星系统则用多颗卫星的到达时间差和频率差定位。能发送 GPS 位置的示位标，定位又快又准。"
+      },
+      "en": {
+        "q": "You carry an older 406 MHz beacon with no built-in GPS and have switched it on in the open. Which statement about how the Cospas-Sarsat satellites handle the alert is correct?",
+        "options": [
+          "Geostationary satellites give the most accurate fix because they watch the same area all the time",
+          "Geostationary satellites relay it at once but can't locate it; low- and medium-orbit ones do that",
+          "Without GPS no satellite can locate the beacon; only aircraft homing on 121.5 MHz can ever find it",
+          "The satellites work out your position from the signal strength each one receives, to within a few metres"
+        ],
+        "explain": "A geostationary satellite doesn't move relative to the ground, so there is no Doppler shift to work from; it can give a position only if the beacon encodes one from its own GNSS, but it alerts almost instantly. Low-orbit satellites compute the position from the Doppler shift as they pass, sometimes needing a second pass to rule out a mirror-image point, and the MEOSAR satellites use differences in arrival time and frequency across several satellites. A beacon that encodes its GPS position is located both faster and more precisely."
+      }
+    },
+    {
+      "id": "radio-x12",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "COLREG Annex IV; COLREG Rules 34–35",
+      "zh": {
+        "q": "大雾夜里，你们的小船发动机熄火，正被水流推向礁石。电台进水坏了，手边只有船上的气笛（雾号）。下面哪一种笛声是国际公认的遇险信号？",
+        "options": [
+          "连续急促地鸣放 5 声以上的短声",
+          "鸣 3 声短声，停一会儿再重复",
+          "用雾号连续不断地长鸣",
+          "每隔两分钟鸣放一长声"
+        ],
+        "explain": "按《国际海上避碰规则》附录四，“用任何雾号设备连续不断地鸣放”是遇险信号，另一种声响遇险信号是约每分钟鸣炮一次。其余都是另有含义的操纵和雾中声号：5 短声以上表示怀疑对方的意图或行动，3 短声表示本船正在向后推进，每两分钟一长声是机动船在雾中对水移动。"
+      },
+      "en": {
+        "q": "On a foggy night your small boat's engine has died and the current is carrying you toward rocks. The radio is flooded and dead; all you have is the boat's horn. Which horn signal is an internationally recognised distress signal?",
+        "options": [
+          "Five or more short, rapid blasts",
+          "Three short blasts, repeated after a pause",
+          "Continuous sounding of the horn",
+          "One prolonged blast every two minutes"
+        ],
+        "explain": "COLREG Annex IV lists 'a continuous sounding with any fog-signalling apparatus' as a distress signal, as is a gun fired at intervals of about a minute. The others are manoeuvring and fog signals with other meanings: five or more short blasts mean 'I doubt your intentions', three short blasts 'I am operating astern propulsion', and one prolonged blast every two minutes is a power-driven vessel making way in fog."
+      }
+    }
+  ]
+}

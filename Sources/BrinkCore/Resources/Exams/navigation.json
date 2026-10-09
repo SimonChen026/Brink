@@ -1,0 +1,974 @@
+{
+  "id": "navigation",
+  "skill": "navigation",
+  "bonus": 1,
+  "perk": null,
+  "requires": [],
+  "minLevel": 1,
+  "count": 10,
+  "pass": 8,
+  "icon": "safari.fill",
+  "color": "#A371F7",
+  "zh": {
+    "name": "地图与定向",
+    "full": "地图与定向资格",
+    "desc": "地图和指北针、磁偏角、北极星和南十字、用太阳和影子定方向、航位推算、迷路了怎么办。",
+    "realWorld": "相当于定向越野协会的导航培训。"
+  },
+  "en": {
+    "name": "Map & Compass",
+    "full": "Map & Compass Certificate",
+    "desc": "Maps and compasses, magnetic declination, Polaris and the Southern Cross, finding direction from the sun and shadows, dead reckoning, what to do when you're lost.",
+    "realWorld": "Comparable to an orienteering federation navigation course."
+  },
+  "questions": [
+    {
+      "id": "navigation-01",
+      "answer": 1,
+      "hard": false,
+      "source": "Ordnance Survey Map Reading",
+      "zh": {
+        "q": "在 1:50000 的地形图上，两点之间量得 4 厘米。实地距离大约是多少？",
+        "options": [
+          "200 米",
+          "2 公里",
+          "20 公里",
+          "500 米"
+        ],
+        "explain": "1:50000 表示图上 1 厘米代表实地 50000 厘米，也就是 500 米；4 厘米 × 500 米 = 2000 米 = 2 公里。在 1:25000 的图上，4 厘米才是 1 公里。"
+      },
+      "en": {
+        "q": "On a 1:50,000 map, two points are 4 cm apart. How far apart are they on the ground?",
+        "options": [
+          "200 m",
+          "2 km",
+          "20 km",
+          "500 m"
+        ],
+        "explain": "1:50,000 means 1 cm on the map is 50,000 cm — 500 m — on the ground, so 4 cm × 500 m = 2,000 m = 2 km. On a 1:25,000 map, 4 cm is 1 km."
+      }
+    },
+    {
+      "id": "navigation-02",
+      "answer": 3,
+      "hard": false,
+      "source": "Ordnance Survey Map Reading",
+      "zh": {
+        "q": "大雾里，你要带着一个脚踝扭伤的同伴下山。地图上有两条路线：一条等高线挤得很密，一条等高线间隔很宽。怎么选？",
+        "options": [
+          "走等高线密的那条，路线短、下得快",
+          "两条一样，等高线疏密只代表海拔高低",
+          "走等高线密的那条，那里植被少更好走",
+          "走等高线稀疏的那条，坡度缓，更安全"
+        ],
+        "explain": "等高线越密，水平距离很短内高差越大，坡就越陡；越稀疏坡越缓。等高线挤在一起甚至重叠的地方往往是陡崖。带着伤员、能见度又差时，多绕点路走缓坡，比冒险走陡坡安全得多。"
+      },
+      "en": {
+        "q": "In thick fog you need to get a companion with a sprained ankle down the mountain. The map shows two routes: one where the contour lines are packed tightly, one where they're widely spaced. Which do you take?",
+        "options": [
+          "The tightly packed one — it's shorter and quicker",
+          "Either — the spacing only shows altitude, not steepness",
+          "The tightly packed one — less vegetation, easier walking",
+          "The widely spaced one — a gentler slope and safer going"
+        ],
+        "explain": "The closer the contour lines, the more the height changes over a short distance — the steeper the slope; widely spaced lines mean gentle ground. Where lines crowd together or merge there's often a cliff. With a casualty and poor visibility, a longer route on gentle ground is far safer than a steep shortcut."
+      }
+    },
+    {
+      "id": "navigation-03",
+      "answer": 2,
+      "hard": false,
+      "source": "Ordnance Survey; IOF",
+      "zh": {
+        "q": "“标定地图”是什么意思？",
+        "options": [
+          "在地图上找到并标出自己现在的位置",
+          "把地图折成合适大小，方便边走边看",
+          "转动地图，让图上的北对准实地的北",
+          "把图上距离按比例尺换算成实地距离"
+        ],
+        "explain": "地图标定后，前方的山在图上也在前方，左边的河在图上也在左边，对照起来一目了然。可以用指北针（考虑磁偏角）对准北方，也可以把图上两个认得出的地物和实地对齐；行进中每到一个转折点都要重新标定。"
+      },
+      "en": {
+        "q": "What does it mean to 'orient' (set) a map?",
+        "options": [
+          "Finding and marking your current position on it",
+          "Folding it to a handy size for reading on the move",
+          "Turning the map so its north matches real north",
+          "Converting map distances to ground distances by scale"
+        ],
+        "explain": "Once the map is oriented, the hill in front of you is in front of you on the map and the river on your left is on the left, so matching is easy. Use a compass (allowing for declination) to align north, or line up two features you can identify on both map and ground; re-orient at every turn."
+      }
+    },
+    {
+      "id": "navigation-04",
+      "answer": 0,
+      "hard": false,
+      "source": "IOF; Ordnance Survey",
+      "zh": {
+        "q": "你已经在基板式指北针上设好了要走的方位角。接下来怎样沿这个方位前进？",
+        "options": [
+          "端平转身，让红针落进定向箭头，再沿行进箭头走",
+          "转动刻度盘，直到磁针正好指向你要去的那个地方",
+          "让磁针红端对准行进箭头，再一直顺着磁针的方向走",
+          "边走边盯着磁针，磁针指向哪里就跟着往哪里走"
+        ],
+        "explain": "方位角设好后，刻度盘就不要再动。端平指北针，转动整个身体，让磁针红端与刻度盘里的定向箭头重合，这时行进箭头所指就是你的方位。沿这个方向选一棵树或一块石头走过去，到了再选下一个，这比低头盯着指北针走准得多。"
+      },
+      "en": {
+        "q": "You've set your bearing on a baseplate compass. How do you now follow it?",
+        "options": [
+          "Turn till the red needle sits in the orienting arrow, then follow the travel arrow",
+          "Turn the dial until the needle points straight at the place where you want to go",
+          "Line the red needle up with the travel arrow, then walk where the needle points",
+          "Keep your eyes on the needle as you walk and follow wherever it points"
+        ],
+        "explain": "Once the bearing is set, leave the dial alone. Hold the compass level and turn your whole body until the red end of the needle sits inside the orienting arrow ('red in the shed'); the direction-of-travel arrow now points along your bearing. Pick a tree or rock on that line, walk to it, then pick the next — far more accurate than walking with your eyes on the compass."
+      }
+    },
+    {
+      "id": "navigation-05",
+      "answer": 2,
+      "hard": true,
+      "source": "NOAA NCEI (declination)",
+      "zh": {
+        "q": "你在地图上量得目标的真方位角是 75°，当地磁偏角为西偏 5°。指北针上应该设定多少度？",
+        "options": [
+          "70°",
+          "75°",
+          "80°",
+          "255°"
+        ],
+        "explain": "磁偏角西偏，说明磁北在真北的西边，磁方位角就比真方位角大：75° + 5° = 80°。从地图的真方位换算成指北针的磁方位时，“西偏加、东偏减”；如果是东偏 5°，就该设 70°。255° 是 75° 的反方位角。"
+      },
+      "en": {
+        "q": "You measure a true bearing of 75° to your objective on the map. Local magnetic declination is 5° west. What do you set on the compass?",
+        "options": [
+          "70°",
+          "75°",
+          "80°",
+          "255°"
+        ],
+        "explain": "With a west declination, magnetic north lies west of true north, so magnetic bearings are larger than true ones: 75° + 5° = 80°. Going from map (true) to compass (magnetic), add a west declination and subtract an east one ('west is best, east is least'); with 5° east you'd set 70°. 255° is the back bearing of 75°."
+      }
+    },
+    {
+      "id": "navigation-06",
+      "answer": 1,
+      "hard": true,
+      "source": "Ordnance Survey; IOF",
+      "zh": {
+        "q": "你在山里搞不清自己的位置，但能认出两个地物：用指北针测得山顶 A 的方位是 60°，铁塔 B 的方位是 330°（磁偏角忽略不计）。怎样在地图上定出自己的位置？",
+        "options": [
+          "从 A 画 60° 线、从 B 画 330° 线，两线交点就是你",
+          "从 A 画 240° 线、从 B 画 150° 线，两线交点就是你",
+          "取两个方位的平均值 15°，你就在这条方向线上",
+          "从 A 画 150° 线、从 B 画 240° 线，两线交点就是你"
+        ],
+        "explain": "你测的是从你到地物的方位；在图上从地物出发往回画，要用反方位角（加或减 180°）：60° + 180° = 240°，330° − 180° = 150°，两线交点就是你的位置。最好再测第三个地物，三条线围成的小三角形越小，定位越准。"
+      },
+      "en": {
+        "q": "You're unsure of your position in the hills but can identify two landmarks: your compass gives summit A at 60° and mast B at 330° (ignore declination). How do you fix your position on the map?",
+        "options": [
+          "Draw 60° from A and 330° from B; you're where they cross",
+          "Draw 240° from A and 150° from B; you're where they cross",
+          "Average the bearings to 15°; you're somewhere along that line",
+          "Draw 150° from A and 240° from B; you're where they cross"
+        ],
+        "explain": "You measured bearings from you to the landmarks; to draw lines from the landmarks back to you, use the back bearings (±180°): 60° + 180° = 240° and 330° − 180° = 150°, and you're where they cross. A third landmark helps: the smaller the triangle the three lines make, the better the fix."
+      }
+    },
+    {
+      "id": "navigation-07",
+      "answer": 3,
+      "hard": false,
+      "source": "IOF; Ordnance Survey",
+      "zh": {
+        "q": "你要去的营地在一条小河的下游，中间是没有路的林地。按“扶手”的思路，最稳妥的走法是？",
+        "options": [
+          "按直线方位硬穿林地，路程最短最省事",
+          "先爬上最高的山顶，把全貌看清楚再说",
+          "跟着林子里的兽道走，兽道一般会通到营地",
+          "先走到河边，再沿着河岸往下游走到营地"
+        ],
+        "explain": "“扶手”是指一条容易辨认、方向又合适的线状地物，比如河流、山脊、公路、围栏、电力线。沿着它走，不用时时看指北针也不会走偏，在林地里或能见度差时尤其省心。直线穿林虽然路程短，却很容易偏离方向。"
+      },
+      "en": {
+        "q": "The camp you're heading for lies downstream on a small river, across trackless forest. Using the idea of a 'handrail', what's the most reliable route?",
+        "options": [
+          "Go straight through the forest on a bearing — it's the shortest",
+          "First climb the highest summit to get the whole picture",
+          "Follow game trails through the trees — they usually lead to camps",
+          "Head to the river, then follow its bank downstream to camp"
+        ],
+        "explain": "A 'handrail' is an easy-to-follow linear feature heading the right way — a river, ridge, road, fence or power line. Following it keeps you on course without constant compass checks, a big help in forest or poor visibility. A straight line through the trees is shorter but easy to drift off."
+      }
+    },
+    {
+      "id": "navigation-08",
+      "answer": 0,
+      "hard": false,
+      "source": "IOF; Ordnance Survey",
+      "zh": {
+        "q": "你要找一座 2 公里外的小木屋。地图上，木屋后方约 300 米处有一条公路横穿你的前进方向。这条公路对你有什么用？",
+        "options": [
+          "它是“截止线”：碰到公路说明走过头了，要折回找",
+          "没什么用处，你要找的是木屋，又不是这条公路",
+          "说明附近有车经过，可以直接去公路边等车搭便车",
+          "沿着这条公路一直走，一定能走到木屋的门口"
+        ],
+        "explain": "截止线是目标后方一条不会错过的线状地物，比如公路、河流、山谷。林中的小木屋很容易错过，横在后面的公路却不会；一碰到公路就知道自己走过头了，按距离折回来仔细找，就不会越走越远。"
+      },
+      "en": {
+        "q": "You're looking for a small hut 2 km away. On the map, a road crosses your line of travel about 300 m beyond the hut. How does the road help you?",
+        "options": [
+          "A catching feature: reach it and you've overshot — turn back",
+          "Not at all — you're looking for the hut, not for some road beyond it",
+          "It means traffic — just go and wait by the road for a lift",
+          "Follow the road and it will lead you right to the hut's door"
+        ],
+        "explain": "A catching feature is an unmistakable line beyond your target — a road, river or valley. You might walk past a small hut in the trees, but you can't miss the road behind it; reaching it tells you you've gone too far, so you turn back and search rather than wander on."
+      }
+    },
+    {
+      "id": "navigation-09",
+      "answer": 2,
+      "hard": true,
+      "source": "IOF; Ordnance Survey",
+      "zh": {
+        "q": "大雾中，你要去一条大河上唯一的一座桥，河横在你前方。为什么有经验的人会故意朝桥的左边偏 10° 走？",
+        "options": [
+          "因为人在雾里总会往右偏，往左偏正好抵消",
+          "因为大河的左岸一般比右岸更平坦好走",
+          "这样碰到河时就知道桥一定在右边，不用猜",
+          "因为地图上的桥通常画得比实际位置偏右"
+        ],
+        "explain": "这种方法叫“有意偏离”。即使用指北针也难免有误差，直奔桥走，碰到河时你不知道桥在左还是在右，猜错了会越走越远；故意偏向一侧，碰到河往哪边转就确定了。人在雾里会随机偏左或偏右，并不总往同一边偏。"
+      },
+      "en": {
+        "q": "In thick fog you're heading for the only bridge over a large river that crosses your path. Why would an experienced navigator deliberately aim 10° to the left of the bridge?",
+        "options": [
+          "Because people always drift right in fog, and aiming left cancels it",
+          "Because the left bank of a big river is usually flatter and easier",
+          "So on reaching the river you know the bridge is to the right",
+          "Because maps usually draw bridges to the right of their real position"
+        ],
+        "explain": "This is 'aiming off'. Even with a compass you'll have some error; aim straight at the bridge and when you reach the river you won't know whether it's left or right, and a wrong guess takes you further away. Aim deliberately to one side and you know which way to turn. People drift randomly in fog, not always to the same side."
+      }
+    },
+    {
+      "id": "navigation-10",
+      "answer": 3,
+      "hard": true,
+      "source": "US Army FM 3-25.26",
+      "zh": {
+        "q": "你在平路上测过：每 100 米走 62 个复步（同一只脚每落地一次算一步）。现在在没膝深的雪里上坡，仍按 62 复步 = 100 米推算距离，会怎样？",
+        "options": [
+          "推算基本准确，复步数和地形没有什么关系",
+          "会低估走过的距离，以为自己没走多远",
+          "只要放慢行进速度，误差自然会抵消掉",
+          "会高估距离：步子变短，实际走的比算的少"
+        ],
+        "explain": "上坡、陡坡下行、深雪、沙地、密林、负重和夜间行走都会让步子变短，同样 100 米要走更多步。不加修正，你会以为已经到了，过早转弯或开始找目标。要提前在不同地形上校准步数，或在估算时给步数加上余量。"
+      },
+      "en": {
+        "q": "On flat ground you counted 62 double paces (each time the same foot lands) per 100 m. Now you're climbing through knee-deep snow and still reckoning 62 double paces = 100 m. What happens?",
+        "options": [
+          "It's still accurate — pace counts don't depend on the terrain",
+          "You'll underestimate, thinking you've covered less than you have",
+          "Just walk more slowly and the error will cancel itself out",
+          "You'll overestimate: shorter steps mean you've covered less"
+        ],
+        "explain": "Uphill, steep descents, deep snow, sand, thick brush, heavy loads and darkness all shorten your stride, so 100 m takes more paces. Uncorrected, you'll think you've arrived and turn or start searching too early. Calibrate on different terrain beforehand, or add paces to your estimate."
+      }
+    },
+    {
+      "id": "navigation-11",
+      "answer": 2,
+      "hard": true,
+      "source": "Naismith's rule",
+      "zh": {
+        "q": "按纳史密斯法则（每小时走 5 公里，每爬升 600 米另加 1 小时），一段水平距离 10 公里、累计爬升 900 米的路线，大约需要多长时间？",
+        "options": [
+          "2 小时",
+          "2.5 小时",
+          "3.5 小时",
+          "5 小时"
+        ],
+        "explain": "10 公里 ÷ 5 公里/小时 = 2 小时，900 米 ÷ 600 米 = 1.5 小时，合计 3.5 小时。这是体能一般的成年人在好走的路上、不算休息的估计，负重、积雪、乱石、天黑都要再加时间。用时间推算距离，是航位推算的重要一环。"
+      },
+      "en": {
+        "q": "Using Naismith's rule (5 km per hour, plus 1 hour for every 600 m of ascent), roughly how long will a route of 10 km with 900 m of total ascent take?",
+        "options": [
+          "2 hours",
+          "2.5 hours",
+          "3.5 hours",
+          "5 hours"
+        ],
+        "explain": "10 km ÷ 5 km/h = 2 h and 900 m ÷ 600 m = 1.5 h, so 3.5 h in total. That's for a reasonably fit adult on decent ground without breaks — add time for loads, snow, boulders or darkness. Estimating distance from time is a core part of dead reckoning."
+      }
+    },
+    {
+      "id": "navigation-12",
+      "answer": 0,
+      "hard": false,
+      "source": "US Army FM 3-25.26",
+      "zh": {
+        "q": "夜里怎样找到北极星？",
+        "options": [
+          "把北斗两颗指极星的连线向外延长约 5 倍",
+          "它是整个夜空中最亮的那颗星，一眼就能认出来",
+          "它总是高高地挂在头顶的天顶正上方，一动不动",
+          "月亮升起方向旁边最亮的那颗星就是"
+        ],
+        "explain": "北极星（勾陈一）亮度只是中等，远不是最亮的星。它离北天极不到 1°，几乎不随时间移动，从它向地平线作垂线就是正北。最简单的找法是用北斗七星的天璇、天枢两颗指极星；北斗沉到地平线附近时，也可以用仙后座的“W”来找。"
+      },
+      "en": {
+        "q": "How do you find Polaris, the North Star, at night?",
+        "options": [
+          "Extend the Big Dipper's two pointer stars about five times their gap",
+          "It's the brightest star in the night sky — you'll spot it at once",
+          "It always sits high up, directly overhead at the zenith, never moving",
+          "It's the brightest star close to where the moon rises"
+        ],
+        "explain": "Polaris is only moderately bright — far from the brightest star. It lies less than 1° from the north celestial pole and barely moves, so the point on the horizon directly below it is true north. The easiest way to find it is with the Big Dipper's two pointer stars; when the Dipper is low, use the W of Cassiopeia."
+      }
+    },
+    {
+      "id": "navigation-13",
+      "answer": 0,
+      "hard": true,
+      "source": "Bowditch, American Practical Navigator",
+      "zh": {
+        "q": "在罗布泊的夜里，你用拳头量得北极星离地平线大约 4 拳高（伸直手臂，一拳约 10°）。这说明什么？",
+        "options": [
+          "你大约在北纬 40°",
+          "你大约在北纬 50°（90° − 40°）",
+          "你大约在北纬 20°（40° 的一半）",
+          "北极星只能指示方向，看不出纬度"
+        ],
+        "explain": "北极星几乎正对北天极，它在地平线上的高度角约等于你所在的纬度：在赤道上它贴着地平线，在北极点就在头顶。罗布泊约在北纬 40°，北极星就在约 40° 高处。伸直手臂握拳，一拳宽约 10°，可以用来粗略测量。"
+      },
+      "en": {
+        "q": "On a night in the Lop Nur desert, you measure Polaris at about four fists above the horizon (arm outstretched, a fist is about 10°). What does that tell you?",
+        "options": [
+          "You're at about 40° N",
+          "You're at about 50° N (90° − 40°)",
+          "You're at about 20° N (half of 40°)",
+          "Polaris shows direction only, not latitude"
+        ],
+        "explain": "Polaris sits almost exactly at the north celestial pole, so its altitude above the horizon roughly equals your latitude: on the horizon at the equator, overhead at the North Pole. Lop Nur is near 40° N, so Polaris stands about 40° up. A fist at arm's length spans roughly 10°, good enough for a rough measurement."
+      }
+    },
+    {
+      "id": "navigation-14",
+      "answer": 1,
+      "hard": false,
+      "source": "Bowditch; US Army FM 3-25.26",
+      "zh": {
+        "q": "在南半球的夜里，怎样用南十字座找到正南？",
+        "options": [
+          "南十字座里最亮的那颗星，它所在的方向就是正南",
+          "沿长轴向“脚”外延长约 4.5 倍，再垂直落到地平线",
+          "把南十字座的长轴向上延长，指向的就是正北方",
+          "南十字座整夜一动不动地挂在南方的地平线上"
+        ],
+        "explain": "南天极附近没有像北极星那样的亮星，要用南十字座推算：沿长轴从十字顶端穿过底端的十字架二，再延长约 4.5 个十字长度，那一点附近就是南天极，从它垂直向下到地平线就是正南。南十字座也绕着南天极转动；旁边的两颗亮星南门二、马腹一可以帮你确认，避免认成更大、更暗的“假十字”。"
+      },
+      "en": {
+        "q": "In the Southern Hemisphere at night, how do you use the Southern Cross to find due south?",
+        "options": [
+          "The direction of the cross's brightest star is always due south",
+          "Extend its long axis 4.5 times past the foot, then drop to the horizon",
+          "Extend the cross's long axis upward and it points straight at due north",
+          "The cross hangs motionless above the southern horizon all night"
+        ],
+        "explain": "There's no bright pole star in the south, so use the Southern Cross: follow its long axis from the top star through Acrux at the foot and extend it about 4.5 cross-lengths; that point is near the south celestial pole, and straight down from it on the horizon is due south. The Cross circles the pole like other stars; the two bright Pointers, Alpha and Beta Centauri, confirm you've got the real Cross and not the larger, dimmer 'False Cross'."
+      }
+    },
+    {
+      "id": "navigation-15",
+      "answer": 3,
+      "hard": true,
+      "source": "US Army FM 3-05.70",
+      "zh": {
+        "q": "你在南半球的一座荒岛上，用“立竿见影”法定方向：标出竿影顶端，过 15 分钟再标一次。哪个标记在西边？",
+        "options": [
+          "第二个标记在西，因为到了南半球一切都要反过来",
+          "两个标记的连线是南北方向，分不出东西",
+          "这个方法只在北半球有效，南半球用不了",
+          "第一个标记在西，第二个在东，南北半球都一样"
+        ],
+        "explain": "太阳在哪里都是东升西落，影子则朝相反方向、自西向东移动，所以第一个影尖记号总是在西，第二个在东，两点连线是近似的东西线，南北半球都适用。站在线上，让第一个记号在左、第二个在右，你面对的就是北方。"
+      },
+      "en": {
+        "q": "On a desert island in the Southern Hemisphere you use the shadow-stick method: mark the tip of the shadow, wait 15 minutes, mark it again. Which mark is west?",
+        "options": [
+          "The second mark is west, because everything reverses in the south",
+          "The line between the marks runs north–south, not east–west",
+          "The method only works in the Northern Hemisphere, not here",
+          "The first mark is west, the second east — in either hemisphere"
+        ],
+        "explain": "The sun moves east to west everywhere, so the shadow tip moves west to east: the first mark is always west and the second east, and the line between them runs roughly east–west in either hemisphere. Stand with the first mark on your left and the second on your right, and you're facing north."
+      }
+    },
+    {
+      "id": "navigation-16",
+      "answer": 2,
+      "hard": true,
+      "source": "Solar time (15° per hour)",
+      "zh": {
+        "q": "在罗布泊（约东经 90°），你的手表走的是北京时间（以东经 120° 为准）。太阳大约在手表几点时位于正南、升到一天中最高？",
+        "options": [
+          "约 10:00",
+          "约 12:00",
+          "约 14:00",
+          "约 16:00"
+        ],
+        "explain": "经度每差 15°，当地太阳时差 1 小时。罗布泊比东经 120° 偏西约 30°，太阳到正南的时刻比北京时间正午晚约 2 小时，也就是 14:00 左右。在新疆用手表法或太阳位置判断方向时，要先减去这 2 小时，否则误差可达几十度。"
+      },
+      "en": {
+        "q": "In Lop Nur (about 90° E), your watch shows Beijing time (based on 120° E). At about what time on your watch is the sun due south, at its highest?",
+        "options": [
+          "About 10:00",
+          "About 12:00",
+          "About 14:00",
+          "About 16:00"
+        ],
+        "explain": "Every 15° of longitude is an hour of solar time. Lop Nur is about 30° west of 120° E, so the sun reaches due south about 2 hours after noon Beijing time — around 14:00. When using the watch method or the sun's position in Xinjiang, subtract those 2 hours first, or your direction can be off by tens of degrees."
+      }
+    },
+    {
+      "id": "navigation-17",
+      "answer": 1,
+      "hard": false,
+      "source": "US Army FM 3-25.26",
+      "zh": {
+        "q": "“树干上长苔藓的一面朝北。”在野外靠这个判断方向可靠吗？",
+        "options": [
+          "可靠，苔藓只会长在树干背阴、潮湿的北面",
+          "不可靠，苔藓长哪面要看局部潮湿和遮阴",
+          "可靠，不过这个规律只在南半球才成立",
+          "可靠，在潮湿的密林里尤其准确可信"
+        ],
+        "explain": "苔藓喜欢潮湿和阴凉，长在哪一面取决于坡向、树冠遮挡、雨水方向和附近的水源，在密林、山谷和潮湿地区，树干四面都可能长满。它最多只是模糊的参考，靠它定方向很容易出大错，应该用太阳、星星或指北针。"
+      },
+      "en": {
+        "q": "'Moss grows on the north side of trees.' Is that a reliable way to find direction in the wild?",
+        "options": [
+          "Yes — moss only ever grows on the shady north side",
+          "No — where moss grows depends on local damp and shade",
+          "Yes, but the rule only holds in the Southern Hemisphere",
+          "Yes — it's especially accurate in damp, dense forest"
+        ],
+        "explain": "Moss likes damp and shade; which side it grows on depends on slope, canopy, the direction of rain and nearby water, and in dense forest, valleys or wet climates it can cover every side of a trunk. At best it's a vague hint — use the sun, the stars or a compass instead."
+      }
+    },
+    {
+      "id": "navigation-18",
+      "answer": 0,
+      "hard": false,
+      "source": "US Forest Service; NPS",
+      "zh": {
+        "q": "傍晚，你在林中发现自己迷路了。出发前，你把详细路线和返回时间告诉了朋友。最好的做法是？",
+        "options": [
+          "按 STOP 停下想清楚，就近过夜、做信号，等人来找",
+          "趁天还没黑透，朝一个方向一直走，总能走出去",
+          "顺着溪水一直往下游走，河边总会碰到人家",
+          "爬上最高的树，一边张望一边大声喊，直到有人回应"
+        ],
+        "explain": "STOP 指 Stop（停下）、Think（思考）、Observe（观察）、Plan（计划）。有人知道你的路线和返回时间时，留在原地或路线附近最容易被找到，搜救人员会先沿你计划的路线找；天黑前乱走往往越走越远，耗尽体力，还可能摔伤。"
+      },
+      "en": {
+        "q": "Late in the afternoon you realise you're lost in the forest. Before setting out you gave a friend your route and return time. What's the best course of action?",
+        "options": [
+          "STOP: stop, think, observe, plan — shelter nearby, signal, and wait",
+          "Walk hard in one direction before dark — you'll come out somewhere",
+          "Follow the water downstream — there are always houses by rivers",
+          "Climb the tallest tree and keep shouting until someone answers you"
+        ],
+        "explain": "STOP: Stop, Think, Observe, Plan. When someone knows your route and return time, staying put on or near that route is the fastest way to be found, because searchers start along your planned route; wandering at dusk usually takes you further away, burns your energy and risks injury."
+      }
+    },
+    {
+      "id": "navigation-19",
+      "answer": 3,
+      "hard": false,
+      "source": "USAP / BAS field safety",
+      "zh": {
+        "q": "南极考察站的主楼起火了，外面是能见度不到两米的白化天气。你们要转移到 150 米外的应急避难舱。怎么走？",
+        "options": [
+          "凭记忆朝避难舱的方向快步走过去，速度最要紧",
+          "背着风一直往前走，极地的风向一般不会变",
+          "大家分头去找，总会有人先找到避难舱",
+          "沿固定扶绳走；没有就把绳子拴在楼上拉着走"
+        ],
+        "explain": "白化天气里分不清地面起伏和远近，人走几步就会偏、会绕圈，在离住处很近的地方也可能迷失。所以极地站会在建筑之间拉固定扶绳和旗线。没有扶绳时，把绳子一端固定在建筑上，大家拉着绳子走，找不到目标就顺着绳子退回来。"
+      },
+      "en": {
+        "q": "Fire breaks out in the main building of an Antarctic station. Outside it's a whiteout with visibility under two metres. You must move to the emergency shelter 150 m away. How?",
+        "options": [
+          "Walk briskly toward the shelter from memory — speed is everything here",
+          "Keep the wind at your back — polar winds rarely change direction",
+          "Split up and search in different directions so that someone finds it",
+          "Use the hand line — or a rope tied to the building — and move along it"
+        ],
+        "explain": "In a whiteout there's no sense of ground or distance; people veer and circle within a few steps and can get lost very close to shelter. That's why polar stations rig fixed hand lines and flag lines between buildings. Without one, anchor a rope to the building and move along it together, so that if you miss the target you can follow it back."
+      }
+    },
+    {
+      "id": "navigation-20",
+      "answer": 1,
+      "hard": true,
+      "source": "Souman et al. 2009, Current Biology",
+      "zh": {
+        "q": "阴天，你在一片平坦的大森林里，看不到太阳和远处的地标，也没有指北针。你决定“认准一个方向一直往前走”。实际会发生什么？",
+        "options": [
+          "只要每一步都迈得笔直，就能走成直线",
+          "很可能不知不觉地兜起圈子来",
+          "会有点偏，但走几公里也就偏个一两百米",
+          "会稳定地朝惯用手的反方向偏过去"
+        ],
+        "explain": "德国马普研究所 2009 年的实验发现：在森林和沙漠里，只要看得见太阳或月亮，人还能大致走直；一旦阴天或夜里没有参照，人就会不知不觉地兜圈子；蒙上眼睛走时，有的圈直径甚至不到 20 米。这种偏转是随机的，并不固定偏向哪一边，所以要靠指北针，或沿方向线不断选择新的参照物。"
+      },
+      "en": {
+        "q": "On an overcast day you're in a large, flat forest with no sun, no distant landmarks and no compass. You decide to 'pick a direction and walk straight'. What actually happens?",
+        "options": [
+          "If every step is straight, you'll walk a straight line",
+          "You'll probably walk in circles without noticing",
+          "You'll drift a little — a couple of hundred metres over several km",
+          "You'll drift steadily away from your dominant hand"
+        ],
+        "explain": "A 2009 Max Planck Institute study found that people in forest and desert walked roughly straight only while they could see the sun or moon; under cloud or on moonless nights they walked in circles without noticing, and blindfolded, some circles were less than 20 m across. The drift is random, not consistently to one side, so use a compass or keep picking new landmarks along your line."
+      }
+    },
+    {
+      "id": "navigation-21",
+      "answer": 0,
+      "hard": true,
+      "source": "GPS.gov",
+      "zh": {
+        "q": "在罗布泊无人区，手机完全没有移动信号。手机上的 GPS 定位还能用吗？",
+        "options": [
+          "能，GPS 靠卫星不靠基站，但地图要提前下载",
+          "不能，没有网络，GPS 就算不出你在哪儿",
+          "只有在拨打紧急电话的时候才能定位",
+          "能用，而且在线地图也会自动加载出来，不用准备"
+        ],
+        "explain": "手机里的 GPS（以及北斗等）接收机直接接收卫星信号，没有移动信号也能定位，只是缺少网络辅助，第一次定位可能要多等一会儿。没有网络就加载不了在线地图，所以要提前下载离线地图或轨迹，记下坐标，并配合纸质地图和指北针使用。GPS 比较耗电，要省着用。"
+      },
+      "en": {
+        "q": "Deep in the Lop Nur wilderness your phone has no mobile signal at all. Will its GPS still show your position?",
+        "options": [
+          "Yes — GPS uses satellites, not cell towers; download maps first",
+          "No — without a data connection GPS can't work out where you are",
+          "Only while an emergency call is in progress on the phone",
+          "Yes, and the online map will load by itself — no need to prepare"
+        ],
+        "explain": "A phone's GPS (and BeiDou etc.) receiver listens to satellites directly and works with no mobile signal; without network assistance the first fix may just take longer. Online maps won't load, though, so download offline maps or tracks in advance, note your coordinates and back it up with a paper map and compass. GPS is power-hungry, so use it sparingly."
+      }
+    },
+    {
+      "id": "navigation-22",
+      "answer": 3,
+      "hard": false,
+      "source": "US Army FM 3-25.26",
+      "zh": {
+        "q": "你站在飞机残骸旁边，手里拿着手机，用指北针测方位，读数却和地图对不上。最可能的原因是？",
+        "options": [
+          "高山上的磁场本来就紊乱，指北针没法用",
+          "指北针冻住了，要拿到火上烤一烤再用",
+          "多半是地图印错了，应该以指北针为准",
+          "金属残骸和手机让磁针偏了，走远些再测"
+        ],
+        "explain": "钢铁、车辆、飞机残骸、电线，以及手机、对讲机里的磁铁和电路，都会让磁针偏转，误差可达几十度。测方位时要远离车辆、残骸这类大块金属（美军手册建议约 18 米），把手机、刀具、手电从指北针旁拿开。有些地方的铁矿也会造成局部磁异常，地图上通常会标注。"
+      },
+      "en": {
+        "q": "Standing next to the aircraft wreckage with your phone in your hand, you take a compass bearing — and it doesn't match the map. What's the most likely cause?",
+        "options": [
+          "Mountain magnetic fields are chaotic, so compasses just don't work there",
+          "The compass needle has frozen; warm it over the fire first",
+          "The map is probably misprinted, so trust the compass reading",
+          "The metal wreck and your phone deflect the needle — step well away"
+        ],
+        "explain": "Steel, vehicles, wreckage, power lines, and the magnets and circuits in phones and radios can swing the needle by tens of degrees. Take bearings well away from vehicles and wreckage (a US Army manual suggests about 18 m) and keep phones, knives and torches away from the compass. Iron-rich rocks can cause local magnetic anomalies too, usually noted on the map."
+      }
+    },
+    {
+      "id": "navigation-23",
+      "answer": 1,
+      "hard": true,
+      "source": "NOAA Solar Calculator",
+      "zh": {
+        "q": "六月，在北纬 40° 左右的地方（比如北京、罗布泊），太阳大约从哪个方位升起？",
+        "options": [
+          "正东",
+          "东偏北约 30°（东北方向）",
+          "东偏南约 30°（东南方向）",
+          "东偏北约 60°（接近正北）"
+        ],
+        "explain": "只有春分、秋分前后，太阳才从正东升起、正西落下。北半球夏季日出偏北、冬季偏南，纬度越高偏得越多：北纬 40° 夏至日出在东偏北 30° 多，冬至则在东偏南约 30°。把夏天的日出当成“正东”，方向就会差 30° 左右。"
+      },
+      "en": {
+        "q": "In June, at around 40° N (Beijing or Lop Nur, say), roughly where does the sun rise?",
+        "options": [
+          "Due east",
+          "About 30° north of east (northeast)",
+          "About 30° south of east (southeast)",
+          "About 60° north of east (almost north)"
+        ],
+        "explain": "The sun rises due east and sets due west only around the equinoxes. In the Northern Hemisphere it rises north of east in summer and south of east in winter, more so at higher latitudes: at 40° N the midsummer sunrise is a little over 30° north of east, and midwinter's about 30° south. Treat a summer sunrise as 'east' and you'll be off by about 30°."
+      }
+    },
+    {
+      "id": "navigation-24",
+      "answer": 2,
+      "hard": false,
+      "source": "Ordnance Survey Map Reading",
+      "zh": {
+        "q": "你们急需找水。在地形图上，最可能有溪流的地方是？",
+        "options": [
+          "等高线弯成“V”字、尖端指向低处的地方（山脊）",
+          "一圈圈闭合等高线的正中心（山顶）",
+          "等高线弯成“V”字、尖端指向高处的地方（山谷）",
+          "等高线间距最宽、最平缓的山坡中部"
+        ],
+        "explain": "山谷处的等高线向高处凸出，成“V”或“U”形，尖端指向上游，水就沿着谷底汇成溪流；尖端指向低处的是山脊，水会从两侧流走。地图上常用蓝线标出河流，但季节性小溪未必画出来，看等高线的形状更可靠。"
+      },
+      "en": {
+        "q": "You urgently need water. Where on a topographic map is a stream most likely?",
+        "options": [
+          "Where contours bend into Vs pointing downhill (spurs)",
+          "At the centre of rings of closed contours (summits)",
+          "Where contours bend into Vs pointing uphill (valleys)",
+          "Mid-slope, where the contours are widest apart"
+        ],
+        "explain": "In a valley the contours bend into Vs or Us pointing uphill (upstream), and water gathers along the valley floor; Vs pointing downhill mark spurs and ridges, which shed water to both sides. Maps show rivers in blue, but seasonal streams may be missing — the contour shape tells you where water will run."
+      }
+    },
+    {
+      "id": "navigation-x01",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "NOAA NCEI magnetic declination (secular change); Ordnance Survey",
+      "zh": {
+        "q": "你手里是一张 2006 年印的地形图，图边注明：磁偏角西偏 4°，年变化东移 0.25°（即磁偏角每年向东变化 0.25°）。现在是 2026 年。你在图上量得去垭口的真方位角是 120°，指北针上应该设多少度？",
+        "options": [
+          "115°",
+          "119°",
+          "121°",
+          "124°"
+        ],
+        "explain": "20 年里磁偏角东移了 20 × 0.25° = 5°，原来的西偏 4° 如今已变成东偏 1°。从真方位换成磁方位，西偏要加、东偏要减，所以是 120° − 1° = 119°。照图上印的西偏 4° 设成 124°，会偏出 5°，每走 1 公里偏出约 90 米。"
+      },
+      "en": {
+        "q": "Your topographic map was printed in 2006. The margin says: magnetic declination 4° W, annual change 0.25° E (the declination moves 0.25° east each year). It's now 2026. On the map you measure a true bearing of 120° to the pass. What should you set on the compass?",
+        "options": [
+          "115°",
+          "119°",
+          "121°",
+          "124°"
+        ],
+        "explain": "Over 20 years the declination has moved 20 × 0.25° = 5° east, so the printed 4° W is now 1° E. Going from true to magnetic, add a west declination and subtract an east one: 120° − 1° = 119°. Using the printed 4° W (124°) would put you 5° off, about 90 m for every kilometre."
+      }
+    },
+    {
+      "id": "navigation-x02",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "1-in-60 rule; NOAA NCEI magnetic declination",
+      "zh": {
+        "q": "当地磁偏角为西偏 6°。大雾中，你们要在平坦、没有特征的高原上往正北（真方位 0°）走 9 公里。同伴没做磁偏角修正，直接把指北针设成 0°，大家就照着走。走完 9 公里，你们会在目标的什么位置？",
+        "options": [
+          "在目标以西约 1 公里：每偏 1°，走 60 米偏出约 1 米",
+          "在目标以东约 1 公里：西偏不修正，人会被一路带向东边去",
+          "在目标以西约 100 米：6° 的误差走上 9 公里，影响其实不大",
+          "正好在目标处：磁偏角只有在两极附近才需要考虑"
+        ],
+        "explain": "西偏 6° 意味着磁北在真北以西 6°，照着磁针的 0° 走，实际走的是真方位 354°，一路偏向西边（左边）。按“1/60 法则”，偏 1° 每走 60 米偏出约 1 米：9 公里 × 6 ÷ 60 ≈ 0.9 公里，精确值 9 × sin6° ≈ 0.94 公里。在大雾或无特征的地形里，这足以错过一座小屋或一个垭口。"
+      },
+      "en": {
+        "q": "Local declination is 6° W. In thick fog you must walk 9 km due north (true 0°) across a flat, featureless plateau. A teammate sets the compass to 0° without correcting for declination, and you all follow it. After 9 km, where will you be relative to the target?",
+        "options": [
+          "About 1 km west of it: 1° of error puts you about 1 m off for every 60 m",
+          "About 1 km east of it: an uncorrected west declination carries you steadily east",
+          "About 100 m west of it: a 6° error hardly matters over 9 km of walking",
+          "Right on target: declination only needs correcting near the poles"
+        ],
+        "explain": "A 6° W declination means magnetic north lies 6° west of true north, so walking the needle's 0° actually takes you along true 354°, drifting west (left) all the way. By the 1-in-60 rule, 1° of error puts you 1 m off for every 60 m travelled: 9 km × 6 ÷ 60 ≈ 0.9 km, or exactly 9 × sin 6° ≈ 0.94 km. In fog or featureless terrain that is plenty to miss a hut or a pass."
+      }
+    },
+    {
+      "id": "navigation-x03",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "NOAA Solar Calculator; US Army FM 3-05.70 (shadow methods)",
+      "zh": {
+        "q": "六月下旬，你们流落在南海一座约北纬 10° 的珊瑚岛上。中午，你立起一根木棍，想用当地正午的影子找北。影子会指向哪边？",
+        "options": [
+          "正北：北半球正午的影子总是指向北方",
+          "完全没有影子：六月热带地区的正午太阳总在头顶",
+          "正东：正午时影子沿着东西方向伸展",
+          "正南：这时正午的太阳在你北边的天空"
+        ],
+        "explain": "六月下旬太阳直射点在北纬 23° 多，比北纬 10° 更靠北，所以正午太阳在天顶以北约 13°，影子指向南。“北半球正午影子指北”只在北回归线以北全年成立；在北纬 10°，大约 4 月中旬到 8 月下旬正午太阳都在北边。标记影尖的“立竿见影法”（第一个标记总在西）则在任何纬度都适用。"
+      },
+      "en": {
+        "q": "In late June you're stranded on a coral island in the South China Sea at about 10° N. At local noon you set up a stick, planning to find north from its shadow. Which way will the shadow point?",
+        "options": [
+          "North: in the Northern Hemisphere the noon shadow always points north",
+          "There's no shadow at all: in the tropics in June the noon sun is overhead",
+          "Due east: at noon the shadow lies along the east–west line",
+          "South: at this time of year the noon sun stands to your north"
+        ],
+        "explain": "In late June the sun is overhead at about 23° N, north of 10° N, so at noon it stands about 13° north of the zenith and shadows point south. 'Noon shadows point north in the Northern Hemisphere' holds all year only north of the Tropic of Cancer; at 10° N the noon sun is to the north from about mid-April to late August. The shadow-tip method, in which the first mark is always west, works at any latitude."
+      }
+    },
+    {
+      "id": "navigation-x04",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "Star positions (Mintaka δ ≈ −0.3°); spherical astronomy",
+      "zh": {
+        "q": "冬夜，你在罗布泊，没有指北针，想从星空找一个精确的东西方向参照。下面哪颗星不论在地球上哪里看，都几乎正好从正东方升起？",
+        "options": [
+          "天狼星，全天最亮的恒星，冬夜里最容易认出来",
+          "参宿四，猎户座“肩膀”上那颗醒目的红色亮星",
+          "参宿三，猎户座腰带三星中最先升起的那颗",
+          "参宿七，猎户座“脚”上那颗明亮的蓝白色恒星"
+        ],
+        "explain": "参宿三的赤纬只有约 −0.3°，几乎就在天赤道上；天赤道上的星在任何纬度都从正东升起、正西落下。参宿四赤纬约 +7°、参宿七约 −8°、天狼星约 −17°，在北纬 40° 升起时分别偏离正东约 10°、11° 和 22°。星星每晚约提前 4 分钟升起，整夜都在移动，用它定向要随时校正。"
+      },
+      "en": {
+        "q": "On a winter night in Lop Nur you have no compass and want a precise east–west reference from the stars. Which star rises almost exactly due east from anywhere on Earth?",
+        "options": [
+          "Sirius, the brightest star in the night sky and the easiest to spot in winter",
+          "Betelgeuse, the conspicuous red star on Orion's shoulder",
+          "Mintaka, the first star of Orion's Belt to rise",
+          "Rigel, the bright blue-white star at Orion's foot"
+        ],
+        "explain": "Mintaka's declination is only about −0.3°, almost on the celestial equator, and stars on the celestial equator rise due east and set due west at every latitude. Betelgeuse (about +7°), Rigel (about −8°) and Sirius (about −17°) rise roughly 10°, 11° and 22° off due east at 40° N. Stars rise about 4 minutes earlier each night and keep moving through the night, so keep checking any star you steer by."
+      }
+    },
+    {
+      "id": "navigation-x05",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "Coordinate formats (DD, DDM, DMS); GPS.gov",
+      "zh": {
+        "q": "坠机点的手持 GPS 显示 N 40°30.30′（度加十进制分）。救援中心的系统要求用十进制度报坐标。你该报多少？",
+        "options": [
+          "40.1818°",
+          "40.3030°",
+          "40.5050°",
+          "40.5083°"
+        ],
+        "explain": "1° = 60′，30.30′ ÷ 60 = 0.505°，所以是 40.5050°。直接把“30.30”接在小数点后报成 40.3030°，位置会往南差约 22 公里；把 30.30′ 误读成 30′30″ 得到 40.5083°，也差约 370 米。报坐标时一定要说清用的是哪种格式。"
+      },
+      "en": {
+        "q": "At the crash site your handheld GPS shows N 40°30.30′ (degrees and decimal minutes). The rescue centre's system wants decimal degrees. What do you send?",
+        "options": [
+          "40.1818°",
+          "40.3030°",
+          "40.5050°",
+          "40.5083°"
+        ],
+        "explain": "There are 60 minutes in a degree, so 30.30′ ÷ 60 = 0.505°, giving 40.5050°. Tacking '30.30' on after the decimal point (40.3030°) puts rescuers about 22 km too far south, and misreading 30.30′ as 30′30″ (40.5083°) is still about 370 m off. Always say which format you are using."
+      }
+    },
+    {
+      "id": "navigation-x06",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "USGS (NAD27–NAD83 datum shift); Ordnance Survey (GPS and map datums)",
+      "zh": {
+        "q": "你站在湖边小屋门口，把手持 GPS 显示的坐标标到纸质地图上，位置却落在湖里约 200 米处。GPS 显示精度为 ±5 米，地图也是近年印的。最可能的原因是？",
+        "options": [
+          "GPS 的坐标系（大地基准）与地图不一致，应改成图边注明的那个",
+          "忘了加磁偏角，应把磁偏角修正到 GPS 显示的坐标上",
+          "这是正常误差，民用 GPS 本来就只能精确到 200 米左右，不用管它",
+          "地图比例尺弄错了，应改用 1:25000 的比例尺重新量算"
+        ],
+        "explain": "同一个点在不同的大地基准（坐标系）下，经纬度或方格坐标并不相同，差几十米到几百米都很常见：例如美国旧图用的 NAD27 与 NAD83 在本土相差可达约 100 米，在阿拉斯加和夏威夷更大。GPS 默认用 WGS 84，必须改成地图图廓上注明的基准，或者把坐标换算过来。磁偏角只影响指北针方位，与 GPS 坐标无关；现代 GPS 正常精度在 5～10 米。"
+      },
+      "en": {
+        "q": "Standing at the door of a lakeside hut, you plot your handheld GPS coordinates on your paper map, and they land about 200 m out in the lake. The GPS reports ±5 m accuracy, and the map is recent. What's the most likely cause?",
+        "options": [
+          "The GPS datum differs from the map's: set it to the datum printed in the margin",
+          "You forgot magnetic declination: apply it to the coordinates the GPS shows",
+          "It's normal error: consumer GPS is only good to about 200 m anyway",
+          "You've used the wrong scale: re-measure everything with the 1:25,000 scale bar instead"
+        ],
+        "explain": "The same point has different coordinates in different datums, and differences of tens to hundreds of metres are common: US maps on NAD27 and NAD83, for example, differ by up to about 100 m in the lower 48 and far more in Alaska and Hawaii. A GPS defaults to WGS 84, so set it to the datum printed in the map margin or convert the coordinates. Declination affects compass bearings, not GPS coordinates, and a modern GPS is normally good to 5–10 m."
+      }
+    },
+    {
+      "id": "navigation-x07",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "IOF orienteering technique (attack point); Ordnance Survey navigation skills",
+      "zh": {
+        "q": "你们要找一处小泉眼取水，它在 1.5 公里外一片没有明显地物的密林里，附近没有溪流、小路这类线状地物。在你们的行进线上、离泉眼约 200 米处，有一个很好找的岔路口。最可靠的走法是？",
+        "options": [
+          "从出发点测一个方位角，一路按这个方位直走 1.5 公里，同时计复步",
+          "故意偏向泉眼的一侧走，走到以后就知道该往哪边找",
+          "先走到泉眼的大致区域，再收起指北针，绕圈逐步扩大搜索范围",
+          "先快速走到岔路口作“攻击点”，再精确测向、计步走完最后 200 米"
+        ],
+        "explain": "这是定向运动中的“攻击点”技术：先快速到达目标附近一个不会认错的地物，再用指北针和计步精确走完最后一小段，误差只在这 200 米里积累。整段 1.5 公里按一个方位直走，偏 5° 就会偏出约 130 米，足以错过一个小泉眼。“偏向一侧”只在目标位于一条横着的线状地物上、你走过去必然会碰上那条线时才管用，这里没有这样的线。"
+      },
+      "en": {
+        "q": "You need to find a small spring for water, 1.5 km away in dense, featureless forest, with no stream, path or other line feature near it. On your line, about 200 m short of the spring, there's an easy-to-find path junction. What's the most reliable approach?",
+        "options": [
+          "Take one bearing from the start and walk the whole 1.5 km on it, pacing as you go",
+          "Aim off deliberately to one side of the spring so you know which way to turn when you get there",
+          "Head for the general area, then put the compass away and search in widening circles",
+          "Go fast to the junction as an attack point, then take a careful bearing and pace the last 200 m"
+        ],
+        "explain": "This is the orienteering 'attack point': travel quickly to an unmistakable feature near the target, then use compass and pacing for the short final leg, so errors build up over only 200 m. Walking the whole 1.5 km on one bearing, a 5° error leaves you about 130 m off, enough to miss a small spring. Aiming off only works when the target sits on a line feature, such as a river or road, that you are bound to hit; here there is none."
+      }
+    },
+    {
+      "id": "navigation-x08",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "US Army FM 3-25.26 Map Reading and Land Navigation (detour method)",
+      "zh": {
+        "q": "你沿 60° 方位走一段 2 公里的路程，计步走到 800 米时遇到一片沼泽。你右转到 150° 走了 200 米，再转回 60° 走了 400 米，绕过了沼泽。接下来怎么做？",
+        "options": [
+          "转到 240°（60° 的反方位）走 200 米，再转回 60° 继续走",
+          "转到 330° 走 200 米回到原方位线，再沿 60° 走剩下的 800 米",
+          "直接沿 60° 继续走就行，2 公里的路程里偏出 200 米无关紧要",
+          "转到 330° 走 200 米回到原线，再沿 60° 走 1200 米，绕行的路都不算进度"
+        ],
+        "explain": "这是美军地图判读手册里的直角绕行法：右转加 90°、左转减 90°，偏出多少就要折回多少。沿 150° 偏出了 200 米，就要沿 150° − 180° = 330° 走 200 米回到原线；与原方向平行的那 400 米算作进度，所以已走 1200 米、还剩 800 米。若不折回，最后会在目标旁 200 米处扑空。"
+      },
+      "en": {
+        "q": "You're following a bearing of 060° on a 2 km leg and have paced 800 m when a swamp blocks the way. You turn right onto 150° and pace 200 m, then back onto 060° and pace 400 m to get past it. What next?",
+        "options": [
+          "Turn onto 240°, the back bearing of 060°, for 200 m, then resume 060°",
+          "Turn onto 330° for 200 m to regain the line, then 060° for the remaining 800 m",
+          "Just carry on along 060°: a 200 m offset hardly matters over a 2 km leg",
+          "Turn onto 330° for 200 m to regain the line, then 060° for 1,200 m, since detour legs don't count"
+        ],
+        "explain": "This is the detour method in the US Army land-navigation manual: right turns add 90°, left turns subtract 90°, and every metre you step off the line must be stepped back. Having gone 200 m on 150°, you come back 200 m on 330° to regain the line; the 400 m leg parallel to your course counts as progress, so 1,200 m are done and 800 m remain. Skip the return leg and you end up 200 m beside the target."
+      }
+    },
+    {
+      "id": "navigation-x09",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "Barometric altimetry (about 8 m per hPa near sea level); mountain navigation practice",
+      "zh": {
+        "q": "傍晚你们到达海拔 2050 米的山屋，把气压高度表校准为 2050 米。第二天早上，你们没挪过地方，高度表却显示 2130 米。这说明什么？出发前该怎么做？",
+        "options": [
+          "高度表一夜之间就坏了，改看手机 GPS 显示的海拔吧，以后不要再用它来导航了",
+          "气压升高了，说明高压正在控制，天气转好，可以按原计划放心出发",
+          "气压降了约 8～10 百帕，天气或将转坏；把表校回 2050 米，重新评估计划",
+          "只是夜里降温让读数漂移了，气压其实并没变，太阳出来回暖后读数会自己恢复"
+        ],
+        "explain": "气压高度表其实是气压计：在这个海拔，气压每降 1 百帕，读数约升高 10 米，海平面附近约 8 米。人没动而读数升高 80 米，说明气压降了约 8 百帕，往往是低压或锋面在接近。导航前必须在已知高度点重新校准；一夜气压降这么多，也是出发前重新考虑天气风险的理由。"
+      },
+      "en": {
+        "q": "In the evening you reach a mountain hut at 2,050 m and set your barometric altimeter to 2,050 m. Next morning, without having moved, it reads 2,130 m. What does that mean, and what do you do before setting off?",
+        "options": [
+          "The altimeter has failed overnight: switch to the phone's GPS altitude and stop using it to navigate",
+          "Air pressure has risen: a high is building and the weather is improving, so set off as planned",
+          "Pressure has fallen about 8–10 hPa, so worse weather may be coming; reset to 2,050 m and rethink the plan",
+          "It's only the night's cold making it drift; the pressure hasn't changed, and the reading will recover as it warms"
+        ],
+        "explain": "A barometric altimeter is really a barometer: at this altitude each 1 hPa drop raises the reading by about 10 m, about 8 m near sea level. An 80 m rise without moving means the pressure has fallen roughly 8 hPa, often a low or a front on the way. Recalibrate at a known height before navigating, and treat a fall like that as a reason to rethink the day's weather risk."
+      }
+    },
+    {
+      "id": "navigation-x10",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "Ordnance Survey map reading (contours and gradient); avalanche.org (slab avalanche slope angles)",
+      "zh": {
+        "q": "坠机点上方有一面雪坡，你们必须横穿。在 1:50000、等高距 20 米的地图上，沿最大坡度方向量得：5 条等高线（4 个等高距）挤在 2 毫米之内。这面坡大约多陡？",
+        "options": [
+          "约 22°，低于雪崩多发的坡度，可以放心地直接横穿过去",
+          "约 39°，正处在板状雪崩高发的 30°～45° 范围",
+          "约 45°，坡太陡存不住多少雪，所以反而不容易发生雪崩",
+          "约 53°，陡到雪会不断自行滑落，根本形成不了板状雪崩"
+        ],
+        "explain": "1:50000 的图上 2 毫米等于实地 100 米，4 个等高距就是 80 米落差，坡度 = arctan(80/100) ≈ 39°。常见错误是把 5 条线当成 5 个等高距（算成 45°），或用错比例尺。约 39° 的雪坡正是板状雪崩的高发坡度，应尽量绕行或另选更缓的路线。"
+      },
+      "en": {
+        "q": "Above the crash site is a snow slope you must cross. On a 1:50,000 map with a 20 m contour interval, measured straight down the fall line, five contour lines (four intervals) are packed into 2 mm. Roughly how steep is the slope?",
+        "options": [
+          "About 22°: below the angles where avalanches usually start, so it's safe to cross",
+          "About 39°: right in the 30–45° range where most slab avalanches start",
+          "About 45°: too steep to hold much snow, so an avalanche is unlikely",
+          "About 53°: so steep that snow keeps sluffing off and slabs can't form"
+        ],
+        "explain": "On a 1:50,000 map, 2 mm is 100 m on the ground, and four intervals are an 80 m drop, so the slope is arctan(80/100) ≈ 39°. Common mistakes are counting five lines as five intervals, which gives 45°, or misreading the scale. A 39° snow slope is prime slab-avalanche terrain, so go around it or find a gentler line."
+      }
+    },
+    {
+      "id": "navigation-x11",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "地形图三北方向图（磁偏角、子午线收敛角、磁坐偏角）; Ordnance Survey 'A tale of three norths' (grid magnetic angle)",
+      "zh": {
+        "q": "你在中国地形图上用方里网的纵线量方位，得到坐标方位角 75°。图边的三北方向图标着：坐标纵线北在真北以东 1°（子午线收敛角），磁北在真北以西 3°（磁偏角），磁北在坐标纵线北以西 4°（磁坐偏角）。指北针上应设多少度？",
+        "options": [
+          "75°：方里网纵线指的就是磁北，所以不用修正",
+          "74°：按 1° 的子午线收敛角修正，减去 1°",
+          "78°：按西偏 3° 的磁偏角修正，加 3°",
+          "79°：按西偏 4° 的磁坐偏角修正，加 4°"
+        ],
+        "explain": "从方里网纵线量得的是坐标方位角，要换成磁方位角，用的是坐标纵线北与磁北的夹角，即磁坐偏角，而不是真北与磁北之间的磁偏角。磁北在坐标北以西 4°，所以 75° + 4° = 79°。误用磁偏角会差 1°；在离投影带中央经线较远的地方，子午线收敛角可超过 2°，误差更大。"
+      },
+      "en": {
+        "q": "On a Chinese topographic map you measure a bearing against the vertical grid lines: a grid bearing of 75°. The margin's three-norths diagram shows grid north 1° east of true north (grid convergence), magnetic north 3° west of true north (declination), and magnetic north 4° west of grid north (grid magnetic angle). What do you set on the compass?",
+        "options": [
+          "75°: the grid lines point to magnetic north, so no correction is needed",
+          "74°: correct by the 1° grid convergence, subtracting 1°",
+          "78°: correct by the 3° W declination, adding 3°",
+          "79°: correct by the 4° W grid magnetic angle, adding 4°"
+        ],
+        "explain": "A bearing measured against the grid lines is a grid bearing, and converting it to magnetic uses the angle between grid north and magnetic north, the grid magnetic angle, not the declination, which is measured from true north. Magnetic north is 4° west of grid north, so 75° + 4° = 79°. Using the declination here leaves you 1° out, and far from the projection zone's central meridian the convergence can exceed 2°, making the error bigger."
+      }
+    },
+    {
+      "id": "navigation-x12",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "Ordnance Survey (contour labels face uphill); IOF ISOM; 地形图图式",
+      "zh": {
+        "q": "大雾中，你们在一片小山包错落、等高线弯来绕去的地方，看不清自己脚下是在上坡还是下坡，图上附近也没有高程点和河流。单凭地图本身，怎样判断一条等高线哪一侧是高处？",
+        "options": [
+          "看高程注记：数字的字头朝向高处，正着读时你面对的就是上坡",
+          "加粗的计曲线总是画在一座山的上坡一侧，找到那条粗线就知道高处在哪儿",
+          "晕渲阴影总是落在下坡一侧，阴影越深，离谷底就越近",
+          "等高线弯曲处的尖角总是指向山顶，顺着尖角的方向走就是上坡"
+        ],
+        "explain": "地形图上等高线的高程注记，字头一律朝向高处：拿正地图读数字时，你正对着的就是上坡方向，字倒过来就是下坡。计曲线只是每隔四条首曲线加粗一条，方便数高差；晕渲按西北方向光照来渲染，与上下坡无关。等高线的尖角在山谷里指向上坡、在山脊上指向下坡，单看尖角判断不了高低。"
+      },
+      "en": {
+        "q": "In thick fog you're in a jumble of small hills where the contours wind back and forth; you can't tell whether you're going uphill or down, and there are no spot heights or streams nearby on the map. From the map alone, how can you tell which side of a contour is higher?",
+        "options": [
+          "Read the contour height labels: their tops face uphill, so upright numbers mean you face uphill",
+          "The thicker index contours are always drawn on the uphill side of a hill, so find the thick line",
+          "Hill shading always falls on the downhill side; the darker it is, the nearer the valley floor",
+          "The points of the bends in contours always aim at the summit, so follow the points uphill"
+        ],
+        "explain": "Contour height labels are printed with their tops facing uphill: if a number reads the right way up, you're looking uphill on the map, and upside down means downhill. Index contours are simply every fifth line drawn thicker to help count height, and hill shading assumes light from the north-west and says nothing about up or down. Contour Vs point uphill in valleys but downhill on spurs, so the points alone can't tell you which way is up."
+      }
+    }
+  ]
+}

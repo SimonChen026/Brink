@@ -1,0 +1,323 @@
+{
+  "id": "tutorial",
+  "title": "雨夜",
+  "subtitle": "新手教程",
+  "hidden": true,
+  "tagline": "一场塌方，一辆大巴，一间漏雨的道班房。熬到天亮就好。",
+  "inspiration": "根据西南山区雨季常见的公路塌方改编：大巴被堵在半山腰，乘客在路边过夜，第二天由公路养护工人打通道路。这不是某一次具体的事件，是给第一次玩的人准备的短局。",
+  "modelNotes": [
+    "秋雨里气温 6–13°C。在户外干活的人会被淋湿，湿衣服让体感低 6°C；回到屋里点着炉子，才能慢慢烘干。",
+    "开放的伤口不处理会感染。「照顾伤员」会用掉急救用品，医疗技能越高，处理得越好。",
+    "成年人一天大约要 2000–2500 千卡、2–3 升水。饿一两天不会有大碍，缺水会更快让人没力气。"
+  ],
+  "difficulty": 1,
+  "accent": "#E3A857",
+  "icon": "cloud.rain",
+  "briefing": [
+    "国庆长假的最后一天，一辆开往县城的大巴在盘山公路上被塌方堵住了。前面的路埋在泥石里，回头的路也在往下掉石头。司机老周带着车上剩下的乘客——四个大人和一个孩子——躲进了路边一间废弃的道班房。",
+    "天快黑了，雨还在下。离县城还有 14 公里，手机没有信号。养护站的抢修队最快明天才能把路打通。",
+    "这是新手教程：一局只有一天半，危险不大。屏幕上会一步一步告诉你怎么玩。"
+  ],
+  "setting": {
+    "location": "滇西北某县道 K37 处（虚构）",
+    "altitude": 2100,
+    "date": "10 月 7 日傍晚",
+    "description": "一间废弃多年的道班房：一间屋子，一个铁炉子，铁皮屋顶漏雨。门前就是公路，五十米外停着大巴，再往前是塌方。"
+  },
+  "clock": {"roundHours": 12, "startHour": 18, "maxRounds": 4, "workHours": 3},
+  "climate": {
+    "tempHigh": 13, "tempLow": 6, "drift": -0.3, "noise": 1.0, "solar": 4,
+    "initialWeather": "rain",
+    "weather": {
+      "rain": {"name": "小雨", "icon": "cloud.rain", "temp": -1, "ampScale": 0.5, "wind": 10, "visibility": 0.6, "precip": 1, "sun": 0.1, "wet": true, "outdoorRisk": 0.04,
+               "desc": "雨不大，可一直没停。", "next": {"rain": 0.5, "downpour": 0.2, "cloudy": 0.3}},
+      "downpour": {"name": "大雨", "icon": "cloud.heavyrain", "temp": -2, "ampScale": 0.4, "wind": 18, "visibility": 0.35, "precip": 2, "sun": 0, "wet": true, "outdoorRisk": 0.1,
+                   "desc": "雨砸在铁皮屋顶上，说话得喊。山上不时有石头滚下来。", "next": {"rain": 0.55, "downpour": 0.3, "cloudy": 0.15}},
+      "cloudy": {"name": "阴", "icon": "cloud", "temp": 0, "ampScale": 0.7, "wind": 8, "visibility": 0.8, "precip": 0, "sun": 0.3, "wet": false, "outdoorRisk": 0.02,
+                 "desc": "雨停了，山谷里全是雾。", "next": {"cloudy": 0.5, "rain": 0.3, "clear": 0.2}},
+      "clear": {"name": "晴", "icon": "sun.max", "temp": 2, "ampScale": 1.1, "wind": 6, "visibility": 1.0, "precip": 0, "sun": 1.0, "wet": false, "outdoorRisk": 0.01,
+                "desc": "云散了，对面山上的塌方看得清清楚楚。", "next": {"clear": 0.5, "cloudy": 0.4, "rain": 0.1}}
+    }
+  },
+  "shelter": {
+    "name": "道班房", "insulation": 9, "windProof": 0.8, "integrity": 55, "decay": 1, "stormDecay": 5, "bedding": 0.6, "shade": true, "wet": false,
+    "fire": {"resource": "fuel", "perRound": 1, "heat": 7, "label": "铁炉子"}
+  },
+  "rations": {"food": [0, 400, 800, 1200, 1600, 2000], "water": [0.5, 1, 1.5, 2, 3], "defaultFood": 2, "defaultWater": 3},
+  "physiology": {"infectionRisk": 1.2, "altitude": 2100},
+  "resources": [
+    {"id": "food", "name": "食物", "unit": "千卡", "initial": 3600, "kind": "food"},
+    {"id": "water", "name": "饮用水", "unit": "升", "initial": 6, "kind": "water", "decimals": 1},
+    {"id": "fuel", "name": "柴火", "unit": "份", "initial": 2, "kind": "fuel", "decimals": 1},
+    {"id": "medkit", "name": "急救用品", "unit": "份", "initial": 2, "kind": "medical"}
+  ],
+  "vars": [
+    {"id": "signal", "name": "求救信号", "initial": 0, "min": 0, "max": 100, "show": true, "format": "level",
+     "levels": ["没人知道", "有点痕迹", "很显眼", "隔着山都看得见"],
+     "desc": "路口的三角牌、路面上用石头摆的 SOS、晚上的手电。下雨会冲掉一些。外面的人越早知道这里有人越好。"}
+  ],
+  "pools": {
+    "bus": {"name": "大巴车厢和行李舱", "items": [
+      {"res": "food", "amount": [300, 700], "weight": 5, "stock": 4, "text": "一袋别人落下的面包和火腿肠"},
+      {"res": "water", "amount": [1, 2], "weight": 4, "stock": 3, "text": "座位底下滚着几瓶矿泉水"},
+      {"weight": 3, "stock": 3, "text": "一件厚外套，当场就穿上了", "effects": [{"e": "stat", "who": "actor", "stat": "clo", "add": 0.4}]},
+      {"res": "fuel", "amount": [1, 1], "weight": 2, "stock": 2, "text": "行李舱里有几块垫货的旧木板，劈开能烧"},
+      {"res": "medkit", "amount": [1, 1], "weight": 1, "stock": 1, "text": "司机座位后面还挂着一个急救包"},
+      {"weight": 1, "stock": 1, "text": "一块石头砸在车顶上，{actor} 吓得从车门台阶上摔了下来", "effects": [{"e": "injure", "who": "actor", "kind": "sprain", "severity": 18, "part": "脚踝"}]},
+      {"weight": 4, "text": "翻了一圈，没找到什么有用的"}
+    ]}
+  },
+  "characters": [
+    {
+      "id": "xiaoman", "name": "林小满", "gender": "女", "age": 24, "role": "实习护士",
+      "bio": "县医院的实习护士，放完假回去上班。背着一个双肩包，里面有一个小急救包。",
+      "personality": "做事认真，有点怕生，不太会拒绝别人。可一看到有人受伤，她会马上镇定下来。",
+      "voice": "说话轻，爱用“要不……”“我看看”开头。",
+      "secret": "你包里还有一盒月饼（六个），是带给科室同事的。你还没跟任何人说。",
+      "secretReveal": [{"e": "trust", "from": "others", "to": "actor", "add": -3}, {"e": "flag", "id": "mooncakes_known"}],
+      "goal": {"text": "照顾好小宇，别让他的伤口感染", "check": "self.alive && xiaoyu.alive && !xiaoyu.infected"},
+      "weight": 52, "fat": 0.26, "clo": 1.0,
+      "skills": {"medical": 2, "survival": 0, "strength": 1, "technical": 1, "navigation": 0, "social": 1},
+      "stash": {"food": 1200},
+      "traits": {"selfish": 0.25, "brave": 0.45, "trusting": 0.65, "ambition": 0.3, "temper": 0.2},
+      "relations": {"xiaoyu": 30},
+      "epilogues": [
+        {"when": "self.alive && self.goal", "text": "小宇手臂上的伤口后来只留下一道浅浅的疤。林小满回到医院，带教老师看了她做的包扎，说了句“不错”。她把这两个字记了很久。"},
+        {"when": "self.alive && self.revealed", "text": "那盒月饼最后是在道班房里分掉的，一人一块。林小满跟科室同事说起这件事，大家笑着问：“月饼呢？”她说：“在山上派上用场了。”"},
+        {"when": "self.alive && !self.exiled", "text": "回到医院以后，林小满报名参加了野外急救培训。她说那一夜让她明白，医院外面的急救是另一回事。"},
+        {"when": "self.exiled", "text": "林小满一个人走进了雨里。后来有人说在下一个村子见过她，也有人说没有。"},
+        {"when": "self.dead", "text": "林小满没能走出那间道班房。她的双肩包里，那盒月饼还在。"},
+        {"when": "true", "text": "林小满后来很少说起那一夜。"}
+      ]
+    },
+    {
+      "id": "laozhou", "name": "老周", "gender": "男", "age": 53, "role": "大巴司机",
+      "bio": "开这条山路开了十一年的大巴司机，熟悉路况，也认识养护站的人。",
+      "personality": "责任心重，习惯替所有人拿主意。嘴上说“莫慌”，心里一直在自责。",
+      "voice": "云南口音，常说“莫慌”“整得好”“听我的”。",
+      "secret": "出发前你收到了交通部门的暴雨预警短信，建议这条路暂停通行。你想着天黑前能赶到县城，还是开上来了。",
+      "secretReveal": [{"e": "trust", "from": "others", "to": "actor", "add": -15}, {"e": "stat", "who": "actor", "stat": "morale", "add": -10}],
+      "goal": {"text": "把车上的每一个人都平安送下山", "check": "self.alive && dead == 0 && exiled == 0"},
+      "weight": 80, "fat": 0.25, "clo": 1.2,
+      "skills": {"medical": 0, "survival": 2, "strength": 2, "technical": 2, "navigation": 2, "social": 2},
+      "traits": {"selfish": 0.2, "brave": 0.6, "trusting": 0.5, "ambition": 0.65, "temper": 0.45},
+      "relations": {"wangbo": 25, "ajie": -5},
+      "epilogues": [
+        {"when": "self.alive && self.goal && !self.revealed", "text": "老周把大巴开回车站，交了钥匙，在车站门口抽了半包烟。那条预警短信他一直没删。第二年，他自己去考了应急救援员的证。"},
+        {"when": "self.alive && self.revealed", "text": "预警短信的事传开了，老周被停了三个月的班。复工那天，他把手机设成了预警必响。车上有乘客认出了他：“你就是那个……”他点点头：“对，是我。”"},
+        {"when": "self.alive && !self.exiled", "text": "老周后来不开长途了，在县城开公交。有人问他为什么，他说：“开慢点，好。”"},
+        {"when": "self.exiled", "text": "老周被赶出道班房后，一个人在大巴的驾驶座上坐了一夜，双闪一直开着。"},
+        {"when": "self.dead", "text": "老周没能把车上的人送到县城。抢修队的人说，他是这条线上开得最稳的司机。"},
+        {"when": "true", "text": "老周还在开车。"}
+      ]
+    },
+    {
+      "id": "ajie", "name": "阿杰", "gender": "男", "age": 21, "role": "大三学生",
+      "bio": "在昆明读大三，放假回家，明天上午有一门补考。从上车起就一直在看手机上的时间。",
+      "personality": "急躁，坐不住，觉得干等就是浪费时间。心不坏，就是一着急说话就冲。",
+      "voice": "普通话，语速快，爱说“不是吧”“那还等什么”“我去就我去”。",
+      "secret": "这门课你已经挂了两次，补考再不过就要退学。家里人还不知道。",
+      "secretReveal": [{"e": "stat", "who": "actor", "stat": "morale", "add": -6}, {"e": "trust", "from": "others", "to": "actor", "add": 5}],
+      "goal": {"text": "不能就这么干等着：要么走出去，要么去前面探路", "check": "self.alive && (flag.night_walk || flag.scouted)"},
+      "weight": 68, "fat": 0.13, "clo": 0.8,
+      "skills": {"medical": 0, "survival": 0, "strength": 3, "technical": 1, "navigation": 1, "social": 0},
+      "traits": {"selfish": 0.5, "brave": 0.85, "trusting": 0.4, "ambition": 0.6, "temper": 0.75},
+      "relations": {"laozhou": -10},
+      "epilogues": [
+        {"when": "self.alive && self.revealed", "text": "阿杰错过了补考。他给辅导员打电话讲了塌方的事，学校给了他一次缓考的机会。这一次，他提前一个月就开始复习了。"},
+        {"when": "self.alive && self.goal", "text": "阿杰后来总跟同学讲那天晚上的事：“我们打着手电往前走，前面的路整个滑下去了。”讲到这里，他总会停一下。"},
+        {"when": "self.alive && !self.exiled", "text": "阿杰赶上了下午的补考，迟到了二十分钟，考完才发现鞋里全是泥。成绩出来，六十一分。"},
+        {"when": "self.exiled", "text": "阿杰被赶出道班房后，一个人打着手电往山下走了。第二天，抢修队在下面的村子里找到了他，他坐在小卖部门口，浑身是泥。"},
+        {"when": "self.dead", "text": "阿杰没能赶上那场补考。"},
+        {"when": "true", "text": "阿杰后来再也不坐夜班车了。"}
+      ]
+    },
+    {
+      "id": "sujie", "name": "苏姐", "gender": "女", "age": 44, "role": "小卖部老板",
+      "bio": "在镇上开小卖部，这次去州里进货，带着外甥小宇。她的两个大纸箱，一箱方便面、一箱矿泉水，也搬进了道班房。",
+      "personality": "精明，会算账，嘴硬心软。辛辛苦苦挣的钱，不愿意让人白拿；可看见孩子饿着，她自己先受不了。",
+      "voice": "大嗓门，爱说“亲兄弟明算账”“我又不是开善堂的”。",
+      "secret": "你的包里还藏着两包饼干和一瓶水，是给小宇留的。你不打算拿出来。",
+      "secretReveal": [{"e": "trust", "from": "others", "to": "actor", "add": -6}],
+      "goal": {"text": "货不能白给人拿；小宇要平平安安", "check": "self.alive && xiaoyu.alive && !flag.goods_taken"},
+      "weight": 66, "fat": 0.34, "clo": 1.3,
+      "skills": {"medical": 0, "survival": 1, "strength": 1, "technical": 0, "navigation": 0, "social": 3},
+      "stash": {"food": 700, "water": 1},
+      "traits": {"selfish": 0.65, "brave": 0.4, "trusting": 0.35, "ambition": 0.5, "temper": 0.55},
+      "relations": {"xiaoyu": 60, "ajie": -5},
+      "epilogues": [
+        {"when": "self.alive && flag.goods_bought", "text": "苏姐的小本子上记着每个人出了多少钱。回到镇上，她把那一页撕下来，贴在了小卖部的收银台旁边。"},
+        {"when": "self.alive && flag.goods_taken", "text": "苏姐到最后也没拿到那箱方便面的钱。她逢人就讲那天的事，讲着讲着又加一句：“不过那孩子是吃饱了的。”"},
+        {"when": "self.alive && !self.exiled", "text": "回到镇上，苏姐把剩下的方便面摆回了货架，标价一分没改。"},
+        {"when": "self.exiled", "text": "苏姐被赶出了道班房。她在大巴上坐了一夜，隔着车窗看着道班房里的火光。"},
+        {"when": "self.dead", "text": "苏姐没能回到镇上。小卖部的卷帘门，后来是小宇的妈妈拉开的。"},
+        {"when": "true", "text": "苏姐的小卖部还开着。"}
+      ]
+    },
+    {
+      "id": "wangbo", "name": "王伯", "gender": "男", "age": 66, "role": "退休的道班工人",
+      "bio": "年轻时在这条路上当了三十年道班工人，这间道班房他住过。这次是去县城看孙子。",
+      "personality": "话不多，慢性子，凡事看天。对山和雨有一种近乎迷信的敬畏，从来不跟山较劲。",
+      "voice": "说话慢，爱讲“我们那时候……”，管塌方叫“垮山”。",
+      "secret": "你年轻时有个工友，就是在雨夜里走这条路，被垮山埋了的。你从没跟人提过。",
+      "secretReveal": [{"e": "stat", "who": "all", "stat": "morale", "add": -3}, {"e": "trust", "from": "others", "to": "actor", "add": 6}],
+      "goal": {"text": "不让年轻人冒险走夜路", "check": "self.alive && !flag.night_walk"},
+      "weight": 58, "fat": 0.18, "clo": 1.4,
+      "skills": {"medical": 1, "survival": 3, "strength": 0, "technical": 1, "navigation": 3, "social": 1},
+      "traits": {"selfish": 0.3, "brave": 0.3, "trusting": 0.55, "ambition": 0.2, "temper": 0.25},
+      "relations": {"laozhou": 20},
+      "epilogues": [
+        {"when": "self.alive && self.revealed", "text": "下山的时候，王伯在塌方旁边站了很久。后来他托人在那个弯道边立了一块小石碑，上面没有名字，只有一个日子。"},
+        {"when": "self.alive && self.goal", "text": "王伯到了县城，抱着孙子说：“爷爷在山上的老房子里住了一晚。”孙子问冷不冷，他说：“有炉子，不冷。”"},
+        {"when": "self.alive && !self.exiled", "text": "王伯后来跟孙子讲那天晚上的事，讲到年轻人打着手电往外走，他就不往下讲了。"},
+        {"when": "self.exiled", "text": "王伯被赶出了这间他住过十几年的屋子。他在屋檐下坐了一夜，听雨打在铁皮上。"},
+        {"when": "self.dead", "text": "王伯死在了他住过的道班房里。抢修队里有个老工人认出了他，摘下了安全帽。"},
+        {"when": "true", "text": "王伯还住在县城，每年雨季都会给养护站打个电话。"}
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "id": "xiaoyu", "name": "小宇", "gender": "男", "age": 9, "role": "苏姐的外甥",
+      "bio": "苏姐的外甥，九岁，上三年级。塌方的时候车窗玻璃碎了，划伤了他的左小臂。",
+      "personality": "胆子小，懂事，疼了也不怎么哭。",
+      "voice": "小声说话，爱问“还要多久”。",
+      "weight": 28, "fat": 0.18, "clo": 0.9,
+      "skills": {"medical": 0, "survival": 0, "strength": 0, "technical": 0, "navigation": 0, "social": 0},
+      "injuries": [{"kind": "laceration", "severity": 32, "part": "左小臂"}],
+      "tags": ["child"],
+      "relations": {"sujie": 60, "xiaoman": 20},
+      "lines": [
+        "小满姐姐，我的手不疼了。",
+        "我们明天能回家吗？",
+        "我妈会不会担心我？",
+        "王爷爷，你以前真的住在这里吗？",
+        "（把半块饼干塞给旁边的人）我不饿。"
+      ],
+      "epilogues": [
+        {"when": "self.alive && !self.infected", "text": "小宇的伤口长好了。开学以后，他在作文里写：“我在山上的一间小房子里住了一晚，有个护士姐姐给我包了手。”"},
+        {"when": "self.alive", "text": "小宇的伤口感染了，在县医院打了一个星期的点滴。出院那天，他问护士：“那个姐姐也在这里上班吗？”"},
+        {"when": "true", "text": "小宇没能等到天亮。"}
+      ]
+    }
+  ],
+  "tasks": [
+    {"id": "firewood", "name": "捡柴火", "desc": "去山坡上的林子里捡还能烧的枯枝。下雨天柴是湿的，捡得少，人也会淋湿。铁炉子每 12 小时烧掉 1 份柴。",
+     "exertion": "heavy", "outdoor": true, "hours": 3, "max": 2,
+     "effects": [{"e": "yield", "id": "fuel", "base": 0.9, "skill": "survival", "per": 0.25, "weather": {"rain": 0.8, "downpour": 0.5, "cloudy": 1.0, "clear": 1.15}}]},
+    {"id": "rainwater", "name": "接雨水", "desc": "把脸盆、水桶摆到屋檐下，再用塑料布引水。雨越大接得越多，不下雨就接不到。接雨的人会被淋湿。",
+     "exertion": "light", "outdoor": true, "hours": 2, "max": 2, "when": "precip >= 1",
+     "effects": [{"e": "yield", "id": "water", "base": 2.5, "skill": "technical", "per": 0.1, "weather": {"rain": 1.0, "downpour": 1.7}}]},
+    {"id": "roof", "name": "补屋顶", "desc": "铁皮屋顶有几处在漏雨，屋里的人睡不干。爬上去用塑料布和石头压住。下雨天屋顶很滑。",
+     "exertion": "heavy", "outdoor": true, "hours": 3, "max": 2,
+     "effects": [{"e": "shelter", "add": "6 + 3 * actor.skill.technical"}]},
+    {"id": "sos", "name": "摆求救信号", "desc": "去路口立三角牌，在路面上用石头摆 SOS，天黑以后打手电。抢修队越早知道这里有人越好。",
+     "exertion": "light", "outdoor": true, "hours": 2, "max": 2,
+     "effects": [{"e": "var", "id": "signal", "add": "12 + 4 * actor.skill.survival"}]},
+    {"id": "bus", "name": "回大巴上找东西", "desc": "大巴就停在五十米外，行李舱和座位底下可能还有能用的东西。山上偶尔还在掉石头，别待太久。",
+     "exertion": "light", "outdoor": true, "hours": 2, "max": 2,
+     "effects": [{"e": "loot", "pool": "bus", "rolls": 1}]}
+  ],
+  "onStart": [],
+  "rules": [
+    {"e": "var", "id": "signal", "add": "-2 - 3 * precip"},
+    {"e": "if", "when": "var.signal >= 45 && !flag.drone", "then": [
+      {"e": "flag", "id": "drone"},
+      {"e": "res", "id": "food", "add": 2000},
+      {"e": "res", "id": "water", "add": 6},
+      {"e": "res", "id": "medkit", "add": 1},
+      {"e": "stat", "who": "all", "stat": "morale", "add": 6},
+      {"e": "buff", "who": "all", "id": "hope", "rounds": 3},
+      {"e": "log", "text": "一架无人机顺着公路飞了上来。它看见了路口的 SOS，在道班房上空转了两圈，扔下一个包裹：压缩饼干、几瓶水、一个急救包，还有一张塑封的纸条——“已经知道你们在这里。天亮以后打通道路，别乱走。”"}
+    ]}
+  ],
+  "events": [
+    {
+      "id": "r1_stay_or_go", "kind": "group", "atRound": 1, "priority": 50, "major": true,
+      "text": "大巴被塌方堵在半山腰。天快黑了，雨越下越大。阿杰说县城只有 14 公里，打着手电走一夜就到了；王伯直摇头，说雨夜走山路是找死。怎么办？",
+      "options": [
+        {"id": "stay", "label": "留在道班房过夜，等天亮", "hint": "最稳妥。不过今晚得弄到柴和水，屋顶还在漏", "tags": ["safe", "cautious", "cooperative"],
+         "effects": [{"e": "flag", "id": "stayed"}, {"e": "stat", "who": "all", "stat": "morale", "add": 2}],
+         "result": "大家拧干湿衣服，挤进了道班房。老周从车上拆了几块座椅垫子，铺在地上。"},
+        {"id": "walk", "label": "大家一起连夜走下山", "hint": "运气好，明早就到县城；可雨夜里，路随时会再塌", "tags": ["risky", "hope", "explore"],
+         "effects": [
+           {"e": "flag", "id": "night_walk"},
+           {"e": "each", "who": "all", "do": [{"e": "stat", "who": "actor", "stat": "wet", "add": 5}, {"e": "stat", "who": "actor", "stat": "fatigue", "add": 15}]},
+           {"e": "chance", "p": 0.6, "then": [{"e": "injure", "who": "randomPlayer", "kind": "sprain", "severity": 22, "part": "脚踝"}]},
+           {"e": "stat", "who": "all", "stat": "morale", "add": -6}
+         ],
+         "result": "大家打着手电走了两个多小时。在一个弯道上，前面一整段路都滑进了沟里。只好浑身湿透，摸黑走回道班房。"},
+        {"id": "scout", "label": "让阿杰和老周先去前面探探路", "hint": "两个人去看看路还能不能走，顺便在路口做个记号；其他人留下", "tags": ["explore", "fair"],
+         "when": "alive.ajie && alive.laozhou",
+         "effects": [
+           {"e": "flag", "id": "scouted"},
+           {"e": "stat", "who": "ajie", "stat": "wet", "add": 3}, {"e": "stat", "who": "laozhou", "stat": "wet", "add": 3},
+           {"e": "stat", "who": "ajie", "stat": "fatigue", "add": 10}, {"e": "stat", "who": "laozhou", "stat": "fatigue", "add": 10},
+           {"e": "var", "id": "signal", "add": 15}
+         ],
+         "result": "阿杰和老周去了一个多小时，回来时浑身是泥：前面两公里也塌了，走不通。不过他们在塌方两头都立了三角牌。"}
+      ]
+    },
+    {
+      "id": "r2_goods", "kind": "group", "atRound": 2, "priority": 50, "major": true, "when": "alive.sujie",
+      "text": "早上清点吃的：大家包里凑出来的饼干和面包，省着吃也撑不过今天。苏姐的两个纸箱里有一箱方便面、一箱矿泉水，是她给小卖部进的货。",
+      "options": [
+        {"id": "buy", "label": "大家凑钱，按进价买下来分", "hint": "公平，苏姐也不亏", "tags": ["fair", "cooperative", "food", "water"],
+         "effects": [{"e": "flag", "id": "goods_bought"}, {"e": "res", "id": "food", "add": 5000}, {"e": "res", "id": "water", "add": 12},
+                     {"e": "trust", "from": "sujie", "to": "players", "add": 6}, {"e": "stat", "who": "all", "stat": "morale", "add": 4}],
+         "result": "苏姐掏出小本子，一笔一笔记下谁出了多少钱。纸箱拆开了，屋里第一次有了笑声。"},
+        {"id": "take", "label": "先拿来分了，出去以后再说", "hint": "大家都能吃饱，可苏姐会觉得东西是被抢走的", "tags": ["aggressive", "food", "water"],
+         "effects": [{"e": "flag", "id": "goods_taken"}, {"e": "res", "id": "food", "add": 5000}, {"e": "res", "id": "water", "add": 12},
+                     {"e": "trust", "from": "sujie", "to": "players", "add": -15}, {"e": "stat", "who": "sujie", "stat": "morale", "add": -12}],
+         "result": "纸箱被直接撕开了。苏姐骂了几句，没人接话。她搂着小宇，坐到了墙角。"},
+        {"id": "keep", "label": "那是她的货，让她自己决定", "hint": "尊重苏姐，可今天大家多半要饿着肚子", "tags": ["fair", "safe"],
+         "effects": [{"e": "flag", "id": "goods_kept"}, {"e": "res", "id": "food", "add": 1500}, {"e": "res", "id": "water", "add": 4},
+                     {"e": "trust", "from": "sujie", "to": "players", "add": 8}],
+         "result": "苏姐犹豫了半天，拆了一包方便面泡给小宇，又拿出几瓶水：“剩下的，等出去了再说。”"}
+      ]
+    },
+    {
+      "id": "r3_missing", "kind": "group", "atRound": 3, "priority": 50,
+      "pre": [{"e": "res", "id": "food", "add": -500}],
+      "text": "傍晚又清点了一遍，吃的少了一些，墙缝里塞着两张撕开的包装纸。有人说夜里有人偷吃，王伯说这屋里一直闹老鼠。",
+      "options": [
+        {"id": "guard", "label": "今晚安排人守夜", "hint": "分工时选「守夜看物资」的人，夜里能抓到偷吃的人", "tags": ["cautious", "fair"],
+         "effects": [{"e": "flag", "id": "watch"}],
+         "result": "大家说好，今晚轮流守着吃的，困了就叫醒下一个。"},
+        {"id": "rats", "label": "多半是老鼠，把吃的吊到房梁上", "hint": "不伤和气", "tags": ["fair", "safe", "cooperative"],
+         "effects": [{"e": "flag", "id": "hung_food"}, {"e": "stat", "who": "all", "stat": "morale", "add": 1}],
+         "result": "王伯说他住在这里的时候就闹老鼠。大家把吃的装进塑料袋，吊到了房梁上。"},
+        {"id": "accuse", "label": "挨个问清楚，非把这个人找出来不可", "hint": "说出来痛快，可是没有证据，谁都会觉得被怀疑了", "tags": ["aggressive", "suspicious"],
+         "effects": [{"e": "trust", "from": "players", "to": "players", "add": -5}, {"e": "stat", "who": "all", "stat": "morale", "add": -3}],
+         "result": "大家你看我、我看你，谁也不承认。屋里的气氛一下子冷了下来。"}
+      ]
+    },
+    {
+      "id": "r4_rescue", "kind": "group", "atRound": 4, "priority": 90,
+      "text": "天亮了。山下传来挖掘机的声音：养护站的抢修队打通了道路，正在清最后一段塌方。一个穿橙色背心的工人朝道班房使劲挥手。",
+      "options": [
+        {"id": "go", "label": "收拾东西，下去和他们会合", "hint": "互相搀着，慢慢走", "tags": ["rescue", "hope", "cooperative"],
+         "effects": [{"e": "flag", "id": "rescued"}, {"e": "end", "ending": "auto"}],
+         "result": "大家互相搀着，踩着泥一步一步走了下去。"},
+        {"id": "wait", "label": "等他们上来接", "hint": "路还滑，等他们把路清干净", "tags": ["safe", "cautious"],
+         "effects": [{"e": "flag", "id": "rescued"}, {"e": "end", "ending": "auto"}],
+         "result": "抢修队的人带着雨衣和一壶热水上来了。"}
+      ]
+    }
+  ],
+  "endings": [
+    {"id": "dawn_all", "title": "天亮以后", "when": "flag.rescued && dead == 0 && exiled == 0", "tone": "good",
+     "text": "抢修队的工人给每个人递了一杯热水。{aliveCount} 个人一个不少，坐上了来接的面包车。车开过塌方的地方时，谁都没有说话。后来大家建了一个微信群，群名叫“道班房”。"},
+    {"id": "dawn_split", "title": "各自下山", "when": "flag.rescued && dead == 0", "tone": "bitter",
+     "text": "所有人都活着下了山，可有人是一个人走下去的。坐在面包车里，大家都没有提那天夜里的事。"},
+    {"id": "dawn_cost", "title": "雨天慎行", "when": "flag.rescued", "tone": "bad",
+     "text": "抢修队把活着的人接下了山：{survivors}。没能等到天亮的：{dead}。那间道班房后来被拆掉了，原地立了一块牌子：雨天慎行。"},
+    {"id": "road_open", "title": "路通了", "tone": "good",
+     "text": "中午，路通了。抢修队把大家接下了山：{survivors}。"},
+    {"id": "all_lost", "title": "雨夜", "tone": "bad",
+     "text": "没有人等到天亮。抢修队推开道班房的门时，炉子早就凉了。"}
+  ],
+  "defaultEnding": "road_open",
+  "wipeEnding": "all_lost",
+  "exileText": "{actor} 被推出了道班房，一个人走进了雨里。"
+}

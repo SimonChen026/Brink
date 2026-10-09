@@ -1,0 +1,974 @@
+{
+  "id": "survival",
+  "skill": "survival",
+  "bonus": 1,
+  "perk": null,
+  "requires": [],
+  "minLevel": 1,
+  "count": 10,
+  "pass": 8,
+  "icon": "leaf.fill",
+  "color": "#56A35E",
+  "zh": {
+    "name": "野外生存",
+    "full": "野外生存资格",
+    "desc": "生存的优先顺序、庇护所、生火、取水和净水、求救信号、野外食物的风险。",
+    "realWorld": "相当于户外协会的野外生存基础培训。"
+  },
+  "en": {
+    "name": "Wilderness Survival",
+    "full": "Wilderness Survival Certificate",
+    "desc": "Survival priorities, shelter, fire, finding and purifying water, distress signals, the risks of wild food.",
+    "realWorld": "Comparable to a basic wilderness survival course."
+  },
+  "questions": [
+    {
+      "id": "survival-01",
+      "answer": 0,
+      "hard": false,
+      "source": "Survival training: rule of threes",
+      "zh": {
+        "q": "“3”法则是判断求生优先顺序的粗略经验。下面哪种说法正确？",
+        "options": [
+          "没有空气约撑3分钟，恶劣天气里没有庇护约撑3小时，没有水约撑3天，没有食物约撑3周",
+          "没有空气约撑3分钟，恶劣天气里没有水约撑3小时，没有庇护约撑3天，没有食物约撑3周",
+          "恶劣天气里没有庇护约撑3分钟，没有空气约撑3小时，没有食物约撑3天，没有水约撑3周",
+          "没有空气约撑3分钟，恶劣天气里没有食物约撑3小时，没有水约撑3天，没有庇护约撑3周"
+        ],
+        "explain": "大致是：没有空气约撑3分钟，在寒冷、潮湿或大风的天气里没有庇护约撑3小时，没有水约撑3天，没有食物约撑3周。酷热、严寒和劳累都会缩短这些时间，但这个顺序告诉你先解决什么——食物排在最后。"
+      },
+      "en": {
+        "q": "The 'rule of threes' is a rough guide to survival priorities. Which version is right?",
+        "options": [
+          "About 3 minutes without air, 3 hours without shelter in harsh weather, 3 days without water, 3 weeks without food",
+          "About 3 minutes without air, 3 hours without water in harsh weather, 3 days without shelter, 3 weeks without food",
+          "About 3 minutes without shelter in harsh weather, 3 hours without air, 3 days without food, 3 weeks without water",
+          "About 3 minutes without air, 3 hours without food in harsh weather, 3 days without water, 3 weeks without shelter"
+        ],
+        "explain": "Roughly: 3 minutes without air, 3 hours without shelter in cold, wet or windy weather, 3 days without water, 3 weeks without food. Heat, cold and hard work can shorten these times, but the order tells you what to deal with first—and that food comes last."
+      }
+    },
+    {
+      "id": "survival-02",
+      "answer": 2,
+      "hard": true,
+      "source": "Survival training: rule of threes",
+      "zh": {
+        "q": "你乘坐的小飞机黄昏时迫降在山里。没人大出血，气温零下10 °C，风很大，还下着湿雪。你们有一升水，没有食物。首先该解决什么？",
+        "options": [
+          "饮水：一直化雪，直到每人都喝够两升水",
+          "食物：在残骸里和附近搜找一切能吃的东西",
+          "庇护：天黑前让大家避开风、离开雪地",
+          "求救：现在就往山下走，争取天黑前走到公路"
+        ],
+        "explain": "在又冷又湿的大风天，暴露在外几个小时就可能丧命，所以先解决庇护（包括和雪地隔开）；缺水要几天、缺食物要几周才会致命。摸黑下山不仅离开了搜救人员要找的飞机残骸，还容易摔伤和力竭。"
+      },
+      "en": {
+        "q": "Your small plane has crash-landed in the mountains at dusk. Nobody is bleeding badly; it's −10 °C with a strong wind and wet snow. You have one litre of water and no food. What do you deal with first?",
+        "options": [
+          "Water: melt snow until everyone has drunk two litres",
+          "Food: search the wreck and the area for anything edible",
+          "Shelter: get everyone out of the wind and off the snow before dark",
+          "Rescue: start walking downhill right now to reach a road before nightfall"
+        ],
+        "explain": "In cold, wet, windy weather, exposure can kill within hours, so shelter—including insulation from the snow—comes first; lack of water takes days to kill and lack of food weeks. Walking off in the dark leaves the wreck that searchers will look for and risks falls and exhaustion."
+      }
+    },
+    {
+      "id": "survival-03",
+      "answer": 1,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "你在开阔的草地上断了水，好在黎明时草叶上全是露水。怎样收集最有效？",
+        "options": [
+          "等到上午太阳晒暖了，露水聚成大颗再收集",
+          "趁日出前用吸水的布擦过草叶，再拧出水",
+          "黎明时在草地上挖个坑，让露水顺着草叶流进去",
+          "割下草来挤茎秆，水其实在茎里"
+        ],
+        "explain": "露水夜里凝结，日出后很快就会蒸发，所以要趁早。用干净的布（或把布条绑在脚踝上在草里走）蹭过湿漉漉的草，再拧进容器里——美军求生手册提到，熟练的人用这种方法每小时最多能收集约1升水。避开已知有毒的植物，有条件的话再消毒。"
+      },
+      "en": {
+        "q": "You're out of water in open grassland, but at dawn the grass is soaked with dew. What's the most effective way to collect it?",
+        "options": [
+          "Wait until mid-morning, when the warming sun has gathered the dew into big drops",
+          "Before sunrise, mop the grass with absorbent cloth and wring it out",
+          "Dig a pit in the meadow at dawn so that the dew drains into it",
+          "Cut the grass and squeeze the stems, where the water really is"
+        ],
+        "explain": "Dew forms overnight and burns off soon after sunrise, so be early. Drag or wipe a clean cloth (or rags tied round your ankles as you walk) through the wet grass and wring it into a container—the US Army manual notes that skilled foragers can gather up to about a litre an hour this way. Avoid plants you know are toxic, and treat the water if you can."
+      }
+    },
+    {
+      "id": "survival-04",
+      "answer": 3,
+      "hard": false,
+      "source": "FAA AIM 6-2-6; SAR survival guidance",
+      "zh": {
+        "q": "飞机迫降在偏远山谷，机身基本完好，起飞前报备了飞行计划，应急定位发射机（ELT）也在工作，没人受重伤。通常最好的做法是什么？",
+        "options": [
+          "分头朝不同方向走，好更快找到救援",
+          "马上一起出发，顺着山谷往下游走，去找最近的村子",
+          "转移到附近最高的山脊上，看得更远",
+          "留在飞机旁，让它更显眼，准备好求救信号"
+        ],
+        "explain": "搜救会从飞行计划和 ELT 信号入手，从空中看，飞机残骸比徒步的人好找得多。大家待在一起，利用飞机遮风挡雨，并想办法让它更醒目。只有在没人会来找的情况下，才考虑自己走出去。"
+      },
+      "en": {
+        "q": "After a forced landing in a remote valley, the aircraft is largely intact, a flight plan was filed and the emergency locator transmitter is working. Nobody is seriously hurt. What's usually the best plan?",
+        "options": [
+          "Split up and walk in different directions to find help faster",
+          "Leave together at once and follow the valley downstream to the nearest village",
+          "Move to the highest ridge nearby to get a better view",
+          "Stay with the aircraft, make it more visible and prepare signals"
+        ],
+        "explain": "Searchers start from the flight plan and the ELT signal, and a wreck is far easier to spot from the air than people on foot. Stay together, use the aircraft for shelter and make it stand out. Walking out is for when nobody will come looking."
+      }
+    },
+    {
+      "id": "survival-05",
+      "answer": 2,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "在丘陵林区找地方搭过夜的庇护所，哪里最好？",
+        "options": [
+          "狭窄的谷底紧挨着小溪的平地，取水最方便",
+          "一棵大枯树下面，伸展开的枝杈正好能挡雨",
+          "背风坡上稍高一点的平地，周围没有枯树",
+          "空旷的山脊顶上，救援人员容易看到"
+        ],
+        "explain": "谷底夜里会积聚冷空气，还可能涨水；枯树和枯枝会毫无征兆地砸下来；裸露的山脊风大，还容易遭雷击。要选稍高、平整、背风的地方，离水源和材料近，但不要紧挨着。"
+      },
+      "en": {
+        "q": "You need a spot for an overnight shelter in hilly forest. Which site is best?",
+        "options": [
+          "The floor of a narrow valley right beside the stream, handy for water",
+          "Under a big dead tree whose spreading branches will keep off the rain",
+          "Raised, level ground on a sheltered slope, clear of dead trees",
+          "The open ridge top, where rescuers can see you easily"
+        ],
+        "explain": "Valley floors collect cold air at night and can flood; dead trees and branches fall without warning; exposed ridges catch wind and lightning. Pick raised, level, sheltered ground near water and materials, but not right on top of them."
+      }
+    },
+    {
+      "id": "survival-06",
+      "answer": 0,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "你要在落叶棚里度过一个寒冷的夜晚，手头的干树叶和松枝不多。该怎么用？",
+        "options": [
+          "先在身下铺厚厚一层，冰冷的地面散热最快",
+          "大部分堆在棚顶，人的热气往上走，棚顶最重要",
+          "全塞在四周墙上，挡住漏风",
+          "地面空着，因为地面比夜里的空气暖和"
+        ],
+        "explain": "躺在冷地上，热量通过传导流失，比在静止的空气里快得多；身体还会把身下的铺垫压实，所以身下要铺得很厚（剩下的再盖在身上）。野外过夜的铁律：不要直接睡在地上。"
+      },
+      "en": {
+        "q": "You'll spend a cold night in a debris shelter and have only a limited pile of dry leaves and pine boughs. How should you use them?",
+        "options": [
+          "Put a thick layer under you first—the cold ground steals heat fastest",
+          "Pile most of it on the roof—your body heat rises, so the roof matters most",
+          "Pack it all around the walls to block the draughts",
+          "Leave the floor bare—the ground stays warmer than the night air"
+        ],
+        "explain": "Lying on cold ground drains heat by conduction far faster than still air does, and your weight flattens whatever is under you, so you need a thick layer beneath you (then cover yourself with what's left). Never sleep directly on the ground."
+      }
+    },
+    {
+      "id": "survival-07",
+      "answer": 3,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "已经下了两天雨，最有可能在哪里找到能生火的干柴？",
+        "options": [
+          "林地上埋在落叶下的倒木",
+          "从活树上砍下的青枝",
+          "附近最粗的木头，粗柴比细枝更容易点着、更耐烧",
+          "还长在树上的枯枝，劈开取里面干燥的部分"
+        ],
+        "explain": "不接触地面的枯木——站着的枯树、树干下部的枯枝——干得快，劈开后里面通常是干的。地上的木头会吸水，青枝含有大量水分和树液，而且生火总要先有引火物和细柴，粗柴最后才加。"
+      },
+      "en": {
+        "q": "It has rained for two days. Where are you most likely to find dry fuel for a fire?",
+        "options": [
+          "Fallen logs lying on the forest floor under the leaves",
+          "Green branches cut from a living tree",
+          "The thickest logs around—big wood catches far more easily than thin twigs",
+          "Dead branches still on standing trees, split open to the dry core"
+        ],
+        "explain": "Dead wood that isn't touching the ground—standing dead trees and dead lower branches—dries quickly, and its core is usually dry once split. Wood on the ground soaks up water, green wood is full of sap, and every fire needs tinder and thin kindling before large fuel."
+      }
+    },
+    {
+      "id": "survival-08",
+      "answer": 1,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "天快黑了，你只剩最后一根火柴。划火柴之前要准备好什么？",
+        "options": [
+          "只要一根大木头就够了，大柴烧得最久",
+          "干燥的引火物和由细到粗的柴火，都备在手边",
+          "只要引火物，点着以后再去捡引柴",
+          "多备潮湿的木柴，火烧得慢，能一直烧到天亮"
+        ],
+        "explain": "火柴只能烧几秒，引火物也就烧一分钟左右。如果下一级的柴不在手边，找柴的工夫火就灭了。先把引火物、铅笔粗的细柴、拇指粗的树枝和更粗的燃料按顺序备好，挡住风，再划火柴。"
+      },
+      "en": {
+        "q": "It's getting dark and you're down to your last match. What should you have ready before you strike it?",
+        "options": [
+          "Just one big log—large wood burns the longest",
+          "Dry tinder, kindling and graded fuel, all within reach",
+          "Only tinder; you can gather kindling once it's alight",
+          "Damp wood, so the fire burns slowly and keeps going through the whole night"
+        ],
+        "explain": "A match burns for seconds and tinder for a minute or so. If the next sizes aren't already stacked within reach, the fire dies while you search. Lay out tinder, pencil-thin kindling, thumb-thick sticks and larger fuel, shield the spot from the wind, then strike."
+      }
+    },
+    {
+      "id": "survival-09",
+      "answer": 1,
+      "hard": false,
+      "source": "USFS: Drown, Stir, Feel",
+      "zh": {
+        "q": "在干燥的林子里拔营离开，怎样确认篝火真的灭了？",
+        "options": [
+          "用一层土把火堆埋上，只要不冒烟就说明灭了",
+          "浇透水、搅拌灰烬、用手背试温，直到凉透",
+          "让它自己烧完，看不到火苗就行",
+          "把燃烧的木柴踢散，让它们凉得快些"
+        ],
+        "explain": "埋在土里的余烬能闷烧好几个小时，还会顺着树根蔓延；看不到火苗不等于没有热量。浇水、搅拌，再用手背试温度：烫得不能碰，就不能离开。"
+      },
+      "en": {
+        "q": "You're breaking camp in a dry forest. How do you make sure your campfire is really out?",
+        "options": [
+          "Bury it under a layer of soil; if no smoke escapes, it's out",
+          "Drown it, stir the ashes, feel for heat; repeat until cold",
+          "Let it burn itself down until no flames are left at all",
+          "Kick the burning logs apart so they cool down faster"
+        ],
+        "explain": "Buried embers can smoulder for hours and creep along roots, and 'no flames' doesn't mean no heat. Drown, stir and feel with the back of your hand: if it's too hot to touch, it's too hot to leave."
+      }
+    },
+    {
+      "id": "survival-10",
+      "answer": 3,
+      "hard": false,
+      "source": "CDC: carbon monoxide poisoning",
+      "zh": {
+        "q": "大雪封山，你们困在山上的小屋里。有人端进来一盆烧红的木炭，还把门窗关严保暖，说：“没烟，没事。”危险在哪里？",
+        "options": [
+          "没有危险，没有明火和烟，空气里就不会有有害物质",
+          "只有火灾风险，一氧化碳只来自汽车发动机和发电机，不会来自木炭",
+          "主要是空气干燥，在炭盆上放一锅水就行",
+          "闷烧的木炭会产生无色无味的一氧化碳"
+        ],
+        "explain": "烧红的木炭几乎不冒烟，却会产生大量一氧化碳，看不见也闻不到。头痛、头晕、恶心、犯困都是危险信号，很多人就这样睡过去再也没醒来。门窗紧闭的房间和帐篷里，绝不能烧炭或用明火取暖。"
+      },
+      "en": {
+        "q": "Snowed in at a mountain hut, someone brings in a basin of glowing charcoal and shuts the door and window to keep the warmth in: 'It's fine, there's no smoke.' What's the danger?",
+        "options": [
+          "None—without flames or smoke, nothing harmful gets into the air",
+          "Only fire; carbon monoxide comes from car engines and generators, not charcoal",
+          "Mainly dry air, easily fixed with a pot of water on the coals",
+          "Smouldering charcoal gives off colourless, odourless carbon monoxide"
+        ],
+        "explain": "Glowing charcoal makes little smoke but plenty of carbon monoxide, which you can't see or smell. Headache, dizziness, nausea and drowsiness are warning signs, and many victims simply fall asleep and never wake. Never burn charcoal or open fires in a closed room or tent."
+      }
+    },
+    {
+      "id": "survival-11",
+      "answer": 0,
+      "hard": true,
+      "source": "CDC: CO poisoning & pulse oximetry",
+      "zh": {
+        "q": "帐篷封闭着，炉子开着，两个人开始头痛、恶心。指夹式血氧仪显示 98%。该怎么判断？",
+        "options": [
+          "说明不了什么：血氧仪测不出一氧化碳，快出帐篷透气",
+          "98%就已经排除了一氧化碳中毒，所以多半是高原反应",
+          "他们需要更暖和，关上通风口，把炉火开大",
+          "血氧正常说明没事，让他们睡一觉就好"
+        ],
+        "explain": "普通血氧仪分不清和一氧化碳结合的血红蛋白与和氧结合的血红蛋白，一氧化碳中毒时读数可能完全正常。立即关掉炉子、通风，让所有人到空气新鲜的地方，出现意识模糊或嗜睡的要尽快送医。"
+      },
+      "en": {
+        "q": "In a closed tent with a stove burning, two people develop headaches and nausea. A fingertip pulse oximeter reads 98 %. What should you conclude?",
+        "options": [
+          "It proves nothing—oximeters can't detect CO; get them into fresh air",
+          "98 % rules out carbon monoxide poisoning, so it's probably altitude sickness",
+          "They need more heat—close the vents and turn the stove up",
+          "Their oxygen level is fine, so let them sleep it off"
+        ],
+        "explain": "Ordinary pulse oximeters can't tell haemoglobin carrying carbon monoxide from haemoglobin carrying oxygen, so the reading can look normal in CO poisoning. Turn off the stove, ventilate, get everyone into fresh air, and evacuate anyone who is confused or drowsy."
+      }
+    },
+    {
+      "id": "survival-12",
+      "answer": 2,
+      "hard": false,
+      "source": "WHO Drinking-water",
+      "zh": {
+        "q": "你煮了一锅从废弃矿场旁流过的溪水。烧开翻滚之后，哪种说法正确？",
+        "options": [
+          "可以放心喝，烧开翻滚能把化学物质和病菌一起去掉",
+          "撇掉水面上的浮沫后就可以放心喝",
+          "病菌被杀死了，但重金属等化学物质还在",
+          "只要没有怪味，就可以放心喝"
+        ],
+        "explain": "烧开翻滚能杀灭细菌、病毒和寄生虫，但去不掉重金属、盐分和大多数化学物质，水分蒸发后它们的浓度反而略有升高。要在矿场、油污和农田的上游取水。"
+      },
+      "en": {
+        "q": "You boil water from a stream that runs past an abandoned mine. After a rolling boil, what's true?",
+        "options": [
+          "It's safe—a full rolling boil removes chemicals as well as germs",
+          "It's safe once you skim off the scum that forms on top",
+          "Germs die, but heavy metals and other chemicals remain",
+          "It's safe as long as it no longer smells or tastes odd"
+        ],
+        "explain": "A rolling boil kills bacteria, viruses and parasites, but it can't remove heavy metals, salt or most chemicals—as water boils away they even become slightly more concentrated. Collect water upstream of mines, fuel spills and farmland."
+      }
+    },
+    {
+      "id": "survival-13",
+      "answer": 3,
+      "hard": true,
+      "source": "WHO Drinking-water; CDC",
+      "zh": {
+        "q": "溪水要煮多久才能杀灭里面的病菌？",
+        "options": [
+          "至少20分钟，高海拔地区要30分钟",
+          "冒热气就行，根本不用烧开翻滚",
+          "烧开翻滚以后，至少还要再煮10分钟才保险",
+          "烧开即可，再滚1分钟（2000米以上3分钟）"
+        ],
+        "explain": "世卫组织指出，把水烧开到剧烈翻滚，就足以杀灭细菌、病毒和原虫；美国疾控中心为保险起见，建议沸腾后保持1分钟，海拔约2000米以上保持3分钟。煮10到20分钟只是白白浪费燃料和水。"
+      },
+      "en": {
+        "q": "How long must stream water boil to kill the germs in it?",
+        "options": [
+          "At least 20 minutes, or 30 minutes at high altitude",
+          "Only until it steams; it never needs to fully boil",
+          "At least 10 minutes after it reaches a rolling boil, to be really sure",
+          "Just to a rolling boil, plus 1 min (3 min above 2,000 m)"
+        ],
+        "explain": "Bringing water to a rolling boil kills bacteria, viruses and protozoa (WHO); the US CDC adds a margin of 1 minute at the boil, or 3 minutes above about 2,000 m. Boiling for 10–20 minutes only wastes fuel and water."
+      }
+    },
+    {
+      "id": "survival-14",
+      "answer": 1,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "你要在干燥的林地里生篝火。应该在哪里、怎么搭？",
+        "options": [
+          "紧挨着一棵大树的树根，粗大的树干能替火挡风",
+          "刮出直径1米以上的裸土，远离树枝树根",
+          "铺在厚厚一层干松针上，一点就着",
+          "搭在低垂的树枝下面，下雨也浇不灭"
+        ],
+        "explain": "清掉落叶，刮出一块直径至少1米的裸土地面，选干燥、背风、头顶没有树枝的地方，远离树根和泥炭质的土壤——火会在地下闷烧，过一阵又从别处冒出来。火堆别离庇护所太近，也不要用河里的湿石头围火塘，受热可能炸裂。"
+      },
+      "en": {
+        "q": "You're about to light a campfire in dry woodland. Where and how should you build it?",
+        "options": [
+          "Right at the foot of a big tree, where the trunk shelters the flames from the wind",
+          "On bare soil in a cleared circle 1 m+ across, away from branches and roots",
+          "On a thick bed of dry pine needles, which will catch easily",
+          "Under a low, overhanging branch, so that rain can't put it out"
+        ],
+        "explain": "Clear the leaves and scrape down to bare soil in a circle at least 1 m across, on a dry, sheltered spot away from overhanging branches, tree roots and peaty ground—fire can smoulder underground and pop up again later. Don't build it too close to your shelter, and don't ring it with wet river stones, which can burst when heated."
+      }
+    },
+    {
+      "id": "survival-15",
+      "answer": 2,
+      "hard": true,
+      "source": "CDC backcountry water treatment",
+      "zh": {
+        "q": "孔径 0.1～0.2 微米的普通户外滤水器，挡不住哪类病原体？",
+        "options": [
+          "贾第鞭毛虫，一种常见的致腹泻寄生虫",
+          "隐孢子虫，一种很耐氯消毒的寄生虫",
+          "病毒，如甲肝病毒、诺如病毒",
+          "细菌，比如大肠杆菌和沙门氏菌"
+        ],
+        "explain": "微滤器能滤掉贾第鞭毛虫、隐孢子虫这类原虫和细菌，但病毒小得多，会穿过去。水源可能被人类粪便污染时（村庄下游、洪水），过滤后还要用氯消毒或煮沸。"
+      },
+      "en": {
+        "q": "Which germs can get through a standard 0.1–0.2-micron hiking water filter?",
+        "options": [
+          "Giardia, a common diarrhoea-causing parasite",
+          "Cryptosporidium, a chlorine-resistant parasite",
+          "Viruses, e.g. hepatitis A and norovirus",
+          "Bacteria, such as E. coli and Salmonella"
+        ],
+        "explain": "Microfilters remove protozoa such as Giardia and Cryptosporidium, and bacteria, but viruses are far smaller and get through. Where human sewage may be in the water—downstream of villages, or in floodwater—disinfect with chlorine or boil after filtering."
+      }
+    },
+    {
+      "id": "survival-16",
+      "answer": 0,
+      "hard": true,
+      "source": "CDC; WMS Water Disinfection 2019",
+      "zh": {
+        "q": "你手头只有含氯消毒片，水又冷又浑。哪种做法正确？",
+        "options": [
+          "先沉淀或过滤再投药，并延长等待时间",
+          "等一分钟就能喝，氯片立刻起效",
+          "用力摇瓶子，就不用再等了",
+          "照常投药，氯能杀死一切，包括隐孢子虫"
+        ],
+        "explain": "浑水里的颗粒会保护病菌、消耗掉氯，低温又会减慢消毒，所以要先把水弄清，再延长接触时间。即使这样，氯也杀不死隐孢子虫，要靠煮沸或精细过滤。"
+      },
+      "en": {
+        "q": "All you have is chlorine tablets, and the water is cold and cloudy. Which approach is right?",
+        "options": [
+          "Settle or strain it first, then wait longer than the minimum time",
+          "Drink it after a minute—chlorine works instantly",
+          "Shake the bottle hard instead of waiting",
+          "Dose it as normal; chlorine kills everything, even Cryptosporidium"
+        ],
+        "explain": "Particles in cloudy water shield germs and use up chlorine, and cold slows disinfection, so clear the water first and give it a longer contact time. Even then chlorine won't reliably kill Cryptosporidium—boiling or a fine filter will."
+      }
+    },
+    {
+      "id": "survival-17",
+      "answer": 0,
+      "hard": true,
+      "source": "WMS Water Disinfection 2019; NOLS",
+      "zh": {
+        "q": "你没有任何净水手段——没火、没滤水器、没消毒片。你已经因为脱水而头晕，至少还要两天才能获救。附近有一条清澈湍急的小溪。怎么办？",
+        "options": [
+          "喝溪水，选最干净、上游无动物活动的地方",
+          "无论如何都不喝未经处理的水，一直坚持到救援到来",
+          "改喝自己的尿，尿是无菌的",
+          "改喝静止池塘里的水，脏东西都沉底了"
+        ],
+        "explain": "脱水几天内就能致命，而大多数经水传播的感染要过几天才发病，获救后还能治疗。真的没有任何办法处理时，就挑最好的水源喝：流动、清澈、远离动物和人。喝尿只会把废物和盐分再送回体内。"
+      },
+      "en": {
+        "q": "You have no way to treat water—no fire, filter or tablets. You're dizzy from dehydration and rescue is at least two days away. A clear, fast-flowing stream is nearby. What should you do?",
+        "options": [
+          "Drink from the stream, at its cleanest spot, upstream of any animals",
+          "Drink nothing untreated, whatever happens, and wait it out until rescue comes",
+          "Drink your own urine instead—it's sterile",
+          "Drink from a still pond instead, where the dirt has settled"
+        ],
+        "explain": "Dehydration can kill within days, while most waterborne infections take days to appear and can be treated after rescue. When there's truly no way to treat water, drink from the best source available—flowing, clear and away from animals and people. Urine just returns waste and salt to your body."
+      }
+    },
+    {
+      "id": "survival-18",
+      "answer": 2,
+      "hard": false,
+      "source": "WHO / CDC: SODIS",
+      "zh": {
+        "q": "在阳光充足的热带小岛上，你有一些透明塑料饮料瓶，但没有燃料和消毒片。怎样给清水消毒？",
+        "options": [
+          "灌满水，放在阴凉处整整24小时，让病菌慢慢沉下去",
+          "在太阳下晒30分钟就行，阳光几乎立刻起效",
+          "灌满水，放在烈日下晒至少6小时（多云要晒两天）",
+          "每瓶加一点海水，用力摇匀"
+        ],
+        "explain": "这叫太阳能消毒（SODIS）：用不超过约2升的透明塑料（PET）瓶装满清水，平放在烈日下晒至少6小时，天空大半被云遮住时要晒两天。紫外线和热量能杀死大多数病菌；浑水要先弄清再晒。"
+      },
+      "en": {
+        "q": "On a sunny tropical island you have clear plastic drink bottles but no fuel or tablets. How can you disinfect clear water?",
+        "options": [
+          "Fill them and keep them in deep shade for a full 24 hours so the germs settle",
+          "Leave them in the sun for 30 minutes—sunlight works almost instantly",
+          "Lay the filled bottles in full sun for at least 6 hours (2 days if cloudy)",
+          "Add a splash of seawater to each bottle and shake well"
+        ],
+        "explain": "This is solar disinfection (SODIS): clear PET bottles of up to about 2 litres, filled with clear water and laid in full sun for at least 6 hours—two days if the sky is mostly cloudy. UV and heat kill most germs; cloudy water must be cleared first."
+      }
+    },
+    {
+      "id": "survival-19",
+      "answer": 3,
+      "hard": true,
+      "source": "FM 3-05.70; China CDC",
+      "zh": {
+        "q": "关于野生蘑菇，哪种说法正确？",
+        "options": [
+          "颜色鲜艳的有毒，白色、褐色这类颜色朴素的都可以放心吃",
+          "和大蒜或银器一起煮不变黑，就说明无毒",
+          "被虫子或动物啃过的，人吃了也安全",
+          "有的剧毒蘑菇外表朴素、味道正常，6～24小时才发作"
+        ],
+        "explain": "没有任何简单的鉴别方法。致命鹅膏、灰花纹鹅膏等剧毒鹅膏菌往往是白色或灰褐色，据说味道不错，吃后6～24小时才出现症状，那时肝脏已经在受损，而且毒素加热也破坏不了。“通用可食性测试”对蘑菇无效——求生时干脆不要吃野生蘑菇。"
+      },
+      "en": {
+        "q": "Which statement about wild mushrooms is true?",
+        "options": [
+          "Brightly coloured ones are poisonous; plain white or brown ones are safe",
+          "If garlic or silver cooked with them doesn't turn black, they're safe",
+          "Ones that insects or animals have nibbled are safe for people",
+          "Some deadly ones look plain, taste fine and cause no symptoms for 6–24 hours"
+        ],
+        "explain": "There's no simple test. Deadly Amanitas (death caps, destroying angels) are often white or drab, reportedly taste pleasant and cause no symptoms for 6–24 hours, by which time the liver is already being destroyed—and cooking doesn't break the toxin down. The universal edibility test doesn't work on mushrooms: in a survival situation, don't eat wild mushrooms at all."
+      }
+    },
+    {
+      "id": "survival-20",
+      "answer": 1,
+      "hard": true,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "预计几天内就能获救。你们有水，没有食物。一个同伴看到鸟在吃一种不认识的浆果，也想吃。你怎么劝？",
+        "options": [
+          "吃吧，鸟都能放心吃的浆果，人吃了肯定也一样安全",
+          "别吃：几周不吃饭也死不了，中毒却会让人失水",
+          "吃几颗没关系，有毒的浆果一定是苦的",
+          "先煮一煮再吃，加热能破坏植物毒素"
+        ],
+        "explain": "鸟能放心吃的浆果，人吃了可能中毒；很多毒素并不苦，加热也破坏不了所有毒素。获救只需几天，挨饿难受但不致命，呕吐腹泻却会耗掉宝贵的水分和体力。即使做“通用可食性测试”，测试植物的一个部位也要24小时以上。"
+      },
+      "en": {
+        "q": "Rescue is expected within a few days. You have water but no food. A teammate wants to eat some unfamiliar berries because birds are eating them. Best advice?",
+        "options": [
+          "Eat them—anything that birds can eat safely is safe for people as well",
+          "Leave them—you'll last weeks without food; poisoning costs water",
+          "Eat just a few; poisonous berries always taste bitter",
+          "Boil them first, since heat destroys any plant poisons"
+        ],
+        "explain": "Birds safely eat berries that poison people, many toxins aren't bitter, and cooking doesn't destroy them all. With rescue days away, hunger is unpleasant but not dangerous, while vomiting and diarrhoea would drain water and strength. Even the 'universal edibility test' takes more than 24 hours per plant part."
+      }
+    },
+    {
+      "id": "survival-21",
+      "answer": 2,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "信号火堆怎么摆，才是公认的求救信号？",
+        "options": [
+          "只烧一堆火，烧得越大越显眼",
+          "两堆火，并排放置，相距几米",
+          "三堆火，呈三角形或直线，相距约25米",
+          "四堆火，在营地四周围成正方形"
+        ],
+        "explain": "“三”是广泛认可的求救信号：三堆火、三股烟、三次闪光、三声枪响，因为自然界很少偶然出现三个一组的东西。如果没法同时维持三堆火，至少备好一堆随时能点燃的。"
+      },
+      "en": {
+        "q": "Which arrangement of signal fires is recognised as a distress signal?",
+        "options": [
+          "One fire, as big as you can make it",
+          "Two fires side by side, a few metres apart",
+          "Three fires in a triangle or a line, about 25 m apart",
+          "Four fires in a square around your camp"
+        ],
+        "explain": "Three of anything—fires, columns of smoke, flashes, shots—is a widely recognised call for help, because things in threes rarely happen by chance. If you can't keep three fires going, keep at least one ready to light at a moment's notice."
+      }
+    },
+    {
+      "id": "survival-22",
+      "answer": 0,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "你困在林间空地上，信号火堆已经搭好。怎样让飞机最容易看到？",
+        "options": [
+          "夜里靠火光，白天压上青叶冒浓白烟",
+          "白天靠明亮的火焰，夜里靠一柱浓烟最显眼",
+          "白天只烧干柴，让烟又淡又少",
+          "等飞机从头顶飞过去以后再点火"
+        ],
+        "explain": "夜里飞机看到的是火光，白天看到的是烟。背景是深色树林时，往火上压青叶、苔藓或洒点水，冒白烟（雪地或沙地背景则加橡胶、机油，冒黑烟）。火堆要随时能点，一听到发动机声就点燃。"
+      },
+      "en": {
+        "q": "You're stranded in a forest clearing with a signal fire laid. How will it be most visible to aircraft?",
+        "options": [
+          "Flames at night; by day, pile on green leaves for thick white smoke",
+          "Bright flames by day; at night, a thick column of smoke shows up best",
+          "By day, burn only dry wood so the smoke stays thin and pale",
+          "Wait to light it until the aircraft has passed overhead"
+        ],
+        "explain": "At night aircraft see the light of a fire; by day they see smoke. Against dark forest, smother the fire with green leaves, moss or a little water for white smoke (against snow or sand, rubber or oil gives black smoke). Keep it ready to light the moment you hear an engine."
+      }
+    },
+    {
+      "id": "survival-23",
+      "answer": 1,
+      "hard": false,
+      "source": "FM 3-05.70",
+      "zh": {
+        "q": "你在等待救援，没有食物，水也不多。哪种安排最节省体力？",
+        "options": [
+          "不停活动、锻炼，保持体力和体温",
+          "多休息，必要的活趁凉快慢慢做",
+          "每天都走得远远的去找食物",
+          "日夜不睡，一直盯着有没有救援"
+        ],
+        "explain": "每一份不必要的消耗都在浪费能量和水分，汗湿的衣服之后还会让你受冻。多休息，在一天中最凉快的时候慢慢、稳稳地做要紧的事——庇护所、水、信号——并轮流睡觉和值守。"
+      },
+      "en": {
+        "q": "You're waiting for rescue with no food and not much water. Which plan conserves your energy best?",
+        "options": [
+          "Keep moving and exercising so you stay strong, fit and warm",
+          "Rest; do only essential jobs, slowly, in the cool hours",
+          "Spend every day searching far and wide for food",
+          "Stay awake round the clock watching for rescuers"
+        ],
+        "explain": "Every unnecessary effort burns energy and water, and sweat-soaked clothes chill you later. Rest, and work slowly and steadily on essentials—shelter, water, signals—at the coolest times; take turns sleeping and keeping watch."
+      }
+    },
+    {
+      "id": "survival-24",
+      "answer": 3,
+      "hard": false,
+      "source": "SAR guidance: leave a trip plan",
+      "zh": {
+        "q": "独自去偏远山区徒步两天，出发前做哪一件事，对出事后获救帮助最大？",
+        "options": [
+          "多带一些食物，够吃整整一周",
+          "带一把大号求生直刀和打火棒",
+          "专挑人少、不走正路的线路，避开人群",
+          "出发前把路线和返回时间告诉一个靠得住的人"
+        ],
+        "explain": "只有有人知道你失联了、大概在哪里，搜救才能开始。把行程计划（路线、返回时间、超过多久没消息就报警）留给一个靠得住的人，是成本最低的保命措施。出发后也要按计划走。"
+      },
+      "en": {
+        "q": "Before a two-day solo hike in remote hills, which single step does most to get you rescued if things go wrong?",
+        "options": [
+          "Packing enough extra food to last a whole week",
+          "Carrying a large fixed-blade knife and a fire steel",
+          "Choosing a quiet off-trail route to avoid the crowds",
+          "Leaving your route and return time with someone reliable"
+        ],
+        "explain": "A search can only begin once someone knows you're missing and roughly where. A trip plan left with a reliable person—route, return time, when to call for help—is the cheapest life-saver there is. Then stick to the plan."
+      }
+    },
+    {
+      "id": "survival-x01",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "FM 3-05.70 (water sources: dig behind the first dunes); USGS atoll freshwater-lens hydrology (Ghyben–Herzberg)",
+      "zh": {
+        "q": "漂到南海一座小珊瑚岛的第6天，雨水坑全干了。小岛是一片直径约400米的低矮沙洲，海滩后面有一道沙丘，岛中间长着灌木。你们有一口锅、一把短铲，也能生火。该在哪里、怎样挖水？",
+        "options": [
+          "退潮时在水边挖，一直挖到海水渗进坑里——海水渗过厚厚的沙层时，大部分盐分会被沙子滤掉",
+          "到第一道沙丘后面的岛内挖，见水就停，等水慢慢积起来再从表层舀——淡水浮在海水上面",
+          "在靠近海滩的最低处挖，能挖多深就挖多深——挖到的水层越深，水就越淡、越干净",
+          "在潟湖边潮湿的盐沼洼地里挖，那里地面最湿，地下水离地表最近，最省力气"
+        ],
+        "explain": "雨水渗进沙质或珊瑚岛后，会形成一层薄薄的淡水透镜体，浮在密度更大的海水上，在岛中部最厚——所以要在第一道沙丘后面挖（美军生存手册的做法），见水就停，轻轻从表层舀。挖得太深或舀得太猛，会把下面的咸水抽上来；水边的沙子也滤不掉盐。先尝一尝，喝之前还要煮沸或消毒。"
+      },
+      "en": {
+        "q": "Day 6 on a small coral island in the South China Sea, and the rain pools have dried up. The island is a low sand cay about 400 m across, with a ridge of dunes behind the beach and scrub in the middle. You have a pot, a short shovel and a fire. Where and how should you dig for water?",
+        "options": [
+          "At the water's edge at low tide, digging until seawater seeps in—the sand filters out most of the salt as the seawater percolates through it",
+          "Inland behind the first dunes, only down to where water seeps in; let it fill slowly and skim from the top—fresh water floats on seawater",
+          "At the lowest point near the beach, digging as deep as you can—the deeper the water you reach, the fresher and cleaner it will be",
+          "In the damp salt-marsh hollow beside the lagoon, where the ground is wettest and the water table lies closest to the surface"
+        ],
+        "explain": "Rain that soaks into a sand or coral island forms a thin lens of fresh water floating on the denser seawater beneath, thickest under the island's interior—so dig behind the first dunes (the US Army manual's advice), stop where water seeps in and skim gently. Digging deep or bailing hard draws salt water up into the hole, and sand at the waterline doesn't filter out salt. Taste it, and boil or disinfect it before drinking."
+      }
+    },
+    {
+      "id": "survival-x02",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Water Disinfection 2019; CDC Yellow Book: water disinfection (iodine)",
+      "zh": {
+        "q": "在珊瑚岛上待了三周，你们一直喝雨水坑里的水。手头有大量碘片、少量氯片、几个透明塑料瓶、一口锅和柴火。有一位幸存者怀孕五个月，另一位在吃治疗甲状腺疾病的药。他们的饮用水该怎么处理？",
+        "options": [
+          "所有人都用碘片——碘片的效果最好，而且碘本身就是人体必需的营养素，孕妇用起来最安全",
+          "给孕妇和甲状腺病人的水把碘片加倍，确保他们喝的水万无一失，其他人照常用量",
+          "所有人都用碘片，只要每瓶先放点维生素C粉再投碘片，就既没有怪味也没有副作用",
+          "给他们喝煮沸、日晒消毒或加氯的水；孕妇、甲状腺病人不宜用碘，谁也不宜连用几周以上"
+        ],
+        "explain": "碘消毒的水会干扰甲状腺：WMS和美国CDC都建议孕妇、甲状腺病人和对碘过敏者不要喝，任何人也不宜连续喝几周以上——所以现在就改用煮沸、日晒消毒（SODIS）或氯消毒。维生素C只能去掉碘的颜色和味道，接触时间没到就加，等于让消毒直接失效。另外，碘和氯都不能可靠地杀灭隐孢子虫，煮沸才行。"
+      },
+      "en": {
+        "q": "Three weeks on the coral island, you're drinking from a rain pool. You have plenty of iodine tablets, only a few chlorine tablets, clear plastic bottles, a pot and firewood. One survivor is five months pregnant and another takes medication for thyroid disease. How should you treat their water?",
+        "options": [
+          "Iodine for everyone—it's the most effective tablet you have, and because iodine is an essential nutrient it's the safest choice in pregnancy",
+          "Double the iodine dose for the pregnant woman and the man with thyroid disease, so their water is doubly safe; normal doses for the rest",
+          "Iodine for everyone, as long as you put vitamin C powder in each bottle before the tablet, so there's no taste and no side effects",
+          "Give them boiled, sun-treated or chlorinated water; iodine isn't advised in pregnancy or thyroid disease, or for anyone beyond a few weeks"
+        ],
+        "explain": "Iodinated water can upset the thyroid: the WMS and CDC advise against it for pregnant women, people with thyroid disease or iodine allergy, and for anyone for more than a few weeks—so switch the group to boiling, SODIS or chlorine now. Vitamin C only removes iodine's taste and colour, and adding it before the contact time is up stops disinfection altogether. Neither iodine nor chlorine reliably kills Cryptosporidium; boiling does."
+      }
+    },
+    {
+      "id": "survival-x03",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "CDC: How to find clean water in an emergency",
+      "zh": {
+        "q": "海啸过后，你躲进高处一套完好无损的住宅。自来水停了，家里没有储水。下面哪一项是最好的饮用水来源？",
+        "options": [
+          "家里储水式电热水器的内胆，先断电，再从底部的排水阀把水放出来",
+          "暖气片和暖气管道里的水——放出来先烧开，就跟自来水一样好喝",
+          "楼下小区的游泳池——煮上几分钟，既能杀菌，又能把泳池的化学药剂去掉",
+          "放着蓝色洁厕块的马桶水箱——里面本来就是自来水，烧开以后就安全了"
+        ],
+        "explain": "储水式热水器的内胆里存着几十升和水龙头里一样的自来水（美国CDC），没放过清洁剂的马桶水箱水也可以用。暖气系统里的水含有铁锈和防腐蚀化学剂，泳池水只能用来洗漱，而煮沸只能杀菌，去不掉化学物质，水烧干一些反而让它们更浓。"
+      },
+      "en": {
+        "q": "After the tsunami you shelter in an undamaged flat on high ground. The mains water has been cut off and nothing was stored. Which of these is the best source of drinking water?",
+        "options": [
+          "The tank of the flat's storage water heater, drained from the valve at the bottom after switching off its power",
+          "The water in the central-heating radiators and pipes—drain it off and boil it, and it's as good as tap water",
+          "The swimming pool downstairs—boil it for a few minutes, which gets rid of the pool chemicals as well as the germs",
+          "The toilet cistern with a blue cleaning block in it—it's filled with clean tap water, so boiling makes it safe"
+        ],
+        "explain": "A storage water heater holds tens of litres of the same water that came out of your taps (CDC), and so does a toilet cistern if no cleaner has been added. Water in heating systems carries rust and anti-corrosion chemicals, pool water is for washing only, and boiling kills germs but leaves chemicals behind—it even concentrates them as water boils off."
+      }
+    },
+    {
+      "id": "survival-x04",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "Alaska DNR / US National Park Service river-crossing guidance",
+      "zh": {
+        "q": "从海拔4100米的坠机地点徒步下撤，下午3点你们来到一条冰川融水河边。河水因泥沙呈灰白色，明显的涉渡点水深及大腿，还在上涨，村子在对岸。最好的打算是？",
+        "options": [
+          "趁水还没再涨，马上过河，挑河面最窄的地方过，这样在水里待的时间最短",
+          "马上过河，所有人用一根绳子拴在腰上连成一串，这样谁也不会被单独冲走",
+          "扎营，明早融水最少时在宽阔的辫状浅滩过：面朝上游拄杖，解开背包腰带和胸带",
+          "等到傍晚太阳偏西、上游的融雪减弱以后，赶在天黑之前过河，那时水流会明显变缓"
+        ],
+        "explain": "冰川河的水量随每天的融雪变化：晴天下午不断上涨，傍晚前后最大，黎明前后最小，早晚流量可相差一倍。要一早在最宽、最浅、分成多股的河段过河（窄处最深最急），面朝上游、用杖支撑，解开背包腰带和胸带，落水时能甩掉背包。在急流里千万别把绳子拴在腰上，它会把人拖到水下。"
+      },
+      "en": {
+        "q": "Walking out from the 4,100 m crash site, you reach a glacier-fed river at 3 p.m. It's grey with silt, thigh-deep at the obvious crossing and visibly rising, and the village lies on the far side. What's the best plan?",
+        "options": [
+          "Cross straight away, before it rises any further, at the narrowest point you can find, so you spend the least time in the water",
+          "Cross straight away with everyone tied together round the waist on one rope, so nobody can be swept off on their own",
+          "Camp, then cross early tomorrow when meltwater is lowest, at a wide braided stretch: face upstream, use a pole, pack belts undone",
+          "Wait until early evening, when the sun is low and the melt upstream has eased off, then cross before it gets dark"
+        ],
+        "explain": "Glacial rivers follow the day's melt: they rise through sunny afternoons, peak around evening and are lowest around dawn—flow can double between morning and afternoon. Cross early at the widest, shallowest, braided section (narrow spots are deepest and fastest), facing upstream with a pole and with hip belt and chest strap undone so you can shed the pack. Never tie a rope round your waist in a current: it can pin you underwater."
+      }
+    },
+    {
+      "id": "survival-x05",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Hypothermia 2019 (insulation from the ground); emergency-blanket heat-transfer studies",
+      "zh": {
+        "q": "海拔4100米坠机现场的夜里，零下15 °C。一名受伤乘客身上干燥、衣服穿得整齐，躺在压实的雪地上，裹着两张铝箔急救毯，却抖得越来越厉害。残骸里还有座椅坐垫、行李和一个睡袋。最关键的改进是什么？",
+        "options": [
+          "把两张毯子都翻过来，让金色面朝外——朝向身体的颜色决定它是保暖还是散热",
+          "先让他离开雪地，身下垫上厚厚的坐垫和行李，再钻进睡袋，铝箔裹在最外面挡风",
+          "解开他的衣服，让铝箔直接贴着皮肤，这样能把更多的体热反射回他身上",
+          "在他身下再垫一张铝箔毯：铝箔能反射约90%的体热，垫上三层就足以挡住地面的寒气"
+        ],
+        "explain": "铝箔毯能减少辐射、风吹和蒸发带走的热量，但它又薄又导热，人躺在雪地上，热量照样通过传导散失，几乎跟没有铝箔一样——而向雪地的传导往往是他最大的失热途径。首先要在身下垫上厚实、压不扁的隔热物；再把铝箔裹在保暖层外面挡风。哪一面朝里，差别不大。"
+      },
+      "en": {
+        "q": "Night at the 4,100 m crash site, −15 °C. An injured passenger, dry and fully dressed, lies on packed snow wrapped in two foil emergency blankets, yet he's shivering harder and harder. Seat cushions, luggage and a sleeping bag are in the wreck. What's the most important fix?",
+        "options": [
+          "Turn both blankets gold side out—the colour that faces his body decides whether they keep heat in or reflect it away",
+          "Get him off the snow onto thick cushions and bags, then into the sleeping bag, with the foil around the outside against wind",
+          "Open his clothing and put the foil directly against his bare skin, which lets it reflect far more of his body heat back",
+          "Lay a third foil blanket under him: foil reflects about 90 % of body heat, so three layers will be enough to stop the chill from the snow"
+        ],
+        "explain": "Foil blankets cut radiant, wind and evaporative losses, but they're thin and conduct heat freely, so a person lying on snow keeps losing heat by conduction almost as if the foil weren't there—and conduction into the snow is often his biggest loss. Thick, uncompressible insulation underneath comes first; then wrap the foil outside his insulation to block the wind. Which colour faces in makes little difference."
+      }
+    },
+    {
+      "id": "survival-x06",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "Protein-ceiling physiology (Bilsborough & Mann 2006); Stefansson's accounts of 'rabbit starvation'",
+      "zh": {
+        "q": "在北方林区的冬季求生已经好几周了，下套能逮到不少雪兔。每人每天吃一公斤多的瘦兔肉，别的什么都没有。大约一周后，所有人都开始腹泻、头痛、浑身乏力，肚子吃得饱饱的却还是觉得饿。这是怎么回事，该怎么办？",
+        "options": [
+          "蛋白质中毒：只吃瘦肉满足不了能量需要——要补充骨髓、脑等脂肪和碳水化合物",
+          "还是热量不够：每顿都再多吃些瘦肉，一直吃到肚子不再觉得饿为止，热量自然就够了",
+          "没煮熟的野味里有寄生虫：把肉煮得更久一些，把寄生虫杀死，饮食照旧不变",
+          "高蛋白饮食导致了脱水：每天多喝很多水，把代谢废物冲掉，饮食保持原样不变"
+        ],
+        "explain": "这就是“兔肉饥饿”：瘦肉提供了大部分热量时（大致超过三分之一的能量来自蛋白质），肝脏来不及把多余的氮转化成尿素排出，人就会恶心、腹泻、乏力、越吃越馋——再多吃瘦肉只会更糟。要补充脂肪（骨髓、脑、内脏和皮下脂肪）和任何能找到的碳水化合物，同时少吃瘦肉。北极探险者早就记录过这种情况。"
+      },
+      "en": {
+        "q": "Weeks into a winter survival situation in a northern forest, you're snaring plenty of snowshoe hares. Everyone eats well over a kilo of lean hare meat a day and nothing else. After about a week the whole group has diarrhoea, headaches and lethargy, and they feel hungry even on a full stomach. What's going on, and what should you do?",
+        "options": [
+          "Protein poisoning: lean meat alone can't meet energy needs—add fat such as marrow and brain, plus any carbohydrate",
+          "They still aren't getting enough calories: eat even more of the lean meat at every meal, until the hunger finally goes away for good",
+          "Parasites from undercooked game: boil all the meat for much longer to kill them, then carry on with exactly the same diet",
+          "Dehydration caused by the high-protein diet: drink a lot more water every day to flush out the waste, but keep the diet the same"
+        ],
+        "explain": "This is 'rabbit starvation': when lean meat supplies most of the calories (roughly over a third of energy from protein), the liver can't turn the surplus nitrogen into urea fast enough, and nausea, diarrhoea, weakness and craving follow—eating more lean meat makes it worse. Add fat (marrow, brain, organ and body fat) and any carbohydrate you can find, and eat less lean meat. Arctic explorers documented exactly this."
+      }
+    },
+    {
+      "id": "survival-x07",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "China CDC plague prevention ('三不三报'); WHO plague fact sheet",
+      "zh": {
+        "q": "在青藏高原坠机后的第5天，食物吃光了。一名队友打死了一只旱獭——它呆呆地蹲在洞口，见人也不跑——他想剥了皮烤着吃。怎么做才对？",
+        "options": [
+          "彻底烤熟就行——高温能杀死肉里所有的病菌，烤透的旱獭完全可以放心吃",
+          "先把尸体挂一夜，等跳蚤离开变凉的尸体，第二天早上再剥皮分割就安全了",
+          "不碰、不剥、不吃，远离旱獭洞；高原旱獭携带鼠疫，病得跑不动的更是危险信号",
+          "戴上手套再剥皮，把头和内脏烧掉，只吃病菌进不去的肌肉部分，其余的全部深埋"
+        ],
+        "explain": "旱獭是青藏高原鼠疫的主要宿主，人会通过跳蚤叮咬、剥皮时接触血液和吃未熟的肉感染——我国鼠疫防控要求“三不”：不私自捕猎、不剥食、不私自携带疫源动物出疫区，并报告病死动物。烤熟改变不了剥皮时已经发生的暴露，而跳蚤会离开变凉的尸体去找新宿主——也就是你。几周不吃东西也死不了；接触过的人一旦发烧，要尽快用抗生素。"
+      },
+      "en": {
+        "q": "Day 5 after the crash on the Qinghai–Tibet Plateau, and the food has run out. A teammate clubs a marmot that sat sluggishly by its burrow instead of running off, and he wants to skin and roast it. What's right?",
+        "options": [
+          "Roast it all the way through—heat kills every germ in the meat, so a thoroughly cooked marmot is perfectly safe for everyone to eat",
+          "Hang the carcass overnight so the fleas leave the cooling body, then skin and butcher it safely in the morning",
+          "Don't touch, skin or eat it, and keep away from burrows: plateau marmots carry plague, and one too sick to flee is a warning",
+          "Skin it wearing gloves, burn the head and guts, and eat only the muscle, which is the one part the germs never reach"
+        ],
+        "explain": "Marmots are the main plague reservoir on the Qinghai–Tibet Plateau, and people catch it from their fleas, from blood while skinning and from undercooked meat—China's rule is 'don't hunt, don't skin or eat, don't carry out' plague-host animals, and report sick or dead ones. Cooking doesn't undo exposure during butchering, and fleas abandon a cooling carcass in search of a new host—you. You can last weeks without food; anyone who develops a fever after contact needs urgent antibiotics."
+      }
+    },
+    {
+      "id": "survival-x08",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "2006 Beijing angiostrongyliasis outbreak (China CDC); Hawaii DOH rat lungworm guidance",
+      "zh": {
+        "q": "南方洪灾中，你们被困在房顶好几天，饿得发慌。周围的水里到处是个头很大的福寿螺，有人提议煮些来吃。应该怎样处理？",
+        "options": [
+          "像处理蛤蜊等贝类那样，放进开水里焯一分钟左右，壳一张开就可以吃了",
+          "像做“醉螺”那样用高度白酒泡一夜，酒精不用加热就能杀死螺肉里的寄生虫",
+          "用清水使劲刷洗螺壳，寄生虫都附着在壳的外面，不在要吃的螺肉里",
+          "大火煮沸至少5分钟，处理完要洗手，绝不生吃，也不吃半生不熟的"
+        ],
+        "explain": "福寿螺常携带广州管圆线虫，幼虫会引起嗜酸性粒细胞增多性脑膜炎；2006年北京就有160人因吃加热不足的福寿螺而感染。短时间焯水、腌制或泡酒都杀不死幼虫，必须彻底煮熟（沸水煮至少3～5分钟，螺肉中心90 °C持续5分钟），处理后要洗手、清洗用具。"
+      },
+      "en": {
+        "q": "Trapped on a roof for days by floods in southern China, you're all hungry. The floodwater around you is full of big golden apple snails, and someone suggests cooking some. How should they be prepared?",
+        "options": [
+          "Blanch them in boiling water for about a minute until the shells open, just as you would with clams or other shellfish",
+          "Soak them overnight in strong baijiu, like 'drunken snails'—the alcohol kills any parasites inside without any cooking",
+          "Scrub the shells hard in clean water; the parasites cling to the outside of the shell, not to the flesh that you eat",
+          "Boil them hard for at least five minutes, wash your hands after handling them, and never eat any of them raw or half-cooked"
+        ],
+        "explain": "Golden apple snails often carry rat lungworm (Angiostrongylus cantonensis), whose larvae cause eosinophilic meningitis; in 2006, 160 people in Beijing were infected by undercooked apple snails. Brief blanching, marinating or soaking in alcohol doesn't kill the larvae: the snails must be cooked right through (boiling for at least 3–5 minutes, core about 90 °C for 5 minutes), and hands and utensils washed after handling."
+      }
+    },
+    {
+      "id": "survival-x09",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "Basic optics (converging vs diverging lenses); FM 3-05.70 (lens method)",
+      "zh": {
+        "q": "在阳光充足的珊瑚岛上，火柴全湿了，打火机也没气了。幸存者当中有一副300度的老花镜和一副600度的高度近视镜。哪副眼镜能用阳光点燃引火物？",
+        "options": [
+          "600度的近视镜，度数越高，镜片聚拢阳光的能力就越强",
+          "两副都行，只要调整镜片角度，让光斑缩到最小就可以",
+          "300度的老花镜：凸透镜能把阳光聚成一点，近视镜却会把光散开",
+          "都不行——只有正规的放大镜或相机镜头，才能聚到足够点燃引火物的阳光"
+        ],
+        "explain": "远视镜和老花镜是凸透镜（会聚透镜），相当于一个弱放大镜：调整到光斑最小、最亮的距离，对准干燥的深色引火物或炭化布。近视镜是凹透镜，度数再高也只会把光散开。美军手册列举的是望远镜、相机镜头和放大镜，但任何会聚透镜都可以用。"
+      },
+      "en": {
+        "q": "On the sunny coral island, the matches are soaked and the lighter is empty. Among the survivors' belongings are a pair of +3.0 reading glasses and a pair of strong −6.0 glasses for short sight. Which can you use to light tinder with the sun?",
+        "options": [
+          "The −6.0 glasses, because the stronger the prescription, the more tightly the thick lens gathers the sun's rays together",
+          "Either pair will work equally well, as long as you tilt the lens until the spot of light is at its smallest",
+          "The +3.0 reading glasses: their convex lenses bring sunlight to a point, while lenses for short sight spread it out",
+          "Neither—only a proper magnifying glass or a camera lens can concentrate enough sunlight to start a fire"
+        ],
+        "explain": "Glasses for long sight and reading have convex (converging) lenses that act like a weak magnifying glass: hold them at the distance that gives the smallest, brightest spot on dark, dry tinder or char cloth. Lenses for short sight are concave and spread light out, however strong they are. The US Army manual lists binoculars, camera lenses and magnifying glasses, but any converging lens will do."
+      }
+    },
+    {
+      "id": "survival-x10",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "FM 3-05.70 (fire base in snow-covered areas)",
+      "zh": {
+        "q": "从坠机地点徒步下撤后，你们来到积雪1.5米深的林子里，气温零下25 °C。手已经开始发麻，必须一次就把火生起来。该在哪里、怎样生？",
+        "options": [
+          "在开阔处，把几根青木并排铺在雪面上，上面再横铺一层做底座；引火物备好，挡住风",
+          "在最大的那棵云杉底下，头顶浓密的枝叶既能挡住落下来的雪，又能替火挡风",
+          "直接生在压实的雪面上，火往下化雪，化出来的雪坑正好可以给火苗挡风",
+          "挖一个1.5米深、直通地面的雪坑，在坑底的土地上生火，四周的雪墙能把风完全挡住"
+        ],
+        "explain": "在深雪里，直接生在雪面上的火会往下陷，被自己化出的雪水浇灭，所以要用两层交叉铺放的青木做底座（美军手册的做法），点火前把引火物和细柴都备好。在压着积雪的大树下生火，热气会让树上的雪滑落、把火压灭——杰克·伦敦小说《生火》里的人就是这样丧命的；挖1.5米深的坑则浪费你经不起的时间、体温和体力，坑底还会积水。"
+      },
+      "en": {
+        "q": "After walking down from the crash site you're in snowy forest at −25 °C, with the snow 1.5 m deep. Your hands are going numb and you need a fire on the first attempt. Where and how should you build it?",
+        "options": [
+          "In the open, on green logs laid side by side on the snow with a second layer crosswise on top; tinder ready, wind blocked",
+          "Under the biggest spruce, where the dense branches overhead will keep falling snow off the fire and shield it from the wind",
+          "Straight on the packed snow surface: as the fire melts its way down, the hollow it makes will shelter the flames",
+          "At the bottom of a pit dug through all 1.5 m of snow to the ground, where the snow walls will block the wind completely"
+        ],
+        "explain": "In deep snow, a fire laid on the surface sinks and drowns in its own meltwater, so build it on a base of green logs in two crossed layers (the US Army manual's method), with tinder and kindling ready before you strike. Under a snow-laden tree, the heat makes the snow slide off and smother the fire—the fate of the man in Jack London's 'To Build a Fire'—and digging 1.5 m down costs time, warmth and energy you can't spare, and the pit floods."
+      }
+    },
+    {
+      "id": "survival-x11",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "Alpine distress signal (international mountain rescue practice, UIAA)",
+      "zh": {
+        "q": "坠机现场的夜里，你看见对面山坡上有一盏头灯在移动。你手里有哨子和手电。国际山地求救信号以及表示“收到”的回应信号分别是？",
+        "options": [
+          "求救：每分钟吹哨或闪光3次，然后停1分钟；回应：每分钟6次，然后再停1分钟",
+          "求救：每分钟吹一声长哨，直到有人回应为止；回应：每分钟重复两声短哨",
+          "求救：连续急促地吹，能吹多久就吹多久；回应：搜救者把头灯关上再打开",
+          "求救：1分钟内均匀地吹哨或闪光6次，然后停1分钟；回应：每分钟3次，再停顿"
+        ],
+        "explain": "国际山地求救信号是每分钟6次（每10秒一次），停1分钟后重复；救援者以每分钟3次回应。只知道“3次代表求救”的人常把两者弄反——每分钟3次其实是回应，不是求救。要按固定节奏吹哨或闪光，别连续猛吹把自己累垮。"
+      },
+      "en": {
+        "q": "Night at the crash site: you spot a headlamp moving on the far slope. You have a whistle and a torch. Which describes the international alpine distress signal, and the reply that tells you it's been received?",
+        "options": [
+          "Call: three blasts or flashes a minute, then a minute's pause; reply: six a minute, then another minute's pause",
+          "Call: one long blast every minute until somebody answers; reply: two short blasts repeated every minute",
+          "Call: continuous rapid blasts for as long as you can keep going; reply: the searcher's light flicked off and on",
+          "Call: six blasts or flashes evenly over a minute, then a minute's pause; reply: three a minute, then a pause"
+        ],
+        "explain": "The alpine distress signal is six signals a minute (one every 10 seconds), a minute's silence, then repeat; rescuers answer with three a minute. People who only know that 'three of anything means help' often mix the two up—here three a minute is the reply, not the call. Keep to the fixed rhythm rather than wearing yourself out with non-stop blasts."
+      }
+    },
+    {
+      "id": "survival-x12",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "FM 3-05.70 (cold-weather fire: fuel and oil from wrecked vehicles or aircraft)",
+      "zh": {
+        "q": "海拔4100米的坠机残骸已经冷却，没有漏油，夜里气温会降到零下25 °C。机翼油箱里还有燃油，发动机里的机油还是热的。怎样把它们用来生火？",
+        "options": [
+          "马上把燃油全部放到雪地上，残骸就永远不会着火了，需要的时候再从雪里取来烧",
+          "趁机油还热马上把它放出来——这么冷它会凝住；燃油留在油箱里，用多少就取多少",
+          "全都留到明天早上，等发动机彻底凉透、更安全的时候，再去放机油",
+          "夜里火一变小，就从油桶里往火堆上泼一些燃油，让火整夜一直烧着"
+        ],
+        "explain": "美军生存手册的建议：燃油留在油箱里最安全，用多少取多少；机油要趁热放出来，因为在极寒中它会凝固——没有容器就让它流到雪上，用时再挖。把燃油全放掉既浪费又会造成火灾隐患，往明火上泼燃油则可能让火焰顺着油流回窜，把人卷进去。"
+      },
+      "en": {
+        "q": "The wreck at the 4,100 m site has cooled, there's no fuel leak, and tonight will fall to −25 °C. There's still fuel in the wing tanks, and the engine still holds warm oil. How should you make use of them for fires?",
+        "options": [
+          "Drain all the fuel out onto the snow straight away, so the wreck can never catch fire, then scoop it up and burn it from the snow as needed",
+          "Drain the engine oil now while it's still warm—it congeals in this cold—and leave the fuel in the tank, drawing a little at a time",
+          "Leave everything until the morning, when the engine is stone cold and much safer to work on, and drain the oil then",
+          "Keep the fire going all night by splashing fuel onto it from a can whenever the flames start to die down"
+        ],
+        "explain": "The US Army survival manual's advice: leave fuel in the tank, where it's stored safely, and draw it off only as you need it; drain oil while it's still warm, because it congeals in extreme cold—if you have no container, let it drain onto the snow and scoop it up later. Dumping all the fuel wastes it and creates a fire hazard, and pouring fuel onto an open fire can flash back up the stream and engulf you."
+      }
+    }
+  ]
+}

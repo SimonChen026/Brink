@@ -1,0 +1,974 @@
+{
+  "id": "mine",
+  "skill": "technical",
+  "bonus": 1,
+  "perk": null,
+  "requires": [],
+  "minLevel": 2,
+  "count": 10,
+  "pass": 8,
+  "icon": "hammer.fill",
+  "color": "#8B949E",
+  "zh": {
+    "name": "矿山救护",
+    "full": "矿山救护资格",
+    "desc": "井下有害气体、自救器、避难硐室、透水和冒顶的征兆、敲击求救、等待救援。",
+    "realWorld": "相当于煤矿安全培训和矿山救护队的基础课程。"
+  },
+  "en": {
+    "name": "Mine Rescue",
+    "full": "Mine Rescue Certificate",
+    "desc": "Gases underground, self-rescuers, refuge chambers, warning signs of flooding and roof falls, tapping signals, waiting for rescue.",
+    "realWorld": "Comparable to coal-mine safety training and mine rescue team basics."
+  },
+  "questions": [
+    {
+      "id": "mine-01",
+      "answer": 1,
+      "hard": false,
+      "source": "MSHA; 《煤矿安全规程》",
+      "zh": {
+        "q": "瓦斯（甲烷）在空气中的浓度大约在什么范围内，遇到火源就会爆炸？",
+        "options": [
+          "约 1%～3%",
+          "约 5%～15%",
+          "约 20%～30%",
+          "超过 50% 才会爆炸"
+        ],
+        "explain": "甲烷的爆炸下限约 5%、上限约 15%（国内教材常写作 5%～16%），9.5% 左右爆炸最猛烈。低于 5% 遇火只燃烧不爆炸；高于上限时氧气不够，但被新鲜空气稀释后又会落回爆炸范围。所以《煤矿安全规程》在浓度 1%～1.5% 时就要求停止作业、断电撤人，远低于爆炸下限。"
+      },
+      "en": {
+        "q": "Roughly what concentration of methane (firedamp) in air will explode if ignited?",
+        "options": [
+          "About 1–3 %",
+          "About 5–15 %",
+          "About 20–30 %",
+          "Only above 50 %"
+        ],
+        "explain": "Methane's lower explosive limit is about 5 % and its upper limit about 15 % (Chinese textbooks often give 5–16 %), with the most violent explosions near 9.5 %. Below 5 % it burns without exploding; above the upper limit there's too little oxygen, but dilution with fresh air brings it back into range. That's why mine rules stop work and cut power at 1–1.5 %, far below the lower limit."
+      }
+    },
+    {
+      "id": "mine-02",
+      "answer": 2,
+      "hard": false,
+      "source": "MSHA; 煤矿安全培训",
+      "zh": {
+        "q": "瓦斯比空气轻。在巷道里，它最容易积聚在哪里？",
+        "options": [
+          "巷道底部的水沟、水仓和其他低洼的地方",
+          "风流最大、离工作面最远的进风巷中段",
+          "顶板附近、冒落空洞和上山巷道的最高处",
+          "均匀地混在空气里，巷道各处浓度都一样"
+        ],
+        "explain": "甲烷的密度只有空气的 0.55 倍左右，会往上飘，在顶板附近、冒顶形成的空洞和上山巷道的尽头聚成一层，所以检测瓦斯要测顶板附近。比空气重的二氧化碳正好相反，会沉在低洼处。"
+      },
+      "en": {
+        "q": "Methane is lighter than air. Where in a roadway is it most likely to collect?",
+        "options": [
+          "In the drains, sumps and other low spots along the floor",
+          "Mid-way along the intake airway, where the airflow is strongest",
+          "Along the roof, in roof cavities and at the top of rising roadways",
+          "Nowhere special — it mixes evenly through the whole length of the roadway"
+        ],
+        "explain": "Methane is only about 0.55 times as dense as air, so it rises and layers along the roof, in fall cavities and at the top end of rising roadways — which is where it must be measured. Carbon dioxide, being heavier than air, does the opposite and pools in low spots."
+      }
+    },
+    {
+      "id": "mine-03",
+      "answer": 1,
+      "hard": false,
+      "source": "NIOSH; MSHA",
+      "zh": {
+        "q": "被困后，有几个人躺在巷道最低洼、靠近积水的地方休息，醒来都说头痛、气喘、心跳快，坡上的人却感觉好些。最可能的原因是？",
+        "options": [
+          "低处又闷又热，这几个人都是中暑了，要给他们扇风降温",
+          "二氧化碳比空气重，沉在低处，要把人挪到高些的地方",
+          "低处积了高浓度的瓦斯，这几个人是瓦斯中毒了",
+          "积水不断蒸发，空气太潮湿，让人喘不上气"
+        ],
+        "explain": "二氧化碳的密度约是空气的 1.5 倍，在不通风的巷道里会沉到低洼处。浓度到 3% 左右人会呼吸加深加快、头痛，5% 以上头晕、气促，更高时几分钟内就可能昏迷。甲烷则比空气轻，会聚在高处，它本身没有毒性，危险在于爆炸和排挤氧气。"
+      },
+      "en": {
+        "q": "While trapped, several people rested in the lowest dip of the roadway near the water. They wake with headaches, breathlessness and racing hearts, while those further up the slope feel better. What's the most likely cause?",
+        "options": [
+          "It's stuffy and hot down there — they have heatstroke and need fanning",
+          "CO2 is heavier than air and pools low — move them higher up",
+          "Methane has built up low down — they have methane poisoning",
+          "Evaporating water makes the air too humid for them to breathe"
+        ],
+        "explain": "CO2 is about 1.5 times as dense as air and settles in dips where the air doesn't move. Around 3 % it causes deeper, faster breathing and headache; above 5 %, dizziness and breathlessness; higher still, unconsciousness within minutes. Methane is lighter than air and collects high up; it isn't poisonous itself — its dangers are explosion and displacing oxygen."
+      }
+    },
+    {
+      "id": "mine-04",
+      "answer": 3,
+      "hard": false,
+      "source": "应急管理部 煤矿自救互救; MSHA",
+      "zh": {
+        "q": "隔壁巷道发生了一次爆炸，你这边的空气看着很清，闻着也没什么异味。你没有气体检测仪。该怎么做？",
+        "options": [
+          "没烟没味就说明没有毒气，不用戴自救器",
+          "先用鼻子仔细地闻一闻，闻到臭味了再戴上自救器",
+          "划根火柴看看火苗，火苗正常就说明安全",
+          "立即戴上自救器，沿避灾路线往新鲜风流方向撤"
+        ],
+        "explain": "爆炸和火灾会产生大量一氧化碳，它无色、无味、没有刺激性，与血红蛋白的结合力是氧气的 200 多倍，高浓度下吸几口就能让人倒下。看着清、闻着没味，不代表安全。在井下点火更是绝对禁止，可能引爆瓦斯。"
+      },
+      "en": {
+        "q": "There's been an explosion in the next roadway. The air where you are looks clear and smells normal. You have no gas detector. What do you do?",
+        "options": [
+          "No smoke and no smell means no gas — there's no need for the self-rescuer",
+          "Sniff carefully first, and put it on only if something smells bad",
+          "Strike a match and watch the flame; a normal flame means it's safe",
+          "Put on your self-rescuer now and head for fresh air by the escape route"
+        ],
+        "explain": "Explosions and fires produce large amounts of carbon monoxide, which is colourless, odourless and non-irritating; it binds to haemoglobin more than 200 times as strongly as oxygen, and a few breaths at high concentration can drop you. Clear air with no smell proves nothing. Striking a flame underground is absolutely forbidden — it could ignite methane."
+      }
+    },
+    {
+      "id": "mine-05",
+      "answer": 2,
+      "hard": true,
+      "source": "OSHA Hydrogen Sulfide",
+      "zh": {
+        "q": "你们在一条老巷口闻到一股很冲的臭鸡蛋味，往里走了一段，臭味却突然闻不到了。这说明什么？",
+        "options": [
+          "硫化氢已经被风吹散了，可以放心大胆地继续往里走",
+          "那股臭味其实是巷道里的烂木头发出来的，不用去管",
+          "可能是高浓度硫化氢麻痹了嗅觉，赶快退回新鲜空气处",
+          "说明巷道里的新鲜氧气多了，把那股臭味给中和掉了"
+        ],
+        "explain": "硫化氢低浓度时有臭鸡蛋味，但浓度升高（约 100 ppm 以上）会很快麻痹嗅觉，人就“闻不到了”，而这时恰恰最危险；浓度再高，吸几口就可能倒地。所以绝不能靠鼻子判断硫化氢还在不在。老空区和老空水里常含有硫化氢。"
+      },
+      "en": {
+        "q": "At the mouth of an old roadway you smell a strong rotten-egg odour. A little further in, the smell suddenly disappears. What does that mean?",
+        "options": [
+          "The H2S has been blown away by the airflow, so it's safe to carry on",
+          "The smell was only rotting timber in the roadway all along — nothing to worry about",
+          "High H2S may have deadened your sense of smell — get back to fresh air now",
+          "More oxygen has come into the roadway and neutralised the smell"
+        ],
+        "explain": "H2S smells of rotten eggs at low levels, but at higher concentrations (around 100 ppm and up) it quickly paralyses the sense of smell — the odour 'vanishes' exactly when it's most dangerous, and at higher levels a few breaths can drop you. Never use your nose to judge whether H2S is still there. Old workings and their water often contain it."
+      }
+    },
+    {
+      "id": "mine-06",
+      "answer": 0,
+      "hard": true,
+      "source": "NIOSH Confined Spaces",
+      "zh": {
+        "q": "一名工友钻进一条不通风的盲巷去捡工具，没走几步就倒下了。离他最近的人想马上冲进去把他拖出来。正确的判断是？",
+        "options": [
+          "别冲，里面多半缺氧，没戴呼吸器进去只会多倒一个",
+          "深吸一口气憋住冲进去，几秒钟的工夫就能把他拖出来",
+          "用湿毛巾捂住口鼻，就可以进去把人救出来",
+          "多叫几个人一起冲进去，人多拖得更快"
+        ],
+        "explain": "缺氧空气几乎没有任何预警，氧气低到一定程度，人会在几秒到几十秒内突然失去知觉，憋气和湿毛巾都不管用。美国职业安全卫生研究所（NIOSH）的统计显示，有限空间事故的死者中六成以上是赶去救人的人。应立即报告、设法通风，等戴呼吸器的救护人员，绝不能没有防护就进去。"
+      },
+      "en": {
+        "q": "A workmate walks into an unventilated dead-end roadway to fetch a tool and collapses after a few steps. The nearest person wants to rush in and drag him out. What's right?",
+        "options": [
+          "No — the air is likely oxygen-poor; without breathing gear you'll drop too",
+          "Hold your breath and dash in — a few seconds is all it takes to get him",
+          "Cover your mouth and nose with a wet towel, then go in and pull him out",
+          "Get several people to rush in together so it's quicker"
+        ],
+        "explain": "Oxygen-deficient air gives almost no warning: at very low levels people lose consciousness within seconds, and holding your breath or a wet towel won't help. NIOSH found that more than 60 % of confined-space deaths are would-be rescuers. Raise the alarm, ventilate if you can, and wait for rescuers with breathing apparatus — never go in unprotected."
+      }
+    },
+    {
+      "id": "mine-07",
+      "answer": 3,
+      "hard": true,
+      "source": "MSHA; 《煤矿安全规程》",
+      "zh": {
+        "q": "透水后，你们被困在一段封闭的巷道里，检测仪显示氧气已降到 16%，还在下降。有人提议轮流戴随身的过滤式自救器“补氧”。这有用吗？",
+        "options": [
+          "有用，过滤式自救器能把周围空气里的氧气浓缩起来",
+          "有用，不过每人每次最多只能戴十分钟左右",
+          "有用，大家轮流戴着，能多撑好几天时间",
+          "没用，它只能把一氧化碳转化掉，本身不提供氧气"
+        ],
+        "explain": "过滤式自救器靠催化剂把一氧化碳变成二氧化碳，吸进去的仍是周围的空气，所以在缺氧环境里毫无作用。能在缺氧或高浓度有毒气体中使用的是隔绝式自救器（化学氧或压缩氧），但它是为逃生设计的，一般只能用 30～60 分钟。"
+      },
+      "en": {
+        "q": "After an inrush you're trapped in a sealed-off roadway. The detector shows oxygen at 16 % and falling. Someone suggests taking turns wearing your filter self-rescuers to 'top up on oxygen'. Will that help?",
+        "options": [
+          "Yes — it concentrates the oxygen from the surrounding air",
+          "Yes, but nobody should wear it for more than about ten minutes",
+          "Yes — taking turns with it will buy everyone several more days of air",
+          "No — it only converts carbon monoxide; it doesn't supply oxygen"
+        ],
+        "explain": "A filter self-rescuer uses a catalyst to turn CO into CO2 — you still breathe the surrounding air, so it's useless when oxygen is low. Only a self-contained self-rescuer (chemical or compressed oxygen) works in oxygen-poor or highly toxic air, and it's designed for escape, typically lasting only 30–60 minutes."
+      }
+    },
+    {
+      "id": "mine-08",
+      "answer": 1,
+      "hard": true,
+      "source": "应急管理部 煤矿自救互救",
+      "zh": {
+        "q": "你戴着化学氧自救器穿过烟雾区，几分钟后觉得吸进来的气又热又干，嗓子很难受。该怎么办？",
+        "options": [
+          "摘下口具喘几口气，缓一缓再戴回去",
+          "继续戴着，发热说明它在正常工作，到安全处再摘",
+          "说明自救器已经坏了，扔掉它，改用湿毛巾捂住口鼻",
+          "拿掉鼻夹，改用鼻子呼吸，会凉快一些"
+        ],
+        "explain": "化学氧自救器靠药剂与呼出的水汽和二氧化碳反应产生氧气，反应会放热，吸气变热变干说明它在正常工作。应急管理部的要求是：戴上自救器后，绝不可轻易取下而吸外界气体，要一直坚持到安全地点。摘下口具或鼻夹，哪怕只吸一口外面的气，都可能一氧化碳中毒。"
+      },
+      "en": {
+        "q": "You're crossing a smoke zone wearing a chemical-oxygen self-rescuer. After a few minutes the air you breathe feels hot and dry and your throat hurts. What do you do?",
+        "options": [
+          "Take the mouthpiece out for a few breaths, then put it back in",
+          "Keep it on — heat means it's working; remove it only once you're safe",
+          "It's faulty — throw it away and breathe through a wet towel instead",
+          "Remove the nose clip and breathe through your nose to cool down"
+        ],
+        "explain": "A chemical-oxygen self-rescuer makes oxygen from your exhaled moisture and CO2, and the reaction gives off heat — warm, dry air means it's working. Official Chinese guidance: once it's on, never take it off to breathe outside air until you reach safety. Removing the mouthpiece or nose clip for even one breath can mean CO poisoning."
+      }
+    },
+    {
+      "id": "mine-09",
+      "answer": 0,
+      "hard": true,
+      "source": "《煤矿安全规程》",
+      "zh": {
+        "q": "下面哪一组现象属于《煤矿安全规程》列出的透水征兆？",
+        "options": [
+          "煤壁挂汗挂红，空气变冷，起雾，有“嘶嘶”的水声",
+          "煤壁摸着越来越干燥发热，粉尘突然增多，空气闷热",
+          "瓦斯读数不断下降，矿灯变暗，巷道里的风速加快",
+          "顶板淋水明显减少，底板变干，闻到一股焦煳味"
+        ],
+        "explain": "规程列出的透水征兆包括：煤层变湿、挂红（老空水含铁，在煤壁上留下红锈色）、挂汗（煤壁上凝出水珠）、空气变冷、出现雾气、水叫、顶板来压、淋水加大、底板鼓起或渗水、水色发浑、有臭味等。出现其中任何一种，都要立即停止作业，撤出受水威胁地点的所有人员，并报告调度室。而煤壁发热、有焦煳味，是煤层自燃的征兆。"
+      },
+      "en": {
+        "q": "Which set of signs is listed in China's Coal Mine Safety Regulations as a warning of a water inrush?",
+        "options": [
+          "Coal 'sweating' and 'hanging red', colder air, fog, hissing water",
+          "The coal turning dry and warm, a sudden rise in dust, stifling heat",
+          "Falling methane readings, dimming cap lamps and a faster airflow",
+          "Less dripping from the roof, a drying floor and a smell of burning"
+        ],
+        "explain": "The listed signs include: the coal turning wet, 'hanging red' (iron-rich water from old workings leaving rust-red stains), 'sweating' (beads of water on the face), colder air, fog, hissing water, roof pressure, more dripping, floor heave or seepage, and murky or foul-smelling water. Any one of them means stop work, evacuate everyone from the threatened area and report to the control room. Warm coal and a burning smell, by contrast, warn of spontaneous combustion."
+      }
+    },
+    {
+      "id": "mine-10",
+      "answer": 3,
+      "hard": false,
+      "source": "《煤矿安全规程》",
+      "zh": {
+        "q": "迎头煤壁开始“挂汗”，隐约能听到水声。班长说：“这个月进尺还差一截，再打一茬炮就撤。”你该怎么做？",
+        "options": [
+          "听班长的，放完这一茬炮再撤，时间也完全来得及",
+          "自己先打个探眼看看水大不大，再定撤不撤",
+          "大家先停手，原地等着下一班的人来了再说",
+          "立即停工，撤出受水威胁的所有人，报告调度室"
+        ],
+        "explain": "规程规定：发现透水征兆，必须立即停止作业，撤出所有受水威胁地点的人员，报告矿调度室并发出警报；原因没查清、隐患没排除之前，不得进行任何采掘活动。班组长、安全员和调度员都有权直接下令撤人。为了赶进尺“再打一茬炮”，正是许多透水事故的直接原因。"
+      },
+      "en": {
+        "q": "The coal face has started 'sweating' and you can faintly hear water. The shift boss says: 'We're still short of this month's footage — one more round of blasting, then we'll go.' What do you do?",
+        "options": [
+          "Do as he says — there's still plenty of time to fire this one last round",
+          "Drill a probe hole yourselves to gauge the water, then decide",
+          "Down tools and wait where you are until the next shift arrives",
+          "Stop work, get everyone out of the threatened area, report to control"
+        ],
+        "explain": "The rules are explicit: at any sign of an inrush, stop work at once, evacuate everyone from the threatened area, report to the control room and raise the alarm; no mining until the cause is found and dealt with. Team leaders, safety officers and dispatchers all have the authority to order evacuation. 'One more round' to make the quota has caused many inrushes."
+      }
+    },
+    {
+      "id": "mine-11",
+      "answer": 2,
+      "hard": false,
+      "source": "应急管理部 煤矿自救互救",
+      "zh": {
+        "q": "透水了，水正顺着巷道往下涌。撤退时应该往哪里走？",
+        "options": [
+          "往地势低的下山巷道跑，那里离大巷最近",
+          "赶紧躲进离得最近的独头巷道里，等这股水冲过去",
+          "往地势高的地方走，沿预定的避灾路线撤向井口",
+          "逆着水流往透水点走，想办法堵住出水口"
+        ],
+        "explain": "水往低处流，低洼巷道最先被灌满。应急管理部的要求是：撤退时往高处走，并沿预定的避灾路线出井；外出的路被水隔断时，选择地势最高、离井筒或大巷最近的地点躲避。透水点附近和它下方的独头巷道最危险。"
+      },
+      "en": {
+        "q": "Water has broken in and is surging down the roadway. Which way do you retreat?",
+        "options": [
+          "Down the dipping roadway — that's the quickest way to the main road",
+          "Into the nearest dead-end heading until the surge has passed",
+          "Toward higher ground, along the planned escape route to the shaft",
+          "Upstream to the inrush point, to try to plug the hole"
+        ],
+        "explain": "Water runs downhill and fills low roadways first. Official guidance: head for higher ground and leave by the planned escape route; if the way out is cut off, shelter at the highest point nearest the shaft or main roadway. The area near and below the inrush point, especially dead-end headings, is the most dangerous."
+      }
+    },
+    {
+      "id": "mine-12",
+      "answer": 3,
+      "hard": false,
+      "source": "《煤矿安全规程》; MSHA",
+      "zh": {
+        "q": "进入工作面前，用长钎子敲击顶板和两帮（“敲帮问顶”）。如果敲出来是发空、发闷的“咚咚”声，说明什么？",
+        "options": [
+          "说明顶板完整结实，可以放心大胆地在下面作业",
+          "说明顶板上方有积水，得先打眼把水放掉",
+          "这是煤层正常的声音，不用理会，接着干",
+          "岩层已离层松动，要先撬掉活石或补强支护"
+        ],
+        "explain": "完整的顶板敲起来声音清脆；发空、发闷说明岩层已经离层、悬着，随时可能掉下来。冒顶前常见的征兆还有：顶板掉渣、裂缝变大、煤帮片帮、支架发出响声或被压弯压断、顶板淋水突然增大。发现这些要立即撤到支护完好的安全地点。"
+      },
+      "en": {
+        "q": "Before entering the face you tap the roof and ribs with a long bar ('sounding the roof'). If it gives a hollow, dull 'drummy' sound, what does that mean?",
+        "options": [
+          "The roof is sound and solid — it's safe to work underneath",
+          "Water is trapped above the roof — drill holes to drain it first",
+          "That's just how coal sounds — ignore it and carry on",
+          "The rock has separated — bar it down or add support first"
+        ],
+        "explain": "Solid rock gives a clear, ringing sound; a hollow, dull 'drummy' sound means the layer has separated and is hanging, ready to fall. Other warnings of a roof fall: small pieces dropping, widening cracks, ribs spalling, props creaking, bending or snapping, and a sudden increase in dripping water. On any of these, move to a well-supported area."
+      }
+    },
+    {
+      "id": "mine-13",
+      "answer": 0,
+      "hard": true,
+      "source": "MSHA; 应急管理部",
+      "zh": {
+        "q": "井下发生火灾。你们已经戴好隔绝式自救器，发现备用安全出口方向没有烟，按自救器的防护时间完全走得出去。有人提议就近钻进避难硐室等救援。正确的选择是？",
+        "options": [
+          "能撤就撤，走畅通的安全出口；撤不出去时才进避难硐室",
+          "避难硐室里有氧气有吃的，待着最安全，往外走反而冒险",
+          "原地趴下不动，等烟雾散干净了再作打算",
+          "先回工作面把设备收拾好，再和大家一起撤"
+        ],
+        "explain": "国内外的原则一致：遇险首先要设法撤离，避难硐室、救生舱和临时构筑的避难所，是撤不出去时的最后手段。火灾会不断产生烟和一氧化碳，越拖撤离的路可能越难走；趁路还畅通、自救器还够用时撤出去最安全。"
+      },
+      "en": {
+        "q": "There's a fire underground. You've put on your self-contained self-rescuers and found the alternate escapeway clear of smoke — you can easily walk out within your self-rescuers' rated time. Someone suggests going into the nearby refuge chamber to wait. What's the right choice?",
+        "options": [
+          "Escape while you can by the clear route; the refuge is for when you can't",
+          "The refuge has air and food — it's safest; walking out is the bigger risk",
+          "Lie flat where you are and wait for the smoke to clear completely",
+          "Go back to secure the equipment at the face, then all leave together"
+        ],
+        "explain": "The principle is the same in China and the US (MSHA): escape first; refuge chambers, rescue capsules and barricades are the last resort when escape is impossible. A fire keeps producing smoke and CO, so the way out may only get worse — leave while the route is clear and your self-rescuer can get you there."
+      }
+    },
+    {
+      "id": "mine-14",
+      "answer": 2,
+      "hard": false,
+      "source": "MSHA 30 CFR 7.505; 《煤矿井下紧急避险系统建设管理暂行规定》",
+      "zh": {
+        "q": "按照中国和美国的标准，井下避难硐室和救生舱要保证里面的人至少维持多长时间？",
+        "options": [
+          "至少 8 小时",
+          "至少 24 小时",
+          "至少 96 小时",
+          "至少 30 天"
+        ],
+        "explain": "中国《煤矿井下紧急避险系统建设管理暂行规定》和美国 MSHA 都要求避难设施的额定防护时间不低于 96 小时（4 天），包括供氧、清除二氧化碳、饮水和食物。进去后要关好门，按说明启动供氧和净化装置，并设法让地面知道你们在里面。"
+      },
+      "en": {
+        "q": "Under Chinese and US standards, how long must an underground refuge chamber or rescue capsule be able to sustain its occupants?",
+        "options": [
+          "At least 8 hours",
+          "At least 24 hours",
+          "At least 96 hours",
+          "At least 30 days"
+        ],
+        "explain": "China's interim rules on underground emergency refuge systems and US MSHA both require refuges to sustain occupants for at least 96 hours (4 days), including oxygen, CO2 removal, water and food. Once inside, close the door, start the oxygen and scrubbing systems as instructed, and let the surface know you're there."
+      }
+    },
+    {
+      "id": "mine-15",
+      "answer": 1,
+      "hard": false,
+      "source": "MSHA; 应急管理部 煤矿自救互救",
+      "zh": {
+        "q": "撤退的路被堵死了，附近也没有避难硐室，你们只能自己构筑临时避难处。下面哪种做法对？",
+        "options": [
+          "选最近的低洼盲巷，空间越小越暖和，也越好守住",
+          "选空间大、顶板好、有压风管处，封好并在外面留记号",
+          "两头都彻底封死，外面不留任何记号，免得毒气钻进来",
+          "大家分散躲到不同的巷道里去，被发现的机会更大"
+        ],
+        "explain": "空间越大，存的空气越多，能撑得越久；顶板好才不怕冒顶；压风管能送进新鲜空气，水管有水，管道还能用来敲击联络。低洼处容易积二氧化碳和水。在避难处外面挂上矿灯、衣物，或写明人数和时间，救护队才知道里面有人。"
+      },
+      "en": {
+        "q": "Your escape route is blocked and there's no refuge chamber nearby, so you must build a temporary refuge. Which approach is right?",
+        "options": [
+          "The nearest low dead-end — the smaller the space, the warmer it will stay",
+          "A big space with a sound roof and an air line; seal it, mark the outside",
+          "Seal both ends completely and leave no marks outside, to keep gas out",
+          "Split up into different roadways to improve the odds of being found"
+        ],
+        "explain": "A bigger space holds more air and lasts longer; a sound roof won't fall on you; a compressed-air line can bring in fresh air, a water line gives water, and pipes carry tapping signals. Low spots collect CO2 and water. Leave a lamp or clothing outside, or a note with your numbers and the time, so rescuers know you're inside."
+      }
+    },
+    {
+      "id": "mine-16",
+      "answer": 0,
+      "hard": false,
+      "source": "应急管理部 煤矿自救互救",
+      "zh": {
+        "q": "被困后，要让地面知道你们的位置、知道你们还活着。下面哪种做法最有效？",
+        "options": [
+          "定时有规律地敲击管道、铁轨或锚杆，敲敲停停",
+          "大家轮流扯着嗓子大声呼喊，一刻也不要停下来",
+          "抡起工具不停地乱敲一气，敲得越响越密越好",
+          "保持安静省点力气，等着救护队自己找过来"
+        ],
+        "explain": "声音沿金属管道、铁轨和岩层能传得很远，地面的人员和监听设备就靠它判断位置；有规律的敲击能和杂乱的机械噪声区分开，停顿时还能听到对方的回应。人声在井下传不了多远，还白白消耗体力和氧气。2021 年栖霞笏山金矿救援中，救援人员敲击钻杆后收到了井下的回击声，这才确认有人活着。"
+      },
+      "en": {
+        "q": "You're trapped and need the surface to know where you are and that you're alive. Which is most effective?",
+        "options": [
+          "Tap a steady rhythm on pipes, rails or bolts, pause, repeat at set times",
+          "Take turns shouting at the top of your voices, without ever stopping for a rest",
+          "Hammer away non-stop at random — the louder and faster the better",
+          "Keep quiet to save your strength and let the rescuers find you"
+        ],
+        "explain": "Sound travels far along metal pipes, rails and rock, and people and listening equipment on the surface use it to locate you. A regular rhythm stands out from random machine noise, and the pauses let you hear a reply. Voices don't carry far underground and waste strength and oxygen. In the 2021 Qixia gold-mine rescue, rescuers tapped on a drill pipe and heard answering taps — the first proof that miners were alive."
+      }
+    },
+    {
+      "id": "mine-17",
+      "answer": 1,
+      "hard": false,
+      "source": "San José 2010; 栖霞笏山 2021",
+      "zh": {
+        "q": "被困第 17 天，一根钻杆从顶板打穿，伸进了你们所在的巷道。最该做什么？",
+        "options": [
+          "赶紧抓住钻杆使劲往下拽，千万别让地面把它收回去",
+          "敲击钻杆，把写有人数、伤情和需求的纸条绑在钻头上",
+          "对着钻孔大声喊话，几百米外的地面上也一定听得见",
+          "什么都不用做，就在原地安安静静地等着地面派人下来"
+        ],
+        "explain": "2010 年智利圣何塞铜矿的 33 名矿工，在第 17 天把“我们 33 人在避难所，都还好”的纸条绑在钻头上送回地面；2021 年栖霞笏山金矿的被困矿工，也是先敲击钻杆回应，再通过钻孔送上纸条。几百米深的钻孔里喊话基本传不上去。钻孔打通后，就成了送氧气、水、食物、药品和电话线的“生命通道”。"
+      },
+      "en": {
+        "q": "On day 17, a drill rod breaks through the roof into your roadway. What should you do?",
+        "options": [
+          "Grab the rod and pull hard so the surface can't withdraw it again",
+          "Tap on the rod and tie a note to the bit: how many, injuries, needs",
+          "Shout up the borehole — they're bound to hear you up top",
+          "Do nothing — just wait where you are for someone to come down"
+        ],
+        "explain": "In 2010 the 33 Chilean miners at San José tied a note — 'We are fine in the shelter, the 33' — to the drill bit on day 17; in 2021 trapped miners at Qixia, China, first answered by tapping on the drill pipe and then sent up handwritten notes. Shouting up hundreds of metres of borehole doesn't carry. Once open, the borehole becomes a lifeline for air, water, food, medicine and a phone line."
+      }
+    },
+    {
+      "id": "mine-18",
+      "answer": 3,
+      "hard": false,
+      "source": "应急管理部 煤矿自救互救",
+      "zh": {
+        "q": "被困在封闭的巷道里，有人想把坑木和皮带点着取暖、照明。为什么不行？",
+        "options": [
+          "井下的温度本来就高，根本用不着生火取暖",
+          "烟会把巷道熏得漆黑一片，救援队来了不好找人",
+          "坑木太潮湿，根本点不着，白白浪费力气",
+          "烧火耗氧、产生一氧化碳，还可能引爆瓦斯"
+        ],
+        "explain": "被水或塌方封住的空间里，空气是有限的“存量”：烧火会迅速耗氧，产生一氧化碳和二氧化碳；巷道里如果积有瓦斯，一点火就可能爆炸。要节省空气，就要“忍饥静卧”：少走动、少说话，人静躺时的耗氧量还不到干活时的一半。"
+      },
+      "en": {
+        "q": "Trapped in a sealed roadway, someone wants to burn pit props and conveyor belt for warmth and light. Why not?",
+        "options": [
+          "It's already warm underground, so there's no need for any heat",
+          "Smoke would blacken the roadway and make you harder for rescuers to find",
+          "The props are far too damp to light, so it's just wasted effort",
+          "Fire burns up the limited oxygen, makes CO and could ignite methane"
+        ],
+        "explain": "In a space sealed by water or a collapse, the air is a fixed reserve: a fire quickly uses up oxygen and produces CO and CO2, and if methane has collected, a flame can set off an explosion. To save air, lie still and keep quiet — at rest you use less than half the oxygen you burn while working."
+      }
+    },
+    {
+      "id": "mine-19",
+      "answer": 0,
+      "hard": false,
+      "source": "应急管理部 煤矿自救互救",
+      "zh": {
+        "q": "被困的 7 个人都有矿灯，但不知道要等多少天。矿灯怎么用最合理？",
+        "options": [
+          "平时只开一盏，大家轮流开，其余的关掉留着",
+          "全部打开，亮堂一点，大家心里才踏实",
+          "全部关掉，大家一直摸黑待着，等救援来了再打开",
+          "每人各开各的，自己的电用完了就算了"
+        ],
+        "explain": "一盏矿灯充满电一般只能亮十几个小时，7 盏同时开，很快就会一起熄灭。轮流只开一盏，既有光干活、照看伤员、查看水位，又能把照明时间延长好几倍；王家岭透水时，被困矿工也学会了关掉一部分灯来省电。完全摸黑会加重恐慌，也看不到水位和伤员的变化。"
+      },
+      "en": {
+        "q": "All seven of you have cap lamps, but no one knows how many days you'll wait. How should you use them?",
+        "options": [
+          "Only one on at a time, taking turns; keep the rest switched off",
+          "All of them on — more light keeps everyone's spirits up",
+          "All of them off — stay in total darkness until the rescuers arrive",
+          "Everyone uses their own as they like until the battery dies"
+        ],
+        "explain": "A cap lamp usually lasts only around a dozen hours on a full charge; with seven on at once they'll all die together. One lamp at a time, in rotation, still gives light for tasks, the injured and checking the water, and multiplies your total lighting time; trapped miners at Wangjialing in 2010 likewise switched off lamps to save power. Total darkness feeds panic and hides changes in the water and the injured."
+      }
+    },
+    {
+      "id": "mine-20",
+      "answer": 2,
+      "hard": true,
+      "source": "San José mine 2010",
+      "zh": {
+        "q": "你们 7 个人只剩约 3500 千卡的食物，不知道救援要多久。下面哪种分配方式最合理？",
+        "options": [
+          "趁现在体力还好，大家先多吃一些，攒足力气好干活",
+          "平分成七份各自保管，每人想什么时候吃就什么时候吃",
+          "第一天起就集中保管、平均分配，按至少 10 天来定量",
+          "先让下力气干活的青壮年吃饱，伤员和老人少分一点"
+        ],
+        "explain": "2010 年智利 33 名矿工被困 17 天才与地面联系上。工长乌尔苏阿把原本只是两天份的应急食品统一管起来，每 48 小时每人只吃两小勺金枪鱼、一口牛奶和一块饼干，联系上时竟还有剩余。人不吃饭能活几周，饿死比渴死慢得多；集中保管、平均分配，还能避免猜疑和争抢。"
+      },
+      "en": {
+        "q": "Seven of you have about 3,500 kcal of food left and no idea how long rescue will take. What's the best way to share it?",
+        "options": [
+          "Eat more now while you're strong — build up energy for the work ahead",
+          "Split it up; each keeps their share and eats it whenever they like",
+          "From day one: pool it, share equally, ration it — plan for 10+ days",
+          "Feed the able-bodied workers first; the injured and old get less"
+        ],
+        "explain": "In 2010 the 33 Chilean miners went 17 days before contact. Shift foreman Luis Urzúa pooled an emergency supply meant to last two days and rationed it to two small spoonfuls of tuna, a sip of milk and a biscuit per man every 48 hours — and some was still left when they were found. People can survive weeks without food, far longer than without water; pooling and equal shares also prevent suspicion and fights."
+      }
+    },
+    {
+      "id": "mine-21",
+      "answer": 2,
+      "hard": false,
+      "source": "应急管理部 煤矿自救互救",
+      "zh": {
+        "q": "被困第三天，大家都渴得厉害。巷道里有两种水：脚下发红、有股臭味的老空积水，和顶板上一滴滴渗下来的清水。没法烧水。怎么办？",
+        "options": [
+          "喝脚下的积水就行，水量大，足够所有人喝好几天",
+          "两种都别喝，能忍就忍着，等救援来了再说",
+          "用容器接顶板渗下的清水，用干净布过滤后再喝",
+          "把两种水掺在一起喝，互相冲淡一下就安全了"
+        ],
+        "explain": "老空积水发红、发臭，多半偏酸，含铁和硫化物，还可能有细菌，喝了容易腹泻，反而更脱水。从岩层裂隙里慢慢渗下来的顶板淋水相对干净。人不喝水只能撑几天，要“饮水延命”：挑最干净的水源，接住、过滤，少量多次地喝。"
+      },
+      "en": {
+        "q": "Day three, and everyone is badly thirsty. There are two kinds of water: reddish, foul-smelling water pooled from old workings at your feet, and clear water dripping from the roof. You can't boil anything. What do you do?",
+        "options": [
+          "Drink the standing water at your feet — there's enough for everyone for days",
+          "Drink neither — just hold out until the rescuers get here",
+          "Catch the clear roof drips, strain through clean cloth, then drink",
+          "Mix the two together so each one dilutes the other to safety"
+        ],
+        "explain": "Red, foul-smelling water from old workings is usually acidic, loaded with iron and sulphides and possibly bacteria; it can cause diarrhoea and make dehydration worse. Water seeping slowly through rock fissures from the roof is relatively clean. Without water you last only days, so drink to stay alive: pick the cleanest source, collect it, strain it and sip it regularly."
+      }
+    },
+    {
+      "id": "mine-22",
+      "answer": 3,
+      "hard": true,
+      "source": "San José 2010; NICE CG32",
+      "zh": {
+        "q": "被困 17 天、几乎没吃东西之后，钻孔终于打通，地面能往下送东西了。最先送下去的应该是？",
+        "options": [
+          "红烧肉和大米饭，赶紧把这些天亏掉的营养补回来",
+          "几瓶高度白酒，先让大家暖暖身子、提提神",
+          "大量浓咖啡和功能饮料，好让大家打起精神",
+          "补液盐和葡萄糖，几天后再逐步加流食和饭菜"
+        ],
+        "explain": "长期饥饿后突然大量进食，可能引起“再喂养综合征”：血磷、血钾骤降，导致心律失常甚至死亡。智利矿工救援时，最先通过钻孔送下去的是补液片和葡萄糖凝胶，几天后才开始送真正的食物。酒和大量咖啡因会加重脱水，也不该送。"
+      },
+      "en": {
+        "q": "After 17 days with almost no food, a borehole finally reaches you and the surface can send things down. What should go down first?",
+        "options": [
+          "Braised pork and rice, to make up all the lost calories as fast as possible",
+          "Strong liquor, to warm everyone up and lift their spirits",
+          "Plenty of strong coffee and energy drinks to perk everyone up",
+          "Rehydration salts and glucose; then liquids and real food over days"
+        ],
+        "explain": "Eating a lot suddenly after prolonged starvation can trigger refeeding syndrome — blood phosphate and potassium crash, causing heart rhythm problems or death. In the Chilean rescue the first capsules down the borehole carried rehydration tablets and glucose gel; real food followed days later. Alcohol and lots of caffeine worsen dehydration and shouldn't be sent."
+      }
+    },
+    {
+      "id": "mine-23",
+      "answer": 1,
+      "hard": true,
+      "source": "应急管理部 煤矿自救互救",
+      "zh": {
+        "q": "唯一的出路被水淹到了顶，不知道淹了多长一段。一个工友说他憋气能潜三十米，要潜出去找救援。正确的判断是？",
+        "options": [
+          "让他腰上系根长绳子潜过去，大家在这头拽着，万无一失",
+          "严禁盲目潜水，在最高、空气最好处等待，定时敲击求救",
+          "大家一起潜出去，人多一点可以互相照应",
+          "先让最瘦小的人去试，他憋气时耗氧最少"
+        ],
+        "explain": "淹没的巷道漆黑、水浑，到处是支架和杂物，憋一口气根本不知道前面还有多远、能不能找到出口。应急管理部的要求是：撤离通道被水隔断时，应撤到地势较高的安全地点等待营救，严禁盲目潜水等冒险行为。地面会排水、打钻孔，救护队的潜水员会带着气瓶和导向绳来。"
+      },
+      "en": {
+        "q": "The only way out is flooded to the roof for an unknown distance. A workmate says he can hold his breath for 30 m and wants to dive out for help. What's right?",
+        "options": [
+          "Let him dive with a rope round his waist while the rest of you hold this end",
+          "No blind diving — wait high up where the air is best, tapping at set times",
+          "Everyone dives out together so you can all look after each other",
+          "Send the smallest person first, since he uses the least oxygen"
+        ],
+        "explain": "A flooded roadway is pitch-black, murky and full of supports and debris; on one breath you can't know how far it goes or whether you'll find the way out. Official Chinese guidance: if water cuts off the escape route, move to higher, safe ground and wait — blind diving and other risky attempts are strictly forbidden. The surface will pump and drill, and rescue divers will come with air tanks and guide lines."
+      }
+    },
+    {
+      "id": "mine-24",
+      "answer": 0,
+      "hard": false,
+      "source": "San José 2010; 应急管理部",
+      "zh": {
+        "q": "被困第二天，有两个人想各自去找别的出口，有人想单干，大家开始争吵。下面哪种做法最有利于所有人活下来？",
+        "options": [
+          "大家在一起，听一个人统一指挥；探路至少两人并约好时间",
+          "谁想走就让谁走，大家分头去碰运气，活下来的人会更多",
+          "谁的力气最大就听谁的，不服从的人一律不分给食物",
+          "谁也别管谁，各人想各人的办法，各凭本事"
+        ],
+        "explain": "智利 33 名矿工能熬过 69 天，很大程度上靠工长乌尔苏阿建立的秩序：统一指挥、分工轮班、平均分配，重大决定大家投票。待在一起便于互相照顾，救援队也只需找一个地点；单独乱走容易迷路、掉进积水或误入有害气体区。"
+      },
+      "en": {
+        "q": "On day two, two people want to go off separately to look for another way out, others want to fend for themselves, and arguments break out. What gives everyone the best chance?",
+        "options": [
+          "One leader, stay together; scout only in pairs, with a set time to return",
+          "Let anyone go who wants to — splitting up means more of you are likely to survive",
+          "The strongest gives the orders, and whoever disobeys gets no food",
+          "Nobody leads and nobody follows; each of you finds your own way out"
+        ],
+        "explain": "The 33 Chilean miners lasted 69 days largely thanks to the order foreman Luis Urzúa set up: one leader, shared tasks and shifts, equal rations, and votes on big decisions. Staying together means people can look after each other and rescuers have one place to find; anyone wandering alone can get lost, fall into water or walk into bad air."
+      }
+    },
+    {
+      "id": "mine-x01",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "《煤矿安全规程》(2022) 第一百七十三条、第一百七十六条",
+      "zh": {
+        "q": "一条煤巷掘进工作面的局部通风机因停电停了两个小时，巷道里估计积了不少瓦斯。来电后，班长说：“马上开风机，一口气把瓦斯吹出去，别耽误生产。”按《煤矿安全规程》，正确做法是？",
+        "options": [
+          "立即把风机开到最大风量，瓦斯排得越快、在巷道里停留的时间越短，大家就越安全",
+          "先给巷道里的电气设备全部送电，让甲烷传感器和监控系统先恢复工作，然后再开局部通风机",
+          "先查瓦斯：停风区甲烷≤1.0%、二氧化碳≤1.5%，风机旁甲烷≤0.5% 才可开",
+          "不必检查：停风才两个小时，瓦斯根本积聚不到爆炸浓度，来电后直接人工开风机即可"
+        ],
+        "explain": "这正是《煤矿安全规程》第一百七十六条：恢复通风前必须先检查瓦斯，停风区最高甲烷不超过 1.0%、二氧化碳不超过 1.5%，且局部通风机及其开关附近 10 米内甲烷不超过 0.5%，才可人工开启；超过这些值要制定措施控制排放，超过 3.0% 须报矿总工程师批准。“一风吹”会把高浓度瓦斯团推过带电设备和回风系统，是瓦斯爆炸的常见起因。巷道内的电气设备也要等风流中甲烷降到 1.0% 以下才能送电。"
+      },
+      "en": {
+        "q": "A heading's auxiliary fan has been stopped for two hours by a power cut, and a lot of methane has probably built up in the heading. When power returns, the shift boss says: 'Start the fan now and blow the gas out in one go, we can't lose more production.' Under China's Coal Mine Safety Regulations, what is correct?",
+        "options": [
+          "Start the fan at once at full power: the faster the gas is cleared from the heading, the shorter the danger lasts",
+          "First re-energise all the electrical equipment in the heading so the methane sensors and monitoring work, then start the fan",
+          "Check first: restart by hand only if the heading has at most 1.0 % methane and 1.5 % CO2, and 0.5 % methane near the fan",
+          "No check is needed: two hours isn't long enough for methane to reach explosive levels, so just restart the fan by hand"
+        ],
+        "explain": "This is Article 176 of China's Coal Mine Safety Regulations: check the gas before restoring ventilation; the fan may be restarted by hand only if the heading's highest methane is no more than 1.0 % and CO2 no more than 1.5 %, and methane within 10 m of the fan and its switch is no more than 0.5 %. Above those levels the gas must be let out under a controlled plan, approved by the chief engineer above 3.0 %. 'Blowing it out in one go' pushes a slug of rich gas past live equipment and through the return, a classic cause of explosions, and the heading's power stays off until the air is back below 1.0 % methane."
+      }
+    },
+    {
+      "id": "mine-x02",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "《煤矿安全规程》第一百三十五条、第二百八十八条; 煤矿自救互救",
+      "zh": {
+        "q": "采空区旁的一条回风巷里：巷帮“挂汗”，起了一层薄雾，空气闷热潮湿，隐约有一股煤油、焦油似的气味；一氧化碳传感器的读数两个班内从 0 慢慢升到了 30 ppm。有人说：“挂汗加起雾，是要透水了。”最可能是什么情况？",
+        "options": [
+          "采空区煤炭自燃：空气变热变潮、有煤油焦油味，CO 持续升高并已超限",
+          "是透水前兆：挂汗、起雾正是老空水逼近的表现，应立即往高处沿避灾路线撤离",
+          "是煤与瓦斯突出前兆，应立即佩戴隔绝式自救器，迅速向进风侧撤离并通知他人",
+          "只是刚才有柴油车经过，尾气和异味过一会儿就会散掉，继续观察即可"
+        ],
+        "explain": "“挂汗”和雾气既可能是透水预兆，也可能是自燃预兆，要看其他征兆：透水时空气变冷、有水叫声、煤壁挂红；自燃时空气变热变闷，有煤油、松节油或焦油味，CO 稳定上升，人会头痛乏力。《煤矿安全规程》规定 CO 最高允许浓度为 0.0024%，即 24 ppm。应立即报告调度室、加强检测，做好撤人准备。"
+      },
+      "en": {
+        "q": "In a return roadway beside a goaf: the ribs are 'sweating', a thin mist hangs in the air, the air is warm and humid with a faint smell like kerosene or tar, and the CO sensor has crept from 0 to 30 ppm over two shifts. Someone says: 'Sweating and mist, water's about to break in.' What is most likely happening?",
+        "options": [
+          "Spontaneous combustion in the goaf: warm humid air, a kerosene or tar smell, CO climbing past the 24 ppm limit",
+          "An inrush is coming: sweating and mist mean old-workings water is close, so head uphill along the escape route",
+          "A coal-and-gas outburst is coming: put on the self-rescuer and retreat quickly toward the intake side",
+          "A diesel vehicle has just gone by; its exhaust and smell will clear soon, so just keep an eye on it"
+        ],
+        "explain": "Sweating and mist can warn of an inrush or of spontaneous combustion, so look at the other signs: an inrush brings colder air, hissing water and rust-red 'hanging red' stains, while heating brings warm, stuffy air, a smell of kerosene, turpentine or tar, steadily rising CO and headaches. China's regulations set 0.0024 %, or 24 ppm, as the CO limit. Report to the control room at once, step up gas checks and get ready to withdraw."
+      }
+    },
+    {
+      "id": "mine-x03",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "《煤矿安全规程》第二百零一条; 煤矿安全避险知识（突出预兆与撤离）",
+      "zh": {
+        "q": "在突出煤层里掘进，煤体深处传来闷雷似的响声，工作面煤壁外鼓、片帮掉渣，瓦斯读数忽高忽低；打钻时钻杆被夹住，钻孔里喷出瓦斯和煤粉。你该怎么做？",
+        "options": [
+          "这是冒顶预兆，应在工作面赶紧加打支柱、背好顶板，等顶板压力稳定下来再说",
+          "这是透水预兆，应爬到巷道的最高处，在那里等待救援队到来",
+          "先停钻，带着瓦斯检测仪留在工作面观察，等读数稳定下来后再决定撤不撤",
+          "是突出预兆：停止作业，边撤边戴隔绝式自救器，迅速向进风侧撤离并通知他人"
+        ],
+        "explain": "煤炮声、煤壁外鼓片帮、瓦斯忽大忽小、打钻顶钻夹钻喷孔，都是煤与瓦斯突出的典型预兆。《煤矿安全规程》第二百零一条要求发现预兆立即停止作业、按避灾路线撤出并报告；避险知识要求向进风侧撤离、途中戴好隔绝式自救器，撤不出去时进入避难硐室或使用压风自救装置。突出瞬间涌出的大量瓦斯会顺着风流涌向回风侧，留在工作面“观察”极其危险。"
+      },
+      "en": {
+        "q": "Driving a heading in an outburst-prone seam, you hear dull, thunder-like booms deep in the coal; the face is bulging and spalling, the methane reading jumps up and down, and while drilling the rod jams as gas and coal dust jet from the hole. What do you do?",
+        "options": [
+          "These are roof-fall signs: set extra props at the face straight away and wait for the pressure to settle",
+          "These are signs of an inrush: climb to the highest point of the heading and wait there for rescuers",
+          "Stop drilling and stay at the face with the methane detector, deciding whether to leave once readings settle",
+          "Outburst warning: stop work, put on the self-rescuer as you go, retreat toward the intake and warn others"
+        ],
+        "explain": "Booms in the coal, a bulging and spalling face, fluctuating methane and a drill that jams while gas jets from the hole are classic warnings of a coal-and-gas outburst. China's regulations (Article 201) require you to stop work, leave by the escape route and report; escape training says head for the intake side, put on the self-contained self-rescuer on the way, and if you can't get out use a refuge chamber or compressed-air station. An outburst can release a huge volume of gas that floods downwind into the return, so staying at the face to watch is extremely dangerous."
+      }
+    },
+    {
+      "id": "mine-x04",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "MSHA 30 CFR 7.506 (refuge alternatives: breathable air)",
+      "zh": {
+        "q": "15 个人在避难硐室里等待救援的第二天，氧气读数 20.5%，很正常；可二氧化碳已升到 2.2%，还在上涨，好几个人头痛、呼吸变快。最该做什么？",
+        "options": [
+          "把氧气瓶的阀门开大一些，多补充氧气，就能把二氧化碳冲淡、压下去",
+          "马上换上新的二氧化碳吸收剂，让大家静卧，把浓度降到约 1% 以下",
+          "把硐室门打开一两分钟，放点外面巷道里的空气进来，把里面的气换一换",
+          "暂时不用管，二氧化碳要超过 5% 才有危险，只要氧气浓度够就没有问题"
+        ],
+        "explain": "人在密闭空间里不断呼出二氧化碳，只能靠吸收剂（钠石灰、氢氧化锂等）除掉；补氧气只能维持氧浓度，降不了二氧化碳。美国 MSHA 要求避难设施内二氧化碳平均不超过 1.0%、短时最高不超过 2.5%。外面巷道可能充满一氧化碳和烟，开门换气是拿命冒险；保持静卧还能减少二氧化碳的产生。"
+      },
+      "en": {
+        "q": "On day two, 15 people are waiting in a refuge chamber. Oxygen reads 20.5 %, which is fine, but CO2 has risen to 2.2 % and is still climbing; several people have headaches and are breathing faster. What should you do?",
+        "options": [
+          "Open the oxygen cylinder wider: the extra oxygen will dilute the CO2 and bring the level back down",
+          "Fit fresh CO2 scrubber curtains or canisters now and keep everyone still, aiming for 1 % or less",
+          "Open the chamber door for a minute or two to let in some air from the roadway and freshen it up",
+          "Nothing yet: CO2 only becomes dangerous above about 5 %, and as long as oxygen is fine all is well"
+        ],
+        "explain": "People keep breathing out CO2 in a sealed space, and only a scrubber such as soda lime or lithium hydroxide removes it; extra oxygen keeps the oxygen level up but does nothing to the CO2. MSHA requires refuges to hold average CO2 at 1.0 % or less, with excursions no higher than 2.5 %. The roadway outside may be full of CO and smoke, so opening the door gambles with lives, and keeping still also cuts CO2 production."
+      }
+    },
+    {
+      "id": "mine-x05",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "NIOSH SCSR expectations training; 《煤矿安全规程》第六百八十六条",
+      "zh": {
+        "q": "井下着火，你戴上了额定防护时间 60 分钟的隔绝式自救器。按平时的速度，走到新鲜风流处约要 50 分钟，其中有一段很长的上坡，你还帮受伤的同伴扛着他的东西。60 分钟够不够？该怎么走？",
+        "options": [
+          "够，额定的 60 分钟是保证的最短时间，不论走多快、干多重的活，都一样能用满",
+          "够，快用完的时候把口具拿出来，换几口外面的空气，就能再多撑一阵子",
+          "不一定：用力越大耗氧越快，可能远不到 60 分钟；要稳步走，在补给站换新的",
+          "不够，所以要一路跑着出去，抢在自救器的氧气耗尽之前赶到新鲜风流处"
+        ],
+        "explain": "额定防护时间是在规定劳动强度下测定的，实际能用多久取决于呼吸量：爬坡、负重、紧张喘气都会让它提前耗尽。NIOSH 对矿工的建议是放慢呼吸、稳步行走、不要摘下口具说话；《煤矿安全规程》要求在避灾路线上设置自救器补给站，就是为了中途换用。跑步并不能让一台自救器走得更远，反而更容易摔倒、更快力竭。"
+      },
+      "en": {
+        "q": "There's a fire underground, and you've put on a self-contained self-rescuer rated for 60 minutes. At a normal pace it's about 50 minutes' walk to fresh air, including a long climb, and you're carrying an injured workmate's gear. Is 60 minutes enough, and how should you travel?",
+        "options": [
+          "Yes: the 60-minute rating is a guaranteed minimum, however fast you walk or however hard you work",
+          "Yes, and if it starts to run low, take the mouthpiece out for a few breaths of mine air to stretch it",
+          "Not necessarily: hard work drains it far faster, so walk steadily, breathe slowly, swap at caches",
+          "No, so run the whole way out and reach fresh air before the self-rescuer's oxygen supply runs out"
+        ],
+        "explain": "The rated time is measured at a set work rate; how long it really lasts depends on how hard you breathe, and climbing, carrying loads or panting can exhaust it early. NIOSH advises miners to slow their breathing, walk at a steady pace and never take the mouthpiece out to talk, and Chinese regulations require self-rescuer caches along escape routes for exactly this changeover. Running doesn't get you any farther on one unit; it just makes falls and exhaustion more likely."
+      }
+    },
+    {
+      "id": "mine-x06",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "《煤矿安全规程》第二百七十五条、第七百一十二条",
+      "zh": {
+        "q": "进风巷里一台带式输送机的机头着了火，还在初期阶段。你们三个人手边有灭火器和一根水管。按《煤矿安全规程》，应该怎样扑救？",
+        "options": [
+          "先断电源，站在进风侧背对新鲜风流，用水从外围逼向中心，保持通风",
+          "绕到火源的回风侧（下风侧）去扑救，先把火堵住，不让它往回风巷里蔓延",
+          "先把上风侧的风门关死、切断风流，把火“闷”小了以后再上去扑救",
+          "把水柱直接对准火最旺、烧得最红的中心猛射，尽快把火势压下去"
+        ],
+        "explain": "《煤矿安全规程》规定：电气设备着火先切断电源，断电前只能用不导电的灭火器材；灭火必须从火源进风侧进行；用水灭火时水流应从外围喷射、逐步逼向中心，并保证有充足风量和畅通的回风，防止水煤气爆炸。站在回风侧，烟和一氧化碳正对着你吹；擅自关风门断风会打乱通风，可能导致瓦斯积聚甚至爆炸。直射高温火心会骤然产生大量水蒸气和氢气、一氧化碳，也就是规程所说的水煤气。"
+      },
+      "en": {
+        "q": "A belt-conveyor drive head in an intake roadway has caught fire; it's still in the early stage. The three of you have extinguishers and a water hose. Under China's Coal Mine Safety Regulations, how do you attack it?",
+        "options": [
+          "Cut the power, attack from the intake side, fresh air at your back, spray from the edges in, keep air moving",
+          "Go round to the return (downwind) side and fight it from there, so the fire can't spread into the return airway",
+          "First shut the doors upwind to cut off the airflow and smother the fire, then move in to fight it",
+          "Aim the hose straight at the hottest, glowing core of the fire to knock it down as fast as possible"
+        ],
+        "explain": "China's regulations say: for an electrical fire, cut the power first and until then use only non-conductive extinguishers; fight a fire from its intake side; spray water from the edges toward the centre, with enough airflow and an open return to prevent a water-gas explosion. On the return side the smoke and CO blow straight at you, and shutting doors on your own disrupts the ventilation and can let methane build up or explode. A jet into the glowing core produces steam plus hydrogen and CO, the water gas the rules warn about."
+      }
+    },
+    {
+      "id": "mine-x07",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "MSHA 30 CFR 75.380(d)(7) (escapeway lifelines)",
+      "zh": {
+        "q": "在美国的一座煤矿里，你在浓烟中什么也看不见，只能摸着逃生通道里的救生索走。手沿索滑过去时，先摸到一个锥体的尖端，接着锥体越来越粗；再往前，在一条分支绳上摸到四个锥体底对底组成的两个“菱形”。这说明什么？",
+        "options": [
+          "你正往井里（工作面方向）走；两个菱形表示那条分支通往避难硐室",
+          "你正朝井外逃生方向走；两个菱形表示那条分支通往自救器存放点",
+          "你正朝井外逃生方向走；两个菱形表示那里有门通往相邻的逃生通道",
+          "你正往井里（工作面方向）走；两个菱形表示那条分支通往自救器存放点"
+        ],
+        "explain": "MSHA 规定救生索上每隔不超过 100 英尺装一个方向锥，尖端朝里（指向工作面）：往外逃时手先碰到尖端、再顺着变粗，若手先撞上锥体平平的大头，说明走反了。分支绳上四个锥体组成两个菱形表示通往自救器存放点；螺旋形硬质线圈表示通往避难设施，球体表示那里有人行门通往相邻巷道。"
+      },
+      "en": {
+        "q": "In a US coal mine you can see nothing in the smoke and are feeling your way along the escapeway lifeline. As your hand slides along, it first meets the tip of a cone, which then gets wider; further on, on a branch line, you feel four cones joined base to base to form two diamond shapes. What does this tell you?",
+        "options": [
+          "You're heading inby, toward the face; the double diamond marks the branch to a refuge chamber",
+          "You're heading out of the mine; the double diamond marks the branch to an SCSR cache",
+          "You're heading out of the mine; the double diamond marks a door through to the other escapeway",
+          "You're heading inby, toward the face; the double diamond marks the branch to an SCSR cache"
+        ],
+        "explain": "Under MSHA's rule, lifelines carry a direction cone at least every 100 feet with its tapered end pointing inby, toward the face: heading out, your hand meets the tip first and slides up the widening cone, while bumping into the flat wide end first means you're going the wrong way. Four cones forming two diamonds on a branch line lead to an SCSR cache; a rigid spiral coil marks the branch to a refuge alternative, and a sphere marks a personnel door to the adjacent entry."
+      }
+    },
+    {
+      "id": "mine-x08",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "Catalytic (pellistor) sensor limitations in low oxygen / over-range; AQ 6211 红外甲烷传感器",
+      "zh": {
+        "q": "救护小队戴着呼吸器，探察一片封闭多年的老空区。随身的载体催化式甲烷检测仪读数先升到 4%，再往里走，读数反而回落到 0.5%；同时氧气检测仪显示只有 11%。对甲烷读数的回落，正确的理解是？",
+        "options": [
+          "说明已经穿过了瓦斯积聚区，前面巷道的空气干净多了，可以放心继续深入",
+          "说明仪器的零点漂移了，就在这里重新调零，然后继续往老空区深处探察",
+          "缺氧时甲烷不会爆炸，0.5% 的读数正好说明这片巷道已经很安全了",
+          "读数不可信：缺氧或甲烷过浓时催化元件会显示偏低，应撤回改用红外仪器"
+        ],
+        "explain": "载体催化元件靠甲烷在元件表面燃烧发热来测量，需要足够的氧气；氧气不足，或甲烷浓度高于量程、甚至超过爆炸上限时，读数会下降，可能接近零。所以“先升后降”再加上缺氧，往往意味着甲烷更高了，而不是更低了。高浓度区域要用红外或热导原理的仪器测量；这样的气体一旦与新鲜空气混合，就可能进入爆炸范围。"
+      },
+      "en": {
+        "q": "A rescue team in breathing apparatus is exploring old workings sealed for years. Their catalytic (pellistor) methane detector first climbs to 4 %, then as they push deeper the reading falls back to 0.5 %; the oxygen meter shows only 11 %. How should they read the falling methane value?",
+        "options": [
+          "They've come through the gas pocket and the air ahead is much cleaner, so it's safe to keep going deeper",
+          "The instrument has drifted out of calibration: re-zero it right there, then carry on exploring",
+          "Methane can't explode this short of oxygen, so the 0.5 % reading simply confirms the area is safe",
+          "Don't trust it: pellistors read falsely low in thin oxygen or very rich methane; withdraw, use infrared"
+        ],
+        "explain": "A catalytic bead measures methane by burning it on a heated element, which needs enough oxygen; when oxygen is short or methane exceeds the sensor's range, even above the upper explosive limit, the reading drops and can approach zero. So a rise and then a fall in low-oxygen air usually means more methane, not less. High concentrations must be measured with infrared or thermal-conductivity instruments, and once such gas mixes with fresh air it can pass into the explosive range."
+      }
+    },
+    {
+      "id": "mine-x09",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "Coward explosibility diagram; 《煤矿安全规程》第一百七十五条",
+      "zh": {
+        "q": "一片火区几个月前已经封闭。密闭墙后取样结果：甲烷 8%、氧气 9%、一氧化碳 50 ppm。区队长说：“氧气低于 12% 就不会爆炸，直接在密闭墙上开个洞，用风把它吹干净就行。”这样做对吗？",
+        "options": [
+          "对，8% 甲烷配 9% 氧气属于惰性状态，再掺新鲜空气只会把甲烷越冲越淡",
+          "对，只要开墙的时候没人抽烟、不带任何明火和火源，就不会出事",
+          "不对：现在不爆只因缺氧，掺进空气就会穿过爆炸范围，CO 还提示里面有热源",
+          "不对，但只是因为有一氧化碳会中毒；救护队员戴上呼吸器去开墙就安全了"
+        ],
+        "explain": "甲烷在约 5%～16% 范围内、且氧气高于约 12% 时才能爆炸，12% 氧正是爆炸三角形的“鼻尖”。8% 甲烷、9% 氧气处在“富燃料惰性区”，一旦混入新鲜空气，氧气升高、甲烷被稀释，混合气会先穿过爆炸区；一氧化碳偏高说明火区里可能还有阴燃热源，正是点火源。启封火区必须制定专门措施，必要时先注惰性气体，并停电撤人、有计划地进行。"
+      },
+      "en": {
+        "q": "A fire area was sealed several months ago. Samples from behind the seal show methane 8 %, oxygen 9 % and CO 50 ppm. The section foreman says: 'Below 12 % oxygen it can't explode, so just knock a hole in the seal and blow it clean with fresh air.' Is that right?",
+        "options": [
+          "Yes: 8 % methane with 9 % oxygen is inert, and mixing in fresh air only dilutes the methane further",
+          "Yes: as long as nobody smokes or brings any flame, spark or hot tool near while the seal is opened, nothing can happen",
+          "No: it's inert only for want of oxygen; added air carries it through the explosive range, and the CO hints at heat",
+          "No, but only because the CO is poisonous; with rescuers in breathing apparatus, opening it is perfectly safe"
+        ],
+        "explain": "Methane explodes only at roughly 5 to 16 % and with more than about 12 % oxygen, the 'nose' of the explosibility triangle. 8 % methane with 9 % oxygen is in the fuel-rich inert zone, and as fresh air mixes in, oxygen rises while methane is diluted, so the mixture passes through the explosive zone; the raised CO suggests smouldering heat inside, exactly the ignition source needed. Reopening a sealed fire area needs a formal plan, inerting first if necessary, with power off and people withdrawn."
+      }
+    },
+    {
+      "id": "mine-x10",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "应急管理部 煤矿自救互救（瓦斯爆炸时的自救）; 《煤矿安全规程》第七百一十四条",
+      "zh": {
+        "q": "你在大巷里走着，突然感到一股强风，耳朵一阵发胀，里面方向传来轰隆声，带着粉尘的气浪扑面而来：发生了瓦斯爆炸。第一时间该怎么做？",
+        "options": [
+          "立刻转身往井口方向全力奔跑，一定要抢在火焰和冲击波追上来之前跑出去",
+          "背向气浪俯卧贴地，闭气，捂住口鼻、盖住皮肤；冲击波过后戴自救器撤离",
+          "站稳身子，先把自救器戴好，然后赶紧往爆炸的方向跑过去，看看能不能救人",
+          "躲到一根粗大的支柱后面，面朝爆炸方向站好，看清飞来的碎石好及时躲开"
+        ],
+        "explain": "冲击波和火焰传播得比人跑得快得多。煤矿自救互救要求：背向空气震动的方向俯卧，面部贴地，闭气暂停呼吸，用湿毛巾捂住口鼻，防止吸入火焰和高温气体，用衣物盖住身体减少烧伤；冲击波过后立即戴好自救器，沿避灾路线撤离。爆炸后很多遇难者并非死于冲击波，而是死于爆炸后气体中的一氧化碳，所以紧接着要戴自救器，而不是往爆炸方向去。"
+      },
+      "en": {
+        "q": "Walking along a main roadway, you suddenly feel a strong gust and pressure in your ears; a roar comes from inby and a dust-laden blast of air rushes toward you. It's a methane explosion. What do you do in the first seconds?",
+        "options": [
+          "Turn at once and sprint toward the shaft, to get out before the flame and blast wave catch up",
+          "Drop face-down, back to the blast, hold your breath, cover face and skin; then don the self-rescuer and go",
+          "Stand firm and put the self-rescuer on first, then hurry toward the explosion to see whom you can save there",
+          "Get behind a thick prop, facing the explosion, so you can see flying rock coming and dodge it"
+        ],
+        "explain": "The blast wave and flame travel far faster than anyone can run. Chinese mine self-rescue training says: lie face-down with your back to the blast, face to the ground, hold your breath, cover your nose and mouth with a damp cloth so you don't inhale flame and hot gas, and cover bare skin against burns; once the wave has passed, put on your self-rescuer and leave by the escape route. Many of those who die after an explosion are killed not by the blast but by carbon monoxide in the afterdamp, which is why the self-rescuer comes straight after, not a trip toward the blast."
+      }
+    },
+    {
+      "id": "mine-x11",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "《煤矿安全规程》第一百四十四条（联锁风门）",
+      "zh": {
+        "q": "火灾撤退中，你们二十多个人要从回风巷穿过一条联络巷进入进风巷，联络巷里装着两道联锁风门。为了快点过人，有人想用木头把两道风门都撑开。正确的做法是？",
+        "options": [
+          "可以，人命关天，把风门撑开能省下不少时间，等人都过完了再关上就行",
+          "可以，但只撑开靠进风巷的那一道门，回风侧那道开不开都无所谓",
+          "干脆把两道风门都拆下来扔到一边，以后撤退时就再也不会被门挡住去路了",
+          "不行：分批过，开一道、进人、关上，再开另一道；两道齐开会使风流短路"
+        ],
+        "explain": "联络巷里的双道风门就是“风闸”：进风巷气压高于回风巷，两道门同时打开，新鲜风流就会直接从联络巷短路流进回风巷，里面的工作面和仍在撤退的人得不到足够的风，瓦斯可能积聚，火灾烟流的方向也可能被打乱。《煤矿安全规程》要求这类联络巷安设两道联锁的正向风门，正是为了不让两道门同时敞开。人多就分批过闸，每批随手关门。"
+      },
+      "en": {
+        "q": "During a fire evacuation, more than twenty of you must pass from the return through a crosscut into the intake; the crosscut has two interlocked ventilation doors. To get everyone through faster, someone wants to wedge both doors open with timber. What's right?",
+        "options": [
+          "Do it: lives come first, wedging them open saves a lot of time, and you can shut them once everyone is through",
+          "Do it, but wedge open only the door on the intake side; whether the return-side door is open doesn't matter",
+          "Take both doors off their hinges and set them aside, so they can never hold anyone up during the escape",
+          "No: go in batches, open one door, let people in, shut it, open the other; both open short-circuits the air"
+        ],
+        "explain": "The pair of doors acts as an airlock: the intake is at higher pressure than the return, so with both doors open the fresh air short-circuits straight through the crosscut into the return, starving the workings and the people still evacuating of air, letting methane build up and upsetting the path of the fire smoke. China's regulations require two interlocked doors in such crosscuts precisely so they can't both be open. With a big group, go through the airlock in batches and close each door behind you."
+      }
+    },
+    {
+      "id": "mine-x12",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "《煤矿安全规程》第七百一十七条（处理顶板事故）",
+      "zh": {
+        "q": "一次冒顶把两名工友堵在了巷道里，中间隔着十来米塌落的矸石；有人敲管子，里面有回应。顶板还在不断掉渣。救援应当先做什么？",
+        "options": [
+          "先用压风管、水管或钻孔送风送水，专人盯顶板和瓦斯，先支护后清矸",
+          "所有人一齐上阵，抡起镐头和大锤全力扒矸，越快把人扒出来生还机会越大",
+          "在矸石堆上打眼放一小炮，把大块矸石崩开，这样清出通道最快",
+          "在顶板完全稳定之前什么都别做，先撤到安全处，等几天后再组织救援"
+        ],
+        "explain": "《煤矿安全规程》第七百一十七条规定处理顶板事故：迅速恢复冒顶区通风，不能恢复时利用压风管、水管或打钻向被困人员供给新鲜空气、饮料和食物；指定专人检查甲烷、观察顶板和支护，发现异常立即撤人；加强支护，防止二次冒顶、片帮，保证退路畅通。一窝蜂地抡镐扒矸、在矸石堆上放炮，都可能引发二次冒顶，把救援者也埋进去。"
+      },
+      "en": {
+        "q": "A roof fall has cut off two workmates behind about ten metres of fallen rock; when someone taps on a pipe, they tap back. Small pieces are still dropping from the roof. What should the rescue do first?",
+        "options": [
+          "Feed them air and water via the air or water line or a borehole, watch roof and gas, support before digging",
+          "Everyone pitches in at once with picks and sledgehammers: the faster you dig through, the better their chances of living",
+          "Drill and fire a small charge in the fall to break up the big rocks; it's the quickest way to open a path",
+          "Do nothing until the roof has completely settled: withdraw to safety and organise the rescue in a few days"
+        ],
+        "explain": "Article 717 of China's regulations sets out how to handle a roof fall: restore ventilation to the fall area, and if that's impossible supply fresh air, drinks and food through the compressed-air line, water line or a borehole; have someone check methane and watch the roof and supports, withdrawing at any sign of trouble; and strengthen support to prevent a second fall and keep the way out open. A free-for-all with picks and hammers, or blasting in the fall, can bring down a second fall that buries the rescuers too."
+      }
+    }
+  ]
+}

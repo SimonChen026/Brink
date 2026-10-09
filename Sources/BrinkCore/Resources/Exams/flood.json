@@ -1,0 +1,974 @@
+{
+  "id": "flood",
+  "skill": "survival",
+  "bonus": 1,
+  "perk": null,
+  "requires": [],
+  "minLevel": 1,
+  "count": 10,
+  "pass": 8,
+  "icon": "water.waves",
+  "color": "#2F81F7",
+  "zh": {
+    "name": "防汛与水域救援",
+    "full": "防汛与水域救援资格",
+    "desc": "洪水里能不能走、能不能开车，触电，救人的顺序（伸、抛、划、游），溃堤，洪水后的饮水和疾病。",
+    "realWorld": "相当于防汛抢险和水域救援的基础培训。"
+  },
+  "en": {
+    "name": "Flood & Swiftwater Safety",
+    "full": "Flood & Swiftwater Safety Certificate",
+    "desc": "Walking and driving in floodwater, electrocution, the rescue sequence (reach, throw, row, go), levee breaches, drinking water and disease after floods.",
+    "realWorld": "Comparable to basic flood response and swiftwater rescue training."
+  },
+  "questions": [
+    {
+      "id": "flood-01",
+      "answer": 0,
+      "hard": false,
+      "source": "NWS Turn Around Don't Drown",
+      "zh": {
+        "q": "流得急的洪水，大约多深就能把一个成年人冲倒？",
+        "options": [
+          "约 15 厘米，没过脚踝",
+          "约 50 厘米，齐膝盖深",
+          "约 1 米，齐腰深",
+          "约 1.3 米，齐胸深"
+        ],
+        "explain": "美国国家气象局（NWS）的数据：约 15 厘米（6 英寸）的急流就能把成年人冲倒，约 30 厘米能冲走大多数小汽车。水的冲力随流速急剧增大，浑水下面还可能是冲垮的路面和敞开的井盖，所以急流能不蹚就不蹚。"
+      },
+      "en": {
+        "q": "How deep does fast-moving floodwater need to be to knock an adult off their feet?",
+        "options": [
+          "About 15 cm — ankle-deep",
+          "About 50 cm — knee-deep",
+          "About 1 m — waist-deep",
+          "About 1.3 m — chest-deep"
+        ],
+        "explain": "NWS figures: about 15 cm (6 in) of fast-moving water can knock an adult over, and about 30 cm can carry away most cars. The force rises steeply with speed, and murky water can hide washed-out ground and open manholes — so stay out of moving water."
+      }
+    },
+    {
+      "id": "flood-02",
+      "answer": 1,
+      "hard": true,
+      "source": "NWS Turn Around Don't Drown",
+      "zh": {
+        "q": "前面的路被约 60 厘米深的急流漫过。司机说：“咱们是高底盘越野车，水还没到车门，冲过去没事。”正确的判断是？",
+        "options": [
+          "能过，只要加大油门冲过去，别在水里熄火",
+          "掉头，60 厘米的急流连越野车都能冲走",
+          "能过，只要水没漫过排气管就没问题",
+          "能过，跟着前车的车辙走，前车过得去你也过得去"
+        ],
+        "explain": "NWS：约 30 厘米的急流就能冲走大多数小汽车，60 厘米能冲走越野车和皮卡。车一浮起来，轮胎就失去抓地力，方向盘和刹车都不管用了；水下的路面也可能早已冲垮。洪水中溺亡的人，一半以上是开车涉水。"
+      },
+      "en": {
+        "q": "The road ahead is covered by fast-flowing water about 60 cm deep. The driver says: 'It's a high-clearance SUV and the water's below the doors — we'll be fine.' What's right?",
+        "options": [
+          "Go, but floor it so the engine doesn't stall in the water",
+          "Turn around — 60 cm of fast water can sweep away even SUVs",
+          "Go — it's fine as long as the exhaust stays above water",
+          "Go, in the tracks of the car ahead — if it made it, so will you"
+        ],
+        "explain": "NWS: about 30 cm of rushing water can carry away most cars, and 60 cm can carry away SUVs and pickups. Once a vehicle floats, the tyres lose grip and the steering and brakes stop working; the road underneath may be gone. More than half of flood drownings happen in vehicles driven into floodwater."
+      }
+    },
+    {
+      "id": "flood-03",
+      "answer": 2,
+      "hard": true,
+      "source": "Giesbrecht (SWOC)",
+      "zh": {
+        "q": "你开的车被冲进了河里，车还浮在水面上，水正从门缝往里灌。第一步该做什么？",
+        "options": [
+          "先打报警电话说清楚位置，再想办法逃生",
+          "等车里灌满了水、内外水压平衡后，再推开车门游出去",
+          "解开安全带，立刻开窗或破窗，孩子先出，人随后爬出",
+          "先使劲推车门，推不开再想别的办法"
+        ],
+        "explain": "加拿大学者 Giesbrecht 的研究表明：车辆落水后通常只在水面浮一分钟左右，这是唯一的逃生窗口。口诀是“解安全带—开窗—出去—孩子先”。水压会把车门死死压住，等灌满水再开门往往已经来不及；打电话会浪费这宝贵的一分钟。"
+      },
+      "en": {
+        "q": "Your car has been swept into a river. It's still floating, and water is pouring in around the doors. What do you do first?",
+        "options": [
+          "Call the emergency number and give your location, then try to escape",
+          "Wait for the car to fill so the pressure equalises, then open the door",
+          "Unbuckle, open or break a window now, children out first, then you",
+          "Shove hard on the door first, and only try something else if it won't open"
+        ],
+        "explain": "Research by Gordon Giesbrecht: a car usually floats for only about a minute, and that is your escape window. Remember SWOC — Seatbelts off, Windows open, Out, Children first. Water pressure pins the doors shut, waiting for the car to fill usually means drowning, and a phone call wastes the minute you have."
+      }
+    },
+    {
+      "id": "flood-04",
+      "answer": 3,
+      "hard": false,
+      "source": "Ready.gov Floods; 应急管理部",
+      "zh": {
+        "q": "乡里发了转移通知，说上游洪峰今晚到。现在天还晴着，村口也还没进水。你家该怎么做？",
+        "options": [
+          "先把粮食家当都搬上二楼，等水进了院子再走也来得及",
+          "留下青壮年看家护院，只让老人和孩子先走",
+          "开车走河边那条近路，越快离开越好",
+          "马上带上应急包，按指定路线转移到高处或安置点"
+        ],
+        "explain": "转移要趁路还能走、天还亮的时候。洪峰一到或大堤一溃，几个小时甚至几十分钟就能淹掉一楼，那时再走就只能蹚水或等船。要按指定路线走：抄近路可能正好经过低洼、临河的危险地段。"
+      },
+      "en": {
+        "q": "Officials have ordered an evacuation: the flood crest from upstream will arrive tonight. It's still sunny and the village is dry. What should your family do?",
+        "options": [
+          "Carry your belongings upstairs first; there's time to leave once water reaches the yard",
+          "Keep the adults home to guard the house and send only the old and young",
+          "Drive out on the riverside shortcut — the faster you leave, the better",
+          "Leave now with your go-bag, by the designated route, for high ground or the shelter"
+        ],
+        "explain": "Evacuate while the roads are passable and it's still light. When the crest arrives or a levee fails, the ground floor can flood within hours or even minutes, and then leaving means wading or waiting for a boat. Use the designated route: shortcuts may run through low ground beside the river."
+      }
+    },
+    {
+      "id": "flood-05",
+      "answer": 1,
+      "hard": false,
+      "source": "应急管理部; NWS",
+      "zh": {
+        "q": "你们在山谷里的小溪边扎营。上游突然传来轰隆声，溪水一下子变浑、猛涨。往哪儿跑？",
+        "options": [
+          "顺着沟谷往下游跑，跑得比水快就行",
+          "朝垂直水流的方向，就近往山坡高处爬",
+          "先回帐篷收拾好装备和食物，再往高处走",
+          "趁水还不深，赶紧蹚到对岸的公路上"
+        ],
+        "explain": "山洪来得快、水头高，人跑不过它。应急管理部的提醒是：千万不要顺着沟谷跑，要以最快速度向两侧山坡高处撤离。轰隆声、溪水突然变浑或猛涨，都说明山洪马上就到，一秒都别耽误。"
+      },
+      "en": {
+        "q": "You're camped by a stream in a mountain valley. A roar comes from upstream and the water suddenly turns muddy and rises fast. Which way do you run?",
+        "options": [
+          "Downstream along the valley floor, to outrun the water",
+          "Straight up the nearest valley side, at right angles to the flow",
+          "Back to the tent for gear and food first, then uphill",
+          "Wade across to the road on the far bank while the water is still low"
+        ],
+        "explain": "A flash flood moves faster than you can run and arrives as a wall of water. Chinese emergency guidance: never flee along the valley — climb the nearest slope at right angles to the flow, at once. A roar upstream or a stream that suddenly turns muddy or rises fast means the flood is moments away."
+      }
+    },
+    {
+      "id": "flood-06",
+      "answer": 2,
+      "hard": true,
+      "source": "水利部防汛抢险技术",
+      "zh": {
+        "q": "夜里巡堤，你在大堤背水一侧的堤脚下发现一个小洞在往外冒水，水是浑的，还带着细沙。这说明什么？",
+        "options": [
+          "只是雨水从堤身里渗出来，等天亮了再去看也不迟",
+          "是地下冒出的泉眼，跟大堤安不安全没有关系",
+          "是管涌，大堤正被掏空，可能溃口，要立即上报",
+          "说明江水开始回落了，大堤受的压力正在减小"
+        ],
+        "explain": "高水位时，堤内外的水位差推着水从堤基下面穿过来。只冒清水的渗漏可以先观察，一旦带出泥沙，说明土体正在被掏空，通道会越冲越大，几个小时内就可能溃口。1998 年九江长江大堤决口，就是从堤脚冒泡泉、发展成管涌开始的。"
+      },
+      "en": {
+        "q": "Patrolling a levee at night, you find a small hole at the foot of the landward side bubbling out water — muddy and carrying fine sand. What does it mean?",
+        "options": [
+          "Just rainwater seeping out of the bank; it can wait until morning",
+          "An underground spring that has nothing to do with the levee's safety",
+          "Piping: the levee is being undermined and may breach — report it now",
+          "It means the river is falling and the pressure on the levee is easing"
+        ],
+        "explain": "At high water, the difference in level pushes water through the ground beneath the levee. Clear seepage can be watched, but once it carries sand, soil is being washed out and the channel will grow, possibly to a breach within hours. The 1998 Jiujiang breach on the Yangtze began as a bubbling spring at the levee foot that turned into piping."
+      }
+    },
+    {
+      "id": "flood-07",
+      "answer": 3,
+      "hard": true,
+      "source": "水利部防汛抢险技术",
+      "zh": {
+        "q": "确认堤脚下是管涌后，下面哪种处置是对的？",
+        "options": [
+          "用黏土和塑料布把冒水口严严实实地封死，一滴不漏",
+          "把洞口挖大，让水排得快一点，压力就降下来了",
+          "多派几个人站在冒水处反复踩踏，把松土压实压紧",
+          "用沙袋围井，分层填沙石反滤，让水出来、沙出不来"
+        ],
+        "explain": "抢护管涌的原则是“反滤导渗，留有出路”：反滤围井让渗水慢慢流出、降低水压，同时挡住泥沙不被带走。用不透水的材料硬堵，水压憋着会从旁边另找出口，险情反而扩大；在管涌区踩踏、加压也是严禁的。"
+      },
+      "en": {
+        "q": "Once you've confirmed piping at the foot of the levee, which response is correct?",
+        "options": [
+          "Seal the outlet completely with clay and plastic sheeting so no water escapes",
+          "Dig the hole wider so the water drains faster and the pressure drops",
+          "Have several people stand on the spot and stamp the loose soil down hard",
+          "A sandbag ring filled with graded gravel: water gets out, sand doesn't"
+        ],
+        "explain": "The rule for piping is 'filter, drain, leave the water a way out'. A sandbag ring filled with graded sand and gravel lets seepage escape slowly while holding the soil back. Sealing it with impermeable material only forces the water out somewhere nearby, often worse; trampling or loading the area is also forbidden."
+      }
+    },
+    {
+      "id": "flood-08",
+      "answer": 0,
+      "hard": false,
+      "source": "USACE Sandbagging; 防汛抢险技术",
+      "zh": {
+        "q": "用沙袋在门口垒一道挡水墙，哪种做法对？",
+        "options": [
+          "装到六七成满，平放，像砌砖那样错缝码放，层层踩实",
+          "每袋都装得鼓鼓的再扎紧口，竖着一袋挨一袋摆成一排",
+          "袋与袋之间留出缝隙，好让渗进来的水能流出去",
+          "只垒一层就行，关键是沿门口铺得越长越好"
+        ],
+        "explain": "装得太满的沙袋硬邦邦的，彼此贴不紧，缝里漏水。装六七成满、平放、上下错缝、逐层压实，袋子才能互相咬合；在迎水面先铺一层塑料布效果更好。沙袋只能减缓和引开水流，挡不住所有的水。"
+      },
+      "en": {
+        "q": "You're building a sandbag wall across a doorway. Which method is right?",
+        "options": [
+          "Fill half to two-thirds, lay flat, stagger joints like bricks, tamp each layer",
+          "Fill each bag until it's tight, tie it, and stand them upright side by side in a row",
+          "Leave gaps between the bags so any water that seeps in can drain out",
+          "One layer is enough; what matters is making the line as long as possible"
+        ],
+        "explain": "Overfilled bags stay rigid and leave gaps. About half to two-thirds full, laid flat with staggered joints and tamped down, they mould into each other; a plastic sheet on the water side helps. Sandbags slow and divert water — they don't make a watertight wall."
+      }
+    },
+    {
+      "id": "flood-09",
+      "answer": 2,
+      "hard": false,
+      "source": "Ready.gov Floods",
+      "zh": {
+        "q": "洪水正漫进一楼，快淹到墙上的插座了。关于电，你该怎么做？",
+        "options": [
+          "站在水里，把电器的插头一个一个拔下来",
+          "先别断电，得留着电给抽水泵抽水、给电灯照明用",
+          "在干处够得着就拉总闸，要蹚水才够得着就别碰",
+          "找把剪刀，把进户的电线剪断，彻底断了电"
+        ],
+        "explain": "水能导电，插座一进水，整片积水都可能带电。只有脚下干燥、手也是干的时候才去拉总闸；要站在水里才够得着，就别碰，人先离开，让供电部门从外面断电。来电前要请电工检查线路。"
+      },
+      "en": {
+        "q": "Floodwater is coming into the ground floor and is nearly up to the wall sockets. What do you do about the electricity?",
+        "options": [
+          "Stand in the water and unplug each appliance one at a time",
+          "Keep the power on — you'll need it for the pump and lights",
+          "Turn off the mains if you can reach it on dry ground; if not, leave it",
+          "Find a pair of scissors and cut the incoming supply cable to kill the power"
+        ],
+        "explain": "Water conducts, and once sockets are submerged the whole flooded area may be live. Only switch off the mains if you're on dry ground with dry hands; if you'd have to stand in water, leave it, get out, and have the utility cut the power from outside. Get an electrician to check before the power goes back on."
+      }
+    },
+    {
+      "id": "flood-10",
+      "answer": 1,
+      "hard": true,
+      "source": "OSHA; 电力安全规程",
+      "zh": {
+        "q": "你蹚水往大堤走，发现前方几米处一根断了的电线垂在水里，脚底开始发麻。怎么离开？",
+        "options": [
+          "迈开大步赶紧跑，越快冲出这片带电的水就越安全",
+          "并拢双脚，小步挪或并脚跳，退到 10 米外",
+          "原地趴下，尽量降低身体高度，免得被电到",
+          "伸手把电线拨到一边，免得后面的人碰到"
+        ],
+        "explain": "电线落进水里或落地后，电流向四周扩散，离落点越近电压越高；两脚分得越开，两脚之间的“跨步电压”就越大。双脚并拢小步挪或并脚跳，两脚间电位差最小；趴下等于把整个身体铺在电场里，更危险。断线一律当作带电，至少远离 10 米并报告。"
+      },
+      "en": {
+        "q": "Wading toward the levee, you see a broken power line hanging into the water a few metres ahead, and your feet begin to tingle. How do you get away?",
+        "options": [
+          "Run with long strides to get out of the live water as fast as you can",
+          "Feet together — shuffle or hop back until you're at least 10 m away",
+          "Lie down flat to keep your body low and avoid the current",
+          "Push the wire aside so the people behind you don't touch it"
+        ],
+        "explain": "Current spreads out from where a line touches ground or water, strongest near the contact point, and the wider your stride the bigger the 'step voltage' across your legs. Shuffling or hopping with feet together keeps it minimal; lying down spreads your whole body across it. Treat every downed line as live: keep at least 10 m away and report it."
+      }
+    },
+    {
+      "id": "flood-11",
+      "answer": 3,
+      "hard": false,
+      "source": "RNLI; Royal Life Saving Society",
+      "zh": {
+        "q": "一个人掉进了水流湍急的排洪渠，离岸约 3 米。你水性不错，手边有一根长竹竿和一个拧紧盖子的空塑料桶。第一步怎么做？",
+        "options": [
+          "你水性好，别耽误工夫，赶紧跳下水去把他拉上来",
+          "跑回村里喊人来救，自己先什么都别做",
+          "先把衣服鞋子脱掉，再下水游过去拉他",
+          "趴低稳住身体，把竹竿伸给他；够不着再抛空桶"
+        ],
+        "explain": "救落水者的顺序是“伸、抛、划、游”：能伸东西够到就不抛，能抛就不划船，非到万不得已且受过训练，才下水。急流里惊慌的落水者会死死抱住施救者，水性再好也可能被一起拖下去；溺亡者中常有跳下去救人的人。"
+      },
+      "en": {
+        "q": "Someone has fallen into a fast-flowing flood channel about 3 m from the bank. You swim well, and you have a long bamboo pole and an empty jerrycan with the cap on. What do you do first?",
+        "options": [
+          "You're a strong swimmer — jump straight in and pull him out",
+          "Run back to the village for help and do nothing yourself",
+          "Strip off your clothes and shoes first, then swim out there and grab him",
+          "Brace low and reach the pole out; if it's too short, throw the can"
+        ],
+        "explain": "The order is reach, throw, row, go: reach if you can, throw if you can't reach, row if you can't throw, and swim only as a last resort and if trained. In fast water a panicking victim will grab and drag down even a strong swimmer; would-be rescuers are often among the drowned."
+      }
+    },
+    {
+      "id": "flood-12",
+      "answer": 2,
+      "hard": true,
+      "source": "Swiftwater rescue (Rescue 3)",
+      "zh": {
+        "q": "你想蹚进齐腰深的急流，去拉一个抱着树的人。同伴说：“把绳子系在你腰上，我在岸上拽着，保险。”这样做行吗？",
+        "options": [
+          "可以，绳子系牢了，人就不会被冲走",
+          "可以，但要打个死结，免得中途松开",
+          "不行，急流中身上拴死的绳子会把人拽进水下",
+          "可以，但岸上那头最好拴在树上，比人拽着更牢"
+        ],
+        "explain": "急流里绳子一绷紧，水流就会把系着绳子的人压到水下，而且绳结越牢越解不开，岸上拴在树上更是致命。专业救援人员只把绳子扣在带快速脱扣装置的救援背心上。普通人应该站在岸上把绳子抛给落水者，让他用手抓住，绝不把绳子绑在任何人身上。"
+      },
+      "en": {
+        "q": "You want to wade into waist-deep fast water to reach someone clinging to a tree. Your friend says, 'Tie the rope round your waist and I'll hold it from the bank — that's safe.' Is it?",
+        "options": [
+          "Yes — with a rope tied on, you can't be swept away",
+          "Yes, but use a knot that can't possibly slip loose",
+          "No — a rope tied to you in a current can drag you under",
+          "Yes, but tie the shore end to a tree — stronger than a person"
+        ],
+        "explain": "When the rope comes tight, the current drives the tethered person under, and a secure knot can't be released — tying the shore end to a tree is deadly. Professional rescuers clip only to a rescue vest with a quick-release. Untrained helpers should throw a rope from the bank for the victim to hold with their hands, and never tie it to anyone."
+      }
+    },
+    {
+      "id": "flood-13",
+      "answer": 1,
+      "hard": false,
+      "source": "Royal Life Saving Society",
+      "zh": {
+        "q": "水已经漫到屋顶边沿。万一得下水，下面哪样东西最适合临时当救生浮具？",
+        "options": [
+          "一床厚厚的棉被，卷得紧紧的抱在怀里",
+          "几个拧紧盖子的空塑料桶，捆在一起",
+          "一袋没开封的大米，紧紧抱在胸前",
+          "一个敞口的铁皮澡盆，人坐在里面"
+        ],
+        "explain": "密封的空容器浮力大、不吸水，一个 20 升的空桶就能提供约 20 公斤的浮力，足够让人把头露出水面。棉被吸水后越来越沉，大米会沉底，敞口的盆一进水就翻。木门板、泡沫板、篮球也可以临时用。"
+      },
+      "en": {
+        "q": "Water has reached the edge of the roof. If you have to go into the water, which of these makes the best improvised flotation?",
+        "options": [
+          "A thick cotton quilt, rolled up as tight as possible and hugged close",
+          "Empty plastic jerrycans, caps screwed tight, tied together",
+          "An unopened sack of rice held against your chest",
+          "An open sheet-metal washtub to sit in"
+        ],
+        "explain": "Sealed empty containers float well and don't soak up water: one 20-litre can gives about 20 kg of buoyancy, plenty to keep a head above water. A quilt gets heavier as it soaks, rice sinks, and an open tub swamps and flips. Wooden doors, foam boards and balls also work."
+      }
+    },
+    {
+      "id": "flood-14",
+      "answer": 0,
+      "hard": true,
+      "source": "Ready.gov Floods",
+      "zh": {
+        "q": "水已经淹到二楼，还在涨。你家有个封闭的阁楼，只有一个从屋里上去的小口。正确的做法是？",
+        "options": [
+          "别进封闭阁楼；非进不可就带上斧头，好破顶出去",
+          "全家都躲进阁楼，把入口盖严实，等水退下去",
+          "进阁楼后用棉被把入口堵死，挡住往上涨的水",
+          "在阁楼里多点上几支蜡烛，亮光好让救援的人看到你"
+        ],
+        "explain": "封闭阁楼是洪水里的死亡陷阱：水一涨上来就无路可逃，2005 年卡特里娜飓风后，许多遇难者是在阁楼里被发现的。Ready.gov 的建议是：不要爬进封闭的阁楼，必要时上屋顶并发出求救信号；如果只能先进阁楼，一定带上斧头或锯子，水再涨就破顶上房。"
+      },
+      "en": {
+        "q": "Water has reached the second floor and is still rising. Your house has a closed attic reached only by a small hatch from inside. What's right?",
+        "options": [
+          "Avoid the closed attic; if you must go up, take an axe to cut through the roof",
+          "Take the family into the attic, close the hatch and wait it out",
+          "Get up into the attic and seal the hatch with quilts to keep the rising water out",
+          "Light candles in the attic so rescuers can see the glow"
+        ],
+        "explain": "A closed attic is a death trap in a flood: once the water rises there's no way out, and after Hurricane Katrina in 2005 many victims were found in attics. Ready.gov: don't climb into a closed attic; go onto the roof if necessary and signal for help. If the attic is your only option, take an axe or saw so you can break out onto the roof."
+      }
+    },
+    {
+      "id": "flood-15",
+      "answer": 3,
+      "hard": true,
+      "source": "IAMSAR Vol. III",
+      "zh": {
+        "q": "救援直升机悬停在你家屋顶上方，放下了吊带和挂钩。你该怎么做？",
+        "options": [
+          "挂钩一到手边就跳起来抓住，别让直升机久等",
+          "把吊索拴在屋顶的柱子上，让它稳住别晃",
+          "一直挥舞床单，让飞行员看清你，直到吊带落到身边",
+          "让挂钩先碰到屋顶或水面放掉静电，再听机组指挥"
+        ],
+        "explain": "旋翼高速转动会让直升机积聚很强的静电，挂钩先接触屋顶或水面才能放掉，直接伸手抓可能被电击。绝对不能把吊索拴在任何东西上：直升机一漂移就会被拽住，酿成事故。下洗气流很强，床单、塑料布这类松散物要收好，以免被卷进旋翼。"
+      },
+      "en": {
+        "q": "A rescue helicopter is hovering over your roof and lowering a strop and hook. What do you do?",
+        "options": [
+          "Jump up and grab the hook as soon as you can, so they don't wait",
+          "Tie the cable to a post on the roof so it stops swinging about",
+          "Keep waving a bedsheet so the pilot can see you until the strop reaches you",
+          "Let the hook touch down first to discharge static, then follow the crew"
+        ],
+        "explain": "Helicopters build up a strong static charge; the hook must touch the roof or water first to discharge it, or grabbing it can give you a shock. Never tie the cable to anything — if the helicopter drifts it gets anchored and can crash. The downwash is violent: secure sheets, tarps and other loose items so they aren't sucked into the rotors."
+      }
+    },
+    {
+      "id": "flood-16",
+      "answer": 0,
+      "hard": false,
+      "source": "RNLI Flood Safety",
+      "zh": {
+        "q": "冲锋舟靠到你家屋檐边，船上已经坐了几个人。你们该怎么上船？",
+        "options": [
+          "听船员指挥，一个个上，踩船中间，上船马上坐低",
+          "大家一起往船上跳，越快越好，抓紧时间",
+          "先把粮食、电视这些家当递上船，人再上去",
+          "上船后大家都站到靠房子的那一侧，好拉后面的人上来"
+        ],
+        "explain": "小船最怕重心偏和超载：几个人同时跳上去，或都挤到一侧，船很容易翻。要踩在船的中线上、压低身体，上船就坐下，按船员安排的位置坐好。家当能不带就不带，船的载重要留给人。"
+      },
+      "en": {
+        "q": "A rescue boat pulls up at your eaves with several people already aboard. How do you get in?",
+        "options": [
+          "On the crew's word, one at a time, step to the centre and sit down at once",
+          "Everyone jumps in together — the faster the better",
+          "Hand up the grain, TV and valuables first, then climb in",
+          "Once aboard, everyone stands on the side nearest the house to help pull others up"
+        ],
+        "explain": "Small boats capsize from overloading and weight shifting to one side — several people jumping in at once, or crowding one side, can flip them. Step onto the centreline, stay low, sit down straight away and take the seat the crew gives you. Leave belongings behind; the boat's capacity is for people."
+      }
+    },
+    {
+      "id": "flood-17",
+      "answer": 1,
+      "hard": true,
+      "source": "WHO Drinking-water; CDC",
+      "zh": {
+        "q": "屋顶上没有干净水了，只有浑浊的洪水。奶奶说：“放点明矾，等水清了就能喝。”最妥当的做法是？",
+        "options": [
+          "照奶奶说的办，水一旦澄清了，就说明已经干净能喝了",
+          "澄清后还得烧开或加氯消毒；能接雨水就先接雨水",
+          "先用明矾澄清，再兑上几滴白酒消消毒就行",
+          "别折腾了直接喝，反正渴死比拉肚子更可怕"
+        ],
+        "explain": "明矾只能让泥沙沉下去，杀不死病菌；泡着粪便和死畜的洪水，看着清亮照样能传播痢疾、霍乱。正确流程是：先沉淀或过滤，再烧开（沸腾 1 分钟），或按说明加漂白粉、消毒片后静置 30 分钟。用干净容器接的雨水是最干净的水源；几滴白酒的浓度远远不够消毒。"
+      },
+      "en": {
+        "q": "There's no clean water left on the roof, only muddy floodwater. Grandma says, 'Add some alum, and once it clears you can drink it.' What's the right approach?",
+        "options": [
+          "Do as Grandma says: once the water runs clear, it's clean and safe to drink",
+          "Clear it, then boil or chlorinate it — and catch rainwater if you can",
+          "Clear it with alum, then add a few drops of liquor to disinfect",
+          "Don't bother — drink it as it is; thirst is worse than diarrhoea"
+        ],
+        "explain": "Alum only makes sediment settle; it doesn't kill germs, and floodwater full of sewage and carcasses can look clear and still spread dysentery or cholera. Settle or filter it, then boil it (a rolling boil for 1 minute) or add bleach or chlorine tablets as directed and wait 30 minutes. Rain caught in a clean container is the cleanest source; a few drops of liquor are far too weak to disinfect."
+      }
+    },
+    {
+      "id": "flood-18",
+      "answer": 3,
+      "hard": false,
+      "source": "Ready.gov Floods",
+      "zh": {
+        "q": "你们必须蹚过一段齐膝深、基本不流动的积水，去 200 米外的高地。怎样走最安全？",
+        "options": [
+          "光着脚走，脚底能直接感觉到路面",
+          "一路小跑过去，尽量缩短泡在水里的时间",
+          "拉开十来米距离一个个走，免得一人滑倒连累别人",
+          "拄长棍在前面探路，穿着鞋，几个人挽着手慢慢走"
+        ],
+        "explain": "浑水下面可能是掀开的井盖、冲开的沟渠、碎玻璃和钉子，用长棍探路能提前发现；鞋子能防止割伤，伤口泡在洪水里极易感染。几个人挽着手比单个人站得稳。走慢一点，一步踩实再迈下一步；水在流动就不要蹚。"
+      },
+      "en": {
+        "q": "You must wade through knee-deep, nearly still floodwater to high ground 200 m away. What's the safest way?",
+        "options": [
+          "Go barefoot so your soles can feel the road surface",
+          "Jog across to spend as little time in the water as possible",
+          "Go one at a time, about 10 m apart, so one slip doesn't bring others down",
+          "Probe ahead with a long stick, keep shoes on, link arms and go slowly"
+        ],
+        "explain": "Murky water can hide missing manhole covers, washed-out ditches, glass and nails; a stick finds them before your feet do. Shoes prevent cuts, which get infected easily in floodwater. People linked together are steadier than individuals. Go slowly, test each step — and don't wade where the water is moving."
+      }
+    },
+    {
+      "id": "flood-19",
+      "answer": 2,
+      "hard": true,
+      "source": "WHO/CDC Leptospirosis",
+      "zh": {
+        "q": "洪水退后一周，曾经光脚蹚水、腿上有划伤的老陈突然高烧、头痛，小腿肚痛得厉害，眼睛发红。最该怀疑什么？",
+        "options": [
+          "中暑了，多喝凉水、歇一歇就会好",
+          "普通感冒，吃点感冒药扛几天就好",
+          "钩端螺旋体病，要尽快就医用抗生素",
+          "破伤风，在伤口上多擦几遍酒精就行"
+        ],
+        "explain": "钩体病由鼠类等动物尿液污染的水和泥土传播，病菌从伤口或眼、口、鼻黏膜进入，洪水后常有暴发。潜伏期多为 5～14 天，典型表现是突然高烧、头痛、小腿肌肉剧痛和眼睛充血；拖下去可能发展为黄疸、肾衰竭或肺出血。早用抗生素效果好。"
+      },
+      "en": {
+        "q": "A week after the flood, Lao Chen — who waded barefoot with scratches on his legs — suddenly has a high fever, headache, severe calf pain and red eyes. What should you suspect most?",
+        "options": [
+          "Heatstroke — plenty of cool water and rest will sort it out",
+          "A common cold — take cold pills and ride it out",
+          "Leptospirosis — see a doctor quickly for antibiotics",
+          "Tetanus — just rub the cuts with more alcohol"
+        ],
+        "explain": "Leptospirosis spreads through water and soil contaminated with the urine of rats and other animals, entering through cuts or the eyes, nose and mouth; outbreaks often follow floods. Symptoms usually start 5–14 days later: sudden high fever, headache, severe calf pain and red eyes. Untreated it can cause jaundice, kidney failure or lung bleeding; early antibiotics work well."
+      }
+    },
+    {
+      "id": "flood-20",
+      "answer": 0,
+      "hard": false,
+      "source": "CDC Floodwater & Wounds",
+      "zh": {
+        "q": "蹚水时，你的小腿被水下的铁皮划开一道口子。离开洪水后最该做什么？",
+        "options": [
+          "用肥皂和清水洗净，包好别再泡水，必要时补打破伤风针",
+          "就近用洪水把伤口冲一冲，再用布条使劲扎紧",
+          "在伤口上抹点牙膏或草木灰，能止血还能消炎",
+          "什么都别盖，让伤口敞着晒太阳，干得快好得快"
+        ],
+        "explain": "洪水里有大量粪便细菌，伤口泡过就容易感染，钩体病、破伤风也可能从伤口侵入。要尽快用肥皂和干净水冲洗，用干净敷料盖好；出现红肿热痛加重、流脓或发烧要及时就医。伤口被污染时，如果距上次打破伤风疫苗超过 5 年，应该补打。"
+      },
+      "en": {
+        "q": "While wading, you cut your shin on submerged sheet metal. Once you're out of the water, what should you do?",
+        "options": [
+          "Wash with soap and clean water, cover it, and get a tetanus shot if due",
+          "Rinse it with the floodwater, then bind it tightly with a strip of cloth",
+          "Smear on toothpaste or wood ash to stop bleeding and infection",
+          "Leave it uncovered in the sun so it dries out and heals faster"
+        ],
+        "explain": "Floodwater is full of sewage bacteria; a soaked wound infects easily and can let in leptospirosis or tetanus. Wash it with soap and clean water as soon as you can and cover it with a clean dressing; get medical care for spreading redness, swelling, pus or fever. For a dirty wound, get a tetanus booster if your last dose was more than 5 years ago."
+      }
+    },
+    {
+      "id": "flood-21",
+      "answer": 3,
+      "hard": true,
+      "source": "CDC Carbon Monoxide",
+      "zh": {
+        "q": "水退了，家里还没来电。你把汽油发电机放在车库里发电，车库门全开着通风。这样安全吗？",
+        "options": [
+          "安全，车库门大开着，废气自然会散出去",
+          "安全，只要人别在车库里待着，就不会有事",
+          "不安全，应该换成柴油发电机，柴油机的废气没有毒",
+          "不安全，开着门也会中毒；要放到室外，远离门窗"
+        ],
+        "explain": "一氧化碳无色无味。发电机、炭盆、燃气炉在车库、地下室或屋里使用，哪怕开着门窗也可能让人中毒身亡，废气还会从车库钻进屋里。美国疾控中心（CDC）要求：发电机只能在室外用，离门、窗和通风口至少 6 米（20 英尺）。出现头痛、头晕、恶心，尤其几个人同时不舒服时，要立即到户外。"
+      },
+      "en": {
+        "q": "The water has gone down but the power is still out. You run a petrol generator in the garage with the garage door wide open. Is that safe?",
+        "options": [
+          "Yes — with the door wide open, the exhaust clears by itself",
+          "Yes, as long as nobody spends any time inside the garage",
+          "No — switch to a diesel generator instead, because diesel exhaust isn't toxic",
+          "No — CO builds up even so; run it outdoors, well away from the house"
+        ],
+        "explain": "Carbon monoxide is colourless and odourless. Generators, charcoal burners and gas stoves used in a garage, basement or house can kill even with doors and windows open, and fumes seep from the garage into the home. CDC: run generators only outdoors, at least 20 ft (6 m) from doors, windows and vents. Headache, dizziness or nausea — especially in several people at once — mean get outside now."
+      }
+    },
+    {
+      "id": "flood-22",
+      "answer": 1,
+      "hard": false,
+      "source": "CDC Floods; WHO Snakebite",
+      "zh": {
+        "q": "水退后，你要清理院子里堆着的木板和杂物。洪水期间蛇曾爬上屋顶避水。怎样清理最安全？",
+        "options": [
+          "空着手翻就行，动作快一点，蛇来不及咬人",
+          "穿胶靴戴厚手套，用长柄工具先翻动，别伸手掏",
+          "先往杂物堆上浇点汽油点着，把藏着的蛇都烧出来",
+          "看见蛇就赶紧上前用棍子打，打死了才放心"
+        ],
+        "explain": "洪水会把蛇、碎玻璃和钉子都冲进杂物堆。先用工具翻动、用眼睛看，给蛇留出逃走的时间；大多数咬伤发生在徒手掏东西或想去抓蛇、打蛇的时候。万一被咬：保持安静、伤肢制动、摘下戒指手镯，尽快送医；不要切开、吸毒或扎止血带。"
+      },
+      "en": {
+        "q": "After the water recedes you need to clear piles of boards and debris from the yard. During the flood, snakes climbed onto roofs to escape the water. What's the safest way?",
+        "options": [
+          "Use bare hands and work fast, so a snake has no time to strike",
+          "Boots and thick gloves on; turn things with a long tool, not your hands",
+          "Pour some petrol over the pile and set it alight to drive the snakes out",
+          "If you spot a snake, go after it with a stick and kill it at once"
+        ],
+        "explain": "Floods wash snakes, broken glass and nails into debris piles. Lift things with a tool and look first, giving any snake time to leave; most bites happen when people reach in blindly or try to catch or kill a snake. If bitten: keep calm and still, immobilise the limb, remove rings, get to hospital — don't cut, suck or use a tourniquet."
+      }
+    },
+    {
+      "id": "flood-23",
+      "answer": 2,
+      "hard": true,
+      "source": "Swiftwater rescue (Rescue 3)",
+      "zh": {
+        "q": "你脚下一滑，被湍急的洪水冲走了。水不算太深，脚偶尔能碰到底。应该怎么做？",
+        "options": [
+          "赶紧站起来，用脚蹬住水底稳住身体",
+          "头朝下游、脸朝下，顺着水流拼命往前游",
+          "仰躺，脚朝下游、脚尖露出水面，斜着往岸边划",
+          "转身朝上游，使劲逆着水流往回游"
+        ],
+        "explain": "在急流中站起来，脚容易卡进石缝或杂物，水流会把人压进水下，这是洪水中溺亡的常见原因。仰面、脚朝下游可以用脚蹬开前方障碍，斜着往岸边划，到水浅流缓处再站起来。如果被冲向倒树、栅栏这类水能过、人过不去的障碍，要翻身脸朝下，头朝前奋力游过去，从它上面翻过。"
+      },
+      "en": {
+        "q": "You slip and are swept away by fast floodwater. It isn't very deep — your feet sometimes touch bottom. What should you do?",
+        "options": [
+          "Stand up quickly and brace your feet on the bottom",
+          "Go head-first downstream, face down, sprinting with the flow",
+          "Lie on your back, feet downstream and toes up, and angle toward the bank",
+          "Turn to face upstream and swim hard against the current"
+        ],
+        "explain": "Standing up in fast water risks foot entrapment: a foot jams in rocks or debris and the current pushes you under — a common way people drown in floods. On your back with feet downstream you can fend off obstacles while angling toward the bank; stand only in shallow, slow water. If you're swept toward a fallen tree or fence, roll onto your front and swim hard head-first to get over it."
+      }
+    },
+    {
+      "id": "flood-24",
+      "answer": 0,
+      "hard": false,
+      "source": "FDA Food Safety After Floods",
+      "zh": {
+        "q": "洪水退后清点存粮。下面哪样被洪水泡过的食物，经过清洗消毒后还能吃？",
+        "options": [
+          "没破损、没鼓胀的金属罐头",
+          "拧盖玻璃瓶装、没开过的辣椒酱",
+          "纸盒装的牛奶",
+          "塑料袋装的挂面"
+        ],
+        "explain": "洪水能渗进螺旋盖、纸盒、塑料袋和自家封装的食品，这些都要扔掉。只有完好的商品金属罐头（和蒸煮袋）可以留下：撕掉标签，用肥皂水洗净，再用稀释的漂白水消毒，最后用笔写上内容物。鼓胀、漏液、锈穿或严重凹陷的罐头也要扔掉。"
+      },
+      "en": {
+        "q": "Taking stock after the flood: which of these foods, having been under floodwater, can still be eaten after cleaning and disinfecting?",
+        "options": [
+          "Undamaged, unswollen metal cans",
+          "Chilli sauce in screw-top glass jars",
+          "Milk in cardboard cartons",
+          "Noodles in plastic bags"
+        ],
+        "explain": "Floodwater gets into screw caps, cartons, plastic bags and home-canned food, so throw all of those away. Only undamaged commercial metal cans (and retort pouches) can be kept: remove the labels, wash with soap and water, disinfect in dilute bleach and re-mark the contents. Discard any can that is swollen, leaking, rusted through or badly dented."
+      }
+    },
+    {
+      "id": "flood-x01",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "Rescue 3 International (Swiftwater Rescue Technician); NWS Turn Around Don't Drown",
+      "zh": {
+        "q": "你们沿着被淹的公路往高处撤。在一段齐大腿深的水里，水流大约每秒 1 米，你还能勉强站稳。前方路面低洼处水一样深，但看漂浮物的速度，水流快了一倍，约每秒 2 米。水对你腿部的冲击力大约会变成原来的多少？",
+        "options": [
+          "约 2 倍——冲击力和流速成正比，流速翻一倍，力也翻一倍",
+          "几乎不变——决定冲击力的是水深，而前面的水并没有更深",
+          "约 4 倍——冲击力随流速的平方增长，前面根本站不住",
+          "约 1.4 倍——流速翻一倍，冲击力只增加四成左右"
+        ],
+        "explain": "水流对人的推力与流速的平方成正比：流速翻一倍，推力约变为原来的 4 倍。救援教材的数据是：约 10 公里/小时的水流推一个人约 60 千克力，约 20 公里/小时就约 240 千克力。所以能在慢水里站稳，绝不说明同样深、快一倍的水也能过，“水没变深”不是蹚水的理由。"
+      },
+      "en": {
+        "q": "You're retreating to high ground along a flooded road. In thigh-deep water flowing at about 1 m/s you can just keep your footing. Ahead, in a dip, the water is just as deep, but judging by the floating debris it's flowing twice as fast, about 2 m/s. Roughly how much harder will the water push on your legs?",
+        "options": [
+          "About twice as hard: the force rises in step with the speed",
+          "Hardly any harder: depth sets the force, and it's no deeper there",
+          "About four times as hard: the force rises with the speed squared",
+          "About 1.4 times as hard: doubling the speed adds only some 40 %"
+        ],
+        "explain": "The push of moving water rises with the square of its speed: twice the speed means about four times the force. Swiftwater training figures: a current of about 10 km/h pushes on a person with roughly 60 kg of force, one of about 20 km/h with roughly 240 kg. So being able to stand in slow water says nothing about faster water of the same depth, and 'it's no deeper' is no reason to wade."
+      }
+    },
+    {
+      "id": "flood-x02",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "Virginia DWR & boat-ed: low-head dams; Rescue 3 International",
+      "zh": {
+        "q": "洪水中，一个人被冲过一道低矮的拦河堰（滚水坝），困在坝下的回流里：他一次次被卷到水下、冲出去几米，又被倒卷回坝脚。坝下几米外有一道翻滚冒泡的“沸线”。你在岸边，手里有抛绳包，同伴开来了一条小机动船。怎么救？",
+        "options": [
+          "从岸边或坝肩向他抛绳、伸杆，人和船都不越过沸线，同时呼叫专业救援",
+          "开船从下游逆流冲到坝脚，用船头顶住，把他从船头拉上船",
+          "从坝下几米处下水游过去，那里的水是往坝脚流的，正好把你送到他身边",
+          "穿上救生衣，从坝上游跳下去，顺水冲到他身边，再拉着他一起游出回流"
+        ],
+        "explain": "低坝下的回流被称为“溺水机器”：沸线以内的表层水是倒流回坝脚的，充满气泡的水浮力很差，连救生衣都未必能把人托在水面，船一越过沸线就可能被吸进去翻覆。正确做法是在岸边或坝肩抛绳、伸杆，绝不让施救者进入沸线以内。“坝下那段水往坝脚流”这句话本身没错，但它恰恰说明下水去救的人会被一起卷住。"
+      },
+      "en": {
+        "q": "A man swept over a low weir (a low-head dam) in the flood is trapped in the backwash below it: again and again he is pulled under, pushed a few metres out, then rolled back to the foot of the weir. A few metres downstream there's a churning, bubbling 'boil line'. You're on the bank with a throw bag, and a friend has brought a small motorboat. How do you rescue him?",
+        "options": [
+          "Throw or reach from the bank or dam end; keep people and boat outside the boil line; call professionals",
+          "Drive the boat up from downstream to the foot of the weir and haul him aboard over the bow",
+          "Swim out from a few metres downstream: the water there flows back toward the weir and will carry you to him",
+          "Put on a lifejacket, jump in above the weir, ride the flow down to him and swim him out of the backwash"
+        ],
+        "explain": "The backwash below a low-head dam is known as a 'drowning machine': inside the boil line the surface water flows back toward the dam, and the aerated water gives so little buoyancy that even a lifejacket may not hold a person at the surface, while a boat that crosses the boil line can be sucked in and flipped. Throw or reach from the bank or the end of the dam, and never let rescuers inside the boil line. It is true that the water below the weir flows back toward it, which is exactly why a swimmer who goes in gets trapped too."
+      }
+    },
+    {
+      "id": "flood-x03",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "NRS Throw Bag Basics; Rescue 3 International",
+      "zh": {
+        "q": "一个人正被湍急的洪水从上游冲下来，离岸约 8 米。你站在岸边一块平地上，手里有一个抛绳包。下面哪种做法正确？",
+        "options": [
+          "先把绳尾牢牢系在腰上或身后的树上，这样他抓住绳子后谁也不会被冲走",
+          "等他漂到你正前方再扔，把绳包直接砸向他的脸，让他一伸手就能抱住",
+          "他一抓住绳子，你就站直身子用力往回拽，把他直接拉向你，越快越好",
+          "趁他还在上游时抛，越过他让绳子横落胸前；绳尾不系任何东西，压低稳住，让水流把他荡向岸边"
+        ],
+        "explain": "抛绳要趁对方还在你上游时出手，这样你有时间站稳；要让绳包飞过他，绳子横落在他胸前。绳尾绝不能系在自己身上或树上：一旦受力，你会被拖下水，或者绳子会从他手里被扯脱。压低重心或坐下，用身体做保护，水流会像钟摆一样把他荡到你这一侧的岸边，不需要硬拽。"
+      },
+      "en": {
+        "q": "Someone is being swept toward you down a fast flood channel, about 8 m out from the bank. You're standing on a flat spot on the bank with a throw bag. Which approach is correct?",
+        "options": [
+          "Tie the tail round your waist or to the tree behind you first, so nobody can be swept away once he grabs it",
+          "Wait until he's level with you, then throw the bag straight at his face so he can hug it as it arrives",
+          "As soon as he has the rope, stand up straight and haul him directly toward you as fast as you can",
+          "Throw while he's still upstream, past him so the rope lands across him; tie the tail to nothing, brace low, let him swing in"
+        ],
+        "explain": "Throw while the swimmer is still upstream of you, so you have time to brace, and aim for the bag to sail past him so the line falls across his chest. Never tie the tail to yourself or to a tree: when the rope loads up, you can be dragged in or the rope torn from his hands. Get low or sit and brace with the rope round your body, and the current will pendulum him into your bank without any hauling."
+      }
+    },
+    {
+      "id": "flood-x04",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "NRS Throw Bag Basics; Rescue 3 International",
+      "zh": {
+        "q": "你被冲进了湍急的泄洪渠，顺水往下漂。岸上有人大喊一声，抛绳包从你头顶飞过，绳子正好横落在你胸前。接下来你该怎么做？",
+        "options": [
+          "把绳子在手腕上绕两三圈死死攥住，这样水流再急也扯不脱你手里的绳子",
+          "抓绳不抓包，翻身仰面，绳子搭在离岸远的那侧肩上，让水流把你荡向岸边",
+          "翻身脸朝下、面朝岸边，顶着水流一把一把地拽着绳子往岸边爬",
+          "把绳子绕过腰打个牢靠的结系住自己，腾出两只手来划水，奋力往岸边游过去"
+        ],
+        "explain": "抓绳子而不是绳包；仰面朝上，头朝上游、脚朝下游，用离岸较远的那只手握绳，绳子搭在那侧肩上，水流会像钟摆一样把你荡到抛绳人那一侧的岸边。绳子绝不能缠在手腕上或系在身上，一旦被树枝等卡住，你就挣不脱了。脸朝下顶着水爬，水流会冲过头顶，让人呛水、很快力竭。"
+      },
+      "en": {
+        "q": "You've been swept into a fast-flowing spillway channel and are drifting downstream. Someone on the bank shouts, and a throw bag sails over your head; the rope lands right across your chest. What do you do now?",
+        "options": [
+          "Wrap the rope two or three times round your wrist and hang on, so the current can't tear it away",
+          "Grab the rope, not the bag; on your back, rope over the shoulder away from the bank, let the current swing you in",
+          "Roll face-down toward the bank and pull yourself in hand over hand along the rope, fighting the current all the way in",
+          "Tie the rope round your waist with a secure knot, leaving both hands free to swim toward the bank"
+        ],
+        "explain": "Grab the rope, not the bag; lie on your back, head upstream and feet downstream, with the rope in the hand farther from the bank and over that shoulder, and the current will pendulum you into the thrower's bank. Never wrap the rope round a wrist or tie it to yourself: if it snags, you can't let go. Face-down, hauling against the current, the water surges over your head and wears you out fast."
+      }
+    },
+    {
+      "id": "flood-x05",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "Giesbrecht SWOC (University of Manitoba)",
+      "zh": {
+        "q": "暴雨夜，你开的车被冲进河里，还浮在水面上。你是车里唯一的大人，后排坐着 10 岁、6 岁和 2 岁三个孩子。你已经解开自己的安全带、打开了车窗。孩子们按什么顺序出去？",
+        "options": [
+          "先救 2 岁的，他最弱小、最容易溺水，然后再回头去管两个大孩子",
+          "你先爬出车窗站到车顶，再从外面把孩子们一个个拉出来",
+          "10 岁的先出窗抓住车顶，再送 6 岁的，最后你抱着 2 岁的出来",
+          "先别解开孩子们的安全带，等车子稳住、车里灌满水以后，再一起开车门出去"
+        ],
+        "explain": "这是 Giesbrecht 车辆落水逃生法（SWOC）里的“孩子优先”：孩子按从大到小的顺序出去，因为大孩子最能自己抓住车顶等一会儿，你再去救小的，最小的由你抱着一起出去。车浮在水面的时间通常只有几十秒到几分钟，先救最小的往往意味着两个大孩子来不及出来，大人先出去则可能再也回不到车里。"
+      },
+      "en": {
+        "q": "On a stormy night your car is swept into a river and is still floating. You're the only adult; in the back are three children aged 10, 6 and 2. You've unbuckled yourself and opened your window. In what order do the children go out?",
+        "options": [
+          "The 2-year-old first, as the weakest and quickest to drown, then the older two",
+          "Climb out onto the roof first, then pull the children out one by one from outside",
+          "The 10-year-old out first to hold the roof, then the 6-year-old; you leave last with the toddler",
+          "Keep the children buckled in until the car settles and fills, then all go out through the door together"
+        ],
+        "explain": "This is the 'Children first' step of Giesbrecht's SWOC: get the children out oldest to youngest, because the oldest can best hold on to the roof by themselves while you deal with the others, and you leave carrying the youngest. A car usually floats for only seconds to a few minutes; starting with the toddler often leaves no time for the older two, and an adult who gets out first may never get back in."
+      }
+    },
+    {
+      "id": "flood-x06",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "FEMA / American Red Cross, Repairing Your Flooded Home",
+      "zh": {
+        "q": "洪水退了，院子里的积水刚刚排干，但房子周围的地还泡得透透的。你家地下室里仍积着 1.5 米深的水。邻居借来一台大功率汽油泵，说今天就能抽干。最妥当的做法是？",
+        "options": [
+          "分几天慢慢抽，每天抽掉约三分之一，泵放在室外；夜里水位回升就再等等",
+          "今天就一口气全部抽干，水在地下室里泡得越久，霉变和墙体损坏就越严重",
+          "改用电泵、直接接家里的电源抽，电泵没有尾气，比汽油泵安全得多",
+          "先别抽，等水自己从地漏和墙缝里慢慢渗走，这样对房子最温和"
+        ],
+        "explain": "地下室里的水在顶着墙，平衡着外面泡透了的土壤的压力；一下子抽空，墙可能被推倒，地面可能被顶起。美国红十字会和 FEMA 的建议是每天抽掉约三分之一，若外面水位回升，就从新的水位重新开始。泵要用汽油机并放在室外以防一氧化碳中毒，也不要用自家可能进过水的电路带动电泵。"
+      },
+      "en": {
+        "q": "The flood has gone down and the yard has just drained, but the ground around the house is still soaked. Your basement still holds 1.5 m of water. A neighbour has brought a powerful petrol pump and says he can empty it today. What's the safest approach?",
+        "options": [
+          "A third a day over several days, pump outside; if the level creeps back overnight, wait",
+          "Empty it today in one go: the longer the water stands, the worse the mould and wall damage",
+          "Use an electric pump on the house's own supply instead: no exhaust, so far safer than petrol",
+          "Don't pump at all; let it seep away through the floor drain and wall cracks, gentlest on the house"
+        ],
+        "explain": "The water in the basement is bracing the walls against the pressure of the waterlogged soil outside; pump it out all at once and the walls can be pushed in or the floor heaved up. Red Cross and FEMA advice is to remove about a third of the water a day, starting again from the new level if water returns. Use a petrol pump placed outdoors because of carbon monoxide, and don't run a pump off the house's possibly flooded wiring."
+      }
+    },
+    {
+      "id": "flood-x07",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "防汛抢险技术（漏洞：前堵后导、临背并举）",
+      "zh": {
+        "q": "高水位的夜里，你在大堤背水坡半腰发现一个洞往外冒水，水由清变浑，越冒越急。在与它相对的临水一侧江面上，有人看到一个小漩涡。按防汛抢险原则，应该怎样处置？",
+        "options": [
+          "用黏土和塑料布把背水坡的出水口死死堵住，先止住水再说",
+          "按管涌的办法，只在背水坡出水口围一圈沙袋做反滤围井，临水面那边不用去管",
+          "按渗水处理，在背水坡开几条导渗沟把水引走，观察到天亮再说",
+          "是漏洞：在漩涡处塞堵临水面进水口，背水面出口做反滤导渗，切忌硬堵出口"
+        ],
+        "explain": "漏洞是贯穿堤身的过水通道，出浑水说明它正在迅速扩大，有溃堤危险。抢护原则是“前堵后导、临背并举”：在临水面找到进水口（常表现为漩涡），用棉絮、草捆等塞堵再压土，同时在背水面出口做反滤导渗。只围出口是对付管涌的办法，切不断水源；在背水面用不透水材料硬堵，会逼着水另找出路，险情更大。"
+      },
+      "en": {
+        "q": "At high water one night, you find a hole halfway up the landward slope of the levee spouting water that is turning from clear to muddy and flowing harder. On the river side, opposite it, someone spots a small whirlpool on the surface. Under flood-fighting practice, what's the right response?",
+        "options": [
+          "Plug the outlet on the landward slope tightly with clay and plastic sheeting to stop the flow before anything else",
+          "Treat it like a boil: ring the outlet with a filtered sandbag well and leave the river side alone",
+          "Treat it as seepage: cut drainage trenches in the landward slope and watch it till morning",
+          "A leak through the levee: plug the inlet at the river-side whirlpool, filter the outlet, never seal it"
+        ],
+        "explain": "A leak is a channel right through the levee; muddy water means it is growing fast and the levee may breach. The rule is 'block in front, drain behind, work both sides at once': find the inlet on the river side, often marked by a whirlpool, stuff it with quilts or straw bundles covered with clay, and at the same time build a filter at the landward outlet. Ringing only the outlet is the treatment for a boil and leaves the source open, while sealing the outlet with impermeable material forces the water to find a new, worse path."
+      }
+    },
+    {
+      "id": "flood-x08",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "防汛抢险技术（管涌：反滤导渗、蓄水反压）",
+      "zh": {
+        "q": "像 1998 年那样的高水位下，你在夜里巡堤。背水侧堤脚外约 80 米的一个鱼塘里，水面有一处不停地冒泡、翻浑水，还带着细沙。塘主说：“我把塘水抽干，就能看清洞在哪儿，好堵上。”正确的处置是？",
+        "options": [
+          "同意抽干塘水，找到冒水口后用黏土和塑料布把它封死",
+          "这是管涌，立即上报；不能抽干塘水，要保持或抬高塘水位减小水头差，并做反滤",
+          "不用管，离堤脚 80 米的冒泡只是塘底泉眼，管涌只会出现在堤脚",
+          "派人下塘把冒水口周围的泥沙挖开清走，让水流得更顺畅，压力自然就降下来了"
+        ],
+        "explain": "管涌常常在离堤脚几十米甚至上百米的田里、塘里冒出来，所以巡查必须包括堤后的洼地和水塘。塘水其实在“压”着管涌：抽干会加大内外水头差，冲沙更凶，可能很快发展成溃口。正确做法是上报、标记、专人看守，引水抬高塘水位“蓄水反压”，水浅处可用反滤围井或反滤铺盖。"
+      },
+      "en": {
+        "q": "At 1998-style high water you're on night patrol. In a fish pond about 80 m beyond the landward toe of the levee, one spot on the surface keeps bubbling, churning up muddy water with fine sand. The owner says, 'I'll pump the pond dry so we can see the hole and plug it.' What's the right response?",
+        "options": [
+          "Agree: pump the pond dry, find the outlet and seal it with clay and plastic sheeting",
+          "A boil: report it; don't drain the pond, keep or raise its level to cut the head difference, and filter it",
+          "Ignore it: bubbling 80 m from the toe is just a spring; boils only appear right at the levee toe",
+          "Send someone into the pond to dig away the sand around the outlet so the water flows freely and the pressure drops"
+        ],
+        "explain": "Boils often break out in fields and ponds tens of metres or more behind the levee, which is why patrols must cover low ground and ponds beyond the toe. The pond water is actually holding the boil down: draining it increases the head difference, washes out sand faster and can turn it into a breach. Report and mark it, post a watch, raise the pond level to counter the pressure, and use a filter ring or filter blanket where the water is shallow."
+      }
+    },
+    {
+      "id": "flood-x09",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "防汛巡堤查险“六注意”（退水时）; USACE slope stability: rapid drawdown",
+      "zh": {
+        "q": "洪峰两天前过去了，江水正以每天半米左右的速度快速回落。连续巡堤半个多月的村民都累坏了，村干部想撤掉巡堤的人，让大家回家休息。正确的判断是？",
+        "options": [
+          "可以撤，水位下降说明大堤受到的水压在减小，最危险的时候已经过去了",
+          "只留人巡背水坡，管涌只出在背水侧，临水坡用不着再看",
+          "不能撤：水位骤降时，泡透的堤身失去外水支撑，临水坡容易滑坡、崩岸",
+          "开闸放水或扒口泄洪，让江水退得更快，大堤就能早点干透"
+        ],
+        "explain": "退水期同样是出险期：江水快速回落时，堤身里饱和的水来不及排出，临水坡又失去了外水压力的支撑，容易发生滑坡、坍塌和崩岸。防汛巡堤要诀把“退水时”列为必须格外注意的时段之一。人为加快退水只会让这种危险更大。"
+      },
+      "en": {
+        "q": "The flood crest passed two days ago and the river is falling fast, about half a metre a day. Villagers who have patrolled the levee for over two weeks are exhausted, and the village head wants to stand the patrols down. What's right?",
+        "options": [
+          "Stand down: falling water means less pressure on the levee, so the worst is over",
+          "Keep watching only the landward slope: boils occur only on that side, so the river-side slope needs no watch any more",
+          "Keep patrolling: as the water drops fast, the soaked levee loses its support and the river-side slope can slump",
+          "Open sluices or cut the bank to make the river fall faster, so the levee dries out sooner"
+        ],
+        "explain": "The falling stage is also a danger period: when the river drops quickly, water inside the saturated levee can't drain out in time, and the river-side slope loses the support of the water against it, so slips, slumps and bank collapses are common. Chinese levee-patrol rules list 'when the water is falling' among the times needing extra vigilance. Speeding up the fall only makes this worse."
+      }
+    },
+    {
+      "id": "flood-x10",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "防汛水位术语（警戒水位、保证水位）",
+      "zh": {
+        "q": "收音机里说：你们村前这段长江大堤的水位已超过保证水位 0.3 米，预报还要上涨。下面哪种理解是对的？",
+        "options": [
+          "已超出大堤安全挡水的上限，进入非常紧急状态：全力抢险，必要时分洪，准备转移群众",
+          "这是需要开始上堤巡查、加强防守的水位，按部就班组织巡堤就行",
+          "保证水位就是“保证不出事”的水位，堤顶还有超高，超一点也不要紧",
+          "说明大堤已经必然要溃决了，抢险再无意义，所有人包括抢险队员都应立即全部撤离大堤"
+        ],
+        "explain": "警戒水位是堤防可能出险、需要上堤巡查加强防守的水位；保证水位是保证堤防及其附属工程安全挡水的上限水位。超过保证水位，防汛即进入非常紧急状态：除全力抢险、必要时分洪外，还要做好群众转移准备。它并不意味着一定溃堤，但也绝不是“还有余量、没事”。"
+      },
+      "en": {
+        "q": "The radio says the river at your village's stretch of the Yangtze levee is now 0.3 m above the 'guaranteed water level', and it is forecast to keep rising. Which understanding is correct?",
+        "options": [
+          "It's above the most the levee is built to hold safely: emergency footing, all-out defence, maybe diversion, ready to evacuate",
+          "It's the level at which levee patrols begin, so just organise the routine patrols as normal",
+          "It's the level up to which nothing can go wrong, and the crest has freeboard, so a little over is fine",
+          "It means the levee will certainly fail, so defending it is pointless and everyone, flood fighters included, must leave at once"
+        ],
+        "explain": "The warning level is where the levee may start to have problems and patrols must begin; the guaranteed level is the highest water level the levee and its structures are designed to hold safely. Above it, flood defence enters an extreme emergency: all-out defence, flood diversion if needed, and preparation to evacuate people. It doesn't mean the levee will certainly fail, but it is anything but 'still some margin, nothing to worry about'."
+      }
+    },
+    {
+      "id": "flood-x11",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "Rescue strop instructions for use (I C Brindle); RYA air–sea rescue",
+      "zh": {
+        "q": "直升机悬停在你家屋顶上方，机组没有人下来，只放下一个救援吊带（马蹄形套圈）。挂钩已经碰过屋顶，放掉了静电。吊带该怎么用？",
+        "options": [
+          "像荡秋千一样坐进吊带里，双手紧紧抓住头顶的钢缆，身体就不会掉出去",
+          "套上以后双臂高高举起，抓住挂钩上方的钢缆，这样人在空中就不会打转",
+          "把吊带绕在腰上，再打个死结把自己系牢，系得越紧被吊起来越保险",
+          "从头上套下穿过两腋，衬垫贴背、卡扣拉近；竖拇指示意后双臂放下贴身"
+        ],
+        "explain": "吊带应套在胸部上方、穿过两腋，衬垫贴着后背，调节卡扣尽量拉近身体。被吊起时双臂必须放下，贴在身体两侧或交叉抱在胸前：一举起手臂，吊带就会从腋下滑脱，人会从空中掉下去。准备好时竖起拇指示意机组，然后立刻把手臂放下。"
+      },
+      "en": {
+        "q": "A helicopter hovers over your roof. No crew member comes down; they lower a rescue strop, a horseshoe-shaped loop. The hook has already touched the roof to discharge static. How do you use the strop?",
+        "options": [
+          "Sit in the loop like a swing and grip the cable above your head with both hands so you can't fall out",
+          "Put it on, then reach up high with your arms and hold the cable above the hook so you don't spin in the air",
+          "Pass it round your waist and tie it off with a knot: the tighter it is, the safer the lift",
+          "Over your head and under the armpits, pad across your back, toggle pulled in; thumbs up, then arms down"
+        ],
+        "explain": "The strop goes round the upper chest and under both arms, padding across your back, with the adjuster toggle pulled in close. During the lift your arms must stay down, at your sides or folded across your chest: raise them and you can slide straight out of the strop. Give the crew a thumbs-up when ready, then put your arms down at once."
+      }
+    },
+    {
+      "id": "flood-x12",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "USACE Sandbagging Techniques (pyramid placement)",
+      "zh": {
+        "q": "上游洪水两天后到。你们要在卫生院门前的空地上用沙袋垒一道约 0.9 米高的挡水堤，而不只是堵住门口。按美国陆军工程兵团的沙袋筑堤方法，堤底应该有多宽？",
+        "options": [
+          "约 0.9 米——堤底和堤高一样宽就足够稳了",
+          "约 2.7 米——垒成金字塔形，底宽约为高度的 3 倍",
+          "一袋宽就行——竖着垒成 0.9 米高的单排墙，最省沙袋",
+          "约 1.8 米——底宽是高度的 2 倍，再宽就是浪费沙袋"
+        ],
+        "explain": "美国陆军工程兵团的做法是把沙袋垒成金字塔形，底宽约为堤高的 3 倍，0.9 米高就要约 2.7 米宽；沙袋平放、错缝、层层压实，迎水面铺塑料布。单排竖墙或底太窄的堤，在侧向水压和渗水作用下容易滑移、倾倒。沙袋堤只能减缓、引开水流，做不到滴水不漏。"
+      },
+      "en": {
+        "q": "Floodwater from upstream will arrive in two days. You're building a sandbag dike about 0.9 m high across the open ground in front of the clinic, not just blocking a doorway. Following the US Army Corps of Engineers' sandbagging method, how wide should its base be?",
+        "options": [
+          "About 0.9 m: a base as wide as the dike is high is stable enough",
+          "About 2.7 m: a pyramid with a base about three times the height",
+          "One bag wide: a single-column wall 0.9 m high uses the fewest bags",
+          "About 1.8 m: twice the height, and any wider just wastes bags"
+        ],
+        "explain": "The US Army Corps of Engineers builds sandbag dikes as a pyramid whose base is about three times the height, so about 2.7 m for 0.9 m, with bags laid flat, joints staggered, each layer tamped and plastic sheeting on the water side. A single-column wall or a narrow base slides or topples under sideways water pressure and seepage. Even a good sandbag dike only slows and diverts water; it is never watertight."
+      }
+    }
+  ]
+}

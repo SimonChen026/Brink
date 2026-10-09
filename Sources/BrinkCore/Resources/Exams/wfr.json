@@ -1,0 +1,976 @@
+{
+  "id": "wfr",
+  "skill": "medical",
+  "bonus": 1,
+  "perk": null,
+  "requires": [
+    "firstaid"
+  ],
+  "minLevel": 3,
+  "count": 10,
+  "pass": 8,
+  "icon": "staroflife.fill",
+  "color": "#F0883E",
+  "zh": {
+    "name": "野外急救员",
+    "full": "野外急救员资格（高级）",
+    "desc": "远离医院时的伤病处理：伤口感染、脱水与口服补液、失温与冻伤、高原病、脊柱与骨折、什么时候必须撤离。",
+    "realWorld": "相当于 WFR（野外第一反应人）课程。"
+  },
+  "en": {
+    "name": "Wilderness First Responder",
+    "full": "Wilderness First Responder (Advanced)",
+    "desc": "Care far from a hospital: wound infection, dehydration and oral rehydration, hypothermia and frostbite, altitude illness, spine and fractures, when you must evacuate.",
+    "realWorld": "Comparable to a Wilderness First Responder (WFR) course."
+  },
+  "questions": [
+    {
+      "id": "wfr-01",
+      "answer": 2,
+      "hard": false,
+      "source": "NOLS WFR",
+      "zh": {
+        "q": "用 AVPU 法评估意识：伤员对呼喊没有反应，只有在你用力捏他肩膀时才皱眉呻吟。他属于哪一级？",
+        "options": [
+          "A：清醒，能正常对答交流",
+          "V：对声音呼唤有反应，能睁眼",
+          "P：只对疼痛刺激有反应",
+          "U：对任何刺激都无反应"
+        ],
+        "explain": "AVPU 由好到差依次是：A 清醒（Alert）、V 对声音有反应（Voice）、P 只对疼痛有反应（Pain）、U 完全无反应（Unresponsive）。只对疼痛有反应说明意识已明显受损，要注意保护气道，并定时重复评估、记录变化趋势。"
+      },
+      "en": {
+        "q": "Using AVPU to assess consciousness: a casualty doesn't respond when you shout, but frowns and groans when you squeeze his shoulder hard. Which level is he?",
+        "options": [
+          "A: alert and talking normally",
+          "V: responds to your voice and opens his eyes",
+          "P: responds only to pain",
+          "U: no response to anything"
+        ],
+        "explain": "AVPU runs from best to worst: Alert, responds to Voice, responds only to Pain, Unresponsive. Responding only to pain means consciousness is seriously impaired: protect the airway, and reassess and record regularly so you can see the trend."
+      }
+    },
+    {
+      "id": "wfr-02",
+      "answer": 0,
+      "hard": true,
+      "source": "NOLS WFR",
+      "zh": {
+        "q": "翻越残骸时，一名同伴头部受到撞击，昏迷了约一分钟，醒来后看似一切正常。三小时后，他头痛越来越重、反复呕吐、越来越嗜睡。你应该？",
+        "options": [
+          "这是颅内压升高的危险信号，必须尽快撤离送医",
+          "只是普通脑震荡，让他好好睡一觉，明天早上再看",
+          "给他吃阿司匹林止头痛，再观察一两天",
+          "整夜不让他睡觉，天亮后让他自己走出去"
+        ],
+        "explain": "头部受伤后意识水平下降、头痛加重、反复呕吐，是颅内出血或脑水肿导致颅内压升高的典型表现；伤后一度“清醒正常”并不代表安全。这种情况在野外无法处理，必须立即安排撤离；阿司匹林还可能加重出血。"
+      },
+      "en": {
+        "q": "Climbing over wreckage, a companion hits his head and is knocked out for about a minute. He comes round seeming fine. Three hours later his headache is getting worse, he keeps vomiting and he's getting drowsier. What do you do?",
+        "options": [
+          "These are signs of rising pressure inside the skull: evacuate him urgently",
+          "It's just a concussion: let him sleep it off and check on him in the morning",
+          "Give him aspirin for the headache and keep watching for a day or two",
+          "Keep him awake all night, then let him walk out on his own at dawn"
+        ],
+        "explain": "A falling level of consciousness, worsening headache and repeated vomiting after a head injury are classic signs of bleeding or swelling raising the pressure inside the skull; a spell of seeming normal afterwards doesn't mean he's safe. This can't be treated in the field, so evacuate now; aspirin could also worsen bleeding."
+      }
+    },
+    {
+      "id": "wfr-03",
+      "answer": 3,
+      "hard": false,
+      "source": "WMS Wound 2014",
+      "zh": {
+        "q": "离医院还有好几天路程。一名同伴小腿上有一道沾满泥沙的伤口，出血已经止住。清洗伤口最好的方法是？",
+        "options": [
+          "往伤口里倒满双氧水或酒精，把里面的细菌彻底杀死",
+          "用肥皂和牙刷把伤口里面使劲刷洗干净",
+          "不必冲洗，直接用胶布把伤口紧紧粘合起来就行",
+          "用至少 1 升饮用水加压冲洗伤口"
+        ],
+        "explain": "清洗伤口最有效的方法是用大量饮用水加压冲洗（至少 1 升）：用注射器，或在塑料袋、水袋上扎个小孔挤出水流，把泥沙和细菌冲出去。双氧水、酒精等会损伤组织，不应倒进伤口；脏伤口不清洗就封闭，很容易感染。"
+      },
+      "en": {
+        "q": "You're days from a hospital. A companion has a gash on his shin packed with mud and grit; the bleeding has stopped. What's the best way to clean it?",
+        "options": [
+          "Pour hydrogen peroxide or alcohol into it to kill every last germ inside",
+          "Scrub the inside of the wound hard with soap and a toothbrush",
+          "Skip the cleaning and tape the edges tightly shut straight away to seal it",
+          "Irrigate with at least 1 litre of drinking water squirted under pressure"
+        ],
+        "explain": "The most effective cleaning is high-pressure irrigation with plenty of drinking water, at least a litre, squirted from a syringe or a pinhole in a bag or bottle to flush out dirt and bacteria. Peroxide and alcohol damage tissue and shouldn't go into wounds; sealing a dirty wound without cleaning it invites infection."
+      }
+    },
+    {
+      "id": "wfr-04",
+      "answer": 1,
+      "hard": true,
+      "source": "WMS Wound 2014",
+      "zh": {
+        "q": "冲洗之后，那道又深又脏的伤口仍无法保证干净，而撤离还要三四天。要不要当场把它缝上，或用胶布紧紧粘合？",
+        "options": [
+          "要马上缝紧，伤口越早闭合越不容易感染",
+          "不要封闭：保持开放，盖湿润干净的敷料，每天检查",
+          "用强力胶把伤口边缘牢牢粘死，防止进脏东西",
+          "先用胶布粘起来，以后真发炎了再拆开也完全来得及"
+        ],
+        "explain": "严重污染的伤口在野外闭合，会把细菌封在里面，大大增加感染风险。应充分冲洗后保持开放，用湿润、干净的敷料填塞覆盖，每天检查换药，留待医院做延期缝合。相比之下，干净的伤口可以在受伤后数小时内闭合。"
+      },
+      "en": {
+        "q": "Even after irrigation you can't be sure the deep, dirty wound is clean, and evacuation is three or four days away. Should you stitch it or tape it tightly shut now?",
+        "options": [
+          "Yes: stitch it tight now, since the sooner it closes the less infection",
+          "No: leave it open under a moist, clean dressing and check it daily",
+          "Glue the edges firmly together with superglue to keep dirt out",
+          "Tape it shut for now; you can always reopen it if it gets infected"
+        ],
+        "explain": "Closing a heavily contaminated wound in the field seals bacteria inside and greatly raises the infection risk. Irrigate well, then pack it open under a moist, clean dressing, check and change it daily, and leave delayed closure to the hospital. Clean wounds, by contrast, can be closed within hours of the injury."
+      }
+    },
+    {
+      "id": "wfr-05",
+      "answer": 2,
+      "hard": false,
+      "source": "WMS Wound 2014",
+      "zh": {
+        "q": "珊瑚礁划伤后的第三天，出现下面哪种情况说明感染正在扩散，需要用抗生素并考虑撤离？",
+        "options": [
+          "伤口边缘有些微微发红，而且比前一天已经消退了一些",
+          "伤口表面结了一层深色的痂，有点发痒",
+          "红肿热痛加重，有红线沿手臂向上蔓延，并且发烧",
+          "敷料上有少量淡黄色透明渗液，人不发烧，精神也好"
+        ],
+        "explain": "红、肿、热、痛逐渐加重或流脓，尤其是沿淋巴管向上延伸的红线加上发烧，说明感染正在扩散，需要抗生素，必要时撤离。轻微发红并在消退、结痂发痒、少量清亮渗液都属于正常愈合过程。被海水和珊瑚弄伤的伤口特别容易感染。"
+      },
+      "en": {
+        "q": "Day three after a cut on the coral reef: which finding means infection is spreading and needs antibiotics and possibly evacuation?",
+        "options": [
+          "Faint pinkness at the edges that has faded a little since yesterday",
+          "A dark scab has formed over the wound and it itches a bit",
+          "Worsening redness, swelling and pain, red streaks up the arm, and a fever",
+          "A little clear, pale-yellow fluid on the dressing; no fever, and he feels well"
+        ],
+        "explain": "Increasing redness, swelling, warmth and pain, or pus, and especially red streaks tracking up the limb with fever, mean spreading infection that needs antibiotics and possibly evacuation. Mild redness that's fading, an itchy scab or a little clear fluid are part of normal healing. Wounds from seawater and coral are especially prone to infection."
+      }
+    },
+    {
+      "id": "wfr-06",
+      "answer": 0,
+      "hard": true,
+      "source": "Sepsis-3 (qSOFA)",
+      "zh": {
+        "q": "一名伤口感染的同伴今天出现了变化。哪一组表现最提示脓毒症，需要立即撤离？",
+        "options": [
+          "神志混乱、呼吸每分钟 26 次、心跳快、皮肤湿冷发花",
+          "伤口周围有一圈发红，但他精神很好，能吃能走能干活",
+          "伤口疼得厉害，不过吃了止痛药后能安稳睡着",
+          "有点低烧，喝了水、休息一会儿后体温恢复正常"
+        ],
+        "explain": "感染者出现新发的神志改变、呼吸加快（每分钟 22 次以上）、心跳快、血压低、皮肤湿冷或出现花斑、尿量很少，提示感染已波及全身（脓毒症），可在数小时内恶化为休克甚至死亡，必须尽快撤离，接受静脉抗生素等治疗。"
+      },
+      "en": {
+        "q": "A companion with an infected wound has changed today. Which picture most strongly suggests sepsis and an immediate evacuation?",
+        "options": [
+          "New confusion, breathing 26 times a minute, racing pulse, cold mottled skin",
+          "A ring of redness around the wound, but he's alert, eating and walking normally",
+          "Bad pain in the wound, but he sleeps soundly after taking a painkiller",
+          "A mild fever that settled back to normal after he drank water and rested"
+        ],
+        "explain": "New confusion, fast breathing (22 or more a minute), a fast pulse, low blood pressure, cold or mottled skin and very little urine in someone with an infection suggest it has spread through the body (sepsis). It can turn into shock and death within hours, so evacuate fast for IV antibiotics and other treatment."
+      }
+    },
+    {
+      "id": "wfr-07",
+      "answer": 3,
+      "hard": true,
+      "source": "WHO ORS",
+      "zh": {
+        "q": "手边没有口服补液盐。按世界卫生组织的家庭配方自制补液，1 升干净的水里应加入？",
+        "options": [
+          "6 平茶匙盐 + 半平茶匙糖",
+          "2 大汤匙盐 + 1 平茶匙糖",
+          "1 大杯糖，完全不加盐",
+          "6 平茶匙糖 + 半平茶匙盐"
+        ],
+        "explain": "WHO 推荐的家庭简易补液是：1 升干净的水 + 6 平茶匙糖 + 半平茶匙盐，搅拌至完全溶解。比例很重要：盐放多了会加重脱水，甚至造成危险的高钠血症；只放糖不放盐，补不回丢失的钠，大量的糖还会加重腹泻。"
+      },
+      "en": {
+        "q": "There are no oral rehydration salts. To make the WHO home rehydration solution, what goes into 1 litre of clean water?",
+        "options": [
+          "6 level teaspoons of salt + ½ level teaspoon of sugar",
+          "2 tablespoons of salt + 1 level teaspoon of sugar",
+          "A full cup of sugar and no salt at all",
+          "6 level teaspoons of sugar + ½ level teaspoon of salt"
+        ],
+        "explain": "The WHO home solution is 1 litre of clean water + 6 level teaspoons of sugar + ½ level teaspoon of salt, stirred until dissolved. The ratio matters: too much salt worsens dehydration and can push sodium to dangerous levels, while sugar without salt doesn't replace the sodium lost, and a lot of sugar makes diarrhoea worse."
+      }
+    },
+    {
+      "id": "wfr-08",
+      "answer": 1,
+      "hard": false,
+      "source": "WHO Diarrhoea Treatment 2005",
+      "zh": {
+        "q": "灾民安置点里，一个腹泻的孩子刚喝了几口补液就吐了。你应该？",
+        "options": [
+          "停掉所有液体，等呕吐停了一整天再喂",
+          "等 10 分钟，再一小勺一小勺地慢慢继续喂",
+          "改喝含糖汽水或果汁，孩子更愿意喝",
+          "改吃止泻药，不再喝补液，等腹泻自己停下来"
+        ],
+        "explain": "呕吐不是停止补液的理由。按 WHO 的方法，暂停 10 分钟，然后放慢速度，用小勺每隔一两分钟喂一点。停掉液体会让脱水迅速加重；含糖饮料可能加重腹泻；儿童一般不应使用止泻药。"
+      },
+      "en": {
+        "q": "At a camp for displaced people, a child with diarrhoea vomits right after a few sips of rehydration solution. What do you do?",
+        "options": [
+          "Stop all fluids until there has been no vomiting for a whole day",
+          "Wait 10 minutes, then carry on slowly, a small spoonful at a time",
+          "Switch to fizzy drinks or juice, which the child will drink more readily",
+          "Give an anti-diarrhoea pill instead and stop the solution altogether"
+        ],
+        "explain": "Vomiting is not a reason to stop rehydrating. As WHO advises, pause for 10 minutes, then continue more slowly, a spoonful every minute or two. Stopping fluids lets dehydration worsen fast; sugary drinks can worsen diarrhoea; anti-diarrhoea drugs generally shouldn't be given to children."
+      }
+    },
+    {
+      "id": "wfr-09",
+      "answer": 0,
+      "hard": false,
+      "source": "WHO IMCI",
+      "zh": {
+        "q": "按世界卫生组织的标准，下列哪一组表现说明腹泻的孩子已经“重度脱水”？",
+        "options": [
+          "嗜睡难唤醒、眼窝凹陷、几乎不能喝水、皮肤回平很慢",
+          "烦躁不安、口渴、急着要喝水，捏起的皮肤回平稍慢",
+          "精神正常，眼窝不凹，能正常喝水和吃东西",
+          "大便稀但次数不多，尿量正常，哭时有眼泪"
+        ],
+        "explain": "WHO 的重度脱水表现包括：嗜睡或昏迷、眼窝凹陷、不能喝或喝得很少、皮肤捏起后回平非常慢（超过 2 秒），出现其中两项即属重度，需要紧急静脉补液。烦躁、口渴、急着喝水属于“有些脱水”，可以口服补液治疗。"
+      },
+      "en": {
+        "q": "By WHO criteria, which set of signs means a child with diarrhoea is severely dehydrated?",
+        "options": [
+          "Lethargic or hard to wake, sunken eyes, barely able to drink, skin pinch very slow",
+          "Restless and thirsty, drinks eagerly, skin pinch goes back a little slowly",
+          "Alert and playful, eyes not sunken, drinking and eating normally",
+          "Loose stools but only a few, passing normal urine, tears when crying"
+        ],
+        "explain": "WHO's signs of severe dehydration are lethargy or unconsciousness, sunken eyes, being unable to drink or drinking poorly, and a skin pinch that goes back very slowly (over 2 seconds); two of these mean severe dehydration needing urgent IV fluids. Restless, thirsty and drinking eagerly means 'some dehydration', which is treated with ORS."
+      }
+    },
+    {
+      "id": "wfr-10",
+      "answer": 2,
+      "hard": false,
+      "source": "Sphere 2018",
+      "zh": {
+        "q": "幸存者们要在岛上长期扎营。为防止腹泻在营地里传播，最重要的做法是？",
+        "options": [
+          "把厕所挖在小溪边上，让流水直接把粪便冲走",
+          "厕所紧挨着住处搭建，夜里去上厕所更方便也更安全",
+          "厕所离水源 30 米以上、在下坡，便后饭前用肥皂洗手",
+          "不设专门的厕所，大家各自找地方就近解决"
+        ],
+        "explain": "腹泻主要通过“粪—口”途径传播。厕所要离水源至少 30 米，并设在取水处的下坡、下游方向；坚持便后、做饭和吃饭前用肥皂（没有肥皂可用草木灰）洗手，饮用水要经过处理。这些措施结合起来，是预防营地腹泻最有效的办法。"
+      },
+      "en": {
+        "q": "Survivors are setting up a long-term camp on the island. What matters most to stop diarrhoea spreading through the camp?",
+        "options": [
+          "Dig the latrine right beside the stream so the water carries the waste away",
+          "Put the latrine right next to the shelters so that night trips are safer",
+          "Latrine 30+ m from water and downhill; soap handwashing after it and before food",
+          "Don't bother with a latrine; everyone just goes wherever is nearest"
+        ],
+        "explain": "Diarrhoea spreads by the faecal–oral route. Keep latrines at least 30 m from water sources and downhill or downstream of where you collect water, wash hands with soap (or ash) after using the latrine and before handling food, and treat drinking water; together these are the most effective protection."
+      }
+    },
+    {
+      "id": "wfr-11",
+      "answer": 1,
+      "hard": true,
+      "source": "NOLS WFR / WMA",
+      "zh": {
+        "q": "坠机两天后仍未获救。一名伤员小腿中段骨折，明显成角畸形，脚冰凉发白，摸不到足背动脉搏动。你应该？",
+        "options": [
+          "保持畸形原样固定，无论如何都绝对不能动它",
+          "沿长轴轻柔牵引，把小腿拉回正直位置再固定，复查足部",
+          "用力把骨头掰正，听到“咔”的一声就说明已经复位了",
+          "先什么都不做，等救援人员来了再处理"
+        ],
+        "explain": "远离医疗、伤处以下已没有血运时，按畸形原样固定可能让这只脚坏死。野外急救的做法是：沿肢体长轴轻柔牵引，把成角的长骨骨折拉回正常的直线位置，再上夹板；若疼痛或阻力明显增加就停止。复位后血运常能恢复，固定后要再次检查。"
+      },
+      "en": {
+        "q": "Two days after the crash there's still no rescue. A casualty's shin is broken mid-shaft and visibly angled; his foot is cold and pale, and you can't feel a pulse on top of it. What do you do?",
+        "options": [
+          "Splint it exactly as it lies; you must never move it under any circumstances",
+          "Gently pull in line to straighten the leg, then splint it and recheck the foot",
+          "Force the bone straight; a loud click means it's back in place",
+          "Do nothing for now and leave it for the rescuers to deal with"
+        ],
+        "explain": "Far from care with no circulation below the break, splinting it as it lies may cost him the foot. Wilderness practice is to apply gentle traction along the limb to bring an angled long-bone fracture back to a straight, normal position, then splint it, stopping if pain or resistance rises sharply. Realignment often restores circulation; recheck it after splinting."
+      }
+    },
+    {
+      "id": "wfr-12",
+      "answer": 3,
+      "hard": false,
+      "source": "NOLS WFR / PHTLS",
+      "zh": {
+        "q": "牵引夹板适用于下列哪种损伤？",
+        "options": [
+          "骨盆骨折，伴有腹股沟和下腹部疼痛",
+          "膝关节脱位，膝部明显变形肿胀",
+          "踝关节骨折，脚踝严重肿胀、明显变形",
+          "闭合性股骨中段（大腿中部）骨折"
+        ],
+        "explain": "牵引夹板用于孤立的股骨中段骨折：大腿肌肉强大，骨折后会把断端拉得重叠，加重疼痛和出血，持续牵引能抵消这种拉力。髋部、骨盆、膝部以及小腿、踝部的损伤不适合用牵引夹板，牵引反而可能加重损伤。"
+      },
+      "en": {
+        "q": "A traction splint is suited to which injury?",
+        "options": [
+          "A pelvic fracture with pain in the groin and lower belly",
+          "A dislocated knee that is visibly deformed and swollen",
+          "A broken ankle that is badly swollen and misshapen",
+          "A closed mid-shaft fracture of the thigh bone (femur)"
+        ],
+        "explain": "A traction splint is for an isolated mid-shaft femur fracture: the powerful thigh muscles pull the broken ends past each other, increasing pain and bleeding, and steady traction counters that pull. It's not for hip, pelvic, knee, lower-leg or ankle injuries, where traction can make things worse."
+      }
+    },
+    {
+      "id": "wfr-13",
+      "answer": 0,
+      "hard": true,
+      "source": "PHTLS",
+      "zh": {
+        "q": "一名同伴从塌了一半的楼梯上摔下，骨盆部位剧痛，脸色苍白、脉搏很快。怀疑骨盆骨折，应该怎样固定？",
+        "options": [
+          "用床单在大腿根外侧的骨突水平绕紧骨盆",
+          "双手按压、摇动骨盆，先确认到底有没有骨折",
+          "在腰部、髂骨（胯骨）上方用皮带紧紧勒住",
+          "扶他坐起来，减轻腹部的压力，帮助呼吸"
+        ],
+        "explain": "骨盆骨折可造成大量内出血。不要按压或摇动骨盆来检查（会加重出血），而是用床单或宽布带在股骨大转子（大腿根外侧的骨突）水平环绕骨盆、适度扎紧，让骨盆环收拢、减少出血；扎在腰部或髂骨上方没有作用。同时按休克处理，尽快撤离。"
+      },
+      "en": {
+        "q": "A companion falls down a half-collapsed staircase. He has severe pain in the pelvis and is pale with a fast pulse. You suspect a pelvic fracture. How should you stabilize it?",
+        "options": [
+          "Wrap a sheet tightly round the hips at the bony bumps atop the thighs",
+          "Press and rock the pelvis with both hands to check whether it's broken",
+          "Cinch a belt tightly round the waist, just above the hip bones",
+          "Sit him up to take the pressure off his abdomen and ease his breathing"
+        ],
+        "explain": "A broken pelvis can bleed massively inside. Don't press or rock it to test it (that worsens bleeding); wrap a sheet or wide strap around the pelvis at the level of the greater trochanters, the bony bumps on the outside of the upper thighs, and tighten it to close the pelvic ring and reduce bleeding. A wrap at the waist or above the hip bones does nothing. Treat for shock and evacuate."
+      }
+    },
+    {
+      "id": "wfr-14",
+      "answer": 2,
+      "hard": true,
+      "source": "WMS Spine 2019 / NEXUS",
+      "zh": {
+        "q": "四名摔伤者中，哪一位可以在野外排除脊柱损伤，不必限制活动，可以自己走动？",
+        "options": [
+          "脖子正中一按就很疼，但手和脚都还能正常活动",
+          "喝醉了酒，但一口咬定自己身上哪儿都不疼，能走",
+          "清醒未醉、无其他剧痛伤、脊柱无压痛、四肢正常",
+          "大腿骨折疼得厉害，但他说自己的脖子一点也不疼"
+        ],
+        "explain": "在野外排除脊柱损伤需要同时满足：伤员可靠（清醒、没有醉酒或用药、没有让人分心的剧痛伤），脊柱中线无疼痛和压痛，四肢运动和感觉正常。醉酒或另有剧痛损伤时，伤员说“不疼”并不可靠；脊柱中线压痛本身就是危险信号。"
+      },
+      "en": {
+        "q": "Of four people who fell, which one can have a spinal injury ruled out in the field, so he can move freely and walk?",
+        "options": [
+          "Tender right in the middle of the neck, but can still move his hands and feet",
+          "Drunk, but insists that nothing hurts anywhere and he can walk fine",
+          "Alert, sober, no other painful injury, no spinal tenderness, normal limbs",
+          "In agony from a broken thigh, but says his neck doesn't hurt at all"
+        ],
+        "explain": "To rule out a spinal injury in the field the patient must be reliable (alert, not intoxicated, no distracting painful injury), have no pain or tenderness along the midline of the spine, and have normal movement and feeling in all four limbs. A drunk patient, or one with a painful distracting injury, can't be trusted when he says nothing hurts, and midline tenderness is itself a red flag."
+      }
+    },
+    {
+      "id": "wfr-15",
+      "answer": 1,
+      "hard": true,
+      "source": "WMS Hypothermia 2019",
+      "zh": {
+        "q": "在雪地里找到一名重度失温、看上去没有生命迹象的人。开始心肺复苏之前，检查呼吸和脉搏最长应持续多久？",
+        "options": [
+          "不超过 5 秒，越早开始按压，存活的机会就越大",
+          "最长 1 分钟，因为脉搏和呼吸可能极慢极弱",
+          "和平时一样只查 10 秒，然后马上开始胸外按压",
+          "不用检查，摸上去冰凉就说明已经死亡"
+        ],
+        "explain": "重度失温者的心跳和呼吸可能非常慢、非常弱，检查时间应延长到 1 分钟，以免对仍有微弱心跳的人进行按压（可能诱发室颤）。确实没有生命迹象就开始心肺复苏——失温者在复温之前不能轻易被判定死亡。"
+      },
+      "en": {
+        "q": "You find someone in the snow who is severely hypothermic and appears lifeless. Before starting CPR, for up to how long should you check for breathing and a pulse?",
+        "options": [
+          "No more than 5 seconds; the sooner compressions start, the better",
+          "Up to 1 minute, as the pulse and breathing may be extremely slow and faint",
+          "The usual 10 seconds, then start compressions straight away",
+          "Don't bother checking: if he feels ice-cold to the touch, he's already dead"
+        ],
+        "explain": "In severe hypothermia the heartbeat and breathing can be very slow and faint, so extend the check to up to a minute to avoid doing compressions on a heart that is still beating (which can trigger ventricular fibrillation). If there are no signs of life, start CPR: a hypothermic patient shouldn't be declared dead until he has been rewarmed."
+      }
+    },
+    {
+      "id": "wfr-16",
+      "answer": 3,
+      "hard": false,
+      "source": "ERC 2025 / WAO Anaphylaxis",
+      "zh": {
+        "q": "在荒岛上，一名同伴被蜂蜇后几分钟内嘴唇和喉咙肿胀、喘鸣、头晕，全身起风团。急救包里有肾上腺素自动注射笔。你应该？",
+        "options": [
+          "先吃一片抗过敏药，观察半小时再决定要不要打针",
+          "只给他用哮喘喷雾，缓解喘息就够了",
+          "在蜇伤处敷冰块，等肿胀自己慢慢消退",
+          "立即往大腿外侧注射肾上腺素"
+        ],
+        "explain": "嘴唇、喉咙肿胀，呼吸困难，头晕，是严重过敏反应（过敏性休克）的表现，可在几分钟内致命。应立即在大腿外侧肌肉注射肾上腺素，可以隔着衣服注射；几分钟后仍不见好转、又有第二支，可再注射一次。抗过敏药起效太慢，不能代替肾上腺素。"
+      },
+      "en": {
+        "q": "On the island, a companion is stung by a bee. Within minutes his lips and throat swell, he's wheezing and dizzy, and hives cover his body. The kit has an adrenaline (epinephrine) auto-injector. What do you do?",
+        "options": [
+          "Give him an antihistamine tablet first and watch him for half an hour or so",
+          "Give him only an asthma inhaler, since the wheeze is the main problem",
+          "Put ice on the sting and wait for the swelling to go down by itself",
+          "Inject the adrenaline into his outer thigh right away"
+        ],
+        "explain": "Swelling of the lips and throat, breathing trouble and dizziness mean anaphylaxis, which can kill within minutes. Inject adrenaline into the outer thigh muscle immediately (through clothing is fine), and if he isn't better after a few minutes and you have a second dose, give it. Antihistamines act too slowly to replace adrenaline."
+      }
+    },
+    {
+      "id": "wfr-17",
+      "answer": 2,
+      "hard": true,
+      "source": "WHO Diarrhoea Treatment 2005",
+      "zh": {
+        "q": "安置点里，一个孩子腹泻带血、发烧，肚子一阵阵绞痛。除了继续补液，还应该怎么做？",
+        "options": [
+          "先给他吃止泻药，把腹泻止住了再说别的",
+          "停掉所有食物，让肠胃彻底休息上几天",
+          "考虑痢疾：继续补液进食，找医护给抗生素",
+          "只补液就够了，带血只是用力排便造成的"
+        ],
+        "explain": "腹泻带血（尤其伴有发烧、腹痛）多为细菌性痢疾，WHO 建议使用抗生素治疗，同时继续补液和喂食，并尽快就医。止泻药会让病菌滞留在肠道里，可能延长甚至加重病情，痢疾患者不应使用；停止进食则会加重营养不良。"
+      },
+      "en": {
+        "q": "At the camp, a child has diarrhoea with blood in it, a fever and cramping belly pain. Besides continuing to rehydrate, what should you do?",
+        "options": [
+          "Give an anti-diarrhoea pill to stop the diarrhoea before anything else",
+          "Stop all food so the gut can rest completely for a few days",
+          "Suspect dysentery: keep up fluids and food, and get antibiotics",
+          "Fluids alone are enough; the blood is just from straining on the toilet"
+        ],
+        "explain": "Bloody diarrhoea, especially with fever and belly pain, is usually bacterial dysentery, which WHO says should be treated with antibiotics, along with continued fluids and feeding and medical care as soon as possible. Anti-diarrhoea drugs keep the germs in the gut and can prolong or worsen the illness, so they shouldn't be used; stopping food worsens malnutrition."
+      }
+    },
+    {
+      "id": "wfr-18",
+      "answer": 0,
+      "hard": true,
+      "source": "NOLS WFR / PHTLS",
+      "zh": {
+        "q": "一名同伴从岩石上摔下，左上腹疼痛，身上没有明显的出血。你每 15 分钟记录一次：脉搏 88、104、122 次/分，呼吸越来越快，皮肤越来越苍白湿冷。这说明什么？",
+        "options": [
+          "很可能是腹内出血引起休克，必须紧急撤离",
+          "只是摔疼了、太紧张，休息一下就会好转",
+          "生命体征本来就有波动，再观察一天看看",
+          "他只是冷着了，多盖件衣服、喝点热水就行"
+        ],
+        "explain": "单次测量说明不了太多，变化趋势才是关键：脉搏越来越快、呼吸加快、皮肤苍白湿冷，说明身体正在代偿不断丢失的血液。左上腹受撞击后出现这种趋势，要高度怀疑脾脏等内脏破裂出血。这种出血在野外无法止住，应让伤员平躺保暖，紧急撤离。"
+      },
+      "en": {
+        "q": "A companion falls onto rocks and has pain in the upper left of his abdomen, with no visible bleeding. You record his vital signs every 15 minutes: pulse 88, then 104, then 122; his breathing is getting faster and his skin paler and clammier. What does this mean?",
+        "options": [
+          "Probably internal bleeding causing shock: he needs urgent evacuation",
+          "He's just in pain and anxious after the fall; rest will settle him",
+          "Vital signs naturally fluctuate; keep watching him for another day",
+          "He's just cold; an extra layer and a hot drink will sort him out"
+        ],
+        "explain": "A single reading tells you little; the trend is what matters. A steadily rising pulse, faster breathing and pale, clammy skin show the body compensating for ongoing blood loss, and after a blow to the upper left abdomen that points to a ruptured spleen or other internal bleeding. It can't be stopped in the field: keep him flat and warm and evacuate urgently."
+      }
+    },
+    {
+      "id": "wfr-19",
+      "answer": 3,
+      "hard": false,
+      "source": "Altitude medicine (periodic breathing)",
+      "zh": {
+        "q": "在海拔 4100 米的坠机营地，夜里你发现一名同伴睡着时呼吸会停十来秒，接着连着几次深呼吸，如此反复。他白天精神很好，不头痛，走路也稳。这最可能是？",
+        "options": [
+          "高原脑水肿，必须立刻摸黑连夜下撤",
+          "心脏骤停的前兆，应马上开始胸外按压",
+          "气道堵住了，整夜每隔 10 分钟叫醒他一次",
+          "高原上常见的睡眠周期性呼吸，本身通常无害"
+        ],
+        "explain": "在高海拔地区，许多健康人睡觉时会出现“周期性呼吸”：呼吸逐渐变浅，暂停十来秒，再连续几次深呼吸。这是缺氧引起的正常生理反应，本身不是高原病，乙酰唑胺可以减轻它。真正的危险信号是白天出现剧烈头痛、走路不稳、神志改变或静息时也气促。"
+      },
+      "en": {
+        "q": "At the crash camp at 4,100 m, you notice at night that a sleeping companion stops breathing for about ten seconds, then takes several deep breaths, over and over. By day he's alert, has no headache and walks steadily. What is this most likely to be?",
+        "options": [
+          "HACE: he must be taken down the mountain immediately, even in the dark",
+          "A warning sign of cardiac arrest: start chest compressions on him now",
+          "A blocked airway: wake him every 10 minutes through the rest of the night",
+          "Periodic breathing, common in sleep at altitude and usually harmless in itself"
+        ],
+        "explain": "At high altitude many healthy people develop periodic breathing in sleep: breathing fades, pauses for ten seconds or so, then comes back as a few deep breaths. It's a normal response to low oxygen, not altitude illness in itself, and acetazolamide can reduce it. The real warning signs are a severe headache, unsteadiness, confusion or breathlessness at rest during the day."
+      }
+    },
+    {
+      "id": "wfr-20",
+      "answer": 1,
+      "hard": false,
+      "source": "ERA/ISN Crush 2012",
+      "zh": {
+        "q": "一名同伴的大腿被倒塌的货架压了几个小时。救出后，这条腿越来越肿胀发硬，疼痛远远超出伤情应有的程度，尿液变成了可乐色。正确的做法是？",
+        "options": [
+          "限制他喝水，减轻肾脏负担，等尿色恢复再说",
+          "大量口服补液，别用布洛芬，尽快撤离",
+          "吃布洛芬消肿止痛，再观察两天看看情况",
+          "用力按摩肿胀的腿，把里面的“淤血”揉开"
+        ],
+        "explain": "可乐色尿提示大量肌肉坏死（横纹肌溶解），释放的肌红蛋白会损伤肾脏；腿越来越肿硬、疼痛与伤情不符，可能是骨筋膜室综合征，需要手术减压。应大量补液保护肾脏，避免使用布洛芬等非甾体抗炎药（会加重肾损伤），并紧急撤离。"
+      },
+      "en": {
+        "q": "A companion's thigh was pinned under a collapsed shelving unit for several hours. Since being freed, the leg keeps getting more swollen and hard, the pain is far worse than the injury seems to explain, and his urine is cola-coloured. What do you do?",
+        "options": [
+          "Restrict his drinking to take the strain off his kidneys until the urine clears",
+          "Give plenty of fluids by mouth, avoid ibuprofen, and evacuate urgently",
+          "Give ibuprofen for the swelling and pain, then watch him for two days",
+          "Massage the swollen leg hard to break up the 'bad blood' inside"
+        ],
+        "explain": "Cola-coloured urine means damaged muscle is releasing myoglobin (rhabdomyolysis), which injures the kidneys; a leg that keeps swelling and hardening, with pain out of proportion, suggests compartment syndrome, which needs surgery. Give plenty of fluids to protect the kidneys, avoid ibuprofen and other NSAIDs (they add to kidney damage), and evacuate urgently."
+      }
+    },
+    {
+      "id": "wfr-21",
+      "answer": 3,
+      "hard": false,
+      "source": "NOLS WFR",
+      "zh": {
+        "q": "伤员无法行走，你们决定派人出去求援。下列哪种安排最好？",
+        "options": [
+          "派跑得最快的一个人去，把情况口头记在心里就行",
+          "所有人一起出去求援，留伤员一个人在原地等",
+          "派两人出发，但不写字条，免得耽误宝贵时间",
+          "至少派两人，带上写明位置、伤情和需求的字条"
+        ],
+        "explain": "求援至少派两人，互相照应，避免再出现一名伤员；口头信息经过长途跋涉很容易记错，应带书面记录：准确位置（坐标或明显地标）、伤员情况和生命体征的变化、已做的处理、需要什么（直升机、担架、药品）以及留守人员的计划。伤员身边必须留人照看。"
+      },
+      "en": {
+        "q": "The casualty can't walk, and you decide to send people out for help. Which plan is best?",
+        "options": [
+          "Send just your single fastest runner, who can carry the details in his head",
+          "Everyone goes for help together, and the casualty waits alone",
+          "Send two people but no note, so no time is wasted writing one",
+          "Send at least two, with a written note of location, condition and needs"
+        ],
+        "explain": "Send at least two people so they can look after each other and you don't create another casualty. Spoken messages get garbled over a long trek, so send a written record: exact location (coordinates or clear landmarks), the patient's condition and vital-sign trends, treatment given, what's needed (helicopter, stretcher, drugs) and the plan of those staying behind. Never leave the casualty alone."
+      }
+    },
+    {
+      "id": "wfr-22",
+      "answer": 0,
+      "hard": true,
+      "source": "WMS Wound 2014 / WHO",
+      "zh": {
+        "q": "你们的急救包里只有一个疗程的抗生素。下面四名幸存者中，谁最应该用？",
+        "options": [
+          "伤口红肿扩散、出现红线并且发烧的人",
+          "流鼻涕、喉咙痛已经两天的人",
+          "水样腹泻一天、不发烧、精神尚好的人",
+          "有一道已经清洗干净的浅表小划伤的人"
+        ],
+        "explain": "抗生素只对细菌感染有效，要留给最需要的人：伤口感染正在扩散且发烧，若不治疗可能发展为脓毒症。感冒多为病毒感染，抗生素无效；不发烧的水样腹泻首先靠补液；清洗干净的浅表伤口不需要预防性使用抗生素。"
+      },
+      "en": {
+        "q": "Your kit holds just one course of antibiotics. Which of these four survivors should get it?",
+        "options": [
+          "The one with a spreading red wound, red streaks and a fever",
+          "The one with a runny nose and sore throat for two days",
+          "The one with a day of watery diarrhoea, no fever, still feeling okay",
+          "The one with a shallow scratch that has already been cleaned"
+        ],
+        "explain": "Antibiotics only work against bacterial infections, so save them for the person who most needs them: a spreading wound infection with fever, which could turn into sepsis. Colds are viral and antibiotics don't help; watery diarrhoea without fever is treated first with fluids; a clean, shallow wound doesn't need preventive antibiotics."
+      }
+    },
+    {
+      "id": "wfr-23",
+      "answer": 2,
+      "hard": true,
+      "source": "WMS Wound 2014",
+      "zh": {
+        "q": "避难所失火后，一名同伴手背只有一小片烧伤，但口鼻周围有黑灰，鼻毛烧焦，声音嘶哑，还咳出黑色的痰。你应该？",
+        "options": [
+          "烧伤面积这么小，在营地里换换药处理就可以了",
+          "让他含冰块润润喉咙，好好休息两天再说",
+          "按吸入性损伤处理：密切观察呼吸，尽快撤离送医",
+          "嘶哑只是被烟熏的，多喝几天热水就会好"
+        ],
+        "explain": "口鼻周围有黑灰、鼻毛烧焦、声音嘶哑、咳黑痰，都是呼吸道烧伤（吸入性损伤）的信号。气道可能在之后数小时内逐渐肿胀直至堵塞，危险远远大于皮肤烧伤的面积，必须尽早撤离到能处理气道的医疗机构。"
+      },
+      "en": {
+        "q": "After a fire in the shelter, a companion has only a small burn on the back of one hand, but there's soot around his nose and mouth, his nose hairs are singed, his voice is hoarse and he's coughing up black phlegm. What do you do?",
+        "options": [
+          "The burn is tiny, so just keep changing the dressing here at camp",
+          "Give him ice to suck to soothe his throat, and rest for two days",
+          "Treat it as an inhalation injury: watch his airway and evacuate fast",
+          "The hoarseness is only from smoke; hot drinks will fix it"
+        ],
+        "explain": "Soot around the mouth and nose, singed nasal hair, hoarseness and black sputum are warning signs of airway burns (inhalation injury). The airway can swell shut over the following hours, which is far more dangerous than the size of the skin burn, so evacuate early to where the airway can be managed."
+      }
+    },
+    {
+      "id": "wfr-24",
+      "answer": 1,
+      "hard": false,
+      "source": "NOLS WFR",
+      "zh": {
+        "q": "一名同伴腹痛已持续十几个小时，疼痛从肚脐周围转移到右下腹，按压和走路颠簸时疼得厉害，还发烧。你应该？",
+        "options": [
+          "吃点泻药，把肚子“通一通”，排出来就舒服了",
+          "怀疑阑尾炎等急腹症：暂不进食，尽快撤离",
+          "热敷肚子，再吃顿饱饭恢复体力",
+          "吃止痛药压住疼痛，继续等待观察"
+        ],
+        "explain": "持续超过 12 小时、固定在某一处、按压或颠簸时加剧并伴有发烧的腹痛，提示阑尾炎、腹膜炎等急腹症，野外无法处理，应尽快撤离。泻药可能导致发炎的阑尾穿孔；止痛药可以缓解痛苦，但不能代替撤离。"
+      },
+      "en": {
+        "q": "A companion has had abdominal pain for more than twelve hours. It has moved from around the navel to the lower right, hurts badly when pressed or jolted while walking, and he has a fever. What do you do?",
+        "options": [
+          "Give him a laxative to 'clear him out' and settle his stomach",
+          "Suspect appendicitis: no food, and evacuate as soon as possible",
+          "Put a hot pack on his belly and give him a big meal to build strength",
+          "Dull the pain with painkillers and keep waiting to see"
+        ],
+        "explain": "Abdominal pain that lasts over 12 hours, settles in one spot, gets worse when pressed or jolted and comes with fever suggests appendicitis, peritonitis or another surgical emergency that can't be handled in the field: evacuate early. Laxatives can make an inflamed appendix burst; painkillers can ease suffering but don't replace evacuation."
+      }
+    },
+    {
+      "id": "wfr-x01",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "WHO rabies post-exposure prophylaxis (WHO 2018)",
+      "zh": {
+        "q": "海啸后的小镇上，一条流浪狗隔着牛仔裤咬了同伴一口，在小腿上留下两个出血的牙洞，随即跑得不见踪影。最近能打狂犬疫苗的医院要三天后才到得了。正确的处理是？",
+        "options": [
+          "立即用肥皂和流动清水冲洗约 15 分钟、碘伏消毒、不缝合；一到医院就打疫苗加免疫球蛋白，耽误了也照样要打",
+          "设法抓住那条狗关起来观察 10 天，狗若一直健康就不必打针，狗发病了再去打疫苗也来得及",
+          "简单冲洗后把伤口缝合紧，把唾液和细菌封在外面，等出现发烧或伤口化脓时再去打疫苗",
+          "到医院时距被咬已超过 72 小时，疫苗来不及起效，再打也没有意义，不如好好处理伤口"
+        ],
+        "explain": "穿透皮肤并出血的咬伤属于 WHO 的Ⅲ级暴露：立即用肥皂和流动水彻底冲洗至少 15 分钟并消毒，尽量不缝合，并尽快接种狂犬疫苗、同时使用狂犬病免疫球蛋白。暴露后预防不受时间限制，耽误了几天甚至更久也必须打。“观察狗 10 天”只是已经开始接种后决定能否停针的依据，不能用来推迟接种——狂犬病一旦发病几乎 100% 死亡。"
+      },
+      "en": {
+        "q": "In the tsunami-hit town a stray dog bites a companion through his jeans, leaving two bleeding puncture wounds in his calf, then runs off. The nearest hospital with rabies vaccine is three days away. What's right?",
+        "options": [
+          "Wash with soap and running water for about 15 minutes, apply iodine, don't stitch; at the hospital get vaccine plus immunoglobulin, however late",
+          "Try to catch the dog and watch it for 10 days; if it stays healthy no shots are needed, and if it falls ill there's still time",
+          "Rinse briefly, then stitch the wound tightly shut to keep saliva and germs out; get vaccinated only if fever or pus appears",
+          "By the time you reach the hospital it will be over 72 hours, too late for the vaccine to work, so just look after the wound"
+        ],
+        "explain": "A bite that breaks the skin and bleeds is a WHO category III exposure: wash thoroughly with soap and running water for at least 15 minutes, disinfect, avoid stitching, and get rabies vaccine plus rabies immunoglobulin as soon as possible. There's no time limit: it must be given even after days of delay. Watching the dog for 10 days only decides whether a course already started can be stopped, never whether to delay it; once symptoms appear, rabies is almost always fatal."
+      }
+    },
+    {
+      "id": "wfr-x02",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "CDC tetanus wound management (ACIP) / 外伤后破伤风预防指南 2019",
+      "zh": {
+        "q": "洪水退后清理废墟，一名同伴踩到泥里一根生锈的钉子，钉子穿透鞋底深深扎进脚掌，伤口里糊满淤泥。他小时候按计划打全了含破伤风成分的疫苗，最后一次加强针是 7 年前。关于破伤风预防，正确的是？",
+        "options": [
+          "不用打：破伤风加强针每 10 年打一次就够了，他离上次才 7 年，还没到期",
+          "现在就打一剂破伤风疫苗加强针；他已全程免疫，不需要破伤风免疫球蛋白",
+          "疫苗加强针和破伤风免疫球蛋白都要打，所有深的刺伤一律如此处理",
+          "吃一个疗程的抗生素就行，抗生素既能防伤口感染，也能预防破伤风"
+        ],
+        "explain": "按美国疾控中心的外伤破伤风预防方案（我国 2019 年指南同样如此）：清洁的小伤口，距上次加强满 10 年才补打；被泥土、粪便污染的伤口以及刺伤、挤压伤等，距上次满 5 年就要加强一剂。只有从未接种、免疫史不详或没完成基础免疫的人，才需要再加破伤风免疫球蛋白。抗生素不能预防破伤风。"
+      },
+      "en": {
+        "q": "Clearing up after the flood, a companion steps on a rusty nail in the mud. It goes through his sole deep into his foot, and the wound is caked with silt. He had the full childhood course of tetanus-containing vaccine, and his last booster was 7 years ago. What about tetanus?",
+        "options": [
+          "Nothing is needed: tetanus boosters are only due every 10 years, and it has been just 7 years",
+          "Give a tetanus booster now; he's fully vaccinated, so no tetanus immunoglobulin is needed",
+          "Give a booster and tetanus immunoglobulin together, as for every deep puncture wound",
+          "A course of antibiotics is enough: it prevents wound infection and tetanus as well"
+        ],
+        "explain": "Under the CDC wound-management scheme (China's 2019 guideline is the same), clean minor wounds need a booster only if 10 years have passed, but wounds contaminated with soil or faeces, punctures, crush injuries and the like need one if 5 years have passed. Tetanus immunoglobulin is added only for people never vaccinated, with an unknown history or an incomplete primary course. Antibiotics don't prevent tetanus."
+      }
+    },
+    {
+      "id": "wfr-x03",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Lightning 2014",
+      "zh": {
+        "q": "夏日午后，坠机营地遭雷击，雷暴已经移走。四个人倒在地上：甲没有反应、没有呼吸；乙清醒，胸口有蕨叶状红纹，有点糊涂；丙双腿发凉发花、动不了，但能说话；丁耳鸣，能自己走。你只有一个人，先救谁？",
+        "options": [
+          "先救乙：意识模糊加上烧伤，说明他伤得最重，最需要马上处理",
+          "先救丙：双腿瘫软发花说明脊髓或大血管受了重伤，必须最先处理",
+          "先救甲：立即做心肺复苏并坚持人工呼吸，雷击心脏骤停常能救回，其余几人多半能活",
+          "按 START 法，开放气道后仍无呼吸的甲应标为黑色，先去救还活着、更有希望的乙和丙"
+        ],
+        "explain": "雷击造成多人受伤时采用“反向检伤”：先救看似已经死亡的人（WMS 雷击指南）。雷击常让心脏骤停、呼吸中枢麻痹，及时做心肺复苏、尤其坚持人工呼吸，常能救回；而雷击后清醒、有呼吸的人大多能存活。下肢发凉发花、暂时不能动多为雷击麻痹，常在数小时内消退。雷击伤者身上不带电，可以立即触碰。"
+      },
+      "en": {
+        "q": "On a summer afternoon lightning strikes the crash camp; the storm has moved on. Four people are down. A is unresponsive and not breathing. B is awake, with fern-like red marks on his chest, and a bit confused. C's legs are cold and mottled and won't move, but he's talking. D has ringing ears and can walk. You're on your own. Who first?",
+        "options": [
+          "B: confusion plus burns means he is the most badly injured and needs treating straight away",
+          "C: limp, mottled legs mean serious damage to the spinal cord or major vessels, which must come first",
+          "A: start CPR with sustained rescue breaths now; lightning arrests are often reversible, and the others will likely live",
+          "Under START, A gets a black tag for not breathing after the airway is opened, so move on to B and C, who are still alive"
+        ],
+        "explain": "When lightning injures several people, use reverse triage: treat the apparently dead first (WMS lightning guidelines). Lightning often stops the heart and paralyses breathing, and prompt CPR with sustained rescue breaths frequently brings people back, while those who are conscious and breathing usually survive. Cold, mottled, immobile legs are usually keraunoparalysis, which tends to fade within hours. Victims carry no charge and are safe to touch."
+      }
+    },
+    {
+      "id": "wfr-x04",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "WHO Treatment of Diarrhoea (Plan B)",
+      "zh": {
+        "q": "1998 年洪灾安置点里，一个 4 岁、约 16 公斤的孩子腹泻两天：烦躁、口渴、眼窝凹陷，皮肤捏起后回缩慢，按 WHO 标准属于“有些脱水”，还能喝水。按 WHO 治疗方案 B，头 4 小时应给他多少口服补液盐溶液？",
+        "options": [
+          "约 200 毫升，喝一杯就够了，喝多了会撑胀肚子、加重呕吐，结果反而会更加严重脱水",
+          "3 升以上，第一个小时内能喝多少就让他喝多少，补得越快越好",
+          "约 1.2 升，但只喂烧开的白开水，口服补液盐留到严重脱水时再用",
+          "约 1.2 升（每公斤 75 毫升），4 小时内少量多次喂完再评估，每次稀便后另补"
+        ],
+        "explain": "WHO 方案 B：“有些脱水”的孩子在头 4 小时内按每公斤 75 毫升补充口服补液盐溶液，16 公斤约 1.2 升，用杯子或勺子少量多次喂，呕吐就停 10 分钟再慢慢喂；4 小时后重新评估。白开水补不回丢失的钠和钾；一次只给一杯远远不够，一下猛灌又容易吐。"
+      },
+      "en": {
+        "q": "At a 1998 flood camp, a 4-year-old weighing about 16 kg has had diarrhoea for two days. He's restless and thirsty, his eyes are sunken and a skin pinch goes back slowly: 'some dehydration' by WHO criteria, and he can still drink. Under WHO Plan B, how much oral rehydration solution should he get in the first 4 hours?",
+        "options": [
+          "About 200 ml, a single cupful; any more will bloat his stomach, make him vomit and leave him even more dehydrated",
+          "More than 3 litres, as much as he'll drink in the first hour; the faster it goes in, the better",
+          "About 1.2 litres, but of plain boiled water, saving the rehydration salts for severe dehydration",
+          "About 1.2 litres (75 ml/kg) in small, frequent sips over 4 hours, then reassess; extra after each loose stool"
+        ],
+        "explain": "WHO Plan B gives a child with 'some dehydration' 75 ml/kg of ORS over the first 4 hours, so about 1.2 litres at 16 kg, offered in small, frequent sips by cup or spoon (if he vomits, wait 10 minutes and continue more slowly), then reassess at 4 hours. Plain water doesn't replace the sodium and potassium he has lost; one cup is far too little, and gulping it all at once tends to cause vomiting."
+      }
+    },
+    {
+      "id": "wfr-x05",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "Ottawa Ankle Rules (Stiell)",
+      "zh": {
+        "q": "从坠机点徒步下撤的第一天，一名同伴在乱石上崴了右脚踝，外侧肿起一大片、发青。要不要抬着他走，取决于有没有骨折。按渥太华踝关节规则，下列哪项最提示骨折？",
+        "options": [
+          "外踝前下方的软组织一按就疼得厉害，外侧肿得像个鸡蛋那么大，皮肤绷得发亮发紧",
+          "受伤时他清楚地听到“啪”的一声，之后整个脚踝很快青紫了一大片",
+          "外踝后缘或踝尖（下端 6 厘米内）有骨压痛，而且伤后连 4 步都走不了",
+          "脚踝明显肿胀、淤青，活动时很疼，但他能忍着疼一瘸一拐地走十几步"
+        ],
+        "explain": "渥太华踝关节规则：踝部疼痛，并且有下列任一项，才提示要拍片排除骨折——外踝或内踝后缘下端 6 厘米内或踝尖有骨压痛；或伤后当时和检查时都不能负重走 4 步（足部还看第 5 跖骨基底、舟骨有无压痛）。肿胀、淤青、听到响声本身不能区分扭伤和骨折；外踝前下方软组织压痛是典型的韧带扭伤。"
+      },
+      "en": {
+        "q": "On the first day of the trek out from the crash site, a companion rolls his right ankle on loose rock. The outside is swollen and bruised. Whether you'll have to carry him depends on whether it's broken. By the Ottawa ankle rules, which finding most suggests a fracture?",
+        "options": [
+          "Tenderness in the soft spot in front of and below the outer ankle bone, with swelling the size of a hen's egg",
+          "He clearly heard a loud pop when it happened, and the whole ankle bruised up quickly afterwards",
+          "Bone tenderness at the back edge or tip of the outer ankle bone (lowest 6 cm), and he couldn't take 4 steps",
+          "The ankle is clearly swollen and bruised and hurts to move, but he can limp a dozen steps on it"
+        ],
+        "explain": "The Ottawa ankle rules flag a possible fracture when there's ankle pain plus bone tenderness along the back edge or tip of either ankle bone (lowest 6 cm), or inability to bear weight for 4 steps both right after the injury and at assessment (for the foot, tenderness at the base of the fifth metatarsal or the navicular). Swelling, bruising and a pop don't separate a sprain from a fracture, and tenderness in front of and below the outer ankle bone is the classic ligament sprain."
+      }
+    },
+    {
+      "id": "wfr-x06",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "Queensland Poisons Information Centre / marine envenomation reviews",
+      "zh": {
+        "q": "珊瑚岛退潮时，一名同伴赤脚踩到一块“石头”——其实是一条石头鱼，脚底扎进几根毒刺，疼得在地上打滚，伤处迅速红肿。他意识清醒、呼吸正常。最合适的现场处理是？",
+        "options": [
+          "把伤脚泡在能忍受的热水里（约 45 °C，先用你的手试温），泡 30 分钟以上，尽快送医",
+          "用加压绷带从伤处一直往上缠到大腿根，再用夹板固定好，像处理澳洲毒蛇咬伤那样来减缓毒液的扩散",
+          "往伤口上倒醋浸泡至少 30 秒，让还没释放的刺丝囊失去活性，然后敷冰止痛",
+          "在伤口处用刀划十字口，把毒液挤出来或用嘴吸出，再在脚踝上方扎紧止血带"
+        ],
+        "explain": "石头鱼、刺鳐等有毒棘鱼类的蜇伤，热水浸泡（约 40–45 °C，以不烫伤为限；伤处感觉可能迟钝，须用施救者的手试温）能明显缓解剧痛，是公认的首选现场处理，同时要送医评估是否需要抗毒血清、清除残留毒刺和预防感染。加压固定法用于澳洲眼镜蛇科毒蛇、蓝环章鱼等神经毒；醋用于箱水母蜇伤，对鱼刺毒无效。"
+      },
+      "en": {
+        "q": "At low tide on the coral island a companion steps barefoot on what looks like a rock; it's a stonefish, and several venomous spines go into his sole. He's writhing in pain and the foot is quickly swelling. He's alert and breathing normally. What's the best field treatment?",
+        "options": [
+          "Soak the foot in water as hot as he can bear (about 45 °C, tested on your own hand) for 30+ minutes, and get him to care",
+          "Wrap a pressure bandage from the sting up to the thigh and splint it, as for an Australian snake bite, to slow the venom",
+          "Pour vinegar over the wound for at least 30 seconds to deactivate unfired stinging cells, then ice it for the pain",
+          "Cut a cross over the puncture, squeeze or suck the venom out, and tie a tight tourniquet above the ankle"
+        ],
+        "explain": "For stonefish, stingrays and other venomous-spined fish, hot-water immersion (about 40–45 °C, as hot as tolerated without scalding; test it on the rescuer's hand, as the casualty's foot may be numb) markedly relieves the severe pain and is the accepted first-line field treatment, alongside getting medical care for possible antivenom, removal of retained spines and infection prevention. Pressure immobilisation is for neurotoxic venoms such as Australian elapid snakes and blue-ringed octopus; vinegar is for box jellyfish stings and does nothing for fish venom."
+      }
+    },
+    {
+      "id": "wfr-x07",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "WHO Snakebite Guidelines (SEARO 2016) / 中国蛇伤救治专家共识 2018",
+      "zh": {
+        "q": "1998 年洪水中，一家人夜里困在屋顶。父亲睡着时手背被一条黑白相间环纹的小蛇咬了一口，只有两个很小的牙印，几乎不疼也不肿。他说没事，想接着睡。你应该？",
+        "options": [
+          "不痛不肿多半是没注入毒液的“干咬”，把伤口清洗消毒后让他继续睡，明天早上再看情况",
+          "按银环蛇类神经毒蛇咬伤处理：安静、制动伤肢，尽快送医打抗蛇毒血清，留意眼睑下垂",
+          "立刻在伤口上方用绳子紧紧扎住，一直扎到确认是否出现中毒症状为止再松开",
+          "先观察 2 小时，到时伤口仍然不红不肿、也不怎么疼，就说明咬他的是无毒蛇"
+        ],
+        "explain": "银环蛇等环蛇多在夜间咬人，伤口常常不痛不肿，但神经毒素会在数小时内逐渐起效：先出现眼睑下垂、视物模糊或复视、吞咽和说话困难，进而呼吸肌麻痹致死。WHO 指南要求可疑咬伤至少观察 24 小时。应让他保持安静、制动伤肢，尽快送医使用抗蛇毒血清；一旦呼吸衰竭，持续人工呼吸可以维持生命。用绳子紧扎有害无益。"
+      },
+      "en": {
+        "q": "During the 1998 flood a family is stranded on their roof overnight. While the father sleeps, a small snake with black and white bands bites the back of his hand. There are two tiny fang marks and almost no pain or swelling. He says he's fine and wants to go back to sleep. What do you do?",
+        "options": [
+          "No pain or swelling means a 'dry bite' with no venom injected: clean the wound, let him sleep, and check him in the morning",
+          "Treat it as a krait-type neurotoxic bite: keep him still, immobilise the limb, rush him to antivenom, watch his eyelids",
+          "Tie a cord tightly above the bite and keep it on until it's clear whether any signs of poisoning are appearing",
+          "Watch him for 2 hours; if the bite still isn't red, swollen or painful by then, the snake wasn't a venomous one"
+        ],
+        "explain": "Kraits often bite at night, and the bite may cause little pain or swelling, yet the neurotoxin takes effect over hours: drooping eyelids, blurred or double vision and trouble swallowing or speaking come first, then paralysis of the breathing muscles. WHO advises observing suspected bites for at least 24 hours. Keep him still, immobilise the limb and get him to antivenom quickly; if breathing fails, sustained rescue breaths can keep him alive. Tight cords do harm, not good."
+      }
+    },
+    {
+      "id": "wfr-x08",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "Rule of nines / ABA burn referral criteria",
+      "zh": {
+        "q": "南极站火灾中，一名队员整个胸腹部前面和整条右臂（从肩到手）都被烧伤，皮肤起了大水疱（部分皮层烧伤），背部和双腿完好。按成人“九分法”估算烧伤面积，并判断该怎么办：",
+        "options": [
+          "约 18%（胸腹前面算 9%、右臂算 9%）：属中等面积，在站里换药处理就可以了",
+          "约 36%（胸部 18%、腹部 9%、右臂 9%）：面积过大已没有救治希望，只做安慰照护",
+          "面积大小不重要，只看深度：起水疱说明烧得浅，包扎好、观察几天就行了",
+          "约 27%（躯干前面 18% + 一侧上肢 9%）：属大面积烧伤，需尽快后送，补液、保暖"
+        ],
+        "explain": "成人九分法：头颈 9%，每侧上肢 9%，躯干前面 18%、后面 18%，每侧下肢 18%，会阴 1%；伤者自己的手掌（连手指）约 1%。他的部分皮层烧伤约 27%，成人超过 20% 即为大面积烧伤，会大量丢失体液、迅速失温，需要静脉补液和烧伤专科救治，应尽快后送；等待期间保暖，清醒时可少量多次口服补液。起水疱是部分皮层烧伤，并不意味着轻。"
+      },
+      "en": {
+        "q": "In the Antarctic station fire a team member is burned across the whole front of his chest and belly and the whole right arm from shoulder to hand, with large blisters (partial thickness). His back and legs are untouched. Using the adult rule of nines, how big is the burn, and what does it mean?",
+        "options": [
+          "About 18% (chest and belly counted as 9%, the right arm 9%): a moderate burn that can just be dressed at the station",
+          "About 36% (chest 18%, belly 9%, right arm 9%): too large to survive, so give him comfort care only",
+          "Size doesn't matter, only depth: blisters mean the burn is shallow, so dress it and watch for a few days",
+          "About 27% (front of trunk 18% + one arm 9%): a major burn needing early evacuation to burn care, fluids and warmth"
+        ],
+        "explain": "Adult rule of nines: head and neck 9%, each arm 9%, front of trunk 18%, back 18%, each leg 18%, perineum 1%; the casualty's own palm with fingers is about 1%. His partial-thickness burn is about 27%, and over 20% in an adult is a major burn that loses large amounts of fluid and heat and needs IV fluids and specialist burn care, so evacuate early; meanwhile keep him warm and, if he's alert, give oral fluids in small, frequent sips. Blisters mean partial thickness, not minor."
+      }
+    },
+    {
+      "id": "wfr-x09",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "NOLS Wilderness Medicine / WMA Wilderness Protocols",
+      "zh": {
+        "q": "坠机后，救援至少还要三天。下面四名伤员各有一处关节脱位，按野外急救规范，野外急救员可以尝试在现场复位的是哪一个？",
+        "options": [
+          "坠机撞击造成的髋关节脱位，伤腿明显缩短、向内旋转，疼得不敢动",
+          "从 4 米高处直接摔在肩膀上，肩部变形，一摸有骨头互相摩擦的感觉",
+          "转身扭膝时，髌骨（膝盖骨）滑到了膝关节外侧，膝盖弯着伸不直",
+          "摔倒时用手撑地导致肘关节脱位，肘部明显变形，手指有些发麻"
+        ],
+        "explain": "野外急救课程（如 NOLS、WMA）通常只教复位三类间接暴力造成、容易识别、手法简单的脱位：肩关节前脱位、髌骨脱位和手指（脚趾）脱位。髌骨向外脱位，一般只需慢慢伸直膝关节，同时把髌骨轻轻推回中间。髋、肘关节脱位复位难、易伤及神经血管；肩部直接受重击后有骨擦感，可能合并骨折——这些都应按原样固定，尽快撤离。"
+      },
+      "en": {
+        "q": "Rescue is at least three days away after the crash. Four casualties each have a dislocated joint. Following wilderness protocols, which one may a wilderness first responder attempt to put back in the field?",
+        "options": [
+          "A hip dislocated by the impact of the crash: the leg is shortened and turned inward, and he's in agony",
+          "A shoulder deformed after a 4 m fall straight onto it, with a grating of bone ends when you touch it",
+          "A kneecap that slid to the outside of the knee as he twisted while turning, leaving the knee stuck bent",
+          "An elbow dislocated in a fall onto an outstretched hand, visibly deformed, with tingling in the fingers"
+        ],
+        "explain": "Wilderness courses such as NOLS and WMA generally teach reduction only for three easily recognised dislocations caused by indirect force: the anterior shoulder, the kneecap, and fingers or toes. A kneecap that slips outward usually goes back as you slowly straighten the knee while gently guiding it toward the midline. Hips and elbows are hard to reduce and risk nerve and vessel damage, and a shoulder hit directly with grating may hide a fracture: splint these as found and evacuate."
+      }
+    },
+    {
+      "id": "wfr-x10",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "NOLS Wilderness Medicine / Auerbach's Wilderness Medicine",
+      "zh": {
+        "q": "在海岛上等待救援的第 5 天，一名 28 岁的女队员突然下腹一侧剧痛，随后一站起来就头晕、差点晕倒，脸色苍白、脉搏 120 次/分，左肩尖也开始疼。她说月经已推迟约 6 周。最可能的情况和处理是？",
+        "options": [
+          "月经推迟引起的痛经：给她吃布洛芬止痛，用热水袋敷敷小腹，再卧床休息",
+          "急性阑尾炎：禁食禁水，在接下来几天里找合适的时机撤离就行",
+          "食物中毒引起的腹痛和虚脱：多喝水，再吃点东西补充体力",
+          "怀疑异位妊娠破裂、腹腔内大出血：让她平卧保暖、禁食，立即紧急撤离"
+        ],
+        "explain": "育龄女性出现急性下腹痛伴休克表现（站起头晕、面色苍白、心率快），尤其是月经推迟时，必须首先考虑异位妊娠破裂——腹腔内大出血可在数小时内致命；积血刺激膈肌还会引起肩尖痛。野外止不住这种出血，只能平卧、保暖、禁食，立即紧急撤离。阑尾炎通常起病较缓，先有脐周痛并伴发热，不会这么快出现休克；布洛芬还可能加重出血。"
+      },
+      "en": {
+        "q": "On day 5 of waiting for rescue on the island, a 28-year-old woman suddenly gets severe pain low on one side of her belly. When she stands she gets dizzy and nearly faints; she's pale, her pulse is 120, and her left shoulder tip has started to hurt. She says her period is about six weeks late. What's most likely, and what do you do?",
+        "options": [
+          "Period pain from a late period: give ibuprofen, put a hot-water bottle on her belly and let her rest in bed for a day",
+          "Appendicitis: nothing to eat or drink, and evacuate at a convenient point over the next few days",
+          "Food poisoning causing cramps and weakness: plenty of water and something to eat to build her strength",
+          "Suspect a ruptured ectopic pregnancy bleeding inside: keep her flat, warm and nil by mouth, and evacuate urgently"
+        ],
+        "explain": "Sudden lower abdominal pain with signs of shock (fainting on standing, pallor, a fast pulse) in a woman of childbearing age, especially with a late period, is a ruptured ectopic pregnancy until proven otherwise: internal bleeding that can kill within hours, and blood irritating the diaphragm causes shoulder-tip pain. It can't be stopped in the field: keep her flat, warm and nil by mouth, and evacuate immediately. Appendicitis usually builds more slowly, starting around the navel with fever, and doesn't cause shock this fast; ibuprofen could worsen bleeding."
+      }
+    },
+    {
+      "id": "wfr-x11",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Drowning 2024",
+      "zh": {
+        "q": "洪水中，你把一名落水者拖上屋顶，他呛了水，咳了一阵后清醒过来，能说话。半小时后，他咳得越来越厉害，咳出粉红色泡沫痰，呼吸每分钟 30 次。家人说：人已经醒了、能说话，就没事了。你判断？",
+        "options": [
+          "他已经清醒、能说话了，所谓“继发性溺水”只是网上的谣言，让他躺下来好好睡一觉就行了",
+          "这是吸入的水造成的肺损伤，可能迅速恶化：让他安静休息（清醒时半坐），立即撤离送医",
+          "让他趴下，从背后做腹部冲击，把肺里剩下的水挤出来，咳嗽自然就会停",
+          "多给他喝点热水暖暖身子，咳嗽说明肺里的水正在排出来，过一晚就会好转"
+        ],
+        "explain": "WMS 2024 溺水指南：落水后只有轻微咳嗽、肺部听诊正常的人可以考虑留在原地，但最好有人陪着观察约 6 小时；凡是咳嗽加重、咳泡沫痰、呼吸增快、肺部有异常音、意识变差或血压低的，都要立即撤离送医——吸入的水会损伤肺泡，可能在数小时内发展为呼吸衰竭。“继发性溺水”这个说法虽已不用，但症状是真实的；腹部冲击排水无效且危险。"
+      },
+      "en": {
+        "q": "In the flood you drag a man out of the water onto a roof. He swallowed water, coughs for a while, then comes round and can talk. Half an hour later his cough is getting worse, he's bringing up pink frothy sputum, and he's breathing 30 times a minute. His family says that now he's awake and talking, he's out of danger. What do you conclude?",
+        "options": [
+          "He's awake and talking, and 'secondary drowning' is a myth, so let him lie down and sleep it off",
+          "Lung injury from inhaled water that can get worse fast: rest him, half-sitting if alert, and evacuate now",
+          "Lay him face down and give abdominal thrusts from behind to squeeze the remaining water out of his lungs",
+          "Give him plenty of hot water to warm him; the cough means the water is coming out and will settle overnight"
+        ],
+        "explain": "WMS 2024 drowning guidance: someone with only a mild cough and normal lung sounds may stay, ideally watched by another person for about 6 hours, but anyone with a worsening or severe cough, frothy sputum, fast breathing, abnormal lung sounds, reduced alertness or low blood pressure needs immediate evacuation: inhaled water damages the lungs and can progress to respiratory failure within hours. The term 'secondary drowning' is outdated, but the symptoms are real; abdominal thrusts don't remove water and are dangerous."
+      }
+    },
+    {
+      "id": "wfr-x12",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "WMS Hypothermia 2019 / ERC 2025 Special Circumstances",
+      "zh": {
+        "q": "4100 米的坠机点，清晨在雪地里找到一名夜里走失的乘客：全身冰冷，检查 1 分钟仍没有任何生命迹象，没有致命外伤，胸廓还按得下去。直升机只能停在 2 公里外的山脊下，抬担架过冰坡时无法同时按压。你们应该？",
+        "options": [
+          "开始心肺复苏，之后每次至少按压 5 分钟，再抬着走不超过 5 分钟，如此交替前进",
+          "先不做心肺复苏，抬到直升机旁（约 40 分钟）再开始，断断续续的按压还不如不做",
+          "开始心肺复苏，之后一路抬着走，每走 10 分钟停下来按压 30 秒，就足以保护大脑",
+          "边抬担架过冰坡边持续按压，哪怕按得很浅、抬的人随时可能滑倒，也绝不能中断"
+        ],
+        "explain": "WMS 2019 失温指南：失温导致的心脏骤停应立即做高质量心肺复苏；在困难地形中无法安全地持续按压时，可采用延迟或间断心肺复苏——开始按压最好不要延迟超过 10 分钟，每次至少按压 5 分钟，中断不超过 5 分钟（ERC 2025 将此用于核心体温低于 28 °C 的伤员）。深度低温能保护大脑，间断但足量的按压远胜于不做；在冰坡上边抬边按既按不好，还可能让施救者滑坠受伤。"
+      },
+      "en": {
+        "q": "At the 4,100 m crash site, a passenger who wandered off in the night is found in the snow at dawn: ice-cold, with no signs of life after a 1-minute check, no lethal injuries, and a chest that can still be compressed. The helicopter can only land 2 km away below the ridge, and you can't do compressions while carrying the stretcher over icy slopes. What do you do?",
+        "options": [
+          "Start CPR, then alternate: at least 5 minutes of compressions, carry for no more than 5 minutes, and repeat",
+          "Hold off CPR until you reach the helicopter (about 40 minutes): interrupted compressions are worse than none",
+          "Start CPR, then carry him all the way, stopping for 30 seconds of compressions every 10 minutes to protect his brain",
+          "Keep compressing nonstop while carrying him across the ice, however shallow it gets and however likely a fall"
+        ],
+        "explain": "WMS 2019 hypothermia guidance: give immediate high-quality CPR in hypothermic cardiac arrest, but if continuous CPR is impossible or unsafe on difficult terrain, use delayed or intermittent CPR: ideally don't delay the start by more than 10 minutes, then give at least 5 minutes of compressions with breaks of no more than 5 minutes (ERC 2025 applies this to core temperatures below 28 °C). Deep cold protects the brain, so intermittent but adequate CPR beats none, while compressing on the move over ice is ineffective and risks a fall."
+      }
+    }
+  ]
+}

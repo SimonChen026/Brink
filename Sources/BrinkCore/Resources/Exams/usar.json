@@ -1,0 +1,974 @@
+{
+  "id": "usar",
+  "skill": "technical",
+  "bonus": 1,
+  "perk": null,
+  "requires": [],
+  "minLevel": 1,
+  "count": 10,
+  "pass": 8,
+  "icon": "building.2.fill",
+  "color": "#BC8C5A",
+  "zh": {
+    "name": "地震与城市搜救",
+    "full": "地震与城市搜救资格",
+    "desc": "震时避险、余震、被埋压时的自救、挤压综合征、搜救的顺序、废墟里的安全。",
+    "realWorld": "相当于社区应急救援队（CERT）培训。"
+  },
+  "en": {
+    "name": "Earthquake & Urban Search and Rescue",
+    "full": "Earthquake & Urban Search and Rescue Certificate",
+    "desc": "Protecting yourself during the shaking, aftershocks, surviving when trapped, crush syndrome, the order of search and rescue, staying safe in rubble.",
+    "realWorld": "Comparable to Community Emergency Response Team (CERT) training."
+  },
+  "questions": [
+    {
+      "id": "usar-01",
+      "answer": 3,
+      "hard": false,
+      "source": "ShakeOut / 中国地震局",
+      "zh": {
+        "q": "你在写字楼 8 层办公，突然感到剧烈摇晃。此刻最正确的做法是？",
+        "options": [
+          "马上冲向楼梯，赶紧跑到楼外的空地上去",
+          "跑到门框下站着，因为门框是整栋楼最结实的地方",
+          "立刻乘电梯下楼，越快离开大楼越安全",
+          "伏地、遮挡、手抓牢：躲到结实的桌子下，护住头颈"
+        ],
+        "explain": "强烈摇晃时人很难站稳行走，跑动中被坠落物砸伤、摔伤的风险最大。应就地“伏地、遮挡、手抓牢”：趴下或蹲下，躲到结实的桌子下护住头颈，抓牢桌腿随桌子移动，直到摇晃停止。现代建筑的门框并不比别处结实；地震时绝不能乘电梯。"
+      },
+      "en": {
+        "q": "You're working on the 8th floor of an office building when violent shaking begins. What's the right thing to do right now?",
+        "options": [
+          "Dash for the stairs and get out of the building onto open ground as fast as you can",
+          "Stand in a doorway, because the door frame is the strongest spot",
+          "Take the lift down at once; the faster you're out, the safer you are",
+          "Drop, Cover, Hold On: get under a sturdy desk, protect your head and neck, hold on"
+        ],
+        "explain": "In strong shaking you can barely stand or walk, and moving around is when people are most often hit by falling objects or thrown down. Drop where you are, take cover under a sturdy desk protecting your head and neck, and hold on to it (moving with it) until the shaking stops. Doorways in modern buildings are no stronger than anywhere else, and never use a lift during an earthquake."
+      }
+    },
+    {
+      "id": "usar-02",
+      "answer": 1,
+      "hard": true,
+      "source": "ShakeOut / American Red Cross",
+      "zh": {
+        "q": "同事说：“别钻桌子底下！要躺在沙发或柜子旁边，楼塌了会形成‘生命三角’。”这种说法对吗？",
+        "options": [
+          "对：大件家具旁边一定会留出一块安全的三角空间，最保险",
+          "不对：倒塌无法预测，震时走动更易受伤，应就近躲到桌下",
+          "对：桌子会被压垮，躺在桌子旁边才是最安全的",
+          "不对：应该趁着摇晃马上跑到窗边，准备跳出去"
+        ],
+        "explain": "“生命三角”的说法已被多国地震和救援机构否定：建筑倒塌的方式无法预测，家具也会滑动、翻倒，摇晃中穿过房间去找“三角区”反而容易被砸伤或摔倒。大多数地震伤亡由坠落物和摔倒造成，就近“伏地、遮挡、手抓牢”是经过验证的最佳做法。"
+      },
+      "en": {
+        "q": "A coworker says you shouldn't get under the desk but lie down next to the sofa or a cabinet, because a collapse leaves a 'triangle of life'. Is that right?",
+        "options": [
+          "Yes: big, solid furniture always leaves a safe space beside it when things fall",
+          "No: collapses are unpredictable and moving gets you hurt; get under the desk, hold on",
+          "Yes: desks get crushed flat, so lying down beside one is the safest place to be",
+          "No: you should rush to a window during the shaking, ready to jump out if it gets worse"
+        ],
+        "explain": "The 'triangle of life' has been rejected by earthquake and rescue agencies in several countries: buildings don't collapse predictably, furniture slides and topples, and crossing a shaking room to find a 'triangle' is how people get hit or thrown down. Most earthquake injuries come from falling objects and falls, so Drop, Cover, Hold On where you are is the proven approach."
+      }
+    },
+    {
+      "id": "usar-03",
+      "answer": 0,
+      "hard": false,
+      "source": "ShakeOut",
+      "zh": {
+        "q": "半夜熟睡时发生强烈地震，房间里一片漆黑，地上可能有碎玻璃。你应该？",
+        "options": [
+          "留在床上，用枕头护住头颈，抓牢直到摇晃停止",
+          "马上跳下床，摸黑冲向门口，尽快逃到外面空地去",
+          "跑到阳台上去，那里离外面最近，最方便逃生出去",
+          "站到窗户边上，看清楚外面到底是什么情况"
+        ],
+        "explain": "夜间看不清坠落物和碎玻璃，摸黑移动比待在床上更容易受伤。应留在床上，用枕头护住头和颈部，等摇晃停止后再穿上鞋子、拿上手电筒小心撤离。平时床头不要放重物、不要挂镜框，床最好远离窗户。"
+      },
+      "en": {
+        "q": "A strong earthquake hits while you're fast asleep. The room is pitch dark and there may be broken glass on the floor. What do you do?",
+        "options": [
+          "Stay in bed, cover your head and neck with a pillow, and hold on until it stops",
+          "Leap out of bed and rush through the dark for the door to get outside fast",
+          "Run out onto the balcony, since it's the quickest way out of the building",
+          "Go and stand by the window so you can see what's happening outside"
+        ],
+        "explain": "At night you can't see falling objects or broken glass, and people moving in the dark get hurt more than those who stay in bed. Stay put and protect your head and neck with a pillow; when the shaking stops, put on shoes, grab a torch and leave carefully. Keep heavy objects and framed pictures away from the bed, and keep the bed away from windows."
+      }
+    },
+    {
+      "id": "usar-04",
+      "answer": 2,
+      "hard": false,
+      "source": "ShakeOut",
+      "zh": {
+        "q": "你正开车行驶在城市道路上，强烈地震发生了。应该怎么做？",
+        "options": [
+          "猛踩油门，加速开出城区，尽快离开危险的地带",
+          "把车停到立交桥下面，宽大的桥面能挡住坠落物",
+          "靠边停车，远离桥梁和电线，系好安全带留在车里",
+          "弃车下来，跑进路边的高楼里躲避坠落物"
+        ],
+        "explain": "地震时应尽快在安全处靠边停车、拉好手刹，避开桥梁、立交、隧道口、电线和高大建筑，系好安全带留在车内，直到摇晃停止。行驶中路面可能开裂，桥梁和立交可能坍塌；震后要留意路面损坏，不要驶上受损的桥梁。"
+      },
+      "en": {
+        "q": "You're driving on a city road when a strong earthquake strikes. What do you do?",
+        "options": [
+          "Floor it and get out of the city as fast as you possibly can",
+          "Park under an overpass so the deck above shields you from the falling debris",
+          "Pull over clear of bridges and power lines, and stay in the car belted in",
+          "Abandon the car and run into a nearby tall building for shelter"
+        ],
+        "explain": "Pull over as soon as it's safe, set the parking brake and stay in the car with your seatbelt on until the shaking stops, keeping clear of bridges, overpasses, tunnel mouths, power lines and tall buildings. Roads may crack and bridges and overpasses can collapse; afterwards watch for damaged roads and don't drive onto damaged bridges."
+      }
+    },
+    {
+      "id": "usar-05",
+      "answer": 3,
+      "hard": false,
+      "source": "Ready.gov / 中国地震局",
+      "zh": {
+        "q": "摇晃停止了，你所在的楼明显受损，墙上有大裂缝。接下来应该？",
+        "options": [
+          "乘电梯下楼，免得在楼梯间里被掉落物困住",
+          "留在原地别动，主震已经过去，不会再有危险了",
+          "先回工位收拾好电脑和重要文件，再离开大楼",
+          "穿好鞋，查伤情，走楼梯撤到空旷处，提防余震"
+        ],
+        "explain": "主震过后要迅速而有序地撤离受损建筑：先穿上鞋子，防止被碎玻璃划伤；检查自己和身边的人有没有受伤；走楼梯（停电后电梯会困人），撤到远离建筑、电线和围墙的开阔地。强余震可能让已受损的建筑进一步倒塌，不要为了财物返回。"
+      },
+      "en": {
+        "q": "The shaking has stopped. Your building is obviously damaged, with big cracks in the walls. What next?",
+        "options": [
+          "Take the lift down so you don't get trapped in a stairwell full of falling debris",
+          "Stay where you are; the main quake is over, so the danger has passed now",
+          "First go back to your desk to pack up your laptop and important files",
+          "Shoes on, check for injuries, take the stairs to open ground, expect aftershocks"
+        ],
+        "explain": "After the main shock, leave a damaged building quickly but calmly: put on shoes to protect against broken glass, check yourself and others for injuries, use the stairs (lifts can trap you if the power fails), and get to open ground away from buildings, power lines and walls. A strong aftershock can bring a damaged building down, so don't go back for belongings."
+      }
+    },
+    {
+      "id": "usar-06",
+      "answer": 0,
+      "hard": true,
+      "source": "USGS",
+      "zh": {
+        "q": "关于余震，下列哪种说法正确？",
+        "options": [
+          "可能持续数月，偶尔还有更大的地震，受损建筑始终危险",
+          "余震一定比主震小得多，不会再造成什么新的破坏",
+          "余震只在主震后一小时内发生，过了这段时间就完全安全了",
+          "余震只会让高楼受损，住平房的人完全不用担心"
+        ],
+        "explain": "大地震后，余震可能持续数周、数月甚至更久，强余震足以让已经受损的建筑倒塌；少数情况下，先发生的地震其实是“前震”，随后还会有更大的地震。因此震后不要贸然返回受损建筑，要等官方的安全评估。"
+      },
+      "en": {
+        "q": "Which statement about aftershocks is correct?",
+        "options": [
+          "They can last for months, a bigger quake can follow, and damaged buildings stay unsafe",
+          "Aftershocks are always much smaller than the main shock and cause no new damage",
+          "Aftershocks only happen within an hour of the main shock; after that you're quite safe",
+          "Aftershocks only damage tall buildings; single-storey houses have nothing to fear"
+        ],
+        "explain": "After a large earthquake, aftershocks can continue for weeks, months or longer, and a strong one can bring down an already damaged building; occasionally the first quake turns out to be a foreshock and a larger one follows. So don't rush back into damaged buildings; wait for an official safety assessment."
+      }
+    },
+    {
+      "id": "usar-07",
+      "answer": 2,
+      "hard": true,
+      "source": "Ready.gov",
+      "zh": {
+        "q": "你被埋在坍塌的楼板下，四周漆黑，灰尘呛得人喘不过气，口袋里有一个打火机。你应该？",
+        "options": [
+          "点着打火机照明，先看清周围的情况，好找出路",
+          "大口大口地深呼吸，让自己尽快冷静下来",
+          "别点火；用衣服捂住口鼻，少动，免得扬起灰尘",
+          "用力推开压在身上的碎块，趁早爬出去求救"
+        ],
+        "explain": "废墟里可能有泄漏的燃气，点火极易引起爆炸或火灾，绝对不要用明火照明。用衣物、毛巾捂住口鼻过滤粉尘，尽量少动，避免扬起灰尘，也避免碰动不稳定的碎块引起二次坍塌，保存体力等待救援。"
+      },
+      "en": {
+        "q": "You're buried under a collapsed floor slab. It's pitch dark, the dust is choking, and you have a lighter in your pocket. What do you do?",
+        "options": [
+          "Light the lighter so you can see what's around you and find a way out",
+          "Take big, deep breaths to calm yourself down as quickly as possible",
+          "Don't light it; breathe through cloth and keep still so you don't raise more dust",
+          "Shove hard at the debris on top of you and try to crawl out while you still have strength"
+        ],
+        "explain": "There may be leaking gas in the rubble, and a flame can set off an explosion or fire, so never use one for light. Cover your nose and mouth with clothing to filter the dust, keep movement to a minimum so you don't raise dust or disturb unstable debris and cause a further collapse, and save your strength for rescue."
+      }
+    },
+    {
+      "id": "usar-08",
+      "answer": 1,
+      "hard": true,
+      "source": "Ready.gov",
+      "zh": {
+        "q": "被埋压在废墟里，你听到远处隐约有人声。怎样最能让救援人员找到你，同时保存体力？",
+        "options": [
+          "一刻不停地大声呼救，一直喊到嗓子哑了为止",
+          "敲击水管或墙壁、有哨子就吹，救援人员近了再喊",
+          "保持绝对安静，等救援人员自己挖到你这里",
+          "用力踢打身边的碎块，制造尽可能大的震动和声响"
+        ],
+        "explain": "敲击声能沿着管道和墙体传得很远，哨声也比人声更容易被听到，而且都不费力。持续呼喊会吸入大量粉尘，迅速消耗体力和水分，应留到确认救援人员就在附近时再喊。救援队搜索时会要求现场安静，专门监听敲击声。踢打碎块可能引发再次坍塌。"
+      },
+      "en": {
+        "q": "Trapped in the rubble, you hear faint voices in the distance. What's the best way to help rescuers find you while saving your strength?",
+        "options": [
+          "Shout for help non-stop, as loud as you can, until your voice gives out",
+          "Tap on a pipe or wall, blow a whistle if you have one, shout only when they're close",
+          "Stay completely silent and wait for rescuers to dig their way to you",
+          "Kick hard at the debris around you to make the biggest vibrations and noise you possibly can"
+        ],
+        "explain": "Tapping carries a long way through pipes and walls, and a whistle is heard more easily than a voice; both take little effort. Constant shouting makes you inhale dust and burns energy and water fast, so save it for when you know rescuers are close. Search teams call for silence specifically to listen for tapping. Kicking at debris can bring more down."
+      }
+    },
+    {
+      "id": "usar-09",
+      "answer": 3,
+      "hard": true,
+      "source": "ERA/ISN Crush 2012",
+      "zh": {
+        "q": "一个人的双腿被楼板压了 8 个小时。为什么突然把楼板搬开可能让他很快死亡？",
+        "options": [
+          "搬动时会扬起大量粉尘，让他很快窒息而死",
+          "骨头会在搬开的一瞬间断裂，刺破腿部的大血管",
+          "腿里的冷血一下子回流心脏，引起严重的失温",
+          "坏死肌肉的钾和毒素涌入血液，可引起心脏骤停"
+        ],
+        "explain": "肌肉长时间受压会缺血坏死，积聚大量钾、肌红蛋白和酸性物质。压力解除、血流恢复的一瞬间，这些物质涌入全身，可导致致命的心律失常（甚至在解救时当场心脏骤停，称为“解救死亡”）和急性肾衰竭，这就是挤压综合征。"
+      },
+      "en": {
+        "q": "A man's legs have been pinned under a floor slab for 8 hours. Why can suddenly lifting the slab off kill him quickly?",
+        "options": [
+          "Lifting it raises a thick cloud of dust that suffocates him within a few minutes",
+          "The bones snap as the slab comes off and pierce a major artery in the leg",
+          "Cold blood from his legs flows back to his heart and causes severe hypothermia",
+          "Potassium and toxins from dead muscle flood the blood and can stop the heart"
+        ],
+        "explain": "Muscle that is compressed for a long time dies from lack of blood and builds up potassium, myoglobin and acids. When the pressure comes off and blood flows again, these flood the body, causing fatal heart rhythm disturbances (even sudden cardiac arrest at the moment of release, so-called 'rescue death') and acute kidney failure. This is crush syndrome."
+      }
+    },
+    {
+      "id": "usar-10",
+      "answer": 0,
+      "hard": true,
+      "source": "ERA/ISN Crush 2012",
+      "zh": {
+        "q": "救援队找到一名下半身被压了十多个小时的幸存者，他神志清醒。在解除压迫之前，医护人员最重要的准备是？",
+        "options": [
+          "解救前尽早静脉输注生理盐水，备好心脏骤停抢救",
+          "先喂他吃一顿饱饭，让他好好恢复一下体力",
+          "在被压住的腿上热敷，先促进腿部的血液循环",
+          "打一针止痛药，然后一鼓作气，尽快把压着的重物搬开"
+        ],
+        "explain": "国际挤压伤救治建议：接触到被困者后，在解救之前就尽早开始静脉输注生理盐水（成人约每小时 1 升），以稀释即将涌入血液的钾和毒素、保护肾脏；同时监测心律，备好除颤器和抢救药物。不要使用含钾的液体。"
+      },
+      "en": {
+        "q": "Rescuers reach a survivor whose lower body has been pinned for more than ten hours. He's conscious. Before the pressure is released, what is the medical team's most important preparation?",
+        "options": [
+          "Start IV saline as early as possible and be ready to treat cardiac arrest",
+          "Feed him a big meal first to build up his strength",
+          "Put hot packs on the pinned legs to get the circulation going before the lift",
+          "Give him a painkiller injection, then lift the weight off as fast as possible"
+        ],
+        "explain": "International crush-injury recommendations: once you reach the victim, start IV normal saline early, before extrication (about 1 litre an hour for an adult), to dilute the potassium and toxins about to be released and protect the kidneys, while monitoring heart rhythm and keeping a defibrillator ready. Don't use potassium-containing fluids."
+      }
+    },
+    {
+      "id": "usar-11",
+      "answer": 2,
+      "hard": false,
+      "source": "INSARAG / 中国地震局",
+      "zh": {
+        "q": "地震救援中常说的“黄金 72 小时”是指？",
+        "options": [
+          "过了 72 小时就不可能有人生还，搜救就可以停止了",
+          "余震会在 72 小时后完全停止，那时才能开始救援",
+          "被困者存活率在震后约 3 天内最高，之后急剧下降",
+          "国际救援队按规定必须在 72 小时之内赶到灾区"
+        ],
+        "explain": "被埋压者的存活率随时间迅速下降，绝大多数被活着救出的人都是在震后头几天获救的，因此最初 72 小时最为关键。但这并不是生存的绝对极限——超过 72 小时仍有人获救的例子，搜救不应因此停止。"
+      },
+      "en": {
+        "q": "What does the 'golden 72 hours' in earthquake rescue refer to?",
+        "options": [
+          "No one can survive beyond 72 hours, so searching can stop then",
+          "Aftershocks stop completely after 72 hours, and only then can the real rescue begin",
+          "Survival of trapped people is highest in about the first 3 days, then falls sharply",
+          "International rescue teams are required to arrive within 72 hours"
+        ],
+        "explain": "The survival of trapped people falls quickly with time, and the great majority of those rescued alive are saved in the first few days, which makes the first 72 hours critical. It isn't an absolute limit, though: people have been pulled out alive well after 72 hours, so searching shouldn't stop at that point."
+      }
+    },
+    {
+      "id": "usar-12",
+      "answer": 1,
+      "hard": true,
+      "source": "FEMA CERT / INSARAG",
+      "zh": {
+        "q": "震后你们一群邻居只有简单的工具，周围好几处有人被困。为了在最短时间里救出最多的人，应按什么顺序？",
+        "options": [
+          "集中所有人力物力，先救埋得最深、最难救的那个人",
+          "先救浅埋、容易救的人，再救困在空隙里和深埋的人",
+          "先救呼喊声最大的人，没声音的可能已经遇难",
+          "先把所有废墟清理干净，再逐个寻找被困者"
+        ],
+        "explain": "原则是“先易后难”：先救出地面上和浅埋、容易救的人，他们中很多人又能加入救援；再搜寻被困在空隙里的人，最后才是需要大量清理碎石的深埋者。把有限的人力全部压在最难的一处，会耽误更多本可以救活的人。没有声音的人也可能还活着，只是昏迷或太虚弱。"
+      },
+      "en": {
+        "q": "After the quake your group of neighbours has only basic tools, and people are trapped in several places. To rescue the most people in the shortest time, what order do you follow?",
+        "options": [
+          "Put every pair of hands on the deepest, hardest-to-reach person first, whatever it takes",
+          "Lightly trapped, easy-to-reach people first; then those in voids and those buried deep",
+          "Whoever is shouting loudest first; the quiet ones are probably dead",
+          "Clear away all the rubble first, then look for trapped people one by one"
+        ],
+        "explain": "The rule is easiest first: get out the surface and lightly trapped victims, many of whom can then join the rescue; then search voids where people may be trapped; only then tackle the deeply buried, which takes a lot of debris removal. Throwing all your limited hands at the hardest case costs lives that could have been saved. Silent people may still be alive, just unconscious or too weak."
+      }
+    },
+    {
+      "id": "usar-13",
+      "answer": 0,
+      "hard": false,
+      "source": "FEMA CERT",
+      "zh": {
+        "q": "你们搜索一栋轻度受损的房屋。下列哪种搜索方法正确？",
+        "options": [
+          "沿一侧墙逐间系统搜索，定时喊话，再安静倾听",
+          "所有人分散开，各自随意地找，这样效率最高",
+          "一边走一边不停地大声交谈，互相壮胆",
+          "只查看能直接看到的地方，被东西挡住的空间不用查"
+        ],
+        "explain": "系统搜索时按固定方向（例如始终沿右侧墙）逐个房间推进，避免遗漏或重复；每隔一段时间大声喊话（“有人吗？能听到就敲三下”），然后全体保持安静，仔细倾听敲击声和呼救声。床下、柜子里、楼梯下等空隙都可能有被困者。"
+      },
+      "en": {
+        "q": "You're searching a lightly damaged house. Which search method is right?",
+        "options": [
+          "Go room by room along one wall, call out regularly, then fall silent and listen",
+          "Everyone splits up and searches wherever they like, which covers the most ground",
+          "Keep talking loudly to each other as you go, to keep your spirits up",
+          "Check only what you can see directly; spaces blocked by debris don't need checking"
+        ],
+        "explain": "A systematic search moves room by room in a fixed direction (for example, always keeping the right-hand wall) so nothing is missed or repeated. Call out regularly ('Anyone here? If you can hear me, tap three times'), then have everyone go quiet and listen for tapping or voices. Voids under beds, inside cupboards and under stairs are where trapped people may be."
+      }
+    },
+    {
+      "id": "usar-14",
+      "answer": 3,
+      "hard": false,
+      "source": "FEMA CERT",
+      "zh": {
+        "q": "按照 FEMA/CERT 的搜索标记方法，救援人员在建筑入口画了一条斜线“/”，旁边写着队伍代号和时间。这表示？",
+        "options": [
+          "这栋楼已经搜索完毕，确认里面一个人都没有了",
+          "这栋楼已经过结构评估，大家可以安全进入",
+          "里面已经确认有遇难者，等待后续处理",
+          "搜索队正在里面，离开时会再画一笔成“X”"
+        ],
+        "explain": "进入时画一条斜线并注明队伍和时间，表示有人正在里面作业；搜索结束离开时再画一条斜线形成“X”，并在四个区域分别写明队伍代号、离开时间、发现的危险和被困者情况。只看到一条斜线，说明队员还在里面。"
+      },
+      "en": {
+        "q": "Under the FEMA/CERT search marking system, rescuers have drawn a single slash '/' at a building entrance, with their team ID and the time beside it. What does it mean?",
+        "options": [
+          "The building has been fully searched and no one is left inside",
+          "The building has been assessed by engineers and is now safe to enter",
+          "There are confirmed dead inside who still need to be recovered later",
+          "A team is inside now; they'll cross it into an 'X' when they leave"
+        ],
+        "explain": "A single slash with the team and time is drawn on entry and means people are working inside. When the search is finished, a second slash makes an 'X', and its four quadrants record the team, the time they left, hazards found and victims found. A lone slash means the team is still inside."
+      }
+    },
+    {
+      "id": "usar-15",
+      "answer": 2,
+      "hard": false,
+      "source": "FEMA CERT",
+      "zh": {
+        "q": "你们社区救援小组来到一栋楼前：外墙部分倒塌，楼体明显倾斜，还闻到燃气味。正确的做法是？",
+        "options": [
+          "只要动作够快，进去看一眼马上出来，应该不会有事",
+          "派一个胆大的人进去搜索，其他人在外面接应",
+          "不进入：在外面喊话搜索，标出危险，报告专业队",
+          "先拉下电闸、关掉燃气总阀，然后大家一起进去搜索"
+        ],
+        "explain": "严重受损（部分倒塌、明显倾斜、有燃气泄漏等）的建筑随时可能再次坍塌或爆炸，只能由专业救援队处理。社区救援人员的第一原则是保证自身安全，避免增加新的被困者：可以在外围喊话、倾听、标记和报告，把信息交给专业人员。"
+      },
+      "en": {
+        "q": "Your community rescue team reaches a building with part of its outer wall collapsed, a visible lean, and a smell of gas. What's the right course of action?",
+        "options": [
+          "Go in if you're quick: a fast look round, then straight back out again",
+          "Send one volunteer in to search while the rest of you wait outside, ready to help",
+          "Stay out: call out from outside, mark the hazards, and alert professional teams",
+          "Switch off the power and gas first, then all go in together to search"
+        ],
+        "explain": "Heavily damaged buildings, whether partly collapsed, leaning or leaking gas, can collapse again or explode at any moment, and only professional teams should work in them. The first rule for community rescuers is their own safety, so they don't become new victims: call out and listen from outside, mark and report, and hand the information to professionals."
+      }
+    },
+    {
+      "id": "usar-16",
+      "answer": 1,
+      "hard": true,
+      "source": "FEMA CERT",
+      "zh": {
+        "q": "你们用撬杠抬起压住人的水泥板。下列哪种做法正确？",
+        "options": [
+          "一口气抬到最高，让几个人用手托住，再赶紧把人拉出来",
+          "每抬一点就塞入垫木跟进，身体任何部位不伸到重物下",
+          "垫木一块一块竖着叠成高高一摞，越快越好",
+          "抬得越高越好，空间越大越方便把人救出来"
+        ],
+        "explain": "安全抬升的原则是“抬一点、垫一点”：每抬高一点，就立刻用垫木（最好搭成井字形垛）跟进支撑，这样即使撬杠滑脱，重物也只会落回垫木上。抬到刚好能把人救出的高度即可，抬得越高越不稳；任何时候都不能把手、脚伸到悬空的重物下面。"
+      },
+      "en": {
+        "q": "You're using a pry bar to lift a concrete slab off a trapped person. Which is correct?",
+        "options": [
+          "Lift it to full height in one go, have people hold it up by hand, then pull the person out",
+          "Lift a little, crib a little, and never put any part of your body under the load",
+          "Stack the blocks in a single tall column, as fast as you can",
+          "Lift it as high as you can, since more room makes the rescue easier"
+        ],
+        "explain": "Safe lifting follows 'lift an inch, crib an inch': each time the load rises a little, push cribbing in under it (ideally a crisscross box crib), so that if the lever slips the load only drops back onto the blocks. Lift only as high as needed to get the person out, since higher is less stable, and never put hands or feet under a raised load."
+      }
+    },
+    {
+      "id": "usar-17",
+      "answer": 0,
+      "hard": false,
+      "source": "FEMA CERT",
+      "zh": {
+        "q": "用撬杠撬起重物时，支点放在哪里最省力？",
+        "options": [
+          "尽量靠近重物",
+          "尽量靠近手握的一端",
+          "正好放在撬杠的正中间",
+          "支点位置不影响用力大小"
+        ],
+        "explain": "杠杆省力的倍数等于动力臂（支点到手的距离）除以阻力臂（支点到重物的距离）。支点越靠近重物，阻力臂越短，同样的力就能撬起越重的东西——代价是每次撬起的高度较小，这正好配合“抬一点、垫一点”。"
+      },
+      "en": {
+        "q": "When prying up a heavy object with a bar, where should the fulcrum go so you need the least force?",
+        "options": [
+          "As close to the load as possible",
+          "As close to your hands as possible",
+          "Exactly in the middle of the bar",
+          "Its position makes no difference to the force"
+        ],
+        "explain": "A lever's mechanical advantage is the effort arm (fulcrum to your hands) divided by the load arm (fulcrum to the load). The closer the fulcrum is to the load, the shorter the load arm and the heavier the object the same force can lift; the trade-off is that the load rises less with each push, which suits 'lift an inch, crib an inch'."
+      }
+    },
+    {
+      "id": "usar-18",
+      "answer": 3,
+      "hard": false,
+      "source": "Ready.gov",
+      "zh": {
+        "q": "震后回到家，你闻到一股臭鸡蛋味，还听到嘶嘶的漏气声。你应该？",
+        "options": [
+          "打开电灯，仔细检查一下到底是哪里在漏气",
+          "划一根火柴照亮，看看漏气点到底在哪里",
+          "关紧所有门窗，免得燃气飘出去，影响到邻居家里",
+          "开窗、人员撤离，安全时关室外总阀，到屋外再报修"
+        ],
+        "explain": "燃气泄漏遇到明火或电火花就可能爆炸，震后火灾往往由此引起。闻到燃气味或听到漏气声：开窗通风，所有人立即离开，在能安全操作时关闭室外燃气总阀；不要开关电灯电器，不要在屋内打电话，到屋外再联系燃气公司。总阀一旦关闭，应由专业人员检查后再重新开启。"
+      },
+      "en": {
+        "q": "Back home after the quake, you smell rotten eggs and hear a hissing leak. What do you do?",
+        "options": [
+          "Switch on the lights so you can look carefully for where the leak is",
+          "Strike a match so you can see exactly where the gas is leaking from",
+          "Shut all the doors and windows tight so the gas can't drift over to the neighbours",
+          "Air it out, get everyone out, shut the outside valve if safe, call from outside"
+        ],
+        "explain": "Leaking gas can explode with a flame or an electrical spark, and many post-earthquake fires start this way. If you smell gas or hear a leak: open a window, get everyone out, and turn off the main valve outside if you can do so safely; don't touch light switches or appliances or phone from inside; call the gas company from outside. Once the main valve is off, only a professional should turn it back on."
+      }
+    },
+    {
+      "id": "usar-19",
+      "answer": 1,
+      "hard": true,
+      "source": "Japan Cabinet Office / 中国地震局",
+      "zh": {
+        "q": "地震后你家明显受损，现在停电了，你准备去避难所。离开前应该怎样处理家里的电？",
+        "options": [
+          "不用管它，反正已经停电了，不会有什么危险",
+          "拉下电闸（总开关），以防来电时破损电路起火",
+          "把所有电灯开关都打开，来电时就能马上知道",
+          "只拔掉电视机的插头，其他电器都不用管"
+        ],
+        "explain": "大地震后，电力恢复的那一刻，破损的电线、倒地的电暖器等可能立即起火，这种“通电火灾”在 1995 年日本阪神大地震中引发了不少火灾。离家避难前应拉下总闸，燃气也要关闭总阀；回家后先检查电线和电器，确认安全再合闸。"
+      },
+      "en": {
+        "q": "After the quake your home is clearly damaged, the power is out, and you're about to leave for a shelter. What should you do about the electricity before you go?",
+        "options": [
+          "Nothing; the power is already off, so there's no danger at all",
+          "Switch off the main breaker, so a fire can't start when the power returns",
+          "Leave all the light switches on so you'll know when the power is back",
+          "Unplug just the TV and leave everything else as it is"
+        ],
+        "explain": "When power is restored after a big quake, damaged wiring or toppled heaters can catch fire the moment the current returns; these 'power-restoration fires' started many fires after the 1995 Kobe earthquake. Before leaving, switch off the main breaker and shut the gas main too; when you return, check the wiring and appliances before switching back on."
+      }
+    },
+    {
+      "id": "usar-20",
+      "answer": 2,
+      "hard": true,
+      "source": "START triage / FEMA CERT",
+      "zh": {
+        "q": "按 START 检伤分类法，一名伤员不能行走，开放气道后有自主呼吸，呼吸频率每分钟 36 次。他应被标为？",
+        "options": [
+          "延迟处理（黄色）",
+          "轻伤（绿色）",
+          "立即处理（红色）",
+          "死亡/期待处理（黑色）"
+        ],
+        "explain": "START 法先让能走的人到指定地点（绿色）；不能走的看呼吸：开放气道后仍无呼吸为黑色，呼吸超过每分钟 30 次为红色；30 次以下再看循环（摸不到桡动脉搏动或毛细血管再充盈超过 2 秒为红色）和意识（不能执行简单指令为红色），都正常才是黄色。"
+      },
+      "en": {
+        "q": "Using START triage, a casualty can't walk, breathes on his own once the airway is opened, and is breathing 36 times a minute. How is he tagged?",
+        "options": [
+          "Delayed (yellow)",
+          "Minor (green)",
+          "Immediate (red)",
+          "Dead/expectant (black)"
+        ],
+        "explain": "START first sends everyone who can walk to a set point (green). For those who can't: no breathing after opening the airway is black; breathing over 30 a minute is red. Under 30, check circulation (no radial pulse or capillary refill over 2 seconds is red) and mental status (can't follow simple commands is red); only if all are normal is the casualty yellow."
+      }
+    },
+    {
+      "id": "usar-21",
+      "answer": 0,
+      "hard": true,
+      "source": "NOAA/NWS",
+      "zh": {
+        "q": "你在海边小镇，地震摇得人站都站不稳，持续了一分多钟。摇晃停止后，还没有收到任何海啸警报。你应该？",
+        "options": [
+          "不等警报，立即步行撤往高地或远离海岸的内陆",
+          "先等官方的海啸警报，没有警报就说明没有危险",
+          "先去海边看看海水有没有异常，再决定走不走",
+          "开车回家收拾好贵重物品和证件，再开车撤离"
+        ],
+        "explain": "强烈或长时间（20 秒以上）的摇晃本身就是海啸的“天然警报”，近海地震引发的海啸可能几分钟内就到，比官方警报还快。应立即撤往高地或内陆，尽量步行（道路可能损坏、拥堵），不要等警报，不要去海边观望，也不要回家取东西。"
+      },
+      "en": {
+        "q": "You're in a seaside town. An earthquake shakes so hard you can barely stand, and it lasts over a minute. It has stopped, and no tsunami warning has come. What do you do?",
+        "options": [
+          "Don't wait for a warning: head on foot for high ground or inland right away",
+          "Wait for an official tsunami warning; no warning means no danger",
+          "Go down to the shore to check whether the sea looks unusual before deciding",
+          "Drive home to collect your valuables and papers first, then evacuate by car"
+        ],
+        "explain": "Strong or long shaking (20 seconds or more) is itself the natural tsunami warning: a tsunami from a nearby quake can arrive within minutes, before any official alert. Go to high ground or inland at once, on foot if possible (roads may be damaged or jammed); don't wait for a warning, don't go to look at the sea, and don't go home for belongings."
+      }
+    },
+    {
+      "id": "usar-22",
+      "answer": 3,
+      "hard": false,
+      "source": "NOAA/NWS",
+      "zh": {
+        "q": "在海滩上，你突然发现海水迅速退去，露出大片海底和搁浅的鱼。这意味着什么？",
+        "options": [
+          "只是普通退潮，正好可以去捡些鱼和贝壳",
+          "海啸已经过去，海水正在恢复平静",
+          "海底有暗流，往后离开水边几米就安全了",
+          "海啸可能几分钟内就到，立即跑向高处"
+        ],
+        "explain": "海水异常迅速地后退、露出海底，是海啸来临前的典型征兆，巨浪往往在几分钟内扑来。看到这种现象要立即向高处或内陆撤离，不要去海滩捡鱼或拍照。"
+      },
+      "en": {
+        "q": "On the beach, you suddenly see the sea rushing out, exposing a wide stretch of seabed and stranded fish. What does it mean?",
+        "options": [
+          "It's just low tide, a great chance to pick up fish and shells",
+          "The tsunami has already passed, and now the sea is settling back down",
+          "There's an undertow; stepping a few metres back from the water is enough",
+          "A tsunami may arrive within minutes; run for high ground now"
+        ],
+        "explain": "The sea pulling back unusually fast and exposing the seabed is a classic sign of an approaching tsunami, and the wave often arrives within minutes. Head for high ground or inland at once; don't go out to collect fish or take photos."
+      }
+    },
+    {
+      "id": "usar-23",
+      "answer": 2,
+      "hard": true,
+      "source": "NOAA/NWS",
+      "zh": {
+        "q": "第一波海啸冲过之后，海水退了回去。下列哪种做法正确？",
+        "options": [
+          "马上下山回家，海啸通常只有一个大浪，已经过去了",
+          "趁海水退去，赶紧到海边寻找失踪的人",
+          "留在高处：海啸是一连串的浪，后面的可能更大",
+          "只要半小时之内没有新的浪，就可以放心返回家中"
+        ],
+        "explain": "海啸由一系列波浪组成，间隔可达数十分钟甚至更长，第一波往往不是最大的，危险可能持续数小时甚至一天以上。历史上多次海啸中，都有人在第一波退去后返回海边而遇难。要等官方宣布解除警报后才能返回。"
+      },
+      "en": {
+        "q": "The first tsunami wave has surged through and the water has pulled back. Which is right?",
+        "options": [
+          "Go straight home; a tsunami is just one big wave and it has passed",
+          "Hurry down to the shore while the water is out and look for missing people there",
+          "Stay on high ground: tsunamis come in a series, and later waves can be bigger",
+          "If no new wave comes within half an hour, it's safe to go back"
+        ],
+        "explain": "A tsunami is a series of waves that can arrive tens of minutes or more apart; the first is often not the largest, and the danger can last for many hours, even more than a day. In past tsunamis, people have died after returning to the shore once the first wave pulled back. Stay put until officials give the all-clear."
+      }
+    },
+    {
+      "id": "usar-24",
+      "answer": 1,
+      "hard": false,
+      "source": "FEMA P-646",
+      "zh": {
+        "q": "强震后海啸警报响起，你在离海岸不远的平地上，附近没有高地，步行肯定来不及赶到。最好的选择是？",
+        "options": [
+          "躲进附近的木结构平房里，关紧门窗等浪过去",
+          "进入附近坚固的钢筋混凝土高楼，上到三层以上或楼顶",
+          "开车上路碰碰运气，看看能不能抢在海浪之前开出去",
+          "躲到防波堤后面，它本来就是用来挡海浪的"
+        ],
+        "explain": "来不及撤到高地时，可以“垂直避难”：进入附近坚固的钢筋混凝土多层建筑或指定的海啸避难楼，至少上到三层以上，越高越好。2011 年日本东北地震海啸中，许多人靠躲进多层钢筋混凝土建筑幸存。木结构房屋会被冲毁；开车容易堵在路上被海浪追上；防波堤可能被海浪越过或摧毁。"
+      },
+      "en": {
+        "q": "After a strong quake the tsunami siren sounds. You're on flat ground not far from the coast, with no high ground you could reach on foot in time. What's your best option?",
+        "options": [
+          "Shelter in a nearby single-storey wooden house with the doors and windows shut",
+          "Climb to the 3rd floor or higher of a nearby sturdy reinforced-concrete building",
+          "Drive off and hope you can get clear of the area before the wave hits",
+          "Hide behind the sea wall, which is built to stop waves, until it passes"
+        ],
+        "explain": "If you can't reach high ground in time, evacuate vertically: get into a nearby sturdy multi-storey reinforced-concrete building or a designated tsunami evacuation building and go to at least the 3rd floor, the higher the better. In the 2011 Tōhoku tsunami many people survived in multi-storey concrete buildings. Wooden houses get swept away, cars get stuck in traffic and overtaken, and sea walls can be overtopped or destroyed."
+      }
+    },
+    {
+      "id": "usar-x01",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "ShakeOut (Earthquake Country Alliance)",
+      "zh": {
+        "q": "你在办公楼 8 楼工作，强烈的地震突然袭来。坐轮椅的同事小林就在你旁边的走廊里，附近没有坚固的桌子。他应该怎么做？",
+        "options": [
+          "马上从轮椅上下来，爬到最近的桌子底下，严格按“趴下、掩护、抓牢”去做才安全",
+          "锁住轮椅刹车，上身尽量前倾压低，用双臂或书本护住头颈，坚持到摇晃停止",
+          "赶紧把轮椅推到电梯口或门框下面，准备在摇晃的间隙里冲出大楼，越快越好",
+          "松开轮椅刹车，让轮椅随着摇晃来回滑动卸掉冲击力，这样反而不容易翻倒"
+        ],
+        "explain": "“趴下、掩护、抓牢”对轮椅使用者的版本是“锁住、掩护、抓牢”（ShakeOut）：锁死轮子，上身尽量前倾压低，用手臂、书本或枕头护住头颈，坚持到摇晃停止。剧烈摇晃时离开轮椅转移到地面，本身就容易摔伤；松开刹车会让轮椅失控乱滑；地震时不要去电梯口，门框也并不比别处更安全。"
+      },
+      "en": {
+        "q": "You're working on the 8th floor of an office building when violent shaking hits. Your colleague Lin, who uses a wheelchair, is in the corridor next to you, with no sturdy desk nearby. What should he do?",
+        "options": [
+          "Get out of the wheelchair at once and crawl under the nearest desk, since only a proper Drop, Cover, Hold On is safe",
+          "Lock the wheels, bend forward as low as he can, cover his head and neck with his arms or a book, and hold on",
+          "Wheel quickly to the lift lobby or under a door frame, ready to dash out of the building as soon as there's a lull",
+          "Release the brakes so the chair can roll with the shaking and absorb the jolts, which makes it less likely to tip"
+        ],
+        "explain": "For wheelchair users, Drop, Cover, Hold On becomes Lock, Cover, Hold On (ShakeOut): lock the wheels, bend forward as low as possible, protect the head and neck with arms, a book or a cushion, and stay that way until the shaking stops. Transferring to the floor during violent shaking is itself a common way to get hurt, released brakes let the chair careen about, and lifts are off limits while door frames are no safer than anywhere else."
+      }
+    },
+    {
+      "id": "usar-x02",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "JumpSTART pediatric triage (Romig) / CHEMM",
+      "zh": {
+        "q": "海啸后的雪夜，你在镇上用 START／JumpSTART 法给大批伤员检伤分类。一个约 5 岁的男孩不能走、没有呼吸；你摆正他的气道后仍不呼吸，但在手腕上摸到了脉搏。下一步应该？",
+        "options": [
+          "标为黑色（死亡），立即去看下一个伤员：开放气道后仍无呼吸，按规则就算死亡了",
+          "立即标红后马上离开：他摸得到脉搏，说明肯定还活着，留给后面的医疗组处理",
+          "给他做 5 次人工呼吸：恢复呼吸就标红色，仍不呼吸才标黑色，然后去看下一个",
+          "停下来给他做完整的心肺复苏，一直做到他恢复呼吸或者救护人员赶到为止"
+        ],
+        "explain": "JumpSTART 是 START 的儿童版（约 8 岁以下）：儿童呼吸停止多由缺氧引起，心跳往往还在。开放气道后仍无呼吸、但能摸到脉搏的孩子，要先给 5 次人工呼吸；恢复自主呼吸就标红色（立即处理），仍无呼吸才标黑色。直接套用成人规则会错失可救的孩子；而在大批伤员现场长时间为一个人做完整心肺复苏，会耽误更多人。"
+      },
+      "en": {
+        "q": "On the snowy night after the tsunami you're triaging many casualties in town with START/JumpSTART. A boy of about 5 can't walk and isn't breathing. You reposition his airway and he still doesn't breathe, but you can feel a pulse at his wrist. What next?",
+        "options": [
+          "Tag him black (dead) and move on at once: no breathing after the airway is opened means dead under the rules",
+          "Tag him red and leave straight away: he has a pulse, so he's definitely alive and the medics can sort him out",
+          "Give 5 rescue breaths: if he starts breathing, tag red (immediate); if not, tag black, then move on",
+          "Stop and give him full CPR, carrying on until he starts breathing again or the ambulance crew arrive"
+        ],
+        "explain": "JumpSTART is START's version for children (under about 8): children usually stop breathing from lack of oxygen while the heart is still beating. A child who doesn't breathe after the airway is opened but has a pulse gets 5 rescue breaths first; if breathing returns, tag red, and only if it doesn't, tag black. Applying the adult rule loses savable children, while prolonged full CPR on one child at a mass-casualty scene costs others their lives."
+      }
+    },
+    {
+      "id": "usar-x03",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "FEMA CERT Basic Training (Light Search and Rescue)",
+      "zh": {
+        "q": "余震间隙，你们社区救援队来到一栋三层住宅前：墙上布满大裂缝，装饰物掉落，室内东西翻倒一地，但楼体端正地坐在地基上，没有倾斜，也闻不到煤气味。一楼传来呼救声。按 CERT 规范，你们应该？",
+        "options": [
+          "属严重损坏：任何情况下都不进入，只在楼外喊话、做好标记，把信息交给专业队伍",
+          "属轻度损坏：可以放心进入并停留，还可以把队伍的伤员救治点直接设在楼里面",
+          "属中度损坏：只为救命而进入——两人一组、尽量缩短停留，就地检伤并尽快撤出伤员",
+          "属中度损坏：进去后先把三层楼逐个房间彻底搜一遍，确认没有遗漏，再统一把人往外救"
+        ],
+        "explain": "CERT 把建筑损坏分三级：轻度（表面损伤、窗户破碎，可进入并停留）；中度（大量裂缝、装饰物掉落、室内物品严重损坏，但仍在地基上）——只为救命而进入，就地检伤，尽快撤出伤员；严重（部分或全部倒塌、倾斜、脱离地基、漏气、起火、进水）——任何情况下都不进入。余震可能让中度损坏变成严重损坏，所以停留越短越好，并持续评估。"
+      },
+      "en": {
+        "q": "In a lull between aftershocks your community response team reaches a three-storey apartment block: big cracks all over the walls, fallen decorative work and contents thrown everywhere, but it's sitting squarely on its foundation, isn't leaning, and there's no smell of gas. Someone is calling for help on the ground floor. Following CERT practice, what do you do?",
+        "options": [
+          "Heavy damage: don't go in under any circumstances; call out from outside, mark it and hand over to professionals",
+          "Light damage: it's safe to go in and stay, so set up the team's casualty treatment area inside the building",
+          "Moderate damage: go in only to save lives, in pairs, minimising time inside, triaging and getting victims out fast",
+          "Moderate damage: first search every room on all three floors thoroughly, then bring everyone out together at the end"
+        ],
+        "explain": "CERT grades damage in three levels: light (superficial damage, broken windows; safe to enter and remain); moderate (many cracks, fallen decoration, major damage to contents, but still on its foundation): enter only to save lives, triage where found and get victims out fast; heavy (partial or total collapse, leaning, off its foundation, gas, fire, rising water): never enter. An aftershock can turn moderate into heavy, so keep time inside short and keep reassessing."
+      }
+    },
+    {
+      "id": "usar-x04",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "ERA/ISN Crush Recommendations 2012",
+      "zh": {
+        "q": "海啸后的雪夜，救援医生终于接触到一位双腿被压了 30 小时的 70 岁老太太，已建立静脉通路，但预计还要 5 小时才能把她救出。现场有生理盐水和乳酸林格液。补液方案应是？",
+        "options": [
+          "用乳酸林格液，每小时 1 升，一直输到把她救出来为止，因为它最接近人体的生理状态",
+          "先不输液，免得加重心脏负担，等到解除压迫的那一刻再快速推注一大袋液体冲一冲",
+          "生理盐水每小时 1 升连续输满 5 小时，救出后照样继续，输得越多越能冲刷、保护肾脏",
+          "生理盐水：头 2 小时约每小时 1 升，之后不超过每小时 500 毫升，高龄、天冷再酌减；不用含钾液体"
+        ],
+        "explain": "ERA/ISN 挤压伤救治建议：接触到伤员就开始输等渗生理盐水，成人约每小时 1 升；若解救时间超过 2 小时，减到每小时不超过 500 毫升，并根据年龄（老人少）、体重、气温（冷时少）、尿量和被困时间调整，以防容量过负荷。乳酸林格液含钾，而挤压伤员本已面临高钾血症，应避免。等到松开那一刻才补液，就来不及防止“解救死亡”了。"
+      },
+      "en": {
+        "q": "On the snowy night after the tsunami, a rescue doctor finally reaches a 70-year-old woman whose legs have been pinned for 30 hours. An IV line is in, but freeing her will take about 5 more hours. Normal saline and Ringer's lactate are on hand. What fluid plan is right?",
+        "options": [
+          "Ringer's lactate at 1 litre an hour until she's out, because it's the closest fluid to what's in the body",
+          "No fluids yet, to spare her heart; push in a whole bag rapidly at the very moment the weight comes off",
+          "Saline at 1 litre an hour for all 5 hours and beyond; the more you give, the better it flushes the kidneys",
+          "Saline about 1 L an hour for 2 hours, then at most 500 ml an hour, less for her age and the cold; no potassium fluids"
+        ],
+        "explain": "The ERA/ISN crush recommendations: start isotonic saline as soon as you reach the victim, about 1 litre an hour in adults; if extrication takes more than 2 hours, cut to no more than 500 ml an hour, adjusting for age (less for the elderly), weight, temperature (less in the cold), urine output and time trapped, to avoid fluid overload. Ringer's lactate contains potassium, which crush victims already have too much of. Waiting until the moment of release is too late to prevent 'rescue death'."
+      }
+    },
+    {
+      "id": "usar-x05",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "FEMA US&R Shoring Operations Guide / FEMA CERT",
+      "zh": {
+        "q": "你们要撬起压住一名同事双腿的楼板，边抬边垫。现场能找到：一堆 10×10 厘米的松木方、空心混凝土砌块、红砖，以及几根圆钢管。用什么、怎么垫最安全？",
+        "options": [
+          "把空心混凝土砌块平放着一层层叠起来，混凝土的抗压强度远比木头高得多，最为稳妥可靠",
+          "用红砖一块块叠成一根柱子垫进去，砖块小巧又规整，可以随时增减、调整高度",
+          "把几根圆钢管横着平铺垫进去当垫层，钢材怎么压都压不坏，比什么材料都结实",
+          "用松木方搭成“井”字形垛随抬随垫：松木过载时会先吱嘎作响、慢慢压陷，给人预警"
+        ],
+        "explain": "FEMA 城市搜救的支撑与垫木规范首选软木（如松木、花旗松）搭井字形垛：过载时木头会先发出吱嘎声、肉眼可见地慢慢压陷，给人撤离的时间。空心砌块和砖是脆性材料，会毫无征兆地突然碎裂，砖柱还容易倒；圆钢管会滚动，承重时可能突然滑出。无论用什么，都要“抬一点、垫一点”，身体绝不伸到重物下面。"
+      },
+      "en": {
+        "q": "You're levering a floor slab off a coworker's legs, cribbing as you lift. On hand: a pile of 10×10 cm pine timbers, hollow concrete blocks, red bricks and some round steel pipes. What do you crib with, and how?",
+        "options": [
+          "Hollow concrete blocks laid flat and stacked up; concrete is far stronger in compression than any kind of wood",
+          "Red bricks stacked into a column; they're small and regular, so you can adjust the height as you go",
+          "Round steel pipes laid flat side by side as a base; steel can't be crushed, so nothing is stronger",
+          "Pine timbers in a crisscross box crib, added as you lift; softwood creaks and crushes slowly, giving warning"
+        ],
+        "explain": "FEMA urban search and rescue shoring practice prefers softwood (pine, Douglas fir) in box cribs: when overloaded, the wood groans and visibly crushes slowly, giving you time to get out. Hollow blocks and bricks are brittle and shatter suddenly without warning, and brick columns topple; round pipes roll and can shoot out under load. Whatever you use, lift an inch, crib an inch, and never put any part of your body under the load."
+      }
+    },
+    {
+      "id": "usar-x06",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "FEMA US&R / INSARAG (stages of collapse rescue)",
+      "zh": {
+        "q": "地震第 2 天，一栋“千层饼”式倒塌的写字楼里，可能仍有被困者在空隙中存活。一位包工头开来挖掘机，要求马上从顶上往下大面积清挖，说“比你们用手扒快多了”。你应该？",
+        "options": [
+          "接受：时间就是生命，用挖掘机从顶层往下一层层清挖最快，被困者越早露出来越有希望",
+          "暂不全面清挖：先做表面搜救、空隙搜索和定点清除，机械只在救援队指挥下定点起吊",
+          "拒绝任何机械靠近废墟，整个救援过程只能用手和小工具扒，免得震塌里面的空隙",
+          "让挖掘机从废墟边缘往里挖，救援队员同时在废墟中间用手扒，两路并进节省时间"
+        ],
+        "explain": "倒塌建筑救援按五个阶段推进：侦察评估、救出表面被困者、搜索空隙、有针对性的局部清除，最后才是全面清除废墟；前三个阶段救活的人最多。在可能还有生还者时用挖掘机大面积清挖，会压塌维持生命的空隙；机械可以在救援队指挥下做定点起吊（如吊开某块楼板）。同一废墟堆上不能一边机械作业、一边有人徒手挖掘；确认不再有生还者后才全面清挖。"
+      },
+      "en": {
+        "q": "On day 2 after the earthquake, survivors may still be alive in voids inside a pancaked office building. A contractor brings an excavator and wants to start bulk-digging from the top down right away: 'much faster than your hands'. What do you do?",
+        "options": [
+          "Accept: time is life, and digging down from the top with the excavator is fastest, so victims are exposed sooner",
+          "No bulk digging yet: surface rescue, void search and targeted removal first; machines only make directed lifts",
+          "Refuse to let any machine near the rubble; the entire rescue must be done by hand and with small tools",
+          "Have the excavator dig in from the edge while rescuers dig by hand in the middle, attacking on two fronts"
+        ],
+        "explain": "Collapse rescue proceeds in five stages: reconnaissance, removal of surface victims, void search, selected debris removal, and only finally general debris removal; most live rescues happen in the first three. Bulk digging while survivors may remain crushes the voids keeping them alive, though machines can make directed lifts under rescue-team control (lifting a particular slab, say). Never run machines on a rubble pile while people are digging on it by hand; general removal waits until no survivors remain."
+      }
+    },
+    {
+      "id": "usar-x07",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "USGS landslide hazards / 应急管理部",
+      "zh": {
+        "q": "强震后，你们在山区峡谷里避险。上游约 3 公里处，一整片山体滑下来堵断了河道，河水在堵塞体后面越积越高。你们目前在下游河边的平坦滩地上扎营，周围没有建筑。应该？",
+        "options": [
+          "转移到远高于谷底、稳固的高地，避开陡坡和河道：堰塞湖可能突然溃决，洪水冲下山谷",
+          "留在下游河滩：这里远离会倒塌的房屋，而且河道被堵住以后，下游反而不会再发大水了",
+          "爬进营地旁边那条陡峭的山沟里，尽量往高处爬，离河道越远、爬得越高就越安全",
+          "派几个人到上游堵塞体上察看情况，在上面挖一条小沟，把积水慢慢放掉、解除危险"
+        ],
+        "explain": "山体滑坡堵断河道形成的堰塞湖（如 2008 年汶川地震后的唐家山堰塞湖）可能在数小时到数周内突然溃决，洪水裹挟泥石冲下峡谷，下游河滩首当其冲。应转移到远高于谷底、地质稳定的地方，同时避开陡坡和山沟——余震和降雨还会引发新的滑坡、崩塌和泥石流。站到堵塞体上作业极其危险，应交给专业人员处置。"
+      },
+      "en": {
+        "q": "After a strong earthquake your group is sheltering in a mountain gorge. About 3 km upstream a whole hillside has slid down and blocked the river, and water is piling up behind it. You're camped on a flat riverside terrace downstream, with no buildings around. What should you do?",
+        "options": [
+          "Move to high, stable ground well above the valley floor, away from steep slopes and the channel: the dam can burst",
+          "Stay on the terrace: it's away from falling buildings, and with the river blocked there can't be a flood downstream",
+          "Climb up into the steep gully next to camp, as high as you can; the farther from the river, the safer you are",
+          "Send a few people up onto the landslide dam to inspect it and dig a small channel to drain the water off slowly"
+        ],
+        "explain": "A landslide dam blocking a river (like Tangjiashan after the 2008 Wenchuan earthquake) can fail suddenly hours to weeks later, sending a flood of water and debris down the gorge, and the downstream terrace takes the first hit. Move to stable ground well above the valley floor, avoiding steep slopes and gullies too, as aftershocks and rain trigger new landslides, rockfalls and debris flows. Working on the dam itself is extremely dangerous and is a job for specialists."
+      }
+    },
+    {
+      "id": "usar-x08",
+      "answer": 3,
+      "hard": true,
+      "expert": true,
+      "source": "NOAA/NWS Tsunami Safety; 2011 Tōhoku tsunami",
+      "zh": {
+        "q": "M9 地震后的雪夜，海啸警报响起。你在离海岸 2 公里的地方，旁边就是一条入海的河。一条比田地高出 3 米的河堤一直通往内陆 3 公里外的车站；另一个方向，穿过 600 米田地有一座小山。你应该？",
+        "options": [
+          "沿着高出田地的河堤往内陆走：河堤地势高，又是朝着离海越来越远的方向",
+          "爬上河上的公路桥，那是附近最高的建筑，海啸来了也冲不到桥面上",
+          "这里离海岸已有 2 公里，海啸很少能冲这么远，回家待在一楼等消息",
+          "离开河道，立刻穿过田地往小山上跑，能爬多高就爬多高"
+        ],
+        "explain": "海啸会沿河道逆流而上，比在陆地上推进得更远、更快，可以漫过甚至冲毁河堤和桥梁：2011 年东日本大地震时，海啸沿北上川上溯了几十公里。美国国家气象局的海啸安全建议明确要求远离通向大海的河流和溪流。应离开河道，就近往高地撤离；2 公里并不安全，平坦的沿海平原上海啸可深入内陆数公里。"
+      },
+      "en": {
+        "q": "On the snowy night after the M9 earthquake the tsunami siren sounds. You're 2 km from the coast, beside a river that runs into the sea. A river embankment 3 m higher than the fields leads 3 km inland to the station; in the other direction, 600 m across the fields, there's a small hill. What do you do?",
+        "options": [
+          "Walk inland along the embankment: it's higher than the fields and leads ever farther away from the sea",
+          "Climb onto the road bridge over the river, the highest structure around; the wave can't reach the deck",
+          "You're already 2 km inland and tsunamis rarely get this far, so go home and wait on the ground floor",
+          "Get away from the river and head straight across the fields up the hill, climbing as high as you can"
+        ],
+        "explain": "A tsunami surges up river channels farther and faster than over land, and can overtop or destroy embankments and bridges: in 2011 it ran tens of kilometres up the Kitakami River in Japan. NWS tsunami safety advice says to stay away from rivers and streams that lead to the ocean. Leave the river and get to the nearest high ground; 2 km is not safe, as on flat coastal plains a tsunami can reach several kilometres inland."
+      }
+    },
+    {
+      "id": "usar-x09",
+      "answer": 2,
+      "hard": true,
+      "expert": true,
+      "source": "FEMA CERT / NIMS–ICS (span of control)",
+      "zh": {
+        "q": "震后你被推举为社区自救的总负责人，31 名邻居报名参加，任务包括搜救、医疗、物资和登记。你该怎样组织？",
+        "options": [
+          "31 人全部直接向你一个人报告，所有指令都由你亲自下达，这样信息统一、执行起来不会走样",
+          "分成两个大组，每组 15 人，各设一名副手负责，管理层级越少，指挥起来就越快",
+          "分成若干约 5 人的小组，各设组长向你报告，每人管 3–7 人为宜，组内两人一组结伴",
+          "不设固定分工和组长，大家自由组队，哪里需要人就去哪里，这样最灵活也最高效"
+        ],
+        "explain": "CERT 和美国事故指挥系统（ICS）的管理幅度原则：每名负责人直接管理 3–7 人，约 5 人最理想；人多了就增设小组和组长。31 人直接向一人报告会让负责人信息过载、失去掌控；15 人一组同样超出管理幅度；没有分工和问责的“自由行动”容易造成重复和遗漏，还会让人身陷险境却无人知晓。搜救时还要两人一组结伴。"
+      },
+      "en": {
+        "q": "After the earthquake you're chosen to lead your neighbourhood's self-help effort. Thirty-one neighbours have signed up, and the jobs include search and rescue, first aid, supplies and record-keeping. How do you organise them?",
+        "options": [
+          "All 31 report straight to you, and every instruction comes from you alone, so that nothing ever gets garbled",
+          "Two big groups of 15, each under one deputy; the fewer layers there are, the faster the command works",
+          "Teams of about 5, each with a leader reporting to you (3–7 people per supervisor), working in buddy pairs",
+          "No fixed jobs or leaders: people team up freely and go wherever they're needed, which is most flexible"
+        ],
+        "explain": "CERT and the Incident Command System use a span of control of 3–7 people per supervisor, with about 5 ideal; when numbers grow, you add teams and leaders. Thirty-one people reporting to one leader overloads them and control is lost, groups of 15 also exceed the span, and freelancing without assignments or accountability causes duplication and gaps and lets people get into danger unnoticed. Searchers also work in buddy pairs."
+      }
+    },
+    {
+      "id": "usar-x10",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "LPG safety (NFPA 58 / UK HSE)",
+      "zh": {
+        "q": "地震后，一家小饭馆坍塌，一名被困者在地下室的空隙里，能听到她的回应。废墟里传来“嘶嘶”声，飘出液化石油气的臭味——厨房的液化气罐被压破了。下列哪项判断和做法正确？",
+        "options": [
+          "液化气比空气重，会沉积在地下室等低处：杜绝明火和火花（手机、开关、切割机），低处通风，交专业检测",
+          "液化气比空气轻，泄漏后会往上飘散，所以地下室的空隙反而最安全，救援人员可以放心地在里面长时间作业",
+          "先打开楼上高处的窗户让气体从上面散掉，然后马上用角磨机切断钢筋，争取尽快把被困的人救出来",
+          "用打火机快速照一下，找到漏气的确切位置，再用浸湿的毛巾把罐子的破口牢牢堵住，就能解除危险"
+        ],
+        "explain": "液化石油气（丙烷、丁烷）密度约为空气的 1.5–2 倍，泄漏后会沉向地下室、坑道和废墟低处的空隙，在被困者身边积聚到爆炸浓度；天然气（甲烷）则比空气轻、会上升，两者不能混淆。应杜绝一切点火源——明火、手机、电器开关、会打出火花的切割工具；能安全关闭气罐阀门就关，用不产生火花的方式从低处通风，由带可燃气体检测仪的专业人员确认安全后再作业。"
+      },
+      "en": {
+        "q": "After the earthquake a small restaurant has collapsed, and a woman trapped in a void in the basement is answering your calls. There's a hissing sound from the rubble and the smell of LPG: a kitchen gas cylinder has been crushed. Which assessment and action is right?",
+        "options": [
+          "LPG is heavier than air and pools in basements and low voids: no flames or sparks (phones, switches, cutters), ventilate low, get experts to test",
+          "LPG is lighter than air and drifts upward, so the basement void is actually the safest place, and rescuers can safely work there for as long as needed",
+          "Open the high windows upstairs to let the gas escape upward, then cut through the rebar with an angle grinder to get her out as fast as possible",
+          "Flick a lighter briefly to find exactly where it's leaking, then plug the hole in the cylinder with a wet towel, and the danger is over"
+        ],
+        "explain": "LPG (propane and butane) is about 1.5–2 times as heavy as air, so a leak sinks into basements, pits and low voids in the rubble, where it can build to an explosive mixture right around the victim; natural gas (methane), by contrast, is lighter than air and rises. Eliminate every ignition source, including flames, phones, switches and spark-throwing cutting tools; close the cylinder valve if it's safe, ventilate from low points by non-sparking means, and let professionals with gas detectors confirm it's safe before work continues."
+      }
+    },
+    {
+      "id": "usar-x11",
+      "answer": 0,
+      "hard": true,
+      "expert": true,
+      "source": "INSARAG Guidelines (marking and signalling)",
+      "zh": {
+        "q": "你和一支国际救援队一起在倒塌写字楼的作业点挖掘。突然，现场响起三声短促的气喇叭声，每声约 1 秒，并不断重复。这表示？",
+        "options": [
+          "立即撤离作业点，沿预先规定的路线撤到安全集合点",
+          "全体停止作业、保持绝对安静，侦听废墟下被困者的声音",
+          "安静侦听结束，恢复作业，大家可以继续挖掘和破拆了",
+          "发现了生还者，所有人员马上到洞口集合协助营救"
+        ],
+        "explain": "INSARAG（国际搜索与救援咨询团）统一的现场紧急信号：三声短音（每声 1 秒）反复鸣响 = 立即撤离；一声 3 秒长音 = 停止作业、保持安静（侦听）；一长一短 = 恢复作业。所有在现场的人都必须事先了解并立即响应；撤离信号通常意味着余震、结构变化或危险品泄漏等紧急险情。"
+      },
+      "en": {
+        "q": "You're digging alongside an international rescue team at the collapsed office block. Suddenly an air horn sounds three short blasts of about one second each, repeated over and over. What does it mean?",
+        "options": [
+          "Evacuate the worksite now by the planned route to the safe assembly point",
+          "Stop all work and stay completely silent to listen for trapped people",
+          "The quiet period is over: resume work, so digging and breaking can continue",
+          "A survivor has been found: everyone gather at the hole to help with the rescue"
+        ],
+        "explain": "INSARAG's standard site signals: three short blasts (one second each), repeated = evacuate immediately; one long 3-second blast = cease operations and keep quiet (to listen); one long plus one short = resume operations. Everyone on site must know them and respond instantly; the evacuation signal usually means an aftershock, structural movement or a hazardous leak."
+      }
+    },
+    {
+      "id": "usar-x12",
+      "answer": 1,
+      "hard": true,
+      "expert": true,
+      "source": "American Red Cross First Aid (emergency moves) / ERC 2025 First Aid",
+      "zh": {
+        "q": "余震不断，一栋中度损坏楼房的天花板裂缝正在迅速扩大。楼梯口躺着一名从楼梯上摔下、可能伤了颈部的男子，意识模糊但有呼吸。没有担架和脊柱板，你和同伴必须马上把他转移到 20 米外的空地。应该？",
+        "options": [
+          "两人把他扶成坐姿，用“双人椅式”抬起来快速通过瓦砾，这样最省时间，也最省力气",
+          "抓住他肩后的衣服（或滚到毯子上），沿身体长轴拖出，护住头颈，不抬起、不扭转",
+          "用“消防员式”把他扛在肩上跑出去，一个人扛就够了，让另一个人在前面开路",
+          "怀疑脊柱受伤的人绝不能挪动，守在他身边用手扶住头部，等担架和颈托送到再说"
+        ],
+        "explain": "怀疑颈椎受伤的人原则上不搬动，但面临倒塌等直接危险时必须立即转移。美国红十字会推荐的紧急移动法是“衣领拖法”或毯子拖法：抓住肩后衣服、托住头部，沿身体长轴拖动，让头、颈、躯干保持一条直线。坐姿抬运和扛在肩上都会让脊柱弯曲扭转；死守原地等担架，可能让伤员和施救者一起被埋。"
+      },
+      "en": {
+        "q": "Aftershocks keep coming, and a crack in the ceiling of a moderately damaged building is spreading fast. At the foot of the stairs lies a man who fell down them and may have a neck injury; he's drowsy but breathing. There's no stretcher or spine board, and you and a partner must get him to open ground 20 m away right now. How?",
+        "options": [
+          "Sit him upright and carry him between the two of you in a two-person seat carry over the rubble, the quickest and least tiring way",
+          "Grip his clothing at the shoulders (or use a blanket) and drag him along his body's long axis, head supported, no lifting",
+          "Put him over your shoulder in a fireman's carry and run; one person is enough, while the other clears the way ahead",
+          "Never move a possible spinal injury: stay with him, holding his head still, until a stretcher and a neck collar arrive"
+        ],
+        "explain": "A possible neck injury normally means don't move the person, but immediate danger such as collapse means you must. The American Red Cross emergency move is the clothes drag (or blanket drag): grip the clothing behind the shoulders, cradle the head, and pull along the body's long axis so head, neck and trunk stay in line. Seat carries and shoulder carries bend and twist the spine, and staying put to wait for a stretcher can bury casualty and rescuers alike."
+      }
+    }
+  ]
+}
